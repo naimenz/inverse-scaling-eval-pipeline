@@ -9,6 +9,7 @@ from transformers import GPT2LMHeadModel, GPT2TokenizerFast
 import torch
 from pprint import pprint
 from eval_pipeline.utils import wrap_question
+import logging
 
 
 GPT2Size = Literal["gpt2", "gpt2-medium", "gpt2-large", "gpt2-xl"]
@@ -47,6 +48,7 @@ class GPT2Wrapper:
 def evaluate_gpt2_texts(
     texts: list[str], sizes: list[GPT2Size]
 ) -> dict[str, dict[str, float]]:
+    logging.info("CALLED GPT2")
     model_dict = {size: GPT2Wrapper(size) for size in sizes}
     all_prob_dicts = dict()
 

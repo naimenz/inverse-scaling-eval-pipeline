@@ -11,6 +11,8 @@ import os
 from dotenv import load_dotenv
 import numpy as np
 from pprint import pprint
+import logging
+
 
 
 GPT3Size = Literal["ada", "babbage", "curie", "davinci"]
@@ -18,7 +20,6 @@ OPENAI_API_BASE_URL = "https://api.openai.com/v1/engines"
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 OPENAI_ORG_ID = os.getenv("OPENAI_ORG_ID")
-print(OPENAI_API_KEY)
 
 
 def call_gpt3(text: str, size: GPT3Size) -> dict:
@@ -74,6 +75,7 @@ def evaluate_gpt3_text(text: str, sizes: list[GPT3Size]) -> dict[str, float]:
 def evaluate_gpt3_texts(
     texts: str, sizes: list[GPT3Size]
 ) -> dict[str, dict[str, float]]:
+    logging.info("CALLED GPT3")
     all_prob_dicts = dict()
     for text in texts:
         all_prob_dicts[text] = evaluate_gpt3_text(text, sizes)
