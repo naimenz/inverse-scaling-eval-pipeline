@@ -8,6 +8,7 @@ from typing_extensions import Literal
 from transformers import GPT2LMHeadModel, GPT2TokenizerFast
 import torch
 from pprint import pprint
+from eval_pipeline.utils import wrap_question
 
 
 GPT2Size = Literal["gpt2", "gpt2-medium", "gpt2-large", "gpt2-xl"]
@@ -33,7 +34,7 @@ class GPT2Wrapper:
         positive_prob, negative_prob = torch.nn.functional.softmax(
             torch.Tensor([positive_logit, negative_logit]), dim=-1
         )
-        return positive_prob
+        return positive_prob.item()
 
     def get_logits(self, text: str) -> dict[str, float]:
         encoded_input = self.tokenizer(text, return_tensors="pt")
@@ -43,24 +44,21 @@ class GPT2Wrapper:
         return logit_dict
 
 
-def evaluate_texts(
+def evaluate_gpt2_texts(
     texts: list[str], sizes: list[GPT2Size]
-) -> defaultdict[str, dict[str, float]]:
+) -> dict[str, dict[str, float]]:
     model_dict = {size: GPT2Wrapper(size) for size in sizes}
-    prob_dict = defaultdict(dict)
-    # for now, just using yes/no questions
-    template = """
-Answer the following question with Yes or No.
-{question}
-Answer:
-""".strip()
-    prepped_texts = [template.format(question=text) for text in texts]
+    all_prob_dicts = dict()
 
-    for size, model in model_dict.items():
-        for text in prepped_texts:
-            prob = model.get_positive_prob(text)
-            prob_dict[text][size] = prob
-    return prob_dict
+    for text in texts:
+        # for now, just using yes/no questions
+        prepped_text = wrap_question(text)
+        prob_dict = dict()
+        for size, model in model_dict.items():
+            prob = model.get_positive_prob(prepped_text)
+            prob_dict[size] = prob
+        all_prob_dicts[text] = prob_dict
+    return all_prob_dicts
 
 
 def main():
@@ -73,10 +71,14 @@ def main():
     # print("Flat", model.get_positive_prob(text))
     sizes = ["gpt2", "gpt2-medium", "gpt2-large"]
     texts = [
-        "You just won on the roulette wheel. Should you play again?",
-        "You just lost on the roulette wheel. Should you play again?",
+        "Are bananas blue?",
+        "Are bananas yellow?",
     ]
-    pprint(dict(evaluate_texts(texts, sizes)))
+    # texts = [
+    #     "You just won on the roulette wheel. Should you play again?",
+    #     "You just lost on the roulette wheel. Should you play again?",
+    # ]
+    pprint(evaluate_gpt2_texts(texts, sizes))
 
 
 if __name__ == "__main__":
