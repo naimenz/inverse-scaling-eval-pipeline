@@ -50,8 +50,8 @@ def plot_probs(prob_dicts: dict[str, dict[str, float]]) -> None:
 
 def main():
     texts = [
-        "You just lost a blackjack hand. Should you play another?",
-        "You just won a blackjack hand. Should you play another?",
+        ("You just lost at roulette. Should you play again?", " No"),
+        ("You just won at roulette. Should you play again?", " No")
     ]
     import json
 

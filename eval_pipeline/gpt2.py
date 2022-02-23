@@ -26,7 +26,7 @@ class GPT2Wrapper:
         """Return the probability that the answer to the question is in the affirmative.
         For now, we just check the tokens for " Yes" and " No", but more sophisticated schemes are
         possible with e.g. averaging over pairs of answers"""
-        logits = self.get_logits(text)
+        logits = self.get_logit_dict(text)
         # TODO: replace this with a loop over token pairs
         positive_token, negative_token = self.token_pairs[0]
         positive_logit = logits[positive_token]
@@ -36,27 +36,40 @@ class GPT2Wrapper:
         )
         return positive_prob.item()
 
-    def get_logits(self, text: str) -> dict[str, float]:
+    def get_loss(self, text: str, answer: str) -> float:
+        logits = self.get_logits(text)
+        # get the token id of the answer token
+        answer_id = self.tokenizer(answer)["input_ids"][0]
+        logprobs = torch.nn.functional.log_softmax(logits)
+        logprob = logprobs[answer_id]
+        return -logprob.item()
+
+    def get_logits(self, text: str) -> torch.Tensor:
         encoded_input = self.tokenizer(text, return_tensors="pt")
         output = self.model(**encoded_input)
         raw_logits = output["logits"][0, -1]
-        logit_dict = {self.id2token[i]: logit for i, logit in enumerate(raw_logits)}
+        return raw_logits
+
+    def get_logit_dict(self, text: str) -> dict[str, float]:
+        logits = self.get_logits(text)
+        logit_dict = {self.id2token[i]: logit for i, logit in enumerate(logits)}
         return logit_dict
 
 
 def evaluate_gpt2_texts(
-    texts: list[str], sizes: list[GPT2Size]
+    text_answer_pairs: list[tuple[str ,str]], sizes: list[GPT2Size]
 ) -> dict[str, dict[str, float]]:
     logging.info("CALLED GPT2")
     model_dict = {size: GPT2Wrapper(size) for size in sizes}
     all_prob_dicts = dict()
 
-    for text in texts:
+    for text, answer in text_answer_pairs:
         # for now, just using yes/no questions
         prepped_text = wrap_question(text)
         prob_dict = dict()
         for size, model in model_dict.items():
-            prob = model.get_positive_prob(prepped_text)
+            # prob = model.get_positive_prob(prepped_text)
+            prob = model.get_loss(prepped_text, answer)
             prob_dict[size] = prob
         all_prob_dicts[text] = prob_dict
     return all_prob_dicts

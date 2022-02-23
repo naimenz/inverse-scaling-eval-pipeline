@@ -14,7 +14,6 @@ from pprint import pprint
 import logging
 
 
-
 GPT3Size = Literal["ada", "babbage", "curie", "davinci"]
 OPENAI_API_BASE_URL = "https://api.openai.com/v1/engines"
 load_dotenv()
@@ -62,23 +61,36 @@ def json_to_positive_prob(
     return positive_prob
 
 
-def evaluate_gpt3_text(text: str, sizes: list[GPT3Size]) -> dict[str, float]:
+def json_to_loss(
+    json: dict,
+    answer: str,
+) -> float:
+    logprobs = json["choices"][0]["logprobs"]["top_logprobs"][0]
+    logprob = logprobs.get(answer)
+    if logprob is None:
+        raise ValueError(f"logprobs {logprobs} doesn't contain answer token {answer}")
+    return -logprob
+
+
+def evaluate_gpt3_text(
+    text: str, answer: str, sizes: list[GPT3Size]
+) -> dict[str, float]:
     prob_dict = dict()
     prepped_text = wrap_question(text)
     for size in sizes:
         json = call_gpt3(prepped_text, size)
-        positive_prob = json_to_positive_prob(json)
+        positive_prob = json_to_loss(json, answer)
         prob_dict[size] = positive_prob
     return prob_dict
 
 
 def evaluate_gpt3_texts(
-    texts: str, sizes: list[GPT3Size]
+    text_answer_pairs: list[tuple[str, str]], sizes: list[GPT3Size]
 ) -> dict[str, dict[str, float]]:
     logging.info("CALLED GPT3")
     all_prob_dicts = dict()
-    for text in texts:
-        all_prob_dicts[text] = evaluate_gpt3_text(text, sizes)
+    for text, answer in text_answer_pairs:
+        all_prob_dicts[text] = evaluate_gpt3_text(text, answer, sizes)
     return all_prob_dicts
 
 
