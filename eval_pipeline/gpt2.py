@@ -3,7 +3,6 @@ Uses the HuggingFace implementations of GPT-2.
 Currently uses CPU because speed is not yet a concern.
 """
 from __future__ import annotations
-from collections import defaultdict
 from typing_extensions import Literal
 from transformers import GPT2LMHeadModel, GPT2TokenizerFast
 import torch
