@@ -44,6 +44,7 @@ def plot_probs(prob_dicts: dict[str, dict[str, float]]) -> None:
     plt.xscale("log")
     plt.xticks(ticks, labels, rotation=90)
     plt.legend()
+    plt.savefig("fig.png")
     plt.show()
 
 
