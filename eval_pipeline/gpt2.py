@@ -3,11 +3,13 @@ Uses the HuggingFace implementations of GPT-2.
 Currently uses CPU because speed is not yet a concern.
 """
 from __future__ import annotations
+from typing import Optional
 from typing_extensions import Literal
-from transformers import GPT2LMHeadModel, GPT2TokenizerFast
+from transformers import GPT2LMHeadModel, GPT2TokenizerFast  # type: ignore
 import torch
+import torch.nn.functional as F
 from pprint import pprint
-from eval_pipeline.utils import wrap_question
+from eval_pipeline.utils import YAxis, wrap_question
 import logging
 
 
@@ -17,10 +19,14 @@ GPT2Size = Literal["gpt2", "gpt2-medium", "gpt2-large", "gpt2-xl"]
 class GPT2Wrapper:
     token_pairs = [("ĠYes", "ĠNo")]
 
-    def __init__(self, size: GPT2Size) -> None:
+    def __init__(
+        self, size: GPT2Size, possible_answers: Optional[tuple[str, str]]
+    ) -> None:
         self.model = GPT2LMHeadModel.from_pretrained(size)
         self.tokenizer = GPT2TokenizerFast.from_pretrained("gpt2")
         self.id2token = {i: t for t, i in self.tokenizer.vocab.items()}
+        if possible_answers is not None:
+            self.token_pairs = [possible_answers]
 
     def get_positive_prob(self, text: str) -> float:
         """Return the probability that the answer to the question is in the affirmative.
@@ -31,7 +37,7 @@ class GPT2Wrapper:
         positive_token, negative_token = self.token_pairs[0]
         positive_logit = logits[positive_token]
         negative_logit = logits[negative_token]
-        positive_prob, negative_prob = torch.nn.functional.softmax(
+        positive_prob, negative_prob = F.softmax(
             torch.Tensor([positive_logit, negative_logit]), dim=-1
         )
         return positive_prob.item()
@@ -40,7 +46,7 @@ class GPT2Wrapper:
         logits = self.get_logits(text)
         # get the token id of the answer token
         answer_id = self.tokenizer(answer)["input_ids"][0]
-        logprobs = torch.nn.functional.log_softmax(logits)
+        logprobs = F.log_softmax(logits, dim=-1)
         logprob = logprobs[answer_id]
         return -logprob.item()
 
@@ -57,43 +63,24 @@ class GPT2Wrapper:
 
 
 def evaluate_gpt2_texts(
-    text_answer_pairs: list[tuple[str ,str]], sizes: list[GPT2Size]
+    text_answer_pairs: list[tuple[str, str]],
+    sizes: tuple[GPT2Size, ...],
+    y_axis: YAxis,
+    possible_answers: Optional[tuple[str, str]] = None,
 ) -> dict[str, dict[str, float]]:
     logging.info("CALLED GPT2")
-    model_dict = {size: GPT2Wrapper(size) for size in sizes}
-    all_prob_dicts = dict()
+    model_dict = {size: GPT2Wrapper(size, possible_answers) for size in sizes}
+    all_return_dicts = dict()
 
     for text, answer in text_answer_pairs:
         # for now, just using yes/no questions
         prepped_text = wrap_question(text)
-        prob_dict = dict()
+        return_dict = dict()
         for size, model in model_dict.items():
-            # prob = model.get_positive_prob(prepped_text)
-            prob = model.get_loss(prepped_text, answer)
-            prob_dict[size] = prob
-        all_prob_dicts[text] = prob_dict
-    return all_prob_dicts
-
-
-def main():
-    # model = GPT2Wrapper('gpt2-medium')
-    # text = "Answer the following question with Yes or No:\nIs the earth round?\nAnswer:"
-    # text = "Is the earth round?\nAnswer:"
-    # print("Round", model.get_positive_prob(text))
-    # text = "Answer the following question with Yes or No:\nIs the earth flat?\nAnswer:"
-    # text = "Is the earth flat?\nAnswer:"
-    # print("Flat", model.get_positive_prob(text))
-    sizes = ["gpt2", "gpt2-medium", "gpt2-large"]
-    texts = [
-        "Are bananas blue?",
-        "Are bananas yellow?",
-    ]
-    # texts = [
-    #     "You just won on the roulette wheel. Should you play again?",
-    #     "You just lost on the roulette wheel. Should you play again?",
-    # ]
-    pprint(evaluate_gpt2_texts(texts, sizes))
-
-
-if __name__ == "__main__":
-    main()
+            if y_axis == "positive_prob":
+                value = model.get_positive_prob(prepped_text)
+            elif y_axis == "loss":
+                value = model.get_loss(prepped_text, answer)
+            return_dict[size] = value
+        all_return_dicts[text] = return_dict
+    return all_return_dicts

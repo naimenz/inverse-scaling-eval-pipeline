@@ -4,8 +4,9 @@ API key is kept in a .env file for privacy.
 """
 from __future__ import annotations
 from collections import defaultdict
+from typing import Optional
 from typing_extensions import Literal
-from eval_pipeline.utils import wrap_question
+from eval_pipeline.utils import YAxis, wrap_question
 import requests
 import os
 from dotenv import load_dotenv
@@ -63,7 +64,7 @@ def json_to_positive_prob(
 
 def json_to_loss(
     json: dict,
-    answer: str,
+    answer: Optional[str],
 ) -> float:
     logprobs = json["choices"][0]["logprobs"]["top_logprobs"][0]
     logprob = logprobs.get(answer)
@@ -73,29 +74,32 @@ def json_to_loss(
 
 
 def evaluate_gpt3_text(
-    text: str, answer: str, sizes: list[GPT3Size]
+    text: str,
+    sizes: tuple[GPT3Size, ...],
+    y_axis: YAxis,
+    answer: Optional[str],
+    possible_answers: Optional[tuple[str, str]],
 ) -> dict[str, float]:
     prob_dict = dict()
     prepped_text = wrap_question(text)
     for size in sizes:
         json = call_gpt3(prepped_text, size)
-        positive_prob = json_to_loss(json, answer)
-        prob_dict[size] = positive_prob
+        if y_axis == "positive_prob":
+            value = json_to_positive_prob(json)
+        elif y_axis == "loss":
+            value = json_to_loss(json, answer)
+        prob_dict[size] = value
     return prob_dict
 
 
 def evaluate_gpt3_texts(
-    text_answer_pairs: list[tuple[str, str]], sizes: list[GPT3Size]
+    text_answer_pairs: list[tuple[str, str]],
+    sizes: tuple[GPT3Size, ...],
+    y_axis: YAxis,
+    possible_answers: Optional[tuple[str, str]] = None,
 ) -> dict[str, dict[str, float]]:
     logging.info("CALLED GPT3")
     all_prob_dicts = dict()
     for text, answer in text_answer_pairs:
-        all_prob_dicts[text] = evaluate_gpt3_text(text, answer, sizes)
+        all_prob_dicts[text] = evaluate_gpt3_text(text, sizes, y_axis, answer, possible_answers)
     return all_prob_dicts
-
-
-if __name__ == "__main__":
-    positive_token = " Yes"
-    negative_token = " No"
-    texts = ["Are bananas blue?", "Are bananas yellow?"]
-    pprint(evaluate_gpt3_texts(texts, ["ada", "babbage"]))

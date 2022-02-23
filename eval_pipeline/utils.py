@@ -3,6 +3,10 @@
 # Q: Are bananas yellow?
 # A: Yes
 
+from typing_extensions import Literal
+
+YAxis = Literal["positive_prob", "loss"]
+
 size_dict = {
     "gpt2": 124_000_000,
     "gpt2-medium": 355_000_000,
