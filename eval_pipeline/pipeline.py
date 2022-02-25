@@ -1,5 +1,8 @@
 from __future__ import annotations
+from pathlib import Path
 from typing import Optional
+
+import pandas as pd
 from eval_pipeline.gpt2 import evaluate_gpt2_texts, GPT2Size
 from eval_pipeline.gpt3 import evaluate_gpt3_texts, GPT3Size
 from eval_pipeline.utils import YAxis, size_dict
@@ -17,15 +20,15 @@ def evaluate_texts(
     possible_answers: Optional[tuple[str, str]] = None,
 ) -> dict[str, dict[str, float]]:
 
-    gpt2_dict = evaluate_gpt2_texts(texts, gpt2_sizes, y_axis, possible_answers)
-    gpt3_dict = evaluate_gpt3_texts(texts, gpt3_sizes, y_axis, possible_answers)
+    # gpt2_dict = evaluate_gpt2_texts(texts, gpt2_sizes, y_axis, possible_answers)
+    # gpt3_dict = evaluate_gpt3_texts(texts, gpt3_sizes, y_axis, possible_answers)
     # TODO: get multithreading working properly
-    # with ThreadPoolExecutor(max_workers=2) as executor:
-    #     gpt2_dict = executor.submit(evaluate_gpt2_texts, texts, gpt2_sizes)
-    #     gpt3_dict = executor.submit(evaluate_gpt3_texts, texts, gpt3_sizes)
+    with ThreadPoolExecutor(max_workers=2) as executor:
+        gpt2_dict = executor.submit(evaluate_gpt2_texts, texts, gpt2_sizes, y_axis, possible_answers)
+        gpt3_dict = executor.submit(evaluate_gpt3_texts, texts, gpt3_sizes, y_axis, possible_answers)
     # combined_dict = {**gpt2_dict.result(), **gpt3_dict.result()}
     combined_dict = {
-        text: {**gpt2_dict[text], **gpt3_dict[text]} for text in gpt2_dict.keys()
+        text: {**gpt2_dict.result()[text], **gpt3_dict.result()[text]} for text in gpt2_dict.result().keys()
     }
     return combined_dict
 
@@ -53,11 +56,14 @@ def main():
     ]
     possible_answers = (" Yes", " No")
     import json
+    data_path = Path("/home/ian/code/lm_internship/eval-pipeline/data/syllogism")
+    text_df = pd.read_csv(Path(data_path, "filled_templates.csv"))
 
-    positive_prob_dict = evaluate_texts(text_answer_pairs, "positive_prob")
-    json.dump(positive_prob_dict, open("cache.json", "w"))
-    positive_prob_dict = json.load(open("cache.json"))
-    plot_probs(positive_prob_dict)
+    results_dict = evaluate_texts(text_answer_pairs, "loss")
+    json.dump(results_dict, open("cache.json", "w"))
+    results_dict = json.load(open("cache.json"))
+    pprint(results_dict)
+    plot_probs(results_dict)
 
 
 if __name__ == "__main__":

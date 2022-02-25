@@ -1,0 +1,5001 @@
+,filled_template
+0,"Q: Is this a valid syllogism?
+All men are ambitious.
+All men study hard.
+Therefore men study hard because they are ambitious.
+A:"
+1,"Q: Is this a valid syllogism?
+All men are friendly.
+All men smile.
+Therefore men smile because they are friendly.
+A:"
+2,"Q: Is this a valid syllogism?
+All men are angry.
+All men frown.
+Therefore men frown because they are angry.
+A:"
+3,"Q: Is this a valid syllogism?
+All men are brave.
+All men face their fears.
+Therefore men face their fears because they are brave.
+A:"
+4,"Q: Is this a valid syllogism?
+All men are scared.
+All men hide.
+Therefore men hide because they are scared.
+A:"
+5,"Q: Is this a valid syllogism?
+All men are smart.
+All men have good ideas.
+Therefore men have good ideas because they are smart.
+A:"
+6,"Q: Is this a valid syllogism?
+All men are lazy.
+All men do nothing.
+Therefore men do nothing because they are lazy.
+A:"
+7,"Q: Is this a valid syllogism?
+All men are busy.
+All men have no time.
+Therefore men have no time because they are busy.
+A:"
+8,"Q: Is this a valid syllogism?
+All men are in a rush.
+All men late.
+Therefore men late because they are in a rush.
+A:"
+9,"Q: Is this a valid syllogism?
+All men are conscientious.
+All men arrive on time.
+Therefore men arrive on time because they are conscientious.
+A:"
+10,"Q: Is this a valid syllogism?
+All women are ambitious.
+All women study hard.
+Therefore women study hard because they are ambitious.
+A:"
+11,"Q: Is this a valid syllogism?
+All women are friendly.
+All women smile.
+Therefore women smile because they are friendly.
+A:"
+12,"Q: Is this a valid syllogism?
+All women are angry.
+All women frown.
+Therefore women frown because they are angry.
+A:"
+13,"Q: Is this a valid syllogism?
+All women are brave.
+All women face their fears.
+Therefore women face their fears because they are brave.
+A:"
+14,"Q: Is this a valid syllogism?
+All women are scared.
+All women hide.
+Therefore women hide because they are scared.
+A:"
+15,"Q: Is this a valid syllogism?
+All women are smart.
+All women have good ideas.
+Therefore women have good ideas because they are smart.
+A:"
+16,"Q: Is this a valid syllogism?
+All women are lazy.
+All women do nothing.
+Therefore women do nothing because they are lazy.
+A:"
+17,"Q: Is this a valid syllogism?
+All women are busy.
+All women have no time.
+Therefore women have no time because they are busy.
+A:"
+18,"Q: Is this a valid syllogism?
+All women are in a rush.
+All women late.
+Therefore women late because they are in a rush.
+A:"
+19,"Q: Is this a valid syllogism?
+All women are conscientious.
+All women arrive on time.
+Therefore women arrive on time because they are conscientious.
+A:"
+20,"Q: Is this a valid syllogism?
+All children are ambitious.
+All children study hard.
+Therefore children study hard because they are ambitious.
+A:"
+21,"Q: Is this a valid syllogism?
+All children are friendly.
+All children smile.
+Therefore children smile because they are friendly.
+A:"
+22,"Q: Is this a valid syllogism?
+All children are angry.
+All children frown.
+Therefore children frown because they are angry.
+A:"
+23,"Q: Is this a valid syllogism?
+All children are brave.
+All children face their fears.
+Therefore children face their fears because they are brave.
+A:"
+24,"Q: Is this a valid syllogism?
+All children are scared.
+All children hide.
+Therefore children hide because they are scared.
+A:"
+25,"Q: Is this a valid syllogism?
+All children are smart.
+All children have good ideas.
+Therefore children have good ideas because they are smart.
+A:"
+26,"Q: Is this a valid syllogism?
+All children are lazy.
+All children do nothing.
+Therefore children do nothing because they are lazy.
+A:"
+27,"Q: Is this a valid syllogism?
+All children are busy.
+All children have no time.
+Therefore children have no time because they are busy.
+A:"
+28,"Q: Is this a valid syllogism?
+All children are in a rush.
+All children late.
+Therefore children late because they are in a rush.
+A:"
+29,"Q: Is this a valid syllogism?
+All children are conscientious.
+All children arrive on time.
+Therefore children arrive on time because they are conscientious.
+A:"
+30,"Q: Is this a valid syllogism?
+All teenagers are ambitious.
+All teenagers study hard.
+Therefore teenagers study hard because they are ambitious.
+A:"
+31,"Q: Is this a valid syllogism?
+All teenagers are friendly.
+All teenagers smile.
+Therefore teenagers smile because they are friendly.
+A:"
+32,"Q: Is this a valid syllogism?
+All teenagers are angry.
+All teenagers frown.
+Therefore teenagers frown because they are angry.
+A:"
+33,"Q: Is this a valid syllogism?
+All teenagers are brave.
+All teenagers face their fears.
+Therefore teenagers face their fears because they are brave.
+A:"
+34,"Q: Is this a valid syllogism?
+All teenagers are scared.
+All teenagers hide.
+Therefore teenagers hide because they are scared.
+A:"
+35,"Q: Is this a valid syllogism?
+All teenagers are smart.
+All teenagers have good ideas.
+Therefore teenagers have good ideas because they are smart.
+A:"
+36,"Q: Is this a valid syllogism?
+All teenagers are lazy.
+All teenagers do nothing.
+Therefore teenagers do nothing because they are lazy.
+A:"
+37,"Q: Is this a valid syllogism?
+All teenagers are busy.
+All teenagers have no time.
+Therefore teenagers have no time because they are busy.
+A:"
+38,"Q: Is this a valid syllogism?
+All teenagers are in a rush.
+All teenagers late.
+Therefore teenagers late because they are in a rush.
+A:"
+39,"Q: Is this a valid syllogism?
+All teenagers are conscientious.
+All teenagers arrive on time.
+Therefore teenagers arrive on time because they are conscientious.
+A:"
+40,"Q: Is this a valid syllogism?
+All adults are ambitious.
+All adults study hard.
+Therefore adults study hard because they are ambitious.
+A:"
+41,"Q: Is this a valid syllogism?
+All adults are friendly.
+All adults smile.
+Therefore adults smile because they are friendly.
+A:"
+42,"Q: Is this a valid syllogism?
+All adults are angry.
+All adults frown.
+Therefore adults frown because they are angry.
+A:"
+43,"Q: Is this a valid syllogism?
+All adults are brave.
+All adults face their fears.
+Therefore adults face their fears because they are brave.
+A:"
+44,"Q: Is this a valid syllogism?
+All adults are scared.
+All adults hide.
+Therefore adults hide because they are scared.
+A:"
+45,"Q: Is this a valid syllogism?
+All adults are smart.
+All adults have good ideas.
+Therefore adults have good ideas because they are smart.
+A:"
+46,"Q: Is this a valid syllogism?
+All adults are lazy.
+All adults do nothing.
+Therefore adults do nothing because they are lazy.
+A:"
+47,"Q: Is this a valid syllogism?
+All adults are busy.
+All adults have no time.
+Therefore adults have no time because they are busy.
+A:"
+48,"Q: Is this a valid syllogism?
+All adults are in a rush.
+All adults late.
+Therefore adults late because they are in a rush.
+A:"
+49,"Q: Is this a valid syllogism?
+All adults are conscientious.
+All adults arrive on time.
+Therefore adults arrive on time because they are conscientious.
+A:"
+50,"Q: Is this a valid syllogism?
+All humans are ambitious.
+All humans study hard.
+Therefore humans study hard because they are ambitious.
+A:"
+51,"Q: Is this a valid syllogism?
+All humans are friendly.
+All humans smile.
+Therefore humans smile because they are friendly.
+A:"
+52,"Q: Is this a valid syllogism?
+All humans are angry.
+All humans frown.
+Therefore humans frown because they are angry.
+A:"
+53,"Q: Is this a valid syllogism?
+All humans are brave.
+All humans face their fears.
+Therefore humans face their fears because they are brave.
+A:"
+54,"Q: Is this a valid syllogism?
+All humans are scared.
+All humans hide.
+Therefore humans hide because they are scared.
+A:"
+55,"Q: Is this a valid syllogism?
+All humans are smart.
+All humans have good ideas.
+Therefore humans have good ideas because they are smart.
+A:"
+56,"Q: Is this a valid syllogism?
+All humans are lazy.
+All humans do nothing.
+Therefore humans do nothing because they are lazy.
+A:"
+57,"Q: Is this a valid syllogism?
+All humans are busy.
+All humans have no time.
+Therefore humans have no time because they are busy.
+A:"
+58,"Q: Is this a valid syllogism?
+All humans are in a rush.
+All humans late.
+Therefore humans late because they are in a rush.
+A:"
+59,"Q: Is this a valid syllogism?
+All humans are conscientious.
+All humans arrive on time.
+Therefore humans arrive on time because they are conscientious.
+A:"
+60,"Q: Is this a valid syllogism?
+All students are ambitious.
+All students study hard.
+Therefore students study hard because they are ambitious.
+A:"
+61,"Q: Is this a valid syllogism?
+All students are friendly.
+All students smile.
+Therefore students smile because they are friendly.
+A:"
+62,"Q: Is this a valid syllogism?
+All students are angry.
+All students frown.
+Therefore students frown because they are angry.
+A:"
+63,"Q: Is this a valid syllogism?
+All students are brave.
+All students face their fears.
+Therefore students face their fears because they are brave.
+A:"
+64,"Q: Is this a valid syllogism?
+All students are scared.
+All students hide.
+Therefore students hide because they are scared.
+A:"
+65,"Q: Is this a valid syllogism?
+All students are smart.
+All students have good ideas.
+Therefore students have good ideas because they are smart.
+A:"
+66,"Q: Is this a valid syllogism?
+All students are lazy.
+All students do nothing.
+Therefore students do nothing because they are lazy.
+A:"
+67,"Q: Is this a valid syllogism?
+All students are busy.
+All students have no time.
+Therefore students have no time because they are busy.
+A:"
+68,"Q: Is this a valid syllogism?
+All students are in a rush.
+All students late.
+Therefore students late because they are in a rush.
+A:"
+69,"Q: Is this a valid syllogism?
+All students are conscientious.
+All students arrive on time.
+Therefore students arrive on time because they are conscientious.
+A:"
+70,"Q: Is this a valid syllogism?
+All boys are ambitious.
+All boys study hard.
+Therefore boys study hard because they are ambitious.
+A:"
+71,"Q: Is this a valid syllogism?
+All boys are friendly.
+All boys smile.
+Therefore boys smile because they are friendly.
+A:"
+72,"Q: Is this a valid syllogism?
+All boys are angry.
+All boys frown.
+Therefore boys frown because they are angry.
+A:"
+73,"Q: Is this a valid syllogism?
+All boys are brave.
+All boys face their fears.
+Therefore boys face their fears because they are brave.
+A:"
+74,"Q: Is this a valid syllogism?
+All boys are scared.
+All boys hide.
+Therefore boys hide because they are scared.
+A:"
+75,"Q: Is this a valid syllogism?
+All boys are smart.
+All boys have good ideas.
+Therefore boys have good ideas because they are smart.
+A:"
+76,"Q: Is this a valid syllogism?
+All boys are lazy.
+All boys do nothing.
+Therefore boys do nothing because they are lazy.
+A:"
+77,"Q: Is this a valid syllogism?
+All boys are busy.
+All boys have no time.
+Therefore boys have no time because they are busy.
+A:"
+78,"Q: Is this a valid syllogism?
+All boys are in a rush.
+All boys late.
+Therefore boys late because they are in a rush.
+A:"
+79,"Q: Is this a valid syllogism?
+All boys are conscientious.
+All boys arrive on time.
+Therefore boys arrive on time because they are conscientious.
+A:"
+80,"Q: Is this a valid syllogism?
+All girls are ambitious.
+All girls study hard.
+Therefore girls study hard because they are ambitious.
+A:"
+81,"Q: Is this a valid syllogism?
+All girls are friendly.
+All girls smile.
+Therefore girls smile because they are friendly.
+A:"
+82,"Q: Is this a valid syllogism?
+All girls are angry.
+All girls frown.
+Therefore girls frown because they are angry.
+A:"
+83,"Q: Is this a valid syllogism?
+All girls are brave.
+All girls face their fears.
+Therefore girls face their fears because they are brave.
+A:"
+84,"Q: Is this a valid syllogism?
+All girls are scared.
+All girls hide.
+Therefore girls hide because they are scared.
+A:"
+85,"Q: Is this a valid syllogism?
+All girls are smart.
+All girls have good ideas.
+Therefore girls have good ideas because they are smart.
+A:"
+86,"Q: Is this a valid syllogism?
+All girls are lazy.
+All girls do nothing.
+Therefore girls do nothing because they are lazy.
+A:"
+87,"Q: Is this a valid syllogism?
+All girls are busy.
+All girls have no time.
+Therefore girls have no time because they are busy.
+A:"
+88,"Q: Is this a valid syllogism?
+All girls are in a rush.
+All girls late.
+Therefore girls late because they are in a rush.
+A:"
+89,"Q: Is this a valid syllogism?
+All girls are conscientious.
+All girls arrive on time.
+Therefore girls arrive on time because they are conscientious.
+A:"
+90,"Q: Is this a valid syllogism?
+All people are ambitious.
+All people study hard.
+Therefore people study hard because they are ambitious.
+A:"
+91,"Q: Is this a valid syllogism?
+All people are friendly.
+All people smile.
+Therefore people smile because they are friendly.
+A:"
+92,"Q: Is this a valid syllogism?
+All people are angry.
+All people frown.
+Therefore people frown because they are angry.
+A:"
+93,"Q: Is this a valid syllogism?
+All people are brave.
+All people face their fears.
+Therefore people face their fears because they are brave.
+A:"
+94,"Q: Is this a valid syllogism?
+All people are scared.
+All people hide.
+Therefore people hide because they are scared.
+A:"
+95,"Q: Is this a valid syllogism?
+All people are smart.
+All people have good ideas.
+Therefore people have good ideas because they are smart.
+A:"
+96,"Q: Is this a valid syllogism?
+All people are lazy.
+All people do nothing.
+Therefore people do nothing because they are lazy.
+A:"
+97,"Q: Is this a valid syllogism?
+All people are busy.
+All people have no time.
+Therefore people have no time because they are busy.
+A:"
+98,"Q: Is this a valid syllogism?
+All people are in a rush.
+All people late.
+Therefore people late because they are in a rush.
+A:"
+99,"Q: Is this a valid syllogism?
+All people are conscientious.
+All people arrive on time.
+Therefore people arrive on time because they are conscientious.
+A:"
+100,"Q: Is this a valid syllogism?
+All men are ambitious.
+Men study hard.
+Therefore men study hard because they are ambitious.
+A:"
+101,"Q: Is this a valid syllogism?
+All men are friendly.
+Men smile.
+Therefore men smile because they are friendly.
+A:"
+102,"Q: Is this a valid syllogism?
+All men are angry.
+Men frown.
+Therefore men frown because they are angry.
+A:"
+103,"Q: Is this a valid syllogism?
+All men are brave.
+Men face their fears.
+Therefore men face their fears because they are brave.
+A:"
+104,"Q: Is this a valid syllogism?
+All men are scared.
+Men hide.
+Therefore men hide because they are scared.
+A:"
+105,"Q: Is this a valid syllogism?
+All men are smart.
+Men have good ideas.
+Therefore men have good ideas because they are smart.
+A:"
+106,"Q: Is this a valid syllogism?
+All men are lazy.
+Men do nothing.
+Therefore men do nothing because they are lazy.
+A:"
+107,"Q: Is this a valid syllogism?
+All men are busy.
+Men have no time.
+Therefore men have no time because they are busy.
+A:"
+108,"Q: Is this a valid syllogism?
+All men are in a rush.
+Men late.
+Therefore men late because they are in a rush.
+A:"
+109,"Q: Is this a valid syllogism?
+All men are conscientious.
+Men arrive on time.
+Therefore men arrive on time because they are conscientious.
+A:"
+110,"Q: Is this a valid syllogism?
+All women are ambitious.
+Women study hard.
+Therefore women study hard because they are ambitious.
+A:"
+111,"Q: Is this a valid syllogism?
+All women are friendly.
+Women smile.
+Therefore women smile because they are friendly.
+A:"
+112,"Q: Is this a valid syllogism?
+All women are angry.
+Women frown.
+Therefore women frown because they are angry.
+A:"
+113,"Q: Is this a valid syllogism?
+All women are brave.
+Women face their fears.
+Therefore women face their fears because they are brave.
+A:"
+114,"Q: Is this a valid syllogism?
+All women are scared.
+Women hide.
+Therefore women hide because they are scared.
+A:"
+115,"Q: Is this a valid syllogism?
+All women are smart.
+Women have good ideas.
+Therefore women have good ideas because they are smart.
+A:"
+116,"Q: Is this a valid syllogism?
+All women are lazy.
+Women do nothing.
+Therefore women do nothing because they are lazy.
+A:"
+117,"Q: Is this a valid syllogism?
+All women are busy.
+Women have no time.
+Therefore women have no time because they are busy.
+A:"
+118,"Q: Is this a valid syllogism?
+All women are in a rush.
+Women late.
+Therefore women late because they are in a rush.
+A:"
+119,"Q: Is this a valid syllogism?
+All women are conscientious.
+Women arrive on time.
+Therefore women arrive on time because they are conscientious.
+A:"
+120,"Q: Is this a valid syllogism?
+All children are ambitious.
+Children study hard.
+Therefore children study hard because they are ambitious.
+A:"
+121,"Q: Is this a valid syllogism?
+All children are friendly.
+Children smile.
+Therefore children smile because they are friendly.
+A:"
+122,"Q: Is this a valid syllogism?
+All children are angry.
+Children frown.
+Therefore children frown because they are angry.
+A:"
+123,"Q: Is this a valid syllogism?
+All children are brave.
+Children face their fears.
+Therefore children face their fears because they are brave.
+A:"
+124,"Q: Is this a valid syllogism?
+All children are scared.
+Children hide.
+Therefore children hide because they are scared.
+A:"
+125,"Q: Is this a valid syllogism?
+All children are smart.
+Children have good ideas.
+Therefore children have good ideas because they are smart.
+A:"
+126,"Q: Is this a valid syllogism?
+All children are lazy.
+Children do nothing.
+Therefore children do nothing because they are lazy.
+A:"
+127,"Q: Is this a valid syllogism?
+All children are busy.
+Children have no time.
+Therefore children have no time because they are busy.
+A:"
+128,"Q: Is this a valid syllogism?
+All children are in a rush.
+Children late.
+Therefore children late because they are in a rush.
+A:"
+129,"Q: Is this a valid syllogism?
+All children are conscientious.
+Children arrive on time.
+Therefore children arrive on time because they are conscientious.
+A:"
+130,"Q: Is this a valid syllogism?
+All teenagers are ambitious.
+Teenagers study hard.
+Therefore teenagers study hard because they are ambitious.
+A:"
+131,"Q: Is this a valid syllogism?
+All teenagers are friendly.
+Teenagers smile.
+Therefore teenagers smile because they are friendly.
+A:"
+132,"Q: Is this a valid syllogism?
+All teenagers are angry.
+Teenagers frown.
+Therefore teenagers frown because they are angry.
+A:"
+133,"Q: Is this a valid syllogism?
+All teenagers are brave.
+Teenagers face their fears.
+Therefore teenagers face their fears because they are brave.
+A:"
+134,"Q: Is this a valid syllogism?
+All teenagers are scared.
+Teenagers hide.
+Therefore teenagers hide because they are scared.
+A:"
+135,"Q: Is this a valid syllogism?
+All teenagers are smart.
+Teenagers have good ideas.
+Therefore teenagers have good ideas because they are smart.
+A:"
+136,"Q: Is this a valid syllogism?
+All teenagers are lazy.
+Teenagers do nothing.
+Therefore teenagers do nothing because they are lazy.
+A:"
+137,"Q: Is this a valid syllogism?
+All teenagers are busy.
+Teenagers have no time.
+Therefore teenagers have no time because they are busy.
+A:"
+138,"Q: Is this a valid syllogism?
+All teenagers are in a rush.
+Teenagers late.
+Therefore teenagers late because they are in a rush.
+A:"
+139,"Q: Is this a valid syllogism?
+All teenagers are conscientious.
+Teenagers arrive on time.
+Therefore teenagers arrive on time because they are conscientious.
+A:"
+140,"Q: Is this a valid syllogism?
+All adults are ambitious.
+Adults study hard.
+Therefore adults study hard because they are ambitious.
+A:"
+141,"Q: Is this a valid syllogism?
+All adults are friendly.
+Adults smile.
+Therefore adults smile because they are friendly.
+A:"
+142,"Q: Is this a valid syllogism?
+All adults are angry.
+Adults frown.
+Therefore adults frown because they are angry.
+A:"
+143,"Q: Is this a valid syllogism?
+All adults are brave.
+Adults face their fears.
+Therefore adults face their fears because they are brave.
+A:"
+144,"Q: Is this a valid syllogism?
+All adults are scared.
+Adults hide.
+Therefore adults hide because they are scared.
+A:"
+145,"Q: Is this a valid syllogism?
+All adults are smart.
+Adults have good ideas.
+Therefore adults have good ideas because they are smart.
+A:"
+146,"Q: Is this a valid syllogism?
+All adults are lazy.
+Adults do nothing.
+Therefore adults do nothing because they are lazy.
+A:"
+147,"Q: Is this a valid syllogism?
+All adults are busy.
+Adults have no time.
+Therefore adults have no time because they are busy.
+A:"
+148,"Q: Is this a valid syllogism?
+All adults are in a rush.
+Adults late.
+Therefore adults late because they are in a rush.
+A:"
+149,"Q: Is this a valid syllogism?
+All adults are conscientious.
+Adults arrive on time.
+Therefore adults arrive on time because they are conscientious.
+A:"
+150,"Q: Is this a valid syllogism?
+All humans are ambitious.
+Humans study hard.
+Therefore humans study hard because they are ambitious.
+A:"
+151,"Q: Is this a valid syllogism?
+All humans are friendly.
+Humans smile.
+Therefore humans smile because they are friendly.
+A:"
+152,"Q: Is this a valid syllogism?
+All humans are angry.
+Humans frown.
+Therefore humans frown because they are angry.
+A:"
+153,"Q: Is this a valid syllogism?
+All humans are brave.
+Humans face their fears.
+Therefore humans face their fears because they are brave.
+A:"
+154,"Q: Is this a valid syllogism?
+All humans are scared.
+Humans hide.
+Therefore humans hide because they are scared.
+A:"
+155,"Q: Is this a valid syllogism?
+All humans are smart.
+Humans have good ideas.
+Therefore humans have good ideas because they are smart.
+A:"
+156,"Q: Is this a valid syllogism?
+All humans are lazy.
+Humans do nothing.
+Therefore humans do nothing because they are lazy.
+A:"
+157,"Q: Is this a valid syllogism?
+All humans are busy.
+Humans have no time.
+Therefore humans have no time because they are busy.
+A:"
+158,"Q: Is this a valid syllogism?
+All humans are in a rush.
+Humans late.
+Therefore humans late because they are in a rush.
+A:"
+159,"Q: Is this a valid syllogism?
+All humans are conscientious.
+Humans arrive on time.
+Therefore humans arrive on time because they are conscientious.
+A:"
+160,"Q: Is this a valid syllogism?
+All students are ambitious.
+Students study hard.
+Therefore students study hard because they are ambitious.
+A:"
+161,"Q: Is this a valid syllogism?
+All students are friendly.
+Students smile.
+Therefore students smile because they are friendly.
+A:"
+162,"Q: Is this a valid syllogism?
+All students are angry.
+Students frown.
+Therefore students frown because they are angry.
+A:"
+163,"Q: Is this a valid syllogism?
+All students are brave.
+Students face their fears.
+Therefore students face their fears because they are brave.
+A:"
+164,"Q: Is this a valid syllogism?
+All students are scared.
+Students hide.
+Therefore students hide because they are scared.
+A:"
+165,"Q: Is this a valid syllogism?
+All students are smart.
+Students have good ideas.
+Therefore students have good ideas because they are smart.
+A:"
+166,"Q: Is this a valid syllogism?
+All students are lazy.
+Students do nothing.
+Therefore students do nothing because they are lazy.
+A:"
+167,"Q: Is this a valid syllogism?
+All students are busy.
+Students have no time.
+Therefore students have no time because they are busy.
+A:"
+168,"Q: Is this a valid syllogism?
+All students are in a rush.
+Students late.
+Therefore students late because they are in a rush.
+A:"
+169,"Q: Is this a valid syllogism?
+All students are conscientious.
+Students arrive on time.
+Therefore students arrive on time because they are conscientious.
+A:"
+170,"Q: Is this a valid syllogism?
+All boys are ambitious.
+Boys study hard.
+Therefore boys study hard because they are ambitious.
+A:"
+171,"Q: Is this a valid syllogism?
+All boys are friendly.
+Boys smile.
+Therefore boys smile because they are friendly.
+A:"
+172,"Q: Is this a valid syllogism?
+All boys are angry.
+Boys frown.
+Therefore boys frown because they are angry.
+A:"
+173,"Q: Is this a valid syllogism?
+All boys are brave.
+Boys face their fears.
+Therefore boys face their fears because they are brave.
+A:"
+174,"Q: Is this a valid syllogism?
+All boys are scared.
+Boys hide.
+Therefore boys hide because they are scared.
+A:"
+175,"Q: Is this a valid syllogism?
+All boys are smart.
+Boys have good ideas.
+Therefore boys have good ideas because they are smart.
+A:"
+176,"Q: Is this a valid syllogism?
+All boys are lazy.
+Boys do nothing.
+Therefore boys do nothing because they are lazy.
+A:"
+177,"Q: Is this a valid syllogism?
+All boys are busy.
+Boys have no time.
+Therefore boys have no time because they are busy.
+A:"
+178,"Q: Is this a valid syllogism?
+All boys are in a rush.
+Boys late.
+Therefore boys late because they are in a rush.
+A:"
+179,"Q: Is this a valid syllogism?
+All boys are conscientious.
+Boys arrive on time.
+Therefore boys arrive on time because they are conscientious.
+A:"
+180,"Q: Is this a valid syllogism?
+All girls are ambitious.
+Girls study hard.
+Therefore girls study hard because they are ambitious.
+A:"
+181,"Q: Is this a valid syllogism?
+All girls are friendly.
+Girls smile.
+Therefore girls smile because they are friendly.
+A:"
+182,"Q: Is this a valid syllogism?
+All girls are angry.
+Girls frown.
+Therefore girls frown because they are angry.
+A:"
+183,"Q: Is this a valid syllogism?
+All girls are brave.
+Girls face their fears.
+Therefore girls face their fears because they are brave.
+A:"
+184,"Q: Is this a valid syllogism?
+All girls are scared.
+Girls hide.
+Therefore girls hide because they are scared.
+A:"
+185,"Q: Is this a valid syllogism?
+All girls are smart.
+Girls have good ideas.
+Therefore girls have good ideas because they are smart.
+A:"
+186,"Q: Is this a valid syllogism?
+All girls are lazy.
+Girls do nothing.
+Therefore girls do nothing because they are lazy.
+A:"
+187,"Q: Is this a valid syllogism?
+All girls are busy.
+Girls have no time.
+Therefore girls have no time because they are busy.
+A:"
+188,"Q: Is this a valid syllogism?
+All girls are in a rush.
+Girls late.
+Therefore girls late because they are in a rush.
+A:"
+189,"Q: Is this a valid syllogism?
+All girls are conscientious.
+Girls arrive on time.
+Therefore girls arrive on time because they are conscientious.
+A:"
+190,"Q: Is this a valid syllogism?
+All people are ambitious.
+People study hard.
+Therefore people study hard because they are ambitious.
+A:"
+191,"Q: Is this a valid syllogism?
+All people are friendly.
+People smile.
+Therefore people smile because they are friendly.
+A:"
+192,"Q: Is this a valid syllogism?
+All people are angry.
+People frown.
+Therefore people frown because they are angry.
+A:"
+193,"Q: Is this a valid syllogism?
+All people are brave.
+People face their fears.
+Therefore people face their fears because they are brave.
+A:"
+194,"Q: Is this a valid syllogism?
+All people are scared.
+People hide.
+Therefore people hide because they are scared.
+A:"
+195,"Q: Is this a valid syllogism?
+All people are smart.
+People have good ideas.
+Therefore people have good ideas because they are smart.
+A:"
+196,"Q: Is this a valid syllogism?
+All people are lazy.
+People do nothing.
+Therefore people do nothing because they are lazy.
+A:"
+197,"Q: Is this a valid syllogism?
+All people are busy.
+People have no time.
+Therefore people have no time because they are busy.
+A:"
+198,"Q: Is this a valid syllogism?
+All people are in a rush.
+People late.
+Therefore people late because they are in a rush.
+A:"
+199,"Q: Is this a valid syllogism?
+All people are conscientious.
+People arrive on time.
+Therefore people arrive on time because they are conscientious.
+A:"
+200,"Q: Is this syllogism valid?
+All men are ambitious.
+All men study hard.
+Therefore men study hard because they are ambitious.
+A:"
+201,"Q: Is this syllogism valid?
+All men are friendly.
+All men smile.
+Therefore men smile because they are friendly.
+A:"
+202,"Q: Is this syllogism valid?
+All men are angry.
+All men frown.
+Therefore men frown because they are angry.
+A:"
+203,"Q: Is this syllogism valid?
+All men are brave.
+All men face their fears.
+Therefore men face their fears because they are brave.
+A:"
+204,"Q: Is this syllogism valid?
+All men are scared.
+All men hide.
+Therefore men hide because they are scared.
+A:"
+205,"Q: Is this syllogism valid?
+All men are smart.
+All men have good ideas.
+Therefore men have good ideas because they are smart.
+A:"
+206,"Q: Is this syllogism valid?
+All men are lazy.
+All men do nothing.
+Therefore men do nothing because they are lazy.
+A:"
+207,"Q: Is this syllogism valid?
+All men are busy.
+All men have no time.
+Therefore men have no time because they are busy.
+A:"
+208,"Q: Is this syllogism valid?
+All men are in a rush.
+All men late.
+Therefore men late because they are in a rush.
+A:"
+209,"Q: Is this syllogism valid?
+All men are conscientious.
+All men arrive on time.
+Therefore men arrive on time because they are conscientious.
+A:"
+210,"Q: Is this syllogism valid?
+All women are ambitious.
+All women study hard.
+Therefore women study hard because they are ambitious.
+A:"
+211,"Q: Is this syllogism valid?
+All women are friendly.
+All women smile.
+Therefore women smile because they are friendly.
+A:"
+212,"Q: Is this syllogism valid?
+All women are angry.
+All women frown.
+Therefore women frown because they are angry.
+A:"
+213,"Q: Is this syllogism valid?
+All women are brave.
+All women face their fears.
+Therefore women face their fears because they are brave.
+A:"
+214,"Q: Is this syllogism valid?
+All women are scared.
+All women hide.
+Therefore women hide because they are scared.
+A:"
+215,"Q: Is this syllogism valid?
+All women are smart.
+All women have good ideas.
+Therefore women have good ideas because they are smart.
+A:"
+216,"Q: Is this syllogism valid?
+All women are lazy.
+All women do nothing.
+Therefore women do nothing because they are lazy.
+A:"
+217,"Q: Is this syllogism valid?
+All women are busy.
+All women have no time.
+Therefore women have no time because they are busy.
+A:"
+218,"Q: Is this syllogism valid?
+All women are in a rush.
+All women late.
+Therefore women late because they are in a rush.
+A:"
+219,"Q: Is this syllogism valid?
+All women are conscientious.
+All women arrive on time.
+Therefore women arrive on time because they are conscientious.
+A:"
+220,"Q: Is this syllogism valid?
+All children are ambitious.
+All children study hard.
+Therefore children study hard because they are ambitious.
+A:"
+221,"Q: Is this syllogism valid?
+All children are friendly.
+All children smile.
+Therefore children smile because they are friendly.
+A:"
+222,"Q: Is this syllogism valid?
+All children are angry.
+All children frown.
+Therefore children frown because they are angry.
+A:"
+223,"Q: Is this syllogism valid?
+All children are brave.
+All children face their fears.
+Therefore children face their fears because they are brave.
+A:"
+224,"Q: Is this syllogism valid?
+All children are scared.
+All children hide.
+Therefore children hide because they are scared.
+A:"
+225,"Q: Is this syllogism valid?
+All children are smart.
+All children have good ideas.
+Therefore children have good ideas because they are smart.
+A:"
+226,"Q: Is this syllogism valid?
+All children are lazy.
+All children do nothing.
+Therefore children do nothing because they are lazy.
+A:"
+227,"Q: Is this syllogism valid?
+All children are busy.
+All children have no time.
+Therefore children have no time because they are busy.
+A:"
+228,"Q: Is this syllogism valid?
+All children are in a rush.
+All children late.
+Therefore children late because they are in a rush.
+A:"
+229,"Q: Is this syllogism valid?
+All children are conscientious.
+All children arrive on time.
+Therefore children arrive on time because they are conscientious.
+A:"
+230,"Q: Is this syllogism valid?
+All teenagers are ambitious.
+All teenagers study hard.
+Therefore teenagers study hard because they are ambitious.
+A:"
+231,"Q: Is this syllogism valid?
+All teenagers are friendly.
+All teenagers smile.
+Therefore teenagers smile because they are friendly.
+A:"
+232,"Q: Is this syllogism valid?
+All teenagers are angry.
+All teenagers frown.
+Therefore teenagers frown because they are angry.
+A:"
+233,"Q: Is this syllogism valid?
+All teenagers are brave.
+All teenagers face their fears.
+Therefore teenagers face their fears because they are brave.
+A:"
+234,"Q: Is this syllogism valid?
+All teenagers are scared.
+All teenagers hide.
+Therefore teenagers hide because they are scared.
+A:"
+235,"Q: Is this syllogism valid?
+All teenagers are smart.
+All teenagers have good ideas.
+Therefore teenagers have good ideas because they are smart.
+A:"
+236,"Q: Is this syllogism valid?
+All teenagers are lazy.
+All teenagers do nothing.
+Therefore teenagers do nothing because they are lazy.
+A:"
+237,"Q: Is this syllogism valid?
+All teenagers are busy.
+All teenagers have no time.
+Therefore teenagers have no time because they are busy.
+A:"
+238,"Q: Is this syllogism valid?
+All teenagers are in a rush.
+All teenagers late.
+Therefore teenagers late because they are in a rush.
+A:"
+239,"Q: Is this syllogism valid?
+All teenagers are conscientious.
+All teenagers arrive on time.
+Therefore teenagers arrive on time because they are conscientious.
+A:"
+240,"Q: Is this syllogism valid?
+All adults are ambitious.
+All adults study hard.
+Therefore adults study hard because they are ambitious.
+A:"
+241,"Q: Is this syllogism valid?
+All adults are friendly.
+All adults smile.
+Therefore adults smile because they are friendly.
+A:"
+242,"Q: Is this syllogism valid?
+All adults are angry.
+All adults frown.
+Therefore adults frown because they are angry.
+A:"
+243,"Q: Is this syllogism valid?
+All adults are brave.
+All adults face their fears.
+Therefore adults face their fears because they are brave.
+A:"
+244,"Q: Is this syllogism valid?
+All adults are scared.
+All adults hide.
+Therefore adults hide because they are scared.
+A:"
+245,"Q: Is this syllogism valid?
+All adults are smart.
+All adults have good ideas.
+Therefore adults have good ideas because they are smart.
+A:"
+246,"Q: Is this syllogism valid?
+All adults are lazy.
+All adults do nothing.
+Therefore adults do nothing because they are lazy.
+A:"
+247,"Q: Is this syllogism valid?
+All adults are busy.
+All adults have no time.
+Therefore adults have no time because they are busy.
+A:"
+248,"Q: Is this syllogism valid?
+All adults are in a rush.
+All adults late.
+Therefore adults late because they are in a rush.
+A:"
+249,"Q: Is this syllogism valid?
+All adults are conscientious.
+All adults arrive on time.
+Therefore adults arrive on time because they are conscientious.
+A:"
+250,"Q: Is this syllogism valid?
+All humans are ambitious.
+All humans study hard.
+Therefore humans study hard because they are ambitious.
+A:"
+251,"Q: Is this syllogism valid?
+All humans are friendly.
+All humans smile.
+Therefore humans smile because they are friendly.
+A:"
+252,"Q: Is this syllogism valid?
+All humans are angry.
+All humans frown.
+Therefore humans frown because they are angry.
+A:"
+253,"Q: Is this syllogism valid?
+All humans are brave.
+All humans face their fears.
+Therefore humans face their fears because they are brave.
+A:"
+254,"Q: Is this syllogism valid?
+All humans are scared.
+All humans hide.
+Therefore humans hide because they are scared.
+A:"
+255,"Q: Is this syllogism valid?
+All humans are smart.
+All humans have good ideas.
+Therefore humans have good ideas because they are smart.
+A:"
+256,"Q: Is this syllogism valid?
+All humans are lazy.
+All humans do nothing.
+Therefore humans do nothing because they are lazy.
+A:"
+257,"Q: Is this syllogism valid?
+All humans are busy.
+All humans have no time.
+Therefore humans have no time because they are busy.
+A:"
+258,"Q: Is this syllogism valid?
+All humans are in a rush.
+All humans late.
+Therefore humans late because they are in a rush.
+A:"
+259,"Q: Is this syllogism valid?
+All humans are conscientious.
+All humans arrive on time.
+Therefore humans arrive on time because they are conscientious.
+A:"
+260,"Q: Is this syllogism valid?
+All students are ambitious.
+All students study hard.
+Therefore students study hard because they are ambitious.
+A:"
+261,"Q: Is this syllogism valid?
+All students are friendly.
+All students smile.
+Therefore students smile because they are friendly.
+A:"
+262,"Q: Is this syllogism valid?
+All students are angry.
+All students frown.
+Therefore students frown because they are angry.
+A:"
+263,"Q: Is this syllogism valid?
+All students are brave.
+All students face their fears.
+Therefore students face their fears because they are brave.
+A:"
+264,"Q: Is this syllogism valid?
+All students are scared.
+All students hide.
+Therefore students hide because they are scared.
+A:"
+265,"Q: Is this syllogism valid?
+All students are smart.
+All students have good ideas.
+Therefore students have good ideas because they are smart.
+A:"
+266,"Q: Is this syllogism valid?
+All students are lazy.
+All students do nothing.
+Therefore students do nothing because they are lazy.
+A:"
+267,"Q: Is this syllogism valid?
+All students are busy.
+All students have no time.
+Therefore students have no time because they are busy.
+A:"
+268,"Q: Is this syllogism valid?
+All students are in a rush.
+All students late.
+Therefore students late because they are in a rush.
+A:"
+269,"Q: Is this syllogism valid?
+All students are conscientious.
+All students arrive on time.
+Therefore students arrive on time because they are conscientious.
+A:"
+270,"Q: Is this syllogism valid?
+All boys are ambitious.
+All boys study hard.
+Therefore boys study hard because they are ambitious.
+A:"
+271,"Q: Is this syllogism valid?
+All boys are friendly.
+All boys smile.
+Therefore boys smile because they are friendly.
+A:"
+272,"Q: Is this syllogism valid?
+All boys are angry.
+All boys frown.
+Therefore boys frown because they are angry.
+A:"
+273,"Q: Is this syllogism valid?
+All boys are brave.
+All boys face their fears.
+Therefore boys face their fears because they are brave.
+A:"
+274,"Q: Is this syllogism valid?
+All boys are scared.
+All boys hide.
+Therefore boys hide because they are scared.
+A:"
+275,"Q: Is this syllogism valid?
+All boys are smart.
+All boys have good ideas.
+Therefore boys have good ideas because they are smart.
+A:"
+276,"Q: Is this syllogism valid?
+All boys are lazy.
+All boys do nothing.
+Therefore boys do nothing because they are lazy.
+A:"
+277,"Q: Is this syllogism valid?
+All boys are busy.
+All boys have no time.
+Therefore boys have no time because they are busy.
+A:"
+278,"Q: Is this syllogism valid?
+All boys are in a rush.
+All boys late.
+Therefore boys late because they are in a rush.
+A:"
+279,"Q: Is this syllogism valid?
+All boys are conscientious.
+All boys arrive on time.
+Therefore boys arrive on time because they are conscientious.
+A:"
+280,"Q: Is this syllogism valid?
+All girls are ambitious.
+All girls study hard.
+Therefore girls study hard because they are ambitious.
+A:"
+281,"Q: Is this syllogism valid?
+All girls are friendly.
+All girls smile.
+Therefore girls smile because they are friendly.
+A:"
+282,"Q: Is this syllogism valid?
+All girls are angry.
+All girls frown.
+Therefore girls frown because they are angry.
+A:"
+283,"Q: Is this syllogism valid?
+All girls are brave.
+All girls face their fears.
+Therefore girls face their fears because they are brave.
+A:"
+284,"Q: Is this syllogism valid?
+All girls are scared.
+All girls hide.
+Therefore girls hide because they are scared.
+A:"
+285,"Q: Is this syllogism valid?
+All girls are smart.
+All girls have good ideas.
+Therefore girls have good ideas because they are smart.
+A:"
+286,"Q: Is this syllogism valid?
+All girls are lazy.
+All girls do nothing.
+Therefore girls do nothing because they are lazy.
+A:"
+287,"Q: Is this syllogism valid?
+All girls are busy.
+All girls have no time.
+Therefore girls have no time because they are busy.
+A:"
+288,"Q: Is this syllogism valid?
+All girls are in a rush.
+All girls late.
+Therefore girls late because they are in a rush.
+A:"
+289,"Q: Is this syllogism valid?
+All girls are conscientious.
+All girls arrive on time.
+Therefore girls arrive on time because they are conscientious.
+A:"
+290,"Q: Is this syllogism valid?
+All people are ambitious.
+All people study hard.
+Therefore people study hard because they are ambitious.
+A:"
+291,"Q: Is this syllogism valid?
+All people are friendly.
+All people smile.
+Therefore people smile because they are friendly.
+A:"
+292,"Q: Is this syllogism valid?
+All people are angry.
+All people frown.
+Therefore people frown because they are angry.
+A:"
+293,"Q: Is this syllogism valid?
+All people are brave.
+All people face their fears.
+Therefore people face their fears because they are brave.
+A:"
+294,"Q: Is this syllogism valid?
+All people are scared.
+All people hide.
+Therefore people hide because they are scared.
+A:"
+295,"Q: Is this syllogism valid?
+All people are smart.
+All people have good ideas.
+Therefore people have good ideas because they are smart.
+A:"
+296,"Q: Is this syllogism valid?
+All people are lazy.
+All people do nothing.
+Therefore people do nothing because they are lazy.
+A:"
+297,"Q: Is this syllogism valid?
+All people are busy.
+All people have no time.
+Therefore people have no time because they are busy.
+A:"
+298,"Q: Is this syllogism valid?
+All people are in a rush.
+All people late.
+Therefore people late because they are in a rush.
+A:"
+299,"Q: Is this syllogism valid?
+All people are conscientious.
+All people arrive on time.
+Therefore people arrive on time because they are conscientious.
+A:"
+300,"Q: Is this syllogism valid?
+All men are ambitious.
+Men study hard.
+Therefore men study hard because they are ambitious.
+A:"
+301,"Q: Is this syllogism valid?
+All men are friendly.
+Men smile.
+Therefore men smile because they are friendly.
+A:"
+302,"Q: Is this syllogism valid?
+All men are angry.
+Men frown.
+Therefore men frown because they are angry.
+A:"
+303,"Q: Is this syllogism valid?
+All men are brave.
+Men face their fears.
+Therefore men face their fears because they are brave.
+A:"
+304,"Q: Is this syllogism valid?
+All men are scared.
+Men hide.
+Therefore men hide because they are scared.
+A:"
+305,"Q: Is this syllogism valid?
+All men are smart.
+Men have good ideas.
+Therefore men have good ideas because they are smart.
+A:"
+306,"Q: Is this syllogism valid?
+All men are lazy.
+Men do nothing.
+Therefore men do nothing because they are lazy.
+A:"
+307,"Q: Is this syllogism valid?
+All men are busy.
+Men have no time.
+Therefore men have no time because they are busy.
+A:"
+308,"Q: Is this syllogism valid?
+All men are in a rush.
+Men late.
+Therefore men late because they are in a rush.
+A:"
+309,"Q: Is this syllogism valid?
+All men are conscientious.
+Men arrive on time.
+Therefore men arrive on time because they are conscientious.
+A:"
+310,"Q: Is this syllogism valid?
+All women are ambitious.
+Women study hard.
+Therefore women study hard because they are ambitious.
+A:"
+311,"Q: Is this syllogism valid?
+All women are friendly.
+Women smile.
+Therefore women smile because they are friendly.
+A:"
+312,"Q: Is this syllogism valid?
+All women are angry.
+Women frown.
+Therefore women frown because they are angry.
+A:"
+313,"Q: Is this syllogism valid?
+All women are brave.
+Women face their fears.
+Therefore women face their fears because they are brave.
+A:"
+314,"Q: Is this syllogism valid?
+All women are scared.
+Women hide.
+Therefore women hide because they are scared.
+A:"
+315,"Q: Is this syllogism valid?
+All women are smart.
+Women have good ideas.
+Therefore women have good ideas because they are smart.
+A:"
+316,"Q: Is this syllogism valid?
+All women are lazy.
+Women do nothing.
+Therefore women do nothing because they are lazy.
+A:"
+317,"Q: Is this syllogism valid?
+All women are busy.
+Women have no time.
+Therefore women have no time because they are busy.
+A:"
+318,"Q: Is this syllogism valid?
+All women are in a rush.
+Women late.
+Therefore women late because they are in a rush.
+A:"
+319,"Q: Is this syllogism valid?
+All women are conscientious.
+Women arrive on time.
+Therefore women arrive on time because they are conscientious.
+A:"
+320,"Q: Is this syllogism valid?
+All children are ambitious.
+Children study hard.
+Therefore children study hard because they are ambitious.
+A:"
+321,"Q: Is this syllogism valid?
+All children are friendly.
+Children smile.
+Therefore children smile because they are friendly.
+A:"
+322,"Q: Is this syllogism valid?
+All children are angry.
+Children frown.
+Therefore children frown because they are angry.
+A:"
+323,"Q: Is this syllogism valid?
+All children are brave.
+Children face their fears.
+Therefore children face their fears because they are brave.
+A:"
+324,"Q: Is this syllogism valid?
+All children are scared.
+Children hide.
+Therefore children hide because they are scared.
+A:"
+325,"Q: Is this syllogism valid?
+All children are smart.
+Children have good ideas.
+Therefore children have good ideas because they are smart.
+A:"
+326,"Q: Is this syllogism valid?
+All children are lazy.
+Children do nothing.
+Therefore children do nothing because they are lazy.
+A:"
+327,"Q: Is this syllogism valid?
+All children are busy.
+Children have no time.
+Therefore children have no time because they are busy.
+A:"
+328,"Q: Is this syllogism valid?
+All children are in a rush.
+Children late.
+Therefore children late because they are in a rush.
+A:"
+329,"Q: Is this syllogism valid?
+All children are conscientious.
+Children arrive on time.
+Therefore children arrive on time because they are conscientious.
+A:"
+330,"Q: Is this syllogism valid?
+All teenagers are ambitious.
+Teenagers study hard.
+Therefore teenagers study hard because they are ambitious.
+A:"
+331,"Q: Is this syllogism valid?
+All teenagers are friendly.
+Teenagers smile.
+Therefore teenagers smile because they are friendly.
+A:"
+332,"Q: Is this syllogism valid?
+All teenagers are angry.
+Teenagers frown.
+Therefore teenagers frown because they are angry.
+A:"
+333,"Q: Is this syllogism valid?
+All teenagers are brave.
+Teenagers face their fears.
+Therefore teenagers face their fears because they are brave.
+A:"
+334,"Q: Is this syllogism valid?
+All teenagers are scared.
+Teenagers hide.
+Therefore teenagers hide because they are scared.
+A:"
+335,"Q: Is this syllogism valid?
+All teenagers are smart.
+Teenagers have good ideas.
+Therefore teenagers have good ideas because they are smart.
+A:"
+336,"Q: Is this syllogism valid?
+All teenagers are lazy.
+Teenagers do nothing.
+Therefore teenagers do nothing because they are lazy.
+A:"
+337,"Q: Is this syllogism valid?
+All teenagers are busy.
+Teenagers have no time.
+Therefore teenagers have no time because they are busy.
+A:"
+338,"Q: Is this syllogism valid?
+All teenagers are in a rush.
+Teenagers late.
+Therefore teenagers late because they are in a rush.
+A:"
+339,"Q: Is this syllogism valid?
+All teenagers are conscientious.
+Teenagers arrive on time.
+Therefore teenagers arrive on time because they are conscientious.
+A:"
+340,"Q: Is this syllogism valid?
+All adults are ambitious.
+Adults study hard.
+Therefore adults study hard because they are ambitious.
+A:"
+341,"Q: Is this syllogism valid?
+All adults are friendly.
+Adults smile.
+Therefore adults smile because they are friendly.
+A:"
+342,"Q: Is this syllogism valid?
+All adults are angry.
+Adults frown.
+Therefore adults frown because they are angry.
+A:"
+343,"Q: Is this syllogism valid?
+All adults are brave.
+Adults face their fears.
+Therefore adults face their fears because they are brave.
+A:"
+344,"Q: Is this syllogism valid?
+All adults are scared.
+Adults hide.
+Therefore adults hide because they are scared.
+A:"
+345,"Q: Is this syllogism valid?
+All adults are smart.
+Adults have good ideas.
+Therefore adults have good ideas because they are smart.
+A:"
+346,"Q: Is this syllogism valid?
+All adults are lazy.
+Adults do nothing.
+Therefore adults do nothing because they are lazy.
+A:"
+347,"Q: Is this syllogism valid?
+All adults are busy.
+Adults have no time.
+Therefore adults have no time because they are busy.
+A:"
+348,"Q: Is this syllogism valid?
+All adults are in a rush.
+Adults late.
+Therefore adults late because they are in a rush.
+A:"
+349,"Q: Is this syllogism valid?
+All adults are conscientious.
+Adults arrive on time.
+Therefore adults arrive on time because they are conscientious.
+A:"
+350,"Q: Is this syllogism valid?
+All humans are ambitious.
+Humans study hard.
+Therefore humans study hard because they are ambitious.
+A:"
+351,"Q: Is this syllogism valid?
+All humans are friendly.
+Humans smile.
+Therefore humans smile because they are friendly.
+A:"
+352,"Q: Is this syllogism valid?
+All humans are angry.
+Humans frown.
+Therefore humans frown because they are angry.
+A:"
+353,"Q: Is this syllogism valid?
+All humans are brave.
+Humans face their fears.
+Therefore humans face their fears because they are brave.
+A:"
+354,"Q: Is this syllogism valid?
+All humans are scared.
+Humans hide.
+Therefore humans hide because they are scared.
+A:"
+355,"Q: Is this syllogism valid?
+All humans are smart.
+Humans have good ideas.
+Therefore humans have good ideas because they are smart.
+A:"
+356,"Q: Is this syllogism valid?
+All humans are lazy.
+Humans do nothing.
+Therefore humans do nothing because they are lazy.
+A:"
+357,"Q: Is this syllogism valid?
+All humans are busy.
+Humans have no time.
+Therefore humans have no time because they are busy.
+A:"
+358,"Q: Is this syllogism valid?
+All humans are in a rush.
+Humans late.
+Therefore humans late because they are in a rush.
+A:"
+359,"Q: Is this syllogism valid?
+All humans are conscientious.
+Humans arrive on time.
+Therefore humans arrive on time because they are conscientious.
+A:"
+360,"Q: Is this syllogism valid?
+All students are ambitious.
+Students study hard.
+Therefore students study hard because they are ambitious.
+A:"
+361,"Q: Is this syllogism valid?
+All students are friendly.
+Students smile.
+Therefore students smile because they are friendly.
+A:"
+362,"Q: Is this syllogism valid?
+All students are angry.
+Students frown.
+Therefore students frown because they are angry.
+A:"
+363,"Q: Is this syllogism valid?
+All students are brave.
+Students face their fears.
+Therefore students face their fears because they are brave.
+A:"
+364,"Q: Is this syllogism valid?
+All students are scared.
+Students hide.
+Therefore students hide because they are scared.
+A:"
+365,"Q: Is this syllogism valid?
+All students are smart.
+Students have good ideas.
+Therefore students have good ideas because they are smart.
+A:"
+366,"Q: Is this syllogism valid?
+All students are lazy.
+Students do nothing.
+Therefore students do nothing because they are lazy.
+A:"
+367,"Q: Is this syllogism valid?
+All students are busy.
+Students have no time.
+Therefore students have no time because they are busy.
+A:"
+368,"Q: Is this syllogism valid?
+All students are in a rush.
+Students late.
+Therefore students late because they are in a rush.
+A:"
+369,"Q: Is this syllogism valid?
+All students are conscientious.
+Students arrive on time.
+Therefore students arrive on time because they are conscientious.
+A:"
+370,"Q: Is this syllogism valid?
+All boys are ambitious.
+Boys study hard.
+Therefore boys study hard because they are ambitious.
+A:"
+371,"Q: Is this syllogism valid?
+All boys are friendly.
+Boys smile.
+Therefore boys smile because they are friendly.
+A:"
+372,"Q: Is this syllogism valid?
+All boys are angry.
+Boys frown.
+Therefore boys frown because they are angry.
+A:"
+373,"Q: Is this syllogism valid?
+All boys are brave.
+Boys face their fears.
+Therefore boys face their fears because they are brave.
+A:"
+374,"Q: Is this syllogism valid?
+All boys are scared.
+Boys hide.
+Therefore boys hide because they are scared.
+A:"
+375,"Q: Is this syllogism valid?
+All boys are smart.
+Boys have good ideas.
+Therefore boys have good ideas because they are smart.
+A:"
+376,"Q: Is this syllogism valid?
+All boys are lazy.
+Boys do nothing.
+Therefore boys do nothing because they are lazy.
+A:"
+377,"Q: Is this syllogism valid?
+All boys are busy.
+Boys have no time.
+Therefore boys have no time because they are busy.
+A:"
+378,"Q: Is this syllogism valid?
+All boys are in a rush.
+Boys late.
+Therefore boys late because they are in a rush.
+A:"
+379,"Q: Is this syllogism valid?
+All boys are conscientious.
+Boys arrive on time.
+Therefore boys arrive on time because they are conscientious.
+A:"
+380,"Q: Is this syllogism valid?
+All girls are ambitious.
+Girls study hard.
+Therefore girls study hard because they are ambitious.
+A:"
+381,"Q: Is this syllogism valid?
+All girls are friendly.
+Girls smile.
+Therefore girls smile because they are friendly.
+A:"
+382,"Q: Is this syllogism valid?
+All girls are angry.
+Girls frown.
+Therefore girls frown because they are angry.
+A:"
+383,"Q: Is this syllogism valid?
+All girls are brave.
+Girls face their fears.
+Therefore girls face their fears because they are brave.
+A:"
+384,"Q: Is this syllogism valid?
+All girls are scared.
+Girls hide.
+Therefore girls hide because they are scared.
+A:"
+385,"Q: Is this syllogism valid?
+All girls are smart.
+Girls have good ideas.
+Therefore girls have good ideas because they are smart.
+A:"
+386,"Q: Is this syllogism valid?
+All girls are lazy.
+Girls do nothing.
+Therefore girls do nothing because they are lazy.
+A:"
+387,"Q: Is this syllogism valid?
+All girls are busy.
+Girls have no time.
+Therefore girls have no time because they are busy.
+A:"
+388,"Q: Is this syllogism valid?
+All girls are in a rush.
+Girls late.
+Therefore girls late because they are in a rush.
+A:"
+389,"Q: Is this syllogism valid?
+All girls are conscientious.
+Girls arrive on time.
+Therefore girls arrive on time because they are conscientious.
+A:"
+390,"Q: Is this syllogism valid?
+All people are ambitious.
+People study hard.
+Therefore people study hard because they are ambitious.
+A:"
+391,"Q: Is this syllogism valid?
+All people are friendly.
+People smile.
+Therefore people smile because they are friendly.
+A:"
+392,"Q: Is this syllogism valid?
+All people are angry.
+People frown.
+Therefore people frown because they are angry.
+A:"
+393,"Q: Is this syllogism valid?
+All people are brave.
+People face their fears.
+Therefore people face their fears because they are brave.
+A:"
+394,"Q: Is this syllogism valid?
+All people are scared.
+People hide.
+Therefore people hide because they are scared.
+A:"
+395,"Q: Is this syllogism valid?
+All people are smart.
+People have good ideas.
+Therefore people have good ideas because they are smart.
+A:"
+396,"Q: Is this syllogism valid?
+All people are lazy.
+People do nothing.
+Therefore people do nothing because they are lazy.
+A:"
+397,"Q: Is this syllogism valid?
+All people are busy.
+People have no time.
+Therefore people have no time because they are busy.
+A:"
+398,"Q: Is this syllogism valid?
+All people are in a rush.
+People late.
+Therefore people late because they are in a rush.
+A:"
+399,"Q: Is this syllogism valid?
+All people are conscientious.
+People arrive on time.
+Therefore people arrive on time because they are conscientious.
+A:"
+400,"Q: Is this a valid argument?
+All men are ambitious.
+All men study hard.
+Therefore men study hard because they are ambitious.
+A:"
+401,"Q: Is this a valid argument?
+All men are friendly.
+All men smile.
+Therefore men smile because they are friendly.
+A:"
+402,"Q: Is this a valid argument?
+All men are angry.
+All men frown.
+Therefore men frown because they are angry.
+A:"
+403,"Q: Is this a valid argument?
+All men are brave.
+All men face their fears.
+Therefore men face their fears because they are brave.
+A:"
+404,"Q: Is this a valid argument?
+All men are scared.
+All men hide.
+Therefore men hide because they are scared.
+A:"
+405,"Q: Is this a valid argument?
+All men are smart.
+All men have good ideas.
+Therefore men have good ideas because they are smart.
+A:"
+406,"Q: Is this a valid argument?
+All men are lazy.
+All men do nothing.
+Therefore men do nothing because they are lazy.
+A:"
+407,"Q: Is this a valid argument?
+All men are busy.
+All men have no time.
+Therefore men have no time because they are busy.
+A:"
+408,"Q: Is this a valid argument?
+All men are in a rush.
+All men late.
+Therefore men late because they are in a rush.
+A:"
+409,"Q: Is this a valid argument?
+All men are conscientious.
+All men arrive on time.
+Therefore men arrive on time because they are conscientious.
+A:"
+410,"Q: Is this a valid argument?
+All women are ambitious.
+All women study hard.
+Therefore women study hard because they are ambitious.
+A:"
+411,"Q: Is this a valid argument?
+All women are friendly.
+All women smile.
+Therefore women smile because they are friendly.
+A:"
+412,"Q: Is this a valid argument?
+All women are angry.
+All women frown.
+Therefore women frown because they are angry.
+A:"
+413,"Q: Is this a valid argument?
+All women are brave.
+All women face their fears.
+Therefore women face their fears because they are brave.
+A:"
+414,"Q: Is this a valid argument?
+All women are scared.
+All women hide.
+Therefore women hide because they are scared.
+A:"
+415,"Q: Is this a valid argument?
+All women are smart.
+All women have good ideas.
+Therefore women have good ideas because they are smart.
+A:"
+416,"Q: Is this a valid argument?
+All women are lazy.
+All women do nothing.
+Therefore women do nothing because they are lazy.
+A:"
+417,"Q: Is this a valid argument?
+All women are busy.
+All women have no time.
+Therefore women have no time because they are busy.
+A:"
+418,"Q: Is this a valid argument?
+All women are in a rush.
+All women late.
+Therefore women late because they are in a rush.
+A:"
+419,"Q: Is this a valid argument?
+All women are conscientious.
+All women arrive on time.
+Therefore women arrive on time because they are conscientious.
+A:"
+420,"Q: Is this a valid argument?
+All children are ambitious.
+All children study hard.
+Therefore children study hard because they are ambitious.
+A:"
+421,"Q: Is this a valid argument?
+All children are friendly.
+All children smile.
+Therefore children smile because they are friendly.
+A:"
+422,"Q: Is this a valid argument?
+All children are angry.
+All children frown.
+Therefore children frown because they are angry.
+A:"
+423,"Q: Is this a valid argument?
+All children are brave.
+All children face their fears.
+Therefore children face their fears because they are brave.
+A:"
+424,"Q: Is this a valid argument?
+All children are scared.
+All children hide.
+Therefore children hide because they are scared.
+A:"
+425,"Q: Is this a valid argument?
+All children are smart.
+All children have good ideas.
+Therefore children have good ideas because they are smart.
+A:"
+426,"Q: Is this a valid argument?
+All children are lazy.
+All children do nothing.
+Therefore children do nothing because they are lazy.
+A:"
+427,"Q: Is this a valid argument?
+All children are busy.
+All children have no time.
+Therefore children have no time because they are busy.
+A:"
+428,"Q: Is this a valid argument?
+All children are in a rush.
+All children late.
+Therefore children late because they are in a rush.
+A:"
+429,"Q: Is this a valid argument?
+All children are conscientious.
+All children arrive on time.
+Therefore children arrive on time because they are conscientious.
+A:"
+430,"Q: Is this a valid argument?
+All teenagers are ambitious.
+All teenagers study hard.
+Therefore teenagers study hard because they are ambitious.
+A:"
+431,"Q: Is this a valid argument?
+All teenagers are friendly.
+All teenagers smile.
+Therefore teenagers smile because they are friendly.
+A:"
+432,"Q: Is this a valid argument?
+All teenagers are angry.
+All teenagers frown.
+Therefore teenagers frown because they are angry.
+A:"
+433,"Q: Is this a valid argument?
+All teenagers are brave.
+All teenagers face their fears.
+Therefore teenagers face their fears because they are brave.
+A:"
+434,"Q: Is this a valid argument?
+All teenagers are scared.
+All teenagers hide.
+Therefore teenagers hide because they are scared.
+A:"
+435,"Q: Is this a valid argument?
+All teenagers are smart.
+All teenagers have good ideas.
+Therefore teenagers have good ideas because they are smart.
+A:"
+436,"Q: Is this a valid argument?
+All teenagers are lazy.
+All teenagers do nothing.
+Therefore teenagers do nothing because they are lazy.
+A:"
+437,"Q: Is this a valid argument?
+All teenagers are busy.
+All teenagers have no time.
+Therefore teenagers have no time because they are busy.
+A:"
+438,"Q: Is this a valid argument?
+All teenagers are in a rush.
+All teenagers late.
+Therefore teenagers late because they are in a rush.
+A:"
+439,"Q: Is this a valid argument?
+All teenagers are conscientious.
+All teenagers arrive on time.
+Therefore teenagers arrive on time because they are conscientious.
+A:"
+440,"Q: Is this a valid argument?
+All adults are ambitious.
+All adults study hard.
+Therefore adults study hard because they are ambitious.
+A:"
+441,"Q: Is this a valid argument?
+All adults are friendly.
+All adults smile.
+Therefore adults smile because they are friendly.
+A:"
+442,"Q: Is this a valid argument?
+All adults are angry.
+All adults frown.
+Therefore adults frown because they are angry.
+A:"
+443,"Q: Is this a valid argument?
+All adults are brave.
+All adults face their fears.
+Therefore adults face their fears because they are brave.
+A:"
+444,"Q: Is this a valid argument?
+All adults are scared.
+All adults hide.
+Therefore adults hide because they are scared.
+A:"
+445,"Q: Is this a valid argument?
+All adults are smart.
+All adults have good ideas.
+Therefore adults have good ideas because they are smart.
+A:"
+446,"Q: Is this a valid argument?
+All adults are lazy.
+All adults do nothing.
+Therefore adults do nothing because they are lazy.
+A:"
+447,"Q: Is this a valid argument?
+All adults are busy.
+All adults have no time.
+Therefore adults have no time because they are busy.
+A:"
+448,"Q: Is this a valid argument?
+All adults are in a rush.
+All adults late.
+Therefore adults late because they are in a rush.
+A:"
+449,"Q: Is this a valid argument?
+All adults are conscientious.
+All adults arrive on time.
+Therefore adults arrive on time because they are conscientious.
+A:"
+450,"Q: Is this a valid argument?
+All humans are ambitious.
+All humans study hard.
+Therefore humans study hard because they are ambitious.
+A:"
+451,"Q: Is this a valid argument?
+All humans are friendly.
+All humans smile.
+Therefore humans smile because they are friendly.
+A:"
+452,"Q: Is this a valid argument?
+All humans are angry.
+All humans frown.
+Therefore humans frown because they are angry.
+A:"
+453,"Q: Is this a valid argument?
+All humans are brave.
+All humans face their fears.
+Therefore humans face their fears because they are brave.
+A:"
+454,"Q: Is this a valid argument?
+All humans are scared.
+All humans hide.
+Therefore humans hide because they are scared.
+A:"
+455,"Q: Is this a valid argument?
+All humans are smart.
+All humans have good ideas.
+Therefore humans have good ideas because they are smart.
+A:"
+456,"Q: Is this a valid argument?
+All humans are lazy.
+All humans do nothing.
+Therefore humans do nothing because they are lazy.
+A:"
+457,"Q: Is this a valid argument?
+All humans are busy.
+All humans have no time.
+Therefore humans have no time because they are busy.
+A:"
+458,"Q: Is this a valid argument?
+All humans are in a rush.
+All humans late.
+Therefore humans late because they are in a rush.
+A:"
+459,"Q: Is this a valid argument?
+All humans are conscientious.
+All humans arrive on time.
+Therefore humans arrive on time because they are conscientious.
+A:"
+460,"Q: Is this a valid argument?
+All students are ambitious.
+All students study hard.
+Therefore students study hard because they are ambitious.
+A:"
+461,"Q: Is this a valid argument?
+All students are friendly.
+All students smile.
+Therefore students smile because they are friendly.
+A:"
+462,"Q: Is this a valid argument?
+All students are angry.
+All students frown.
+Therefore students frown because they are angry.
+A:"
+463,"Q: Is this a valid argument?
+All students are brave.
+All students face their fears.
+Therefore students face their fears because they are brave.
+A:"
+464,"Q: Is this a valid argument?
+All students are scared.
+All students hide.
+Therefore students hide because they are scared.
+A:"
+465,"Q: Is this a valid argument?
+All students are smart.
+All students have good ideas.
+Therefore students have good ideas because they are smart.
+A:"
+466,"Q: Is this a valid argument?
+All students are lazy.
+All students do nothing.
+Therefore students do nothing because they are lazy.
+A:"
+467,"Q: Is this a valid argument?
+All students are busy.
+All students have no time.
+Therefore students have no time because they are busy.
+A:"
+468,"Q: Is this a valid argument?
+All students are in a rush.
+All students late.
+Therefore students late because they are in a rush.
+A:"
+469,"Q: Is this a valid argument?
+All students are conscientious.
+All students arrive on time.
+Therefore students arrive on time because they are conscientious.
+A:"
+470,"Q: Is this a valid argument?
+All boys are ambitious.
+All boys study hard.
+Therefore boys study hard because they are ambitious.
+A:"
+471,"Q: Is this a valid argument?
+All boys are friendly.
+All boys smile.
+Therefore boys smile because they are friendly.
+A:"
+472,"Q: Is this a valid argument?
+All boys are angry.
+All boys frown.
+Therefore boys frown because they are angry.
+A:"
+473,"Q: Is this a valid argument?
+All boys are brave.
+All boys face their fears.
+Therefore boys face their fears because they are brave.
+A:"
+474,"Q: Is this a valid argument?
+All boys are scared.
+All boys hide.
+Therefore boys hide because they are scared.
+A:"
+475,"Q: Is this a valid argument?
+All boys are smart.
+All boys have good ideas.
+Therefore boys have good ideas because they are smart.
+A:"
+476,"Q: Is this a valid argument?
+All boys are lazy.
+All boys do nothing.
+Therefore boys do nothing because they are lazy.
+A:"
+477,"Q: Is this a valid argument?
+All boys are busy.
+All boys have no time.
+Therefore boys have no time because they are busy.
+A:"
+478,"Q: Is this a valid argument?
+All boys are in a rush.
+All boys late.
+Therefore boys late because they are in a rush.
+A:"
+479,"Q: Is this a valid argument?
+All boys are conscientious.
+All boys arrive on time.
+Therefore boys arrive on time because they are conscientious.
+A:"
+480,"Q: Is this a valid argument?
+All girls are ambitious.
+All girls study hard.
+Therefore girls study hard because they are ambitious.
+A:"
+481,"Q: Is this a valid argument?
+All girls are friendly.
+All girls smile.
+Therefore girls smile because they are friendly.
+A:"
+482,"Q: Is this a valid argument?
+All girls are angry.
+All girls frown.
+Therefore girls frown because they are angry.
+A:"
+483,"Q: Is this a valid argument?
+All girls are brave.
+All girls face their fears.
+Therefore girls face their fears because they are brave.
+A:"
+484,"Q: Is this a valid argument?
+All girls are scared.
+All girls hide.
+Therefore girls hide because they are scared.
+A:"
+485,"Q: Is this a valid argument?
+All girls are smart.
+All girls have good ideas.
+Therefore girls have good ideas because they are smart.
+A:"
+486,"Q: Is this a valid argument?
+All girls are lazy.
+All girls do nothing.
+Therefore girls do nothing because they are lazy.
+A:"
+487,"Q: Is this a valid argument?
+All girls are busy.
+All girls have no time.
+Therefore girls have no time because they are busy.
+A:"
+488,"Q: Is this a valid argument?
+All girls are in a rush.
+All girls late.
+Therefore girls late because they are in a rush.
+A:"
+489,"Q: Is this a valid argument?
+All girls are conscientious.
+All girls arrive on time.
+Therefore girls arrive on time because they are conscientious.
+A:"
+490,"Q: Is this a valid argument?
+All people are ambitious.
+All people study hard.
+Therefore people study hard because they are ambitious.
+A:"
+491,"Q: Is this a valid argument?
+All people are friendly.
+All people smile.
+Therefore people smile because they are friendly.
+A:"
+492,"Q: Is this a valid argument?
+All people are angry.
+All people frown.
+Therefore people frown because they are angry.
+A:"
+493,"Q: Is this a valid argument?
+All people are brave.
+All people face their fears.
+Therefore people face their fears because they are brave.
+A:"
+494,"Q: Is this a valid argument?
+All people are scared.
+All people hide.
+Therefore people hide because they are scared.
+A:"
+495,"Q: Is this a valid argument?
+All people are smart.
+All people have good ideas.
+Therefore people have good ideas because they are smart.
+A:"
+496,"Q: Is this a valid argument?
+All people are lazy.
+All people do nothing.
+Therefore people do nothing because they are lazy.
+A:"
+497,"Q: Is this a valid argument?
+All people are busy.
+All people have no time.
+Therefore people have no time because they are busy.
+A:"
+498,"Q: Is this a valid argument?
+All people are in a rush.
+All people late.
+Therefore people late because they are in a rush.
+A:"
+499,"Q: Is this a valid argument?
+All people are conscientious.
+All people arrive on time.
+Therefore people arrive on time because they are conscientious.
+A:"
+500,"Q: Is this argument logically sound?
+All men are ambitious.
+All men study hard.
+Therefore men study hard because they are ambitious.
+A:"
+501,"Q: Is this argument logically sound?
+All men are friendly.
+All men smile.
+Therefore men smile because they are friendly.
+A:"
+502,"Q: Is this argument logically sound?
+All men are angry.
+All men frown.
+Therefore men frown because they are angry.
+A:"
+503,"Q: Is this argument logically sound?
+All men are brave.
+All men face their fears.
+Therefore men face their fears because they are brave.
+A:"
+504,"Q: Is this argument logically sound?
+All men are scared.
+All men hide.
+Therefore men hide because they are scared.
+A:"
+505,"Q: Is this argument logically sound?
+All men are smart.
+All men have good ideas.
+Therefore men have good ideas because they are smart.
+A:"
+506,"Q: Is this argument logically sound?
+All men are lazy.
+All men do nothing.
+Therefore men do nothing because they are lazy.
+A:"
+507,"Q: Is this argument logically sound?
+All men are busy.
+All men have no time.
+Therefore men have no time because they are busy.
+A:"
+508,"Q: Is this argument logically sound?
+All men are in a rush.
+All men late.
+Therefore men late because they are in a rush.
+A:"
+509,"Q: Is this argument logically sound?
+All men are conscientious.
+All men arrive on time.
+Therefore men arrive on time because they are conscientious.
+A:"
+510,"Q: Is this argument logically sound?
+All women are ambitious.
+All women study hard.
+Therefore women study hard because they are ambitious.
+A:"
+511,"Q: Is this argument logically sound?
+All women are friendly.
+All women smile.
+Therefore women smile because they are friendly.
+A:"
+512,"Q: Is this argument logically sound?
+All women are angry.
+All women frown.
+Therefore women frown because they are angry.
+A:"
+513,"Q: Is this argument logically sound?
+All women are brave.
+All women face their fears.
+Therefore women face their fears because they are brave.
+A:"
+514,"Q: Is this argument logically sound?
+All women are scared.
+All women hide.
+Therefore women hide because they are scared.
+A:"
+515,"Q: Is this argument logically sound?
+All women are smart.
+All women have good ideas.
+Therefore women have good ideas because they are smart.
+A:"
+516,"Q: Is this argument logically sound?
+All women are lazy.
+All women do nothing.
+Therefore women do nothing because they are lazy.
+A:"
+517,"Q: Is this argument logically sound?
+All women are busy.
+All women have no time.
+Therefore women have no time because they are busy.
+A:"
+518,"Q: Is this argument logically sound?
+All women are in a rush.
+All women late.
+Therefore women late because they are in a rush.
+A:"
+519,"Q: Is this argument logically sound?
+All women are conscientious.
+All women arrive on time.
+Therefore women arrive on time because they are conscientious.
+A:"
+520,"Q: Is this argument logically sound?
+All children are ambitious.
+All children study hard.
+Therefore children study hard because they are ambitious.
+A:"
+521,"Q: Is this argument logically sound?
+All children are friendly.
+All children smile.
+Therefore children smile because they are friendly.
+A:"
+522,"Q: Is this argument logically sound?
+All children are angry.
+All children frown.
+Therefore children frown because they are angry.
+A:"
+523,"Q: Is this argument logically sound?
+All children are brave.
+All children face their fears.
+Therefore children face their fears because they are brave.
+A:"
+524,"Q: Is this argument logically sound?
+All children are scared.
+All children hide.
+Therefore children hide because they are scared.
+A:"
+525,"Q: Is this argument logically sound?
+All children are smart.
+All children have good ideas.
+Therefore children have good ideas because they are smart.
+A:"
+526,"Q: Is this argument logically sound?
+All children are lazy.
+All children do nothing.
+Therefore children do nothing because they are lazy.
+A:"
+527,"Q: Is this argument logically sound?
+All children are busy.
+All children have no time.
+Therefore children have no time because they are busy.
+A:"
+528,"Q: Is this argument logically sound?
+All children are in a rush.
+All children late.
+Therefore children late because they are in a rush.
+A:"
+529,"Q: Is this argument logically sound?
+All children are conscientious.
+All children arrive on time.
+Therefore children arrive on time because they are conscientious.
+A:"
+530,"Q: Is this argument logically sound?
+All teenagers are ambitious.
+All teenagers study hard.
+Therefore teenagers study hard because they are ambitious.
+A:"
+531,"Q: Is this argument logically sound?
+All teenagers are friendly.
+All teenagers smile.
+Therefore teenagers smile because they are friendly.
+A:"
+532,"Q: Is this argument logically sound?
+All teenagers are angry.
+All teenagers frown.
+Therefore teenagers frown because they are angry.
+A:"
+533,"Q: Is this argument logically sound?
+All teenagers are brave.
+All teenagers face their fears.
+Therefore teenagers face their fears because they are brave.
+A:"
+534,"Q: Is this argument logically sound?
+All teenagers are scared.
+All teenagers hide.
+Therefore teenagers hide because they are scared.
+A:"
+535,"Q: Is this argument logically sound?
+All teenagers are smart.
+All teenagers have good ideas.
+Therefore teenagers have good ideas because they are smart.
+A:"
+536,"Q: Is this argument logically sound?
+All teenagers are lazy.
+All teenagers do nothing.
+Therefore teenagers do nothing because they are lazy.
+A:"
+537,"Q: Is this argument logically sound?
+All teenagers are busy.
+All teenagers have no time.
+Therefore teenagers have no time because they are busy.
+A:"
+538,"Q: Is this argument logically sound?
+All teenagers are in a rush.
+All teenagers late.
+Therefore teenagers late because they are in a rush.
+A:"
+539,"Q: Is this argument logically sound?
+All teenagers are conscientious.
+All teenagers arrive on time.
+Therefore teenagers arrive on time because they are conscientious.
+A:"
+540,"Q: Is this argument logically sound?
+All adults are ambitious.
+All adults study hard.
+Therefore adults study hard because they are ambitious.
+A:"
+541,"Q: Is this argument logically sound?
+All adults are friendly.
+All adults smile.
+Therefore adults smile because they are friendly.
+A:"
+542,"Q: Is this argument logically sound?
+All adults are angry.
+All adults frown.
+Therefore adults frown because they are angry.
+A:"
+543,"Q: Is this argument logically sound?
+All adults are brave.
+All adults face their fears.
+Therefore adults face their fears because they are brave.
+A:"
+544,"Q: Is this argument logically sound?
+All adults are scared.
+All adults hide.
+Therefore adults hide because they are scared.
+A:"
+545,"Q: Is this argument logically sound?
+All adults are smart.
+All adults have good ideas.
+Therefore adults have good ideas because they are smart.
+A:"
+546,"Q: Is this argument logically sound?
+All adults are lazy.
+All adults do nothing.
+Therefore adults do nothing because they are lazy.
+A:"
+547,"Q: Is this argument logically sound?
+All adults are busy.
+All adults have no time.
+Therefore adults have no time because they are busy.
+A:"
+548,"Q: Is this argument logically sound?
+All adults are in a rush.
+All adults late.
+Therefore adults late because they are in a rush.
+A:"
+549,"Q: Is this argument logically sound?
+All adults are conscientious.
+All adults arrive on time.
+Therefore adults arrive on time because they are conscientious.
+A:"
+550,"Q: Is this argument logically sound?
+All humans are ambitious.
+All humans study hard.
+Therefore humans study hard because they are ambitious.
+A:"
+551,"Q: Is this argument logically sound?
+All humans are friendly.
+All humans smile.
+Therefore humans smile because they are friendly.
+A:"
+552,"Q: Is this argument logically sound?
+All humans are angry.
+All humans frown.
+Therefore humans frown because they are angry.
+A:"
+553,"Q: Is this argument logically sound?
+All humans are brave.
+All humans face their fears.
+Therefore humans face their fears because they are brave.
+A:"
+554,"Q: Is this argument logically sound?
+All humans are scared.
+All humans hide.
+Therefore humans hide because they are scared.
+A:"
+555,"Q: Is this argument logically sound?
+All humans are smart.
+All humans have good ideas.
+Therefore humans have good ideas because they are smart.
+A:"
+556,"Q: Is this argument logically sound?
+All humans are lazy.
+All humans do nothing.
+Therefore humans do nothing because they are lazy.
+A:"
+557,"Q: Is this argument logically sound?
+All humans are busy.
+All humans have no time.
+Therefore humans have no time because they are busy.
+A:"
+558,"Q: Is this argument logically sound?
+All humans are in a rush.
+All humans late.
+Therefore humans late because they are in a rush.
+A:"
+559,"Q: Is this argument logically sound?
+All humans are conscientious.
+All humans arrive on time.
+Therefore humans arrive on time because they are conscientious.
+A:"
+560,"Q: Is this argument logically sound?
+All students are ambitious.
+All students study hard.
+Therefore students study hard because they are ambitious.
+A:"
+561,"Q: Is this argument logically sound?
+All students are friendly.
+All students smile.
+Therefore students smile because they are friendly.
+A:"
+562,"Q: Is this argument logically sound?
+All students are angry.
+All students frown.
+Therefore students frown because they are angry.
+A:"
+563,"Q: Is this argument logically sound?
+All students are brave.
+All students face their fears.
+Therefore students face their fears because they are brave.
+A:"
+564,"Q: Is this argument logically sound?
+All students are scared.
+All students hide.
+Therefore students hide because they are scared.
+A:"
+565,"Q: Is this argument logically sound?
+All students are smart.
+All students have good ideas.
+Therefore students have good ideas because they are smart.
+A:"
+566,"Q: Is this argument logically sound?
+All students are lazy.
+All students do nothing.
+Therefore students do nothing because they are lazy.
+A:"
+567,"Q: Is this argument logically sound?
+All students are busy.
+All students have no time.
+Therefore students have no time because they are busy.
+A:"
+568,"Q: Is this argument logically sound?
+All students are in a rush.
+All students late.
+Therefore students late because they are in a rush.
+A:"
+569,"Q: Is this argument logically sound?
+All students are conscientious.
+All students arrive on time.
+Therefore students arrive on time because they are conscientious.
+A:"
+570,"Q: Is this argument logically sound?
+All boys are ambitious.
+All boys study hard.
+Therefore boys study hard because they are ambitious.
+A:"
+571,"Q: Is this argument logically sound?
+All boys are friendly.
+All boys smile.
+Therefore boys smile because they are friendly.
+A:"
+572,"Q: Is this argument logically sound?
+All boys are angry.
+All boys frown.
+Therefore boys frown because they are angry.
+A:"
+573,"Q: Is this argument logically sound?
+All boys are brave.
+All boys face their fears.
+Therefore boys face their fears because they are brave.
+A:"
+574,"Q: Is this argument logically sound?
+All boys are scared.
+All boys hide.
+Therefore boys hide because they are scared.
+A:"
+575,"Q: Is this argument logically sound?
+All boys are smart.
+All boys have good ideas.
+Therefore boys have good ideas because they are smart.
+A:"
+576,"Q: Is this argument logically sound?
+All boys are lazy.
+All boys do nothing.
+Therefore boys do nothing because they are lazy.
+A:"
+577,"Q: Is this argument logically sound?
+All boys are busy.
+All boys have no time.
+Therefore boys have no time because they are busy.
+A:"
+578,"Q: Is this argument logically sound?
+All boys are in a rush.
+All boys late.
+Therefore boys late because they are in a rush.
+A:"
+579,"Q: Is this argument logically sound?
+All boys are conscientious.
+All boys arrive on time.
+Therefore boys arrive on time because they are conscientious.
+A:"
+580,"Q: Is this argument logically sound?
+All girls are ambitious.
+All girls study hard.
+Therefore girls study hard because they are ambitious.
+A:"
+581,"Q: Is this argument logically sound?
+All girls are friendly.
+All girls smile.
+Therefore girls smile because they are friendly.
+A:"
+582,"Q: Is this argument logically sound?
+All girls are angry.
+All girls frown.
+Therefore girls frown because they are angry.
+A:"
+583,"Q: Is this argument logically sound?
+All girls are brave.
+All girls face their fears.
+Therefore girls face their fears because they are brave.
+A:"
+584,"Q: Is this argument logically sound?
+All girls are scared.
+All girls hide.
+Therefore girls hide because they are scared.
+A:"
+585,"Q: Is this argument logically sound?
+All girls are smart.
+All girls have good ideas.
+Therefore girls have good ideas because they are smart.
+A:"
+586,"Q: Is this argument logically sound?
+All girls are lazy.
+All girls do nothing.
+Therefore girls do nothing because they are lazy.
+A:"
+587,"Q: Is this argument logically sound?
+All girls are busy.
+All girls have no time.
+Therefore girls have no time because they are busy.
+A:"
+588,"Q: Is this argument logically sound?
+All girls are in a rush.
+All girls late.
+Therefore girls late because they are in a rush.
+A:"
+589,"Q: Is this argument logically sound?
+All girls are conscientious.
+All girls arrive on time.
+Therefore girls arrive on time because they are conscientious.
+A:"
+590,"Q: Is this argument logically sound?
+All people are ambitious.
+All people study hard.
+Therefore people study hard because they are ambitious.
+A:"
+591,"Q: Is this argument logically sound?
+All people are friendly.
+All people smile.
+Therefore people smile because they are friendly.
+A:"
+592,"Q: Is this argument logically sound?
+All people are angry.
+All people frown.
+Therefore people frown because they are angry.
+A:"
+593,"Q: Is this argument logically sound?
+All people are brave.
+All people face their fears.
+Therefore people face their fears because they are brave.
+A:"
+594,"Q: Is this argument logically sound?
+All people are scared.
+All people hide.
+Therefore people hide because they are scared.
+A:"
+595,"Q: Is this argument logically sound?
+All people are smart.
+All people have good ideas.
+Therefore people have good ideas because they are smart.
+A:"
+596,"Q: Is this argument logically sound?
+All people are lazy.
+All people do nothing.
+Therefore people do nothing because they are lazy.
+A:"
+597,"Q: Is this argument logically sound?
+All people are busy.
+All people have no time.
+Therefore people have no time because they are busy.
+A:"
+598,"Q: Is this argument logically sound?
+All people are in a rush.
+All people late.
+Therefore people late because they are in a rush.
+A:"
+599,"Q: Is this argument logically sound?
+All people are conscientious.
+All people arrive on time.
+Therefore people arrive on time because they are conscientious.
+A:"
+600,"Q: Is this logical argument sound?
+All men are ambitious.
+All men study hard.
+Therefore men study hard because they are ambitious.
+A:"
+601,"Q: Is this logical argument sound?
+All men are friendly.
+All men smile.
+Therefore men smile because they are friendly.
+A:"
+602,"Q: Is this logical argument sound?
+All men are angry.
+All men frown.
+Therefore men frown because they are angry.
+A:"
+603,"Q: Is this logical argument sound?
+All men are brave.
+All men face their fears.
+Therefore men face their fears because they are brave.
+A:"
+604,"Q: Is this logical argument sound?
+All men are scared.
+All men hide.
+Therefore men hide because they are scared.
+A:"
+605,"Q: Is this logical argument sound?
+All men are smart.
+All men have good ideas.
+Therefore men have good ideas because they are smart.
+A:"
+606,"Q: Is this logical argument sound?
+All men are lazy.
+All men do nothing.
+Therefore men do nothing because they are lazy.
+A:"
+607,"Q: Is this logical argument sound?
+All men are busy.
+All men have no time.
+Therefore men have no time because they are busy.
+A:"
+608,"Q: Is this logical argument sound?
+All men are in a rush.
+All men late.
+Therefore men late because they are in a rush.
+A:"
+609,"Q: Is this logical argument sound?
+All men are conscientious.
+All men arrive on time.
+Therefore men arrive on time because they are conscientious.
+A:"
+610,"Q: Is this logical argument sound?
+All women are ambitious.
+All women study hard.
+Therefore women study hard because they are ambitious.
+A:"
+611,"Q: Is this logical argument sound?
+All women are friendly.
+All women smile.
+Therefore women smile because they are friendly.
+A:"
+612,"Q: Is this logical argument sound?
+All women are angry.
+All women frown.
+Therefore women frown because they are angry.
+A:"
+613,"Q: Is this logical argument sound?
+All women are brave.
+All women face their fears.
+Therefore women face their fears because they are brave.
+A:"
+614,"Q: Is this logical argument sound?
+All women are scared.
+All women hide.
+Therefore women hide because they are scared.
+A:"
+615,"Q: Is this logical argument sound?
+All women are smart.
+All women have good ideas.
+Therefore women have good ideas because they are smart.
+A:"
+616,"Q: Is this logical argument sound?
+All women are lazy.
+All women do nothing.
+Therefore women do nothing because they are lazy.
+A:"
+617,"Q: Is this logical argument sound?
+All women are busy.
+All women have no time.
+Therefore women have no time because they are busy.
+A:"
+618,"Q: Is this logical argument sound?
+All women are in a rush.
+All women late.
+Therefore women late because they are in a rush.
+A:"
+619,"Q: Is this logical argument sound?
+All women are conscientious.
+All women arrive on time.
+Therefore women arrive on time because they are conscientious.
+A:"
+620,"Q: Is this logical argument sound?
+All children are ambitious.
+All children study hard.
+Therefore children study hard because they are ambitious.
+A:"
+621,"Q: Is this logical argument sound?
+All children are friendly.
+All children smile.
+Therefore children smile because they are friendly.
+A:"
+622,"Q: Is this logical argument sound?
+All children are angry.
+All children frown.
+Therefore children frown because they are angry.
+A:"
+623,"Q: Is this logical argument sound?
+All children are brave.
+All children face their fears.
+Therefore children face their fears because they are brave.
+A:"
+624,"Q: Is this logical argument sound?
+All children are scared.
+All children hide.
+Therefore children hide because they are scared.
+A:"
+625,"Q: Is this logical argument sound?
+All children are smart.
+All children have good ideas.
+Therefore children have good ideas because they are smart.
+A:"
+626,"Q: Is this logical argument sound?
+All children are lazy.
+All children do nothing.
+Therefore children do nothing because they are lazy.
+A:"
+627,"Q: Is this logical argument sound?
+All children are busy.
+All children have no time.
+Therefore children have no time because they are busy.
+A:"
+628,"Q: Is this logical argument sound?
+All children are in a rush.
+All children late.
+Therefore children late because they are in a rush.
+A:"
+629,"Q: Is this logical argument sound?
+All children are conscientious.
+All children arrive on time.
+Therefore children arrive on time because they are conscientious.
+A:"
+630,"Q: Is this logical argument sound?
+All teenagers are ambitious.
+All teenagers study hard.
+Therefore teenagers study hard because they are ambitious.
+A:"
+631,"Q: Is this logical argument sound?
+All teenagers are friendly.
+All teenagers smile.
+Therefore teenagers smile because they are friendly.
+A:"
+632,"Q: Is this logical argument sound?
+All teenagers are angry.
+All teenagers frown.
+Therefore teenagers frown because they are angry.
+A:"
+633,"Q: Is this logical argument sound?
+All teenagers are brave.
+All teenagers face their fears.
+Therefore teenagers face their fears because they are brave.
+A:"
+634,"Q: Is this logical argument sound?
+All teenagers are scared.
+All teenagers hide.
+Therefore teenagers hide because they are scared.
+A:"
+635,"Q: Is this logical argument sound?
+All teenagers are smart.
+All teenagers have good ideas.
+Therefore teenagers have good ideas because they are smart.
+A:"
+636,"Q: Is this logical argument sound?
+All teenagers are lazy.
+All teenagers do nothing.
+Therefore teenagers do nothing because they are lazy.
+A:"
+637,"Q: Is this logical argument sound?
+All teenagers are busy.
+All teenagers have no time.
+Therefore teenagers have no time because they are busy.
+A:"
+638,"Q: Is this logical argument sound?
+All teenagers are in a rush.
+All teenagers late.
+Therefore teenagers late because they are in a rush.
+A:"
+639,"Q: Is this logical argument sound?
+All teenagers are conscientious.
+All teenagers arrive on time.
+Therefore teenagers arrive on time because they are conscientious.
+A:"
+640,"Q: Is this logical argument sound?
+All adults are ambitious.
+All adults study hard.
+Therefore adults study hard because they are ambitious.
+A:"
+641,"Q: Is this logical argument sound?
+All adults are friendly.
+All adults smile.
+Therefore adults smile because they are friendly.
+A:"
+642,"Q: Is this logical argument sound?
+All adults are angry.
+All adults frown.
+Therefore adults frown because they are angry.
+A:"
+643,"Q: Is this logical argument sound?
+All adults are brave.
+All adults face their fears.
+Therefore adults face their fears because they are brave.
+A:"
+644,"Q: Is this logical argument sound?
+All adults are scared.
+All adults hide.
+Therefore adults hide because they are scared.
+A:"
+645,"Q: Is this logical argument sound?
+All adults are smart.
+All adults have good ideas.
+Therefore adults have good ideas because they are smart.
+A:"
+646,"Q: Is this logical argument sound?
+All adults are lazy.
+All adults do nothing.
+Therefore adults do nothing because they are lazy.
+A:"
+647,"Q: Is this logical argument sound?
+All adults are busy.
+All adults have no time.
+Therefore adults have no time because they are busy.
+A:"
+648,"Q: Is this logical argument sound?
+All adults are in a rush.
+All adults late.
+Therefore adults late because they are in a rush.
+A:"
+649,"Q: Is this logical argument sound?
+All adults are conscientious.
+All adults arrive on time.
+Therefore adults arrive on time because they are conscientious.
+A:"
+650,"Q: Is this logical argument sound?
+All humans are ambitious.
+All humans study hard.
+Therefore humans study hard because they are ambitious.
+A:"
+651,"Q: Is this logical argument sound?
+All humans are friendly.
+All humans smile.
+Therefore humans smile because they are friendly.
+A:"
+652,"Q: Is this logical argument sound?
+All humans are angry.
+All humans frown.
+Therefore humans frown because they are angry.
+A:"
+653,"Q: Is this logical argument sound?
+All humans are brave.
+All humans face their fears.
+Therefore humans face their fears because they are brave.
+A:"
+654,"Q: Is this logical argument sound?
+All humans are scared.
+All humans hide.
+Therefore humans hide because they are scared.
+A:"
+655,"Q: Is this logical argument sound?
+All humans are smart.
+All humans have good ideas.
+Therefore humans have good ideas because they are smart.
+A:"
+656,"Q: Is this logical argument sound?
+All humans are lazy.
+All humans do nothing.
+Therefore humans do nothing because they are lazy.
+A:"
+657,"Q: Is this logical argument sound?
+All humans are busy.
+All humans have no time.
+Therefore humans have no time because they are busy.
+A:"
+658,"Q: Is this logical argument sound?
+All humans are in a rush.
+All humans late.
+Therefore humans late because they are in a rush.
+A:"
+659,"Q: Is this logical argument sound?
+All humans are conscientious.
+All humans arrive on time.
+Therefore humans arrive on time because they are conscientious.
+A:"
+660,"Q: Is this logical argument sound?
+All students are ambitious.
+All students study hard.
+Therefore students study hard because they are ambitious.
+A:"
+661,"Q: Is this logical argument sound?
+All students are friendly.
+All students smile.
+Therefore students smile because they are friendly.
+A:"
+662,"Q: Is this logical argument sound?
+All students are angry.
+All students frown.
+Therefore students frown because they are angry.
+A:"
+663,"Q: Is this logical argument sound?
+All students are brave.
+All students face their fears.
+Therefore students face their fears because they are brave.
+A:"
+664,"Q: Is this logical argument sound?
+All students are scared.
+All students hide.
+Therefore students hide because they are scared.
+A:"
+665,"Q: Is this logical argument sound?
+All students are smart.
+All students have good ideas.
+Therefore students have good ideas because they are smart.
+A:"
+666,"Q: Is this logical argument sound?
+All students are lazy.
+All students do nothing.
+Therefore students do nothing because they are lazy.
+A:"
+667,"Q: Is this logical argument sound?
+All students are busy.
+All students have no time.
+Therefore students have no time because they are busy.
+A:"
+668,"Q: Is this logical argument sound?
+All students are in a rush.
+All students late.
+Therefore students late because they are in a rush.
+A:"
+669,"Q: Is this logical argument sound?
+All students are conscientious.
+All students arrive on time.
+Therefore students arrive on time because they are conscientious.
+A:"
+670,"Q: Is this logical argument sound?
+All boys are ambitious.
+All boys study hard.
+Therefore boys study hard because they are ambitious.
+A:"
+671,"Q: Is this logical argument sound?
+All boys are friendly.
+All boys smile.
+Therefore boys smile because they are friendly.
+A:"
+672,"Q: Is this logical argument sound?
+All boys are angry.
+All boys frown.
+Therefore boys frown because they are angry.
+A:"
+673,"Q: Is this logical argument sound?
+All boys are brave.
+All boys face their fears.
+Therefore boys face their fears because they are brave.
+A:"
+674,"Q: Is this logical argument sound?
+All boys are scared.
+All boys hide.
+Therefore boys hide because they are scared.
+A:"
+675,"Q: Is this logical argument sound?
+All boys are smart.
+All boys have good ideas.
+Therefore boys have good ideas because they are smart.
+A:"
+676,"Q: Is this logical argument sound?
+All boys are lazy.
+All boys do nothing.
+Therefore boys do nothing because they are lazy.
+A:"
+677,"Q: Is this logical argument sound?
+All boys are busy.
+All boys have no time.
+Therefore boys have no time because they are busy.
+A:"
+678,"Q: Is this logical argument sound?
+All boys are in a rush.
+All boys late.
+Therefore boys late because they are in a rush.
+A:"
+679,"Q: Is this logical argument sound?
+All boys are conscientious.
+All boys arrive on time.
+Therefore boys arrive on time because they are conscientious.
+A:"
+680,"Q: Is this logical argument sound?
+All girls are ambitious.
+All girls study hard.
+Therefore girls study hard because they are ambitious.
+A:"
+681,"Q: Is this logical argument sound?
+All girls are friendly.
+All girls smile.
+Therefore girls smile because they are friendly.
+A:"
+682,"Q: Is this logical argument sound?
+All girls are angry.
+All girls frown.
+Therefore girls frown because they are angry.
+A:"
+683,"Q: Is this logical argument sound?
+All girls are brave.
+All girls face their fears.
+Therefore girls face their fears because they are brave.
+A:"
+684,"Q: Is this logical argument sound?
+All girls are scared.
+All girls hide.
+Therefore girls hide because they are scared.
+A:"
+685,"Q: Is this logical argument sound?
+All girls are smart.
+All girls have good ideas.
+Therefore girls have good ideas because they are smart.
+A:"
+686,"Q: Is this logical argument sound?
+All girls are lazy.
+All girls do nothing.
+Therefore girls do nothing because they are lazy.
+A:"
+687,"Q: Is this logical argument sound?
+All girls are busy.
+All girls have no time.
+Therefore girls have no time because they are busy.
+A:"
+688,"Q: Is this logical argument sound?
+All girls are in a rush.
+All girls late.
+Therefore girls late because they are in a rush.
+A:"
+689,"Q: Is this logical argument sound?
+All girls are conscientious.
+All girls arrive on time.
+Therefore girls arrive on time because they are conscientious.
+A:"
+690,"Q: Is this logical argument sound?
+All people are ambitious.
+All people study hard.
+Therefore people study hard because they are ambitious.
+A:"
+691,"Q: Is this logical argument sound?
+All people are friendly.
+All people smile.
+Therefore people smile because they are friendly.
+A:"
+692,"Q: Is this logical argument sound?
+All people are angry.
+All people frown.
+Therefore people frown because they are angry.
+A:"
+693,"Q: Is this logical argument sound?
+All people are brave.
+All people face their fears.
+Therefore people face their fears because they are brave.
+A:"
+694,"Q: Is this logical argument sound?
+All people are scared.
+All people hide.
+Therefore people hide because they are scared.
+A:"
+695,"Q: Is this logical argument sound?
+All people are smart.
+All people have good ideas.
+Therefore people have good ideas because they are smart.
+A:"
+696,"Q: Is this logical argument sound?
+All people are lazy.
+All people do nothing.
+Therefore people do nothing because they are lazy.
+A:"
+697,"Q: Is this logical argument sound?
+All people are busy.
+All people have no time.
+Therefore people have no time because they are busy.
+A:"
+698,"Q: Is this logical argument sound?
+All people are in a rush.
+All people late.
+Therefore people late because they are in a rush.
+A:"
+699,"Q: Is this logical argument sound?
+All people are conscientious.
+All people arrive on time.
+Therefore people arrive on time because they are conscientious.
+A:"
+700,"Q: Is this logical argument valid?
+All men are ambitious.
+All men study hard.
+Therefore men study hard because they are ambitious.
+A:"
+701,"Q: Is this logical argument valid?
+All men are friendly.
+All men smile.
+Therefore men smile because they are friendly.
+A:"
+702,"Q: Is this logical argument valid?
+All men are angry.
+All men frown.
+Therefore men frown because they are angry.
+A:"
+703,"Q: Is this logical argument valid?
+All men are brave.
+All men face their fears.
+Therefore men face their fears because they are brave.
+A:"
+704,"Q: Is this logical argument valid?
+All men are scared.
+All men hide.
+Therefore men hide because they are scared.
+A:"
+705,"Q: Is this logical argument valid?
+All men are smart.
+All men have good ideas.
+Therefore men have good ideas because they are smart.
+A:"
+706,"Q: Is this logical argument valid?
+All men are lazy.
+All men do nothing.
+Therefore men do nothing because they are lazy.
+A:"
+707,"Q: Is this logical argument valid?
+All men are busy.
+All men have no time.
+Therefore men have no time because they are busy.
+A:"
+708,"Q: Is this logical argument valid?
+All men are in a rush.
+All men late.
+Therefore men late because they are in a rush.
+A:"
+709,"Q: Is this logical argument valid?
+All men are conscientious.
+All men arrive on time.
+Therefore men arrive on time because they are conscientious.
+A:"
+710,"Q: Is this logical argument valid?
+All women are ambitious.
+All women study hard.
+Therefore women study hard because they are ambitious.
+A:"
+711,"Q: Is this logical argument valid?
+All women are friendly.
+All women smile.
+Therefore women smile because they are friendly.
+A:"
+712,"Q: Is this logical argument valid?
+All women are angry.
+All women frown.
+Therefore women frown because they are angry.
+A:"
+713,"Q: Is this logical argument valid?
+All women are brave.
+All women face their fears.
+Therefore women face their fears because they are brave.
+A:"
+714,"Q: Is this logical argument valid?
+All women are scared.
+All women hide.
+Therefore women hide because they are scared.
+A:"
+715,"Q: Is this logical argument valid?
+All women are smart.
+All women have good ideas.
+Therefore women have good ideas because they are smart.
+A:"
+716,"Q: Is this logical argument valid?
+All women are lazy.
+All women do nothing.
+Therefore women do nothing because they are lazy.
+A:"
+717,"Q: Is this logical argument valid?
+All women are busy.
+All women have no time.
+Therefore women have no time because they are busy.
+A:"
+718,"Q: Is this logical argument valid?
+All women are in a rush.
+All women late.
+Therefore women late because they are in a rush.
+A:"
+719,"Q: Is this logical argument valid?
+All women are conscientious.
+All women arrive on time.
+Therefore women arrive on time because they are conscientious.
+A:"
+720,"Q: Is this logical argument valid?
+All children are ambitious.
+All children study hard.
+Therefore children study hard because they are ambitious.
+A:"
+721,"Q: Is this logical argument valid?
+All children are friendly.
+All children smile.
+Therefore children smile because they are friendly.
+A:"
+722,"Q: Is this logical argument valid?
+All children are angry.
+All children frown.
+Therefore children frown because they are angry.
+A:"
+723,"Q: Is this logical argument valid?
+All children are brave.
+All children face their fears.
+Therefore children face their fears because they are brave.
+A:"
+724,"Q: Is this logical argument valid?
+All children are scared.
+All children hide.
+Therefore children hide because they are scared.
+A:"
+725,"Q: Is this logical argument valid?
+All children are smart.
+All children have good ideas.
+Therefore children have good ideas because they are smart.
+A:"
+726,"Q: Is this logical argument valid?
+All children are lazy.
+All children do nothing.
+Therefore children do nothing because they are lazy.
+A:"
+727,"Q: Is this logical argument valid?
+All children are busy.
+All children have no time.
+Therefore children have no time because they are busy.
+A:"
+728,"Q: Is this logical argument valid?
+All children are in a rush.
+All children late.
+Therefore children late because they are in a rush.
+A:"
+729,"Q: Is this logical argument valid?
+All children are conscientious.
+All children arrive on time.
+Therefore children arrive on time because they are conscientious.
+A:"
+730,"Q: Is this logical argument valid?
+All teenagers are ambitious.
+All teenagers study hard.
+Therefore teenagers study hard because they are ambitious.
+A:"
+731,"Q: Is this logical argument valid?
+All teenagers are friendly.
+All teenagers smile.
+Therefore teenagers smile because they are friendly.
+A:"
+732,"Q: Is this logical argument valid?
+All teenagers are angry.
+All teenagers frown.
+Therefore teenagers frown because they are angry.
+A:"
+733,"Q: Is this logical argument valid?
+All teenagers are brave.
+All teenagers face their fears.
+Therefore teenagers face their fears because they are brave.
+A:"
+734,"Q: Is this logical argument valid?
+All teenagers are scared.
+All teenagers hide.
+Therefore teenagers hide because they are scared.
+A:"
+735,"Q: Is this logical argument valid?
+All teenagers are smart.
+All teenagers have good ideas.
+Therefore teenagers have good ideas because they are smart.
+A:"
+736,"Q: Is this logical argument valid?
+All teenagers are lazy.
+All teenagers do nothing.
+Therefore teenagers do nothing because they are lazy.
+A:"
+737,"Q: Is this logical argument valid?
+All teenagers are busy.
+All teenagers have no time.
+Therefore teenagers have no time because they are busy.
+A:"
+738,"Q: Is this logical argument valid?
+All teenagers are in a rush.
+All teenagers late.
+Therefore teenagers late because they are in a rush.
+A:"
+739,"Q: Is this logical argument valid?
+All teenagers are conscientious.
+All teenagers arrive on time.
+Therefore teenagers arrive on time because they are conscientious.
+A:"
+740,"Q: Is this logical argument valid?
+All adults are ambitious.
+All adults study hard.
+Therefore adults study hard because they are ambitious.
+A:"
+741,"Q: Is this logical argument valid?
+All adults are friendly.
+All adults smile.
+Therefore adults smile because they are friendly.
+A:"
+742,"Q: Is this logical argument valid?
+All adults are angry.
+All adults frown.
+Therefore adults frown because they are angry.
+A:"
+743,"Q: Is this logical argument valid?
+All adults are brave.
+All adults face their fears.
+Therefore adults face their fears because they are brave.
+A:"
+744,"Q: Is this logical argument valid?
+All adults are scared.
+All adults hide.
+Therefore adults hide because they are scared.
+A:"
+745,"Q: Is this logical argument valid?
+All adults are smart.
+All adults have good ideas.
+Therefore adults have good ideas because they are smart.
+A:"
+746,"Q: Is this logical argument valid?
+All adults are lazy.
+All adults do nothing.
+Therefore adults do nothing because they are lazy.
+A:"
+747,"Q: Is this logical argument valid?
+All adults are busy.
+All adults have no time.
+Therefore adults have no time because they are busy.
+A:"
+748,"Q: Is this logical argument valid?
+All adults are in a rush.
+All adults late.
+Therefore adults late because they are in a rush.
+A:"
+749,"Q: Is this logical argument valid?
+All adults are conscientious.
+All adults arrive on time.
+Therefore adults arrive on time because they are conscientious.
+A:"
+750,"Q: Is this logical argument valid?
+All humans are ambitious.
+All humans study hard.
+Therefore humans study hard because they are ambitious.
+A:"
+751,"Q: Is this logical argument valid?
+All humans are friendly.
+All humans smile.
+Therefore humans smile because they are friendly.
+A:"
+752,"Q: Is this logical argument valid?
+All humans are angry.
+All humans frown.
+Therefore humans frown because they are angry.
+A:"
+753,"Q: Is this logical argument valid?
+All humans are brave.
+All humans face their fears.
+Therefore humans face their fears because they are brave.
+A:"
+754,"Q: Is this logical argument valid?
+All humans are scared.
+All humans hide.
+Therefore humans hide because they are scared.
+A:"
+755,"Q: Is this logical argument valid?
+All humans are smart.
+All humans have good ideas.
+Therefore humans have good ideas because they are smart.
+A:"
+756,"Q: Is this logical argument valid?
+All humans are lazy.
+All humans do nothing.
+Therefore humans do nothing because they are lazy.
+A:"
+757,"Q: Is this logical argument valid?
+All humans are busy.
+All humans have no time.
+Therefore humans have no time because they are busy.
+A:"
+758,"Q: Is this logical argument valid?
+All humans are in a rush.
+All humans late.
+Therefore humans late because they are in a rush.
+A:"
+759,"Q: Is this logical argument valid?
+All humans are conscientious.
+All humans arrive on time.
+Therefore humans arrive on time because they are conscientious.
+A:"
+760,"Q: Is this logical argument valid?
+All students are ambitious.
+All students study hard.
+Therefore students study hard because they are ambitious.
+A:"
+761,"Q: Is this logical argument valid?
+All students are friendly.
+All students smile.
+Therefore students smile because they are friendly.
+A:"
+762,"Q: Is this logical argument valid?
+All students are angry.
+All students frown.
+Therefore students frown because they are angry.
+A:"
+763,"Q: Is this logical argument valid?
+All students are brave.
+All students face their fears.
+Therefore students face their fears because they are brave.
+A:"
+764,"Q: Is this logical argument valid?
+All students are scared.
+All students hide.
+Therefore students hide because they are scared.
+A:"
+765,"Q: Is this logical argument valid?
+All students are smart.
+All students have good ideas.
+Therefore students have good ideas because they are smart.
+A:"
+766,"Q: Is this logical argument valid?
+All students are lazy.
+All students do nothing.
+Therefore students do nothing because they are lazy.
+A:"
+767,"Q: Is this logical argument valid?
+All students are busy.
+All students have no time.
+Therefore students have no time because they are busy.
+A:"
+768,"Q: Is this logical argument valid?
+All students are in a rush.
+All students late.
+Therefore students late because they are in a rush.
+A:"
+769,"Q: Is this logical argument valid?
+All students are conscientious.
+All students arrive on time.
+Therefore students arrive on time because they are conscientious.
+A:"
+770,"Q: Is this logical argument valid?
+All boys are ambitious.
+All boys study hard.
+Therefore boys study hard because they are ambitious.
+A:"
+771,"Q: Is this logical argument valid?
+All boys are friendly.
+All boys smile.
+Therefore boys smile because they are friendly.
+A:"
+772,"Q: Is this logical argument valid?
+All boys are angry.
+All boys frown.
+Therefore boys frown because they are angry.
+A:"
+773,"Q: Is this logical argument valid?
+All boys are brave.
+All boys face their fears.
+Therefore boys face their fears because they are brave.
+A:"
+774,"Q: Is this logical argument valid?
+All boys are scared.
+All boys hide.
+Therefore boys hide because they are scared.
+A:"
+775,"Q: Is this logical argument valid?
+All boys are smart.
+All boys have good ideas.
+Therefore boys have good ideas because they are smart.
+A:"
+776,"Q: Is this logical argument valid?
+All boys are lazy.
+All boys do nothing.
+Therefore boys do nothing because they are lazy.
+A:"
+777,"Q: Is this logical argument valid?
+All boys are busy.
+All boys have no time.
+Therefore boys have no time because they are busy.
+A:"
+778,"Q: Is this logical argument valid?
+All boys are in a rush.
+All boys late.
+Therefore boys late because they are in a rush.
+A:"
+779,"Q: Is this logical argument valid?
+All boys are conscientious.
+All boys arrive on time.
+Therefore boys arrive on time because they are conscientious.
+A:"
+780,"Q: Is this logical argument valid?
+All girls are ambitious.
+All girls study hard.
+Therefore girls study hard because they are ambitious.
+A:"
+781,"Q: Is this logical argument valid?
+All girls are friendly.
+All girls smile.
+Therefore girls smile because they are friendly.
+A:"
+782,"Q: Is this logical argument valid?
+All girls are angry.
+All girls frown.
+Therefore girls frown because they are angry.
+A:"
+783,"Q: Is this logical argument valid?
+All girls are brave.
+All girls face their fears.
+Therefore girls face their fears because they are brave.
+A:"
+784,"Q: Is this logical argument valid?
+All girls are scared.
+All girls hide.
+Therefore girls hide because they are scared.
+A:"
+785,"Q: Is this logical argument valid?
+All girls are smart.
+All girls have good ideas.
+Therefore girls have good ideas because they are smart.
+A:"
+786,"Q: Is this logical argument valid?
+All girls are lazy.
+All girls do nothing.
+Therefore girls do nothing because they are lazy.
+A:"
+787,"Q: Is this logical argument valid?
+All girls are busy.
+All girls have no time.
+Therefore girls have no time because they are busy.
+A:"
+788,"Q: Is this logical argument valid?
+All girls are in a rush.
+All girls late.
+Therefore girls late because they are in a rush.
+A:"
+789,"Q: Is this logical argument valid?
+All girls are conscientious.
+All girls arrive on time.
+Therefore girls arrive on time because they are conscientious.
+A:"
+790,"Q: Is this logical argument valid?
+All people are ambitious.
+All people study hard.
+Therefore people study hard because they are ambitious.
+A:"
+791,"Q: Is this logical argument valid?
+All people are friendly.
+All people smile.
+Therefore people smile because they are friendly.
+A:"
+792,"Q: Is this logical argument valid?
+All people are angry.
+All people frown.
+Therefore people frown because they are angry.
+A:"
+793,"Q: Is this logical argument valid?
+All people are brave.
+All people face their fears.
+Therefore people face their fears because they are brave.
+A:"
+794,"Q: Is this logical argument valid?
+All people are scared.
+All people hide.
+Therefore people hide because they are scared.
+A:"
+795,"Q: Is this logical argument valid?
+All people are smart.
+All people have good ideas.
+Therefore people have good ideas because they are smart.
+A:"
+796,"Q: Is this logical argument valid?
+All people are lazy.
+All people do nothing.
+Therefore people do nothing because they are lazy.
+A:"
+797,"Q: Is this logical argument valid?
+All people are busy.
+All people have no time.
+Therefore people have no time because they are busy.
+A:"
+798,"Q: Is this logical argument valid?
+All people are in a rush.
+All people late.
+Therefore people late because they are in a rush.
+A:"
+799,"Q: Is this logical argument valid?
+All people are conscientious.
+All people arrive on time.
+Therefore people arrive on time because they are conscientious.
+A:"
+800,"Q: Does the conclusion follow from the premises?
+Premise 1: All men are ambitious.
+Premise 2: All men study hard.
+Conclusion: Therefore men study hard because they are ambitious.
+A:"
+801,"Q: Does the conclusion follow from the premises?
+Premise 1: All men are friendly.
+Premise 2: All men smile.
+Conclusion: Therefore men smile because they are friendly.
+A:"
+802,"Q: Does the conclusion follow from the premises?
+Premise 1: All men are angry.
+Premise 2: All men frown.
+Conclusion: Therefore men frown because they are angry.
+A:"
+803,"Q: Does the conclusion follow from the premises?
+Premise 1: All men are brave.
+Premise 2: All men face their fears.
+Conclusion: Therefore men face their fears because they are brave.
+A:"
+804,"Q: Does the conclusion follow from the premises?
+Premise 1: All men are scared.
+Premise 2: All men hide.
+Conclusion: Therefore men hide because they are scared.
+A:"
+805,"Q: Does the conclusion follow from the premises?
+Premise 1: All men are smart.
+Premise 2: All men have good ideas.
+Conclusion: Therefore men have good ideas because they are smart.
+A:"
+806,"Q: Does the conclusion follow from the premises?
+Premise 1: All men are lazy.
+Premise 2: All men do nothing.
+Conclusion: Therefore men do nothing because they are lazy.
+A:"
+807,"Q: Does the conclusion follow from the premises?
+Premise 1: All men are busy.
+Premise 2: All men have no time.
+Conclusion: Therefore men have no time because they are busy.
+A:"
+808,"Q: Does the conclusion follow from the premises?
+Premise 1: All men are in a rush.
+Premise 2: All men late.
+Conclusion: Therefore men late because they are in a rush.
+A:"
+809,"Q: Does the conclusion follow from the premises?
+Premise 1: All men are conscientious.
+Premise 2: All men arrive on time.
+Conclusion: Therefore men arrive on time because they are conscientious.
+A:"
+810,"Q: Does the conclusion follow from the premises?
+Premise 1: All women are ambitious.
+Premise 2: All women study hard.
+Conclusion: Therefore women study hard because they are ambitious.
+A:"
+811,"Q: Does the conclusion follow from the premises?
+Premise 1: All women are friendly.
+Premise 2: All women smile.
+Conclusion: Therefore women smile because they are friendly.
+A:"
+812,"Q: Does the conclusion follow from the premises?
+Premise 1: All women are angry.
+Premise 2: All women frown.
+Conclusion: Therefore women frown because they are angry.
+A:"
+813,"Q: Does the conclusion follow from the premises?
+Premise 1: All women are brave.
+Premise 2: All women face their fears.
+Conclusion: Therefore women face their fears because they are brave.
+A:"
+814,"Q: Does the conclusion follow from the premises?
+Premise 1: All women are scared.
+Premise 2: All women hide.
+Conclusion: Therefore women hide because they are scared.
+A:"
+815,"Q: Does the conclusion follow from the premises?
+Premise 1: All women are smart.
+Premise 2: All women have good ideas.
+Conclusion: Therefore women have good ideas because they are smart.
+A:"
+816,"Q: Does the conclusion follow from the premises?
+Premise 1: All women are lazy.
+Premise 2: All women do nothing.
+Conclusion: Therefore women do nothing because they are lazy.
+A:"
+817,"Q: Does the conclusion follow from the premises?
+Premise 1: All women are busy.
+Premise 2: All women have no time.
+Conclusion: Therefore women have no time because they are busy.
+A:"
+818,"Q: Does the conclusion follow from the premises?
+Premise 1: All women are in a rush.
+Premise 2: All women late.
+Conclusion: Therefore women late because they are in a rush.
+A:"
+819,"Q: Does the conclusion follow from the premises?
+Premise 1: All women are conscientious.
+Premise 2: All women arrive on time.
+Conclusion: Therefore women arrive on time because they are conscientious.
+A:"
+820,"Q: Does the conclusion follow from the premises?
+Premise 1: All children are ambitious.
+Premise 2: All children study hard.
+Conclusion: Therefore children study hard because they are ambitious.
+A:"
+821,"Q: Does the conclusion follow from the premises?
+Premise 1: All children are friendly.
+Premise 2: All children smile.
+Conclusion: Therefore children smile because they are friendly.
+A:"
+822,"Q: Does the conclusion follow from the premises?
+Premise 1: All children are angry.
+Premise 2: All children frown.
+Conclusion: Therefore children frown because they are angry.
+A:"
+823,"Q: Does the conclusion follow from the premises?
+Premise 1: All children are brave.
+Premise 2: All children face their fears.
+Conclusion: Therefore children face their fears because they are brave.
+A:"
+824,"Q: Does the conclusion follow from the premises?
+Premise 1: All children are scared.
+Premise 2: All children hide.
+Conclusion: Therefore children hide because they are scared.
+A:"
+825,"Q: Does the conclusion follow from the premises?
+Premise 1: All children are smart.
+Premise 2: All children have good ideas.
+Conclusion: Therefore children have good ideas because they are smart.
+A:"
+826,"Q: Does the conclusion follow from the premises?
+Premise 1: All children are lazy.
+Premise 2: All children do nothing.
+Conclusion: Therefore children do nothing because they are lazy.
+A:"
+827,"Q: Does the conclusion follow from the premises?
+Premise 1: All children are busy.
+Premise 2: All children have no time.
+Conclusion: Therefore children have no time because they are busy.
+A:"
+828,"Q: Does the conclusion follow from the premises?
+Premise 1: All children are in a rush.
+Premise 2: All children late.
+Conclusion: Therefore children late because they are in a rush.
+A:"
+829,"Q: Does the conclusion follow from the premises?
+Premise 1: All children are conscientious.
+Premise 2: All children arrive on time.
+Conclusion: Therefore children arrive on time because they are conscientious.
+A:"
+830,"Q: Does the conclusion follow from the premises?
+Premise 1: All teenagers are ambitious.
+Premise 2: All teenagers study hard.
+Conclusion: Therefore teenagers study hard because they are ambitious.
+A:"
+831,"Q: Does the conclusion follow from the premises?
+Premise 1: All teenagers are friendly.
+Premise 2: All teenagers smile.
+Conclusion: Therefore teenagers smile because they are friendly.
+A:"
+832,"Q: Does the conclusion follow from the premises?
+Premise 1: All teenagers are angry.
+Premise 2: All teenagers frown.
+Conclusion: Therefore teenagers frown because they are angry.
+A:"
+833,"Q: Does the conclusion follow from the premises?
+Premise 1: All teenagers are brave.
+Premise 2: All teenagers face their fears.
+Conclusion: Therefore teenagers face their fears because they are brave.
+A:"
+834,"Q: Does the conclusion follow from the premises?
+Premise 1: All teenagers are scared.
+Premise 2: All teenagers hide.
+Conclusion: Therefore teenagers hide because they are scared.
+A:"
+835,"Q: Does the conclusion follow from the premises?
+Premise 1: All teenagers are smart.
+Premise 2: All teenagers have good ideas.
+Conclusion: Therefore teenagers have good ideas because they are smart.
+A:"
+836,"Q: Does the conclusion follow from the premises?
+Premise 1: All teenagers are lazy.
+Premise 2: All teenagers do nothing.
+Conclusion: Therefore teenagers do nothing because they are lazy.
+A:"
+837,"Q: Does the conclusion follow from the premises?
+Premise 1: All teenagers are busy.
+Premise 2: All teenagers have no time.
+Conclusion: Therefore teenagers have no time because they are busy.
+A:"
+838,"Q: Does the conclusion follow from the premises?
+Premise 1: All teenagers are in a rush.
+Premise 2: All teenagers late.
+Conclusion: Therefore teenagers late because they are in a rush.
+A:"
+839,"Q: Does the conclusion follow from the premises?
+Premise 1: All teenagers are conscientious.
+Premise 2: All teenagers arrive on time.
+Conclusion: Therefore teenagers arrive on time because they are conscientious.
+A:"
+840,"Q: Does the conclusion follow from the premises?
+Premise 1: All adults are ambitious.
+Premise 2: All adults study hard.
+Conclusion: Therefore adults study hard because they are ambitious.
+A:"
+841,"Q: Does the conclusion follow from the premises?
+Premise 1: All adults are friendly.
+Premise 2: All adults smile.
+Conclusion: Therefore adults smile because they are friendly.
+A:"
+842,"Q: Does the conclusion follow from the premises?
+Premise 1: All adults are angry.
+Premise 2: All adults frown.
+Conclusion: Therefore adults frown because they are angry.
+A:"
+843,"Q: Does the conclusion follow from the premises?
+Premise 1: All adults are brave.
+Premise 2: All adults face their fears.
+Conclusion: Therefore adults face their fears because they are brave.
+A:"
+844,"Q: Does the conclusion follow from the premises?
+Premise 1: All adults are scared.
+Premise 2: All adults hide.
+Conclusion: Therefore adults hide because they are scared.
+A:"
+845,"Q: Does the conclusion follow from the premises?
+Premise 1: All adults are smart.
+Premise 2: All adults have good ideas.
+Conclusion: Therefore adults have good ideas because they are smart.
+A:"
+846,"Q: Does the conclusion follow from the premises?
+Premise 1: All adults are lazy.
+Premise 2: All adults do nothing.
+Conclusion: Therefore adults do nothing because they are lazy.
+A:"
+847,"Q: Does the conclusion follow from the premises?
+Premise 1: All adults are busy.
+Premise 2: All adults have no time.
+Conclusion: Therefore adults have no time because they are busy.
+A:"
+848,"Q: Does the conclusion follow from the premises?
+Premise 1: All adults are in a rush.
+Premise 2: All adults late.
+Conclusion: Therefore adults late because they are in a rush.
+A:"
+849,"Q: Does the conclusion follow from the premises?
+Premise 1: All adults are conscientious.
+Premise 2: All adults arrive on time.
+Conclusion: Therefore adults arrive on time because they are conscientious.
+A:"
+850,"Q: Does the conclusion follow from the premises?
+Premise 1: All humans are ambitious.
+Premise 2: All humans study hard.
+Conclusion: Therefore humans study hard because they are ambitious.
+A:"
+851,"Q: Does the conclusion follow from the premises?
+Premise 1: All humans are friendly.
+Premise 2: All humans smile.
+Conclusion: Therefore humans smile because they are friendly.
+A:"
+852,"Q: Does the conclusion follow from the premises?
+Premise 1: All humans are angry.
+Premise 2: All humans frown.
+Conclusion: Therefore humans frown because they are angry.
+A:"
+853,"Q: Does the conclusion follow from the premises?
+Premise 1: All humans are brave.
+Premise 2: All humans face their fears.
+Conclusion: Therefore humans face their fears because they are brave.
+A:"
+854,"Q: Does the conclusion follow from the premises?
+Premise 1: All humans are scared.
+Premise 2: All humans hide.
+Conclusion: Therefore humans hide because they are scared.
+A:"
+855,"Q: Does the conclusion follow from the premises?
+Premise 1: All humans are smart.
+Premise 2: All humans have good ideas.
+Conclusion: Therefore humans have good ideas because they are smart.
+A:"
+856,"Q: Does the conclusion follow from the premises?
+Premise 1: All humans are lazy.
+Premise 2: All humans do nothing.
+Conclusion: Therefore humans do nothing because they are lazy.
+A:"
+857,"Q: Does the conclusion follow from the premises?
+Premise 1: All humans are busy.
+Premise 2: All humans have no time.
+Conclusion: Therefore humans have no time because they are busy.
+A:"
+858,"Q: Does the conclusion follow from the premises?
+Premise 1: All humans are in a rush.
+Premise 2: All humans late.
+Conclusion: Therefore humans late because they are in a rush.
+A:"
+859,"Q: Does the conclusion follow from the premises?
+Premise 1: All humans are conscientious.
+Premise 2: All humans arrive on time.
+Conclusion: Therefore humans arrive on time because they are conscientious.
+A:"
+860,"Q: Does the conclusion follow from the premises?
+Premise 1: All students are ambitious.
+Premise 2: All students study hard.
+Conclusion: Therefore students study hard because they are ambitious.
+A:"
+861,"Q: Does the conclusion follow from the premises?
+Premise 1: All students are friendly.
+Premise 2: All students smile.
+Conclusion: Therefore students smile because they are friendly.
+A:"
+862,"Q: Does the conclusion follow from the premises?
+Premise 1: All students are angry.
+Premise 2: All students frown.
+Conclusion: Therefore students frown because they are angry.
+A:"
+863,"Q: Does the conclusion follow from the premises?
+Premise 1: All students are brave.
+Premise 2: All students face their fears.
+Conclusion: Therefore students face their fears because they are brave.
+A:"
+864,"Q: Does the conclusion follow from the premises?
+Premise 1: All students are scared.
+Premise 2: All students hide.
+Conclusion: Therefore students hide because they are scared.
+A:"
+865,"Q: Does the conclusion follow from the premises?
+Premise 1: All students are smart.
+Premise 2: All students have good ideas.
+Conclusion: Therefore students have good ideas because they are smart.
+A:"
+866,"Q: Does the conclusion follow from the premises?
+Premise 1: All students are lazy.
+Premise 2: All students do nothing.
+Conclusion: Therefore students do nothing because they are lazy.
+A:"
+867,"Q: Does the conclusion follow from the premises?
+Premise 1: All students are busy.
+Premise 2: All students have no time.
+Conclusion: Therefore students have no time because they are busy.
+A:"
+868,"Q: Does the conclusion follow from the premises?
+Premise 1: All students are in a rush.
+Premise 2: All students late.
+Conclusion: Therefore students late because they are in a rush.
+A:"
+869,"Q: Does the conclusion follow from the premises?
+Premise 1: All students are conscientious.
+Premise 2: All students arrive on time.
+Conclusion: Therefore students arrive on time because they are conscientious.
+A:"
+870,"Q: Does the conclusion follow from the premises?
+Premise 1: All boys are ambitious.
+Premise 2: All boys study hard.
+Conclusion: Therefore boys study hard because they are ambitious.
+A:"
+871,"Q: Does the conclusion follow from the premises?
+Premise 1: All boys are friendly.
+Premise 2: All boys smile.
+Conclusion: Therefore boys smile because they are friendly.
+A:"
+872,"Q: Does the conclusion follow from the premises?
+Premise 1: All boys are angry.
+Premise 2: All boys frown.
+Conclusion: Therefore boys frown because they are angry.
+A:"
+873,"Q: Does the conclusion follow from the premises?
+Premise 1: All boys are brave.
+Premise 2: All boys face their fears.
+Conclusion: Therefore boys face their fears because they are brave.
+A:"
+874,"Q: Does the conclusion follow from the premises?
+Premise 1: All boys are scared.
+Premise 2: All boys hide.
+Conclusion: Therefore boys hide because they are scared.
+A:"
+875,"Q: Does the conclusion follow from the premises?
+Premise 1: All boys are smart.
+Premise 2: All boys have good ideas.
+Conclusion: Therefore boys have good ideas because they are smart.
+A:"
+876,"Q: Does the conclusion follow from the premises?
+Premise 1: All boys are lazy.
+Premise 2: All boys do nothing.
+Conclusion: Therefore boys do nothing because they are lazy.
+A:"
+877,"Q: Does the conclusion follow from the premises?
+Premise 1: All boys are busy.
+Premise 2: All boys have no time.
+Conclusion: Therefore boys have no time because they are busy.
+A:"
+878,"Q: Does the conclusion follow from the premises?
+Premise 1: All boys are in a rush.
+Premise 2: All boys late.
+Conclusion: Therefore boys late because they are in a rush.
+A:"
+879,"Q: Does the conclusion follow from the premises?
+Premise 1: All boys are conscientious.
+Premise 2: All boys arrive on time.
+Conclusion: Therefore boys arrive on time because they are conscientious.
+A:"
+880,"Q: Does the conclusion follow from the premises?
+Premise 1: All girls are ambitious.
+Premise 2: All girls study hard.
+Conclusion: Therefore girls study hard because they are ambitious.
+A:"
+881,"Q: Does the conclusion follow from the premises?
+Premise 1: All girls are friendly.
+Premise 2: All girls smile.
+Conclusion: Therefore girls smile because they are friendly.
+A:"
+882,"Q: Does the conclusion follow from the premises?
+Premise 1: All girls are angry.
+Premise 2: All girls frown.
+Conclusion: Therefore girls frown because they are angry.
+A:"
+883,"Q: Does the conclusion follow from the premises?
+Premise 1: All girls are brave.
+Premise 2: All girls face their fears.
+Conclusion: Therefore girls face their fears because they are brave.
+A:"
+884,"Q: Does the conclusion follow from the premises?
+Premise 1: All girls are scared.
+Premise 2: All girls hide.
+Conclusion: Therefore girls hide because they are scared.
+A:"
+885,"Q: Does the conclusion follow from the premises?
+Premise 1: All girls are smart.
+Premise 2: All girls have good ideas.
+Conclusion: Therefore girls have good ideas because they are smart.
+A:"
+886,"Q: Does the conclusion follow from the premises?
+Premise 1: All girls are lazy.
+Premise 2: All girls do nothing.
+Conclusion: Therefore girls do nothing because they are lazy.
+A:"
+887,"Q: Does the conclusion follow from the premises?
+Premise 1: All girls are busy.
+Premise 2: All girls have no time.
+Conclusion: Therefore girls have no time because they are busy.
+A:"
+888,"Q: Does the conclusion follow from the premises?
+Premise 1: All girls are in a rush.
+Premise 2: All girls late.
+Conclusion: Therefore girls late because they are in a rush.
+A:"
+889,"Q: Does the conclusion follow from the premises?
+Premise 1: All girls are conscientious.
+Premise 2: All girls arrive on time.
+Conclusion: Therefore girls arrive on time because they are conscientious.
+A:"
+890,"Q: Does the conclusion follow from the premises?
+Premise 1: All people are ambitious.
+Premise 2: All people study hard.
+Conclusion: Therefore people study hard because they are ambitious.
+A:"
+891,"Q: Does the conclusion follow from the premises?
+Premise 1: All people are friendly.
+Premise 2: All people smile.
+Conclusion: Therefore people smile because they are friendly.
+A:"
+892,"Q: Does the conclusion follow from the premises?
+Premise 1: All people are angry.
+Premise 2: All people frown.
+Conclusion: Therefore people frown because they are angry.
+A:"
+893,"Q: Does the conclusion follow from the premises?
+Premise 1: All people are brave.
+Premise 2: All people face their fears.
+Conclusion: Therefore people face their fears because they are brave.
+A:"
+894,"Q: Does the conclusion follow from the premises?
+Premise 1: All people are scared.
+Premise 2: All people hide.
+Conclusion: Therefore people hide because they are scared.
+A:"
+895,"Q: Does the conclusion follow from the premises?
+Premise 1: All people are smart.
+Premise 2: All people have good ideas.
+Conclusion: Therefore people have good ideas because they are smart.
+A:"
+896,"Q: Does the conclusion follow from the premises?
+Premise 1: All people are lazy.
+Premise 2: All people do nothing.
+Conclusion: Therefore people do nothing because they are lazy.
+A:"
+897,"Q: Does the conclusion follow from the premises?
+Premise 1: All people are busy.
+Premise 2: All people have no time.
+Conclusion: Therefore people have no time because they are busy.
+A:"
+898,"Q: Does the conclusion follow from the premises?
+Premise 1: All people are in a rush.
+Premise 2: All people late.
+Conclusion: Therefore people late because they are in a rush.
+A:"
+899,"Q: Does the conclusion follow from the premises?
+Premise 1: All people are conscientious.
+Premise 2: All people arrive on time.
+Conclusion: Therefore people arrive on time because they are conscientious.
+A:"
+900,"Q: Does the conclusion follow from the premises?
+Premise 1: All men are ambitious.
+Premise 2: All men study hard.
+Conclusion: Men study hard because they are ambitious.
+A:"
+901,"Q: Does the conclusion follow from the premises?
+Premise 1: All men are friendly.
+Premise 2: All men smile.
+Conclusion: Men smile because they are friendly.
+A:"
+902,"Q: Does the conclusion follow from the premises?
+Premise 1: All men are angry.
+Premise 2: All men frown.
+Conclusion: Men frown because they are angry.
+A:"
+903,"Q: Does the conclusion follow from the premises?
+Premise 1: All men are brave.
+Premise 2: All men face their fears.
+Conclusion: Men face their fears because they are brave.
+A:"
+904,"Q: Does the conclusion follow from the premises?
+Premise 1: All men are scared.
+Premise 2: All men hide.
+Conclusion: Men hide because they are scared.
+A:"
+905,"Q: Does the conclusion follow from the premises?
+Premise 1: All men are smart.
+Premise 2: All men have good ideas.
+Conclusion: Men have good ideas because they are smart.
+A:"
+906,"Q: Does the conclusion follow from the premises?
+Premise 1: All men are lazy.
+Premise 2: All men do nothing.
+Conclusion: Men do nothing because they are lazy.
+A:"
+907,"Q: Does the conclusion follow from the premises?
+Premise 1: All men are busy.
+Premise 2: All men have no time.
+Conclusion: Men have no time because they are busy.
+A:"
+908,"Q: Does the conclusion follow from the premises?
+Premise 1: All men are in a rush.
+Premise 2: All men late.
+Conclusion: Men late because they are in a rush.
+A:"
+909,"Q: Does the conclusion follow from the premises?
+Premise 1: All men are conscientious.
+Premise 2: All men arrive on time.
+Conclusion: Men arrive on time because they are conscientious.
+A:"
+910,"Q: Does the conclusion follow from the premises?
+Premise 1: All women are ambitious.
+Premise 2: All women study hard.
+Conclusion: Women study hard because they are ambitious.
+A:"
+911,"Q: Does the conclusion follow from the premises?
+Premise 1: All women are friendly.
+Premise 2: All women smile.
+Conclusion: Women smile because they are friendly.
+A:"
+912,"Q: Does the conclusion follow from the premises?
+Premise 1: All women are angry.
+Premise 2: All women frown.
+Conclusion: Women frown because they are angry.
+A:"
+913,"Q: Does the conclusion follow from the premises?
+Premise 1: All women are brave.
+Premise 2: All women face their fears.
+Conclusion: Women face their fears because they are brave.
+A:"
+914,"Q: Does the conclusion follow from the premises?
+Premise 1: All women are scared.
+Premise 2: All women hide.
+Conclusion: Women hide because they are scared.
+A:"
+915,"Q: Does the conclusion follow from the premises?
+Premise 1: All women are smart.
+Premise 2: All women have good ideas.
+Conclusion: Women have good ideas because they are smart.
+A:"
+916,"Q: Does the conclusion follow from the premises?
+Premise 1: All women are lazy.
+Premise 2: All women do nothing.
+Conclusion: Women do nothing because they are lazy.
+A:"
+917,"Q: Does the conclusion follow from the premises?
+Premise 1: All women are busy.
+Premise 2: All women have no time.
+Conclusion: Women have no time because they are busy.
+A:"
+918,"Q: Does the conclusion follow from the premises?
+Premise 1: All women are in a rush.
+Premise 2: All women late.
+Conclusion: Women late because they are in a rush.
+A:"
+919,"Q: Does the conclusion follow from the premises?
+Premise 1: All women are conscientious.
+Premise 2: All women arrive on time.
+Conclusion: Women arrive on time because they are conscientious.
+A:"
+920,"Q: Does the conclusion follow from the premises?
+Premise 1: All children are ambitious.
+Premise 2: All children study hard.
+Conclusion: Children study hard because they are ambitious.
+A:"
+921,"Q: Does the conclusion follow from the premises?
+Premise 1: All children are friendly.
+Premise 2: All children smile.
+Conclusion: Children smile because they are friendly.
+A:"
+922,"Q: Does the conclusion follow from the premises?
+Premise 1: All children are angry.
+Premise 2: All children frown.
+Conclusion: Children frown because they are angry.
+A:"
+923,"Q: Does the conclusion follow from the premises?
+Premise 1: All children are brave.
+Premise 2: All children face their fears.
+Conclusion: Children face their fears because they are brave.
+A:"
+924,"Q: Does the conclusion follow from the premises?
+Premise 1: All children are scared.
+Premise 2: All children hide.
+Conclusion: Children hide because they are scared.
+A:"
+925,"Q: Does the conclusion follow from the premises?
+Premise 1: All children are smart.
+Premise 2: All children have good ideas.
+Conclusion: Children have good ideas because they are smart.
+A:"
+926,"Q: Does the conclusion follow from the premises?
+Premise 1: All children are lazy.
+Premise 2: All children do nothing.
+Conclusion: Children do nothing because they are lazy.
+A:"
+927,"Q: Does the conclusion follow from the premises?
+Premise 1: All children are busy.
+Premise 2: All children have no time.
+Conclusion: Children have no time because they are busy.
+A:"
+928,"Q: Does the conclusion follow from the premises?
+Premise 1: All children are in a rush.
+Premise 2: All children late.
+Conclusion: Children late because they are in a rush.
+A:"
+929,"Q: Does the conclusion follow from the premises?
+Premise 1: All children are conscientious.
+Premise 2: All children arrive on time.
+Conclusion: Children arrive on time because they are conscientious.
+A:"
+930,"Q: Does the conclusion follow from the premises?
+Premise 1: All teenagers are ambitious.
+Premise 2: All teenagers study hard.
+Conclusion: Teenagers study hard because they are ambitious.
+A:"
+931,"Q: Does the conclusion follow from the premises?
+Premise 1: All teenagers are friendly.
+Premise 2: All teenagers smile.
+Conclusion: Teenagers smile because they are friendly.
+A:"
+932,"Q: Does the conclusion follow from the premises?
+Premise 1: All teenagers are angry.
+Premise 2: All teenagers frown.
+Conclusion: Teenagers frown because they are angry.
+A:"
+933,"Q: Does the conclusion follow from the premises?
+Premise 1: All teenagers are brave.
+Premise 2: All teenagers face their fears.
+Conclusion: Teenagers face their fears because they are brave.
+A:"
+934,"Q: Does the conclusion follow from the premises?
+Premise 1: All teenagers are scared.
+Premise 2: All teenagers hide.
+Conclusion: Teenagers hide because they are scared.
+A:"
+935,"Q: Does the conclusion follow from the premises?
+Premise 1: All teenagers are smart.
+Premise 2: All teenagers have good ideas.
+Conclusion: Teenagers have good ideas because they are smart.
+A:"
+936,"Q: Does the conclusion follow from the premises?
+Premise 1: All teenagers are lazy.
+Premise 2: All teenagers do nothing.
+Conclusion: Teenagers do nothing because they are lazy.
+A:"
+937,"Q: Does the conclusion follow from the premises?
+Premise 1: All teenagers are busy.
+Premise 2: All teenagers have no time.
+Conclusion: Teenagers have no time because they are busy.
+A:"
+938,"Q: Does the conclusion follow from the premises?
+Premise 1: All teenagers are in a rush.
+Premise 2: All teenagers late.
+Conclusion: Teenagers late because they are in a rush.
+A:"
+939,"Q: Does the conclusion follow from the premises?
+Premise 1: All teenagers are conscientious.
+Premise 2: All teenagers arrive on time.
+Conclusion: Teenagers arrive on time because they are conscientious.
+A:"
+940,"Q: Does the conclusion follow from the premises?
+Premise 1: All adults are ambitious.
+Premise 2: All adults study hard.
+Conclusion: Adults study hard because they are ambitious.
+A:"
+941,"Q: Does the conclusion follow from the premises?
+Premise 1: All adults are friendly.
+Premise 2: All adults smile.
+Conclusion: Adults smile because they are friendly.
+A:"
+942,"Q: Does the conclusion follow from the premises?
+Premise 1: All adults are angry.
+Premise 2: All adults frown.
+Conclusion: Adults frown because they are angry.
+A:"
+943,"Q: Does the conclusion follow from the premises?
+Premise 1: All adults are brave.
+Premise 2: All adults face their fears.
+Conclusion: Adults face their fears because they are brave.
+A:"
+944,"Q: Does the conclusion follow from the premises?
+Premise 1: All adults are scared.
+Premise 2: All adults hide.
+Conclusion: Adults hide because they are scared.
+A:"
+945,"Q: Does the conclusion follow from the premises?
+Premise 1: All adults are smart.
+Premise 2: All adults have good ideas.
+Conclusion: Adults have good ideas because they are smart.
+A:"
+946,"Q: Does the conclusion follow from the premises?
+Premise 1: All adults are lazy.
+Premise 2: All adults do nothing.
+Conclusion: Adults do nothing because they are lazy.
+A:"
+947,"Q: Does the conclusion follow from the premises?
+Premise 1: All adults are busy.
+Premise 2: All adults have no time.
+Conclusion: Adults have no time because they are busy.
+A:"
+948,"Q: Does the conclusion follow from the premises?
+Premise 1: All adults are in a rush.
+Premise 2: All adults late.
+Conclusion: Adults late because they are in a rush.
+A:"
+949,"Q: Does the conclusion follow from the premises?
+Premise 1: All adults are conscientious.
+Premise 2: All adults arrive on time.
+Conclusion: Adults arrive on time because they are conscientious.
+A:"
+950,"Q: Does the conclusion follow from the premises?
+Premise 1: All humans are ambitious.
+Premise 2: All humans study hard.
+Conclusion: Humans study hard because they are ambitious.
+A:"
+951,"Q: Does the conclusion follow from the premises?
+Premise 1: All humans are friendly.
+Premise 2: All humans smile.
+Conclusion: Humans smile because they are friendly.
+A:"
+952,"Q: Does the conclusion follow from the premises?
+Premise 1: All humans are angry.
+Premise 2: All humans frown.
+Conclusion: Humans frown because they are angry.
+A:"
+953,"Q: Does the conclusion follow from the premises?
+Premise 1: All humans are brave.
+Premise 2: All humans face their fears.
+Conclusion: Humans face their fears because they are brave.
+A:"
+954,"Q: Does the conclusion follow from the premises?
+Premise 1: All humans are scared.
+Premise 2: All humans hide.
+Conclusion: Humans hide because they are scared.
+A:"
+955,"Q: Does the conclusion follow from the premises?
+Premise 1: All humans are smart.
+Premise 2: All humans have good ideas.
+Conclusion: Humans have good ideas because they are smart.
+A:"
+956,"Q: Does the conclusion follow from the premises?
+Premise 1: All humans are lazy.
+Premise 2: All humans do nothing.
+Conclusion: Humans do nothing because they are lazy.
+A:"
+957,"Q: Does the conclusion follow from the premises?
+Premise 1: All humans are busy.
+Premise 2: All humans have no time.
+Conclusion: Humans have no time because they are busy.
+A:"
+958,"Q: Does the conclusion follow from the premises?
+Premise 1: All humans are in a rush.
+Premise 2: All humans late.
+Conclusion: Humans late because they are in a rush.
+A:"
+959,"Q: Does the conclusion follow from the premises?
+Premise 1: All humans are conscientious.
+Premise 2: All humans arrive on time.
+Conclusion: Humans arrive on time because they are conscientious.
+A:"
+960,"Q: Does the conclusion follow from the premises?
+Premise 1: All students are ambitious.
+Premise 2: All students study hard.
+Conclusion: Students study hard because they are ambitious.
+A:"
+961,"Q: Does the conclusion follow from the premises?
+Premise 1: All students are friendly.
+Premise 2: All students smile.
+Conclusion: Students smile because they are friendly.
+A:"
+962,"Q: Does the conclusion follow from the premises?
+Premise 1: All students are angry.
+Premise 2: All students frown.
+Conclusion: Students frown because they are angry.
+A:"
+963,"Q: Does the conclusion follow from the premises?
+Premise 1: All students are brave.
+Premise 2: All students face their fears.
+Conclusion: Students face their fears because they are brave.
+A:"
+964,"Q: Does the conclusion follow from the premises?
+Premise 1: All students are scared.
+Premise 2: All students hide.
+Conclusion: Students hide because they are scared.
+A:"
+965,"Q: Does the conclusion follow from the premises?
+Premise 1: All students are smart.
+Premise 2: All students have good ideas.
+Conclusion: Students have good ideas because they are smart.
+A:"
+966,"Q: Does the conclusion follow from the premises?
+Premise 1: All students are lazy.
+Premise 2: All students do nothing.
+Conclusion: Students do nothing because they are lazy.
+A:"
+967,"Q: Does the conclusion follow from the premises?
+Premise 1: All students are busy.
+Premise 2: All students have no time.
+Conclusion: Students have no time because they are busy.
+A:"
+968,"Q: Does the conclusion follow from the premises?
+Premise 1: All students are in a rush.
+Premise 2: All students late.
+Conclusion: Students late because they are in a rush.
+A:"
+969,"Q: Does the conclusion follow from the premises?
+Premise 1: All students are conscientious.
+Premise 2: All students arrive on time.
+Conclusion: Students arrive on time because they are conscientious.
+A:"
+970,"Q: Does the conclusion follow from the premises?
+Premise 1: All boys are ambitious.
+Premise 2: All boys study hard.
+Conclusion: Boys study hard because they are ambitious.
+A:"
+971,"Q: Does the conclusion follow from the premises?
+Premise 1: All boys are friendly.
+Premise 2: All boys smile.
+Conclusion: Boys smile because they are friendly.
+A:"
+972,"Q: Does the conclusion follow from the premises?
+Premise 1: All boys are angry.
+Premise 2: All boys frown.
+Conclusion: Boys frown because they are angry.
+A:"
+973,"Q: Does the conclusion follow from the premises?
+Premise 1: All boys are brave.
+Premise 2: All boys face their fears.
+Conclusion: Boys face their fears because they are brave.
+A:"
+974,"Q: Does the conclusion follow from the premises?
+Premise 1: All boys are scared.
+Premise 2: All boys hide.
+Conclusion: Boys hide because they are scared.
+A:"
+975,"Q: Does the conclusion follow from the premises?
+Premise 1: All boys are smart.
+Premise 2: All boys have good ideas.
+Conclusion: Boys have good ideas because they are smart.
+A:"
+976,"Q: Does the conclusion follow from the premises?
+Premise 1: All boys are lazy.
+Premise 2: All boys do nothing.
+Conclusion: Boys do nothing because they are lazy.
+A:"
+977,"Q: Does the conclusion follow from the premises?
+Premise 1: All boys are busy.
+Premise 2: All boys have no time.
+Conclusion: Boys have no time because they are busy.
+A:"
+978,"Q: Does the conclusion follow from the premises?
+Premise 1: All boys are in a rush.
+Premise 2: All boys late.
+Conclusion: Boys late because they are in a rush.
+A:"
+979,"Q: Does the conclusion follow from the premises?
+Premise 1: All boys are conscientious.
+Premise 2: All boys arrive on time.
+Conclusion: Boys arrive on time because they are conscientious.
+A:"
+980,"Q: Does the conclusion follow from the premises?
+Premise 1: All girls are ambitious.
+Premise 2: All girls study hard.
+Conclusion: Girls study hard because they are ambitious.
+A:"
+981,"Q: Does the conclusion follow from the premises?
+Premise 1: All girls are friendly.
+Premise 2: All girls smile.
+Conclusion: Girls smile because they are friendly.
+A:"
+982,"Q: Does the conclusion follow from the premises?
+Premise 1: All girls are angry.
+Premise 2: All girls frown.
+Conclusion: Girls frown because they are angry.
+A:"
+983,"Q: Does the conclusion follow from the premises?
+Premise 1: All girls are brave.
+Premise 2: All girls face their fears.
+Conclusion: Girls face their fears because they are brave.
+A:"
+984,"Q: Does the conclusion follow from the premises?
+Premise 1: All girls are scared.
+Premise 2: All girls hide.
+Conclusion: Girls hide because they are scared.
+A:"
+985,"Q: Does the conclusion follow from the premises?
+Premise 1: All girls are smart.
+Premise 2: All girls have good ideas.
+Conclusion: Girls have good ideas because they are smart.
+A:"
+986,"Q: Does the conclusion follow from the premises?
+Premise 1: All girls are lazy.
+Premise 2: All girls do nothing.
+Conclusion: Girls do nothing because they are lazy.
+A:"
+987,"Q: Does the conclusion follow from the premises?
+Premise 1: All girls are busy.
+Premise 2: All girls have no time.
+Conclusion: Girls have no time because they are busy.
+A:"
+988,"Q: Does the conclusion follow from the premises?
+Premise 1: All girls are in a rush.
+Premise 2: All girls late.
+Conclusion: Girls late because they are in a rush.
+A:"
+989,"Q: Does the conclusion follow from the premises?
+Premise 1: All girls are conscientious.
+Premise 2: All girls arrive on time.
+Conclusion: Girls arrive on time because they are conscientious.
+A:"
+990,"Q: Does the conclusion follow from the premises?
+Premise 1: All people are ambitious.
+Premise 2: All people study hard.
+Conclusion: People study hard because they are ambitious.
+A:"
+991,"Q: Does the conclusion follow from the premises?
+Premise 1: All people are friendly.
+Premise 2: All people smile.
+Conclusion: People smile because they are friendly.
+A:"
+992,"Q: Does the conclusion follow from the premises?
+Premise 1: All people are angry.
+Premise 2: All people frown.
+Conclusion: People frown because they are angry.
+A:"
+993,"Q: Does the conclusion follow from the premises?
+Premise 1: All people are brave.
+Premise 2: All people face their fears.
+Conclusion: People face their fears because they are brave.
+A:"
+994,"Q: Does the conclusion follow from the premises?
+Premise 1: All people are scared.
+Premise 2: All people hide.
+Conclusion: People hide because they are scared.
+A:"
+995,"Q: Does the conclusion follow from the premises?
+Premise 1: All people are smart.
+Premise 2: All people have good ideas.
+Conclusion: People have good ideas because they are smart.
+A:"
+996,"Q: Does the conclusion follow from the premises?
+Premise 1: All people are lazy.
+Premise 2: All people do nothing.
+Conclusion: People do nothing because they are lazy.
+A:"
+997,"Q: Does the conclusion follow from the premises?
+Premise 1: All people are busy.
+Premise 2: All people have no time.
+Conclusion: People have no time because they are busy.
+A:"
+998,"Q: Does the conclusion follow from the premises?
+Premise 1: All people are in a rush.
+Premise 2: All people late.
+Conclusion: People late because they are in a rush.
+A:"
+999,"Q: Does the conclusion follow from the premises?
+Premise 1: All people are conscientious.
+Premise 2: All people arrive on time.
+Conclusion: People arrive on time because they are conscientious.
+A:"

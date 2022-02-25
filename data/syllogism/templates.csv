@@ -1,0 +1,11 @@
+templates
+Q: Is this a valid syllogism?\nAll {plural_noun} are {adjective}.\nAll {plural_noun} {verb}.\nTherefore {plural_noun} {verb} because they are {adjective}.\nA:
+Q: Is this a valid syllogism?\nAll {plural_noun} are {adjective}.\n{capital_plural_noun} {verb}.\nTherefore {plural_noun} {verb} because they are {adjective}.\nA:
+Q: Is this syllogism valid?\nAll {plural_noun} are {adjective}.\nAll {plural_noun} {verb}.\nTherefore {plural_noun} {verb} because they are {adjective}.\nA:
+Q: Is this syllogism valid?\nAll {plural_noun} are {adjective}.\n{capital_plural_noun} {verb}.\nTherefore {plural_noun} {verb} because they are {adjective}.\nA:
+Q: Is this a valid argument?\nAll {plural_noun} are {adjective}.\nAll {plural_noun} {verb}.\nTherefore {plural_noun} {verb} because they are {adjective}.\nA:
+Q: Is this argument logically sound?\nAll {plural_noun} are {adjective}.\nAll {plural_noun} {verb}.\nTherefore {plural_noun} {verb} because they are {adjective}.\nA:
+Q: Is this logical argument sound?\nAll {plural_noun} are {adjective}.\nAll {plural_noun} {verb}.\nTherefore {plural_noun} {verb} because they are {adjective}.\nA:
+Q: Is this logical argument valid?\nAll {plural_noun} are {adjective}.\nAll {plural_noun} {verb}.\nTherefore {plural_noun} {verb} because they are {adjective}.\nA:
+Q: Does the conclusion follow from the premises?\nPremise 1: All {plural_noun} are {adjective}.\nPremise 2: All {plural_noun} {verb}.\nConclusion: Therefore {plural_noun} {verb} because they are {adjective}.\nA:
+Q: Does the conclusion follow from the premises?\nPremise 1: All {plural_noun} are {adjective}.\nPremise 2: All {plural_noun} {verb}.\nConclusion: {capital_plural_noun} {verb} because they are {adjective}.\nA:

@@ -83,6 +83,7 @@ def evaluate_gpt3_text(
     prob_dict = dict()
     prepped_text = wrap_question(text)
     for size in sizes:
+        logging.info(f"RUNNING {size}")
         json = call_gpt3(prepped_text, size)
         if y_axis == "positive_prob":
             value = json_to_positive_prob(json)

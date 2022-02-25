@@ -5,13 +5,14 @@ description = ""
 authors = ["Ian McKenzie <ianmck98@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "3.7.*"
+python = "^3.7.1"
 transformers = "^4.16.2"
 requests = "^2.27.1"
 torch = "^1.10.2"
 python-dotenv = "^0.19.2"
 numpy = "^1.14.5"
 matplotlib = "^3.5.1"
+pandas = "^1.3"
 
 [tool.poetry.dev-dependencies]
 black = "^22.1.0"

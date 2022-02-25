@@ -77,6 +77,7 @@ def evaluate_gpt2_texts(
         prepped_text = wrap_question(text)
         return_dict = dict()
         for size, model in model_dict.items():
+            logging.info(f"RUNNING {size}")
             if y_axis == "positive_prob":
                 value = model.get_positive_prob(prepped_text)
             elif y_axis == "loss":
