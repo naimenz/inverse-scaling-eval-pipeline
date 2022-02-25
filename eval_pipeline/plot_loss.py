@@ -21,6 +21,7 @@ def plot_loss(loss_dict: dict[str, float]) -> None:
     fig = plt.figure(figsize=(20, 10))
     xy_pairs = [(size_dict[size], loss) for size, loss in loss_dict.items()]
     xs, ys = zip(*sorted(xy_pairs, key=lambda pair: pair[0]))
+    print(xs, ys)
     plt.plot(xs, ys, label="syllogism")
     labels, ticks = zip(
         *[

@@ -41,8 +41,8 @@ Therefore men have no time because they are busy.
 A:","[' Yes', ' No']",1
 8,"Q: Is this a valid syllogism?
 All men are in a rush.
-All men late.
-Therefore men late because they are in a rush.
+All men are late.
+Therefore men are late because they are in a rush.
 A:","[' Yes', ' No']",1
 9,"Q: Is this a valid syllogism?
 All men are conscientious.
@@ -91,8 +91,8 @@ Therefore women have no time because they are busy.
 A:","[' Yes', ' No']",1
 18,"Q: Is this a valid syllogism?
 All women are in a rush.
-All women late.
-Therefore women late because they are in a rush.
+All women are late.
+Therefore women are late because they are in a rush.
 A:","[' Yes', ' No']",1
 19,"Q: Is this a valid syllogism?
 All women are conscientious.
@@ -141,8 +141,8 @@ Therefore children have no time because they are busy.
 A:","[' Yes', ' No']",1
 28,"Q: Is this a valid syllogism?
 All children are in a rush.
-All children late.
-Therefore children late because they are in a rush.
+All children are late.
+Therefore children are late because they are in a rush.
 A:","[' Yes', ' No']",1
 29,"Q: Is this a valid syllogism?
 All children are conscientious.
@@ -191,8 +191,8 @@ Therefore teenagers have no time because they are busy.
 A:","[' Yes', ' No']",1
 38,"Q: Is this a valid syllogism?
 All teenagers are in a rush.
-All teenagers late.
-Therefore teenagers late because they are in a rush.
+All teenagers are late.
+Therefore teenagers are late because they are in a rush.
 A:","[' Yes', ' No']",1
 39,"Q: Is this a valid syllogism?
 All teenagers are conscientious.
@@ -241,8 +241,8 @@ Therefore adults have no time because they are busy.
 A:","[' Yes', ' No']",1
 48,"Q: Is this a valid syllogism?
 All adults are in a rush.
-All adults late.
-Therefore adults late because they are in a rush.
+All adults are late.
+Therefore adults are late because they are in a rush.
 A:","[' Yes', ' No']",1
 49,"Q: Is this a valid syllogism?
 All adults are conscientious.
@@ -291,8 +291,8 @@ Therefore humans have no time because they are busy.
 A:","[' Yes', ' No']",1
 58,"Q: Is this a valid syllogism?
 All humans are in a rush.
-All humans late.
-Therefore humans late because they are in a rush.
+All humans are late.
+Therefore humans are late because they are in a rush.
 A:","[' Yes', ' No']",1
 59,"Q: Is this a valid syllogism?
 All humans are conscientious.
@@ -341,8 +341,8 @@ Therefore students have no time because they are busy.
 A:","[' Yes', ' No']",1
 68,"Q: Is this a valid syllogism?
 All students are in a rush.
-All students late.
-Therefore students late because they are in a rush.
+All students are late.
+Therefore students are late because they are in a rush.
 A:","[' Yes', ' No']",1
 69,"Q: Is this a valid syllogism?
 All students are conscientious.
@@ -391,8 +391,8 @@ Therefore boys have no time because they are busy.
 A:","[' Yes', ' No']",1
 78,"Q: Is this a valid syllogism?
 All boys are in a rush.
-All boys late.
-Therefore boys late because they are in a rush.
+All boys are late.
+Therefore boys are late because they are in a rush.
 A:","[' Yes', ' No']",1
 79,"Q: Is this a valid syllogism?
 All boys are conscientious.
@@ -441,8 +441,8 @@ Therefore girls have no time because they are busy.
 A:","[' Yes', ' No']",1
 88,"Q: Is this a valid syllogism?
 All girls are in a rush.
-All girls late.
-Therefore girls late because they are in a rush.
+All girls are late.
+Therefore girls are late because they are in a rush.
 A:","[' Yes', ' No']",1
 89,"Q: Is this a valid syllogism?
 All girls are conscientious.
@@ -491,8 +491,8 @@ Therefore people have no time because they are busy.
 A:","[' Yes', ' No']",1
 98,"Q: Is this a valid syllogism?
 All people are in a rush.
-All people late.
-Therefore people late because they are in a rush.
+All people are late.
+Therefore people are late because they are in a rush.
 A:","[' Yes', ' No']",1
 99,"Q: Is this a valid syllogism?
 All people are conscientious.
@@ -541,8 +541,8 @@ Therefore men have no time because they are busy.
 A:","[' Yes', ' No']",1
 108,"Q: Is this a valid syllogism?
 All men are in a rush.
-Men late.
-Therefore men late because they are in a rush.
+Men are late.
+Therefore men are late because they are in a rush.
 A:","[' Yes', ' No']",1
 109,"Q: Is this a valid syllogism?
 All men are conscientious.
@@ -591,8 +591,8 @@ Therefore women have no time because they are busy.
 A:","[' Yes', ' No']",1
 118,"Q: Is this a valid syllogism?
 All women are in a rush.
-Women late.
-Therefore women late because they are in a rush.
+Women are late.
+Therefore women are late because they are in a rush.
 A:","[' Yes', ' No']",1
 119,"Q: Is this a valid syllogism?
 All women are conscientious.
@@ -641,8 +641,8 @@ Therefore children have no time because they are busy.
 A:","[' Yes', ' No']",1
 128,"Q: Is this a valid syllogism?
 All children are in a rush.
-Children late.
-Therefore children late because they are in a rush.
+Children are late.
+Therefore children are late because they are in a rush.
 A:","[' Yes', ' No']",1
 129,"Q: Is this a valid syllogism?
 All children are conscientious.
@@ -691,8 +691,8 @@ Therefore teenagers have no time because they are busy.
 A:","[' Yes', ' No']",1
 138,"Q: Is this a valid syllogism?
 All teenagers are in a rush.
-Teenagers late.
-Therefore teenagers late because they are in a rush.
+Teenagers are late.
+Therefore teenagers are late because they are in a rush.
 A:","[' Yes', ' No']",1
 139,"Q: Is this a valid syllogism?
 All teenagers are conscientious.
@@ -741,8 +741,8 @@ Therefore adults have no time because they are busy.
 A:","[' Yes', ' No']",1
 148,"Q: Is this a valid syllogism?
 All adults are in a rush.
-Adults late.
-Therefore adults late because they are in a rush.
+Adults are late.
+Therefore adults are late because they are in a rush.
 A:","[' Yes', ' No']",1
 149,"Q: Is this a valid syllogism?
 All adults are conscientious.
@@ -791,8 +791,8 @@ Therefore humans have no time because they are busy.
 A:","[' Yes', ' No']",1
 158,"Q: Is this a valid syllogism?
 All humans are in a rush.
-Humans late.
-Therefore humans late because they are in a rush.
+Humans are late.
+Therefore humans are late because they are in a rush.
 A:","[' Yes', ' No']",1
 159,"Q: Is this a valid syllogism?
 All humans are conscientious.
@@ -841,8 +841,8 @@ Therefore students have no time because they are busy.
 A:","[' Yes', ' No']",1
 168,"Q: Is this a valid syllogism?
 All students are in a rush.
-Students late.
-Therefore students late because they are in a rush.
+Students are late.
+Therefore students are late because they are in a rush.
 A:","[' Yes', ' No']",1
 169,"Q: Is this a valid syllogism?
 All students are conscientious.
@@ -891,8 +891,8 @@ Therefore boys have no time because they are busy.
 A:","[' Yes', ' No']",1
 178,"Q: Is this a valid syllogism?
 All boys are in a rush.
-Boys late.
-Therefore boys late because they are in a rush.
+Boys are late.
+Therefore boys are late because they are in a rush.
 A:","[' Yes', ' No']",1
 179,"Q: Is this a valid syllogism?
 All boys are conscientious.
@@ -941,8 +941,8 @@ Therefore girls have no time because they are busy.
 A:","[' Yes', ' No']",1
 188,"Q: Is this a valid syllogism?
 All girls are in a rush.
-Girls late.
-Therefore girls late because they are in a rush.
+Girls are late.
+Therefore girls are late because they are in a rush.
 A:","[' Yes', ' No']",1
 189,"Q: Is this a valid syllogism?
 All girls are conscientious.
@@ -991,8 +991,8 @@ Therefore people have no time because they are busy.
 A:","[' Yes', ' No']",1
 198,"Q: Is this a valid syllogism?
 All people are in a rush.
-People late.
-Therefore people late because they are in a rush.
+People are late.
+Therefore people are late because they are in a rush.
 A:","[' Yes', ' No']",1
 199,"Q: Is this a valid syllogism?
 All people are conscientious.
@@ -1041,8 +1041,8 @@ Therefore men have no time because they are busy.
 A:","[' Yes', ' No']",1
 208,"Q: Is this syllogism valid?
 All men are in a rush.
-All men late.
-Therefore men late because they are in a rush.
+All men are late.
+Therefore men are late because they are in a rush.
 A:","[' Yes', ' No']",1
 209,"Q: Is this syllogism valid?
 All men are conscientious.
@@ -1091,8 +1091,8 @@ Therefore women have no time because they are busy.
 A:","[' Yes', ' No']",1
 218,"Q: Is this syllogism valid?
 All women are in a rush.
-All women late.
-Therefore women late because they are in a rush.
+All women are late.
+Therefore women are late because they are in a rush.
 A:","[' Yes', ' No']",1
 219,"Q: Is this syllogism valid?
 All women are conscientious.
@@ -1141,8 +1141,8 @@ Therefore children have no time because they are busy.
 A:","[' Yes', ' No']",1
 228,"Q: Is this syllogism valid?
 All children are in a rush.
-All children late.
-Therefore children late because they are in a rush.
+All children are late.
+Therefore children are late because they are in a rush.
 A:","[' Yes', ' No']",1
 229,"Q: Is this syllogism valid?
 All children are conscientious.
@@ -1191,8 +1191,8 @@ Therefore teenagers have no time because they are busy.
 A:","[' Yes', ' No']",1
 238,"Q: Is this syllogism valid?
 All teenagers are in a rush.
-All teenagers late.
-Therefore teenagers late because they are in a rush.
+All teenagers are late.
+Therefore teenagers are late because they are in a rush.
 A:","[' Yes', ' No']",1
 239,"Q: Is this syllogism valid?
 All teenagers are conscientious.
@@ -1241,8 +1241,8 @@ Therefore adults have no time because they are busy.
 A:","[' Yes', ' No']",1
 248,"Q: Is this syllogism valid?
 All adults are in a rush.
-All adults late.
-Therefore adults late because they are in a rush.
+All adults are late.
+Therefore adults are late because they are in a rush.
 A:","[' Yes', ' No']",1
 249,"Q: Is this syllogism valid?
 All adults are conscientious.
@@ -1291,8 +1291,8 @@ Therefore humans have no time because they are busy.
 A:","[' Yes', ' No']",1
 258,"Q: Is this syllogism valid?
 All humans are in a rush.
-All humans late.
-Therefore humans late because they are in a rush.
+All humans are late.
+Therefore humans are late because they are in a rush.
 A:","[' Yes', ' No']",1
 259,"Q: Is this syllogism valid?
 All humans are conscientious.
@@ -1341,8 +1341,8 @@ Therefore students have no time because they are busy.
 A:","[' Yes', ' No']",1
 268,"Q: Is this syllogism valid?
 All students are in a rush.
-All students late.
-Therefore students late because they are in a rush.
+All students are late.
+Therefore students are late because they are in a rush.
 A:","[' Yes', ' No']",1
 269,"Q: Is this syllogism valid?
 All students are conscientious.
@@ -1391,8 +1391,8 @@ Therefore boys have no time because they are busy.
 A:","[' Yes', ' No']",1
 278,"Q: Is this syllogism valid?
 All boys are in a rush.
-All boys late.
-Therefore boys late because they are in a rush.
+All boys are late.
+Therefore boys are late because they are in a rush.
 A:","[' Yes', ' No']",1
 279,"Q: Is this syllogism valid?
 All boys are conscientious.
@@ -1441,8 +1441,8 @@ Therefore girls have no time because they are busy.
 A:","[' Yes', ' No']",1
 288,"Q: Is this syllogism valid?
 All girls are in a rush.
-All girls late.
-Therefore girls late because they are in a rush.
+All girls are late.
+Therefore girls are late because they are in a rush.
 A:","[' Yes', ' No']",1
 289,"Q: Is this syllogism valid?
 All girls are conscientious.
@@ -1491,8 +1491,8 @@ Therefore people have no time because they are busy.
 A:","[' Yes', ' No']",1
 298,"Q: Is this syllogism valid?
 All people are in a rush.
-All people late.
-Therefore people late because they are in a rush.
+All people are late.
+Therefore people are late because they are in a rush.
 A:","[' Yes', ' No']",1
 299,"Q: Is this syllogism valid?
 All people are conscientious.
@@ -1541,8 +1541,8 @@ Therefore men have no time because they are busy.
 A:","[' Yes', ' No']",1
 308,"Q: Is this syllogism valid?
 All men are in a rush.
-Men late.
-Therefore men late because they are in a rush.
+Men are late.
+Therefore men are late because they are in a rush.
 A:","[' Yes', ' No']",1
 309,"Q: Is this syllogism valid?
 All men are conscientious.
@@ -1591,8 +1591,8 @@ Therefore women have no time because they are busy.
 A:","[' Yes', ' No']",1
 318,"Q: Is this syllogism valid?
 All women are in a rush.
-Women late.
-Therefore women late because they are in a rush.
+Women are late.
+Therefore women are late because they are in a rush.
 A:","[' Yes', ' No']",1
 319,"Q: Is this syllogism valid?
 All women are conscientious.
@@ -1641,8 +1641,8 @@ Therefore children have no time because they are busy.
 A:","[' Yes', ' No']",1
 328,"Q: Is this syllogism valid?
 All children are in a rush.
-Children late.
-Therefore children late because they are in a rush.
+Children are late.
+Therefore children are late because they are in a rush.
 A:","[' Yes', ' No']",1
 329,"Q: Is this syllogism valid?
 All children are conscientious.
@@ -1691,8 +1691,8 @@ Therefore teenagers have no time because they are busy.
 A:","[' Yes', ' No']",1
 338,"Q: Is this syllogism valid?
 All teenagers are in a rush.
-Teenagers late.
-Therefore teenagers late because they are in a rush.
+Teenagers are late.
+Therefore teenagers are late because they are in a rush.
 A:","[' Yes', ' No']",1
 339,"Q: Is this syllogism valid?
 All teenagers are conscientious.
@@ -1741,8 +1741,8 @@ Therefore adults have no time because they are busy.
 A:","[' Yes', ' No']",1
 348,"Q: Is this syllogism valid?
 All adults are in a rush.
-Adults late.
-Therefore adults late because they are in a rush.
+Adults are late.
+Therefore adults are late because they are in a rush.
 A:","[' Yes', ' No']",1
 349,"Q: Is this syllogism valid?
 All adults are conscientious.
@@ -1791,8 +1791,8 @@ Therefore humans have no time because they are busy.
 A:","[' Yes', ' No']",1
 358,"Q: Is this syllogism valid?
 All humans are in a rush.
-Humans late.
-Therefore humans late because they are in a rush.
+Humans are late.
+Therefore humans are late because they are in a rush.
 A:","[' Yes', ' No']",1
 359,"Q: Is this syllogism valid?
 All humans are conscientious.
@@ -1841,8 +1841,8 @@ Therefore students have no time because they are busy.
 A:","[' Yes', ' No']",1
 368,"Q: Is this syllogism valid?
 All students are in a rush.
-Students late.
-Therefore students late because they are in a rush.
+Students are late.
+Therefore students are late because they are in a rush.
 A:","[' Yes', ' No']",1
 369,"Q: Is this syllogism valid?
 All students are conscientious.
@@ -1891,8 +1891,8 @@ Therefore boys have no time because they are busy.
 A:","[' Yes', ' No']",1
 378,"Q: Is this syllogism valid?
 All boys are in a rush.
-Boys late.
-Therefore boys late because they are in a rush.
+Boys are late.
+Therefore boys are late because they are in a rush.
 A:","[' Yes', ' No']",1
 379,"Q: Is this syllogism valid?
 All boys are conscientious.
@@ -1941,8 +1941,8 @@ Therefore girls have no time because they are busy.
 A:","[' Yes', ' No']",1
 388,"Q: Is this syllogism valid?
 All girls are in a rush.
-Girls late.
-Therefore girls late because they are in a rush.
+Girls are late.
+Therefore girls are late because they are in a rush.
 A:","[' Yes', ' No']",1
 389,"Q: Is this syllogism valid?
 All girls are conscientious.
@@ -1991,8 +1991,8 @@ Therefore people have no time because they are busy.
 A:","[' Yes', ' No']",1
 398,"Q: Is this syllogism valid?
 All people are in a rush.
-People late.
-Therefore people late because they are in a rush.
+People are late.
+Therefore people are late because they are in a rush.
 A:","[' Yes', ' No']",1
 399,"Q: Is this syllogism valid?
 All people are conscientious.
@@ -2041,8 +2041,8 @@ Therefore men have no time because they are busy.
 A:","[' Yes', ' No']",1
 408,"Q: Is this a valid argument?
 All men are in a rush.
-All men late.
-Therefore men late because they are in a rush.
+All men are late.
+Therefore men are late because they are in a rush.
 A:","[' Yes', ' No']",1
 409,"Q: Is this a valid argument?
 All men are conscientious.
@@ -2091,8 +2091,8 @@ Therefore women have no time because they are busy.
 A:","[' Yes', ' No']",1
 418,"Q: Is this a valid argument?
 All women are in a rush.
-All women late.
-Therefore women late because they are in a rush.
+All women are late.
+Therefore women are late because they are in a rush.
 A:","[' Yes', ' No']",1
 419,"Q: Is this a valid argument?
 All women are conscientious.
@@ -2141,8 +2141,8 @@ Therefore children have no time because they are busy.
 A:","[' Yes', ' No']",1
 428,"Q: Is this a valid argument?
 All children are in a rush.
-All children late.
-Therefore children late because they are in a rush.
+All children are late.
+Therefore children are late because they are in a rush.
 A:","[' Yes', ' No']",1
 429,"Q: Is this a valid argument?
 All children are conscientious.
@@ -2191,8 +2191,8 @@ Therefore teenagers have no time because they are busy.
 A:","[' Yes', ' No']",1
 438,"Q: Is this a valid argument?
 All teenagers are in a rush.
-All teenagers late.
-Therefore teenagers late because they are in a rush.
+All teenagers are late.
+Therefore teenagers are late because they are in a rush.
 A:","[' Yes', ' No']",1
 439,"Q: Is this a valid argument?
 All teenagers are conscientious.
@@ -2241,8 +2241,8 @@ Therefore adults have no time because they are busy.
 A:","[' Yes', ' No']",1
 448,"Q: Is this a valid argument?
 All adults are in a rush.
-All adults late.
-Therefore adults late because they are in a rush.
+All adults are late.
+Therefore adults are late because they are in a rush.
 A:","[' Yes', ' No']",1
 449,"Q: Is this a valid argument?
 All adults are conscientious.
@@ -2291,8 +2291,8 @@ Therefore humans have no time because they are busy.
 A:","[' Yes', ' No']",1
 458,"Q: Is this a valid argument?
 All humans are in a rush.
-All humans late.
-Therefore humans late because they are in a rush.
+All humans are late.
+Therefore humans are late because they are in a rush.
 A:","[' Yes', ' No']",1
 459,"Q: Is this a valid argument?
 All humans are conscientious.
@@ -2341,8 +2341,8 @@ Therefore students have no time because they are busy.
 A:","[' Yes', ' No']",1
 468,"Q: Is this a valid argument?
 All students are in a rush.
-All students late.
-Therefore students late because they are in a rush.
+All students are late.
+Therefore students are late because they are in a rush.
 A:","[' Yes', ' No']",1
 469,"Q: Is this a valid argument?
 All students are conscientious.
@@ -2391,8 +2391,8 @@ Therefore boys have no time because they are busy.
 A:","[' Yes', ' No']",1
 478,"Q: Is this a valid argument?
 All boys are in a rush.
-All boys late.
-Therefore boys late because they are in a rush.
+All boys are late.
+Therefore boys are late because they are in a rush.
 A:","[' Yes', ' No']",1
 479,"Q: Is this a valid argument?
 All boys are conscientious.
@@ -2441,8 +2441,8 @@ Therefore girls have no time because they are busy.
 A:","[' Yes', ' No']",1
 488,"Q: Is this a valid argument?
 All girls are in a rush.
-All girls late.
-Therefore girls late because they are in a rush.
+All girls are late.
+Therefore girls are late because they are in a rush.
 A:","[' Yes', ' No']",1
 489,"Q: Is this a valid argument?
 All girls are conscientious.
@@ -2491,8 +2491,8 @@ Therefore people have no time because they are busy.
 A:","[' Yes', ' No']",1
 498,"Q: Is this a valid argument?
 All people are in a rush.
-All people late.
-Therefore people late because they are in a rush.
+All people are late.
+Therefore people are late because they are in a rush.
 A:","[' Yes', ' No']",1
 499,"Q: Is this a valid argument?
 All people are conscientious.
@@ -2541,8 +2541,8 @@ Therefore men have no time because they are busy.
 A:","[' Yes', ' No']",1
 508,"Q: Is this argument logically sound?
 All men are in a rush.
-All men late.
-Therefore men late because they are in a rush.
+All men are late.
+Therefore men are late because they are in a rush.
 A:","[' Yes', ' No']",1
 509,"Q: Is this argument logically sound?
 All men are conscientious.
@@ -2591,8 +2591,8 @@ Therefore women have no time because they are busy.
 A:","[' Yes', ' No']",1
 518,"Q: Is this argument logically sound?
 All women are in a rush.
-All women late.
-Therefore women late because they are in a rush.
+All women are late.
+Therefore women are late because they are in a rush.
 A:","[' Yes', ' No']",1
 519,"Q: Is this argument logically sound?
 All women are conscientious.
@@ -2641,8 +2641,8 @@ Therefore children have no time because they are busy.
 A:","[' Yes', ' No']",1
 528,"Q: Is this argument logically sound?
 All children are in a rush.
-All children late.
-Therefore children late because they are in a rush.
+All children are late.
+Therefore children are late because they are in a rush.
 A:","[' Yes', ' No']",1
 529,"Q: Is this argument logically sound?
 All children are conscientious.
@@ -2691,8 +2691,8 @@ Therefore teenagers have no time because they are busy.
 A:","[' Yes', ' No']",1
 538,"Q: Is this argument logically sound?
 All teenagers are in a rush.
-All teenagers late.
-Therefore teenagers late because they are in a rush.
+All teenagers are late.
+Therefore teenagers are late because they are in a rush.
 A:","[' Yes', ' No']",1
 539,"Q: Is this argument logically sound?
 All teenagers are conscientious.
@@ -2741,8 +2741,8 @@ Therefore adults have no time because they are busy.
 A:","[' Yes', ' No']",1
 548,"Q: Is this argument logically sound?
 All adults are in a rush.
-All adults late.
-Therefore adults late because they are in a rush.
+All adults are late.
+Therefore adults are late because they are in a rush.
 A:","[' Yes', ' No']",1
 549,"Q: Is this argument logically sound?
 All adults are conscientious.
@@ -2791,8 +2791,8 @@ Therefore humans have no time because they are busy.
 A:","[' Yes', ' No']",1
 558,"Q: Is this argument logically sound?
 All humans are in a rush.
-All humans late.
-Therefore humans late because they are in a rush.
+All humans are late.
+Therefore humans are late because they are in a rush.
 A:","[' Yes', ' No']",1
 559,"Q: Is this argument logically sound?
 All humans are conscientious.
@@ -2841,8 +2841,8 @@ Therefore students have no time because they are busy.
 A:","[' Yes', ' No']",1
 568,"Q: Is this argument logically sound?
 All students are in a rush.
-All students late.
-Therefore students late because they are in a rush.
+All students are late.
+Therefore students are late because they are in a rush.
 A:","[' Yes', ' No']",1
 569,"Q: Is this argument logically sound?
 All students are conscientious.
@@ -2891,8 +2891,8 @@ Therefore boys have no time because they are busy.
 A:","[' Yes', ' No']",1
 578,"Q: Is this argument logically sound?
 All boys are in a rush.
-All boys late.
-Therefore boys late because they are in a rush.
+All boys are late.
+Therefore boys are late because they are in a rush.
 A:","[' Yes', ' No']",1
 579,"Q: Is this argument logically sound?
 All boys are conscientious.
@@ -2941,8 +2941,8 @@ Therefore girls have no time because they are busy.
 A:","[' Yes', ' No']",1
 588,"Q: Is this argument logically sound?
 All girls are in a rush.
-All girls late.
-Therefore girls late because they are in a rush.
+All girls are late.
+Therefore girls are late because they are in a rush.
 A:","[' Yes', ' No']",1
 589,"Q: Is this argument logically sound?
 All girls are conscientious.
@@ -2991,8 +2991,8 @@ Therefore people have no time because they are busy.
 A:","[' Yes', ' No']",1
 598,"Q: Is this argument logically sound?
 All people are in a rush.
-All people late.
-Therefore people late because they are in a rush.
+All people are late.
+Therefore people are late because they are in a rush.
 A:","[' Yes', ' No']",1
 599,"Q: Is this argument logically sound?
 All people are conscientious.
@@ -3041,8 +3041,8 @@ Therefore men have no time because they are busy.
 A:","[' Yes', ' No']",1
 608,"Q: Is this logical argument sound?
 All men are in a rush.
-All men late.
-Therefore men late because they are in a rush.
+All men are late.
+Therefore men are late because they are in a rush.
 A:","[' Yes', ' No']",1
 609,"Q: Is this logical argument sound?
 All men are conscientious.
@@ -3091,8 +3091,8 @@ Therefore women have no time because they are busy.
 A:","[' Yes', ' No']",1
 618,"Q: Is this logical argument sound?
 All women are in a rush.
-All women late.
-Therefore women late because they are in a rush.
+All women are late.
+Therefore women are late because they are in a rush.
 A:","[' Yes', ' No']",1
 619,"Q: Is this logical argument sound?
 All women are conscientious.
@@ -3141,8 +3141,8 @@ Therefore children have no time because they are busy.
 A:","[' Yes', ' No']",1
 628,"Q: Is this logical argument sound?
 All children are in a rush.
-All children late.
-Therefore children late because they are in a rush.
+All children are late.
+Therefore children are late because they are in a rush.
 A:","[' Yes', ' No']",1
 629,"Q: Is this logical argument sound?
 All children are conscientious.
@@ -3191,8 +3191,8 @@ Therefore teenagers have no time because they are busy.
 A:","[' Yes', ' No']",1
 638,"Q: Is this logical argument sound?
 All teenagers are in a rush.
-All teenagers late.
-Therefore teenagers late because they are in a rush.
+All teenagers are late.
+Therefore teenagers are late because they are in a rush.
 A:","[' Yes', ' No']",1
 639,"Q: Is this logical argument sound?
 All teenagers are conscientious.
@@ -3241,8 +3241,8 @@ Therefore adults have no time because they are busy.
 A:","[' Yes', ' No']",1
 648,"Q: Is this logical argument sound?
 All adults are in a rush.
-All adults late.
-Therefore adults late because they are in a rush.
+All adults are late.
+Therefore adults are late because they are in a rush.
 A:","[' Yes', ' No']",1
 649,"Q: Is this logical argument sound?
 All adults are conscientious.
@@ -3291,8 +3291,8 @@ Therefore humans have no time because they are busy.
 A:","[' Yes', ' No']",1
 658,"Q: Is this logical argument sound?
 All humans are in a rush.
-All humans late.
-Therefore humans late because they are in a rush.
+All humans are late.
+Therefore humans are late because they are in a rush.
 A:","[' Yes', ' No']",1
 659,"Q: Is this logical argument sound?
 All humans are conscientious.
@@ -3341,8 +3341,8 @@ Therefore students have no time because they are busy.
 A:","[' Yes', ' No']",1
 668,"Q: Is this logical argument sound?
 All students are in a rush.
-All students late.
-Therefore students late because they are in a rush.
+All students are late.
+Therefore students are late because they are in a rush.
 A:","[' Yes', ' No']",1
 669,"Q: Is this logical argument sound?
 All students are conscientious.
@@ -3391,8 +3391,8 @@ Therefore boys have no time because they are busy.
 A:","[' Yes', ' No']",1
 678,"Q: Is this logical argument sound?
 All boys are in a rush.
-All boys late.
-Therefore boys late because they are in a rush.
+All boys are late.
+Therefore boys are late because they are in a rush.
 A:","[' Yes', ' No']",1
 679,"Q: Is this logical argument sound?
 All boys are conscientious.
@@ -3441,8 +3441,8 @@ Therefore girls have no time because they are busy.
 A:","[' Yes', ' No']",1
 688,"Q: Is this logical argument sound?
 All girls are in a rush.
-All girls late.
-Therefore girls late because they are in a rush.
+All girls are late.
+Therefore girls are late because they are in a rush.
 A:","[' Yes', ' No']",1
 689,"Q: Is this logical argument sound?
 All girls are conscientious.
@@ -3491,8 +3491,8 @@ Therefore people have no time because they are busy.
 A:","[' Yes', ' No']",1
 698,"Q: Is this logical argument sound?
 All people are in a rush.
-All people late.
-Therefore people late because they are in a rush.
+All people are late.
+Therefore people are late because they are in a rush.
 A:","[' Yes', ' No']",1
 699,"Q: Is this logical argument sound?
 All people are conscientious.
@@ -3541,8 +3541,8 @@ Therefore men have no time because they are busy.
 A:","[' Yes', ' No']",1
 708,"Q: Is this logical argument valid?
 All men are in a rush.
-All men late.
-Therefore men late because they are in a rush.
+All men are late.
+Therefore men are late because they are in a rush.
 A:","[' Yes', ' No']",1
 709,"Q: Is this logical argument valid?
 All men are conscientious.
@@ -3591,8 +3591,8 @@ Therefore women have no time because they are busy.
 A:","[' Yes', ' No']",1
 718,"Q: Is this logical argument valid?
 All women are in a rush.
-All women late.
-Therefore women late because they are in a rush.
+All women are late.
+Therefore women are late because they are in a rush.
 A:","[' Yes', ' No']",1
 719,"Q: Is this logical argument valid?
 All women are conscientious.
@@ -3641,8 +3641,8 @@ Therefore children have no time because they are busy.
 A:","[' Yes', ' No']",1
 728,"Q: Is this logical argument valid?
 All children are in a rush.
-All children late.
-Therefore children late because they are in a rush.
+All children are late.
+Therefore children are late because they are in a rush.
 A:","[' Yes', ' No']",1
 729,"Q: Is this logical argument valid?
 All children are conscientious.
@@ -3691,8 +3691,8 @@ Therefore teenagers have no time because they are busy.
 A:","[' Yes', ' No']",1
 738,"Q: Is this logical argument valid?
 All teenagers are in a rush.
-All teenagers late.
-Therefore teenagers late because they are in a rush.
+All teenagers are late.
+Therefore teenagers are late because they are in a rush.
 A:","[' Yes', ' No']",1
 739,"Q: Is this logical argument valid?
 All teenagers are conscientious.
@@ -3741,8 +3741,8 @@ Therefore adults have no time because they are busy.
 A:","[' Yes', ' No']",1
 748,"Q: Is this logical argument valid?
 All adults are in a rush.
-All adults late.
-Therefore adults late because they are in a rush.
+All adults are late.
+Therefore adults are late because they are in a rush.
 A:","[' Yes', ' No']",1
 749,"Q: Is this logical argument valid?
 All adults are conscientious.
@@ -3791,8 +3791,8 @@ Therefore humans have no time because they are busy.
 A:","[' Yes', ' No']",1
 758,"Q: Is this logical argument valid?
 All humans are in a rush.
-All humans late.
-Therefore humans late because they are in a rush.
+All humans are late.
+Therefore humans are late because they are in a rush.
 A:","[' Yes', ' No']",1
 759,"Q: Is this logical argument valid?
 All humans are conscientious.
@@ -3841,8 +3841,8 @@ Therefore students have no time because they are busy.
 A:","[' Yes', ' No']",1
 768,"Q: Is this logical argument valid?
 All students are in a rush.
-All students late.
-Therefore students late because they are in a rush.
+All students are late.
+Therefore students are late because they are in a rush.
 A:","[' Yes', ' No']",1
 769,"Q: Is this logical argument valid?
 All students are conscientious.
@@ -3891,8 +3891,8 @@ Therefore boys have no time because they are busy.
 A:","[' Yes', ' No']",1
 778,"Q: Is this logical argument valid?
 All boys are in a rush.
-All boys late.
-Therefore boys late because they are in a rush.
+All boys are late.
+Therefore boys are late because they are in a rush.
 A:","[' Yes', ' No']",1
 779,"Q: Is this logical argument valid?
 All boys are conscientious.
@@ -3941,8 +3941,8 @@ Therefore girls have no time because they are busy.
 A:","[' Yes', ' No']",1
 788,"Q: Is this logical argument valid?
 All girls are in a rush.
-All girls late.
-Therefore girls late because they are in a rush.
+All girls are late.
+Therefore girls are late because they are in a rush.
 A:","[' Yes', ' No']",1
 789,"Q: Is this logical argument valid?
 All girls are conscientious.
@@ -3991,8 +3991,8 @@ Therefore people have no time because they are busy.
 A:","[' Yes', ' No']",1
 798,"Q: Is this logical argument valid?
 All people are in a rush.
-All people late.
-Therefore people late because they are in a rush.
+All people are late.
+Therefore people are late because they are in a rush.
 A:","[' Yes', ' No']",1
 799,"Q: Is this logical argument valid?
 All people are conscientious.
@@ -4041,8 +4041,8 @@ Conclusion: Therefore men have no time because they are busy.
 A:","[' Yes', ' No']",1
 808,"Q: Does the conclusion follow from the premises?
 Premise 1: All men are in a rush.
-Premise 2: All men late.
-Conclusion: Therefore men late because they are in a rush.
+Premise 2: All men are late.
+Conclusion: Therefore men are late because they are in a rush.
 A:","[' Yes', ' No']",1
 809,"Q: Does the conclusion follow from the premises?
 Premise 1: All men are conscientious.
@@ -4091,8 +4091,8 @@ Conclusion: Therefore women have no time because they are busy.
 A:","[' Yes', ' No']",1
 818,"Q: Does the conclusion follow from the premises?
 Premise 1: All women are in a rush.
-Premise 2: All women late.
-Conclusion: Therefore women late because they are in a rush.
+Premise 2: All women are late.
+Conclusion: Therefore women are late because they are in a rush.
 A:","[' Yes', ' No']",1
 819,"Q: Does the conclusion follow from the premises?
 Premise 1: All women are conscientious.
@@ -4141,8 +4141,8 @@ Conclusion: Therefore children have no time because they are busy.
 A:","[' Yes', ' No']",1
 828,"Q: Does the conclusion follow from the premises?
 Premise 1: All children are in a rush.
-Premise 2: All children late.
-Conclusion: Therefore children late because they are in a rush.
+Premise 2: All children are late.
+Conclusion: Therefore children are late because they are in a rush.
 A:","[' Yes', ' No']",1
 829,"Q: Does the conclusion follow from the premises?
 Premise 1: All children are conscientious.
@@ -4191,8 +4191,8 @@ Conclusion: Therefore teenagers have no time because they are busy.
 A:","[' Yes', ' No']",1
 838,"Q: Does the conclusion follow from the premises?
 Premise 1: All teenagers are in a rush.
-Premise 2: All teenagers late.
-Conclusion: Therefore teenagers late because they are in a rush.
+Premise 2: All teenagers are late.
+Conclusion: Therefore teenagers are late because they are in a rush.
 A:","[' Yes', ' No']",1
 839,"Q: Does the conclusion follow from the premises?
 Premise 1: All teenagers are conscientious.
@@ -4241,8 +4241,8 @@ Conclusion: Therefore adults have no time because they are busy.
 A:","[' Yes', ' No']",1
 848,"Q: Does the conclusion follow from the premises?
 Premise 1: All adults are in a rush.
-Premise 2: All adults late.
-Conclusion: Therefore adults late because they are in a rush.
+Premise 2: All adults are late.
+Conclusion: Therefore adults are late because they are in a rush.
 A:","[' Yes', ' No']",1
 849,"Q: Does the conclusion follow from the premises?
 Premise 1: All adults are conscientious.
@@ -4291,8 +4291,8 @@ Conclusion: Therefore humans have no time because they are busy.
 A:","[' Yes', ' No']",1
 858,"Q: Does the conclusion follow from the premises?
 Premise 1: All humans are in a rush.
-Premise 2: All humans late.
-Conclusion: Therefore humans late because they are in a rush.
+Premise 2: All humans are late.
+Conclusion: Therefore humans are late because they are in a rush.
 A:","[' Yes', ' No']",1
 859,"Q: Does the conclusion follow from the premises?
 Premise 1: All humans are conscientious.
@@ -4341,8 +4341,8 @@ Conclusion: Therefore students have no time because they are busy.
 A:","[' Yes', ' No']",1
 868,"Q: Does the conclusion follow from the premises?
 Premise 1: All students are in a rush.
-Premise 2: All students late.
-Conclusion: Therefore students late because they are in a rush.
+Premise 2: All students are late.
+Conclusion: Therefore students are late because they are in a rush.
 A:","[' Yes', ' No']",1
 869,"Q: Does the conclusion follow from the premises?
 Premise 1: All students are conscientious.
@@ -4391,8 +4391,8 @@ Conclusion: Therefore boys have no time because they are busy.
 A:","[' Yes', ' No']",1
 878,"Q: Does the conclusion follow from the premises?
 Premise 1: All boys are in a rush.
-Premise 2: All boys late.
-Conclusion: Therefore boys late because they are in a rush.
+Premise 2: All boys are late.
+Conclusion: Therefore boys are late because they are in a rush.
 A:","[' Yes', ' No']",1
 879,"Q: Does the conclusion follow from the premises?
 Premise 1: All boys are conscientious.
@@ -4441,8 +4441,8 @@ Conclusion: Therefore girls have no time because they are busy.
 A:","[' Yes', ' No']",1
 888,"Q: Does the conclusion follow from the premises?
 Premise 1: All girls are in a rush.
-Premise 2: All girls late.
-Conclusion: Therefore girls late because they are in a rush.
+Premise 2: All girls are late.
+Conclusion: Therefore girls are late because they are in a rush.
 A:","[' Yes', ' No']",1
 889,"Q: Does the conclusion follow from the premises?
 Premise 1: All girls are conscientious.
@@ -4491,8 +4491,8 @@ Conclusion: Therefore people have no time because they are busy.
 A:","[' Yes', ' No']",1
 898,"Q: Does the conclusion follow from the premises?
 Premise 1: All people are in a rush.
-Premise 2: All people late.
-Conclusion: Therefore people late because they are in a rush.
+Premise 2: All people are late.
+Conclusion: Therefore people are late because they are in a rush.
 A:","[' Yes', ' No']",1
 899,"Q: Does the conclusion follow from the premises?
 Premise 1: All people are conscientious.
@@ -4541,8 +4541,8 @@ Conclusion: Men have no time because they are busy.
 A:","[' Yes', ' No']",1
 908,"Q: Does the conclusion follow from the premises?
 Premise 1: All men are in a rush.
-Premise 2: All men late.
-Conclusion: Men late because they are in a rush.
+Premise 2: All men are late.
+Conclusion: Men are late because they are in a rush.
 A:","[' Yes', ' No']",1
 909,"Q: Does the conclusion follow from the premises?
 Premise 1: All men are conscientious.
@@ -4591,8 +4591,8 @@ Conclusion: Women have no time because they are busy.
 A:","[' Yes', ' No']",1
 918,"Q: Does the conclusion follow from the premises?
 Premise 1: All women are in a rush.
-Premise 2: All women late.
-Conclusion: Women late because they are in a rush.
+Premise 2: All women are late.
+Conclusion: Women are late because they are in a rush.
 A:","[' Yes', ' No']",1
 919,"Q: Does the conclusion follow from the premises?
 Premise 1: All women are conscientious.
@@ -4641,8 +4641,8 @@ Conclusion: Children have no time because they are busy.
 A:","[' Yes', ' No']",1
 928,"Q: Does the conclusion follow from the premises?
 Premise 1: All children are in a rush.
-Premise 2: All children late.
-Conclusion: Children late because they are in a rush.
+Premise 2: All children are late.
+Conclusion: Children are late because they are in a rush.
 A:","[' Yes', ' No']",1
 929,"Q: Does the conclusion follow from the premises?
 Premise 1: All children are conscientious.
@@ -4691,8 +4691,8 @@ Conclusion: Teenagers have no time because they are busy.
 A:","[' Yes', ' No']",1
 938,"Q: Does the conclusion follow from the premises?
 Premise 1: All teenagers are in a rush.
-Premise 2: All teenagers late.
-Conclusion: Teenagers late because they are in a rush.
+Premise 2: All teenagers are late.
+Conclusion: Teenagers are late because they are in a rush.
 A:","[' Yes', ' No']",1
 939,"Q: Does the conclusion follow from the premises?
 Premise 1: All teenagers are conscientious.
@@ -4741,8 +4741,8 @@ Conclusion: Adults have no time because they are busy.
 A:","[' Yes', ' No']",1
 948,"Q: Does the conclusion follow from the premises?
 Premise 1: All adults are in a rush.
-Premise 2: All adults late.
-Conclusion: Adults late because they are in a rush.
+Premise 2: All adults are late.
+Conclusion: Adults are late because they are in a rush.
 A:","[' Yes', ' No']",1
 949,"Q: Does the conclusion follow from the premises?
 Premise 1: All adults are conscientious.
@@ -4791,8 +4791,8 @@ Conclusion: Humans have no time because they are busy.
 A:","[' Yes', ' No']",1
 958,"Q: Does the conclusion follow from the premises?
 Premise 1: All humans are in a rush.
-Premise 2: All humans late.
-Conclusion: Humans late because they are in a rush.
+Premise 2: All humans are late.
+Conclusion: Humans are late because they are in a rush.
 A:","[' Yes', ' No']",1
 959,"Q: Does the conclusion follow from the premises?
 Premise 1: All humans are conscientious.
@@ -4841,8 +4841,8 @@ Conclusion: Students have no time because they are busy.
 A:","[' Yes', ' No']",1
 968,"Q: Does the conclusion follow from the premises?
 Premise 1: All students are in a rush.
-Premise 2: All students late.
-Conclusion: Students late because they are in a rush.
+Premise 2: All students are late.
+Conclusion: Students are late because they are in a rush.
 A:","[' Yes', ' No']",1
 969,"Q: Does the conclusion follow from the premises?
 Premise 1: All students are conscientious.
@@ -4891,8 +4891,8 @@ Conclusion: Boys have no time because they are busy.
 A:","[' Yes', ' No']",1
 978,"Q: Does the conclusion follow from the premises?
 Premise 1: All boys are in a rush.
-Premise 2: All boys late.
-Conclusion: Boys late because they are in a rush.
+Premise 2: All boys are late.
+Conclusion: Boys are late because they are in a rush.
 A:","[' Yes', ' No']",1
 979,"Q: Does the conclusion follow from the premises?
 Premise 1: All boys are conscientious.
@@ -4941,8 +4941,8 @@ Conclusion: Girls have no time because they are busy.
 A:","[' Yes', ' No']",1
 988,"Q: Does the conclusion follow from the premises?
 Premise 1: All girls are in a rush.
-Premise 2: All girls late.
-Conclusion: Girls late because they are in a rush.
+Premise 2: All girls are late.
+Conclusion: Girls are late because they are in a rush.
 A:","[' Yes', ' No']",1
 989,"Q: Does the conclusion follow from the premises?
 Premise 1: All girls are conscientious.
@@ -4991,8 +4991,8 @@ Conclusion: People have no time because they are busy.
 A:","[' Yes', ' No']",1
 998,"Q: Does the conclusion follow from the premises?
 Premise 1: All people are in a rush.
-Premise 2: All people late.
-Conclusion: People late because they are in a rush.
+Premise 2: All people are late.
+Conclusion: People are late because they are in a rush.
 A:","[' Yes', ' No']",1
 999,"Q: Does the conclusion follow from the premises?
 Premise 1: All people are conscientious.
