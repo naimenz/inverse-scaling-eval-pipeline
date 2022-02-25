@@ -12,13 +12,19 @@ adjectives_verbs = pd.read_csv(Path(data_path, "adjectives_verbs.csv"))
 templates["templates"] = templates["templates"].map(lambda entry: entry.replace("\\n", "\n"))
 
 filled_templates = []
+possible_answers_list = []
+answer_ix_list = []
+possible_answers = [" Yes", " No"]
+answer_ix = 1
 for template in templates["templates"]:
     for _, (plural_noun, capital_plural_noun) in plural_nouns.iterrows():
         for _, (adjective, verb) in adjectives_verbs.iterrows():
             filled_template = template.format(plural_noun=plural_noun, capital_plural_noun=capital_plural_noun, adjective=adjective, verb=verb)
             filled_templates.append(filled_template)
+            possible_answers_list.append(possible_answers)
+            answer_ix_list.append(answer_ix)
             print(f"===\n{filled_template}\n===")
-filled_template_df = pd.DataFrame({"filled_template": filled_templates})
+filled_template_df = pd.DataFrame({"filled_template": filled_templates, "possible_answers": possible_answers_list, "answer_ix": answer_ix_list})
 filled_template_df.to_csv(Path(data_path, "filled_templates.csv"))
 print(filled_template_df.head())
 print(filled_template_df.info())

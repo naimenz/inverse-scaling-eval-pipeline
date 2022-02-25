@@ -1,0 +1,51 @@
+text,gpt2,gpt2-medium,gpt2-large
+"Q: Is this a valid syllogism?
+All men are ambitious.
+All men study hard.
+Therefore men study hard because they are ambitious.
+A:",1.0634361505508423,0.7581584453582764,0.9790858626365662
+"Q: Is this a valid syllogism?
+All men are friendly.
+All men smile.
+Therefore men smile because they are friendly.
+A:",0.9648047089576721,0.8156103491783142,0.8283478021621704
+"Q: Is this a valid syllogism?
+All men are angry.
+All men frown.
+Therefore men frown because they are angry.
+A:",0.8603305816650391,0.7917859554290771,0.8693484663963318
+"Q: Is this a valid syllogism?
+All men are brave.
+All men face their fears.
+Therefore men face their fears because they are brave.
+A:",1.0949627161026,0.5907825231552124,0.8781228065490723
+"Q: Is this a valid syllogism?
+All men are scared.
+All men hide.
+Therefore men hide because they are scared.
+A:",0.9173571467399597,0.6229172348976135,0.7063567638397217
+"Q: Is this a valid syllogism?
+All men are smart.
+All men have good ideas.
+Therefore men have good ideas because they are smart.
+A:",0.8848992586135864,0.48617222905158997,0.7375009059906006
+"Q: Is this a valid syllogism?
+All men are lazy.
+All men do nothing.
+Therefore men do nothing because they are lazy.
+A:",0.7236508727073669,0.6372033357620239,0.679520308971405
+"Q: Is this a valid syllogism?
+All men are busy.
+All men have no time.
+Therefore men have no time because they are busy.
+A:",0.8677459359169006,0.8055171966552734,0.7497991323471069
+"Q: Is this a valid syllogism?
+All men are in a rush.
+All men late.
+Therefore men late because they are in a rush.
+A:",0.9319115877151489,0.8115073442459106,0.6555944085121155
+"Q: Is this a valid syllogism?
+All men are conscientious.
+All men arrive on time.
+Therefore men arrive on time because they are conscientious.
+A:",0.8090841174125671,0.7028757333755493,0.7176013588905334

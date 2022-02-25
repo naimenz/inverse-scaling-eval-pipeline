@@ -43,7 +43,8 @@ class GPT2Wrapper:
         """answer_ix gives the index of the intended answer from possible_answers"""
         logits = self.get_logits(text)
         # get the token id of the answer token
-        positive_token_id, negative_token_id = self.tokenizer(list(possible_answers))[
+        assert(possible_answers == [" Yes", " No"])
+        positive_token_id, negative_token_id = self.tokenizer(possible_answers)[
             "input_ids"
         ]
         logprobs = F.log_softmax(logits, dim=-1)
@@ -55,7 +56,7 @@ class GPT2Wrapper:
         normalised_logprobs = F.log_softmax(
             torch.Tensor([positive_logprob, negative_logprob]), dim=-1
         )
-        return  -normalised_logprobs[answer_ix].item()
+        return -normalised_logprobs[answer_ix].item()
 
     def get_logits(self, text: str) -> torch.Tensor:
         encoded_input = self.tokenizer(text, return_tensors="pt")
@@ -73,7 +74,7 @@ def evaluate_gpt2_texts(
     text_answer_ix_pairs: list[tuple[str, int]],
     sizes: tuple[GPT2Size, ...],
     y_axis: YAxis,
-    possible_answers: tuple[str, str]
+    possible_answers: tuple[str, str],
 ) -> dict[str, dict[str, float]]:
     logging.info("CALLED GPT2")
     model_dict = {size: GPT2Wrapper(size) for size in sizes}

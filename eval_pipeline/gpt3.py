@@ -45,26 +45,6 @@ def call_gpt3(text: str, size: GPT3Size) -> dict:
     return response_json
 
 
-def json_to_positive_prob(
-    json: dict, possible_answers: tuple[str, str],
-) -> float:
-    positive_token, negative_token = possible_answers
-    logprobs = json["choices"][0]["logprobs"]["top_logprobs"][0]
-    positive_logprob = logprobs.get(positive_token)
-    negative_logprob = logprobs.get(negative_token)
-    if positive_logprob is None or negative_logprob is None:
-        raise ValueError(
-            f"logprobs {logprobs} doesn't contain positive token {positive_token} or negative token {negative_token}"
-        )
-    unnormed_positive_prob, unnormed_negative_prob = np.exp(positive_logprob), np.exp(
-        negative_logprob
-    )
-    positive_prob = unnormed_positive_prob / (
-        unnormed_positive_prob + unnormed_negative_prob
-    )
-    return positive_prob
-
-
 def json_to_loss(
     json: dict,
     answer_ix: int,
@@ -73,39 +53,24 @@ def json_to_loss(
     logprobs = json["choices"][0]["logprobs"]["top_logprobs"][0]
     possible_logprobs = [logprobs.get(pa) for pa in possible_answers]
     if any(pl is None for pl in possible_logprobs):
-        raise ValueError(f"logprobs {logprobs} doesn't contain all possible answers {possible_answers}")
+        raise ValueError(
+            f"logprobs {logprobs} doesn't contain all possible answers {possible_answers}"
+        )
     normalised_logprobs = F.log_softmax(torch.Tensor(possible_logprobs), dim=-1)
-    return - normalised_logprobs[answer_ix].item()
+    return -normalised_logprobs[answer_ix].item()
 
 
 def evaluate_gpt3_text(
     text: str,
-    sizes: tuple[GPT3Size, ...],
-    y_axis: YAxis,
+    sizes: list[GPT3Size],
     answer_ix: int,
     possible_answers: tuple[str, str],
 ) -> dict[str, float]:
-    prob_dict = dict()
+    return_dict = dict()
     prepped_text = wrap_question(text)
     for size in sizes:
         logging.info(f"RUNNING {size}")
         json = call_gpt3(prepped_text, size)
-        if y_axis == "positive_prob":
-            value = json_to_positive_prob(json, possible_answers)
-        elif y_axis == "loss":
-            value = json_to_loss(json, answer_ix, possible_answers)
-        prob_dict[size] = value
-    return prob_dict
-
-
-def evaluate_gpt3_texts(
-    text_answer_ix_pairs: list[tuple[str, int]],
-    sizes: tuple[GPT3Size, ...],
-    y_axis: YAxis,
-    possible_answers: tuple[str, str],
-) -> dict[str, dict[str, float]]:
-    logging.info("CALLED GPT3")
-    all_prob_dicts = dict()
-    for text, answer_ix in text_answer_ix_pairs:
-        all_prob_dicts[text] = evaluate_gpt3_text(text, sizes, y_axis, answer_ix, possible_answers)
-    return all_prob_dicts
+        value = json_to_loss(json, answer_ix, possible_answers)
+        return_dict[size] = value
+    return return_dict

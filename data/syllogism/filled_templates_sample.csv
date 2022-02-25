@@ -1,0 +1,51 @@
+,filled_template,possible_answers,answer_ix
+0,"Q: Is this a valid syllogism?
+All men are ambitious.
+All men study hard.
+Therefore men study hard because they are ambitious.
+A:","[' Yes', ' No']",1
+1,"Q: Is this a valid syllogism?
+All men are friendly.
+All men smile.
+Therefore men smile because they are friendly.
+A:","[' Yes', ' No']",1
+2,"Q: Is this a valid syllogism?
+All men are angry.
+All men frown.
+Therefore men frown because they are angry.
+A:","[' Yes', ' No']",1
+3,"Q: Is this a valid syllogism?
+All men are brave.
+All men face their fears.
+Therefore men face their fears because they are brave.
+A:","[' Yes', ' No']",1
+4,"Q: Is this a valid syllogism?
+All men are scared.
+All men hide.
+Therefore men hide because they are scared.
+A:","[' Yes', ' No']",1
+5,"Q: Is this a valid syllogism?
+All men are smart.
+All men have good ideas.
+Therefore men have good ideas because they are smart.
+A:","[' Yes', ' No']",1
+6,"Q: Is this a valid syllogism?
+All men are lazy.
+All men do nothing.
+Therefore men do nothing because they are lazy.
+A:","[' Yes', ' No']",1
+7,"Q: Is this a valid syllogism?
+All men are busy.
+All men have no time.
+Therefore men have no time because they are busy.
+A:","[' Yes', ' No']",1
+8,"Q: Is this a valid syllogism?
+All men are in a rush.
+All men late.
+Therefore men late because they are in a rush.
+A:","[' Yes', ' No']",1
+9,"Q: Is this a valid syllogism?
+All men are conscientious.
+All men arrive on time.
+Therefore men arrive on time because they are conscientious.
+A:","[' Yes', ' No']",1
