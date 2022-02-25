@@ -8,7 +8,7 @@ from transformers import GPT2LMHeadModel, GPT2TokenizerFast  # type: ignore
 import torch
 import torch.nn.functional as F
 from pprint import pprint
-from eval_pipeline.utils import YAxis, wrap_question
+from eval_pipeline.utils import YAxis
 import logging
 
 
@@ -82,14 +82,13 @@ def evaluate_gpt2_texts(
 
     for text, answer_ix in text_answer_ix_pairs:
         # for now, just using yes/no questions
-        prepped_text = wrap_question(text)
         return_dict = dict()
         for size, model in model_dict.items():
             logging.info(f"RUNNING {size}")
             if y_axis == "positive_prob":
-                value = model.get_positive_prob(prepped_text, possible_answers)
+                value = model.get_positive_prob(text, possible_answers)
             elif y_axis == "loss":
-                value = model.get_loss(prepped_text, answer_ix, possible_answers)
+                value = model.get_loss(text, answer_ix, possible_answers)
             return_dict[size] = value
         all_return_dicts[text] = return_dict
     return all_return_dicts

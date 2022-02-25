@@ -6,7 +6,7 @@ from __future__ import annotations
 from collections import defaultdict
 from typing import Optional
 from typing_extensions import Literal
-from eval_pipeline.utils import YAxis, wrap_question
+from eval_pipeline.utils import YAxis
 import requests
 import os
 from dotenv import load_dotenv
@@ -67,10 +67,9 @@ def evaluate_gpt3_text(
     possible_answers: tuple[str, str],
 ) -> dict[str, float]:
     return_dict = dict()
-    prepped_text = wrap_question(text)
     for size in sizes:
         logging.info(f"RUNNING {size}")
-        json = call_gpt3(prepped_text, size)
+        json = call_gpt3(text, size)
         value = json_to_loss(json, answer_ix, possible_answers)
         return_dict[size] = value
     return return_dict
