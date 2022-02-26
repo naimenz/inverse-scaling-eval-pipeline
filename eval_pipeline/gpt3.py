@@ -25,13 +25,14 @@ OPENAI_ORG_ID = os.getenv("OPENAI_ORG_ID")
 
 
 def call_gpt3(text: str, size: GPT3Size) -> dict:
-
+    # making it a variable for debugging
+    max_logprobs = 100
     data = {
         "prompt": text,
         "temperature": 0,
         "n": 1,
         "max_tokens": 1,
-        "logprobs": 5,
+        "logprobs": max_logprobs,
     }
 
     headers = {
@@ -42,6 +43,16 @@ def call_gpt3(text: str, size: GPT3Size) -> dict:
 
     url = os.path.join(OPENAI_API_BASE_URL, size, "completions")
     response_json = requests.post(url, json=data, headers=headers).json()
+    try:
+        logprobs = response_json["choices"][0]["logprobs"]["top_logprobs"][0]
+    except Exception as e:
+        pprint(f"FAILURE: {response_json}")
+        raise e
+    if len(logprobs) < max_logprobs:
+        print(f"=== len(logprobs) = {len(logprobs)} ===")
+        pprint(data)
+        pprint(response_json)
+        print(f"======")
     return response_json
 
 
@@ -51,6 +62,7 @@ def json_to_loss(
     possible_answers: tuple[str, str],
 ) -> float:
     logprobs = json["choices"][0]["logprobs"]["top_logprobs"][0]
+    print(len(logprobs))
     possible_logprobs = [logprobs.get(pa) for pa in possible_answers]
     if any(pl is None for pl in possible_logprobs):
         raise ValueError(

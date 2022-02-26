@@ -1,0 +1,4001 @@
+,filled_template,possible_answers,answer_ix
+0,"Q: Which is more likely?
+1. Michael is an accountant.
+2. Michael is an accountant and is careful.
+A:","['1', '2']",1
+1,"Q: Which is more likely?
+1. Michael is an accountant.
+2. Michael is an accountant and is boring.
+A:","['1', '2']",1
+2,"Q: Which is more likely?
+1. Michael is an accountant and is careful.
+2. Michael is an accountant.
+A:","['1', '2']",2
+3,"Q: Which is more likely?
+1. Michael is an accountant and is boring.
+2. Michael is an accountant.
+A:","['1', '2']",2
+4,"Question: Which is more likely?
+A. Michael is an accountant.
+B. Michael is an accountant and is careful.
+Answer:","['A', 'B']",1
+5,"Question: Which is more likely?
+A. Michael is an accountant.
+B. Michael is an accountant and is boring.
+Answer:","['A', 'B']",1
+6,"Question: Which is more likely?
+A. Michael is an accountant and is careful.
+B. Michael is an accountant.
+Answer:","['A', 'B']",2
+7,"Question: Which is more likely?
+A. Michael is an accountant and is boring.
+B. Michael is an accountant.
+Answer:","['A', 'B']",2
+8,"Q: Which is more likely?
+1. Michael is an accountant.
+2. Michael is an accountant and Michael is careful.
+A:","['1', '2']",1
+9,"Q: Which is more likely?
+1. Michael is an accountant.
+2. Michael is an accountant and Michael is boring.
+A:","['1', '2']",1
+10,"Q: Which is more likely?
+1. Michael is an accountant and Michael is careful.
+2. Michael is an accountant.
+A:","['1', '2']",2
+11,"Q: Which is more likely?
+1. Michael is an accountant and Michael is boring.
+2. Michael is an accountant.
+A:","['1', '2']",2
+12,"Q: Which is more likely?
+1. Michael is an accountant.
+2. Michael is careful and is an accountant.
+A:","['1', '2']",1
+13,"Q: Which is more likely?
+1. Michael is an accountant.
+2. Michael is boring and is an accountant.
+A:","['1', '2']",1
+14,"Q: Which is more likely?
+1. Michael is careful and is an accountant.
+2. Michael is an accountant.
+A:","['1', '2']",2
+15,"Q: Which is more likely?
+1. Michael is boring and is an accountant.
+2. Michael is an accountant.
+A:","['1', '2']",2
+16,"Q: Which is more likely to be true?
+1. Michael is an accountant.
+2. Michael is an accountant and is careful.
+A:","['1', '2']",1
+17,"Q: Which is more likely to be true?
+1. Michael is an accountant.
+2. Michael is an accountant and is boring.
+A:","['1', '2']",1
+18,"Q: Which is more likely to be true?
+1. Michael is an accountant and is careful.
+2. Michael is an accountant.
+A:","['1', '2']",2
+19,"Q: Which is more likely to be true?
+1. Michael is an accountant and is boring.
+2. Michael is an accountant.
+A:","['1', '2']",2
+20,"Q: Which is more probable?
+1. Michael is an accountant.
+2. Michael is an accountant and is careful.
+A:","['1', '2']",1
+21,"Q: Which is more probable?
+1. Michael is an accountant.
+2. Michael is an accountant and is boring.
+A:","['1', '2']",1
+22,"Q: Which is more probable?
+1. Michael is an accountant and is careful.
+2. Michael is an accountant.
+A:","['1', '2']",2
+23,"Q: Which is more probable?
+1. Michael is an accountant and is boring.
+2. Michael is an accountant.
+A:","['1', '2']",2
+24,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is an accountant.
+2. Michael is an accountant and is careful.
+A:","['1', '2']",1
+25,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is an accountant.
+2. Michael is an accountant and is boring.
+A:","['1', '2']",1
+26,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is an accountant and is careful.
+2. Michael is an accountant.
+A:","['1', '2']",2
+27,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is an accountant and is boring.
+2. Michael is an accountant.
+A:","['1', '2']",2
+28,"Q: Which is more likely?
+1. Michael is a celebrity.
+2. Michael is a celebrity and is beautiful.
+A:","['1', '2']",1
+29,"Q: Which is more likely?
+1. Michael is a celebrity.
+2. Michael is a celebrity and is rich.
+A:","['1', '2']",1
+30,"Q: Which is more likely?
+1. Michael is a celebrity and is beautiful.
+2. Michael is a celebrity.
+A:","['1', '2']",2
+31,"Q: Which is more likely?
+1. Michael is a celebrity and is rich.
+2. Michael is a celebrity.
+A:","['1', '2']",2
+32,"Question: Which is more likely?
+A. Michael is a celebrity.
+B. Michael is a celebrity and is beautiful.
+Answer:","['A', 'B']",1
+33,"Question: Which is more likely?
+A. Michael is a celebrity.
+B. Michael is a celebrity and is rich.
+Answer:","['A', 'B']",1
+34,"Question: Which is more likely?
+A. Michael is a celebrity and is beautiful.
+B. Michael is a celebrity.
+Answer:","['A', 'B']",2
+35,"Question: Which is more likely?
+A. Michael is a celebrity and is rich.
+B. Michael is a celebrity.
+Answer:","['A', 'B']",2
+36,"Q: Which is more likely?
+1. Michael is a celebrity.
+2. Michael is a celebrity and Michael is beautiful.
+A:","['1', '2']",1
+37,"Q: Which is more likely?
+1. Michael is a celebrity.
+2. Michael is a celebrity and Michael is rich.
+A:","['1', '2']",1
+38,"Q: Which is more likely?
+1. Michael is a celebrity and Michael is beautiful.
+2. Michael is a celebrity.
+A:","['1', '2']",2
+39,"Q: Which is more likely?
+1. Michael is a celebrity and Michael is rich.
+2. Michael is a celebrity.
+A:","['1', '2']",2
+40,"Q: Which is more likely?
+1. Michael is a celebrity.
+2. Michael is beautiful and is a celebrity.
+A:","['1', '2']",1
+41,"Q: Which is more likely?
+1. Michael is a celebrity.
+2. Michael is rich and is a celebrity.
+A:","['1', '2']",1
+42,"Q: Which is more likely?
+1. Michael is beautiful and is a celebrity.
+2. Michael is a celebrity.
+A:","['1', '2']",2
+43,"Q: Which is more likely?
+1. Michael is rich and is a celebrity.
+2. Michael is a celebrity.
+A:","['1', '2']",2
+44,"Q: Which is more likely to be true?
+1. Michael is a celebrity.
+2. Michael is a celebrity and is beautiful.
+A:","['1', '2']",1
+45,"Q: Which is more likely to be true?
+1. Michael is a celebrity.
+2. Michael is a celebrity and is rich.
+A:","['1', '2']",1
+46,"Q: Which is more likely to be true?
+1. Michael is a celebrity and is beautiful.
+2. Michael is a celebrity.
+A:","['1', '2']",2
+47,"Q: Which is more likely to be true?
+1. Michael is a celebrity and is rich.
+2. Michael is a celebrity.
+A:","['1', '2']",2
+48,"Q: Which is more probable?
+1. Michael is a celebrity.
+2. Michael is a celebrity and is beautiful.
+A:","['1', '2']",1
+49,"Q: Which is more probable?
+1. Michael is a celebrity.
+2. Michael is a celebrity and is rich.
+A:","['1', '2']",1
+50,"Q: Which is more probable?
+1. Michael is a celebrity and is beautiful.
+2. Michael is a celebrity.
+A:","['1', '2']",2
+51,"Q: Which is more probable?
+1. Michael is a celebrity and is rich.
+2. Michael is a celebrity.
+A:","['1', '2']",2
+52,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a celebrity.
+2. Michael is a celebrity and is beautiful.
+A:","['1', '2']",1
+53,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a celebrity.
+2. Michael is a celebrity and is rich.
+A:","['1', '2']",1
+54,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a celebrity and is beautiful.
+2. Michael is a celebrity.
+A:","['1', '2']",2
+55,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a celebrity and is rich.
+2. Michael is a celebrity.
+A:","['1', '2']",2
+56,"Q: Which is more likely?
+1. Michael is a firefighter.
+2. Michael is a firefighter and is brave.
+A:","['1', '2']",1
+57,"Q: Which is more likely?
+1. Michael is a firefighter.
+2. Michael is a firefighter and is strong.
+A:","['1', '2']",1
+58,"Q: Which is more likely?
+1. Michael is a firefighter and is brave.
+2. Michael is a firefighter.
+A:","['1', '2']",2
+59,"Q: Which is more likely?
+1. Michael is a firefighter and is strong.
+2. Michael is a firefighter.
+A:","['1', '2']",2
+60,"Question: Which is more likely?
+A. Michael is a firefighter.
+B. Michael is a firefighter and is brave.
+Answer:","['A', 'B']",1
+61,"Question: Which is more likely?
+A. Michael is a firefighter.
+B. Michael is a firefighter and is strong.
+Answer:","['A', 'B']",1
+62,"Question: Which is more likely?
+A. Michael is a firefighter and is brave.
+B. Michael is a firefighter.
+Answer:","['A', 'B']",2
+63,"Question: Which is more likely?
+A. Michael is a firefighter and is strong.
+B. Michael is a firefighter.
+Answer:","['A', 'B']",2
+64,"Q: Which is more likely?
+1. Michael is a firefighter.
+2. Michael is a firefighter and Michael is brave.
+A:","['1', '2']",1
+65,"Q: Which is more likely?
+1. Michael is a firefighter.
+2. Michael is a firefighter and Michael is strong.
+A:","['1', '2']",1
+66,"Q: Which is more likely?
+1. Michael is a firefighter and Michael is brave.
+2. Michael is a firefighter.
+A:","['1', '2']",2
+67,"Q: Which is more likely?
+1. Michael is a firefighter and Michael is strong.
+2. Michael is a firefighter.
+A:","['1', '2']",2
+68,"Q: Which is more likely?
+1. Michael is a firefighter.
+2. Michael is brave and is a firefighter.
+A:","['1', '2']",1
+69,"Q: Which is more likely?
+1. Michael is a firefighter.
+2. Michael is strong and is a firefighter.
+A:","['1', '2']",1
+70,"Q: Which is more likely?
+1. Michael is brave and is a firefighter.
+2. Michael is a firefighter.
+A:","['1', '2']",2
+71,"Q: Which is more likely?
+1. Michael is strong and is a firefighter.
+2. Michael is a firefighter.
+A:","['1', '2']",2
+72,"Q: Which is more likely to be true?
+1. Michael is a firefighter.
+2. Michael is a firefighter and is brave.
+A:","['1', '2']",1
+73,"Q: Which is more likely to be true?
+1. Michael is a firefighter.
+2. Michael is a firefighter and is strong.
+A:","['1', '2']",1
+74,"Q: Which is more likely to be true?
+1. Michael is a firefighter and is brave.
+2. Michael is a firefighter.
+A:","['1', '2']",2
+75,"Q: Which is more likely to be true?
+1. Michael is a firefighter and is strong.
+2. Michael is a firefighter.
+A:","['1', '2']",2
+76,"Q: Which is more probable?
+1. Michael is a firefighter.
+2. Michael is a firefighter and is brave.
+A:","['1', '2']",1
+77,"Q: Which is more probable?
+1. Michael is a firefighter.
+2. Michael is a firefighter and is strong.
+A:","['1', '2']",1
+78,"Q: Which is more probable?
+1. Michael is a firefighter and is brave.
+2. Michael is a firefighter.
+A:","['1', '2']",2
+79,"Q: Which is more probable?
+1. Michael is a firefighter and is strong.
+2. Michael is a firefighter.
+A:","['1', '2']",2
+80,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a firefighter.
+2. Michael is a firefighter and is brave.
+A:","['1', '2']",1
+81,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a firefighter.
+2. Michael is a firefighter and is strong.
+A:","['1', '2']",1
+82,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a firefighter and is brave.
+2. Michael is a firefighter.
+A:","['1', '2']",2
+83,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a firefighter and is strong.
+2. Michael is a firefighter.
+A:","['1', '2']",2
+84,"Q: Which is more likely?
+1. Michael is a journalist.
+2. Michael is a journalist and is nosy.
+A:","['1', '2']",1
+85,"Q: Which is more likely?
+1. Michael is a journalist.
+2. Michael is a journalist and is curious.
+A:","['1', '2']",1
+86,"Q: Which is more likely?
+1. Michael is a journalist and is nosy.
+2. Michael is a journalist.
+A:","['1', '2']",2
+87,"Q: Which is more likely?
+1. Michael is a journalist and is curious.
+2. Michael is a journalist.
+A:","['1', '2']",2
+88,"Question: Which is more likely?
+A. Michael is a journalist.
+B. Michael is a journalist and is nosy.
+Answer:","['A', 'B']",1
+89,"Question: Which is more likely?
+A. Michael is a journalist.
+B. Michael is a journalist and is curious.
+Answer:","['A', 'B']",1
+90,"Question: Which is more likely?
+A. Michael is a journalist and is nosy.
+B. Michael is a journalist.
+Answer:","['A', 'B']",2
+91,"Question: Which is more likely?
+A. Michael is a journalist and is curious.
+B. Michael is a journalist.
+Answer:","['A', 'B']",2
+92,"Q: Which is more likely?
+1. Michael is a journalist.
+2. Michael is a journalist and Michael is nosy.
+A:","['1', '2']",1
+93,"Q: Which is more likely?
+1. Michael is a journalist.
+2. Michael is a journalist and Michael is curious.
+A:","['1', '2']",1
+94,"Q: Which is more likely?
+1. Michael is a journalist and Michael is nosy.
+2. Michael is a journalist.
+A:","['1', '2']",2
+95,"Q: Which is more likely?
+1. Michael is a journalist and Michael is curious.
+2. Michael is a journalist.
+A:","['1', '2']",2
+96,"Q: Which is more likely?
+1. Michael is a journalist.
+2. Michael is nosy and is a journalist.
+A:","['1', '2']",1
+97,"Q: Which is more likely?
+1. Michael is a journalist.
+2. Michael is curious and is a journalist.
+A:","['1', '2']",1
+98,"Q: Which is more likely?
+1. Michael is nosy and is a journalist.
+2. Michael is a journalist.
+A:","['1', '2']",2
+99,"Q: Which is more likely?
+1. Michael is curious and is a journalist.
+2. Michael is a journalist.
+A:","['1', '2']",2
+100,"Q: Which is more likely to be true?
+1. Michael is a journalist.
+2. Michael is a journalist and is nosy.
+A:","['1', '2']",1
+101,"Q: Which is more likely to be true?
+1. Michael is a journalist.
+2. Michael is a journalist and is curious.
+A:","['1', '2']",1
+102,"Q: Which is more likely to be true?
+1. Michael is a journalist and is nosy.
+2. Michael is a journalist.
+A:","['1', '2']",2
+103,"Q: Which is more likely to be true?
+1. Michael is a journalist and is curious.
+2. Michael is a journalist.
+A:","['1', '2']",2
+104,"Q: Which is more probable?
+1. Michael is a journalist.
+2. Michael is a journalist and is nosy.
+A:","['1', '2']",1
+105,"Q: Which is more probable?
+1. Michael is a journalist.
+2. Michael is a journalist and is curious.
+A:","['1', '2']",1
+106,"Q: Which is more probable?
+1. Michael is a journalist and is nosy.
+2. Michael is a journalist.
+A:","['1', '2']",2
+107,"Q: Which is more probable?
+1. Michael is a journalist and is curious.
+2. Michael is a journalist.
+A:","['1', '2']",2
+108,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a journalist.
+2. Michael is a journalist and is nosy.
+A:","['1', '2']",1
+109,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a journalist.
+2. Michael is a journalist and is curious.
+A:","['1', '2']",1
+110,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a journalist and is nosy.
+2. Michael is a journalist.
+A:","['1', '2']",2
+111,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a journalist and is curious.
+2. Michael is a journalist.
+A:","['1', '2']",2
+112,"Q: Which is more likely?
+1. Michael is a librarian.
+2. Michael is a librarian and is quiet.
+A:","['1', '2']",1
+113,"Q: Which is more likely?
+1. Michael is a librarian.
+2. Michael is a librarian and is shy.
+A:","['1', '2']",1
+114,"Q: Which is more likely?
+1. Michael is a librarian and is quiet.
+2. Michael is a librarian.
+A:","['1', '2']",2
+115,"Q: Which is more likely?
+1. Michael is a librarian and is shy.
+2. Michael is a librarian.
+A:","['1', '2']",2
+116,"Question: Which is more likely?
+A. Michael is a librarian.
+B. Michael is a librarian and is quiet.
+Answer:","['A', 'B']",1
+117,"Question: Which is more likely?
+A. Michael is a librarian.
+B. Michael is a librarian and is shy.
+Answer:","['A', 'B']",1
+118,"Question: Which is more likely?
+A. Michael is a librarian and is quiet.
+B. Michael is a librarian.
+Answer:","['A', 'B']",2
+119,"Question: Which is more likely?
+A. Michael is a librarian and is shy.
+B. Michael is a librarian.
+Answer:","['A', 'B']",2
+120,"Q: Which is more likely?
+1. Michael is a librarian.
+2. Michael is a librarian and Michael is quiet.
+A:","['1', '2']",1
+121,"Q: Which is more likely?
+1. Michael is a librarian.
+2. Michael is a librarian and Michael is shy.
+A:","['1', '2']",1
+122,"Q: Which is more likely?
+1. Michael is a librarian and Michael is quiet.
+2. Michael is a librarian.
+A:","['1', '2']",2
+123,"Q: Which is more likely?
+1. Michael is a librarian and Michael is shy.
+2. Michael is a librarian.
+A:","['1', '2']",2
+124,"Q: Which is more likely?
+1. Michael is a librarian.
+2. Michael is quiet and is a librarian.
+A:","['1', '2']",1
+125,"Q: Which is more likely?
+1. Michael is a librarian.
+2. Michael is shy and is a librarian.
+A:","['1', '2']",1
+126,"Q: Which is more likely?
+1. Michael is quiet and is a librarian.
+2. Michael is a librarian.
+A:","['1', '2']",2
+127,"Q: Which is more likely?
+1. Michael is shy and is a librarian.
+2. Michael is a librarian.
+A:","['1', '2']",2
+128,"Q: Which is more likely to be true?
+1. Michael is a librarian.
+2. Michael is a librarian and is quiet.
+A:","['1', '2']",1
+129,"Q: Which is more likely to be true?
+1. Michael is a librarian.
+2. Michael is a librarian and is shy.
+A:","['1', '2']",1
+130,"Q: Which is more likely to be true?
+1. Michael is a librarian and is quiet.
+2. Michael is a librarian.
+A:","['1', '2']",2
+131,"Q: Which is more likely to be true?
+1. Michael is a librarian and is shy.
+2. Michael is a librarian.
+A:","['1', '2']",2
+132,"Q: Which is more probable?
+1. Michael is a librarian.
+2. Michael is a librarian and is quiet.
+A:","['1', '2']",1
+133,"Q: Which is more probable?
+1. Michael is a librarian.
+2. Michael is a librarian and is shy.
+A:","['1', '2']",1
+134,"Q: Which is more probable?
+1. Michael is a librarian and is quiet.
+2. Michael is a librarian.
+A:","['1', '2']",2
+135,"Q: Which is more probable?
+1. Michael is a librarian and is shy.
+2. Michael is a librarian.
+A:","['1', '2']",2
+136,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a librarian.
+2. Michael is a librarian and is quiet.
+A:","['1', '2']",1
+137,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a librarian.
+2. Michael is a librarian and is shy.
+A:","['1', '2']",1
+138,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a librarian and is quiet.
+2. Michael is a librarian.
+A:","['1', '2']",2
+139,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a librarian and is shy.
+2. Michael is a librarian.
+A:","['1', '2']",2
+140,"Q: Which is more likely?
+1. Michael is a nurse.
+2. Michael is a nurse and is caring.
+A:","['1', '2']",1
+141,"Q: Which is more likely?
+1. Michael is a nurse.
+2. Michael is a nurse and is gentle.
+A:","['1', '2']",1
+142,"Q: Which is more likely?
+1. Michael is a nurse and is caring.
+2. Michael is a nurse.
+A:","['1', '2']",2
+143,"Q: Which is more likely?
+1. Michael is a nurse and is gentle.
+2. Michael is a nurse.
+A:","['1', '2']",2
+144,"Question: Which is more likely?
+A. Michael is a nurse.
+B. Michael is a nurse and is caring.
+Answer:","['A', 'B']",1
+145,"Question: Which is more likely?
+A. Michael is a nurse.
+B. Michael is a nurse and is gentle.
+Answer:","['A', 'B']",1
+146,"Question: Which is more likely?
+A. Michael is a nurse and is caring.
+B. Michael is a nurse.
+Answer:","['A', 'B']",2
+147,"Question: Which is more likely?
+A. Michael is a nurse and is gentle.
+B. Michael is a nurse.
+Answer:","['A', 'B']",2
+148,"Q: Which is more likely?
+1. Michael is a nurse.
+2. Michael is a nurse and Michael is caring.
+A:","['1', '2']",1
+149,"Q: Which is more likely?
+1. Michael is a nurse.
+2. Michael is a nurse and Michael is gentle.
+A:","['1', '2']",1
+150,"Q: Which is more likely?
+1. Michael is a nurse and Michael is caring.
+2. Michael is a nurse.
+A:","['1', '2']",2
+151,"Q: Which is more likely?
+1. Michael is a nurse and Michael is gentle.
+2. Michael is a nurse.
+A:","['1', '2']",2
+152,"Q: Which is more likely?
+1. Michael is a nurse.
+2. Michael is caring and is a nurse.
+A:","['1', '2']",1
+153,"Q: Which is more likely?
+1. Michael is a nurse.
+2. Michael is gentle and is a nurse.
+A:","['1', '2']",1
+154,"Q: Which is more likely?
+1. Michael is caring and is a nurse.
+2. Michael is a nurse.
+A:","['1', '2']",2
+155,"Q: Which is more likely?
+1. Michael is gentle and is a nurse.
+2. Michael is a nurse.
+A:","['1', '2']",2
+156,"Q: Which is more likely to be true?
+1. Michael is a nurse.
+2. Michael is a nurse and is caring.
+A:","['1', '2']",1
+157,"Q: Which is more likely to be true?
+1. Michael is a nurse.
+2. Michael is a nurse and is gentle.
+A:","['1', '2']",1
+158,"Q: Which is more likely to be true?
+1. Michael is a nurse and is caring.
+2. Michael is a nurse.
+A:","['1', '2']",2
+159,"Q: Which is more likely to be true?
+1. Michael is a nurse and is gentle.
+2. Michael is a nurse.
+A:","['1', '2']",2
+160,"Q: Which is more probable?
+1. Michael is a nurse.
+2. Michael is a nurse and is caring.
+A:","['1', '2']",1
+161,"Q: Which is more probable?
+1. Michael is a nurse.
+2. Michael is a nurse and is gentle.
+A:","['1', '2']",1
+162,"Q: Which is more probable?
+1. Michael is a nurse and is caring.
+2. Michael is a nurse.
+A:","['1', '2']",2
+163,"Q: Which is more probable?
+1. Michael is a nurse and is gentle.
+2. Michael is a nurse.
+A:","['1', '2']",2
+164,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a nurse.
+2. Michael is a nurse and is caring.
+A:","['1', '2']",1
+165,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a nurse.
+2. Michael is a nurse and is gentle.
+A:","['1', '2']",1
+166,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a nurse and is caring.
+2. Michael is a nurse.
+A:","['1', '2']",2
+167,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a nurse and is gentle.
+2. Michael is a nurse.
+A:","['1', '2']",2
+168,"Q: Which is more likely?
+1. Michael is a teacher.
+2. Michael is a teacher and is patient.
+A:","['1', '2']",1
+169,"Q: Which is more likely?
+1. Michael is a teacher.
+2. Michael is a teacher and is strict.
+A:","['1', '2']",1
+170,"Q: Which is more likely?
+1. Michael is a teacher and is patient.
+2. Michael is a teacher.
+A:","['1', '2']",2
+171,"Q: Which is more likely?
+1. Michael is a teacher and is strict.
+2. Michael is a teacher.
+A:","['1', '2']",2
+172,"Question: Which is more likely?
+A. Michael is a teacher.
+B. Michael is a teacher and is patient.
+Answer:","['A', 'B']",1
+173,"Question: Which is more likely?
+A. Michael is a teacher.
+B. Michael is a teacher and is strict.
+Answer:","['A', 'B']",1
+174,"Question: Which is more likely?
+A. Michael is a teacher and is patient.
+B. Michael is a teacher.
+Answer:","['A', 'B']",2
+175,"Question: Which is more likely?
+A. Michael is a teacher and is strict.
+B. Michael is a teacher.
+Answer:","['A', 'B']",2
+176,"Q: Which is more likely?
+1. Michael is a teacher.
+2. Michael is a teacher and Michael is patient.
+A:","['1', '2']",1
+177,"Q: Which is more likely?
+1. Michael is a teacher.
+2. Michael is a teacher and Michael is strict.
+A:","['1', '2']",1
+178,"Q: Which is more likely?
+1. Michael is a teacher and Michael is patient.
+2. Michael is a teacher.
+A:","['1', '2']",2
+179,"Q: Which is more likely?
+1. Michael is a teacher and Michael is strict.
+2. Michael is a teacher.
+A:","['1', '2']",2
+180,"Q: Which is more likely?
+1. Michael is a teacher.
+2. Michael is patient and is a teacher.
+A:","['1', '2']",1
+181,"Q: Which is more likely?
+1. Michael is a teacher.
+2. Michael is strict and is a teacher.
+A:","['1', '2']",1
+182,"Q: Which is more likely?
+1. Michael is patient and is a teacher.
+2. Michael is a teacher.
+A:","['1', '2']",2
+183,"Q: Which is more likely?
+1. Michael is strict and is a teacher.
+2. Michael is a teacher.
+A:","['1', '2']",2
+184,"Q: Which is more likely to be true?
+1. Michael is a teacher.
+2. Michael is a teacher and is patient.
+A:","['1', '2']",1
+185,"Q: Which is more likely to be true?
+1. Michael is a teacher.
+2. Michael is a teacher and is strict.
+A:","['1', '2']",1
+186,"Q: Which is more likely to be true?
+1. Michael is a teacher and is patient.
+2. Michael is a teacher.
+A:","['1', '2']",2
+187,"Q: Which is more likely to be true?
+1. Michael is a teacher and is strict.
+2. Michael is a teacher.
+A:","['1', '2']",2
+188,"Q: Which is more probable?
+1. Michael is a teacher.
+2. Michael is a teacher and is patient.
+A:","['1', '2']",1
+189,"Q: Which is more probable?
+1. Michael is a teacher.
+2. Michael is a teacher and is strict.
+A:","['1', '2']",1
+190,"Q: Which is more probable?
+1. Michael is a teacher and is patient.
+2. Michael is a teacher.
+A:","['1', '2']",2
+191,"Q: Which is more probable?
+1. Michael is a teacher and is strict.
+2. Michael is a teacher.
+A:","['1', '2']",2
+192,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a teacher.
+2. Michael is a teacher and is patient.
+A:","['1', '2']",1
+193,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a teacher.
+2. Michael is a teacher and is strict.
+A:","['1', '2']",1
+194,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a teacher and is patient.
+2. Michael is a teacher.
+A:","['1', '2']",2
+195,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a teacher and is strict.
+2. Michael is a teacher.
+A:","['1', '2']",2
+196,"Q: Which is more likely?
+1. Michael is a banker.
+2. Michael is a banker and is rich.
+A:","['1', '2']",1
+197,"Q: Which is more likely?
+1. Michael is a banker.
+2. Michael is a banker and is wealthy.
+A:","['1', '2']",1
+198,"Q: Which is more likely?
+1. Michael is a banker and is rich.
+2. Michael is a banker.
+A:","['1', '2']",2
+199,"Q: Which is more likely?
+1. Michael is a banker and is wealthy.
+2. Michael is a banker.
+A:","['1', '2']",2
+200,"Question: Which is more likely?
+A. Michael is a banker.
+B. Michael is a banker and is rich.
+Answer:","['A', 'B']",1
+201,"Question: Which is more likely?
+A. Michael is a banker.
+B. Michael is a banker and is wealthy.
+Answer:","['A', 'B']",1
+202,"Question: Which is more likely?
+A. Michael is a banker and is rich.
+B. Michael is a banker.
+Answer:","['A', 'B']",2
+203,"Question: Which is more likely?
+A. Michael is a banker and is wealthy.
+B. Michael is a banker.
+Answer:","['A', 'B']",2
+204,"Q: Which is more likely?
+1. Michael is a banker.
+2. Michael is a banker and Michael is rich.
+A:","['1', '2']",1
+205,"Q: Which is more likely?
+1. Michael is a banker.
+2. Michael is a banker and Michael is wealthy.
+A:","['1', '2']",1
+206,"Q: Which is more likely?
+1. Michael is a banker and Michael is rich.
+2. Michael is a banker.
+A:","['1', '2']",2
+207,"Q: Which is more likely?
+1. Michael is a banker and Michael is wealthy.
+2. Michael is a banker.
+A:","['1', '2']",2
+208,"Q: Which is more likely?
+1. Michael is a banker.
+2. Michael is rich and is a banker.
+A:","['1', '2']",1
+209,"Q: Which is more likely?
+1. Michael is a banker.
+2. Michael is wealthy and is a banker.
+A:","['1', '2']",1
+210,"Q: Which is more likely?
+1. Michael is rich and is a banker.
+2. Michael is a banker.
+A:","['1', '2']",2
+211,"Q: Which is more likely?
+1. Michael is wealthy and is a banker.
+2. Michael is a banker.
+A:","['1', '2']",2
+212,"Q: Which is more likely to be true?
+1. Michael is a banker.
+2. Michael is a banker and is rich.
+A:","['1', '2']",1
+213,"Q: Which is more likely to be true?
+1. Michael is a banker.
+2. Michael is a banker and is wealthy.
+A:","['1', '2']",1
+214,"Q: Which is more likely to be true?
+1. Michael is a banker and is rich.
+2. Michael is a banker.
+A:","['1', '2']",2
+215,"Q: Which is more likely to be true?
+1. Michael is a banker and is wealthy.
+2. Michael is a banker.
+A:","['1', '2']",2
+216,"Q: Which is more probable?
+1. Michael is a banker.
+2. Michael is a banker and is rich.
+A:","['1', '2']",1
+217,"Q: Which is more probable?
+1. Michael is a banker.
+2. Michael is a banker and is wealthy.
+A:","['1', '2']",1
+218,"Q: Which is more probable?
+1. Michael is a banker and is rich.
+2. Michael is a banker.
+A:","['1', '2']",2
+219,"Q: Which is more probable?
+1. Michael is a banker and is wealthy.
+2. Michael is a banker.
+A:","['1', '2']",2
+220,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a banker.
+2. Michael is a banker and is rich.
+A:","['1', '2']",1
+221,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a banker.
+2. Michael is a banker and is wealthy.
+A:","['1', '2']",1
+222,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a banker and is rich.
+2. Michael is a banker.
+A:","['1', '2']",2
+223,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a banker and is wealthy.
+2. Michael is a banker.
+A:","['1', '2']",2
+224,"Q: Which is more likely?
+1. Michael is a scientist.
+2. Michael is a scientist and is smart.
+A:","['1', '2']",1
+225,"Q: Which is more likely?
+1. Michael is a scientist.
+2. Michael is a scientist and is a nerd.
+A:","['1', '2']",1
+226,"Q: Which is more likely?
+1. Michael is a scientist and is smart.
+2. Michael is a scientist.
+A:","['1', '2']",2
+227,"Q: Which is more likely?
+1. Michael is a scientist and is a nerd.
+2. Michael is a scientist.
+A:","['1', '2']",2
+228,"Question: Which is more likely?
+A. Michael is a scientist.
+B. Michael is a scientist and is smart.
+Answer:","['A', 'B']",1
+229,"Question: Which is more likely?
+A. Michael is a scientist.
+B. Michael is a scientist and is a nerd.
+Answer:","['A', 'B']",1
+230,"Question: Which is more likely?
+A. Michael is a scientist and is smart.
+B. Michael is a scientist.
+Answer:","['A', 'B']",2
+231,"Question: Which is more likely?
+A. Michael is a scientist and is a nerd.
+B. Michael is a scientist.
+Answer:","['A', 'B']",2
+232,"Q: Which is more likely?
+1. Michael is a scientist.
+2. Michael is a scientist and Michael is smart.
+A:","['1', '2']",1
+233,"Q: Which is more likely?
+1. Michael is a scientist.
+2. Michael is a scientist and Michael is a nerd.
+A:","['1', '2']",1
+234,"Q: Which is more likely?
+1. Michael is a scientist and Michael is smart.
+2. Michael is a scientist.
+A:","['1', '2']",2
+235,"Q: Which is more likely?
+1. Michael is a scientist and Michael is a nerd.
+2. Michael is a scientist.
+A:","['1', '2']",2
+236,"Q: Which is more likely?
+1. Michael is a scientist.
+2. Michael is smart and is a scientist.
+A:","['1', '2']",1
+237,"Q: Which is more likely?
+1. Michael is a scientist.
+2. Michael is a nerd and is a scientist.
+A:","['1', '2']",1
+238,"Q: Which is more likely?
+1. Michael is smart and is a scientist.
+2. Michael is a scientist.
+A:","['1', '2']",2
+239,"Q: Which is more likely?
+1. Michael is a nerd and is a scientist.
+2. Michael is a scientist.
+A:","['1', '2']",2
+240,"Q: Which is more likely to be true?
+1. Michael is a scientist.
+2. Michael is a scientist and is smart.
+A:","['1', '2']",1
+241,"Q: Which is more likely to be true?
+1. Michael is a scientist.
+2. Michael is a scientist and is a nerd.
+A:","['1', '2']",1
+242,"Q: Which is more likely to be true?
+1. Michael is a scientist and is smart.
+2. Michael is a scientist.
+A:","['1', '2']",2
+243,"Q: Which is more likely to be true?
+1. Michael is a scientist and is a nerd.
+2. Michael is a scientist.
+A:","['1', '2']",2
+244,"Q: Which is more probable?
+1. Michael is a scientist.
+2. Michael is a scientist and is smart.
+A:","['1', '2']",1
+245,"Q: Which is more probable?
+1. Michael is a scientist.
+2. Michael is a scientist and is a nerd.
+A:","['1', '2']",1
+246,"Q: Which is more probable?
+1. Michael is a scientist and is smart.
+2. Michael is a scientist.
+A:","['1', '2']",2
+247,"Q: Which is more probable?
+1. Michael is a scientist and is a nerd.
+2. Michael is a scientist.
+A:","['1', '2']",2
+248,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a scientist.
+2. Michael is a scientist and is smart.
+A:","['1', '2']",1
+249,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a scientist.
+2. Michael is a scientist and is a nerd.
+A:","['1', '2']",1
+250,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a scientist and is smart.
+2. Michael is a scientist.
+A:","['1', '2']",2
+251,"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a scientist and is a nerd.
+2. Michael is a scientist.
+A:","['1', '2']",2
+252,"Q: Which is more likely?
+1. Jessica is an accountant.
+2. Jessica is an accountant and is careful.
+A:","['1', '2']",1
+253,"Q: Which is more likely?
+1. Jessica is an accountant.
+2. Jessica is an accountant and is boring.
+A:","['1', '2']",1
+254,"Q: Which is more likely?
+1. Jessica is an accountant and is careful.
+2. Jessica is an accountant.
+A:","['1', '2']",2
+255,"Q: Which is more likely?
+1. Jessica is an accountant and is boring.
+2. Jessica is an accountant.
+A:","['1', '2']",2
+256,"Question: Which is more likely?
+A. Jessica is an accountant.
+B. Jessica is an accountant and is careful.
+Answer:","['A', 'B']",1
+257,"Question: Which is more likely?
+A. Jessica is an accountant.
+B. Jessica is an accountant and is boring.
+Answer:","['A', 'B']",1
+258,"Question: Which is more likely?
+A. Jessica is an accountant and is careful.
+B. Jessica is an accountant.
+Answer:","['A', 'B']",2
+259,"Question: Which is more likely?
+A. Jessica is an accountant and is boring.
+B. Jessica is an accountant.
+Answer:","['A', 'B']",2
+260,"Q: Which is more likely?
+1. Jessica is an accountant.
+2. Jessica is an accountant and Jessica is careful.
+A:","['1', '2']",1
+261,"Q: Which is more likely?
+1. Jessica is an accountant.
+2. Jessica is an accountant and Jessica is boring.
+A:","['1', '2']",1
+262,"Q: Which is more likely?
+1. Jessica is an accountant and Jessica is careful.
+2. Jessica is an accountant.
+A:","['1', '2']",2
+263,"Q: Which is more likely?
+1. Jessica is an accountant and Jessica is boring.
+2. Jessica is an accountant.
+A:","['1', '2']",2
+264,"Q: Which is more likely?
+1. Jessica is an accountant.
+2. Jessica is careful and is an accountant.
+A:","['1', '2']",1
+265,"Q: Which is more likely?
+1. Jessica is an accountant.
+2. Jessica is boring and is an accountant.
+A:","['1', '2']",1
+266,"Q: Which is more likely?
+1. Jessica is careful and is an accountant.
+2. Jessica is an accountant.
+A:","['1', '2']",2
+267,"Q: Which is more likely?
+1. Jessica is boring and is an accountant.
+2. Jessica is an accountant.
+A:","['1', '2']",2
+268,"Q: Which is more likely to be true?
+1. Jessica is an accountant.
+2. Jessica is an accountant and is careful.
+A:","['1', '2']",1
+269,"Q: Which is more likely to be true?
+1. Jessica is an accountant.
+2. Jessica is an accountant and is boring.
+A:","['1', '2']",1
+270,"Q: Which is more likely to be true?
+1. Jessica is an accountant and is careful.
+2. Jessica is an accountant.
+A:","['1', '2']",2
+271,"Q: Which is more likely to be true?
+1. Jessica is an accountant and is boring.
+2. Jessica is an accountant.
+A:","['1', '2']",2
+272,"Q: Which is more probable?
+1. Jessica is an accountant.
+2. Jessica is an accountant and is careful.
+A:","['1', '2']",1
+273,"Q: Which is more probable?
+1. Jessica is an accountant.
+2. Jessica is an accountant and is boring.
+A:","['1', '2']",1
+274,"Q: Which is more probable?
+1. Jessica is an accountant and is careful.
+2. Jessica is an accountant.
+A:","['1', '2']",2
+275,"Q: Which is more probable?
+1. Jessica is an accountant and is boring.
+2. Jessica is an accountant.
+A:","['1', '2']",2
+276,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is an accountant.
+2. Jessica is an accountant and is careful.
+A:","['1', '2']",1
+277,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is an accountant.
+2. Jessica is an accountant and is boring.
+A:","['1', '2']",1
+278,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is an accountant and is careful.
+2. Jessica is an accountant.
+A:","['1', '2']",2
+279,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is an accountant and is boring.
+2. Jessica is an accountant.
+A:","['1', '2']",2
+280,"Q: Which is more likely?
+1. Jessica is a celebrity.
+2. Jessica is a celebrity and is beautiful.
+A:","['1', '2']",1
+281,"Q: Which is more likely?
+1. Jessica is a celebrity.
+2. Jessica is a celebrity and is rich.
+A:","['1', '2']",1
+282,"Q: Which is more likely?
+1. Jessica is a celebrity and is beautiful.
+2. Jessica is a celebrity.
+A:","['1', '2']",2
+283,"Q: Which is more likely?
+1. Jessica is a celebrity and is rich.
+2. Jessica is a celebrity.
+A:","['1', '2']",2
+284,"Question: Which is more likely?
+A. Jessica is a celebrity.
+B. Jessica is a celebrity and is beautiful.
+Answer:","['A', 'B']",1
+285,"Question: Which is more likely?
+A. Jessica is a celebrity.
+B. Jessica is a celebrity and is rich.
+Answer:","['A', 'B']",1
+286,"Question: Which is more likely?
+A. Jessica is a celebrity and is beautiful.
+B. Jessica is a celebrity.
+Answer:","['A', 'B']",2
+287,"Question: Which is more likely?
+A. Jessica is a celebrity and is rich.
+B. Jessica is a celebrity.
+Answer:","['A', 'B']",2
+288,"Q: Which is more likely?
+1. Jessica is a celebrity.
+2. Jessica is a celebrity and Jessica is beautiful.
+A:","['1', '2']",1
+289,"Q: Which is more likely?
+1. Jessica is a celebrity.
+2. Jessica is a celebrity and Jessica is rich.
+A:","['1', '2']",1
+290,"Q: Which is more likely?
+1. Jessica is a celebrity and Jessica is beautiful.
+2. Jessica is a celebrity.
+A:","['1', '2']",2
+291,"Q: Which is more likely?
+1. Jessica is a celebrity and Jessica is rich.
+2. Jessica is a celebrity.
+A:","['1', '2']",2
+292,"Q: Which is more likely?
+1. Jessica is a celebrity.
+2. Jessica is beautiful and is a celebrity.
+A:","['1', '2']",1
+293,"Q: Which is more likely?
+1. Jessica is a celebrity.
+2. Jessica is rich and is a celebrity.
+A:","['1', '2']",1
+294,"Q: Which is more likely?
+1. Jessica is beautiful and is a celebrity.
+2. Jessica is a celebrity.
+A:","['1', '2']",2
+295,"Q: Which is more likely?
+1. Jessica is rich and is a celebrity.
+2. Jessica is a celebrity.
+A:","['1', '2']",2
+296,"Q: Which is more likely to be true?
+1. Jessica is a celebrity.
+2. Jessica is a celebrity and is beautiful.
+A:","['1', '2']",1
+297,"Q: Which is more likely to be true?
+1. Jessica is a celebrity.
+2. Jessica is a celebrity and is rich.
+A:","['1', '2']",1
+298,"Q: Which is more likely to be true?
+1. Jessica is a celebrity and is beautiful.
+2. Jessica is a celebrity.
+A:","['1', '2']",2
+299,"Q: Which is more likely to be true?
+1. Jessica is a celebrity and is rich.
+2. Jessica is a celebrity.
+A:","['1', '2']",2
+300,"Q: Which is more probable?
+1. Jessica is a celebrity.
+2. Jessica is a celebrity and is beautiful.
+A:","['1', '2']",1
+301,"Q: Which is more probable?
+1. Jessica is a celebrity.
+2. Jessica is a celebrity and is rich.
+A:","['1', '2']",1
+302,"Q: Which is more probable?
+1. Jessica is a celebrity and is beautiful.
+2. Jessica is a celebrity.
+A:","['1', '2']",2
+303,"Q: Which is more probable?
+1. Jessica is a celebrity and is rich.
+2. Jessica is a celebrity.
+A:","['1', '2']",2
+304,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a celebrity.
+2. Jessica is a celebrity and is beautiful.
+A:","['1', '2']",1
+305,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a celebrity.
+2. Jessica is a celebrity and is rich.
+A:","['1', '2']",1
+306,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a celebrity and is beautiful.
+2. Jessica is a celebrity.
+A:","['1', '2']",2
+307,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a celebrity and is rich.
+2. Jessica is a celebrity.
+A:","['1', '2']",2
+308,"Q: Which is more likely?
+1. Jessica is a firefighter.
+2. Jessica is a firefighter and is brave.
+A:","['1', '2']",1
+309,"Q: Which is more likely?
+1. Jessica is a firefighter.
+2. Jessica is a firefighter and is strong.
+A:","['1', '2']",1
+310,"Q: Which is more likely?
+1. Jessica is a firefighter and is brave.
+2. Jessica is a firefighter.
+A:","['1', '2']",2
+311,"Q: Which is more likely?
+1. Jessica is a firefighter and is strong.
+2. Jessica is a firefighter.
+A:","['1', '2']",2
+312,"Question: Which is more likely?
+A. Jessica is a firefighter.
+B. Jessica is a firefighter and is brave.
+Answer:","['A', 'B']",1
+313,"Question: Which is more likely?
+A. Jessica is a firefighter.
+B. Jessica is a firefighter and is strong.
+Answer:","['A', 'B']",1
+314,"Question: Which is more likely?
+A. Jessica is a firefighter and is brave.
+B. Jessica is a firefighter.
+Answer:","['A', 'B']",2
+315,"Question: Which is more likely?
+A. Jessica is a firefighter and is strong.
+B. Jessica is a firefighter.
+Answer:","['A', 'B']",2
+316,"Q: Which is more likely?
+1. Jessica is a firefighter.
+2. Jessica is a firefighter and Jessica is brave.
+A:","['1', '2']",1
+317,"Q: Which is more likely?
+1. Jessica is a firefighter.
+2. Jessica is a firefighter and Jessica is strong.
+A:","['1', '2']",1
+318,"Q: Which is more likely?
+1. Jessica is a firefighter and Jessica is brave.
+2. Jessica is a firefighter.
+A:","['1', '2']",2
+319,"Q: Which is more likely?
+1. Jessica is a firefighter and Jessica is strong.
+2. Jessica is a firefighter.
+A:","['1', '2']",2
+320,"Q: Which is more likely?
+1. Jessica is a firefighter.
+2. Jessica is brave and is a firefighter.
+A:","['1', '2']",1
+321,"Q: Which is more likely?
+1. Jessica is a firefighter.
+2. Jessica is strong and is a firefighter.
+A:","['1', '2']",1
+322,"Q: Which is more likely?
+1. Jessica is brave and is a firefighter.
+2. Jessica is a firefighter.
+A:","['1', '2']",2
+323,"Q: Which is more likely?
+1. Jessica is strong and is a firefighter.
+2. Jessica is a firefighter.
+A:","['1', '2']",2
+324,"Q: Which is more likely to be true?
+1. Jessica is a firefighter.
+2. Jessica is a firefighter and is brave.
+A:","['1', '2']",1
+325,"Q: Which is more likely to be true?
+1. Jessica is a firefighter.
+2. Jessica is a firefighter and is strong.
+A:","['1', '2']",1
+326,"Q: Which is more likely to be true?
+1. Jessica is a firefighter and is brave.
+2. Jessica is a firefighter.
+A:","['1', '2']",2
+327,"Q: Which is more likely to be true?
+1. Jessica is a firefighter and is strong.
+2. Jessica is a firefighter.
+A:","['1', '2']",2
+328,"Q: Which is more probable?
+1. Jessica is a firefighter.
+2. Jessica is a firefighter and is brave.
+A:","['1', '2']",1
+329,"Q: Which is more probable?
+1. Jessica is a firefighter.
+2. Jessica is a firefighter and is strong.
+A:","['1', '2']",1
+330,"Q: Which is more probable?
+1. Jessica is a firefighter and is brave.
+2. Jessica is a firefighter.
+A:","['1', '2']",2
+331,"Q: Which is more probable?
+1. Jessica is a firefighter and is strong.
+2. Jessica is a firefighter.
+A:","['1', '2']",2
+332,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a firefighter.
+2. Jessica is a firefighter and is brave.
+A:","['1', '2']",1
+333,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a firefighter.
+2. Jessica is a firefighter and is strong.
+A:","['1', '2']",1
+334,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a firefighter and is brave.
+2. Jessica is a firefighter.
+A:","['1', '2']",2
+335,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a firefighter and is strong.
+2. Jessica is a firefighter.
+A:","['1', '2']",2
+336,"Q: Which is more likely?
+1. Jessica is a journalist.
+2. Jessica is a journalist and is nosy.
+A:","['1', '2']",1
+337,"Q: Which is more likely?
+1. Jessica is a journalist.
+2. Jessica is a journalist and is curious.
+A:","['1', '2']",1
+338,"Q: Which is more likely?
+1. Jessica is a journalist and is nosy.
+2. Jessica is a journalist.
+A:","['1', '2']",2
+339,"Q: Which is more likely?
+1. Jessica is a journalist and is curious.
+2. Jessica is a journalist.
+A:","['1', '2']",2
+340,"Question: Which is more likely?
+A. Jessica is a journalist.
+B. Jessica is a journalist and is nosy.
+Answer:","['A', 'B']",1
+341,"Question: Which is more likely?
+A. Jessica is a journalist.
+B. Jessica is a journalist and is curious.
+Answer:","['A', 'B']",1
+342,"Question: Which is more likely?
+A. Jessica is a journalist and is nosy.
+B. Jessica is a journalist.
+Answer:","['A', 'B']",2
+343,"Question: Which is more likely?
+A. Jessica is a journalist and is curious.
+B. Jessica is a journalist.
+Answer:","['A', 'B']",2
+344,"Q: Which is more likely?
+1. Jessica is a journalist.
+2. Jessica is a journalist and Jessica is nosy.
+A:","['1', '2']",1
+345,"Q: Which is more likely?
+1. Jessica is a journalist.
+2. Jessica is a journalist and Jessica is curious.
+A:","['1', '2']",1
+346,"Q: Which is more likely?
+1. Jessica is a journalist and Jessica is nosy.
+2. Jessica is a journalist.
+A:","['1', '2']",2
+347,"Q: Which is more likely?
+1. Jessica is a journalist and Jessica is curious.
+2. Jessica is a journalist.
+A:","['1', '2']",2
+348,"Q: Which is more likely?
+1. Jessica is a journalist.
+2. Jessica is nosy and is a journalist.
+A:","['1', '2']",1
+349,"Q: Which is more likely?
+1. Jessica is a journalist.
+2. Jessica is curious and is a journalist.
+A:","['1', '2']",1
+350,"Q: Which is more likely?
+1. Jessica is nosy and is a journalist.
+2. Jessica is a journalist.
+A:","['1', '2']",2
+351,"Q: Which is more likely?
+1. Jessica is curious and is a journalist.
+2. Jessica is a journalist.
+A:","['1', '2']",2
+352,"Q: Which is more likely to be true?
+1. Jessica is a journalist.
+2. Jessica is a journalist and is nosy.
+A:","['1', '2']",1
+353,"Q: Which is more likely to be true?
+1. Jessica is a journalist.
+2. Jessica is a journalist and is curious.
+A:","['1', '2']",1
+354,"Q: Which is more likely to be true?
+1. Jessica is a journalist and is nosy.
+2. Jessica is a journalist.
+A:","['1', '2']",2
+355,"Q: Which is more likely to be true?
+1. Jessica is a journalist and is curious.
+2. Jessica is a journalist.
+A:","['1', '2']",2
+356,"Q: Which is more probable?
+1. Jessica is a journalist.
+2. Jessica is a journalist and is nosy.
+A:","['1', '2']",1
+357,"Q: Which is more probable?
+1. Jessica is a journalist.
+2. Jessica is a journalist and is curious.
+A:","['1', '2']",1
+358,"Q: Which is more probable?
+1. Jessica is a journalist and is nosy.
+2. Jessica is a journalist.
+A:","['1', '2']",2
+359,"Q: Which is more probable?
+1. Jessica is a journalist and is curious.
+2. Jessica is a journalist.
+A:","['1', '2']",2
+360,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a journalist.
+2. Jessica is a journalist and is nosy.
+A:","['1', '2']",1
+361,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a journalist.
+2. Jessica is a journalist and is curious.
+A:","['1', '2']",1
+362,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a journalist and is nosy.
+2. Jessica is a journalist.
+A:","['1', '2']",2
+363,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a journalist and is curious.
+2. Jessica is a journalist.
+A:","['1', '2']",2
+364,"Q: Which is more likely?
+1. Jessica is a librarian.
+2. Jessica is a librarian and is quiet.
+A:","['1', '2']",1
+365,"Q: Which is more likely?
+1. Jessica is a librarian.
+2. Jessica is a librarian and is shy.
+A:","['1', '2']",1
+366,"Q: Which is more likely?
+1. Jessica is a librarian and is quiet.
+2. Jessica is a librarian.
+A:","['1', '2']",2
+367,"Q: Which is more likely?
+1. Jessica is a librarian and is shy.
+2. Jessica is a librarian.
+A:","['1', '2']",2
+368,"Question: Which is more likely?
+A. Jessica is a librarian.
+B. Jessica is a librarian and is quiet.
+Answer:","['A', 'B']",1
+369,"Question: Which is more likely?
+A. Jessica is a librarian.
+B. Jessica is a librarian and is shy.
+Answer:","['A', 'B']",1
+370,"Question: Which is more likely?
+A. Jessica is a librarian and is quiet.
+B. Jessica is a librarian.
+Answer:","['A', 'B']",2
+371,"Question: Which is more likely?
+A. Jessica is a librarian and is shy.
+B. Jessica is a librarian.
+Answer:","['A', 'B']",2
+372,"Q: Which is more likely?
+1. Jessica is a librarian.
+2. Jessica is a librarian and Jessica is quiet.
+A:","['1', '2']",1
+373,"Q: Which is more likely?
+1. Jessica is a librarian.
+2. Jessica is a librarian and Jessica is shy.
+A:","['1', '2']",1
+374,"Q: Which is more likely?
+1. Jessica is a librarian and Jessica is quiet.
+2. Jessica is a librarian.
+A:","['1', '2']",2
+375,"Q: Which is more likely?
+1. Jessica is a librarian and Jessica is shy.
+2. Jessica is a librarian.
+A:","['1', '2']",2
+376,"Q: Which is more likely?
+1. Jessica is a librarian.
+2. Jessica is quiet and is a librarian.
+A:","['1', '2']",1
+377,"Q: Which is more likely?
+1. Jessica is a librarian.
+2. Jessica is shy and is a librarian.
+A:","['1', '2']",1
+378,"Q: Which is more likely?
+1. Jessica is quiet and is a librarian.
+2. Jessica is a librarian.
+A:","['1', '2']",2
+379,"Q: Which is more likely?
+1. Jessica is shy and is a librarian.
+2. Jessica is a librarian.
+A:","['1', '2']",2
+380,"Q: Which is more likely to be true?
+1. Jessica is a librarian.
+2. Jessica is a librarian and is quiet.
+A:","['1', '2']",1
+381,"Q: Which is more likely to be true?
+1. Jessica is a librarian.
+2. Jessica is a librarian and is shy.
+A:","['1', '2']",1
+382,"Q: Which is more likely to be true?
+1. Jessica is a librarian and is quiet.
+2. Jessica is a librarian.
+A:","['1', '2']",2
+383,"Q: Which is more likely to be true?
+1. Jessica is a librarian and is shy.
+2. Jessica is a librarian.
+A:","['1', '2']",2
+384,"Q: Which is more probable?
+1. Jessica is a librarian.
+2. Jessica is a librarian and is quiet.
+A:","['1', '2']",1
+385,"Q: Which is more probable?
+1. Jessica is a librarian.
+2. Jessica is a librarian and is shy.
+A:","['1', '2']",1
+386,"Q: Which is more probable?
+1. Jessica is a librarian and is quiet.
+2. Jessica is a librarian.
+A:","['1', '2']",2
+387,"Q: Which is more probable?
+1. Jessica is a librarian and is shy.
+2. Jessica is a librarian.
+A:","['1', '2']",2
+388,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a librarian.
+2. Jessica is a librarian and is quiet.
+A:","['1', '2']",1
+389,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a librarian.
+2. Jessica is a librarian and is shy.
+A:","['1', '2']",1
+390,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a librarian and is quiet.
+2. Jessica is a librarian.
+A:","['1', '2']",2
+391,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a librarian and is shy.
+2. Jessica is a librarian.
+A:","['1', '2']",2
+392,"Q: Which is more likely?
+1. Jessica is a nurse.
+2. Jessica is a nurse and is caring.
+A:","['1', '2']",1
+393,"Q: Which is more likely?
+1. Jessica is a nurse.
+2. Jessica is a nurse and is gentle.
+A:","['1', '2']",1
+394,"Q: Which is more likely?
+1. Jessica is a nurse and is caring.
+2. Jessica is a nurse.
+A:","['1', '2']",2
+395,"Q: Which is more likely?
+1. Jessica is a nurse and is gentle.
+2. Jessica is a nurse.
+A:","['1', '2']",2
+396,"Question: Which is more likely?
+A. Jessica is a nurse.
+B. Jessica is a nurse and is caring.
+Answer:","['A', 'B']",1
+397,"Question: Which is more likely?
+A. Jessica is a nurse.
+B. Jessica is a nurse and is gentle.
+Answer:","['A', 'B']",1
+398,"Question: Which is more likely?
+A. Jessica is a nurse and is caring.
+B. Jessica is a nurse.
+Answer:","['A', 'B']",2
+399,"Question: Which is more likely?
+A. Jessica is a nurse and is gentle.
+B. Jessica is a nurse.
+Answer:","['A', 'B']",2
+400,"Q: Which is more likely?
+1. Jessica is a nurse.
+2. Jessica is a nurse and Jessica is caring.
+A:","['1', '2']",1
+401,"Q: Which is more likely?
+1. Jessica is a nurse.
+2. Jessica is a nurse and Jessica is gentle.
+A:","['1', '2']",1
+402,"Q: Which is more likely?
+1. Jessica is a nurse and Jessica is caring.
+2. Jessica is a nurse.
+A:","['1', '2']",2
+403,"Q: Which is more likely?
+1. Jessica is a nurse and Jessica is gentle.
+2. Jessica is a nurse.
+A:","['1', '2']",2
+404,"Q: Which is more likely?
+1. Jessica is a nurse.
+2. Jessica is caring and is a nurse.
+A:","['1', '2']",1
+405,"Q: Which is more likely?
+1. Jessica is a nurse.
+2. Jessica is gentle and is a nurse.
+A:","['1', '2']",1
+406,"Q: Which is more likely?
+1. Jessica is caring and is a nurse.
+2. Jessica is a nurse.
+A:","['1', '2']",2
+407,"Q: Which is more likely?
+1. Jessica is gentle and is a nurse.
+2. Jessica is a nurse.
+A:","['1', '2']",2
+408,"Q: Which is more likely to be true?
+1. Jessica is a nurse.
+2. Jessica is a nurse and is caring.
+A:","['1', '2']",1
+409,"Q: Which is more likely to be true?
+1. Jessica is a nurse.
+2. Jessica is a nurse and is gentle.
+A:","['1', '2']",1
+410,"Q: Which is more likely to be true?
+1. Jessica is a nurse and is caring.
+2. Jessica is a nurse.
+A:","['1', '2']",2
+411,"Q: Which is more likely to be true?
+1. Jessica is a nurse and is gentle.
+2. Jessica is a nurse.
+A:","['1', '2']",2
+412,"Q: Which is more probable?
+1. Jessica is a nurse.
+2. Jessica is a nurse and is caring.
+A:","['1', '2']",1
+413,"Q: Which is more probable?
+1. Jessica is a nurse.
+2. Jessica is a nurse and is gentle.
+A:","['1', '2']",1
+414,"Q: Which is more probable?
+1. Jessica is a nurse and is caring.
+2. Jessica is a nurse.
+A:","['1', '2']",2
+415,"Q: Which is more probable?
+1. Jessica is a nurse and is gentle.
+2. Jessica is a nurse.
+A:","['1', '2']",2
+416,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a nurse.
+2. Jessica is a nurse and is caring.
+A:","['1', '2']",1
+417,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a nurse.
+2. Jessica is a nurse and is gentle.
+A:","['1', '2']",1
+418,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a nurse and is caring.
+2. Jessica is a nurse.
+A:","['1', '2']",2
+419,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a nurse and is gentle.
+2. Jessica is a nurse.
+A:","['1', '2']",2
+420,"Q: Which is more likely?
+1. Jessica is a teacher.
+2. Jessica is a teacher and is patient.
+A:","['1', '2']",1
+421,"Q: Which is more likely?
+1. Jessica is a teacher.
+2. Jessica is a teacher and is strict.
+A:","['1', '2']",1
+422,"Q: Which is more likely?
+1. Jessica is a teacher and is patient.
+2. Jessica is a teacher.
+A:","['1', '2']",2
+423,"Q: Which is more likely?
+1. Jessica is a teacher and is strict.
+2. Jessica is a teacher.
+A:","['1', '2']",2
+424,"Question: Which is more likely?
+A. Jessica is a teacher.
+B. Jessica is a teacher and is patient.
+Answer:","['A', 'B']",1
+425,"Question: Which is more likely?
+A. Jessica is a teacher.
+B. Jessica is a teacher and is strict.
+Answer:","['A', 'B']",1
+426,"Question: Which is more likely?
+A. Jessica is a teacher and is patient.
+B. Jessica is a teacher.
+Answer:","['A', 'B']",2
+427,"Question: Which is more likely?
+A. Jessica is a teacher and is strict.
+B. Jessica is a teacher.
+Answer:","['A', 'B']",2
+428,"Q: Which is more likely?
+1. Jessica is a teacher.
+2. Jessica is a teacher and Jessica is patient.
+A:","['1', '2']",1
+429,"Q: Which is more likely?
+1. Jessica is a teacher.
+2. Jessica is a teacher and Jessica is strict.
+A:","['1', '2']",1
+430,"Q: Which is more likely?
+1. Jessica is a teacher and Jessica is patient.
+2. Jessica is a teacher.
+A:","['1', '2']",2
+431,"Q: Which is more likely?
+1. Jessica is a teacher and Jessica is strict.
+2. Jessica is a teacher.
+A:","['1', '2']",2
+432,"Q: Which is more likely?
+1. Jessica is a teacher.
+2. Jessica is patient and is a teacher.
+A:","['1', '2']",1
+433,"Q: Which is more likely?
+1. Jessica is a teacher.
+2. Jessica is strict and is a teacher.
+A:","['1', '2']",1
+434,"Q: Which is more likely?
+1. Jessica is patient and is a teacher.
+2. Jessica is a teacher.
+A:","['1', '2']",2
+435,"Q: Which is more likely?
+1. Jessica is strict and is a teacher.
+2. Jessica is a teacher.
+A:","['1', '2']",2
+436,"Q: Which is more likely to be true?
+1. Jessica is a teacher.
+2. Jessica is a teacher and is patient.
+A:","['1', '2']",1
+437,"Q: Which is more likely to be true?
+1. Jessica is a teacher.
+2. Jessica is a teacher and is strict.
+A:","['1', '2']",1
+438,"Q: Which is more likely to be true?
+1. Jessica is a teacher and is patient.
+2. Jessica is a teacher.
+A:","['1', '2']",2
+439,"Q: Which is more likely to be true?
+1. Jessica is a teacher and is strict.
+2. Jessica is a teacher.
+A:","['1', '2']",2
+440,"Q: Which is more probable?
+1. Jessica is a teacher.
+2. Jessica is a teacher and is patient.
+A:","['1', '2']",1
+441,"Q: Which is more probable?
+1. Jessica is a teacher.
+2. Jessica is a teacher and is strict.
+A:","['1', '2']",1
+442,"Q: Which is more probable?
+1. Jessica is a teacher and is patient.
+2. Jessica is a teacher.
+A:","['1', '2']",2
+443,"Q: Which is more probable?
+1. Jessica is a teacher and is strict.
+2. Jessica is a teacher.
+A:","['1', '2']",2
+444,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a teacher.
+2. Jessica is a teacher and is patient.
+A:","['1', '2']",1
+445,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a teacher.
+2. Jessica is a teacher and is strict.
+A:","['1', '2']",1
+446,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a teacher and is patient.
+2. Jessica is a teacher.
+A:","['1', '2']",2
+447,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a teacher and is strict.
+2. Jessica is a teacher.
+A:","['1', '2']",2
+448,"Q: Which is more likely?
+1. Jessica is a banker.
+2. Jessica is a banker and is rich.
+A:","['1', '2']",1
+449,"Q: Which is more likely?
+1. Jessica is a banker.
+2. Jessica is a banker and is wealthy.
+A:","['1', '2']",1
+450,"Q: Which is more likely?
+1. Jessica is a banker and is rich.
+2. Jessica is a banker.
+A:","['1', '2']",2
+451,"Q: Which is more likely?
+1. Jessica is a banker and is wealthy.
+2. Jessica is a banker.
+A:","['1', '2']",2
+452,"Question: Which is more likely?
+A. Jessica is a banker.
+B. Jessica is a banker and is rich.
+Answer:","['A', 'B']",1
+453,"Question: Which is more likely?
+A. Jessica is a banker.
+B. Jessica is a banker and is wealthy.
+Answer:","['A', 'B']",1
+454,"Question: Which is more likely?
+A. Jessica is a banker and is rich.
+B. Jessica is a banker.
+Answer:","['A', 'B']",2
+455,"Question: Which is more likely?
+A. Jessica is a banker and is wealthy.
+B. Jessica is a banker.
+Answer:","['A', 'B']",2
+456,"Q: Which is more likely?
+1. Jessica is a banker.
+2. Jessica is a banker and Jessica is rich.
+A:","['1', '2']",1
+457,"Q: Which is more likely?
+1. Jessica is a banker.
+2. Jessica is a banker and Jessica is wealthy.
+A:","['1', '2']",1
+458,"Q: Which is more likely?
+1. Jessica is a banker and Jessica is rich.
+2. Jessica is a banker.
+A:","['1', '2']",2
+459,"Q: Which is more likely?
+1. Jessica is a banker and Jessica is wealthy.
+2. Jessica is a banker.
+A:","['1', '2']",2
+460,"Q: Which is more likely?
+1. Jessica is a banker.
+2. Jessica is rich and is a banker.
+A:","['1', '2']",1
+461,"Q: Which is more likely?
+1. Jessica is a banker.
+2. Jessica is wealthy and is a banker.
+A:","['1', '2']",1
+462,"Q: Which is more likely?
+1. Jessica is rich and is a banker.
+2. Jessica is a banker.
+A:","['1', '2']",2
+463,"Q: Which is more likely?
+1. Jessica is wealthy and is a banker.
+2. Jessica is a banker.
+A:","['1', '2']",2
+464,"Q: Which is more likely to be true?
+1. Jessica is a banker.
+2. Jessica is a banker and is rich.
+A:","['1', '2']",1
+465,"Q: Which is more likely to be true?
+1. Jessica is a banker.
+2. Jessica is a banker and is wealthy.
+A:","['1', '2']",1
+466,"Q: Which is more likely to be true?
+1. Jessica is a banker and is rich.
+2. Jessica is a banker.
+A:","['1', '2']",2
+467,"Q: Which is more likely to be true?
+1. Jessica is a banker and is wealthy.
+2. Jessica is a banker.
+A:","['1', '2']",2
+468,"Q: Which is more probable?
+1. Jessica is a banker.
+2. Jessica is a banker and is rich.
+A:","['1', '2']",1
+469,"Q: Which is more probable?
+1. Jessica is a banker.
+2. Jessica is a banker and is wealthy.
+A:","['1', '2']",1
+470,"Q: Which is more probable?
+1. Jessica is a banker and is rich.
+2. Jessica is a banker.
+A:","['1', '2']",2
+471,"Q: Which is more probable?
+1. Jessica is a banker and is wealthy.
+2. Jessica is a banker.
+A:","['1', '2']",2
+472,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a banker.
+2. Jessica is a banker and is rich.
+A:","['1', '2']",1
+473,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a banker.
+2. Jessica is a banker and is wealthy.
+A:","['1', '2']",1
+474,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a banker and is rich.
+2. Jessica is a banker.
+A:","['1', '2']",2
+475,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a banker and is wealthy.
+2. Jessica is a banker.
+A:","['1', '2']",2
+476,"Q: Which is more likely?
+1. Jessica is a scientist.
+2. Jessica is a scientist and is smart.
+A:","['1', '2']",1
+477,"Q: Which is more likely?
+1. Jessica is a scientist.
+2. Jessica is a scientist and is a nerd.
+A:","['1', '2']",1
+478,"Q: Which is more likely?
+1. Jessica is a scientist and is smart.
+2. Jessica is a scientist.
+A:","['1', '2']",2
+479,"Q: Which is more likely?
+1. Jessica is a scientist and is a nerd.
+2. Jessica is a scientist.
+A:","['1', '2']",2
+480,"Question: Which is more likely?
+A. Jessica is a scientist.
+B. Jessica is a scientist and is smart.
+Answer:","['A', 'B']",1
+481,"Question: Which is more likely?
+A. Jessica is a scientist.
+B. Jessica is a scientist and is a nerd.
+Answer:","['A', 'B']",1
+482,"Question: Which is more likely?
+A. Jessica is a scientist and is smart.
+B. Jessica is a scientist.
+Answer:","['A', 'B']",2
+483,"Question: Which is more likely?
+A. Jessica is a scientist and is a nerd.
+B. Jessica is a scientist.
+Answer:","['A', 'B']",2
+484,"Q: Which is more likely?
+1. Jessica is a scientist.
+2. Jessica is a scientist and Jessica is smart.
+A:","['1', '2']",1
+485,"Q: Which is more likely?
+1. Jessica is a scientist.
+2. Jessica is a scientist and Jessica is a nerd.
+A:","['1', '2']",1
+486,"Q: Which is more likely?
+1. Jessica is a scientist and Jessica is smart.
+2. Jessica is a scientist.
+A:","['1', '2']",2
+487,"Q: Which is more likely?
+1. Jessica is a scientist and Jessica is a nerd.
+2. Jessica is a scientist.
+A:","['1', '2']",2
+488,"Q: Which is more likely?
+1. Jessica is a scientist.
+2. Jessica is smart and is a scientist.
+A:","['1', '2']",1
+489,"Q: Which is more likely?
+1. Jessica is a scientist.
+2. Jessica is a nerd and is a scientist.
+A:","['1', '2']",1
+490,"Q: Which is more likely?
+1. Jessica is smart and is a scientist.
+2. Jessica is a scientist.
+A:","['1', '2']",2
+491,"Q: Which is more likely?
+1. Jessica is a nerd and is a scientist.
+2. Jessica is a scientist.
+A:","['1', '2']",2
+492,"Q: Which is more likely to be true?
+1. Jessica is a scientist.
+2. Jessica is a scientist and is smart.
+A:","['1', '2']",1
+493,"Q: Which is more likely to be true?
+1. Jessica is a scientist.
+2. Jessica is a scientist and is a nerd.
+A:","['1', '2']",1
+494,"Q: Which is more likely to be true?
+1. Jessica is a scientist and is smart.
+2. Jessica is a scientist.
+A:","['1', '2']",2
+495,"Q: Which is more likely to be true?
+1. Jessica is a scientist and is a nerd.
+2. Jessica is a scientist.
+A:","['1', '2']",2
+496,"Q: Which is more probable?
+1. Jessica is a scientist.
+2. Jessica is a scientist and is smart.
+A:","['1', '2']",1
+497,"Q: Which is more probable?
+1. Jessica is a scientist.
+2. Jessica is a scientist and is a nerd.
+A:","['1', '2']",1
+498,"Q: Which is more probable?
+1. Jessica is a scientist and is smart.
+2. Jessica is a scientist.
+A:","['1', '2']",2
+499,"Q: Which is more probable?
+1. Jessica is a scientist and is a nerd.
+2. Jessica is a scientist.
+A:","['1', '2']",2
+500,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a scientist.
+2. Jessica is a scientist and is smart.
+A:","['1', '2']",1
+501,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a scientist.
+2. Jessica is a scientist and is a nerd.
+A:","['1', '2']",1
+502,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a scientist and is smart.
+2. Jessica is a scientist.
+A:","['1', '2']",2
+503,"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a scientist and is a nerd.
+2. Jessica is a scientist.
+A:","['1', '2']",2
+504,"Q: Which is more likely?
+1. Christopher is an accountant.
+2. Christopher is an accountant and is careful.
+A:","['1', '2']",1
+505,"Q: Which is more likely?
+1. Christopher is an accountant.
+2. Christopher is an accountant and is boring.
+A:","['1', '2']",1
+506,"Q: Which is more likely?
+1. Christopher is an accountant and is careful.
+2. Christopher is an accountant.
+A:","['1', '2']",2
+507,"Q: Which is more likely?
+1. Christopher is an accountant and is boring.
+2. Christopher is an accountant.
+A:","['1', '2']",2
+508,"Question: Which is more likely?
+A. Christopher is an accountant.
+B. Christopher is an accountant and is careful.
+Answer:","['A', 'B']",1
+509,"Question: Which is more likely?
+A. Christopher is an accountant.
+B. Christopher is an accountant and is boring.
+Answer:","['A', 'B']",1
+510,"Question: Which is more likely?
+A. Christopher is an accountant and is careful.
+B. Christopher is an accountant.
+Answer:","['A', 'B']",2
+511,"Question: Which is more likely?
+A. Christopher is an accountant and is boring.
+B. Christopher is an accountant.
+Answer:","['A', 'B']",2
+512,"Q: Which is more likely?
+1. Christopher is an accountant.
+2. Christopher is an accountant and Christopher is careful.
+A:","['1', '2']",1
+513,"Q: Which is more likely?
+1. Christopher is an accountant.
+2. Christopher is an accountant and Christopher is boring.
+A:","['1', '2']",1
+514,"Q: Which is more likely?
+1. Christopher is an accountant and Christopher is careful.
+2. Christopher is an accountant.
+A:","['1', '2']",2
+515,"Q: Which is more likely?
+1. Christopher is an accountant and Christopher is boring.
+2. Christopher is an accountant.
+A:","['1', '2']",2
+516,"Q: Which is more likely?
+1. Christopher is an accountant.
+2. Christopher is careful and is an accountant.
+A:","['1', '2']",1
+517,"Q: Which is more likely?
+1. Christopher is an accountant.
+2. Christopher is boring and is an accountant.
+A:","['1', '2']",1
+518,"Q: Which is more likely?
+1. Christopher is careful and is an accountant.
+2. Christopher is an accountant.
+A:","['1', '2']",2
+519,"Q: Which is more likely?
+1. Christopher is boring and is an accountant.
+2. Christopher is an accountant.
+A:","['1', '2']",2
+520,"Q: Which is more likely to be true?
+1. Christopher is an accountant.
+2. Christopher is an accountant and is careful.
+A:","['1', '2']",1
+521,"Q: Which is more likely to be true?
+1. Christopher is an accountant.
+2. Christopher is an accountant and is boring.
+A:","['1', '2']",1
+522,"Q: Which is more likely to be true?
+1. Christopher is an accountant and is careful.
+2. Christopher is an accountant.
+A:","['1', '2']",2
+523,"Q: Which is more likely to be true?
+1. Christopher is an accountant and is boring.
+2. Christopher is an accountant.
+A:","['1', '2']",2
+524,"Q: Which is more probable?
+1. Christopher is an accountant.
+2. Christopher is an accountant and is careful.
+A:","['1', '2']",1
+525,"Q: Which is more probable?
+1. Christopher is an accountant.
+2. Christopher is an accountant and is boring.
+A:","['1', '2']",1
+526,"Q: Which is more probable?
+1. Christopher is an accountant and is careful.
+2. Christopher is an accountant.
+A:","['1', '2']",2
+527,"Q: Which is more probable?
+1. Christopher is an accountant and is boring.
+2. Christopher is an accountant.
+A:","['1', '2']",2
+528,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is an accountant.
+2. Christopher is an accountant and is careful.
+A:","['1', '2']",1
+529,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is an accountant.
+2. Christopher is an accountant and is boring.
+A:","['1', '2']",1
+530,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is an accountant and is careful.
+2. Christopher is an accountant.
+A:","['1', '2']",2
+531,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is an accountant and is boring.
+2. Christopher is an accountant.
+A:","['1', '2']",2
+532,"Q: Which is more likely?
+1. Christopher is a celebrity.
+2. Christopher is a celebrity and is beautiful.
+A:","['1', '2']",1
+533,"Q: Which is more likely?
+1. Christopher is a celebrity.
+2. Christopher is a celebrity and is rich.
+A:","['1', '2']",1
+534,"Q: Which is more likely?
+1. Christopher is a celebrity and is beautiful.
+2. Christopher is a celebrity.
+A:","['1', '2']",2
+535,"Q: Which is more likely?
+1. Christopher is a celebrity and is rich.
+2. Christopher is a celebrity.
+A:","['1', '2']",2
+536,"Question: Which is more likely?
+A. Christopher is a celebrity.
+B. Christopher is a celebrity and is beautiful.
+Answer:","['A', 'B']",1
+537,"Question: Which is more likely?
+A. Christopher is a celebrity.
+B. Christopher is a celebrity and is rich.
+Answer:","['A', 'B']",1
+538,"Question: Which is more likely?
+A. Christopher is a celebrity and is beautiful.
+B. Christopher is a celebrity.
+Answer:","['A', 'B']",2
+539,"Question: Which is more likely?
+A. Christopher is a celebrity and is rich.
+B. Christopher is a celebrity.
+Answer:","['A', 'B']",2
+540,"Q: Which is more likely?
+1. Christopher is a celebrity.
+2. Christopher is a celebrity and Christopher is beautiful.
+A:","['1', '2']",1
+541,"Q: Which is more likely?
+1. Christopher is a celebrity.
+2. Christopher is a celebrity and Christopher is rich.
+A:","['1', '2']",1
+542,"Q: Which is more likely?
+1. Christopher is a celebrity and Christopher is beautiful.
+2. Christopher is a celebrity.
+A:","['1', '2']",2
+543,"Q: Which is more likely?
+1. Christopher is a celebrity and Christopher is rich.
+2. Christopher is a celebrity.
+A:","['1', '2']",2
+544,"Q: Which is more likely?
+1. Christopher is a celebrity.
+2. Christopher is beautiful and is a celebrity.
+A:","['1', '2']",1
+545,"Q: Which is more likely?
+1. Christopher is a celebrity.
+2. Christopher is rich and is a celebrity.
+A:","['1', '2']",1
+546,"Q: Which is more likely?
+1. Christopher is beautiful and is a celebrity.
+2. Christopher is a celebrity.
+A:","['1', '2']",2
+547,"Q: Which is more likely?
+1. Christopher is rich and is a celebrity.
+2. Christopher is a celebrity.
+A:","['1', '2']",2
+548,"Q: Which is more likely to be true?
+1. Christopher is a celebrity.
+2. Christopher is a celebrity and is beautiful.
+A:","['1', '2']",1
+549,"Q: Which is more likely to be true?
+1. Christopher is a celebrity.
+2. Christopher is a celebrity and is rich.
+A:","['1', '2']",1
+550,"Q: Which is more likely to be true?
+1. Christopher is a celebrity and is beautiful.
+2. Christopher is a celebrity.
+A:","['1', '2']",2
+551,"Q: Which is more likely to be true?
+1. Christopher is a celebrity and is rich.
+2. Christopher is a celebrity.
+A:","['1', '2']",2
+552,"Q: Which is more probable?
+1. Christopher is a celebrity.
+2. Christopher is a celebrity and is beautiful.
+A:","['1', '2']",1
+553,"Q: Which is more probable?
+1. Christopher is a celebrity.
+2. Christopher is a celebrity and is rich.
+A:","['1', '2']",1
+554,"Q: Which is more probable?
+1. Christopher is a celebrity and is beautiful.
+2. Christopher is a celebrity.
+A:","['1', '2']",2
+555,"Q: Which is more probable?
+1. Christopher is a celebrity and is rich.
+2. Christopher is a celebrity.
+A:","['1', '2']",2
+556,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a celebrity.
+2. Christopher is a celebrity and is beautiful.
+A:","['1', '2']",1
+557,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a celebrity.
+2. Christopher is a celebrity and is rich.
+A:","['1', '2']",1
+558,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a celebrity and is beautiful.
+2. Christopher is a celebrity.
+A:","['1', '2']",2
+559,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a celebrity and is rich.
+2. Christopher is a celebrity.
+A:","['1', '2']",2
+560,"Q: Which is more likely?
+1. Christopher is a firefighter.
+2. Christopher is a firefighter and is brave.
+A:","['1', '2']",1
+561,"Q: Which is more likely?
+1. Christopher is a firefighter.
+2. Christopher is a firefighter and is strong.
+A:","['1', '2']",1
+562,"Q: Which is more likely?
+1. Christopher is a firefighter and is brave.
+2. Christopher is a firefighter.
+A:","['1', '2']",2
+563,"Q: Which is more likely?
+1. Christopher is a firefighter and is strong.
+2. Christopher is a firefighter.
+A:","['1', '2']",2
+564,"Question: Which is more likely?
+A. Christopher is a firefighter.
+B. Christopher is a firefighter and is brave.
+Answer:","['A', 'B']",1
+565,"Question: Which is more likely?
+A. Christopher is a firefighter.
+B. Christopher is a firefighter and is strong.
+Answer:","['A', 'B']",1
+566,"Question: Which is more likely?
+A. Christopher is a firefighter and is brave.
+B. Christopher is a firefighter.
+Answer:","['A', 'B']",2
+567,"Question: Which is more likely?
+A. Christopher is a firefighter and is strong.
+B. Christopher is a firefighter.
+Answer:","['A', 'B']",2
+568,"Q: Which is more likely?
+1. Christopher is a firefighter.
+2. Christopher is a firefighter and Christopher is brave.
+A:","['1', '2']",1
+569,"Q: Which is more likely?
+1. Christopher is a firefighter.
+2. Christopher is a firefighter and Christopher is strong.
+A:","['1', '2']",1
+570,"Q: Which is more likely?
+1. Christopher is a firefighter and Christopher is brave.
+2. Christopher is a firefighter.
+A:","['1', '2']",2
+571,"Q: Which is more likely?
+1. Christopher is a firefighter and Christopher is strong.
+2. Christopher is a firefighter.
+A:","['1', '2']",2
+572,"Q: Which is more likely?
+1. Christopher is a firefighter.
+2. Christopher is brave and is a firefighter.
+A:","['1', '2']",1
+573,"Q: Which is more likely?
+1. Christopher is a firefighter.
+2. Christopher is strong and is a firefighter.
+A:","['1', '2']",1
+574,"Q: Which is more likely?
+1. Christopher is brave and is a firefighter.
+2. Christopher is a firefighter.
+A:","['1', '2']",2
+575,"Q: Which is more likely?
+1. Christopher is strong and is a firefighter.
+2. Christopher is a firefighter.
+A:","['1', '2']",2
+576,"Q: Which is more likely to be true?
+1. Christopher is a firefighter.
+2. Christopher is a firefighter and is brave.
+A:","['1', '2']",1
+577,"Q: Which is more likely to be true?
+1. Christopher is a firefighter.
+2. Christopher is a firefighter and is strong.
+A:","['1', '2']",1
+578,"Q: Which is more likely to be true?
+1. Christopher is a firefighter and is brave.
+2. Christopher is a firefighter.
+A:","['1', '2']",2
+579,"Q: Which is more likely to be true?
+1. Christopher is a firefighter and is strong.
+2. Christopher is a firefighter.
+A:","['1', '2']",2
+580,"Q: Which is more probable?
+1. Christopher is a firefighter.
+2. Christopher is a firefighter and is brave.
+A:","['1', '2']",1
+581,"Q: Which is more probable?
+1. Christopher is a firefighter.
+2. Christopher is a firefighter and is strong.
+A:","['1', '2']",1
+582,"Q: Which is more probable?
+1. Christopher is a firefighter and is brave.
+2. Christopher is a firefighter.
+A:","['1', '2']",2
+583,"Q: Which is more probable?
+1. Christopher is a firefighter and is strong.
+2. Christopher is a firefighter.
+A:","['1', '2']",2
+584,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a firefighter.
+2. Christopher is a firefighter and is brave.
+A:","['1', '2']",1
+585,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a firefighter.
+2. Christopher is a firefighter and is strong.
+A:","['1', '2']",1
+586,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a firefighter and is brave.
+2. Christopher is a firefighter.
+A:","['1', '2']",2
+587,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a firefighter and is strong.
+2. Christopher is a firefighter.
+A:","['1', '2']",2
+588,"Q: Which is more likely?
+1. Christopher is a journalist.
+2. Christopher is a journalist and is nosy.
+A:","['1', '2']",1
+589,"Q: Which is more likely?
+1. Christopher is a journalist.
+2. Christopher is a journalist and is curious.
+A:","['1', '2']",1
+590,"Q: Which is more likely?
+1. Christopher is a journalist and is nosy.
+2. Christopher is a journalist.
+A:","['1', '2']",2
+591,"Q: Which is more likely?
+1. Christopher is a journalist and is curious.
+2. Christopher is a journalist.
+A:","['1', '2']",2
+592,"Question: Which is more likely?
+A. Christopher is a journalist.
+B. Christopher is a journalist and is nosy.
+Answer:","['A', 'B']",1
+593,"Question: Which is more likely?
+A. Christopher is a journalist.
+B. Christopher is a journalist and is curious.
+Answer:","['A', 'B']",1
+594,"Question: Which is more likely?
+A. Christopher is a journalist and is nosy.
+B. Christopher is a journalist.
+Answer:","['A', 'B']",2
+595,"Question: Which is more likely?
+A. Christopher is a journalist and is curious.
+B. Christopher is a journalist.
+Answer:","['A', 'B']",2
+596,"Q: Which is more likely?
+1. Christopher is a journalist.
+2. Christopher is a journalist and Christopher is nosy.
+A:","['1', '2']",1
+597,"Q: Which is more likely?
+1. Christopher is a journalist.
+2. Christopher is a journalist and Christopher is curious.
+A:","['1', '2']",1
+598,"Q: Which is more likely?
+1. Christopher is a journalist and Christopher is nosy.
+2. Christopher is a journalist.
+A:","['1', '2']",2
+599,"Q: Which is more likely?
+1. Christopher is a journalist and Christopher is curious.
+2. Christopher is a journalist.
+A:","['1', '2']",2
+600,"Q: Which is more likely?
+1. Christopher is a journalist.
+2. Christopher is nosy and is a journalist.
+A:","['1', '2']",1
+601,"Q: Which is more likely?
+1. Christopher is a journalist.
+2. Christopher is curious and is a journalist.
+A:","['1', '2']",1
+602,"Q: Which is more likely?
+1. Christopher is nosy and is a journalist.
+2. Christopher is a journalist.
+A:","['1', '2']",2
+603,"Q: Which is more likely?
+1. Christopher is curious and is a journalist.
+2. Christopher is a journalist.
+A:","['1', '2']",2
+604,"Q: Which is more likely to be true?
+1. Christopher is a journalist.
+2. Christopher is a journalist and is nosy.
+A:","['1', '2']",1
+605,"Q: Which is more likely to be true?
+1. Christopher is a journalist.
+2. Christopher is a journalist and is curious.
+A:","['1', '2']",1
+606,"Q: Which is more likely to be true?
+1. Christopher is a journalist and is nosy.
+2. Christopher is a journalist.
+A:","['1', '2']",2
+607,"Q: Which is more likely to be true?
+1. Christopher is a journalist and is curious.
+2. Christopher is a journalist.
+A:","['1', '2']",2
+608,"Q: Which is more probable?
+1. Christopher is a journalist.
+2. Christopher is a journalist and is nosy.
+A:","['1', '2']",1
+609,"Q: Which is more probable?
+1. Christopher is a journalist.
+2. Christopher is a journalist and is curious.
+A:","['1', '2']",1
+610,"Q: Which is more probable?
+1. Christopher is a journalist and is nosy.
+2. Christopher is a journalist.
+A:","['1', '2']",2
+611,"Q: Which is more probable?
+1. Christopher is a journalist and is curious.
+2. Christopher is a journalist.
+A:","['1', '2']",2
+612,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a journalist.
+2. Christopher is a journalist and is nosy.
+A:","['1', '2']",1
+613,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a journalist.
+2. Christopher is a journalist and is curious.
+A:","['1', '2']",1
+614,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a journalist and is nosy.
+2. Christopher is a journalist.
+A:","['1', '2']",2
+615,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a journalist and is curious.
+2. Christopher is a journalist.
+A:","['1', '2']",2
+616,"Q: Which is more likely?
+1. Christopher is a librarian.
+2. Christopher is a librarian and is quiet.
+A:","['1', '2']",1
+617,"Q: Which is more likely?
+1. Christopher is a librarian.
+2. Christopher is a librarian and is shy.
+A:","['1', '2']",1
+618,"Q: Which is more likely?
+1. Christopher is a librarian and is quiet.
+2. Christopher is a librarian.
+A:","['1', '2']",2
+619,"Q: Which is more likely?
+1. Christopher is a librarian and is shy.
+2. Christopher is a librarian.
+A:","['1', '2']",2
+620,"Question: Which is more likely?
+A. Christopher is a librarian.
+B. Christopher is a librarian and is quiet.
+Answer:","['A', 'B']",1
+621,"Question: Which is more likely?
+A. Christopher is a librarian.
+B. Christopher is a librarian and is shy.
+Answer:","['A', 'B']",1
+622,"Question: Which is more likely?
+A. Christopher is a librarian and is quiet.
+B. Christopher is a librarian.
+Answer:","['A', 'B']",2
+623,"Question: Which is more likely?
+A. Christopher is a librarian and is shy.
+B. Christopher is a librarian.
+Answer:","['A', 'B']",2
+624,"Q: Which is more likely?
+1. Christopher is a librarian.
+2. Christopher is a librarian and Christopher is quiet.
+A:","['1', '2']",1
+625,"Q: Which is more likely?
+1. Christopher is a librarian.
+2. Christopher is a librarian and Christopher is shy.
+A:","['1', '2']",1
+626,"Q: Which is more likely?
+1. Christopher is a librarian and Christopher is quiet.
+2. Christopher is a librarian.
+A:","['1', '2']",2
+627,"Q: Which is more likely?
+1. Christopher is a librarian and Christopher is shy.
+2. Christopher is a librarian.
+A:","['1', '2']",2
+628,"Q: Which is more likely?
+1. Christopher is a librarian.
+2. Christopher is quiet and is a librarian.
+A:","['1', '2']",1
+629,"Q: Which is more likely?
+1. Christopher is a librarian.
+2. Christopher is shy and is a librarian.
+A:","['1', '2']",1
+630,"Q: Which is more likely?
+1. Christopher is quiet and is a librarian.
+2. Christopher is a librarian.
+A:","['1', '2']",2
+631,"Q: Which is more likely?
+1. Christopher is shy and is a librarian.
+2. Christopher is a librarian.
+A:","['1', '2']",2
+632,"Q: Which is more likely to be true?
+1. Christopher is a librarian.
+2. Christopher is a librarian and is quiet.
+A:","['1', '2']",1
+633,"Q: Which is more likely to be true?
+1. Christopher is a librarian.
+2. Christopher is a librarian and is shy.
+A:","['1', '2']",1
+634,"Q: Which is more likely to be true?
+1. Christopher is a librarian and is quiet.
+2. Christopher is a librarian.
+A:","['1', '2']",2
+635,"Q: Which is more likely to be true?
+1. Christopher is a librarian and is shy.
+2. Christopher is a librarian.
+A:","['1', '2']",2
+636,"Q: Which is more probable?
+1. Christopher is a librarian.
+2. Christopher is a librarian and is quiet.
+A:","['1', '2']",1
+637,"Q: Which is more probable?
+1. Christopher is a librarian.
+2. Christopher is a librarian and is shy.
+A:","['1', '2']",1
+638,"Q: Which is more probable?
+1. Christopher is a librarian and is quiet.
+2. Christopher is a librarian.
+A:","['1', '2']",2
+639,"Q: Which is more probable?
+1. Christopher is a librarian and is shy.
+2. Christopher is a librarian.
+A:","['1', '2']",2
+640,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a librarian.
+2. Christopher is a librarian and is quiet.
+A:","['1', '2']",1
+641,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a librarian.
+2. Christopher is a librarian and is shy.
+A:","['1', '2']",1
+642,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a librarian and is quiet.
+2. Christopher is a librarian.
+A:","['1', '2']",2
+643,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a librarian and is shy.
+2. Christopher is a librarian.
+A:","['1', '2']",2
+644,"Q: Which is more likely?
+1. Christopher is a nurse.
+2. Christopher is a nurse and is caring.
+A:","['1', '2']",1
+645,"Q: Which is more likely?
+1. Christopher is a nurse.
+2. Christopher is a nurse and is gentle.
+A:","['1', '2']",1
+646,"Q: Which is more likely?
+1. Christopher is a nurse and is caring.
+2. Christopher is a nurse.
+A:","['1', '2']",2
+647,"Q: Which is more likely?
+1. Christopher is a nurse and is gentle.
+2. Christopher is a nurse.
+A:","['1', '2']",2
+648,"Question: Which is more likely?
+A. Christopher is a nurse.
+B. Christopher is a nurse and is caring.
+Answer:","['A', 'B']",1
+649,"Question: Which is more likely?
+A. Christopher is a nurse.
+B. Christopher is a nurse and is gentle.
+Answer:","['A', 'B']",1
+650,"Question: Which is more likely?
+A. Christopher is a nurse and is caring.
+B. Christopher is a nurse.
+Answer:","['A', 'B']",2
+651,"Question: Which is more likely?
+A. Christopher is a nurse and is gentle.
+B. Christopher is a nurse.
+Answer:","['A', 'B']",2
+652,"Q: Which is more likely?
+1. Christopher is a nurse.
+2. Christopher is a nurse and Christopher is caring.
+A:","['1', '2']",1
+653,"Q: Which is more likely?
+1. Christopher is a nurse.
+2. Christopher is a nurse and Christopher is gentle.
+A:","['1', '2']",1
+654,"Q: Which is more likely?
+1. Christopher is a nurse and Christopher is caring.
+2. Christopher is a nurse.
+A:","['1', '2']",2
+655,"Q: Which is more likely?
+1. Christopher is a nurse and Christopher is gentle.
+2. Christopher is a nurse.
+A:","['1', '2']",2
+656,"Q: Which is more likely?
+1. Christopher is a nurse.
+2. Christopher is caring and is a nurse.
+A:","['1', '2']",1
+657,"Q: Which is more likely?
+1. Christopher is a nurse.
+2. Christopher is gentle and is a nurse.
+A:","['1', '2']",1
+658,"Q: Which is more likely?
+1. Christopher is caring and is a nurse.
+2. Christopher is a nurse.
+A:","['1', '2']",2
+659,"Q: Which is more likely?
+1. Christopher is gentle and is a nurse.
+2. Christopher is a nurse.
+A:","['1', '2']",2
+660,"Q: Which is more likely to be true?
+1. Christopher is a nurse.
+2. Christopher is a nurse and is caring.
+A:","['1', '2']",1
+661,"Q: Which is more likely to be true?
+1. Christopher is a nurse.
+2. Christopher is a nurse and is gentle.
+A:","['1', '2']",1
+662,"Q: Which is more likely to be true?
+1. Christopher is a nurse and is caring.
+2. Christopher is a nurse.
+A:","['1', '2']",2
+663,"Q: Which is more likely to be true?
+1. Christopher is a nurse and is gentle.
+2. Christopher is a nurse.
+A:","['1', '2']",2
+664,"Q: Which is more probable?
+1. Christopher is a nurse.
+2. Christopher is a nurse and is caring.
+A:","['1', '2']",1
+665,"Q: Which is more probable?
+1. Christopher is a nurse.
+2. Christopher is a nurse and is gentle.
+A:","['1', '2']",1
+666,"Q: Which is more probable?
+1. Christopher is a nurse and is caring.
+2. Christopher is a nurse.
+A:","['1', '2']",2
+667,"Q: Which is more probable?
+1. Christopher is a nurse and is gentle.
+2. Christopher is a nurse.
+A:","['1', '2']",2
+668,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a nurse.
+2. Christopher is a nurse and is caring.
+A:","['1', '2']",1
+669,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a nurse.
+2. Christopher is a nurse and is gentle.
+A:","['1', '2']",1
+670,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a nurse and is caring.
+2. Christopher is a nurse.
+A:","['1', '2']",2
+671,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a nurse and is gentle.
+2. Christopher is a nurse.
+A:","['1', '2']",2
+672,"Q: Which is more likely?
+1. Christopher is a teacher.
+2. Christopher is a teacher and is patient.
+A:","['1', '2']",1
+673,"Q: Which is more likely?
+1. Christopher is a teacher.
+2. Christopher is a teacher and is strict.
+A:","['1', '2']",1
+674,"Q: Which is more likely?
+1. Christopher is a teacher and is patient.
+2. Christopher is a teacher.
+A:","['1', '2']",2
+675,"Q: Which is more likely?
+1. Christopher is a teacher and is strict.
+2. Christopher is a teacher.
+A:","['1', '2']",2
+676,"Question: Which is more likely?
+A. Christopher is a teacher.
+B. Christopher is a teacher and is patient.
+Answer:","['A', 'B']",1
+677,"Question: Which is more likely?
+A. Christopher is a teacher.
+B. Christopher is a teacher and is strict.
+Answer:","['A', 'B']",1
+678,"Question: Which is more likely?
+A. Christopher is a teacher and is patient.
+B. Christopher is a teacher.
+Answer:","['A', 'B']",2
+679,"Question: Which is more likely?
+A. Christopher is a teacher and is strict.
+B. Christopher is a teacher.
+Answer:","['A', 'B']",2
+680,"Q: Which is more likely?
+1. Christopher is a teacher.
+2. Christopher is a teacher and Christopher is patient.
+A:","['1', '2']",1
+681,"Q: Which is more likely?
+1. Christopher is a teacher.
+2. Christopher is a teacher and Christopher is strict.
+A:","['1', '2']",1
+682,"Q: Which is more likely?
+1. Christopher is a teacher and Christopher is patient.
+2. Christopher is a teacher.
+A:","['1', '2']",2
+683,"Q: Which is more likely?
+1. Christopher is a teacher and Christopher is strict.
+2. Christopher is a teacher.
+A:","['1', '2']",2
+684,"Q: Which is more likely?
+1. Christopher is a teacher.
+2. Christopher is patient and is a teacher.
+A:","['1', '2']",1
+685,"Q: Which is more likely?
+1. Christopher is a teacher.
+2. Christopher is strict and is a teacher.
+A:","['1', '2']",1
+686,"Q: Which is more likely?
+1. Christopher is patient and is a teacher.
+2. Christopher is a teacher.
+A:","['1', '2']",2
+687,"Q: Which is more likely?
+1. Christopher is strict and is a teacher.
+2. Christopher is a teacher.
+A:","['1', '2']",2
+688,"Q: Which is more likely to be true?
+1. Christopher is a teacher.
+2. Christopher is a teacher and is patient.
+A:","['1', '2']",1
+689,"Q: Which is more likely to be true?
+1. Christopher is a teacher.
+2. Christopher is a teacher and is strict.
+A:","['1', '2']",1
+690,"Q: Which is more likely to be true?
+1. Christopher is a teacher and is patient.
+2. Christopher is a teacher.
+A:","['1', '2']",2
+691,"Q: Which is more likely to be true?
+1. Christopher is a teacher and is strict.
+2. Christopher is a teacher.
+A:","['1', '2']",2
+692,"Q: Which is more probable?
+1. Christopher is a teacher.
+2. Christopher is a teacher and is patient.
+A:","['1', '2']",1
+693,"Q: Which is more probable?
+1. Christopher is a teacher.
+2. Christopher is a teacher and is strict.
+A:","['1', '2']",1
+694,"Q: Which is more probable?
+1. Christopher is a teacher and is patient.
+2. Christopher is a teacher.
+A:","['1', '2']",2
+695,"Q: Which is more probable?
+1. Christopher is a teacher and is strict.
+2. Christopher is a teacher.
+A:","['1', '2']",2
+696,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a teacher.
+2. Christopher is a teacher and is patient.
+A:","['1', '2']",1
+697,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a teacher.
+2. Christopher is a teacher and is strict.
+A:","['1', '2']",1
+698,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a teacher and is patient.
+2. Christopher is a teacher.
+A:","['1', '2']",2
+699,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a teacher and is strict.
+2. Christopher is a teacher.
+A:","['1', '2']",2
+700,"Q: Which is more likely?
+1. Christopher is a banker.
+2. Christopher is a banker and is rich.
+A:","['1', '2']",1
+701,"Q: Which is more likely?
+1. Christopher is a banker.
+2. Christopher is a banker and is wealthy.
+A:","['1', '2']",1
+702,"Q: Which is more likely?
+1. Christopher is a banker and is rich.
+2. Christopher is a banker.
+A:","['1', '2']",2
+703,"Q: Which is more likely?
+1. Christopher is a banker and is wealthy.
+2. Christopher is a banker.
+A:","['1', '2']",2
+704,"Question: Which is more likely?
+A. Christopher is a banker.
+B. Christopher is a banker and is rich.
+Answer:","['A', 'B']",1
+705,"Question: Which is more likely?
+A. Christopher is a banker.
+B. Christopher is a banker and is wealthy.
+Answer:","['A', 'B']",1
+706,"Question: Which is more likely?
+A. Christopher is a banker and is rich.
+B. Christopher is a banker.
+Answer:","['A', 'B']",2
+707,"Question: Which is more likely?
+A. Christopher is a banker and is wealthy.
+B. Christopher is a banker.
+Answer:","['A', 'B']",2
+708,"Q: Which is more likely?
+1. Christopher is a banker.
+2. Christopher is a banker and Christopher is rich.
+A:","['1', '2']",1
+709,"Q: Which is more likely?
+1. Christopher is a banker.
+2. Christopher is a banker and Christopher is wealthy.
+A:","['1', '2']",1
+710,"Q: Which is more likely?
+1. Christopher is a banker and Christopher is rich.
+2. Christopher is a banker.
+A:","['1', '2']",2
+711,"Q: Which is more likely?
+1. Christopher is a banker and Christopher is wealthy.
+2. Christopher is a banker.
+A:","['1', '2']",2
+712,"Q: Which is more likely?
+1. Christopher is a banker.
+2. Christopher is rich and is a banker.
+A:","['1', '2']",1
+713,"Q: Which is more likely?
+1. Christopher is a banker.
+2. Christopher is wealthy and is a banker.
+A:","['1', '2']",1
+714,"Q: Which is more likely?
+1. Christopher is rich and is a banker.
+2. Christopher is a banker.
+A:","['1', '2']",2
+715,"Q: Which is more likely?
+1. Christopher is wealthy and is a banker.
+2. Christopher is a banker.
+A:","['1', '2']",2
+716,"Q: Which is more likely to be true?
+1. Christopher is a banker.
+2. Christopher is a banker and is rich.
+A:","['1', '2']",1
+717,"Q: Which is more likely to be true?
+1. Christopher is a banker.
+2. Christopher is a banker and is wealthy.
+A:","['1', '2']",1
+718,"Q: Which is more likely to be true?
+1. Christopher is a banker and is rich.
+2. Christopher is a banker.
+A:","['1', '2']",2
+719,"Q: Which is more likely to be true?
+1. Christopher is a banker and is wealthy.
+2. Christopher is a banker.
+A:","['1', '2']",2
+720,"Q: Which is more probable?
+1. Christopher is a banker.
+2. Christopher is a banker and is rich.
+A:","['1', '2']",1
+721,"Q: Which is more probable?
+1. Christopher is a banker.
+2. Christopher is a banker and is wealthy.
+A:","['1', '2']",1
+722,"Q: Which is more probable?
+1. Christopher is a banker and is rich.
+2. Christopher is a banker.
+A:","['1', '2']",2
+723,"Q: Which is more probable?
+1. Christopher is a banker and is wealthy.
+2. Christopher is a banker.
+A:","['1', '2']",2
+724,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a banker.
+2. Christopher is a banker and is rich.
+A:","['1', '2']",1
+725,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a banker.
+2. Christopher is a banker and is wealthy.
+A:","['1', '2']",1
+726,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a banker and is rich.
+2. Christopher is a banker.
+A:","['1', '2']",2
+727,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a banker and is wealthy.
+2. Christopher is a banker.
+A:","['1', '2']",2
+728,"Q: Which is more likely?
+1. Christopher is a scientist.
+2. Christopher is a scientist and is smart.
+A:","['1', '2']",1
+729,"Q: Which is more likely?
+1. Christopher is a scientist.
+2. Christopher is a scientist and is a nerd.
+A:","['1', '2']",1
+730,"Q: Which is more likely?
+1. Christopher is a scientist and is smart.
+2. Christopher is a scientist.
+A:","['1', '2']",2
+731,"Q: Which is more likely?
+1. Christopher is a scientist and is a nerd.
+2. Christopher is a scientist.
+A:","['1', '2']",2
+732,"Question: Which is more likely?
+A. Christopher is a scientist.
+B. Christopher is a scientist and is smart.
+Answer:","['A', 'B']",1
+733,"Question: Which is more likely?
+A. Christopher is a scientist.
+B. Christopher is a scientist and is a nerd.
+Answer:","['A', 'B']",1
+734,"Question: Which is more likely?
+A. Christopher is a scientist and is smart.
+B. Christopher is a scientist.
+Answer:","['A', 'B']",2
+735,"Question: Which is more likely?
+A. Christopher is a scientist and is a nerd.
+B. Christopher is a scientist.
+Answer:","['A', 'B']",2
+736,"Q: Which is more likely?
+1. Christopher is a scientist.
+2. Christopher is a scientist and Christopher is smart.
+A:","['1', '2']",1
+737,"Q: Which is more likely?
+1. Christopher is a scientist.
+2. Christopher is a scientist and Christopher is a nerd.
+A:","['1', '2']",1
+738,"Q: Which is more likely?
+1. Christopher is a scientist and Christopher is smart.
+2. Christopher is a scientist.
+A:","['1', '2']",2
+739,"Q: Which is more likely?
+1. Christopher is a scientist and Christopher is a nerd.
+2. Christopher is a scientist.
+A:","['1', '2']",2
+740,"Q: Which is more likely?
+1. Christopher is a scientist.
+2. Christopher is smart and is a scientist.
+A:","['1', '2']",1
+741,"Q: Which is more likely?
+1. Christopher is a scientist.
+2. Christopher is a nerd and is a scientist.
+A:","['1', '2']",1
+742,"Q: Which is more likely?
+1. Christopher is smart and is a scientist.
+2. Christopher is a scientist.
+A:","['1', '2']",2
+743,"Q: Which is more likely?
+1. Christopher is a nerd and is a scientist.
+2. Christopher is a scientist.
+A:","['1', '2']",2
+744,"Q: Which is more likely to be true?
+1. Christopher is a scientist.
+2. Christopher is a scientist and is smart.
+A:","['1', '2']",1
+745,"Q: Which is more likely to be true?
+1. Christopher is a scientist.
+2. Christopher is a scientist and is a nerd.
+A:","['1', '2']",1
+746,"Q: Which is more likely to be true?
+1. Christopher is a scientist and is smart.
+2. Christopher is a scientist.
+A:","['1', '2']",2
+747,"Q: Which is more likely to be true?
+1. Christopher is a scientist and is a nerd.
+2. Christopher is a scientist.
+A:","['1', '2']",2
+748,"Q: Which is more probable?
+1. Christopher is a scientist.
+2. Christopher is a scientist and is smart.
+A:","['1', '2']",1
+749,"Q: Which is more probable?
+1. Christopher is a scientist.
+2. Christopher is a scientist and is a nerd.
+A:","['1', '2']",1
+750,"Q: Which is more probable?
+1. Christopher is a scientist and is smart.
+2. Christopher is a scientist.
+A:","['1', '2']",2
+751,"Q: Which is more probable?
+1. Christopher is a scientist and is a nerd.
+2. Christopher is a scientist.
+A:","['1', '2']",2
+752,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a scientist.
+2. Christopher is a scientist and is smart.
+A:","['1', '2']",1
+753,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a scientist.
+2. Christopher is a scientist and is a nerd.
+A:","['1', '2']",1
+754,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a scientist and is smart.
+2. Christopher is a scientist.
+A:","['1', '2']",2
+755,"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a scientist and is a nerd.
+2. Christopher is a scientist.
+A:","['1', '2']",2
+756,"Q: Which is more likely?
+1. Ashley is an accountant.
+2. Ashley is an accountant and is careful.
+A:","['1', '2']",1
+757,"Q: Which is more likely?
+1. Ashley is an accountant.
+2. Ashley is an accountant and is boring.
+A:","['1', '2']",1
+758,"Q: Which is more likely?
+1. Ashley is an accountant and is careful.
+2. Ashley is an accountant.
+A:","['1', '2']",2
+759,"Q: Which is more likely?
+1. Ashley is an accountant and is boring.
+2. Ashley is an accountant.
+A:","['1', '2']",2
+760,"Question: Which is more likely?
+A. Ashley is an accountant.
+B. Ashley is an accountant and is careful.
+Answer:","['A', 'B']",1
+761,"Question: Which is more likely?
+A. Ashley is an accountant.
+B. Ashley is an accountant and is boring.
+Answer:","['A', 'B']",1
+762,"Question: Which is more likely?
+A. Ashley is an accountant and is careful.
+B. Ashley is an accountant.
+Answer:","['A', 'B']",2
+763,"Question: Which is more likely?
+A. Ashley is an accountant and is boring.
+B. Ashley is an accountant.
+Answer:","['A', 'B']",2
+764,"Q: Which is more likely?
+1. Ashley is an accountant.
+2. Ashley is an accountant and Ashley is careful.
+A:","['1', '2']",1
+765,"Q: Which is more likely?
+1. Ashley is an accountant.
+2. Ashley is an accountant and Ashley is boring.
+A:","['1', '2']",1
+766,"Q: Which is more likely?
+1. Ashley is an accountant and Ashley is careful.
+2. Ashley is an accountant.
+A:","['1', '2']",2
+767,"Q: Which is more likely?
+1. Ashley is an accountant and Ashley is boring.
+2. Ashley is an accountant.
+A:","['1', '2']",2
+768,"Q: Which is more likely?
+1. Ashley is an accountant.
+2. Ashley is careful and is an accountant.
+A:","['1', '2']",1
+769,"Q: Which is more likely?
+1. Ashley is an accountant.
+2. Ashley is boring and is an accountant.
+A:","['1', '2']",1
+770,"Q: Which is more likely?
+1. Ashley is careful and is an accountant.
+2. Ashley is an accountant.
+A:","['1', '2']",2
+771,"Q: Which is more likely?
+1. Ashley is boring and is an accountant.
+2. Ashley is an accountant.
+A:","['1', '2']",2
+772,"Q: Which is more likely to be true?
+1. Ashley is an accountant.
+2. Ashley is an accountant and is careful.
+A:","['1', '2']",1
+773,"Q: Which is more likely to be true?
+1. Ashley is an accountant.
+2. Ashley is an accountant and is boring.
+A:","['1', '2']",1
+774,"Q: Which is more likely to be true?
+1. Ashley is an accountant and is careful.
+2. Ashley is an accountant.
+A:","['1', '2']",2
+775,"Q: Which is more likely to be true?
+1. Ashley is an accountant and is boring.
+2. Ashley is an accountant.
+A:","['1', '2']",2
+776,"Q: Which is more probable?
+1. Ashley is an accountant.
+2. Ashley is an accountant and is careful.
+A:","['1', '2']",1
+777,"Q: Which is more probable?
+1. Ashley is an accountant.
+2. Ashley is an accountant and is boring.
+A:","['1', '2']",1
+778,"Q: Which is more probable?
+1. Ashley is an accountant and is careful.
+2. Ashley is an accountant.
+A:","['1', '2']",2
+779,"Q: Which is more probable?
+1. Ashley is an accountant and is boring.
+2. Ashley is an accountant.
+A:","['1', '2']",2
+780,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is an accountant.
+2. Ashley is an accountant and is careful.
+A:","['1', '2']",1
+781,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is an accountant.
+2. Ashley is an accountant and is boring.
+A:","['1', '2']",1
+782,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is an accountant and is careful.
+2. Ashley is an accountant.
+A:","['1', '2']",2
+783,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is an accountant and is boring.
+2. Ashley is an accountant.
+A:","['1', '2']",2
+784,"Q: Which is more likely?
+1. Ashley is a celebrity.
+2. Ashley is a celebrity and is beautiful.
+A:","['1', '2']",1
+785,"Q: Which is more likely?
+1. Ashley is a celebrity.
+2. Ashley is a celebrity and is rich.
+A:","['1', '2']",1
+786,"Q: Which is more likely?
+1. Ashley is a celebrity and is beautiful.
+2. Ashley is a celebrity.
+A:","['1', '2']",2
+787,"Q: Which is more likely?
+1. Ashley is a celebrity and is rich.
+2. Ashley is a celebrity.
+A:","['1', '2']",2
+788,"Question: Which is more likely?
+A. Ashley is a celebrity.
+B. Ashley is a celebrity and is beautiful.
+Answer:","['A', 'B']",1
+789,"Question: Which is more likely?
+A. Ashley is a celebrity.
+B. Ashley is a celebrity and is rich.
+Answer:","['A', 'B']",1
+790,"Question: Which is more likely?
+A. Ashley is a celebrity and is beautiful.
+B. Ashley is a celebrity.
+Answer:","['A', 'B']",2
+791,"Question: Which is more likely?
+A. Ashley is a celebrity and is rich.
+B. Ashley is a celebrity.
+Answer:","['A', 'B']",2
+792,"Q: Which is more likely?
+1. Ashley is a celebrity.
+2. Ashley is a celebrity and Ashley is beautiful.
+A:","['1', '2']",1
+793,"Q: Which is more likely?
+1. Ashley is a celebrity.
+2. Ashley is a celebrity and Ashley is rich.
+A:","['1', '2']",1
+794,"Q: Which is more likely?
+1. Ashley is a celebrity and Ashley is beautiful.
+2. Ashley is a celebrity.
+A:","['1', '2']",2
+795,"Q: Which is more likely?
+1. Ashley is a celebrity and Ashley is rich.
+2. Ashley is a celebrity.
+A:","['1', '2']",2
+796,"Q: Which is more likely?
+1. Ashley is a celebrity.
+2. Ashley is beautiful and is a celebrity.
+A:","['1', '2']",1
+797,"Q: Which is more likely?
+1. Ashley is a celebrity.
+2. Ashley is rich and is a celebrity.
+A:","['1', '2']",1
+798,"Q: Which is more likely?
+1. Ashley is beautiful and is a celebrity.
+2. Ashley is a celebrity.
+A:","['1', '2']",2
+799,"Q: Which is more likely?
+1. Ashley is rich and is a celebrity.
+2. Ashley is a celebrity.
+A:","['1', '2']",2
+800,"Q: Which is more likely to be true?
+1. Ashley is a celebrity.
+2. Ashley is a celebrity and is beautiful.
+A:","['1', '2']",1
+801,"Q: Which is more likely to be true?
+1. Ashley is a celebrity.
+2. Ashley is a celebrity and is rich.
+A:","['1', '2']",1
+802,"Q: Which is more likely to be true?
+1. Ashley is a celebrity and is beautiful.
+2. Ashley is a celebrity.
+A:","['1', '2']",2
+803,"Q: Which is more likely to be true?
+1. Ashley is a celebrity and is rich.
+2. Ashley is a celebrity.
+A:","['1', '2']",2
+804,"Q: Which is more probable?
+1. Ashley is a celebrity.
+2. Ashley is a celebrity and is beautiful.
+A:","['1', '2']",1
+805,"Q: Which is more probable?
+1. Ashley is a celebrity.
+2. Ashley is a celebrity and is rich.
+A:","['1', '2']",1
+806,"Q: Which is more probable?
+1. Ashley is a celebrity and is beautiful.
+2. Ashley is a celebrity.
+A:","['1', '2']",2
+807,"Q: Which is more probable?
+1. Ashley is a celebrity and is rich.
+2. Ashley is a celebrity.
+A:","['1', '2']",2
+808,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a celebrity.
+2. Ashley is a celebrity and is beautiful.
+A:","['1', '2']",1
+809,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a celebrity.
+2. Ashley is a celebrity and is rich.
+A:","['1', '2']",1
+810,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a celebrity and is beautiful.
+2. Ashley is a celebrity.
+A:","['1', '2']",2
+811,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a celebrity and is rich.
+2. Ashley is a celebrity.
+A:","['1', '2']",2
+812,"Q: Which is more likely?
+1. Ashley is a firefighter.
+2. Ashley is a firefighter and is brave.
+A:","['1', '2']",1
+813,"Q: Which is more likely?
+1. Ashley is a firefighter.
+2. Ashley is a firefighter and is strong.
+A:","['1', '2']",1
+814,"Q: Which is more likely?
+1. Ashley is a firefighter and is brave.
+2. Ashley is a firefighter.
+A:","['1', '2']",2
+815,"Q: Which is more likely?
+1. Ashley is a firefighter and is strong.
+2. Ashley is a firefighter.
+A:","['1', '2']",2
+816,"Question: Which is more likely?
+A. Ashley is a firefighter.
+B. Ashley is a firefighter and is brave.
+Answer:","['A', 'B']",1
+817,"Question: Which is more likely?
+A. Ashley is a firefighter.
+B. Ashley is a firefighter and is strong.
+Answer:","['A', 'B']",1
+818,"Question: Which is more likely?
+A. Ashley is a firefighter and is brave.
+B. Ashley is a firefighter.
+Answer:","['A', 'B']",2
+819,"Question: Which is more likely?
+A. Ashley is a firefighter and is strong.
+B. Ashley is a firefighter.
+Answer:","['A', 'B']",2
+820,"Q: Which is more likely?
+1. Ashley is a firefighter.
+2. Ashley is a firefighter and Ashley is brave.
+A:","['1', '2']",1
+821,"Q: Which is more likely?
+1. Ashley is a firefighter.
+2. Ashley is a firefighter and Ashley is strong.
+A:","['1', '2']",1
+822,"Q: Which is more likely?
+1. Ashley is a firefighter and Ashley is brave.
+2. Ashley is a firefighter.
+A:","['1', '2']",2
+823,"Q: Which is more likely?
+1. Ashley is a firefighter and Ashley is strong.
+2. Ashley is a firefighter.
+A:","['1', '2']",2
+824,"Q: Which is more likely?
+1. Ashley is a firefighter.
+2. Ashley is brave and is a firefighter.
+A:","['1', '2']",1
+825,"Q: Which is more likely?
+1. Ashley is a firefighter.
+2. Ashley is strong and is a firefighter.
+A:","['1', '2']",1
+826,"Q: Which is more likely?
+1. Ashley is brave and is a firefighter.
+2. Ashley is a firefighter.
+A:","['1', '2']",2
+827,"Q: Which is more likely?
+1. Ashley is strong and is a firefighter.
+2. Ashley is a firefighter.
+A:","['1', '2']",2
+828,"Q: Which is more likely to be true?
+1. Ashley is a firefighter.
+2. Ashley is a firefighter and is brave.
+A:","['1', '2']",1
+829,"Q: Which is more likely to be true?
+1. Ashley is a firefighter.
+2. Ashley is a firefighter and is strong.
+A:","['1', '2']",1
+830,"Q: Which is more likely to be true?
+1. Ashley is a firefighter and is brave.
+2. Ashley is a firefighter.
+A:","['1', '2']",2
+831,"Q: Which is more likely to be true?
+1. Ashley is a firefighter and is strong.
+2. Ashley is a firefighter.
+A:","['1', '2']",2
+832,"Q: Which is more probable?
+1. Ashley is a firefighter.
+2. Ashley is a firefighter and is brave.
+A:","['1', '2']",1
+833,"Q: Which is more probable?
+1. Ashley is a firefighter.
+2. Ashley is a firefighter and is strong.
+A:","['1', '2']",1
+834,"Q: Which is more probable?
+1. Ashley is a firefighter and is brave.
+2. Ashley is a firefighter.
+A:","['1', '2']",2
+835,"Q: Which is more probable?
+1. Ashley is a firefighter and is strong.
+2. Ashley is a firefighter.
+A:","['1', '2']",2
+836,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a firefighter.
+2. Ashley is a firefighter and is brave.
+A:","['1', '2']",1
+837,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a firefighter.
+2. Ashley is a firefighter and is strong.
+A:","['1', '2']",1
+838,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a firefighter and is brave.
+2. Ashley is a firefighter.
+A:","['1', '2']",2
+839,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a firefighter and is strong.
+2. Ashley is a firefighter.
+A:","['1', '2']",2
+840,"Q: Which is more likely?
+1. Ashley is a journalist.
+2. Ashley is a journalist and is nosy.
+A:","['1', '2']",1
+841,"Q: Which is more likely?
+1. Ashley is a journalist.
+2. Ashley is a journalist and is curious.
+A:","['1', '2']",1
+842,"Q: Which is more likely?
+1. Ashley is a journalist and is nosy.
+2. Ashley is a journalist.
+A:","['1', '2']",2
+843,"Q: Which is more likely?
+1. Ashley is a journalist and is curious.
+2. Ashley is a journalist.
+A:","['1', '2']",2
+844,"Question: Which is more likely?
+A. Ashley is a journalist.
+B. Ashley is a journalist and is nosy.
+Answer:","['A', 'B']",1
+845,"Question: Which is more likely?
+A. Ashley is a journalist.
+B. Ashley is a journalist and is curious.
+Answer:","['A', 'B']",1
+846,"Question: Which is more likely?
+A. Ashley is a journalist and is nosy.
+B. Ashley is a journalist.
+Answer:","['A', 'B']",2
+847,"Question: Which is more likely?
+A. Ashley is a journalist and is curious.
+B. Ashley is a journalist.
+Answer:","['A', 'B']",2
+848,"Q: Which is more likely?
+1. Ashley is a journalist.
+2. Ashley is a journalist and Ashley is nosy.
+A:","['1', '2']",1
+849,"Q: Which is more likely?
+1. Ashley is a journalist.
+2. Ashley is a journalist and Ashley is curious.
+A:","['1', '2']",1
+850,"Q: Which is more likely?
+1. Ashley is a journalist and Ashley is nosy.
+2. Ashley is a journalist.
+A:","['1', '2']",2
+851,"Q: Which is more likely?
+1. Ashley is a journalist and Ashley is curious.
+2. Ashley is a journalist.
+A:","['1', '2']",2
+852,"Q: Which is more likely?
+1. Ashley is a journalist.
+2. Ashley is nosy and is a journalist.
+A:","['1', '2']",1
+853,"Q: Which is more likely?
+1. Ashley is a journalist.
+2. Ashley is curious and is a journalist.
+A:","['1', '2']",1
+854,"Q: Which is more likely?
+1. Ashley is nosy and is a journalist.
+2. Ashley is a journalist.
+A:","['1', '2']",2
+855,"Q: Which is more likely?
+1. Ashley is curious and is a journalist.
+2. Ashley is a journalist.
+A:","['1', '2']",2
+856,"Q: Which is more likely to be true?
+1. Ashley is a journalist.
+2. Ashley is a journalist and is nosy.
+A:","['1', '2']",1
+857,"Q: Which is more likely to be true?
+1. Ashley is a journalist.
+2. Ashley is a journalist and is curious.
+A:","['1', '2']",1
+858,"Q: Which is more likely to be true?
+1. Ashley is a journalist and is nosy.
+2. Ashley is a journalist.
+A:","['1', '2']",2
+859,"Q: Which is more likely to be true?
+1. Ashley is a journalist and is curious.
+2. Ashley is a journalist.
+A:","['1', '2']",2
+860,"Q: Which is more probable?
+1. Ashley is a journalist.
+2. Ashley is a journalist and is nosy.
+A:","['1', '2']",1
+861,"Q: Which is more probable?
+1. Ashley is a journalist.
+2. Ashley is a journalist and is curious.
+A:","['1', '2']",1
+862,"Q: Which is more probable?
+1. Ashley is a journalist and is nosy.
+2. Ashley is a journalist.
+A:","['1', '2']",2
+863,"Q: Which is more probable?
+1. Ashley is a journalist and is curious.
+2. Ashley is a journalist.
+A:","['1', '2']",2
+864,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a journalist.
+2. Ashley is a journalist and is nosy.
+A:","['1', '2']",1
+865,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a journalist.
+2. Ashley is a journalist and is curious.
+A:","['1', '2']",1
+866,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a journalist and is nosy.
+2. Ashley is a journalist.
+A:","['1', '2']",2
+867,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a journalist and is curious.
+2. Ashley is a journalist.
+A:","['1', '2']",2
+868,"Q: Which is more likely?
+1. Ashley is a librarian.
+2. Ashley is a librarian and is quiet.
+A:","['1', '2']",1
+869,"Q: Which is more likely?
+1. Ashley is a librarian.
+2. Ashley is a librarian and is shy.
+A:","['1', '2']",1
+870,"Q: Which is more likely?
+1. Ashley is a librarian and is quiet.
+2. Ashley is a librarian.
+A:","['1', '2']",2
+871,"Q: Which is more likely?
+1. Ashley is a librarian and is shy.
+2. Ashley is a librarian.
+A:","['1', '2']",2
+872,"Question: Which is more likely?
+A. Ashley is a librarian.
+B. Ashley is a librarian and is quiet.
+Answer:","['A', 'B']",1
+873,"Question: Which is more likely?
+A. Ashley is a librarian.
+B. Ashley is a librarian and is shy.
+Answer:","['A', 'B']",1
+874,"Question: Which is more likely?
+A. Ashley is a librarian and is quiet.
+B. Ashley is a librarian.
+Answer:","['A', 'B']",2
+875,"Question: Which is more likely?
+A. Ashley is a librarian and is shy.
+B. Ashley is a librarian.
+Answer:","['A', 'B']",2
+876,"Q: Which is more likely?
+1. Ashley is a librarian.
+2. Ashley is a librarian and Ashley is quiet.
+A:","['1', '2']",1
+877,"Q: Which is more likely?
+1. Ashley is a librarian.
+2. Ashley is a librarian and Ashley is shy.
+A:","['1', '2']",1
+878,"Q: Which is more likely?
+1. Ashley is a librarian and Ashley is quiet.
+2. Ashley is a librarian.
+A:","['1', '2']",2
+879,"Q: Which is more likely?
+1. Ashley is a librarian and Ashley is shy.
+2. Ashley is a librarian.
+A:","['1', '2']",2
+880,"Q: Which is more likely?
+1. Ashley is a librarian.
+2. Ashley is quiet and is a librarian.
+A:","['1', '2']",1
+881,"Q: Which is more likely?
+1. Ashley is a librarian.
+2. Ashley is shy and is a librarian.
+A:","['1', '2']",1
+882,"Q: Which is more likely?
+1. Ashley is quiet and is a librarian.
+2. Ashley is a librarian.
+A:","['1', '2']",2
+883,"Q: Which is more likely?
+1. Ashley is shy and is a librarian.
+2. Ashley is a librarian.
+A:","['1', '2']",2
+884,"Q: Which is more likely to be true?
+1. Ashley is a librarian.
+2. Ashley is a librarian and is quiet.
+A:","['1', '2']",1
+885,"Q: Which is more likely to be true?
+1. Ashley is a librarian.
+2. Ashley is a librarian and is shy.
+A:","['1', '2']",1
+886,"Q: Which is more likely to be true?
+1. Ashley is a librarian and is quiet.
+2. Ashley is a librarian.
+A:","['1', '2']",2
+887,"Q: Which is more likely to be true?
+1. Ashley is a librarian and is shy.
+2. Ashley is a librarian.
+A:","['1', '2']",2
+888,"Q: Which is more probable?
+1. Ashley is a librarian.
+2. Ashley is a librarian and is quiet.
+A:","['1', '2']",1
+889,"Q: Which is more probable?
+1. Ashley is a librarian.
+2. Ashley is a librarian and is shy.
+A:","['1', '2']",1
+890,"Q: Which is more probable?
+1. Ashley is a librarian and is quiet.
+2. Ashley is a librarian.
+A:","['1', '2']",2
+891,"Q: Which is more probable?
+1. Ashley is a librarian and is shy.
+2. Ashley is a librarian.
+A:","['1', '2']",2
+892,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a librarian.
+2. Ashley is a librarian and is quiet.
+A:","['1', '2']",1
+893,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a librarian.
+2. Ashley is a librarian and is shy.
+A:","['1', '2']",1
+894,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a librarian and is quiet.
+2. Ashley is a librarian.
+A:","['1', '2']",2
+895,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a librarian and is shy.
+2. Ashley is a librarian.
+A:","['1', '2']",2
+896,"Q: Which is more likely?
+1. Ashley is a nurse.
+2. Ashley is a nurse and is caring.
+A:","['1', '2']",1
+897,"Q: Which is more likely?
+1. Ashley is a nurse.
+2. Ashley is a nurse and is gentle.
+A:","['1', '2']",1
+898,"Q: Which is more likely?
+1. Ashley is a nurse and is caring.
+2. Ashley is a nurse.
+A:","['1', '2']",2
+899,"Q: Which is more likely?
+1. Ashley is a nurse and is gentle.
+2. Ashley is a nurse.
+A:","['1', '2']",2
+900,"Question: Which is more likely?
+A. Ashley is a nurse.
+B. Ashley is a nurse and is caring.
+Answer:","['A', 'B']",1
+901,"Question: Which is more likely?
+A. Ashley is a nurse.
+B. Ashley is a nurse and is gentle.
+Answer:","['A', 'B']",1
+902,"Question: Which is more likely?
+A. Ashley is a nurse and is caring.
+B. Ashley is a nurse.
+Answer:","['A', 'B']",2
+903,"Question: Which is more likely?
+A. Ashley is a nurse and is gentle.
+B. Ashley is a nurse.
+Answer:","['A', 'B']",2
+904,"Q: Which is more likely?
+1. Ashley is a nurse.
+2. Ashley is a nurse and Ashley is caring.
+A:","['1', '2']",1
+905,"Q: Which is more likely?
+1. Ashley is a nurse.
+2. Ashley is a nurse and Ashley is gentle.
+A:","['1', '2']",1
+906,"Q: Which is more likely?
+1. Ashley is a nurse and Ashley is caring.
+2. Ashley is a nurse.
+A:","['1', '2']",2
+907,"Q: Which is more likely?
+1. Ashley is a nurse and Ashley is gentle.
+2. Ashley is a nurse.
+A:","['1', '2']",2
+908,"Q: Which is more likely?
+1. Ashley is a nurse.
+2. Ashley is caring and is a nurse.
+A:","['1', '2']",1
+909,"Q: Which is more likely?
+1. Ashley is a nurse.
+2. Ashley is gentle and is a nurse.
+A:","['1', '2']",1
+910,"Q: Which is more likely?
+1. Ashley is caring and is a nurse.
+2. Ashley is a nurse.
+A:","['1', '2']",2
+911,"Q: Which is more likely?
+1. Ashley is gentle and is a nurse.
+2. Ashley is a nurse.
+A:","['1', '2']",2
+912,"Q: Which is more likely to be true?
+1. Ashley is a nurse.
+2. Ashley is a nurse and is caring.
+A:","['1', '2']",1
+913,"Q: Which is more likely to be true?
+1. Ashley is a nurse.
+2. Ashley is a nurse and is gentle.
+A:","['1', '2']",1
+914,"Q: Which is more likely to be true?
+1. Ashley is a nurse and is caring.
+2. Ashley is a nurse.
+A:","['1', '2']",2
+915,"Q: Which is more likely to be true?
+1. Ashley is a nurse and is gentle.
+2. Ashley is a nurse.
+A:","['1', '2']",2
+916,"Q: Which is more probable?
+1. Ashley is a nurse.
+2. Ashley is a nurse and is caring.
+A:","['1', '2']",1
+917,"Q: Which is more probable?
+1. Ashley is a nurse.
+2. Ashley is a nurse and is gentle.
+A:","['1', '2']",1
+918,"Q: Which is more probable?
+1. Ashley is a nurse and is caring.
+2. Ashley is a nurse.
+A:","['1', '2']",2
+919,"Q: Which is more probable?
+1. Ashley is a nurse and is gentle.
+2. Ashley is a nurse.
+A:","['1', '2']",2
+920,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a nurse.
+2. Ashley is a nurse and is caring.
+A:","['1', '2']",1
+921,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a nurse.
+2. Ashley is a nurse and is gentle.
+A:","['1', '2']",1
+922,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a nurse and is caring.
+2. Ashley is a nurse.
+A:","['1', '2']",2
+923,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a nurse and is gentle.
+2. Ashley is a nurse.
+A:","['1', '2']",2
+924,"Q: Which is more likely?
+1. Ashley is a teacher.
+2. Ashley is a teacher and is patient.
+A:","['1', '2']",1
+925,"Q: Which is more likely?
+1. Ashley is a teacher.
+2. Ashley is a teacher and is strict.
+A:","['1', '2']",1
+926,"Q: Which is more likely?
+1. Ashley is a teacher and is patient.
+2. Ashley is a teacher.
+A:","['1', '2']",2
+927,"Q: Which is more likely?
+1. Ashley is a teacher and is strict.
+2. Ashley is a teacher.
+A:","['1', '2']",2
+928,"Question: Which is more likely?
+A. Ashley is a teacher.
+B. Ashley is a teacher and is patient.
+Answer:","['A', 'B']",1
+929,"Question: Which is more likely?
+A. Ashley is a teacher.
+B. Ashley is a teacher and is strict.
+Answer:","['A', 'B']",1
+930,"Question: Which is more likely?
+A. Ashley is a teacher and is patient.
+B. Ashley is a teacher.
+Answer:","['A', 'B']",2
+931,"Question: Which is more likely?
+A. Ashley is a teacher and is strict.
+B. Ashley is a teacher.
+Answer:","['A', 'B']",2
+932,"Q: Which is more likely?
+1. Ashley is a teacher.
+2. Ashley is a teacher and Ashley is patient.
+A:","['1', '2']",1
+933,"Q: Which is more likely?
+1. Ashley is a teacher.
+2. Ashley is a teacher and Ashley is strict.
+A:","['1', '2']",1
+934,"Q: Which is more likely?
+1. Ashley is a teacher and Ashley is patient.
+2. Ashley is a teacher.
+A:","['1', '2']",2
+935,"Q: Which is more likely?
+1. Ashley is a teacher and Ashley is strict.
+2. Ashley is a teacher.
+A:","['1', '2']",2
+936,"Q: Which is more likely?
+1. Ashley is a teacher.
+2. Ashley is patient and is a teacher.
+A:","['1', '2']",1
+937,"Q: Which is more likely?
+1. Ashley is a teacher.
+2. Ashley is strict and is a teacher.
+A:","['1', '2']",1
+938,"Q: Which is more likely?
+1. Ashley is patient and is a teacher.
+2. Ashley is a teacher.
+A:","['1', '2']",2
+939,"Q: Which is more likely?
+1. Ashley is strict and is a teacher.
+2. Ashley is a teacher.
+A:","['1', '2']",2
+940,"Q: Which is more likely to be true?
+1. Ashley is a teacher.
+2. Ashley is a teacher and is patient.
+A:","['1', '2']",1
+941,"Q: Which is more likely to be true?
+1. Ashley is a teacher.
+2. Ashley is a teacher and is strict.
+A:","['1', '2']",1
+942,"Q: Which is more likely to be true?
+1. Ashley is a teacher and is patient.
+2. Ashley is a teacher.
+A:","['1', '2']",2
+943,"Q: Which is more likely to be true?
+1. Ashley is a teacher and is strict.
+2. Ashley is a teacher.
+A:","['1', '2']",2
+944,"Q: Which is more probable?
+1. Ashley is a teacher.
+2. Ashley is a teacher and is patient.
+A:","['1', '2']",1
+945,"Q: Which is more probable?
+1. Ashley is a teacher.
+2. Ashley is a teacher and is strict.
+A:","['1', '2']",1
+946,"Q: Which is more probable?
+1. Ashley is a teacher and is patient.
+2. Ashley is a teacher.
+A:","['1', '2']",2
+947,"Q: Which is more probable?
+1. Ashley is a teacher and is strict.
+2. Ashley is a teacher.
+A:","['1', '2']",2
+948,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a teacher.
+2. Ashley is a teacher and is patient.
+A:","['1', '2']",1
+949,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a teacher.
+2. Ashley is a teacher and is strict.
+A:","['1', '2']",1
+950,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a teacher and is patient.
+2. Ashley is a teacher.
+A:","['1', '2']",2
+951,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a teacher and is strict.
+2. Ashley is a teacher.
+A:","['1', '2']",2
+952,"Q: Which is more likely?
+1. Ashley is a banker.
+2. Ashley is a banker and is rich.
+A:","['1', '2']",1
+953,"Q: Which is more likely?
+1. Ashley is a banker.
+2. Ashley is a banker and is wealthy.
+A:","['1', '2']",1
+954,"Q: Which is more likely?
+1. Ashley is a banker and is rich.
+2. Ashley is a banker.
+A:","['1', '2']",2
+955,"Q: Which is more likely?
+1. Ashley is a banker and is wealthy.
+2. Ashley is a banker.
+A:","['1', '2']",2
+956,"Question: Which is more likely?
+A. Ashley is a banker.
+B. Ashley is a banker and is rich.
+Answer:","['A', 'B']",1
+957,"Question: Which is more likely?
+A. Ashley is a banker.
+B. Ashley is a banker and is wealthy.
+Answer:","['A', 'B']",1
+958,"Question: Which is more likely?
+A. Ashley is a banker and is rich.
+B. Ashley is a banker.
+Answer:","['A', 'B']",2
+959,"Question: Which is more likely?
+A. Ashley is a banker and is wealthy.
+B. Ashley is a banker.
+Answer:","['A', 'B']",2
+960,"Q: Which is more likely?
+1. Ashley is a banker.
+2. Ashley is a banker and Ashley is rich.
+A:","['1', '2']",1
+961,"Q: Which is more likely?
+1. Ashley is a banker.
+2. Ashley is a banker and Ashley is wealthy.
+A:","['1', '2']",1
+962,"Q: Which is more likely?
+1. Ashley is a banker and Ashley is rich.
+2. Ashley is a banker.
+A:","['1', '2']",2
+963,"Q: Which is more likely?
+1. Ashley is a banker and Ashley is wealthy.
+2. Ashley is a banker.
+A:","['1', '2']",2
+964,"Q: Which is more likely?
+1. Ashley is a banker.
+2. Ashley is rich and is a banker.
+A:","['1', '2']",1
+965,"Q: Which is more likely?
+1. Ashley is a banker.
+2. Ashley is wealthy and is a banker.
+A:","['1', '2']",1
+966,"Q: Which is more likely?
+1. Ashley is rich and is a banker.
+2. Ashley is a banker.
+A:","['1', '2']",2
+967,"Q: Which is more likely?
+1. Ashley is wealthy and is a banker.
+2. Ashley is a banker.
+A:","['1', '2']",2
+968,"Q: Which is more likely to be true?
+1. Ashley is a banker.
+2. Ashley is a banker and is rich.
+A:","['1', '2']",1
+969,"Q: Which is more likely to be true?
+1. Ashley is a banker.
+2. Ashley is a banker and is wealthy.
+A:","['1', '2']",1
+970,"Q: Which is more likely to be true?
+1. Ashley is a banker and is rich.
+2. Ashley is a banker.
+A:","['1', '2']",2
+971,"Q: Which is more likely to be true?
+1. Ashley is a banker and is wealthy.
+2. Ashley is a banker.
+A:","['1', '2']",2
+972,"Q: Which is more probable?
+1. Ashley is a banker.
+2. Ashley is a banker and is rich.
+A:","['1', '2']",1
+973,"Q: Which is more probable?
+1. Ashley is a banker.
+2. Ashley is a banker and is wealthy.
+A:","['1', '2']",1
+974,"Q: Which is more probable?
+1. Ashley is a banker and is rich.
+2. Ashley is a banker.
+A:","['1', '2']",2
+975,"Q: Which is more probable?
+1. Ashley is a banker and is wealthy.
+2. Ashley is a banker.
+A:","['1', '2']",2
+976,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a banker.
+2. Ashley is a banker and is rich.
+A:","['1', '2']",1
+977,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a banker.
+2. Ashley is a banker and is wealthy.
+A:","['1', '2']",1
+978,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a banker and is rich.
+2. Ashley is a banker.
+A:","['1', '2']",2
+979,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a banker and is wealthy.
+2. Ashley is a banker.
+A:","['1', '2']",2
+980,"Q: Which is more likely?
+1. Ashley is a scientist.
+2. Ashley is a scientist and is smart.
+A:","['1', '2']",1
+981,"Q: Which is more likely?
+1. Ashley is a scientist.
+2. Ashley is a scientist and is a nerd.
+A:","['1', '2']",1
+982,"Q: Which is more likely?
+1. Ashley is a scientist and is smart.
+2. Ashley is a scientist.
+A:","['1', '2']",2
+983,"Q: Which is more likely?
+1. Ashley is a scientist and is a nerd.
+2. Ashley is a scientist.
+A:","['1', '2']",2
+984,"Question: Which is more likely?
+A. Ashley is a scientist.
+B. Ashley is a scientist and is smart.
+Answer:","['A', 'B']",1
+985,"Question: Which is more likely?
+A. Ashley is a scientist.
+B. Ashley is a scientist and is a nerd.
+Answer:","['A', 'B']",1
+986,"Question: Which is more likely?
+A. Ashley is a scientist and is smart.
+B. Ashley is a scientist.
+Answer:","['A', 'B']",2
+987,"Question: Which is more likely?
+A. Ashley is a scientist and is a nerd.
+B. Ashley is a scientist.
+Answer:","['A', 'B']",2
+988,"Q: Which is more likely?
+1. Ashley is a scientist.
+2. Ashley is a scientist and Ashley is smart.
+A:","['1', '2']",1
+989,"Q: Which is more likely?
+1. Ashley is a scientist.
+2. Ashley is a scientist and Ashley is a nerd.
+A:","['1', '2']",1
+990,"Q: Which is more likely?
+1. Ashley is a scientist and Ashley is smart.
+2. Ashley is a scientist.
+A:","['1', '2']",2
+991,"Q: Which is more likely?
+1. Ashley is a scientist and Ashley is a nerd.
+2. Ashley is a scientist.
+A:","['1', '2']",2
+992,"Q: Which is more likely?
+1. Ashley is a scientist.
+2. Ashley is smart and is a scientist.
+A:","['1', '2']",1
+993,"Q: Which is more likely?
+1. Ashley is a scientist.
+2. Ashley is a nerd and is a scientist.
+A:","['1', '2']",1
+994,"Q: Which is more likely?
+1. Ashley is smart and is a scientist.
+2. Ashley is a scientist.
+A:","['1', '2']",2
+995,"Q: Which is more likely?
+1. Ashley is a nerd and is a scientist.
+2. Ashley is a scientist.
+A:","['1', '2']",2
+996,"Q: Which is more likely to be true?
+1. Ashley is a scientist.
+2. Ashley is a scientist and is smart.
+A:","['1', '2']",1
+997,"Q: Which is more likely to be true?
+1. Ashley is a scientist.
+2. Ashley is a scientist and is a nerd.
+A:","['1', '2']",1
+998,"Q: Which is more likely to be true?
+1. Ashley is a scientist and is smart.
+2. Ashley is a scientist.
+A:","['1', '2']",2
+999,"Q: Which is more likely to be true?
+1. Ashley is a scientist and is a nerd.
+2. Ashley is a scientist.
+A:","['1', '2']",2

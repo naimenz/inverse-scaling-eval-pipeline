@@ -5,6 +5,7 @@ import ast
 import csv
 from typing import Any, cast
 import pandas as pd
+from tqdm import tqdm
 
 from eval_pipeline.gpt2 import GPT2Size, GPT2Wrapper
 from eval_pipeline.gpt3 import GPT3Size, evaluate_gpt3_text
@@ -24,7 +25,7 @@ def main(args: argparse.Namespace):
     with open(args.write_path, "w") as f:
         writer = csv.DictWriter(f, fieldnames=["text"] + gpt2_sizes + gpt3_sizes)
         writer.writeheader()
-        for _, row in df.iterrows():
+        for _, row in tqdm(df.iterrows(), total=df.shape[0]):
             row_dict = process_row(row, gpt2_models, gpt3_sizes)
             writer.writerow(row_dict)
 
