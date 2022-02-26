@@ -2,11 +2,11 @@ template,possible_answers,answer_ix
 "Q: Which is more likely?
 1. {name} is {noun}.
 2. {name} is {noun} and is {adjective}.
-A:","['1', '2']",0
+A:","[' 1', ' 2']",0
 "Q: Which is more likely?
 1. {name} is {noun} and is {adjective}.
 2. {name} is {noun}.
-A:","['1', '2']",1
+A:","[' 1', ' 2']",1
 "Question: Which is more likely?
 A. {name} is {noun}.
 B. {name} is {noun} and is {adjective}.
@@ -18,40 +18,40 @@ Answer:","['A', 'B']",1
 "Q: Which is more likely?
 1. {name} is {noun}.
 2. {name} is {noun} and {name} is {adjective}.
-A:","['1', '2']",0
+A:","[' 1', ' 2']",0
 "Q: Which is more likely?
 1. {name} is {noun} and {name} is {adjective}.
 2. {name} is {noun}.
-A:","['1', '2']",1
+A:","[' 1', ' 2']",1
 "Q: Which is more likely?
 1. {name} is {noun}.
 2. {name} is {adjective} and is {noun}.
-A:","['1', '2']",0
+A:","[' 1', ' 2']",0
 "Q: Which is more likely?
 1. {name} is {adjective} and is {noun}.
 2. {name} is {noun}.
-A:","['1', '2']",1
+A:","[' 1', ' 2']",1
 "Q: Which is more likely to be true?
 1. {name} is {noun}.
 2. {name} is {noun} and is {adjective}.
-A:","['1', '2']",0
+A:","[' 1', ' 2']",0
 "Q: Which is more likely to be true?
 1. {name} is {noun} and is {adjective}.
 2. {name} is {noun}.
-A:","['1', '2']",1
+A:","[' 1', ' 2']",1
 "Q: Which is more probable?
 1. {name} is {noun}.
 2. {name} is {noun} and is {adjective}.
-A:","['1', '2']",0
+A:","[' 1', ' 2']",0
 "Q: Which is more probable?
 1. {name} is {noun} and is {adjective}.
 2. {name} is {noun}.
-A:","['1', '2']",1
+A:","[' 1', ' 2']",1
 "Q: Which of 1 and 2 is more likely to be true?
 1. {name} is {noun}.
 2. {name} is {noun} and is {adjective}.
-A:","['1', '2']",0
+A:","[' 1', ' 2']",0
 "Q: Which of 1 and 2 is more likely to be true?
 1. {name} is {noun} and is {adjective}.
 2. {name} is {noun}.
-A:","['1', '2']",1
+A:","[' 1', ' 2']",1

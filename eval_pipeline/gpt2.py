@@ -47,9 +47,12 @@ class GPT2Wrapper:
             "input_ids"
         ]
         logprobs = F.log_softmax(logits, dim=-1)
-        # TODO: replace this with a loop over token pairs
         positive_logprob = logprobs[positive_token_id[0]]
         negative_logprob = logprobs[negative_token_id[0]]
+        # DEBUG: checking alternative token choices
+        other_pos, other_neg = self.tokenizer([" 1", " 2",])[
+            "input_ids"
+        ]
 
         # For now I'm doing two log_softmaxes, which seems like it must be avoidable
         normalised_logprobs = F.log_softmax(
