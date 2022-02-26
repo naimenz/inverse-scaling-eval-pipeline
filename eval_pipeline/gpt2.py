@@ -43,7 +43,6 @@ class GPT2Wrapper:
         """answer_ix gives the index of the intended answer from possible_answers"""
         logits = self.get_logits(text)
         # get the token id of the answer token
-        assert(possible_answers == [" Yes", " No"])
         positive_token_id, negative_token_id = self.tokenizer(possible_answers)[
             "input_ids"
         ]

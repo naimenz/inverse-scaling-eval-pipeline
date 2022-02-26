@@ -1,0 +1,4001 @@
+text,gpt2,gpt2-medium,gpt2-large
+"Q: Which is more likely?
+1. Michael is an accountant.
+2. Michael is an accountant and is careful.
+A:",0.2198367565870285,0.31665661931037903,0.12265343964099884
+"Q: Which is more likely?
+1. Michael is an accountant.
+2. Michael is an accountant and is boring.
+A:",0.2728114426136017,0.3074319362640381,0.11393561959266663
+"Q: Which is more likely?
+1. Michael is an accountant and is careful.
+2. Michael is an accountant.
+A:",1.5525761842727661,1.279634952545166,1.9809274673461914
+"Q: Which is more likely?
+1. Michael is an accountant and is boring.
+2. Michael is an accountant.
+A:",1.4836527109146118,1.3582220077514648,2.07578706741333
+"Question: Which is more likely?
+A. Michael is an accountant.
+B. Michael is an accountant and is careful.
+Answer:",0.48390862345695496,1.3607792854309082,1.0128967761993408
+"Question: Which is more likely?
+A. Michael is an accountant.
+B. Michael is an accountant and is boring.
+Answer:",0.5851389169692993,1.4353373050689697,1.2508655786514282
+"Question: Which is more likely?
+A. Michael is an accountant and is careful.
+B. Michael is an accountant.
+Answer:",0.9764436483383179,0.32207340002059937,0.3874973952770233
+"Question: Which is more likely?
+A. Michael is an accountant and is boring.
+B. Michael is an accountant.
+Answer:",0.8900789618492126,0.2643960416316986,0.2525954246520996
+"Q: Which is more likely?
+1. Michael is an accountant.
+2. Michael is an accountant and Michael is careful.
+A:",0.22387760877609253,0.31834396719932556,0.11650705337524414
+"Q: Which is more likely?
+1. Michael is an accountant.
+2. Michael is an accountant and Michael is boring.
+A:",0.2642844021320343,0.3014547526836395,0.1105930358171463
+"Q: Which is more likely?
+1. Michael is an accountant and Michael is careful.
+2. Michael is an accountant.
+A:",1.526865005493164,1.2395877838134766,2.0207061767578125
+"Q: Which is more likely?
+1. Michael is an accountant and Michael is boring.
+2. Michael is an accountant.
+A:",1.4787482023239136,1.2922662496566772,2.10740327835083
+"Q: Which is more likely?
+1. Michael is an accountant.
+2. Michael is careful and is an accountant.
+A:",0.2303376942873001,0.30916860699653625,0.11785254627466202
+"Q: Which is more likely?
+1. Michael is an accountant.
+2. Michael is boring and is an accountant.
+A:",0.2587437927722931,0.2756917476654053,0.09879683703184128
+"Q: Which is more likely?
+1. Michael is careful and is an accountant.
+2. Michael is an accountant.
+A:",1.550447702407837,1.2768936157226562,1.9783581495285034
+"Q: Which is more likely?
+1. Michael is boring and is an accountant.
+2. Michael is an accountant.
+A:",1.5264232158660889,1.4241257905960083,2.143845319747925
+"Q: Which is more likely to be true?
+1. Michael is an accountant.
+2. Michael is an accountant and is careful.
+A:",0.20739597082138062,0.2770569622516632,0.10225177556276321
+"Q: Which is more likely to be true?
+1. Michael is an accountant.
+2. Michael is an accountant and is boring.
+A:",0.2571444809436798,0.2736998200416565,0.09156783670186996
+"Q: Which is more likely to be true?
+1. Michael is an accountant and is careful.
+2. Michael is an accountant.
+A:",1.630179762840271,1.3776932954788208,2.1617138385772705
+"Q: Which is more likely to be true?
+1. Michael is an accountant and is boring.
+2. Michael is an accountant.
+A:",1.5590652227401733,1.4436378479003906,2.3013834953308105
+"Q: Which is more probable?
+1. Michael is an accountant.
+2. Michael is an accountant and is careful.
+A:",0.22221510112285614,0.30218225717544556,0.10861414670944214
+"Q: Which is more probable?
+1. Michael is an accountant.
+2. Michael is an accountant and is boring.
+A:",0.2699103355407715,0.29495131969451904,0.09309468418359756
+"Q: Which is more probable?
+1. Michael is an accountant and is careful.
+2. Michael is an accountant.
+A:",1.558896541595459,1.3293442726135254,2.066262722015381
+"Q: Which is more probable?
+1. Michael is an accountant and is boring.
+2. Michael is an accountant.
+A:",1.4973657131195068,1.408172369003296,2.237488269805908
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is an accountant.
+2. Michael is an accountant and is careful.
+A:",0.23592844605445862,0.2102210968732834,0.0744367316365242
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is an accountant.
+2. Michael is an accountant and is boring.
+A:",0.2826457619667053,0.2097947746515274,0.06955822557210922
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is an accountant and is careful.
+2. Michael is an accountant.
+A:",1.5377148389816284,1.6088435649871826,2.476618528366089
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is an accountant and is boring.
+2. Michael is an accountant.
+A:",1.4931987524032593,1.6772708892822266,2.635800361633301
+"Q: Which is more likely?
+1. Michael is a celebrity.
+2. Michael is a celebrity and is beautiful.
+A:",0.3038076162338257,0.23910605907440186,0.1080515906214714
+"Q: Which is more likely?
+1. Michael is a celebrity.
+2. Michael is a celebrity and is rich.
+A:",0.2671327590942383,0.20627549290657043,0.11414260417222977
+"Q: Which is more likely?
+1. Michael is a celebrity and is beautiful.
+2. Michael is a celebrity.
+A:",1.403709053993225,1.514607310295105,2.0627307891845703
+"Q: Which is more likely?
+1. Michael is a celebrity and is rich.
+2. Michael is a celebrity.
+A:",1.500506043434143,1.6006989479064941,2.061548948287964
+"Question: Which is more likely?
+A. Michael is a celebrity.
+B. Michael is a celebrity and is beautiful.
+Answer:",0.49000856280326843,1.0617685317993164,0.8252436518669128
+"Question: Which is more likely?
+A. Michael is a celebrity.
+B. Michael is a celebrity and is rich.
+Answer:",0.5068796277046204,1.0738496780395508,0.8106293082237244
+"Question: Which is more likely?
+A. Michael is a celebrity and is beautiful.
+B. Michael is a celebrity.
+Answer:",1.0164337158203125,0.4235520362854004,0.4807567000389099
+"Question: Which is more likely?
+A. Michael is a celebrity and is rich.
+B. Michael is a celebrity.
+Answer:",1.0064623355865479,0.42736703157424927,0.5052698850631714
+"Q: Which is more likely?
+1. Michael is a celebrity.
+2. Michael is a celebrity and Michael is beautiful.
+A:",0.29434189200401306,0.24774795770645142,0.09502514451742172
+"Q: Which is more likely?
+1. Michael is a celebrity.
+2. Michael is a celebrity and Michael is rich.
+A:",0.2641568183898926,0.21733811497688293,0.10661429911851883
+"Q: Which is more likely?
+1. Michael is a celebrity and Michael is beautiful.
+2. Michael is a celebrity.
+A:",1.3905127048492432,1.4109747409820557,2.132234573364258
+"Q: Which is more likely?
+1. Michael is a celebrity and Michael is rich.
+2. Michael is a celebrity.
+A:",1.4784773588180542,1.4965840578079224,2.080892324447632
+"Q: Which is more likely?
+1. Michael is a celebrity.
+2. Michael is beautiful and is a celebrity.
+A:",0.2868235111236572,0.23720626533031464,0.08912201225757599
+"Q: Which is more likely?
+1. Michael is a celebrity.
+2. Michael is rich and is a celebrity.
+A:",0.24248230457305908,0.20801407098770142,0.09804480522871017
+"Q: Which is more likely?
+1. Michael is beautiful and is a celebrity.
+2. Michael is a celebrity.
+A:",1.3831984996795654,1.4843547344207764,2.2502362728118896
+"Q: Which is more likely?
+1. Michael is rich and is a celebrity.
+2. Michael is a celebrity.
+A:",1.5567163228988647,1.6044338941574097,2.2153661251068115
+"Q: Which is more likely to be true?
+1. Michael is a celebrity.
+2. Michael is a celebrity and is beautiful.
+A:",0.28397083282470703,0.2297482043504715,0.0840827003121376
+"Q: Which is more likely to be true?
+1. Michael is a celebrity.
+2. Michael is a celebrity and is rich.
+A:",0.25152838230133057,0.20213818550109863,0.08670112490653992
+"Q: Which is more likely to be true?
+1. Michael is a celebrity and is beautiful.
+2. Michael is a celebrity.
+A:",1.4692896604537964,1.531113862991333,2.287069320678711
+"Q: Which is more likely to be true?
+1. Michael is a celebrity and is rich.
+2. Michael is a celebrity.
+A:",1.5621510744094849,1.5987504720687866,2.2948782444000244
+"Q: Which is more probable?
+1. Michael is a celebrity.
+2. Michael is a celebrity and is beautiful.
+A:",0.303751677274704,0.23110641539096832,0.10230547934770584
+"Q: Which is more probable?
+1. Michael is a celebrity.
+2. Michael is a celebrity and is rich.
+A:",0.26493364572525024,0.20174893736839294,0.10804731398820877
+"Q: Which is more probable?
+1. Michael is a celebrity and is beautiful.
+2. Michael is a celebrity.
+A:",1.4161303043365479,1.5331114530563354,2.1090798377990723
+"Q: Which is more probable?
+1. Michael is a celebrity and is rich.
+2. Michael is a celebrity.
+A:",1.5158811807632446,1.6043363809585571,2.1230247020721436
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a celebrity.
+2. Michael is a celebrity and is beautiful.
+A:",0.28929057717323303,0.19662760198116302,0.06413482129573822
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a celebrity.
+2. Michael is a celebrity and is rich.
+A:",0.2612065076828003,0.1778087019920349,0.06581918150186539
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a celebrity and is beautiful.
+2. Michael is a celebrity.
+A:",1.4165116548538208,1.7030415534973145,2.609649658203125
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a celebrity and is rich.
+2. Michael is a celebrity.
+A:",1.4862020015716553,1.7352842092514038,2.6202313899993896
+"Q: Which is more likely?
+1. Michael is a firefighter.
+2. Michael is a firefighter and is brave.
+A:",0.2802836298942566,0.2609154284000397,0.1020956039428711
+"Q: Which is more likely?
+1. Michael is a firefighter.
+2. Michael is a firefighter and is strong.
+A:",0.3155091404914856,0.2752453684806824,0.11810998618602753
+"Q: Which is more likely?
+1. Michael is a firefighter and is brave.
+2. Michael is a firefighter.
+A:",1.4079245328903198,1.4634325504302979,2.207164764404297
+"Q: Which is more likely?
+1. Michael is a firefighter and is strong.
+2. Michael is a firefighter.
+A:",1.324439525604248,1.3940043449401855,2.0773510932922363
+"Question: Which is more likely?
+A. Michael is a firefighter.
+B. Michael is a firefighter and is brave.
+Answer:",0.5029898285865784,1.0184211730957031,1.0384730100631714
+"Question: Which is more likely?
+A. Michael is a firefighter.
+B. Michael is a firefighter and is strong.
+Answer:",0.47362780570983887,0.9545853137969971,0.957494854927063
+"Question: Which is more likely?
+A. Michael is a firefighter and is brave.
+B. Michael is a firefighter.
+Answer:",0.9952392578125,0.42469924688339233,0.40570467710494995
+"Question: Which is more likely?
+A. Michael is a firefighter and is strong.
+B. Michael is a firefighter.
+Answer:",1.0230379104614258,0.4575914442539215,0.3953384459018707
+"Q: Which is more likely?
+1. Michael is a firefighter.
+2. Michael is a firefighter and Michael is brave.
+A:",0.2750600576400757,0.2621743977069855,0.09816475957632065
+"Q: Which is more likely?
+1. Michael is a firefighter.
+2. Michael is a firefighter and Michael is strong.
+A:",0.3096112012863159,0.28124549984931946,0.11251624673604965
+"Q: Which is more likely?
+1. Michael is a firefighter and Michael is brave.
+2. Michael is a firefighter.
+A:",1.395134687423706,1.3979594707489014,2.2338149547576904
+"Q: Which is more likely?
+1. Michael is a firefighter and Michael is strong.
+2. Michael is a firefighter.
+A:",1.3104743957519531,1.3326618671417236,2.118292808532715
+"Q: Which is more likely?
+1. Michael is a firefighter.
+2. Michael is brave and is a firefighter.
+A:",0.2757836878299713,0.2553715109825134,0.09298280626535416
+"Q: Which is more likely?
+1. Michael is a firefighter.
+2. Michael is strong and is a firefighter.
+A:",0.3004376292228699,0.2657319903373718,0.10647799074649811
+"Q: Which is more likely?
+1. Michael is brave and is a firefighter.
+2. Michael is a firefighter.
+A:",1.3881871700286865,1.477670431137085,2.289904832839966
+"Q: Which is more likely?
+1. Michael is strong and is a firefighter.
+2. Michael is a firefighter.
+A:",1.358913540840149,1.3753321170806885,2.0830509662628174
+"Q: Which is more likely to be true?
+1. Michael is a firefighter.
+2. Michael is a firefighter and is brave.
+A:",0.26455381512641907,0.2414509505033493,0.08191133290529251
+"Q: Which is more likely to be true?
+1. Michael is a firefighter.
+2. Michael is a firefighter and is strong.
+A:",0.29270780086517334,0.25221291184425354,0.09394823014736176
+"Q: Which is more likely to be true?
+1. Michael is a firefighter and is brave.
+2. Michael is a firefighter.
+A:",1.4810463190078735,1.5143632888793945,2.4140119552612305
+"Q: Which is more likely to be true?
+1. Michael is a firefighter and is strong.
+2. Michael is a firefighter.
+A:",1.4076018333435059,1.4533215761184692,2.277728796005249
+"Q: Which is more probable?
+1. Michael is a firefighter.
+2. Michael is a firefighter and is brave.
+A:",0.28430676460266113,0.2545953392982483,0.09230856597423553
+"Q: Which is more probable?
+1. Michael is a firefighter.
+2. Michael is a firefighter and is strong.
+A:",0.3188644349575043,0.2668699026107788,0.10763891786336899
+"Q: Which is more probable?
+1. Michael is a firefighter and is brave.
+2. Michael is a firefighter.
+A:",1.4126306772232056,1.507965326309204,2.3221757411956787
+"Q: Which is more probable?
+1. Michael is a firefighter and is strong.
+2. Michael is a firefighter.
+A:",1.3256272077560425,1.4376403093338013,2.1765804290771484
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a firefighter.
+2. Michael is a firefighter and is brave.
+A:",0.27507472038269043,0.20062415301799774,0.06025879457592964
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a firefighter.
+2. Michael is a firefighter and is strong.
+A:",0.30351585149765015,0.20568881928920746,0.06968431919813156
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a firefighter and is brave.
+2. Michael is a firefighter.
+A:",1.4504408836364746,1.6919422149658203,2.7390875816345215
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a firefighter and is strong.
+2. Michael is a firefighter.
+A:",1.3770201206207275,1.6466970443725586,2.61020827293396
+"Q: Which is more likely?
+1. Michael is a journalist.
+2. Michael is a journalist and is nosy.
+A:",0.22605393826961517,0.34410595893859863,0.09183789789676666
+"Q: Which is more likely?
+1. Michael is a journalist.
+2. Michael is a journalist and is curious.
+A:",0.22391743957996368,0.29064252972602844,0.10124704986810684
+"Q: Which is more likely?
+1. Michael is a journalist and is nosy.
+2. Michael is a journalist.
+A:",1.6153115034103394,1.2128387689590454,2.3195087909698486
+"Q: Which is more likely?
+1. Michael is a journalist and is curious.
+2. Michael is a journalist.
+A:",1.5510729551315308,1.3632423877716064,2.165050506591797
+"Question: Which is more likely?
+A. Michael is a journalist.
+B. Michael is a journalist and is nosy.
+Answer:",0.4308115243911743,1.302390694618225,0.8801758885383606
+"Question: Which is more likely?
+A. Michael is a journalist.
+B. Michael is a journalist and is curious.
+Answer:",0.3983251750469208,1.1691243648529053,0.9093198180198669
+"Question: Which is more likely?
+A. Michael is a journalist and is nosy.
+B. Michael is a journalist.
+Answer:",1.031109094619751,0.3519655168056488,0.46998485922813416
+"Question: Which is more likely?
+A. Michael is a journalist and is curious.
+B. Michael is a journalist.
+Answer:",1.146104097366333,0.3992511034011841,0.4799484610557556
+"Q: Which is more likely?
+1. Michael is a journalist.
+2. Michael is a journalist and Michael is nosy.
+A:",0.23296917974948883,0.3278818130493164,0.08772504329681396
+"Q: Which is more likely?
+1. Michael is a journalist.
+2. Michael is a journalist and Michael is curious.
+A:",0.23627187311649323,0.2736596465110779,0.09896572679281235
+"Q: Which is more likely?
+1. Michael is a journalist and Michael is nosy.
+2. Michael is a journalist.
+A:",1.5913736820220947,1.1786061525344849,2.3565101623535156
+"Q: Which is more likely?
+1. Michael is a journalist and Michael is curious.
+2. Michael is a journalist.
+A:",1.5093141794204712,1.3732463121414185,2.126235008239746
+"Q: Which is more likely?
+1. Michael is a journalist.
+2. Michael is nosy and is a journalist.
+A:",0.22936642169952393,0.3145360052585602,0.08343960344791412
+"Q: Which is more likely?
+1. Michael is a journalist.
+2. Michael is curious and is a journalist.
+A:",0.24021482467651367,0.28720805048942566,0.09972775727510452
+"Q: Which is more likely?
+1. Michael is nosy and is a journalist.
+2. Michael is a journalist.
+A:",1.5964198112487793,1.2582727670669556,2.398587703704834
+"Q: Which is more likely?
+1. Michael is curious and is a journalist.
+2. Michael is a journalist.
+A:",1.5120012760162354,1.3333640098571777,2.1432712078094482
+"Q: Which is more likely to be true?
+1. Michael is a journalist.
+2. Michael is a journalist and is nosy.
+A:",0.21178124845027924,0.3180404305458069,0.07186649739742279
+"Q: Which is more likely to be true?
+1. Michael is a journalist.
+2. Michael is a journalist and is curious.
+A:",0.21094104647636414,0.2765127420425415,0.08237505704164505
+"Q: Which is more likely to be true?
+1. Michael is a journalist and is nosy.
+2. Michael is a journalist.
+A:",1.6888186931610107,1.2811057567596436,2.5293796062469482
+"Q: Which is more likely to be true?
+1. Michael is a journalist and is curious.
+2. Michael is a journalist.
+A:",1.6233634948730469,1.412578821182251,2.347038984298706
+"Q: Which is more probable?
+1. Michael is a journalist.
+2. Michael is a journalist and is nosy.
+A:",0.22646178305149078,0.3368322551250458,0.0831109881401062
+"Q: Which is more probable?
+1. Michael is a journalist.
+2. Michael is a journalist and is curious.
+A:",0.22308309376239777,0.2849738895893097,0.08700266480445862
+"Q: Which is more probable?
+1. Michael is a journalist and is nosy.
+2. Michael is a journalist.
+A:",1.634304404258728,1.2365704774856567,2.3938872814178467
+"Q: Which is more probable?
+1. Michael is a journalist and is curious.
+2. Michael is a journalist.
+A:",1.5637794733047485,1.4060637950897217,2.258985996246338
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a journalist.
+2. Michael is a journalist and is nosy.
+A:",0.22552043199539185,0.251564085483551,0.05493985489010811
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a journalist.
+2. Michael is a journalist and is curious.
+A:",0.22573618590831757,0.22119854390621185,0.06258491426706314
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a journalist and is nosy.
+2. Michael is a journalist.
+A:",1.6424307823181152,1.4980231523513794,2.79022216796875
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a journalist and is curious.
+2. Michael is a journalist.
+A:",1.5876572132110596,1.6339855194091797,2.5802090167999268
+"Q: Which is more likely?
+1. Michael is a librarian.
+2. Michael is a librarian and is quiet.
+A:",0.2831571102142334,0.25476694107055664,0.10053933411836624
+"Q: Which is more likely?
+1. Michael is a librarian.
+2. Michael is a librarian and is shy.
+A:",0.2854035496711731,0.2552030682563782,0.10579241067171097
+"Q: Which is more likely?
+1. Michael is a librarian and is quiet.
+2. Michael is a librarian.
+A:",1.4324785470962524,1.4854936599731445,2.1753292083740234
+"Q: Which is more likely?
+1. Michael is a librarian and is shy.
+2. Michael is a librarian.
+A:",1.4281949996948242,1.4781945943832397,2.1910977363586426
+"Question: Which is more likely?
+A. Michael is a librarian.
+B. Michael is a librarian and is quiet.
+Answer:",0.38553163409233093,1.291386604309082,1.0728039741516113
+"Question: Which is more likely?
+A. Michael is a librarian.
+B. Michael is a librarian and is shy.
+Answer:",0.40522658824920654,1.2595019340515137,1.0375750064849854
+"Question: Which is more likely?
+A. Michael is a librarian and is quiet.
+B. Michael is a librarian.
+Answer:",1.2298933267593384,0.3535666763782501,0.36715877056121826
+"Question: Which is more likely?
+A. Michael is a librarian and is shy.
+B. Michael is a librarian.
+Answer:",1.2047151327133179,0.33291560411453247,0.4048924148082733
+"Q: Which is more likely?
+1. Michael is a librarian.
+2. Michael is a librarian and Michael is quiet.
+A:",0.2847828269004822,0.2615468502044678,0.0938967913389206
+"Q: Which is more likely?
+1. Michael is a librarian.
+2. Michael is a librarian and Michael is shy.
+A:",0.2902425527572632,0.25508278608322144,0.09531020373106003
+"Q: Which is more likely?
+1. Michael is a librarian and Michael is quiet.
+2. Michael is a librarian.
+A:",1.4077402353286743,1.381718397140503,2.188875198364258
+"Q: Which is more likely?
+1. Michael is a librarian and Michael is shy.
+2. Michael is a librarian.
+A:",1.3980858325958252,1.4031623601913452,2.2388250827789307
+"Q: Which is more likely?
+1. Michael is a librarian.
+2. Michael is quiet and is a librarian.
+A:",0.2788434624671936,0.22385616600513458,0.08431775867938995
+"Q: Which is more likely?
+1. Michael is a librarian.
+2. Michael is shy and is a librarian.
+A:",0.2844124138355255,0.22854523360729218,0.08952289074659348
+"Q: Which is more likely?
+1. Michael is quiet and is a librarian.
+2. Michael is a librarian.
+A:",1.4044111967086792,1.5610418319702148,2.163273572921753
+"Q: Which is more likely?
+1. Michael is shy and is a librarian.
+2. Michael is a librarian.
+A:",1.404388189315796,1.5196220874786377,2.2037999629974365
+"Q: Which is more likely to be true?
+1. Michael is a librarian.
+2. Michael is a librarian and is quiet.
+A:",0.2600022852420807,0.22129248082637787,0.07869451493024826
+"Q: Which is more likely to be true?
+1. Michael is a librarian.
+2. Michael is a librarian and is shy.
+A:",0.2635941803455353,0.2200627326965332,0.08294850587844849
+"Q: Which is more likely to be true?
+1. Michael is a librarian and is quiet.
+2. Michael is a librarian.
+A:",1.5271399021148682,1.5942060947418213,2.410956621170044
+"Q: Which is more likely to be true?
+1. Michael is a librarian and is shy.
+2. Michael is a librarian.
+A:",1.5221500396728516,1.60079026222229,2.4196977615356445
+"Q: Which is more probable?
+1. Michael is a librarian.
+2. Michael is a librarian and is quiet.
+A:",0.282304048538208,0.24773287773132324,0.0954723134636879
+"Q: Which is more probable?
+1. Michael is a librarian.
+2. Michael is a librarian and is shy.
+A:",0.2825442850589752,0.250150591135025,0.10186253488063812
+"Q: Which is more probable?
+1. Michael is a librarian and is quiet.
+2. Michael is a librarian.
+A:",1.4377217292785645,1.5210708379745483,2.1713478565216064
+"Q: Which is more probable?
+1. Michael is a librarian and is shy.
+2. Michael is a librarian.
+A:",1.4390367269515991,1.5181145668029785,2.217578887939453
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a librarian.
+2. Michael is a librarian and is quiet.
+A:",0.27502700686454773,0.18550804257392883,0.06172063574194908
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a librarian.
+2. Michael is a librarian and is shy.
+A:",0.28204891085624695,0.18403813242912292,0.06112063303589821
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a librarian and is quiet.
+2. Michael is a librarian.
+A:",1.48416006565094,1.761687994003296,2.703165054321289
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a librarian and is shy.
+2. Michael is a librarian.
+A:",1.4745922088623047,1.7608599662780762,2.7520031929016113
+"Q: Which is more likely?
+1. Michael is a nurse.
+2. Michael is a nurse and is caring.
+A:",0.3085968494415283,0.23778048157691956,0.1142425611615181
+"Q: Which is more likely?
+1. Michael is a nurse.
+2. Michael is a nurse and is gentle.
+A:",0.33665111660957336,0.2582884132862091,0.1142861619591713
+"Q: Which is more likely?
+1. Michael is a nurse and is caring.
+2. Michael is a nurse.
+A:",1.2874836921691895,1.587153434753418,2.0968921184539795
+"Q: Which is more likely?
+1. Michael is a nurse and is gentle.
+2. Michael is a nurse.
+A:",1.271491289138794,1.488168478012085,2.0381994247436523
+"Question: Which is more likely?
+A. Michael is a nurse.
+B. Michael is a nurse and is caring.
+Answer:",0.4326358437538147,0.9939844608306885,0.9664181470870972
+"Question: Which is more likely?
+A. Michael is a nurse.
+B. Michael is a nurse and is gentle.
+Answer:",0.4255341589450836,0.9710451364517212,1.0108075141906738
+"Question: Which is more likely?
+A. Michael is a nurse and is caring.
+B. Michael is a nurse.
+Answer:",1.095424771308899,0.4810730814933777,0.4379614591598511
+"Question: Which is more likely?
+A. Michael is a nurse and is gentle.
+B. Michael is a nurse.
+Answer:",1.1051833629608154,0.445148766040802,0.4331384599208832
+"Q: Which is more likely?
+1. Michael is a nurse.
+2. Michael is a nurse and Michael is caring.
+A:",0.30669769644737244,0.2381003350019455,0.11267325282096863
+"Q: Which is more likely?
+1. Michael is a nurse.
+2. Michael is a nurse and Michael is gentle.
+A:",0.33152884244918823,0.26855072379112244,0.10828247666358948
+"Q: Which is more likely?
+1. Michael is a nurse and Michael is caring.
+2. Michael is a nurse.
+A:",1.2621643543243408,1.4772465229034424,2.1000523567199707
+"Q: Which is more likely?
+1. Michael is a nurse and Michael is gentle.
+2. Michael is a nurse.
+A:",1.2567548751831055,1.359639286994934,2.084533452987671
+"Q: Which is more likely?
+1. Michael is a nurse.
+2. Michael is caring and is a nurse.
+A:",0.30667349696159363,0.22577166557312012,0.10609254240989685
+"Q: Which is more likely?
+1. Michael is a nurse.
+2. Michael is gentle and is a nurse.
+A:",0.32927054166793823,0.2502249479293823,0.11412898451089859
+"Q: Which is more likely?
+1. Michael is caring and is a nurse.
+2. Michael is a nurse.
+A:",1.331606149673462,1.5492454767227173,2.1411752700805664
+"Q: Which is more likely?
+1. Michael is gentle and is a nurse.
+2. Michael is a nurse.
+A:",1.308513879776001,1.4725924730300903,1.980031967163086
+"Q: Which is more likely to be true?
+1. Michael is a nurse.
+2. Michael is a nurse and is caring.
+A:",0.28049635887145996,0.21487967669963837,0.08968529105186462
+"Q: Which is more likely to be true?
+1. Michael is a nurse.
+2. Michael is a nurse and is gentle.
+A:",0.31027811765670776,0.22765198349952698,0.08982706815004349
+"Q: Which is more likely to be true?
+1. Michael is a nurse and is caring.
+2. Michael is a nurse.
+A:",1.3752409219741821,1.64889657497406,2.309908628463745
+"Q: Which is more likely to be true?
+1. Michael is a nurse and is gentle.
+2. Michael is a nurse.
+A:",1.3540083169937134,1.586055040359497,2.26399302482605
+"Q: Which is more probable?
+1. Michael is a nurse.
+2. Michael is a nurse and is caring.
+A:",0.3021484315395355,0.2294321060180664,0.10493367910385132
+"Q: Which is more probable?
+1. Michael is a nurse.
+2. Michael is a nurse and is gentle.
+A:",0.3242940306663513,0.2512926161289215,0.11054009944200516
+"Q: Which is more probable?
+1. Michael is a nurse and is caring.
+2. Michael is a nurse.
+A:",1.3096052408218384,1.6304129362106323,2.154818296432495
+"Q: Which is more probable?
+1. Michael is a nurse and is gentle.
+2. Michael is a nurse.
+A:",1.3131165504455566,1.519759178161621,1.9987269639968872
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a nurse.
+2. Michael is a nurse and is caring.
+A:",0.29697421193122864,0.17458947002887726,0.0734729915857315
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a nurse.
+2. Michael is a nurse and is gentle.
+A:",0.32214897871017456,0.18456725776195526,0.0737721174955368
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a nurse and is caring.
+2. Michael is a nurse.
+A:",1.344775676727295,1.837984561920166,2.5485451221466064
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a nurse and is gentle.
+2. Michael is a nurse.
+A:",1.3425877094268799,1.7811135053634644,2.468723773956299
+"Q: Which is more likely?
+1. Michael is a teacher.
+2. Michael is a teacher and is patient.
+A:",0.28716617822647095,0.25377508997917175,0.09864995628595352
+"Q: Which is more likely?
+1. Michael is a teacher.
+2. Michael is a teacher and is strict.
+A:",0.2781684398651123,0.25917717814445496,0.1185198500752449
+"Q: Which is more likely?
+1. Michael is a teacher and is patient.
+2. Michael is a teacher.
+A:",1.3755145072937012,1.449967861175537,2.228593349456787
+"Q: Which is more likely?
+1. Michael is a teacher and is strict.
+2. Michael is a teacher.
+A:",1.3890117406845093,1.495962381362915,2.140247106552124
+"Question: Which is more likely?
+A. Michael is a teacher.
+B. Michael is a teacher and is patient.
+Answer:",0.38691505789756775,1.0211868286132812,0.9900858402252197
+"Question: Which is more likely?
+A. Michael is a teacher.
+B. Michael is a teacher and is strict.
+Answer:",0.3974636495113373,1.124316930770874,1.0254664421081543
+"Question: Which is more likely?
+A. Michael is a teacher and is patient.
+B. Michael is a teacher.
+Answer:",1.1777981519699097,0.4474037289619446,0.38649025559425354
+"Question: Which is more likely?
+A. Michael is a teacher and is strict.
+B. Michael is a teacher.
+Answer:",1.1283384561538696,0.3990577161312103,0.38206884264945984
+"Q: Which is more likely?
+1. Michael is a teacher.
+2. Michael is a teacher and Michael is patient.
+A:",0.29413190484046936,0.2674136459827423,0.09109704196453094
+"Q: Which is more likely?
+1. Michael is a teacher.
+2. Michael is a teacher and Michael is strict.
+A:",0.2831871807575226,0.2623327672481537,0.10043798387050629
+"Q: Which is more likely?
+1. Michael is a teacher and Michael is patient.
+2. Michael is a teacher.
+A:",1.3494504690170288,1.3649916648864746,2.2488691806793213
+"Q: Which is more likely?
+1. Michael is a teacher and Michael is strict.
+2. Michael is a teacher.
+A:",1.3657699823379517,1.4044744968414307,2.184833526611328
+"Q: Which is more likely?
+1. Michael is a teacher.
+2. Michael is patient and is a teacher.
+A:",0.2987233102321625,0.2375609129667282,0.09194087982177734
+"Q: Which is more likely?
+1. Michael is a teacher.
+2. Michael is strict and is a teacher.
+A:",0.27142277359962463,0.23946161568164825,0.11171326786279678
+"Q: Which is more likely?
+1. Michael is patient and is a teacher.
+2. Michael is a teacher.
+A:",1.356510877609253,1.4941807985305786,2.299654006958008
+"Q: Which is more likely?
+1. Michael is strict and is a teacher.
+2. Michael is a teacher.
+A:",1.4589205980300903,1.464980959892273,2.0991923809051514
+"Q: Which is more likely to be true?
+1. Michael is a teacher.
+2. Michael is a teacher and is patient.
+A:",0.26696109771728516,0.22429731488227844,0.0777132511138916
+"Q: Which is more likely to be true?
+1. Michael is a teacher.
+2. Michael is a teacher and is strict.
+A:",0.26113635301589966,0.2313600331544876,0.0946817696094513
+"Q: Which is more likely to be true?
+1. Michael is a teacher and is patient.
+2. Michael is a teacher.
+A:",1.4556080102920532,1.5509767532348633,2.4602067470550537
+"Q: Which is more likely to be true?
+1. Michael is a teacher and is strict.
+2. Michael is a teacher.
+A:",1.461158275604248,1.5625731945037842,2.343625783920288
+"Q: Which is more probable?
+1. Michael is a teacher.
+2. Michael is a teacher and is patient.
+A:",0.28187644481658936,0.24032564461231232,0.08879078924655914
+"Q: Which is more probable?
+1. Michael is a teacher.
+2. Michael is a teacher and is strict.
+A:",0.27210545539855957,0.25305435061454773,0.10689222067594528
+"Q: Which is more probable?
+1. Michael is a teacher and is patient.
+2. Michael is a teacher.
+A:",1.3978559970855713,1.4939563274383545,2.2724666595458984
+"Q: Which is more probable?
+1. Michael is a teacher and is strict.
+2. Michael is a teacher.
+A:",1.41974937915802,1.5230807065963745,2.2113029956817627
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a teacher.
+2. Michael is a teacher and is patient.
+A:",0.2837407886981964,0.1788780838251114,0.06203540042042732
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a teacher.
+2. Michael is a teacher and is strict.
+A:",0.27971351146698,0.19117224216461182,0.06940353661775589
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a teacher and is patient.
+2. Michael is a teacher.
+A:",1.407970666885376,1.7359319925308228,2.672973155975342
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a teacher and is strict.
+2. Michael is a teacher.
+A:",1.4026387929916382,1.715557336807251,2.6105003356933594
+"Q: Which is more likely?
+1. Michael is a banker.
+2. Michael is a banker and is rich.
+A:",0.2525447607040405,0.2510283291339874,0.13641473650932312
+"Q: Which is more likely?
+1. Michael is a banker.
+2. Michael is a banker and is wealthy.
+A:",0.2545301914215088,0.24089674651622772,0.14241644740104675
+"Q: Which is more likely?
+1. Michael is a banker and is rich.
+2. Michael is a banker.
+A:",1.5013242959976196,1.446016788482666,1.940946340560913
+"Q: Which is more likely?
+1. Michael is a banker and is wealthy.
+2. Michael is a banker.
+A:",1.5187997817993164,1.4675045013427734,1.8937568664550781
+"Question: Which is more likely?
+A. Michael is a banker.
+B. Michael is a banker and is rich.
+Answer:",0.5492611527442932,1.309337854385376,0.9960023164749146
+"Question: Which is more likely?
+A. Michael is a banker.
+B. Michael is a banker and is wealthy.
+Answer:",0.545928418636322,1.287500262260437,1.011627197265625
+"Question: Which is more likely?
+A. Michael is a banker and is rich.
+B. Michael is a banker.
+Answer:",0.9252292513847351,0.3016235828399658,0.4136015772819519
+"Question: Which is more likely?
+A. Michael is a banker and is wealthy.
+B. Michael is a banker.
+Answer:",0.9586586952209473,0.30731481313705444,0.41874122619628906
+"Q: Which is more likely?
+1. Michael is a banker.
+2. Michael is a banker and Michael is rich.
+A:",0.25518929958343506,0.259114533662796,0.13055506348609924
+"Q: Which is more likely?
+1. Michael is a banker.
+2. Michael is a banker and Michael is wealthy.
+A:",0.2561704218387604,0.24783170223236084,0.1366177350282669
+"Q: Which is more likely?
+1. Michael is a banker and Michael is rich.
+2. Michael is a banker.
+A:",1.4535027742385864,1.3635318279266357,1.947394847869873
+"Q: Which is more likely?
+1. Michael is a banker and Michael is wealthy.
+2. Michael is a banker.
+A:",1.4689254760742188,1.397517204284668,1.8964142799377441
+"Q: Which is more likely?
+1. Michael is a banker.
+2. Michael is rich and is a banker.
+A:",0.23243378102779388,0.2601088285446167,0.1243177279829979
+"Q: Which is more likely?
+1. Michael is a banker.
+2. Michael is wealthy and is a banker.
+A:",0.23458817601203918,0.24476537108421326,0.1254500448703766
+"Q: Which is more likely?
+1. Michael is rich and is a banker.
+2. Michael is a banker.
+A:",1.5957751274108887,1.4881271123886108,2.028815746307373
+"Q: Which is more likely?
+1. Michael is wealthy and is a banker.
+2. Michael is a banker.
+A:",1.5884099006652832,1.553183674812317,1.9725532531738281
+"Q: Which is more likely to be true?
+1. Michael is a banker.
+2. Michael is a banker and is rich.
+A:",0.23464560508728027,0.2279442548751831,0.10888370871543884
+"Q: Which is more likely to be true?
+1. Michael is a banker.
+2. Michael is a banker and is wealthy.
+A:",0.237472265958786,0.21807539463043213,0.11389318108558655
+"Q: Which is more likely to be true?
+1. Michael is a banker and is rich.
+2. Michael is a banker.
+A:",1.5863949060440063,1.510122537612915,2.1368801593780518
+"Q: Which is more likely to be true?
+1. Michael is a banker and is wealthy.
+2. Michael is a banker.
+A:",1.6012165546417236,1.5280537605285645,2.1096930503845215
+"Q: Which is more probable?
+1. Michael is a banker.
+2. Michael is a banker and is rich.
+A:",0.2509385645389557,0.2502148151397705,0.12351743131875992
+"Q: Which is more probable?
+1. Michael is a banker.
+2. Michael is a banker and is wealthy.
+A:",0.25362977385520935,0.2357361614704132,0.12974949181079865
+"Q: Which is more probable?
+1. Michael is a banker and is rich.
+2. Michael is a banker.
+A:",1.5160597562789917,1.4307365417480469,2.016401767730713
+"Q: Which is more probable?
+1. Michael is a banker and is wealthy.
+2. Michael is a banker.
+A:",1.5284779071807861,1.480439305305481,1.9625810384750366
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a banker.
+2. Michael is a banker and is rich.
+A:",0.24598050117492676,0.1862768828868866,0.08269326388835907
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a banker.
+2. Michael is a banker and is wealthy.
+A:",0.2496209591627121,0.17458206415176392,0.08420774340629578
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a banker and is rich.
+2. Michael is a banker.
+A:",1.5267695188522339,1.6928390264511108,2.41792893409729
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a banker and is wealthy.
+2. Michael is a banker.
+A:",1.5315861701965332,1.72992742061615,2.4226436614990234
+"Q: Which is more likely?
+1. Michael is a scientist.
+2. Michael is a scientist and is smart.
+A:",0.2775243818759918,0.2836240231990814,0.10757490247488022
+"Q: Which is more likely?
+1. Michael is a scientist.
+2. Michael is a scientist and is a nerd.
+A:",0.3054303526878357,0.28201887011528015,0.08718634396791458
+"Q: Which is more likely?
+1. Michael is a scientist and is smart.
+2. Michael is a scientist.
+A:",1.4407949447631836,1.384084701538086,2.214615821838379
+"Q: Which is more likely?
+1. Michael is a scientist and is a nerd.
+2. Michael is a scientist.
+A:",1.4158875942230225,1.383673071861267,2.28269100189209
+"Question: Which is more likely?
+A. Michael is a scientist.
+B. Michael is a scientist and is smart.
+Answer:",0.4342619776725769,1.0622327327728271,0.9495987892150879
+"Question: Which is more likely?
+A. Michael is a scientist.
+B. Michael is a scientist and is a nerd.
+Answer:",0.48878616094589233,1.1148560047149658,0.9702057838439941
+"Question: Which is more likely?
+A. Michael is a scientist and is smart.
+B. Michael is a scientist.
+Answer:",1.1100983619689941,0.41101983189582825,0.4571267366409302
+"Question: Which is more likely?
+A. Michael is a scientist and is a nerd.
+B. Michael is a scientist.
+Answer:",1.0442924499511719,0.328926146030426,0.4044719934463501
+"Q: Which is more likely?
+1. Michael is a scientist.
+2. Michael is a scientist and Michael is smart.
+A:",0.2814607322216034,0.28340548276901245,0.10464082658290863
+"Q: Which is more likely?
+1. Michael is a scientist.
+2. Michael is a scientist and Michael is a nerd.
+A:",0.3060694932937622,0.29192662239074707,0.08419546484947205
+"Q: Which is more likely?
+1. Michael is a scientist and Michael is smart.
+2. Michael is a scientist.
+A:",1.406714677810669,1.3708715438842773,2.1971912384033203
+"Q: Which is more likely?
+1. Michael is a scientist and Michael is a nerd.
+2. Michael is a scientist.
+A:",1.3844449520111084,1.314232349395752,2.334894895553589
+"Q: Which is more likely?
+1. Michael is a scientist.
+2. Michael is smart and is a scientist.
+A:",0.2670862078666687,0.27596768736839294,0.094662144780159
+"Q: Which is more likely?
+1. Michael is a scientist.
+2. Michael is a nerd and is a scientist.
+A:",0.2917875349521637,0.27860963344573975,0.08034057915210724
+"Q: Which is more likely?
+1. Michael is smart and is a scientist.
+2. Michael is a scientist.
+A:",1.4350001811981201,1.4019484519958496,2.29667067527771
+"Q: Which is more likely?
+1. Michael is a nerd and is a scientist.
+2. Michael is a scientist.
+A:",1.4305506944656372,1.435168743133545,2.424823522567749
+"Q: Which is more likely to be true?
+1. Michael is a scientist.
+2. Michael is a scientist and is smart.
+A:",0.25681599974632263,0.2651858627796173,0.08447442948818207
+"Q: Which is more likely to be true?
+1. Michael is a scientist.
+2. Michael is a scientist and is a nerd.
+A:",0.28164413571357727,0.26704689860343933,0.06894010305404663
+"Q: Which is more likely to be true?
+1. Michael is a scientist and is smart.
+2. Michael is a scientist.
+A:",1.5333926677703857,1.4255858659744263,2.4356539249420166
+"Q: Which is more likely to be true?
+1. Michael is a scientist and is a nerd.
+2. Michael is a scientist.
+A:",1.5067241191864014,1.4335299730300903,2.517693042755127
+"Q: Which is more probable?
+1. Michael is a scientist.
+2. Michael is a scientist and is smart.
+A:",0.28000402450561523,0.27372539043426514,0.10312367975711823
+"Q: Which is more probable?
+1. Michael is a scientist.
+2. Michael is a scientist and is a nerd.
+A:",0.30315259099006653,0.2751169204711914,0.08103381842374802
+"Q: Which is more probable?
+1. Michael is a scientist and is smart.
+2. Michael is a scientist.
+A:",1.454742431640625,1.4125961065292358,2.2809245586395264
+"Q: Which is more probable?
+1. Michael is a scientist and is a nerd.
+2. Michael is a scientist.
+A:",1.4443140029907227,1.4139295816421509,2.3604562282562256
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a scientist.
+2. Michael is a scientist and is smart.
+A:",0.2751958668231964,0.22533564269542694,0.06861214339733124
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a scientist.
+2. Michael is a scientist and is a nerd.
+A:",0.293801486492157,0.22936168313026428,0.056798238307237625
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a scientist and is smart.
+2. Michael is a scientist.
+A:",1.4606660604476929,1.5882338285446167,2.651432752609253
+"Q: Which of 1 and 2 is more likely to be true?
+1. Michael is a scientist and is a nerd.
+2. Michael is a scientist.
+A:",1.4672813415527344,1.6015393733978271,2.749694585800171
+"Q: Which is more likely?
+1. Jessica is an accountant.
+2. Jessica is an accountant and is careful.
+A:",0.33980825543403625,0.18683776259422302,0.19549469649791718
+"Q: Which is more likely?
+1. Jessica is an accountant.
+2. Jessica is an accountant and is boring.
+A:",0.39243027567863464,0.2028682678937912,0.1922338306903839
+"Q: Which is more likely?
+1. Jessica is an accountant and is careful.
+2. Jessica is an accountant.
+A:",1.203668236732483,1.7182550430297852,1.6185723543167114
+"Q: Which is more likely?
+1. Jessica is an accountant and is boring.
+2. Jessica is an accountant.
+A:",1.1694610118865967,1.7583274841308594,1.6455700397491455
+"Question: Which is more likely?
+A. Jessica is an accountant.
+B. Jessica is an accountant and is careful.
+Answer:",0.48824959993362427,1.276728630065918,1.1550211906433105
+"Question: Which is more likely?
+A. Jessica is an accountant.
+B. Jessica is an accountant and is boring.
+Answer:",0.5831137895584106,1.3301185369491577,1.3401762247085571
+"Question: Which is more likely?
+A. Jessica is an accountant and is careful.
+B. Jessica is an accountant.
+Answer:",0.9725627899169922,0.33823972940444946,0.33146482706069946
+"Question: Which is more likely?
+A. Jessica is an accountant and is boring.
+B. Jessica is an accountant.
+Answer:",0.8927343487739563,0.2987311780452728,0.2260505110025406
+"Q: Which is more likely?
+1. Jessica is an accountant.
+2. Jessica is an accountant and Jessica is careful.
+A:",0.3500368595123291,0.18945342302322388,0.18936820328235626
+"Q: Which is more likely?
+1. Jessica is an accountant.
+2. Jessica is an accountant and Jessica is boring.
+A:",0.3943955600261688,0.20736874639987946,0.1893404871225357
+"Q: Which is more likely?
+1. Jessica is an accountant and Jessica is careful.
+2. Jessica is an accountant.
+A:",1.1810529232025146,1.595702052116394,1.6770212650299072
+"Q: Which is more likely?
+1. Jessica is an accountant and Jessica is boring.
+2. Jessica is an accountant.
+A:",1.1455004215240479,1.6300079822540283,1.688269019126892
+"Q: Which is more likely?
+1. Jessica is an accountant.
+2. Jessica is careful and is an accountant.
+A:",0.35333043336868286,0.17997947335243225,0.181377112865448
+"Q: Which is more likely?
+1. Jessica is an accountant.
+2. Jessica is boring and is an accountant.
+A:",0.37749311327934265,0.1771944910287857,0.1720927655696869
+"Q: Which is more likely?
+1. Jessica is careful and is an accountant.
+2. Jessica is an accountant.
+A:",1.1715977191925049,1.699130892753601,1.6593348979949951
+"Q: Which is more likely?
+1. Jessica is boring and is an accountant.
+2. Jessica is an accountant.
+A:",1.1767741441726685,1.7913446426391602,1.716248869895935
+"Q: Which is more likely to be true?
+1. Jessica is an accountant.
+2. Jessica is an accountant and is careful.
+A:",0.31665870547294617,0.1689450591802597,0.16388951241970062
+"Q: Which is more likely to be true?
+1. Jessica is an accountant.
+2. Jessica is an accountant and is boring.
+A:",0.3634129762649536,0.1858675479888916,0.1565515249967575
+"Q: Which is more likely to be true?
+1. Jessica is an accountant and is careful.
+2. Jessica is an accountant.
+A:",1.2827043533325195,1.8178412914276123,1.7822152376174927
+"Q: Which is more likely to be true?
+1. Jessica is an accountant and is boring.
+2. Jessica is an accountant.
+A:",1.2466230392456055,1.83323335647583,1.8476287126541138
+"Q: Which is more probable?
+1. Jessica is an accountant.
+2. Jessica is an accountant and is careful.
+A:",0.33301711082458496,0.1675192415714264,0.16422660648822784
+"Q: Which is more probable?
+1. Jessica is an accountant.
+2. Jessica is an accountant and is boring.
+A:",0.3781268894672394,0.1955001801252365,0.15840715169906616
+"Q: Which is more probable?
+1. Jessica is an accountant and is careful.
+2. Jessica is an accountant.
+A:",1.2356773614883423,1.8590236902236938,1.7482143640518188
+"Q: Which is more probable?
+1. Jessica is an accountant and is boring.
+2. Jessica is an accountant.
+A:",1.2043839693069458,1.8155412673950195,1.8013825416564941
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is an accountant.
+2. Jessica is an accountant and is careful.
+A:",0.3388291001319885,0.1254924088716507,0.11079099774360657
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is an accountant.
+2. Jessica is an accountant and is boring.
+A:",0.37987419962882996,0.1360299289226532,0.10805308818817139
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is an accountant and is careful.
+2. Jessica is an accountant.
+A:",1.2470145225524902,2.0894601345062256,2.129685401916504
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is an accountant and is boring.
+2. Jessica is an accountant.
+A:",1.2253084182739258,2.1226956844329834,2.2053146362304688
+"Q: Which is more likely?
+1. Jessica is a celebrity.
+2. Jessica is a celebrity and is beautiful.
+A:",0.43574759364128113,0.17640076577663422,0.1533820629119873
+"Q: Which is more likely?
+1. Jessica is a celebrity.
+2. Jessica is a celebrity and is rich.
+A:",0.36177945137023926,0.14113882184028625,0.16582448780536652
+"Q: Which is more likely?
+1. Jessica is a celebrity and is beautiful.
+2. Jessica is a celebrity.
+A:",1.082472324371338,1.8444170951843262,1.771798014640808
+"Q: Which is more likely?
+1. Jessica is a celebrity and is rich.
+2. Jessica is a celebrity.
+A:",1.1811375617980957,1.9885294437408447,1.7216465473175049
+"Question: Which is more likely?
+A. Jessica is a celebrity.
+B. Jessica is a celebrity and is beautiful.
+Answer:",0.5297431945800781,0.9779947996139526,0.8528524041175842
+"Question: Which is more likely?
+A. Jessica is a celebrity.
+B. Jessica is a celebrity and is rich.
+Answer:",0.5217510461807251,1.0368318557739258,0.8069254159927368
+"Question: Which is more likely?
+A. Jessica is a celebrity and is beautiful.
+B. Jessica is a celebrity.
+Answer:",0.9395523071289062,0.445576548576355,0.4524266719818115
+"Question: Which is more likely?
+A. Jessica is a celebrity and is rich.
+B. Jessica is a celebrity.
+Answer:",0.9668933153152466,0.44485005736351013,0.4782327711582184
+"Q: Which is more likely?
+1. Jessica is a celebrity.
+2. Jessica is a celebrity and Jessica is beautiful.
+A:",0.43270012736320496,0.1849752515554428,0.1443413943052292
+"Q: Which is more likely?
+1. Jessica is a celebrity.
+2. Jessica is a celebrity and Jessica is rich.
+A:",0.3655335307121277,0.15095078945159912,0.1587020754814148
+"Q: Which is more likely?
+1. Jessica is a celebrity and Jessica is beautiful.
+2. Jessica is a celebrity.
+A:",1.0602020025253296,1.6989749670028687,1.7841145992279053
+"Q: Which is more likely?
+1. Jessica is a celebrity and Jessica is rich.
+2. Jessica is a celebrity.
+A:",1.15864098072052,1.8396917581558228,1.7310590744018555
+"Q: Which is more likely?
+1. Jessica is a celebrity.
+2. Jessica is beautiful and is a celebrity.
+A:",0.42541247606277466,0.17055070400238037,0.13419325649738312
+"Q: Which is more likely?
+1. Jessica is a celebrity.
+2. Jessica is rich and is a celebrity.
+A:",0.3483457863330841,0.13737915456295013,0.1471112072467804
+"Q: Which is more likely?
+1. Jessica is beautiful and is a celebrity.
+2. Jessica is a celebrity.
+A:",1.0756535530090332,1.7839882373809814,1.8844730854034424
+"Q: Which is more likely?
+1. Jessica is rich and is a celebrity.
+2. Jessica is a celebrity.
+A:",1.2221417427062988,1.9897674322128296,1.8164219856262207
+"Q: Which is more likely to be true?
+1. Jessica is a celebrity.
+2. Jessica is a celebrity and is beautiful.
+A:",0.4006267189979553,0.16667035222053528,0.12428846210241318
+"Q: Which is more likely to be true?
+1. Jessica is a celebrity.
+2. Jessica is a celebrity and is rich.
+A:",0.3374020457267761,0.13540160655975342,0.12863901257514954
+"Q: Which is more likely to be true?
+1. Jessica is a celebrity and is beautiful.
+2. Jessica is a celebrity.
+A:",1.1546977758407593,1.876957893371582,1.93533456325531
+"Q: Which is more likely to be true?
+1. Jessica is a celebrity and is rich.
+2. Jessica is a celebrity.
+A:",1.2497453689575195,2.0070338249206543,1.9085912704467773
+"Q: Which is more probable?
+1. Jessica is a celebrity.
+2. Jessica is a celebrity and is beautiful.
+A:",0.42062821984291077,0.1684003472328186,0.1405288130044937
+"Q: Which is more probable?
+1. Jessica is a celebrity.
+2. Jessica is a celebrity and is rich.
+A:",0.3470149338245392,0.13487693667411804,0.15197011828422546
+"Q: Which is more probable?
+1. Jessica is a celebrity and is beautiful.
+2. Jessica is a celebrity.
+A:",1.1228032112121582,1.8821231126785278,1.8416694402694702
+"Q: Which is more probable?
+1. Jessica is a celebrity and is rich.
+2. Jessica is a celebrity.
+A:",1.2216360569000244,2.024094820022583,1.8109936714172363
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a celebrity.
+2. Jessica is a celebrity and is beautiful.
+A:",0.40549609065055847,0.13515347242355347,0.08943808823823929
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a celebrity.
+2. Jessica is a celebrity and is rich.
+A:",0.34193265438079834,0.11355877667665482,0.08925024420022964
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a celebrity and is beautiful.
+2. Jessica is a celebrity.
+A:",1.1155892610549927,2.1098523139953613,2.3010201454162598
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a celebrity and is rich.
+2. Jessica is a celebrity.
+A:",1.2003493309020996,2.211549758911133,2.294095277786255
+"Q: Which is more likely?
+1. Jessica is a firefighter.
+2. Jessica is a firefighter and is brave.
+A:",0.4264180064201355,0.19169987738132477,0.17158520221710205
+"Q: Which is more likely?
+1. Jessica is a firefighter.
+2. Jessica is a firefighter and is strong.
+A:",0.45334601402282715,0.189914733171463,0.1922200620174408
+"Q: Which is more likely?
+1. Jessica is a firefighter and is brave.
+2. Jessica is a firefighter.
+A:",1.0777862071990967,1.784857988357544,1.7856168746948242
+"Q: Which is more likely?
+1. Jessica is a firefighter and is strong.
+2. Jessica is a firefighter.
+A:",1.0439069271087646,1.7488964796066284,1.662451982498169
+"Question: Which is more likely?
+A. Jessica is a firefighter.
+B. Jessica is a firefighter and is brave.
+Answer:",0.49696820974349976,0.9234068393707275,1.057026982307434
+"Question: Which is more likely?
+A. Jessica is a firefighter.
+B. Jessica is a firefighter and is strong.
+Answer:",0.46847474575042725,0.8675556182861328,0.9849491715431213
+"Question: Which is more likely?
+A. Jessica is a firefighter and is brave.
+B. Jessica is a firefighter.
+Answer:",0.9747229814529419,0.4551313817501068,0.4023163616657257
+"Question: Which is more likely?
+A. Jessica is a firefighter and is strong.
+B. Jessica is a firefighter.
+Answer:",1.0193181037902832,0.47852328419685364,0.3961273729801178
+"Q: Which is more likely?
+1. Jessica is a firefighter.
+2. Jessica is a firefighter and Jessica is brave.
+A:",0.42217081785202026,0.19379174709320068,0.16841304302215576
+"Q: Which is more likely?
+1. Jessica is a firefighter.
+2. Jessica is a firefighter and Jessica is strong.
+A:",0.444269597530365,0.19664248824119568,0.18854665756225586
+"Q: Which is more likely?
+1. Jessica is a firefighter and Jessica is brave.
+2. Jessica is a firefighter.
+A:",1.0707231760025024,1.6798710823059082,1.7746918201446533
+"Q: Which is more likely?
+1. Jessica is a firefighter and Jessica is strong.
+2. Jessica is a firefighter.
+A:",1.0437586307525635,1.6382734775543213,1.6823134422302246
+"Q: Which is more likely?
+1. Jessica is a firefighter.
+2. Jessica is brave and is a firefighter.
+A:",0.427006334066391,0.18266168236732483,0.1621328443288803
+"Q: Which is more likely?
+1. Jessica is a firefighter.
+2. Jessica is strong and is a firefighter.
+A:",0.43337589502334595,0.17817196249961853,0.17830802500247955
+"Q: Which is more likely?
+1. Jessica is brave and is a firefighter.
+2. Jessica is a firefighter.
+A:",1.054495930671692,1.8093935251235962,1.8316161632537842
+"Q: Which is more likely?
+1. Jessica is strong and is a firefighter.
+2. Jessica is a firefighter.
+A:",1.0702217817306519,1.7315157651901245,1.6888940334320068
+"Q: Which is more likely to be true?
+1. Jessica is a firefighter.
+2. Jessica is a firefighter and is brave.
+A:",0.39835023880004883,0.17819561064243317,0.1462688148021698
+"Q: Which is more likely to be true?
+1. Jessica is a firefighter.
+2. Jessica is a firefighter and is strong.
+A:",0.41819241642951965,0.1748952716588974,0.16535617411136627
+"Q: Which is more likely to be true?
+1. Jessica is a firefighter and is brave.
+2. Jessica is a firefighter.
+A:",1.1464059352874756,1.8337205648422241,1.9468053579330444
+"Q: Which is more likely to be true?
+1. Jessica is a firefighter and is strong.
+2. Jessica is a firefighter.
+A:",1.1213006973266602,1.8051780462265015,1.816473126411438
+"Q: Which is more probable?
+1. Jessica is a firefighter.
+2. Jessica is a firefighter and is brave.
+A:",0.41471007466316223,0.183500275015831,0.15618440508842468
+"Q: Which is more probable?
+1. Jessica is a firefighter.
+2. Jessica is a firefighter and is strong.
+A:",0.4422699511051178,0.1818379908800125,0.17252764105796814
+"Q: Which is more probable?
+1. Jessica is a firefighter and is brave.
+2. Jessica is a firefighter.
+A:",1.1151790618896484,1.851249098777771,1.893372893333435
+"Q: Which is more probable?
+1. Jessica is a firefighter and is strong.
+2. Jessica is a firefighter.
+A:",1.0759249925613403,1.8123735189437866,1.773094654083252
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a firefighter.
+2. Jessica is a firefighter and is brave.
+A:",0.40234729647636414,0.14364691078662872,0.1039929911494255
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a firefighter.
+2. Jessica is a firefighter and is strong.
+A:",0.4210999608039856,0.13989470899105072,0.11620239913463593
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a firefighter and is brave.
+2. Jessica is a firefighter.
+A:",1.1337642669677734,2.04522442817688,2.2499217987060547
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a firefighter and is strong.
+2. Jessica is a firefighter.
+A:",1.1121556758880615,2.0245847702026367,2.128262996673584
+"Q: Which is more likely?
+1. Jessica is a journalist.
+2. Jessica is a journalist and is nosy.
+A:",0.3341771066188812,0.23382675647735596,0.17122124135494232
+"Q: Which is more likely?
+1. Jessica is a journalist.
+2. Jessica is a journalist and is curious.
+A:",0.34967195987701416,0.20103082060813904,0.185735285282135
+"Q: Which is more likely?
+1. Jessica is a journalist and is nosy.
+2. Jessica is a journalist.
+A:",1.262481689453125,1.5911732912063599,1.7918890714645386
+"Q: Which is more likely?
+1. Jessica is a journalist and is curious.
+2. Jessica is a journalist.
+A:",1.1743477582931519,1.7643554210662842,1.6975975036621094
+"Question: Which is more likely?
+A. Jessica is a journalist.
+B. Jessica is a journalist and is nosy.
+Answer:",0.44964274764060974,1.238433599472046,1.0053099393844604
+"Question: Which is more likely?
+A. Jessica is a journalist.
+B. Jessica is a journalist and is curious.
+Answer:",0.4215983748435974,1.1759088039398193,0.9984560012817383
+"Question: Which is more likely?
+A. Jessica is a journalist and is nosy.
+B. Jessica is a journalist.
+Answer:",1.0243479013442993,0.35317376255989075,0.3902309834957123
+"Question: Which is more likely?
+A. Jessica is a journalist and is curious.
+B. Jessica is a journalist.
+Answer:",1.097731590270996,0.36610621213912964,0.43776562809944153
+"Q: Which is more likely?
+1. Jessica is a journalist.
+2. Jessica is a journalist and Jessica is nosy.
+A:",0.34063994884490967,0.22244320809841156,0.16770191490650177
+"Q: Which is more likely?
+1. Jessica is a journalist.
+2. Jessica is a journalist and Jessica is curious.
+A:",0.36917853355407715,0.19669565558433533,0.1850915551185608
+"Q: Which is more likely?
+1. Jessica is a journalist and Jessica is nosy.
+2. Jessica is a journalist.
+A:",1.2479498386383057,1.5168696641921997,1.7883766889572144
+"Q: Which is more likely?
+1. Jessica is a journalist and Jessica is curious.
+2. Jessica is a journalist.
+A:",1.140148401260376,1.6880412101745605,1.6656996011734009
+"Q: Which is more likely?
+1. Jessica is a journalist.
+2. Jessica is nosy and is a journalist.
+A:",0.33963248133659363,0.20239108800888062,0.15634743869304657
+"Q: Which is more likely?
+1. Jessica is a journalist.
+2. Jessica is curious and is a journalist.
+A:",0.36891478300094604,0.19620445370674133,0.17740276455879211
+"Q: Which is more likely?
+1. Jessica is nosy and is a journalist.
+2. Jessica is a journalist.
+A:",1.2551398277282715,1.6465861797332764,1.800182819366455
+"Q: Which is more likely?
+1. Jessica is curious and is a journalist.
+2. Jessica is a journalist.
+A:",1.16316819190979,1.7206096649169922,1.6628150939941406
+"Q: Which is more likely to be true?
+1. Jessica is a journalist.
+2. Jessica is a journalist and is nosy.
+A:",0.3115054666996002,0.22143788635730743,0.13847166299819946
+"Q: Which is more likely to be true?
+1. Jessica is a journalist.
+2. Jessica is a journalist and is curious.
+A:",0.32860761880874634,0.19338488578796387,0.1542312651872635
+"Q: Which is more likely to be true?
+1. Jessica is a journalist and is nosy.
+2. Jessica is a journalist.
+A:",1.3290132284164429,1.6430584192276,1.9526586532592773
+"Q: Which is more likely to be true?
+1. Jessica is a journalist and is curious.
+2. Jessica is a journalist.
+A:",1.2432767152786255,1.793537974357605,1.839409351348877
+"Q: Which is more probable?
+1. Jessica is a journalist.
+2. Jessica is a journalist and is nosy.
+A:",0.3243785798549652,0.227852463722229,0.15325546264648438
+"Q: Which is more probable?
+1. Jessica is a journalist.
+2. Jessica is a journalist and is curious.
+A:",0.33522748947143555,0.19235579669475555,0.16017372906208038
+"Q: Which is more probable?
+1. Jessica is a journalist and is nosy.
+2. Jessica is a journalist.
+A:",1.305586814880371,1.6297197341918945,1.88773512840271
+"Q: Which is more probable?
+1. Jessica is a journalist and is curious.
+2. Jessica is a journalist.
+A:",1.218259334564209,1.83866548538208,1.7997233867645264
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a journalist.
+2. Jessica is a journalist and is nosy.
+A:",0.31734687089920044,0.16607876121997833,0.09503532946109772
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a journalist.
+2. Jessica is a journalist and is curious.
+A:",0.3355013132095337,0.1430223137140274,0.10675037652254105
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a journalist and is nosy.
+2. Jessica is a journalist.
+A:",1.325571060180664,1.9203664064407349,2.2781620025634766
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a journalist and is curious.
+2. Jessica is a journalist.
+A:",1.240433692932129,2.093451738357544,2.1226565837860107
+"Q: Which is more likely?
+1. Jessica is a librarian.
+2. Jessica is a librarian and is quiet.
+A:",0.41366487741470337,0.17360928654670715,0.16084830462932587
+"Q: Which is more likely?
+1. Jessica is a librarian.
+2. Jessica is a librarian and is shy.
+A:",0.4059235751628876,0.16218696534633636,0.17074458301067352
+"Q: Which is more likely?
+1. Jessica is a librarian and is quiet.
+2. Jessica is a librarian.
+A:",1.1233075857162476,1.7902958393096924,1.7779892683029175
+"Q: Which is more likely?
+1. Jessica is a librarian and is shy.
+2. Jessica is a librarian.
+A:",1.1369643211364746,1.869667410850525,1.7658628225326538
+"Question: Which is more likely?
+A. Jessica is a librarian.
+B. Jessica is a librarian and is quiet.
+Answer:",0.41974344849586487,1.2265427112579346,1.1769628524780273
+"Question: Which is more likely?
+A. Jessica is a librarian.
+B. Jessica is a librarian and is shy.
+Answer:",0.4317576289176941,1.1972692012786865,1.112943172454834
+"Question: Which is more likely?
+A. Jessica is a librarian and is quiet.
+B. Jessica is a librarian.
+Answer:",1.1449490785598755,0.373709112405777,0.32441872358322144
+"Question: Which is more likely?
+A. Jessica is a librarian and is shy.
+B. Jessica is a librarian.
+Answer:",1.1221238374710083,0.346945583820343,0.3707628548145294
+"Q: Which is more likely?
+1. Jessica is a librarian.
+2. Jessica is a librarian and Jessica is quiet.
+A:",0.42150914669036865,0.1801995038986206,0.15317323803901672
+"Q: Which is more likely?
+1. Jessica is a librarian.
+2. Jessica is a librarian and Jessica is shy.
+A:",0.4146842360496521,0.16185596585273743,0.16152384877204895
+"Q: Which is more likely?
+1. Jessica is a librarian and Jessica is quiet.
+2. Jessica is a librarian.
+A:",1.0968319177627563,1.6793186664581299,1.7778552770614624
+"Q: Which is more likely?
+1. Jessica is a librarian and Jessica is shy.
+2. Jessica is a librarian.
+A:",1.121012806892395,1.7755781412124634,1.7618602514266968
+"Q: Which is more likely?
+1. Jessica is a librarian.
+2. Jessica is quiet and is a librarian.
+A:",0.4063768684864044,0.15384089946746826,0.14442022144794464
+"Q: Which is more likely?
+1. Jessica is a librarian.
+2. Jessica is shy and is a librarian.
+A:",0.3990025222301483,0.14636150002479553,0.1547299325466156
+"Q: Which is more likely?
+1. Jessica is quiet and is a librarian.
+2. Jessica is a librarian.
+A:",1.0876147747039795,1.8497315645217896,1.749413251876831
+"Q: Which is more likely?
+1. Jessica is shy and is a librarian.
+2. Jessica is a librarian.
+A:",1.1260689496994019,1.9281916618347168,1.750533103942871
+"Q: Which is more likely to be true?
+1. Jessica is a librarian.
+2. Jessica is a librarian and is quiet.
+A:",0.3777715265750885,0.15520192682743073,0.13020442426204681
+"Q: Which is more likely to be true?
+1. Jessica is a librarian.
+2. Jessica is a librarian and is shy.
+A:",0.3728914260864258,0.14630641043186188,0.14089998602867126
+"Q: Which is more likely to be true?
+1. Jessica is a librarian and is quiet.
+2. Jessica is a librarian.
+A:",1.209399700164795,1.8870537281036377,1.9714449644088745
+"Q: Which is more likely to be true?
+1. Jessica is a librarian and is shy.
+2. Jessica is a librarian.
+A:",1.2205493450164795,1.966259241104126,1.9329376220703125
+"Q: Which is more probable?
+1. Jessica is a librarian.
+2. Jessica is a librarian and is quiet.
+A:",0.3987063467502594,0.16697394847869873,0.1555047333240509
+"Q: Which is more probable?
+1. Jessica is a librarian.
+2. Jessica is a librarian and is shy.
+A:",0.3889511823654175,0.15806004405021667,0.16789937019348145
+"Q: Which is more probable?
+1. Jessica is a librarian and is quiet.
+2. Jessica is a librarian.
+A:",1.1624130010604858,1.8411166667938232,1.788203477859497
+"Q: Which is more probable?
+1. Jessica is a librarian and is shy.
+2. Jessica is a librarian.
+A:",1.1780939102172852,1.9154198169708252,1.7903180122375488
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a librarian.
+2. Jessica is a librarian and is quiet.
+A:",0.38770395517349243,0.12692342698574066,0.10130748152732849
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a librarian.
+2. Jessica is a librarian and is shy.
+A:",0.3910306394100189,0.11836132407188416,0.10514285415410995
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a librarian and is quiet.
+2. Jessica is a librarian.
+A:",1.1890511512756348,2.084200620651245,2.257246494293213
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a librarian and is shy.
+2. Jessica is a librarian.
+A:",1.188117504119873,2.166376829147339,2.2422032356262207
+"Q: Which is more likely?
+1. Jessica is a nurse.
+2. Jessica is a nurse and is caring.
+A:",0.43808630108833313,0.16396640241146088,0.21749867498874664
+"Q: Which is more likely?
+1. Jessica is a nurse.
+2. Jessica is a nurse and is gentle.
+A:",0.4626023471355438,0.17719818651676178,0.19215425848960876
+"Q: Which is more likely?
+1. Jessica is a nurse and is caring.
+2. Jessica is a nurse.
+A:",1.0228815078735352,1.9415401220321655,1.5990564823150635
+"Q: Which is more likely?
+1. Jessica is a nurse and is gentle.
+2. Jessica is a nurse.
+A:",1.0122129917144775,1.8458623886108398,1.670884370803833
+"Question: Which is more likely?
+A. Jessica is a nurse.
+B. Jessica is a nurse and is caring.
+Answer:",0.4588618874549866,0.8850829601287842,1.0142035484313965
+"Question: Which is more likely?
+A. Jessica is a nurse.
+B. Jessica is a nurse and is gentle.
+Answer:",0.4562455117702484,0.8722721338272095,1.071627140045166
+"Question: Which is more likely?
+A. Jessica is a nurse and is caring.
+B. Jessica is a nurse.
+Answer:",1.022094964981079,0.5194752216339111,0.4164040982723236
+"Question: Which is more likely?
+A. Jessica is a nurse and is gentle.
+B. Jessica is a nurse.
+Answer:",1.0264861583709717,0.50765061378479,0.3947332501411438
+"Q: Which is more likely?
+1. Jessica is a nurse.
+2. Jessica is a nurse and Jessica is caring.
+A:",0.4375236928462982,0.16301019489765167,0.21882161498069763
+"Q: Which is more likely?
+1. Jessica is a nurse.
+2. Jessica is a nurse and Jessica is gentle.
+A:",0.4572189450263977,0.1814742535352707,0.19671593606472015
+"Q: Which is more likely?
+1. Jessica is a nurse and Jessica is caring.
+2. Jessica is a nurse.
+A:",1.0126889944076538,1.8152095079421997,1.5903500318527222
+"Q: Which is more likely?
+1. Jessica is a nurse and Jessica is gentle.
+2. Jessica is a nurse.
+A:",1.0101451873779297,1.7083239555358887,1.6578987836837769
+"Q: Which is more likely?
+1. Jessica is a nurse.
+2. Jessica is caring and is a nurse.
+A:",0.44001656770706177,0.15237759053707123,0.19986891746520996
+"Q: Which is more likely?
+1. Jessica is a nurse.
+2. Jessica is gentle and is a nurse.
+A:",0.4604419767856598,0.16731807589530945,0.18408195674419403
+"Q: Which is more likely?
+1. Jessica is caring and is a nurse.
+2. Jessica is a nurse.
+A:",1.0375903844833374,1.9274935722351074,1.6344050168991089
+"Q: Which is more likely?
+1. Jessica is gentle and is a nurse.
+2. Jessica is a nurse.
+A:",1.0204986333847046,1.8553473949432373,1.6406099796295166
+"Q: Which is more likely to be true?
+1. Jessica is a nurse.
+2. Jessica is a nurse and is caring.
+A:",0.3958498537540436,0.15085463225841522,0.1786796897649765
+"Q: Which is more likely to be true?
+1. Jessica is a nurse.
+2. Jessica is a nurse and is gentle.
+A:",0.42634913325309753,0.15889307856559753,0.1618206799030304
+"Q: Which is more likely to be true?
+1. Jessica is a nurse and is caring.
+2. Jessica is a nurse.
+A:",1.105550765991211,1.9936084747314453,1.748963475227356
+"Q: Which is more likely to be true?
+1. Jessica is a nurse and is gentle.
+2. Jessica is a nurse.
+A:",1.0846731662750244,1.9359359741210938,1.836637258529663
+"Q: Which is more probable?
+1. Jessica is a nurse.
+2. Jessica is a nurse and is caring.
+A:",0.41971737146377563,0.15494436025619507,0.19530820846557617
+"Q: Which is more probable?
+1. Jessica is a nurse.
+2. Jessica is a nurse and is gentle.
+A:",0.4410713315010071,0.16983306407928467,0.17514213919639587
+"Q: Which is more probable?
+1. Jessica is a nurse and is caring.
+2. Jessica is a nurse.
+A:",1.0664857625961304,2.0026631355285645,1.6627804040908813
+"Q: Which is more probable?
+1. Jessica is a nurse and is gentle.
+2. Jessica is a nurse.
+A:",1.0612196922302246,1.9030592441558838,1.736229658126831
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a nurse.
+2. Jessica is a nurse and is caring.
+A:",0.4105726480484009,0.1188664585351944,0.1238441988825798
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a nurse.
+2. Jessica is a nurse and is gentle.
+A:",0.4405708611011505,0.12834684550762177,0.11594510078430176
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a nurse and is caring.
+2. Jessica is a nurse.
+A:",1.0833806991577148,2.215219497680664,2.0819168090820312
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a nurse and is gentle.
+2. Jessica is a nurse.
+A:",1.070061445236206,2.1529126167297363,2.1601336002349854
+"Q: Which is more likely?
+1. Jessica is a teacher.
+2. Jessica is a teacher and is patient.
+A:",0.40773409605026245,0.16526098549365997,0.15951821208000183
+"Q: Which is more likely?
+1. Jessica is a teacher.
+2. Jessica is a teacher and is strict.
+A:",0.3914802074432373,0.16461364924907684,0.17756308615207672
+"Q: Which is more likely?
+1. Jessica is a teacher and is patient.
+2. Jessica is a teacher.
+A:",1.0717763900756836,1.8524068593978882,1.887447714805603
+"Q: Which is more likely?
+1. Jessica is a teacher and is strict.
+2. Jessica is a teacher.
+A:",1.1074604988098145,1.9381756782531738,1.8390403985977173
+"Question: Which is more likely?
+A. Jessica is a teacher.
+B. Jessica is a teacher and is patient.
+Answer:",0.38799577951431274,0.9175999164581299,1.0395441055297852
+"Question: Which is more likely?
+A. Jessica is a teacher.
+B. Jessica is a teacher and is strict.
+Answer:",0.41128218173980713,0.9808486700057983,1.0817095041275024
+"Question: Which is more likely?
+A. Jessica is a teacher and is patient.
+B. Jessica is a teacher.
+Answer:",1.1464736461639404,0.4921460449695587,0.37643763422966003
+"Question: Which is more likely?
+A. Jessica is a teacher and is strict.
+B. Jessica is a teacher.
+Answer:",1.0857088565826416,0.4611518085002899,0.36465930938720703
+"Q: Which is more likely?
+1. Jessica is a teacher.
+2. Jessica is a teacher and Jessica is patient.
+A:",0.418406218290329,0.1743280440568924,0.15909379720687866
+"Q: Which is more likely?
+1. Jessica is a teacher.
+2. Jessica is a teacher and Jessica is strict.
+A:",0.4003497362136841,0.16482102870941162,0.167715921998024
+"Q: Which is more likely?
+1. Jessica is a teacher and Jessica is patient.
+2. Jessica is a teacher.
+A:",1.0560377836227417,1.736510157585144,1.8690108060836792
+"Q: Which is more likely?
+1. Jessica is a teacher and Jessica is strict.
+2. Jessica is a teacher.
+A:",1.0998018980026245,1.850001573562622,1.8405958414077759
+"Q: Which is more likely?
+1. Jessica is a teacher.
+2. Jessica is patient and is a teacher.
+A:",0.4190482795238495,0.1552710235118866,0.1503087878227234
+"Q: Which is more likely?
+1. Jessica is a teacher.
+2. Jessica is strict and is a teacher.
+A:",0.3886808753013611,0.14772287011146545,0.1637500524520874
+"Q: Which is more likely?
+1. Jessica is patient and is a teacher.
+2. Jessica is a teacher.
+A:",1.0614889860153198,1.86528742313385,1.877893328666687
+"Q: Which is more likely?
+1. Jessica is strict and is a teacher.
+2. Jessica is a teacher.
+A:",1.1431398391723633,1.9099581241607666,1.8268862962722778
+"Q: Which is more likely to be true?
+1. Jessica is a teacher.
+2. Jessica is a teacher and is patient.
+A:",0.37705203890800476,0.14684312045574188,0.13060811161994934
+"Q: Which is more likely to be true?
+1. Jessica is a teacher.
+2. Jessica is a teacher and is strict.
+A:",0.3653559982776642,0.1489049196243286,0.1499384343624115
+"Q: Which is more likely to be true?
+1. Jessica is a teacher and is patient.
+2. Jessica is a teacher.
+A:",1.1468849182128906,1.9644747972488403,2.0572190284729004
+"Q: Which is more likely to be true?
+1. Jessica is a teacher and is strict.
+2. Jessica is a teacher.
+A:",1.1745903491973877,2.0122928619384766,1.9863303899765015
+"Q: Which is more probable?
+1. Jessica is a teacher.
+2. Jessica is a teacher and is patient.
+A:",0.39270269870758057,0.15157097578048706,0.14970384538173676
+"Q: Which is more probable?
+1. Jessica is a teacher.
+2. Jessica is a teacher and is strict.
+A:",0.3755924701690674,0.15703804790973663,0.16241925954818726
+"Q: Which is more probable?
+1. Jessica is a teacher and is patient.
+2. Jessica is a teacher.
+A:",1.1123707294464111,1.9373788833618164,1.910211205482483
+"Q: Which is more probable?
+1. Jessica is a teacher and is strict.
+2. Jessica is a teacher.
+A:",1.152024269104004,2.0053763389587402,1.9131985902786255
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a teacher.
+2. Jessica is a teacher and is patient.
+A:",0.38932502269744873,0.11406432092189789,0.0953323096036911
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a teacher.
+2. Jessica is a teacher and is strict.
+A:",0.3783479630947113,0.11758104711771011,0.10021812468767166
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a teacher and is patient.
+2. Jessica is a teacher.
+A:",1.1252340078353882,2.1759750843048096,2.332563638687134
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a teacher and is strict.
+2. Jessica is a teacher.
+A:",1.1470203399658203,2.224175453186035,2.3347020149230957
+"Q: Which is more likely?
+1. Jessica is a banker.
+2. Jessica is a banker and is rich.
+A:",0.3406575620174408,0.13340584933757782,0.20798009634017944
+"Q: Which is more likely?
+1. Jessica is a banker.
+2. Jessica is a banker and is wealthy.
+A:",0.3456794023513794,0.12460634112358093,0.2093825787305832
+"Q: Which is more likely?
+1. Jessica is a banker and is rich.
+2. Jessica is a banker.
+A:",1.2125064134597778,2.0595474243164062,1.563259243965149
+"Q: Which is more likely?
+1. Jessica is a banker and is wealthy.
+2. Jessica is a banker.
+A:",1.2140291929244995,2.0992605686187744,1.5505168437957764
+"Question: Which is more likely?
+A. Jessica is a banker.
+B. Jessica is a banker and is rich.
+Answer:",0.5780265927314758,1.2638113498687744,1.1163666248321533
+"Question: Which is more likely?
+A. Jessica is a banker.
+B. Jessica is a banker and is wealthy.
+Answer:",0.5704871416091919,1.253798246383667,1.1338509321212769
+"Question: Which is more likely?
+A. Jessica is a banker and is rich.
+B. Jessica is a banker.
+Answer:",0.8749966025352478,0.31784510612487793,0.34273719787597656
+"Question: Which is more likely?
+A. Jessica is a banker and is wealthy.
+B. Jessica is a banker.
+Answer:",0.9125412106513977,0.32025420665740967,0.3568492829799652
+"Q: Which is more likely?
+1. Jessica is a banker.
+2. Jessica is a banker and Jessica is rich.
+A:",0.3515266180038452,0.13921692967414856,0.20298737287521362
+"Q: Which is more likely?
+1. Jessica is a banker.
+2. Jessica is a banker and Jessica is wealthy.
+A:",0.3564576506614685,0.127094566822052,0.2050090730190277
+"Q: Which is more likely?
+1. Jessica is a banker and Jessica is rich.
+2. Jessica is a banker.
+A:",1.1867282390594482,1.9082615375518799,1.561554193496704
+"Q: Which is more likely?
+1. Jessica is a banker and Jessica is wealthy.
+2. Jessica is a banker.
+A:",1.1887009143829346,1.9809809923171997,1.5491015911102295
+"Q: Which is more likely?
+1. Jessica is a banker.
+2. Jessica is rich and is a banker.
+A:",0.3243025541305542,0.13596688210964203,0.19378270208835602
+"Q: Which is more likely?
+1. Jessica is a banker.
+2. Jessica is wealthy and is a banker.
+A:",0.32924920320510864,0.12653748691082,0.18961675465106964
+"Q: Which is more likely?
+1. Jessica is rich and is a banker.
+2. Jessica is a banker.
+A:",1.2694828510284424,2.094749927520752,1.6035455465316772
+"Q: Which is more likely?
+1. Jessica is wealthy and is a banker.
+2. Jessica is a banker.
+A:",1.2549761533737183,2.169201135635376,1.5908573865890503
+"Q: Which is more likely to be true?
+1. Jessica is a banker.
+2. Jessica is a banker and is rich.
+A:",0.3153151273727417,0.12307514250278473,0.1605129987001419
+"Q: Which is more likely to be true?
+1. Jessica is a banker.
+2. Jessica is a banker and is wealthy.
+A:",0.3199909031391144,0.11499729007482529,0.16167789697647095
+"Q: Which is more likely to be true?
+1. Jessica is a banker and is rich.
+2. Jessica is a banker.
+A:",1.2926924228668213,2.120009660720825,1.779475450515747
+"Q: Which is more likely to be true?
+1. Jessica is a banker and is wealthy.
+2. Jessica is a banker.
+A:",1.2943644523620605,2.158254623413086,1.7793811559677124
+"Q: Which is more probable?
+1. Jessica is a banker.
+2. Jessica is a banker and is rich.
+A:",0.33048397302627563,0.1257021725177765,0.1838538497686386
+"Q: Which is more probable?
+1. Jessica is a banker.
+2. Jessica is a banker and is wealthy.
+A:",0.3357536494731903,0.1177310049533844,0.18617594242095947
+"Q: Which is more probable?
+1. Jessica is a banker and is rich.
+2. Jessica is a banker.
+A:",1.2435156106948853,2.1158955097198486,1.6773593425750732
+"Q: Which is more probable?
+1. Jessica is a banker and is wealthy.
+2. Jessica is a banker.
+A:",1.246166467666626,2.1530070304870605,1.655003309249878
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a banker.
+2. Jessica is a banker and is rich.
+A:",0.32154008746147156,0.09397872537374496,0.11615590751171112
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a banker.
+2. Jessica is a banker and is wealthy.
+A:",0.32713598012924194,0.08628949522972107,0.11601707339286804
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a banker and is rich.
+2. Jessica is a banker.
+A:",1.2642438411712646,2.3786709308624268,2.100701332092285
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a banker and is wealthy.
+2. Jessica is a banker.
+A:",1.2582509517669678,2.425478935241699,2.129714012145996
+"Q: Which is more likely?
+1. Jessica is a scientist.
+2. Jessica is a scientist and is smart.
+A:",0.3998667299747467,0.1786719113588333,0.1890682876110077
+"Q: Which is more likely?
+1. Jessica is a scientist.
+2. Jessica is a scientist and is a nerd.
+A:",0.4071213901042938,0.19101695716381073,0.17146188020706177
+"Q: Which is more likely?
+1. Jessica is a scientist and is smart.
+2. Jessica is a scientist.
+A:",1.1241521835327148,1.8271608352661133,1.7127221822738647
+"Q: Which is more likely?
+1. Jessica is a scientist and is a nerd.
+2. Jessica is a scientist.
+A:",1.1178165674209595,1.7512667179107666,1.7278354167938232
+"Question: Which is more likely?
+A. Jessica is a scientist.
+B. Jessica is a scientist and is smart.
+Answer:",0.4047641456127167,0.9005126357078552,0.9841659665107727
+"Question: Which is more likely?
+A. Jessica is a scientist.
+B. Jessica is a scientist and is a nerd.
+Answer:",0.4390234649181366,0.9182048439979553,1.0426065921783447
+"Question: Which is more likely?
+A. Jessica is a scientist and is smart.
+B. Jessica is a scientist.
+Answer:",1.156637191772461,0.46894577145576477,0.4319576323032379
+"Question: Which is more likely?
+A. Jessica is a scientist and is a nerd.
+B. Jessica is a scientist.
+Answer:",1.1024194955825806,0.40893110632896423,0.3711310625076294
+"Q: Which is more likely?
+1. Jessica is a scientist.
+2. Jessica is a scientist and Jessica is smart.
+A:",0.4037139117717743,0.18479114770889282,0.18578340113162994
+"Q: Which is more likely?
+1. Jessica is a scientist.
+2. Jessica is a scientist and Jessica is a nerd.
+A:",0.40737658739089966,0.20052982866764069,0.16732685267925262
+"Q: Which is more likely?
+1. Jessica is a scientist and Jessica is smart.
+2. Jessica is a scientist.
+A:",1.1077568531036377,1.7234858274459839,1.6810040473937988
+"Q: Which is more likely?
+1. Jessica is a scientist and Jessica is a nerd.
+2. Jessica is a scientist.
+A:",1.1104257106781006,1.6049946546554565,1.757902979850769
+"Q: Which is more likely?
+1. Jessica is a scientist.
+2. Jessica is smart and is a scientist.
+A:",0.3918214738368988,0.17456014454364777,0.17258220911026
+"Q: Which is more likely?
+1. Jessica is a scientist.
+2. Jessica is a nerd and is a scientist.
+A:",0.39023131132125854,0.18277250230312347,0.15702266991138458
+"Q: Which is more likely?
+1. Jessica is smart and is a scientist.
+2. Jessica is a scientist.
+A:",1.1032553911209106,1.8044960498809814,1.7674639225006104
+"Q: Which is more likely?
+1. Jessica is a nerd and is a scientist.
+2. Jessica is a scientist.
+A:",1.1401276588439941,1.8136188983917236,1.829535722732544
+"Q: Which is more likely to be true?
+1. Jessica is a scientist.
+2. Jessica is a scientist and is smart.
+A:",0.36824679374694824,0.17076970636844635,0.15271061658859253
+"Q: Which is more likely to be true?
+1. Jessica is a scientist.
+2. Jessica is a scientist and is a nerd.
+A:",0.37182408571243286,0.18467529118061066,0.1421383023262024
+"Q: Which is more likely to be true?
+1. Jessica is a scientist and is smart.
+2. Jessica is a scientist.
+A:",1.2053563594818115,1.8495965003967285,1.8784135580062866
+"Q: Which is more likely to be true?
+1. Jessica is a scientist and is a nerd.
+2. Jessica is a scientist.
+A:",1.201330542564392,1.7825031280517578,1.9021488428115845
+"Q: Which is more probable?
+1. Jessica is a scientist.
+2. Jessica is a scientist and is smart.
+A:",0.3887840807437897,0.16891184449195862,0.18001043796539307
+"Q: Which is more probable?
+1. Jessica is a scientist.
+2. Jessica is a scientist and is a nerd.
+A:",0.38994544744491577,0.18351814150810242,0.16610874235630035
+"Q: Which is more probable?
+1. Jessica is a scientist and is smart.
+2. Jessica is a scientist.
+A:",1.1656138896942139,1.8826215267181396,1.7579896450042725
+"Q: Which is more probable?
+1. Jessica is a scientist and is a nerd.
+2. Jessica is a scientist.
+A:",1.1716187000274658,1.8002783060073853,1.7616889476776123
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a scientist.
+2. Jessica is a scientist and is smart.
+A:",0.37801164388656616,0.13730183243751526,0.11290956288576126
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a scientist.
+2. Jessica is a scientist and is a nerd.
+A:",0.38191863894462585,0.15135325491428375,0.1075228750705719
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a scientist and is smart.
+2. Jessica is a scientist.
+A:",1.1703238487243652,2.070939540863037,2.170487642288208
+"Q: Which of 1 and 2 is more likely to be true?
+1. Jessica is a scientist and is a nerd.
+2. Jessica is a scientist.
+A:",1.175718903541565,1.999166488647461,2.193673849105835
+"Q: Which is more likely?
+1. Christopher is an accountant.
+2. Christopher is an accountant and is careful.
+A:",0.14518480002880096,0.3673827052116394,0.21180160343647003
+"Q: Which is more likely?
+1. Christopher is an accountant.
+2. Christopher is an accountant and is boring.
+A:",0.18324464559555054,0.3459804654121399,0.19323287904262543
+"Q: Which is more likely?
+1. Christopher is an accountant and is careful.
+2. Christopher is an accountant.
+A:",1.928269863128662,1.0985146760940552,1.4622490406036377
+"Q: Which is more likely?
+1. Christopher is an accountant and is boring.
+2. Christopher is an accountant.
+A:",1.8446868658065796,1.1936562061309814,1.5416539907455444
+"Question: Which is more likely?
+A. Christopher is an accountant.
+B. Christopher is an accountant and is careful.
+Answer:",0.43249645829200745,1.10481595993042,1.0484466552734375
+"Question: Which is more likely?
+A. Christopher is an accountant.
+B. Christopher is an accountant and is boring.
+Answer:",0.5440051555633545,1.157557725906372,1.3046504259109497
+"Question: Which is more likely?
+A. Christopher is an accountant and is careful.
+B. Christopher is an accountant.
+Answer:",1.0662856101989746,0.4302483797073364,0.37491360306739807
+"Question: Which is more likely?
+A. Christopher is an accountant and is boring.
+B. Christopher is an accountant.
+Answer:",0.9520113468170166,0.36415982246398926,0.2186995893716812
+"Q: Which is more likely?
+1. Christopher is an accountant.
+2. Christopher is an accountant and Christopher is careful.
+A:",0.14153097569942474,0.35967695713043213,0.20107810199260712
+"Q: Which is more likely?
+1. Christopher is an accountant.
+2. Christopher is an accountant and Christopher is boring.
+A:",0.17276255786418915,0.3319703936576843,0.18347527086734772
+"Q: Which is more likely?
+1. Christopher is an accountant and Christopher is careful.
+2. Christopher is an accountant.
+A:",1.944331169128418,1.022725224494934,1.5179402828216553
+"Q: Which is more likely?
+1. Christopher is an accountant and Christopher is boring.
+2. Christopher is an accountant.
+A:",1.8565574884414673,1.086578130722046,1.617300033569336
+"Q: Which is more likely?
+1. Christopher is an accountant.
+2. Christopher is careful and is an accountant.
+A:",0.15430063009262085,0.3750265836715698,0.21507813036441803
+"Q: Which is more likely?
+1. Christopher is an accountant.
+2. Christopher is boring and is an accountant.
+A:",0.17154142260551453,0.3187560737133026,0.17827889323234558
+"Q: Which is more likely?
+1. Christopher is careful and is an accountant.
+2. Christopher is an accountant.
+A:",1.855656385421753,1.108891487121582,1.4670517444610596
+"Q: Which is more likely?
+1. Christopher is boring and is an accountant.
+2. Christopher is an accountant.
+A:",1.842503309249878,1.2492501735687256,1.6234500408172607
+"Q: Which is more likely to be true?
+1. Christopher is an accountant.
+2. Christopher is an accountant and is careful.
+A:",0.131900817155838,0.3289881646633148,0.18958736956119537
+"Q: Which is more likely to be true?
+1. Christopher is an accountant.
+2. Christopher is an accountant and is boring.
+A:",0.1663847416639328,0.3118486702442169,0.1666150540113449
+"Q: Which is more likely to be true?
+1. Christopher is an accountant and is careful.
+2. Christopher is an accountant.
+A:",2.043045997619629,1.1626436710357666,1.5813428163528442
+"Q: Which is more likely to be true?
+1. Christopher is an accountant and is boring.
+2. Christopher is an accountant.
+A:",1.9549970626831055,1.2528879642486572,1.7072563171386719
+"Q: Which is more probable?
+1. Christopher is an accountant.
+2. Christopher is an accountant and is careful.
+A:",0.1439729481935501,0.3767883777618408,0.19636404514312744
+"Q: Which is more probable?
+1. Christopher is an accountant.
+2. Christopher is an accountant and is boring.
+A:",0.17877799272537231,0.35253632068634033,0.16567884385585785
+"Q: Which is more probable?
+1. Christopher is an accountant and is careful.
+2. Christopher is an accountant.
+A:",1.9546828269958496,1.0889405012130737,1.507980227470398
+"Q: Which is more probable?
+1. Christopher is an accountant and is boring.
+2. Christopher is an accountant.
+A:",1.8680156469345093,1.2021843194961548,1.6570451259613037
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is an accountant.
+2. Christopher is an accountant and is careful.
+A:",0.15828555822372437,0.2947215735912323,0.12544530630111694
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is an accountant.
+2. Christopher is an accountant and is boring.
+A:",0.19525642693042755,0.2772342562675476,0.11572033911943436
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is an accountant and is careful.
+2. Christopher is an accountant.
+A:",1.9097951650619507,1.2509703636169434,1.981558084487915
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is an accountant and is boring.
+2. Christopher is an accountant.
+A:",1.832573413848877,1.3652018308639526,2.125894069671631
+"Q: Which is more likely?
+1. Christopher is a celebrity.
+2. Christopher is a celebrity and is beautiful.
+A:",0.18835680186748505,0.31843551993370056,0.18976318836212158
+"Q: Which is more likely?
+1. Christopher is a celebrity.
+2. Christopher is a celebrity and is rich.
+A:",0.15431156754493713,0.27729150652885437,0.20182999968528748
+"Q: Which is more likely?
+1. Christopher is a celebrity and is beautiful.
+2. Christopher is a celebrity.
+A:",1.7797434329986572,1.1971040964126587,1.529820203781128
+"Q: Which is more likely?
+1. Christopher is a celebrity and is rich.
+2. Christopher is a celebrity.
+A:",1.9197087287902832,1.2763986587524414,1.5515832901000977
+"Question: Which is more likely?
+A. Christopher is a celebrity.
+B. Christopher is a celebrity and is beautiful.
+Answer:",0.4496261775493622,0.8030003309249878,0.881679892539978
+"Question: Which is more likely?
+A. Christopher is a celebrity.
+B. Christopher is a celebrity and is rich.
+Answer:",0.4772479236125946,0.8061926364898682,0.8332817554473877
+"Question: Which is more likely?
+A. Christopher is a celebrity and is beautiful.
+B. Christopher is a celebrity.
+Answer:",1.0979807376861572,0.5712471604347229,0.44273847341537476
+"Question: Which is more likely?
+A. Christopher is a celebrity and is rich.
+B. Christopher is a celebrity.
+Answer:",1.0726696252822876,0.5914806127548218,0.4941014051437378
+"Q: Which is more likely?
+1. Christopher is a celebrity.
+2. Christopher is a celebrity and Christopher is beautiful.
+A:",0.18187983334064484,0.32653623819351196,0.16751934587955475
+"Q: Which is more likely?
+1. Christopher is a celebrity.
+2. Christopher is a celebrity and Christopher is rich.
+A:",0.15251034498214722,0.2881923019886017,0.18588367104530334
+"Q: Which is more likely?
+1. Christopher is a celebrity and Christopher is beautiful.
+2. Christopher is a celebrity.
+A:",1.778475046157837,1.087630033493042,1.5851731300354004
+"Q: Which is more likely?
+1. Christopher is a celebrity and Christopher is rich.
+2. Christopher is a celebrity.
+A:",1.921154260635376,1.1568357944488525,1.572649598121643
+"Q: Which is more likely?
+1. Christopher is a celebrity.
+2. Christopher is beautiful and is a celebrity.
+A:",0.1805219054222107,0.3138037323951721,0.16264045238494873
+"Q: Which is more likely?
+1. Christopher is a celebrity.
+2. Christopher is rich and is a celebrity.
+A:",0.14745905995368958,0.27904224395751953,0.17862075567245483
+"Q: Which is more likely?
+1. Christopher is beautiful and is a celebrity.
+2. Christopher is a celebrity.
+A:",1.7748874425888062,1.1896615028381348,1.6552941799163818
+"Q: Which is more likely?
+1. Christopher is rich and is a celebrity.
+2. Christopher is a celebrity.
+A:",1.9613664150238037,1.2954225540161133,1.6555781364440918
+"Q: Which is more likely to be true?
+1. Christopher is a celebrity.
+2. Christopher is a celebrity and is beautiful.
+A:",0.17019210755825043,0.30435171723365784,0.1594679057598114
+"Q: Which is more likely to be true?
+1. Christopher is a celebrity.
+2. Christopher is a celebrity and is rich.
+A:",0.1418818086385727,0.2676375210285187,0.16575470566749573
+"Q: Which is more likely to be true?
+1. Christopher is a celebrity and is beautiful.
+2. Christopher is a celebrity.
+A:",1.8831580877304077,1.2166801691055298,1.6847425699234009
+"Q: Which is more likely to be true?
+1. Christopher is a celebrity and is rich.
+2. Christopher is a celebrity.
+A:",2.01819109916687,1.28361976146698,1.7102184295654297
+"Q: Which is more probable?
+1. Christopher is a celebrity.
+2. Christopher is a celebrity and is beautiful.
+A:",0.18514664471149445,0.3246851861476898,0.18203406035900116
+"Q: Which is more probable?
+1. Christopher is a celebrity.
+2. Christopher is a celebrity and is rich.
+A:",0.1506538838148117,0.28502488136291504,0.1951764076948166
+"Q: Which is more probable?
+1. Christopher is a celebrity and is beautiful.
+2. Christopher is a celebrity.
+A:",1.811186671257019,1.1692663431167603,1.570219874382019
+"Q: Which is more probable?
+1. Christopher is a celebrity and is rich.
+2. Christopher is a celebrity.
+A:",1.9569228887557983,1.2364513874053955,1.5947061777114868
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a celebrity.
+2. Christopher is a celebrity and is beautiful.
+A:",0.17996563017368317,0.29188209772109985,0.10802056640386581
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a celebrity.
+2. Christopher is a celebrity and is rich.
+A:",0.1535147875547409,0.26564115285873413,0.11065077781677246
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a celebrity and is beautiful.
+2. Christopher is a celebrity.
+A:",1.7889230251312256,1.2752877473831177,2.1031367778778076
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a celebrity and is rich.
+2. Christopher is a celebrity.
+A:",1.8925848007202148,1.3066715002059937,2.1161000728607178
+"Q: Which is more likely?
+1. Christopher is a firefighter.
+2. Christopher is a firefighter and is brave.
+A:",0.18317049741744995,0.31179752945899963,0.20054495334625244
+"Q: Which is more likely?
+1. Christopher is a firefighter.
+2. Christopher is a firefighter and is strong.
+A:",0.1944027990102768,0.3326089382171631,0.2306360900402069
+"Q: Which is more likely?
+1. Christopher is a firefighter and is brave.
+2. Christopher is a firefighter.
+A:",1.7772578001022339,1.233924388885498,1.5542824268341064
+"Q: Which is more likely?
+1. Christopher is a firefighter and is strong.
+2. Christopher is a firefighter.
+A:",1.7040963172912598,1.1286636590957642,1.451793909072876
+"Question: Which is more likely?
+A. Christopher is a firefighter.
+B. Christopher is a firefighter and is brave.
+Answer:",0.45277905464172363,0.7549434900283813,1.1016590595245361
+"Question: Which is more likely?
+A. Christopher is a firefighter.
+B. Christopher is a firefighter and is strong.
+Answer:",0.44717803597450256,0.7145739793777466,0.9892070293426514
+"Question: Which is more likely?
+A. Christopher is a firefighter and is brave.
+B. Christopher is a firefighter.
+Answer:",1.0515650510787964,0.5703544616699219,0.40313392877578735
+"Question: Which is more likely?
+A. Christopher is a firefighter and is strong.
+B. Christopher is a firefighter.
+Answer:",1.06123948097229,0.622033417224884,0.3944316506385803
+"Q: Which is more likely?
+1. Christopher is a firefighter.
+2. Christopher is a firefighter and Christopher is brave.
+A:",0.17533153295516968,0.30412155389785767,0.18513336777687073
+"Q: Which is more likely?
+1. Christopher is a firefighter.
+2. Christopher is a firefighter and Christopher is strong.
+A:",0.1832573562860489,0.32870587706565857,0.20779301226139069
+"Q: Which is more likely?
+1. Christopher is a firefighter and Christopher is brave.
+2. Christopher is a firefighter.
+A:",1.801940679550171,1.1650415658950806,1.6114938259124756
+"Q: Which is more likely?
+1. Christopher is a firefighter and Christopher is strong.
+2. Christopher is a firefighter.
+A:",1.7379120588302612,1.0716911554336548,1.5463296175003052
+"Q: Which is more likely?
+1. Christopher is a firefighter.
+2. Christopher is brave and is a firefighter.
+A:",0.18111497163772583,0.30824053287506104,0.1986212283372879
+"Q: Which is more likely?
+1. Christopher is a firefighter.
+2. Christopher is strong and is a firefighter.
+A:",0.18520082533359528,0.32917430996894836,0.2160462588071823
+"Q: Which is more likely?
+1. Christopher is brave and is a firefighter.
+2. Christopher is a firefighter.
+A:",1.7372708320617676,1.2651965618133545,1.634340524673462
+"Q: Which is more likely?
+1. Christopher is strong and is a firefighter.
+2. Christopher is a firefighter.
+A:",1.7316789627075195,1.128312587738037,1.497025966644287
+"Q: Which is more likely to be true?
+1. Christopher is a firefighter.
+2. Christopher is a firefighter and is brave.
+A:",0.16639888286590576,0.29011574387550354,0.18355673551559448
+"Q: Which is more likely to be true?
+1. Christopher is a firefighter.
+2. Christopher is a firefighter and is strong.
+A:",0.17304113507270813,0.3070162534713745,0.2112865000963211
+"Q: Which is more likely to be true?
+1. Christopher is a firefighter and is brave.
+2. Christopher is a firefighter.
+A:",1.884620189666748,1.2791117429733276,1.6654136180877686
+"Q: Which is more likely to be true?
+1. Christopher is a firefighter and is strong.
+2. Christopher is a firefighter.
+A:",1.8279610872268677,1.1814336776733398,1.5378180742263794
+"Q: Which is more probable?
+1. Christopher is a firefighter.
+2. Christopher is a firefighter and is brave.
+A:",0.18227103352546692,0.31325554847717285,0.18373145163059235
+"Q: Which is more probable?
+1. Christopher is a firefighter.
+2. Christopher is a firefighter and is strong.
+A:",0.19206227362155914,0.3356688618659973,0.21585847437381744
+"Q: Which is more probable?
+1. Christopher is a firefighter and is brave.
+2. Christopher is a firefighter.
+A:",1.8045661449432373,1.245079755783081,1.658233880996704
+"Q: Which is more probable?
+1. Christopher is a firefighter and is strong.
+2. Christopher is a firefighter.
+A:",1.7342416048049927,1.1323004961013794,1.5294220447540283
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a firefighter.
+2. Christopher is a firefighter and is brave.
+A:",0.18269604444503784,0.27396661043167114,0.12479071319103241
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a firefighter.
+2. Christopher is a firefighter and is strong.
+A:",0.18766377866268158,0.2891526520252228,0.14507807791233063
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a firefighter and is brave.
+2. Christopher is a firefighter.
+A:",1.8017113208770752,1.33469557762146,2.0760104656219482
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a firefighter and is strong.
+2. Christopher is a firefighter.
+A:",1.7497096061706543,1.2400648593902588,1.9306379556655884
+"Q: Which is more likely?
+1. Christopher is a journalist.
+2. Christopher is a journalist and is nosy.
+A:",0.1419464498758316,0.41606640815734863,0.18050448596477509
+"Q: Which is more likely?
+1. Christopher is a journalist.
+2. Christopher is a journalist and is curious.
+A:",0.14491082727909088,0.3671341836452484,0.19061340391635895
+"Q: Which is more likely?
+1. Christopher is a journalist and is nosy.
+2. Christopher is a journalist.
+A:",2.03761625289917,1.0304710865020752,1.6786794662475586
+"Q: Which is more likely?
+1. Christopher is a journalist and is curious.
+2. Christopher is a journalist.
+A:",1.9127726554870605,1.1102620363235474,1.6179522275924683
+"Question: Which is more likely?
+A. Christopher is a journalist.
+B. Christopher is a journalist and is nosy.
+Answer:",0.39410221576690674,1.0330098867416382,0.9384448528289795
+"Question: Which is more likely?
+A. Christopher is a journalist.
+B. Christopher is a journalist and is curious.
+Answer:",0.36069682240486145,0.926786482334137,0.9111332297325134
+"Question: Which is more likely?
+A. Christopher is a journalist and is nosy.
+B. Christopher is a journalist.
+Answer:",1.1039080619812012,0.48939117789268494,0.446209192276001
+"Question: Which is more likely?
+A. Christopher is a journalist and is curious.
+B. Christopher is a journalist.
+Answer:",1.2128709554672241,0.5094419717788696,0.4703057110309601
+"Q: Which is more likely?
+1. Christopher is a journalist.
+2. Christopher is a journalist and Christopher is nosy.
+A:",0.1374977082014084,0.3890077471733093,0.16504715383052826
+"Q: Which is more likely?
+1. Christopher is a journalist.
+2. Christopher is a journalist and Christopher is curious.
+A:",0.14502404630184174,0.3419216573238373,0.1786859631538391
+"Q: Which is more likely?
+1. Christopher is a journalist and Christopher is nosy.
+2. Christopher is a journalist.
+A:",2.0538785457611084,0.9648472666740417,1.732051134109497
+"Q: Which is more likely?
+1. Christopher is a journalist and Christopher is curious.
+2. Christopher is a journalist.
+A:",1.918523907661438,1.0948561429977417,1.6264859437942505
+"Q: Which is more likely?
+1. Christopher is a journalist.
+2. Christopher is nosy and is a journalist.
+A:",0.146445631980896,0.3850046694278717,0.1734286993741989
+"Q: Which is more likely?
+1. Christopher is a journalist.
+2. Christopher is curious and is a journalist.
+A:",0.1534041464328766,0.3606252670288086,0.19008636474609375
+"Q: Which is more likely?
+1. Christopher is nosy and is a journalist.
+2. Christopher is a journalist.
+A:",1.9645535945892334,1.0537554025650024,1.6855039596557617
+"Q: Which is more likely?
+1. Christopher is curious and is a journalist.
+2. Christopher is a journalist.
+A:",1.8677834272384644,1.0887937545776367,1.5426201820373535
+"Q: Which is more likely to be true?
+1. Christopher is a journalist.
+2. Christopher is a journalist and is nosy.
+A:",0.13027359545230865,0.3884204626083374,0.14991647005081177
+"Q: Which is more likely to be true?
+1. Christopher is a journalist.
+2. Christopher is a journalist and is curious.
+A:",0.132725328207016,0.34799814224243164,0.16144432127475739
+"Q: Which is more likely to be true?
+1. Christopher is a journalist and is nosy.
+2. Christopher is a journalist.
+A:",2.1401915550231934,1.0810704231262207,1.822019338607788
+"Q: Which is more likely to be true?
+1. Christopher is a journalist and is curious.
+2. Christopher is a journalist.
+A:",2.020348072052002,1.144647479057312,1.7471071481704712
+"Q: Which is more probable?
+1. Christopher is a journalist.
+2. Christopher is a journalist and is nosy.
+A:",0.1403135508298874,0.42454612255096436,0.16668489575386047
+"Q: Which is more probable?
+1. Christopher is a journalist.
+2. Christopher is a journalist and is curious.
+A:",0.14124533534049988,0.3837410509586334,0.16851769387722015
+"Q: Which is more probable?
+1. Christopher is a journalist and is nosy.
+2. Christopher is a journalist.
+A:",2.0678865909576416,1.0228033065795898,1.732686161994934
+"Q: Which is more probable?
+1. Christopher is a journalist and is curious.
+2. Christopher is a journalist.
+A:",1.945285677909851,1.0892441272735596,1.6856966018676758
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a journalist.
+2. Christopher is a journalist and is nosy.
+A:",0.14533129334449768,0.3498431146144867,0.10745949298143387
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a journalist.
+2. Christopher is a journalist and is curious.
+A:",0.14835913479328156,0.32123813033103943,0.11898267269134521
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a journalist and is nosy.
+2. Christopher is a journalist.
+A:",2.0493040084838867,1.1802334785461426,2.140652656555176
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a journalist and is curious.
+2. Christopher is a journalist.
+A:",1.948712944984436,1.2156387567520142,2.0105679035186768
+"Q: Which is more likely?
+1. Christopher is a librarian.
+2. Christopher is a librarian and is quiet.
+A:",0.17221860587596893,0.3033681809902191,0.17819920182228088
+"Q: Which is more likely?
+1. Christopher is a librarian.
+2. Christopher is a librarian and is shy.
+A:",0.1667383760213852,0.2943768799304962,0.18365713953971863
+"Q: Which is more likely?
+1. Christopher is a librarian and is quiet.
+2. Christopher is a librarian.
+A:",1.8839861154556274,1.2296018600463867,1.564481496810913
+"Q: Which is more likely?
+1. Christopher is a librarian and is shy.
+2. Christopher is a librarian.
+A:",1.8894364833831787,1.2531769275665283,1.6101833581924438
+"Question: Which is more likely?
+A. Christopher is a librarian.
+B. Christopher is a librarian and is quiet.
+Answer:",0.3700838088989258,0.9722116589546204,1.1577847003936768
+"Question: Which is more likely?
+A. Christopher is a librarian.
+B. Christopher is a librarian and is shy.
+Answer:",0.38353443145751953,0.9395290613174438,1.1110684871673584
+"Question: Which is more likely?
+A. Christopher is a librarian and is quiet.
+B. Christopher is a librarian.
+Answer:",1.2650541067123413,0.5120019912719727,0.332174688577652
+"Question: Which is more likely?
+A. Christopher is a librarian and is shy.
+B. Christopher is a librarian.
+Answer:",1.2463839054107666,0.48676586151123047,0.37262463569641113
+"Q: Which is more likely?
+1. Christopher is a librarian.
+2. Christopher is a librarian and Christopher is quiet.
+A:",0.16956284642219543,0.2969350814819336,0.1653694063425064
+"Q: Which is more likely?
+1. Christopher is a librarian.
+2. Christopher is a librarian and Christopher is shy.
+A:",0.16496598720550537,0.2829990088939667,0.1637495458126068
+"Q: Which is more likely?
+1. Christopher is a librarian and Christopher is quiet.
+2. Christopher is a librarian.
+A:",1.8780370950698853,1.1544365882873535,1.6094738245010376
+"Q: Which is more likely?
+1. Christopher is a librarian and Christopher is shy.
+2. Christopher is a librarian.
+A:",1.9055202007293701,1.1920298337936401,1.6794241666793823
+"Q: Which is more likely?
+1. Christopher is a librarian.
+2. Christopher is quiet and is a librarian.
+A:",0.17156551778316498,0.2810753285884857,0.1633497178554535
+"Q: Which is more likely?
+1. Christopher is a librarian.
+2. Christopher is shy and is a librarian.
+A:",0.16980811953544617,0.27998167276382446,0.1640910506248474
+"Q: Which is more likely?
+1. Christopher is quiet and is a librarian.
+2. Christopher is a librarian.
+A:",1.7817988395690918,1.296248197555542,1.5631657838821411
+"Q: Which is more likely?
+1. Christopher is shy and is a librarian.
+2. Christopher is a librarian.
+A:",1.8196948766708374,1.308680772781372,1.6192269325256348
+"Q: Which is more likely to be true?
+1. Christopher is a librarian.
+2. Christopher is a librarian and is quiet.
+A:",0.15341928601264954,0.27135390043258667,0.15146616101264954
+"Q: Which is more likely to be true?
+1. Christopher is a librarian.
+2. Christopher is a librarian and is shy.
+A:",0.15075427293777466,0.26373565196990967,0.1576201468706131
+"Q: Which is more likely to be true?
+1. Christopher is a librarian and is quiet.
+2. Christopher is a librarian.
+A:",2.01045560836792,1.3043522834777832,1.7491486072540283
+"Q: Which is more likely to be true?
+1. Christopher is a librarian and is shy.
+2. Christopher is a librarian.
+A:",2.01108980178833,1.330775260925293,1.7756446599960327
+"Q: Which is more probable?
+1. Christopher is a librarian.
+2. Christopher is a librarian and is quiet.
+A:",0.16977712512016296,0.3121226727962494,0.16701863706111908
+"Q: Which is more probable?
+1. Christopher is a librarian.
+2. Christopher is a librarian and is shy.
+A:",0.16269253194332123,0.30507317185401917,0.17778854072093964
+"Q: Which is more probable?
+1. Christopher is a librarian and is quiet.
+2. Christopher is a librarian.
+A:",1.9074559211730957,1.2229492664337158,1.581566333770752
+"Q: Which is more probable?
+1. Christopher is a librarian and is shy.
+2. Christopher is a librarian.
+A:",1.9180163145065308,1.2461339235305786,1.645520806312561
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a librarian.
+2. Christopher is a librarian and is quiet.
+A:",0.17230069637298584,0.26210927963256836,0.11008114367723465
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a librarian.
+2. Christopher is a librarian and is shy.
+A:",0.17048607766628265,0.25062036514282227,0.11118552088737488
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a librarian and is quiet.
+2. Christopher is a librarian.
+A:",1.9163893461227417,1.3555707931518555,2.1127266883850098
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a librarian and is shy.
+2. Christopher is a librarian.
+A:",1.914034366607666,1.386704683303833,2.141986846923828
+"Q: Which is more likely?
+1. Christopher is a nurse.
+2. Christopher is a nurse and is caring.
+A:",0.1772378385066986,0.3028753399848938,0.22094137966632843
+"Q: Which is more likely?
+1. Christopher is a nurse.
+2. Christopher is a nurse and is gentle.
+A:",0.19755281507968903,0.3237028121948242,0.21423231065273285
+"Q: Which is more likely?
+1. Christopher is a nurse and is caring.
+2. Christopher is a nurse.
+A:",1.76449453830719,1.2723753452301025,1.503435730934143
+"Q: Which is more likely?
+1. Christopher is a nurse and is gentle.
+2. Christopher is a nurse.
+A:",1.7133554220199585,1.2247803211212158,1.4698961973190308
+"Question: Which is more likely?
+A. Christopher is a nurse.
+B. Christopher is a nurse and is caring.
+Answer:",0.4012768566608429,0.7082861661911011,1.0302982330322266
+"Question: Which is more likely?
+A. Christopher is a nurse.
+B. Christopher is a nurse and is gentle.
+Answer:",0.3950822949409485,0.6870546936988831,1.0718648433685303
+"Question: Which is more likely?
+A. Christopher is a nurse and is caring.
+B. Christopher is a nurse.
+Answer:",1.128710150718689,0.6734140515327454,0.4235724210739136
+"Question: Which is more likely?
+A. Christopher is a nurse and is gentle.
+B. Christopher is a nurse.
+Answer:",1.14619779586792,0.6423918604850769,0.4055332839488983
+"Q: Which is more likely?
+1. Christopher is a nurse.
+2. Christopher is a nurse and Christopher is caring.
+A:",0.16967472434043884,0.2917720675468445,0.2159162014722824
+"Q: Which is more likely?
+1. Christopher is a nurse.
+2. Christopher is a nurse and Christopher is gentle.
+A:",0.18854814767837524,0.3221447467803955,0.20270542800426483
+"Q: Which is more likely?
+1. Christopher is a nurse and Christopher is caring.
+2. Christopher is a nurse.
+A:",1.7879955768585205,1.1733359098434448,1.5070151090621948
+"Q: Which is more likely?
+1. Christopher is a nurse and Christopher is gentle.
+2. Christopher is a nurse.
+A:",1.7369816303253174,1.1105434894561768,1.5095711946487427
+"Q: Which is more likely?
+1. Christopher is a nurse.
+2. Christopher is caring and is a nurse.
+A:",0.1747313141822815,0.29161763191223145,0.20470350980758667
+"Q: Which is more likely?
+1. Christopher is a nurse.
+2. Christopher is gentle and is a nurse.
+A:",0.19648049771785736,0.3163565695285797,0.20887677371501923
+"Q: Which is more likely?
+1. Christopher is caring and is a nurse.
+2. Christopher is a nurse.
+A:",1.7602475881576538,1.25037682056427,1.5587857961654663
+"Q: Which is more likely?
+1. Christopher is gentle and is a nurse.
+2. Christopher is a nurse.
+A:",1.7094169855117798,1.2322323322296143,1.449840784072876
+"Q: Which is more likely to be true?
+1. Christopher is a nurse.
+2. Christopher is a nurse and is caring.
+A:",0.1573476344347,0.2790515124797821,0.18645872175693512
+"Q: Which is more likely to be true?
+1. Christopher is a nurse.
+2. Christopher is a nurse and is gentle.
+A:",0.17681948840618134,0.2978653907775879,0.18371368944644928
+"Q: Which is more likely to be true?
+1. Christopher is a nurse and is caring.
+2. Christopher is a nurse.
+A:",1.8888018131256104,1.3081519603729248,1.6306229829788208
+"Q: Which is more likely to be true?
+1. Christopher is a nurse and is gentle.
+2. Christopher is a nurse.
+A:",1.8279995918273926,1.2719194889068604,1.6080602407455444
+"Q: Which is more probable?
+1. Christopher is a nurse.
+2. Christopher is a nurse and is caring.
+A:",0.17233209311962128,0.3078744411468506,0.20615997910499573
+"Q: Which is more probable?
+1. Christopher is a nurse.
+2. Christopher is a nurse and is gentle.
+A:",0.18635207414627075,0.3334105908870697,0.20559215545654297
+"Q: Which is more probable?
+1. Christopher is a nurse and is caring.
+2. Christopher is a nurse.
+A:",1.7995586395263672,1.2660236358642578,1.5364181995391846
+"Q: Which is more probable?
+1. Christopher is a nurse and is gentle.
+2. Christopher is a nurse.
+A:",1.7739118337631226,1.2046990394592285,1.4830061197280884
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a nurse.
+2. Christopher is a nurse and is caring.
+A:",0.1766934096813202,0.2651289999485016,0.13198189437389374
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a nurse.
+2. Christopher is a nurse and is gentle.
+A:",0.19413885474205017,0.2873758375644684,0.1305704414844513
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a nurse and is caring.
+2. Christopher is a nurse.
+A:",1.8124250173568726,1.334100604057312,1.9703130722045898
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a nurse and is gentle.
+2. Christopher is a nurse.
+A:",1.771188497543335,1.3021962642669678,1.9545656442642212
+"Q: Which is more likely?
+1. Christopher is a teacher.
+2. Christopher is a teacher and is patient.
+A:",0.16440998017787933,0.32734256982803345,0.16969312727451324
+"Q: Which is more likely?
+1. Christopher is a teacher.
+2. Christopher is a teacher and is strict.
+A:",0.15676221251487732,0.32933059334754944,0.21448880434036255
+"Q: Which is more likely?
+1. Christopher is a teacher and is patient.
+2. Christopher is a teacher.
+A:",1.8203598260879517,1.1404961347579956,1.7017992734909058
+"Q: Which is more likely?
+1. Christopher is a teacher and is strict.
+2. Christopher is a teacher.
+A:",1.8680027723312378,1.2149088382720947,1.613242268562317
+"Question: Which is more likely?
+A. Christopher is a teacher.
+B. Christopher is a teacher and is patient.
+Answer:",0.3478076457977295,0.824927568435669,1.0359735488891602
+"Question: Which is more likely?
+A. Christopher is a teacher.
+B. Christopher is a teacher and is strict.
+Answer:",0.3769848942756653,0.938325822353363,1.0743048191070557
+"Question: Which is more likely?
+A. Christopher is a teacher and is patient.
+B. Christopher is a teacher.
+Answer:",1.2518091201782227,0.5837039351463318,0.38089680671691895
+"Question: Which is more likely?
+A. Christopher is a teacher and is strict.
+B. Christopher is a teacher.
+Answer:",1.16956627368927,0.5074926614761353,0.352893203496933
+"Q: Which is more likely?
+1. Christopher is a teacher.
+2. Christopher is a teacher and Christopher is patient.
+A:",0.16364125907421112,0.3300676643848419,0.1564464271068573
+"Q: Which is more likely?
+1. Christopher is a teacher.
+2. Christopher is a teacher and Christopher is strict.
+A:",0.15639729797840118,0.32193681597709656,0.17911270260810852
+"Q: Which is more likely?
+1. Christopher is a teacher and Christopher is patient.
+2. Christopher is a teacher.
+A:",1.8243765830993652,1.0899326801300049,1.714844822883606
+"Q: Which is more likely?
+1. Christopher is a teacher and Christopher is strict.
+2. Christopher is a teacher.
+A:",1.876512050628662,1.1413007974624634,1.659592866897583
+"Q: Which is more likely?
+1. Christopher is a teacher.
+2. Christopher is patient and is a teacher.
+A:",0.17302419245243073,0.3133047819137573,0.16085438430309296
+"Q: Which is more likely?
+1. Christopher is a teacher.
+2. Christopher is strict and is a teacher.
+A:",0.15828780829906464,0.316201388835907,0.20527143776416779
+"Q: Which is more likely?
+1. Christopher is patient and is a teacher.
+2. Christopher is a teacher.
+A:",1.7725563049316406,1.1793298721313477,1.6934292316436768
+"Q: Which is more likely?
+1. Christopher is strict and is a teacher.
+2. Christopher is a teacher.
+A:",1.8851250410079956,1.1883296966552734,1.5312798023223877
+"Q: Which is more likely to be true?
+1. Christopher is a teacher.
+2. Christopher is a teacher and is patient.
+A:",0.14738169312477112,0.29785361886024475,0.14800924062728882
+"Q: Which is more likely to be true?
+1. Christopher is a teacher.
+2. Christopher is a teacher and is strict.
+A:",0.14208979904651642,0.3018898367881775,0.18944001197814941
+"Q: Which is more likely to be true?
+1. Christopher is a teacher and is patient.
+2. Christopher is a teacher.
+A:",1.942919135093689,1.207237958908081,1.822857141494751
+"Q: Which is more likely to be true?
+1. Christopher is a teacher and is strict.
+2. Christopher is a teacher.
+A:",1.9778708219528198,1.2570823431015015,1.7210623025894165
+"Q: Which is more probable?
+1. Christopher is a teacher.
+2. Christopher is a teacher and is patient.
+A:",0.15884487330913544,0.32716795802116394,0.16026848554611206
+"Q: Which is more probable?
+1. Christopher is a teacher.
+2. Christopher is a teacher and is strict.
+A:",0.15010854601860046,0.3344675898551941,0.2094458043575287
+"Q: Which is more probable?
+1. Christopher is a teacher and is patient.
+2. Christopher is a teacher.
+A:",1.8634889125823975,1.1347733736038208,1.713940143585205
+"Q: Which is more probable?
+1. Christopher is a teacher and is strict.
+2. Christopher is a teacher.
+A:",1.9235643148422241,1.1993097066879272,1.6511108875274658
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a teacher.
+2. Christopher is a teacher and is patient.
+A:",0.16955800354480743,0.2903001606464386,0.10549981147050858
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a teacher.
+2. Christopher is a teacher and is strict.
+A:",0.1629447638988495,0.2953959107398987,0.12274232506752014
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a teacher and is patient.
+2. Christopher is a teacher.
+A:",1.846164345741272,1.22093665599823,2.1364169120788574
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a teacher and is strict.
+2. Christopher is a teacher.
+A:",1.8599060773849487,1.272963047027588,2.0896782875061035
+"Q: Which is more likely?
+1. Christopher is a banker.
+2. Christopher is a banker and is rich.
+A:",0.1376958042383194,0.3129909336566925,0.2424517124891281
+"Q: Which is more likely?
+1. Christopher is a banker.
+2. Christopher is a banker and is wealthy.
+A:",0.14208173751831055,0.30682262778282166,0.24669407308101654
+"Q: Which is more likely?
+1. Christopher is a banker and is rich.
+2. Christopher is a banker.
+A:",1.9717470407485962,1.183290719985962,1.4275323152542114
+"Q: Which is more likely?
+1. Christopher is a banker and is wealthy.
+2. Christopher is a banker.
+A:",1.9596881866455078,1.1870993375778198,1.3979644775390625
+"Question: Which is more likely?
+A. Christopher is a banker.
+B. Christopher is a banker and is rich.
+Answer:",0.5212920904159546,1.0314135551452637,1.0784581899642944
+"Question: Which is more likely?
+A. Christopher is a banker.
+B. Christopher is a banker and is wealthy.
+Answer:",0.5145319700241089,1.0091946125030518,1.0873416662216187
+"Question: Which is more likely?
+A. Christopher is a banker and is rich.
+B. Christopher is a banker.
+Answer:",0.977357029914856,0.41222459077835083,0.39175063371658325
+"Question: Which is more likely?
+A. Christopher is a banker and is wealthy.
+B. Christopher is a banker.
+Answer:",1.021113634109497,0.42363110184669495,0.3945242166519165
+"Q: Which is more likely?
+1. Christopher is a banker.
+2. Christopher is a banker and Christopher is rich.
+A:",0.13858769834041595,0.313875675201416,0.2238755077123642
+"Q: Which is more likely?
+1. Christopher is a banker.
+2. Christopher is a banker and Christopher is wealthy.
+A:",0.14199888706207275,0.30368971824645996,0.22770409286022186
+"Q: Which is more likely?
+1. Christopher is a banker and Christopher is rich.
+2. Christopher is a banker.
+A:",1.969343900680542,1.0940744876861572,1.4567753076553345
+"Q: Which is more likely?
+1. Christopher is a banker and Christopher is wealthy.
+2. Christopher is a banker.
+A:",1.9630450010299683,1.1139588356018066,1.4325199127197266
+"Q: Which is more likely?
+1. Christopher is a banker.
+2. Christopher is rich and is a banker.
+A:",0.13236156105995178,0.3264172077178955,0.22213977575302124
+"Q: Which is more likely?
+1. Christopher is a banker.
+2. Christopher is wealthy and is a banker.
+A:",0.1348211020231247,0.3110564351081848,0.21596913039684296
+"Q: Which is more likely?
+1. Christopher is rich and is a banker.
+2. Christopher is a banker.
+A:",2.030083179473877,1.236267328262329,1.5185227394104004
+"Q: Which is more likely?
+1. Christopher is wealthy and is a banker.
+2. Christopher is a banker.
+A:",1.9970428943634033,1.2890585660934448,1.5255484580993652
+"Q: Which is more likely to be true?
+1. Christopher is a banker.
+2. Christopher is a banker and is rich.
+A:",0.12579593062400818,0.2891755998134613,0.20276178419589996
+"Q: Which is more likely to be true?
+1. Christopher is a banker.
+2. Christopher is a banker and is wealthy.
+A:",0.1301301121711731,0.28241658210754395,0.2068704515695572
+"Q: Which is more likely to be true?
+1. Christopher is a banker and is rich.
+2. Christopher is a banker.
+A:",2.0871338844299316,1.219447135925293,1.574053406715393
+"Q: Which is more likely to be true?
+1. Christopher is a banker and is wealthy.
+2. Christopher is a banker.
+A:",2.075221538543701,1.2234230041503906,1.5587338209152222
+"Q: Which is more probable?
+1. Christopher is a banker.
+2. Christopher is a banker and is rich.
+A:",0.13613387942314148,0.32234659790992737,0.21978126466274261
+"Q: Which is more probable?
+1. Christopher is a banker.
+2. Christopher is a banker and is wealthy.
+A:",0.14043352007865906,0.3131262958049774,0.22235532104969025
+"Q: Which is more probable?
+1. Christopher is a banker and is rich.
+2. Christopher is a banker.
+A:",1.9973198175430298,1.1416071653366089,1.4996347427368164
+"Q: Which is more probable?
+1. Christopher is a banker and is wealthy.
+2. Christopher is a banker.
+A:",1.9846718311309814,1.1614747047424316,1.4723807573318481
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a banker.
+2. Christopher is a banker and is rich.
+A:",0.14033955335617065,0.27175667881965637,0.13781899213790894
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a banker.
+2. Christopher is a banker and is wealthy.
+A:",0.14508375525474548,0.2628772556781769,0.13699233531951904
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a banker and is rich.
+2. Christopher is a banker.
+A:",1.9714449644088745,1.27427077293396,1.9317951202392578
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a banker and is wealthy.
+2. Christopher is a banker.
+A:",1.954093337059021,1.2805768251419067,1.950636863708496
+"Q: Which is more likely?
+1. Christopher is a scientist.
+2. Christopher is a scientist and is smart.
+A:",0.17246735095977783,0.3627694845199585,0.1808677762746811
+"Q: Which is more likely?
+1. Christopher is a scientist.
+2. Christopher is a scientist and is a nerd.
+A:",0.16984140872955322,0.33581021428108215,0.15679165720939636
+"Q: Which is more likely?
+1. Christopher is a scientist and is smart.
+2. Christopher is a scientist.
+A:",1.8147237300872803,1.1095356941223145,1.7195918560028076
+"Q: Which is more likely?
+1. Christopher is a scientist and is a nerd.
+2. Christopher is a scientist.
+A:",1.8380106687545776,1.1698240041732788,1.6952711343765259
+"Question: Which is more likely?
+A. Christopher is a scientist.
+B. Christopher is a scientist and is smart.
+Answer:",0.38935449719429016,0.7488064765930176,0.9803736805915833
+"Question: Which is more likely?
+A. Christopher is a scientist.
+B. Christopher is a scientist and is a nerd.
+Answer:",0.4316239356994629,0.7435351014137268,1.0091444253921509
+"Question: Which is more likely?
+A. Christopher is a scientist and is smart.
+B. Christopher is a scientist.
+Answer:",1.200679898262024,0.6108559370040894,0.44276031851768494
+"Question: Which is more likely?
+A. Christopher is a scientist and is a nerd.
+B. Christopher is a scientist.
+Answer:",1.1338469982147217,0.5360148549079895,0.3896281123161316
+"Q: Which is more likely?
+1. Christopher is a scientist.
+2. Christopher is a scientist and Christopher is smart.
+A:",0.16913734376430511,0.3569062650203705,0.16598252952098846
+"Q: Which is more likely?
+1. Christopher is a scientist.
+2. Christopher is a scientist and Christopher is a nerd.
+A:",0.16667267680168152,0.3410983085632324,0.14324164390563965
+"Q: Which is more likely?
+1. Christopher is a scientist and Christopher is smart.
+2. Christopher is a scientist.
+A:",1.8236345052719116,1.0649054050445557,1.735443353652954
+"Q: Which is more likely?
+1. Christopher is a scientist and Christopher is a nerd.
+2. Christopher is a scientist.
+A:",1.8664547204971313,1.0889405012130737,1.8013299703598022
+"Q: Which is more likely?
+1. Christopher is a scientist.
+2. Christopher is smart and is a scientist.
+A:",0.16598062217235565,0.3525001108646393,0.1673157662153244
+"Q: Which is more likely?
+1. Christopher is a scientist.
+2. Christopher is a nerd and is a scientist.
+A:",0.16329149901866913,0.32726800441741943,0.15187466144561768
+"Q: Which is more likely?
+1. Christopher is smart and is a scientist.
+2. Christopher is a scientist.
+A:",1.7811644077301025,1.114568829536438,1.7802547216415405
+"Q: Which is more likely?
+1. Christopher is a nerd and is a scientist.
+2. Christopher is a scientist.
+A:",1.8494936227798462,1.2378376722335815,1.7493951320648193
+"Q: Which is more likely to be true?
+1. Christopher is a scientist.
+2. Christopher is a scientist and is smart.
+A:",0.1557050198316574,0.34270671010017395,0.1529397964477539
+"Q: Which is more likely to be true?
+1. Christopher is a scientist.
+2. Christopher is a scientist and is a nerd.
+A:",0.15325014293193817,0.3182399868965149,0.1307058036327362
+"Q: Which is more likely to be true?
+1. Christopher is a scientist and is smart.
+2. Christopher is a scientist.
+A:",1.9364386796951294,1.1386232376098633,1.8766251802444458
+"Q: Which is more likely to be true?
+1. Christopher is a scientist and is a nerd.
+2. Christopher is a scientist.
+A:",1.9552851915359497,1.2103954553604126,1.8739733695983887
+"Q: Which is more probable?
+1. Christopher is a scientist.
+2. Christopher is a scientist and is smart.
+A:",0.1693202257156372,0.3646000921726227,0.18076002597808838
+"Q: Which is more probable?
+1. Christopher is a scientist.
+2. Christopher is a scientist and is a nerd.
+A:",0.1655564159154892,0.3369937241077423,0.14997629821300507
+"Q: Which is more probable?
+1. Christopher is a scientist and is smart.
+2. Christopher is a scientist.
+A:",1.8552186489105225,1.1024245023727417,1.748835802078247
+"Q: Which is more probable?
+1. Christopher is a scientist and is a nerd.
+2. Christopher is a scientist.
+A:",1.886056900024414,1.1712185144424438,1.7484230995178223
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a scientist.
+2. Christopher is a scientist and is smart.
+A:",0.17626874148845673,0.32888975739479065,0.11468686163425446
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a scientist.
+2. Christopher is a scientist and is a nerd.
+A:",0.17333227396011353,0.305309921503067,0.10194016247987747
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a scientist and is smart.
+2. Christopher is a scientist.
+A:",1.8034571409225464,1.186362862586975,2.165010690689087
+"Q: Which of 1 and 2 is more likely to be true?
+1. Christopher is a scientist and is a nerd.
+2. Christopher is a scientist.
+A:",1.850200891494751,1.279062271118164,2.181509494781494
+"Q: Which is more likely?
+1. Ashley is an accountant.
+2. Ashley is an accountant and is careful.
+A:",0.25417041778564453,0.35599347949028015,0.12870682775974274
+"Q: Which is more likely?
+1. Ashley is an accountant.
+2. Ashley is an accountant and is boring.
+A:",0.3109177350997925,0.3520560562610626,0.12371516972780228
+"Q: Which is more likely?
+1. Ashley is an accountant and is careful.
+2. Ashley is an accountant.
+A:",1.4266408681869507,1.1741528511047363,1.9857503175735474
+"Q: Which is more likely?
+1. Ashley is an accountant and is boring.
+2. Ashley is an accountant.
+A:",1.379382610321045,1.2364351749420166,2.0012288093566895
+"Question: Which is more likely?
+A. Ashley is an accountant.
+B. Ashley is an accountant and is careful.
+Answer:",0.6099323034286499,1.259889841079712,1.3396919965744019
+"Question: Which is more likely?
+A. Ashley is an accountant.
+B. Ashley is an accountant and is boring.
+Answer:",0.7227004170417786,1.3779101371765137,1.5510331392288208
+"Question: Which is more likely?
+A. Ashley is an accountant and is careful.
+B. Ashley is an accountant.
+Answer:",0.8185237646102905,0.3368692696094513,0.2833600640296936
+"Question: Which is more likely?
+A. Ashley is an accountant and is boring.
+B. Ashley is an accountant.
+Answer:",0.7277294397354126,0.2875319719314575,0.17658032476902008
+"Q: Which is more likely?
+1. Ashley is an accountant.
+2. Ashley is an accountant and Ashley is careful.
+A:",0.24509353935718536,0.35161256790161133,0.11962225288152695
+"Q: Which is more likely?
+1. Ashley is an accountant.
+2. Ashley is an accountant and Ashley is boring.
+A:",0.29285502433776855,0.339292049407959,0.11541692912578583
+"Q: Which is more likely?
+1. Ashley is an accountant and Ashley is careful.
+2. Ashley is an accountant.
+A:",1.4477319717407227,1.1193678379058838,2.0557143688201904
+"Q: Which is more likely?
+1. Ashley is an accountant and Ashley is boring.
+2. Ashley is an accountant.
+A:",1.390959620475769,1.159059762954712,2.03910231590271
+"Q: Which is more likely?
+1. Ashley is an accountant.
+2. Ashley is careful and is an accountant.
+A:",0.27401599287986755,0.3431585729122162,0.12101088464260101
+"Q: Which is more likely?
+1. Ashley is an accountant.
+2. Ashley is boring and is an accountant.
+A:",0.301389217376709,0.31325763463974,0.11481036245822906
+"Q: Which is more likely?
+1. Ashley is careful and is an accountant.
+2. Ashley is an accountant.
+A:",1.4131617546081543,1.1531307697296143,1.9886640310287476
+"Q: Which is more likely?
+1. Ashley is boring and is an accountant.
+2. Ashley is an accountant.
+A:",1.3926680088043213,1.262011170387268,2.015763521194458
+"Q: Which is more likely to be true?
+1. Ashley is an accountant.
+2. Ashley is an accountant and is careful.
+A:",0.24491113424301147,0.32217636704444885,0.10805577039718628
+"Q: Which is more likely to be true?
+1. Ashley is an accountant.
+2. Ashley is an accountant and is boring.
+A:",0.2987784743309021,0.31714773178100586,0.10097531229257584
+"Q: Which is more likely to be true?
+1. Ashley is an accountant and is careful.
+2. Ashley is an accountant.
+A:",1.4828033447265625,1.247715950012207,2.186640739440918
+"Q: Which is more likely to be true?
+1. Ashley is an accountant and is boring.
+2. Ashley is an accountant.
+A:",1.4286473989486694,1.3178949356079102,2.2292821407318115
+"Q: Which is more probable?
+1. Ashley is an accountant.
+2. Ashley is an accountant and is careful.
+A:",0.2477060854434967,0.34739089012145996,0.10832515358924866
+"Q: Which is more probable?
+1. Ashley is an accountant.
+2. Ashley is an accountant and is boring.
+A:",0.2940269112586975,0.34545421600341797,0.10083812475204468
+"Q: Which is more probable?
+1. Ashley is an accountant and is careful.
+2. Ashley is an accountant.
+A:",1.469724416732788,1.2006264925003052,2.1282830238342285
+"Q: Which is more probable?
+1. Ashley is an accountant and is boring.
+2. Ashley is an accountant.
+A:",1.4297382831573486,1.2754032611846924,2.1705281734466553
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is an accountant.
+2. Ashley is an accountant and is careful.
+A:",0.2640010118484497,0.2754932940006256,0.07565278559923172
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is an accountant.
+2. Ashley is an accountant and is boring.
+A:",0.31400519609451294,0.2664146423339844,0.072754867374897
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is an accountant and is careful.
+2. Ashley is an accountant.
+A:",1.4458768367767334,1.3737362623214722,2.507441520690918
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is an accountant and is boring.
+2. Ashley is an accountant.
+A:",1.4076941013336182,1.4555085897445679,2.580475330352783
+"Q: Which is more likely?
+1. Ashley is a celebrity.
+2. Ashley is a celebrity and is beautiful.
+A:",0.35826411843299866,0.30839842557907104,0.10407044738531113
+"Q: Which is more likely?
+1. Ashley is a celebrity.
+2. Ashley is a celebrity and is rich.
+A:",0.3116810917854309,0.2607192397117615,0.11897864937782288
+"Q: Which is more likely?
+1. Ashley is a celebrity and is beautiful.
+2. Ashley is a celebrity.
+A:",1.2630287408828735,1.2961927652359009,2.0766384601593018
+"Q: Which is more likely?
+1. Ashley is a celebrity and is rich.
+2. Ashley is a celebrity.
+A:",1.3532160520553589,1.407411813735962,2.01012921333313
+"Question: Which is more likely?
+A. Ashley is a celebrity.
+B. Ashley is a celebrity and is beautiful.
+Answer:",0.6535213589668274,1.0651302337646484,1.1297093629837036
+"Question: Which is more likely?
+A. Ashley is a celebrity.
+B. Ashley is a celebrity and is rich.
+Answer:",0.6420628428459167,1.0846831798553467,1.1120824813842773
+"Question: Which is more likely?
+A. Ashley is a celebrity and is beautiful.
+B. Ashley is a celebrity.
+Answer:",0.7899220585823059,0.3909294605255127,0.3394012451171875
+"Question: Which is more likely?
+A. Ashley is a celebrity and is rich.
+B. Ashley is a celebrity.
+Answer:",0.8022382855415344,0.41672641038894653,0.3509053885936737
+"Q: Which is more likely?
+1. Ashley is a celebrity.
+2. Ashley is a celebrity and Ashley is beautiful.
+A:",0.34155726432800293,0.315391480922699,0.09249474853277206
+"Q: Which is more likely?
+1. Ashley is a celebrity.
+2. Ashley is a celebrity and Ashley is rich.
+A:",0.3039955198764801,0.2704033851623535,0.10755017399787903
+"Q: Which is more likely?
+1. Ashley is a celebrity and Ashley is beautiful.
+2. Ashley is a celebrity.
+A:",1.2647912502288818,1.1798160076141357,2.1143505573272705
+"Q: Which is more likely?
+1. Ashley is a celebrity and Ashley is rich.
+2. Ashley is a celebrity.
+A:",1.3512139320373535,1.2858381271362305,2.0402541160583496
+"Q: Which is more likely?
+1. Ashley is a celebrity.
+2. Ashley is beautiful and is a celebrity.
+A:",0.34639349579811096,0.29865044355392456,0.09313204139471054
+"Q: Which is more likely?
+1. Ashley is a celebrity.
+2. Ashley is rich and is a celebrity.
+A:",0.2911355495452881,0.2625388205051422,0.10512343049049377
+"Q: Which is more likely?
+1. Ashley is beautiful and is a celebrity.
+2. Ashley is a celebrity.
+A:",1.2341623306274414,1.2571916580200195,2.1718461513519287
+"Q: Which is more likely?
+1. Ashley is rich and is a celebrity.
+2. Ashley is a celebrity.
+A:",1.3993268013000488,1.3610970973968506,2.128221035003662
+"Q: Which is more likely to be true?
+1. Ashley is a celebrity.
+2. Ashley is a celebrity and is beautiful.
+A:",0.3381674587726593,0.2846203148365021,0.08486107736825943
+"Q: Which is more likely to be true?
+1. Ashley is a celebrity.
+2. Ashley is a celebrity and is rich.
+A:",0.29660195112228394,0.2478434145450592,0.09356898814439774
+"Q: Which is more likely to be true?
+1. Ashley is a celebrity and is beautiful.
+2. Ashley is a celebrity.
+A:",1.3149466514587402,1.355729341506958,2.2553083896636963
+"Q: Which is more likely to be true?
+1. Ashley is a celebrity and is rich.
+2. Ashley is a celebrity.
+A:",1.3990395069122314,1.4398634433746338,2.2099738121032715
+"Q: Which is more probable?
+1. Ashley is a celebrity.
+2. Ashley is a celebrity and is beautiful.
+A:",0.3426889479160309,0.29304295778274536,0.09511760622262955
+"Q: Which is more probable?
+1. Ashley is a celebrity.
+2. Ashley is a celebrity and is rich.
+A:",0.2958548367023468,0.24832618236541748,0.10857704281806946
+"Q: Which is more probable?
+1. Ashley is a celebrity and is beautiful.
+2. Ashley is a celebrity.
+A:",1.3085360527038574,1.328547716140747,2.170036554336548
+"Q: Which is more probable?
+1. Ashley is a celebrity and is rich.
+2. Ashley is a celebrity.
+A:",1.4025123119354248,1.4396886825561523,2.1180009841918945
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a celebrity.
+2. Ashley is a celebrity and is beautiful.
+A:",0.34076330065727234,0.25780951976776123,0.06142931059002876
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a celebrity.
+2. Ashley is a celebrity and is rich.
+A:",0.3000616133213043,0.2320101112127304,0.06469424068927765
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a celebrity and is beautiful.
+2. Ashley is a celebrity.
+A:",1.2859926223754883,1.4455502033233643,2.6263086795806885
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a celebrity and is rich.
+2. Ashley is a celebrity.
+A:",1.3566582202911377,1.5043613910675049,2.5981805324554443
+"Q: Which is more likely?
+1. Ashley is a firefighter.
+2. Ashley is a firefighter and is brave.
+A:",0.3406619727611542,0.3318713307380676,0.09064921736717224
+"Q: Which is more likely?
+1. Ashley is a firefighter.
+2. Ashley is a firefighter and is strong.
+A:",0.367805153131485,0.3482784628868103,0.10109061002731323
+"Q: Which is more likely?
+1. Ashley is a firefighter and is brave.
+2. Ashley is a firefighter.
+A:",1.2430704832077026,1.2528281211853027,2.318826913833618
+"Q: Which is more likely?
+1. Ashley is a firefighter and is strong.
+2. Ashley is a firefighter.
+A:",1.2017040252685547,1.1770750284194946,2.2032477855682373
+"Question: Which is more likely?
+A. Ashley is a firefighter.
+B. Ashley is a firefighter and is brave.
+Answer:",0.6200146079063416,0.931023895740509,1.3771405220031738
+"Question: Which is more likely?
+A. Ashley is a firefighter.
+B. Ashley is a firefighter and is strong.
+Answer:",0.5972134470939636,0.8984488248825073,1.2923831939697266
+"Question: Which is more likely?
+A. Ashley is a firefighter and is brave.
+B. Ashley is a firefighter.
+Answer:",0.8170917630195618,0.4515746235847473,0.30167895555496216
+"Question: Which is more likely?
+A. Ashley is a firefighter and is strong.
+B. Ashley is a firefighter.
+Answer:",0.8397160172462463,0.4501015245914459,0.29904115200042725
+"Q: Which is more likely?
+1. Ashley is a firefighter.
+2. Ashley is a firefighter and Ashley is brave.
+A:",0.32611560821533203,0.31947311758995056,0.08832130581140518
+"Q: Which is more likely?
+1. Ashley is a firefighter.
+2. Ashley is a firefighter and Ashley is strong.
+A:",0.3488263189792633,0.34313642978668213,0.09766992926597595
+"Q: Which is more likely?
+1. Ashley is a firefighter and Ashley is brave.
+2. Ashley is a firefighter.
+A:",1.2673003673553467,1.2190654277801514,2.286449432373047
+"Q: Which is more likely?
+1. Ashley is a firefighter and Ashley is strong.
+2. Ashley is a firefighter.
+A:",1.226968765258789,1.1372648477554321,2.1923208236694336
+"Q: Which is more likely?
+1. Ashley is a firefighter.
+2. Ashley is brave and is a firefighter.
+A:",0.3431851267814636,0.3184667229652405,0.08529847115278244
+"Q: Which is more likely?
+1. Ashley is a firefighter.
+2. Ashley is strong and is a firefighter.
+A:",0.3508533537387848,0.3306686580181122,0.09154423326253891
+"Q: Which is more likely?
+1. Ashley is brave and is a firefighter.
+2. Ashley is a firefighter.
+A:",1.2205709218978882,1.270656943321228,2.352979898452759
+"Q: Which is more likely?
+1. Ashley is strong and is a firefighter.
+2. Ashley is a firefighter.
+A:",1.2295154333114624,1.1693084239959717,2.170267105102539
+"Q: Which is more likely to be true?
+1. Ashley is a firefighter.
+2. Ashley is a firefighter and is brave.
+A:",0.32578447461128235,0.30788862705230713,0.0745224878191948
+"Q: Which is more likely to be true?
+1. Ashley is a firefighter.
+2. Ashley is a firefighter and is strong.
+A:",0.34529605507850647,0.3198593258857727,0.08178556710481644
+"Q: Which is more likely to be true?
+1. Ashley is a firefighter and is brave.
+2. Ashley is a firefighter.
+A:",1.2972127199172974,1.3032350540161133,2.5406410694122314
+"Q: Which is more likely to be true?
+1. Ashley is a firefighter and is strong.
+2. Ashley is a firefighter.
+A:",1.2691975831985474,1.2338595390319824,2.430901527404785
+"Q: Which is more probable?
+1. Ashley is a firefighter.
+2. Ashley is a firefighter and is brave.
+A:",0.328381210565567,0.32209861278533936,0.0874912291765213
+"Q: Which is more probable?
+1. Ashley is a firefighter.
+2. Ashley is a firefighter and is strong.
+A:",0.3552195131778717,0.33826377987861633,0.09877049177885056
+"Q: Which is more probable?
+1. Ashley is a firefighter and is brave.
+2. Ashley is a firefighter.
+A:",1.2898046970367432,1.2944973707199097,2.3869667053222656
+"Q: Which is more probable?
+1. Ashley is a firefighter and is strong.
+2. Ashley is a firefighter.
+A:",1.2436676025390625,1.2166049480438232,2.2649989128112793
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a firefighter.
+2. Ashley is a firefighter and is brave.
+A:",0.3227209746837616,0.27817583084106445,0.052965521812438965
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a firefighter.
+2. Ashley is a firefighter and is strong.
+A:",0.3405209481716156,0.28555330634117126,0.058306414633989334
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a firefighter and is brave.
+2. Ashley is a firefighter.
+A:",1.3043301105499268,1.388582706451416,2.880770444869995
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a firefighter and is strong.
+2. Ashley is a firefighter.
+A:",1.2800370454788208,1.3349883556365967,2.773937702178955
+"Q: Which is more likely?
+1. Ashley is a journalist.
+2. Ashley is a journalist and is nosy.
+A:",0.25529929995536804,0.3887987732887268,0.11081479489803314
+"Q: Which is more likely?
+1. Ashley is a journalist.
+2. Ashley is a journalist and is curious.
+A:",0.27135026454925537,0.34123721718788147,0.12750422954559326
+"Q: Which is more likely?
+1. Ashley is a journalist and is nosy.
+2. Ashley is a journalist.
+A:",1.46950101852417,1.1275851726531982,2.1675171852111816
+"Q: Which is more likely?
+1. Ashley is a journalist and is curious.
+2. Ashley is a journalist.
+A:",1.3995108604431152,1.2171474695205688,2.006537914276123
+"Question: Which is more likely?
+A. Ashley is a journalist.
+B. Ashley is a journalist and is nosy.
+Answer:",0.5650271773338318,1.310741901397705,1.2788447141647339
+"Question: Which is more likely?
+A. Ashley is a journalist.
+B. Ashley is a journalist and is curious.
+Answer:",0.5416848063468933,1.1970667839050293,1.2583874464035034
+"Question: Which is more likely?
+A. Ashley is a journalist and is nosy.
+B. Ashley is a journalist.
+Answer:",0.8344425559043884,0.3249136507511139,0.30794453620910645
+"Question: Which is more likely?
+A. Ashley is a journalist and is curious.
+B. Ashley is a journalist.
+Answer:",0.9323418140411377,0.34180891513824463,0.3313141167163849
+"Q: Which is more likely?
+1. Ashley is a journalist.
+2. Ashley is a journalist and Ashley is nosy.
+A:",0.2456446886062622,0.3682044744491577,0.10297925770282745
+"Q: Which is more likely?
+1. Ashley is a journalist.
+2. Ashley is a journalist and Ashley is curious.
+A:",0.27307385206222534,0.32950612902641296,0.12074985355138779
+"Q: Which is more likely?
+1. Ashley is a journalist and Ashley is nosy.
+2. Ashley is a journalist.
+A:",1.4906915426254272,1.0991047620773315,2.1906697750091553
+"Q: Which is more likely?
+1. Ashley is a journalist and Ashley is curious.
+2. Ashley is a journalist.
+A:",1.4056894779205322,1.197365164756775,1.9918107986450195
+"Q: Which is more likely?
+1. Ashley is a journalist.
+2. Ashley is nosy and is a journalist.
+A:",0.26087695360183716,0.34104984998703003,0.10423845052719116
+"Q: Which is more likely?
+1. Ashley is a journalist.
+2. Ashley is curious and is a journalist.
+A:",0.2923981845378876,0.3389914333820343,0.12622042000293732
+"Q: Which is more likely?
+1. Ashley is nosy and is a journalist.
+2. Ashley is a journalist.
+A:",1.4472768306732178,1.16478431224823,2.207165479660034
+"Q: Which is more likely?
+1. Ashley is curious and is a journalist.
+2. Ashley is a journalist.
+A:",1.3730754852294922,1.1695188283920288,2.0087592601776123
+"Q: Which is more likely to be true?
+1. Ashley is a journalist.
+2. Ashley is a journalist and is nosy.
+A:",0.24559815227985382,0.3573485016822815,0.08857587724924088
+"Q: Which is more likely to be true?
+1. Ashley is a journalist.
+2. Ashley is a journalist and is curious.
+A:",0.2626374661922455,0.3181193768978119,0.10529811680316925
+"Q: Which is more likely to be true?
+1. Ashley is a journalist and is nosy.
+2. Ashley is a journalist.
+A:",1.5145715475082397,1.193337321281433,2.354434013366699
+"Q: Which is more likely to be true?
+1. Ashley is a journalist and is curious.
+2. Ashley is a journalist.
+A:",1.4465417861938477,1.2845245599746704,2.1696019172668457
+"Q: Which is more probable?
+1. Ashley is a journalist.
+2. Ashley is a journalist and is nosy.
+A:",0.244477316737175,0.38035422563552856,0.09523575007915497
+"Q: Which is more probable?
+1. Ashley is a journalist.
+2. Ashley is a journalist and is curious.
+A:",0.25700271129608154,0.33365508913993835,0.10720111429691315
+"Q: Which is more probable?
+1. Ashley is a journalist and is nosy.
+2. Ashley is a journalist.
+A:",1.527940273284912,1.1514607667922974,2.2911713123321533
+"Q: Which is more probable?
+1. Ashley is a journalist and is curious.
+2. Ashley is a journalist.
+A:",1.4518078565597534,1.2594473361968994,2.1287477016448975
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a journalist.
+2. Ashley is a journalist and is nosy.
+A:",0.2528446614742279,0.30758339166641235,0.06331473588943481
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a journalist.
+2. Ashley is a journalist and is curious.
+A:",0.2692432701587677,0.27592897415161133,0.07797550410032272
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a journalist and is nosy.
+2. Ashley is a journalist.
+A:",1.5084228515625,1.3301746845245361,2.6563074588775635
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a journalist and is curious.
+2. Ashley is a journalist.
+A:",1.445293664932251,1.4234310388565063,2.41001296043396
+"Q: Which is more likely?
+1. Ashley is a librarian.
+2. Ashley is a librarian and is quiet.
+A:",0.3112563490867615,0.307147353887558,0.12429308891296387
+"Q: Which is more likely?
+1. Ashley is a librarian.
+2. Ashley is a librarian and is shy.
+A:",0.30877116322517395,0.29278528690338135,0.1280469298362732
+"Q: Which is more likely?
+1. Ashley is a librarian and is quiet.
+2. Ashley is a librarian.
+A:",1.3742833137512207,1.2692798376083374,1.9652866125106812
+"Q: Which is more likely?
+1. Ashley is a librarian and is shy.
+2. Ashley is a librarian.
+A:",1.3810499906539917,1.3075729608535767,2.0056586265563965
+"Question: Which is more likely?
+A. Ashley is a librarian.
+B. Ashley is a librarian and is quiet.
+Answer:",0.5331652164459229,1.130171298980713,1.438445806503296
+"Question: Which is more likely?
+A. Ashley is a librarian.
+B. Ashley is a librarian and is shy.
+Answer:",0.5469818711280823,1.1197481155395508,1.3717687129974365
+"Question: Which is more likely?
+A. Ashley is a librarian and is quiet.
+B. Ashley is a librarian.
+Answer:",0.9626245498657227,0.3988870084285736,0.2675981819629669
+"Question: Which is more likely?
+A. Ashley is a librarian and is shy.
+B. Ashley is a librarian.
+Answer:",0.9503443837165833,0.3715943396091461,0.30189943313598633
+"Q: Which is more likely?
+1. Ashley is a librarian.
+2. Ashley is a librarian and Ashley is quiet.
+A:",0.3041956126689911,0.3047483563423157,0.11647585779428482
+"Q: Which is more likely?
+1. Ashley is a librarian.
+2. Ashley is a librarian and Ashley is shy.
+A:",0.3011907637119293,0.28246915340423584,0.1175612285733223
+"Q: Which is more likely?
+1. Ashley is a librarian and Ashley is quiet.
+2. Ashley is a librarian.
+A:",1.3667930364608765,1.209303379058838,1.9556937217712402
+"Q: Which is more likely?
+1. Ashley is a librarian and Ashley is shy.
+2. Ashley is a librarian.
+A:",1.3896418809890747,1.2680294513702393,2.0078015327453613
+"Q: Which is more likely?
+1. Ashley is a librarian.
+2. Ashley is quiet and is a librarian.
+A:",0.3095380961894989,0.27685391902923584,0.11411962658166885
+"Q: Which is more likely?
+1. Ashley is a librarian.
+2. Ashley is shy and is a librarian.
+A:",0.3053019344806671,0.2709299325942993,0.1194700375199318
+"Q: Which is more likely?
+1. Ashley is quiet and is a librarian.
+2. Ashley is a librarian.
+A:",1.3222787380218506,1.2951786518096924,1.903701901435852
+"Q: Which is more likely?
+1. Ashley is shy and is a librarian.
+2. Ashley is a librarian.
+A:",1.3479478359222412,1.325974464416504,1.969663143157959
+"Q: Which is more likely to be true?
+1. Ashley is a librarian.
+2. Ashley is a librarian and is quiet.
+A:",0.295198917388916,0.26716670393943787,0.10063699632883072
+"Q: Which is more likely to be true?
+1. Ashley is a librarian.
+2. Ashley is a librarian and is shy.
+A:",0.2933240830898285,0.25558653473854065,0.10564462095499039
+"Q: Which is more likely to be true?
+1. Ashley is a librarian and is quiet.
+2. Ashley is a librarian.
+A:",1.432687520980835,1.3814499378204346,2.1629765033721924
+"Q: Which is more likely to be true?
+1. Ashley is a librarian and is shy.
+2. Ashley is a librarian.
+A:",1.4394209384918213,1.4211901426315308,2.1989400386810303
+"Q: Which is more probable?
+1. Ashley is a librarian.
+2. Ashley is a librarian and is quiet.
+A:",0.29810917377471924,0.2969311773777008,0.11419045925140381
+"Q: Which is more probable?
+1. Ashley is a librarian.
+2. Ashley is a librarian and is shy.
+A:",0.2939724326133728,0.28504014015197754,0.11866617202758789
+"Q: Which is more probable?
+1. Ashley is a librarian and is quiet.
+2. Ashley is a librarian.
+A:",1.4137043952941895,1.3055088520050049,2.018615961074829
+"Q: Which is more probable?
+1. Ashley is a librarian and is shy.
+2. Ashley is a librarian.
+A:",1.4244270324707031,1.3459831476211548,2.08618426322937
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a librarian.
+2. Ashley is a librarian and is quiet.
+A:",0.3010042905807495,0.23893249034881592,0.07690081000328064
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a librarian.
+2. Ashley is a librarian and is shy.
+A:",0.30310866236686707,0.22538341581821442,0.07689341902732849
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a librarian and is quiet.
+2. Ashley is a librarian.
+A:",1.4241373538970947,1.4904022216796875,2.481262683868408
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a librarian and is shy.
+2. Ashley is a librarian.
+A:",1.4192982912063599,1.536307454109192,2.5345263481140137
+"Q: Which is more likely?
+1. Ashley is a nurse.
+2. Ashley is a nurse and is caring.
+A:",0.3191061019897461,0.32242438197135925,0.14773871004581451
+"Q: Which is more likely?
+1. Ashley is a nurse.
+2. Ashley is a nurse and is gentle.
+A:",0.3571077883243561,0.33929866552352905,0.1386747658252716
+"Q: Which is more likely?
+1. Ashley is a nurse and is caring.
+2. Ashley is a nurse.
+A:",1.2588517665863037,1.2911763191223145,1.9146108627319336
+"Q: Which is more likely?
+1. Ashley is a nurse and is gentle.
+2. Ashley is a nurse.
+A:",1.2196890115737915,1.2194523811340332,1.9200661182403564
+"Question: Which is more likely?
+A. Ashley is a nurse.
+B. Ashley is a nurse and is caring.
+Answer:",0.568552553653717,0.8783730268478394,1.2918951511383057
+"Question: Which is more likely?
+A. Ashley is a nurse.
+B. Ashley is a nurse and is gentle.
+Answer:",0.5546461939811707,0.9135963916778564,1.3464642763137817
+"Question: Which is more likely?
+A. Ashley is a nurse and is caring.
+B. Ashley is a nurse.
+Answer:",0.8726184964179993,0.5013362765312195,0.3228026330471039
+"Question: Which is more likely?
+A. Ashley is a nurse and is gentle.
+B. Ashley is a nurse.
+Answer:",0.8755751848220825,0.46513664722442627,0.3107146918773651
+"Q: Which is more likely?
+1. Ashley is a nurse.
+2. Ashley is a nurse and Ashley is caring.
+A:",0.30742791295051575,0.31823793053627014,0.1413070261478424
+"Q: Which is more likely?
+1. Ashley is a nurse.
+2. Ashley is a nurse and Ashley is gentle.
+A:",0.3384609520435333,0.33927667140960693,0.13124395906925201
+"Q: Which is more likely?
+1. Ashley is a nurse and Ashley is caring.
+2. Ashley is a nurse.
+A:",1.2668399810791016,1.2137341499328613,1.9209870100021362
+"Q: Which is more likely?
+1. Ashley is a nurse and Ashley is gentle.
+2. Ashley is a nurse.
+A:",1.2444603443145752,1.1385505199432373,1.9551289081573486
+"Q: Which is more likely?
+1. Ashley is a nurse.
+2. Ashley is caring and is a nurse.
+A:",0.3227125108242035,0.3063834309577942,0.13329681754112244
+"Q: Which is more likely?
+1. Ashley is a nurse.
+2. Ashley is gentle and is a nurse.
+A:",0.3597230315208435,0.32479727268218994,0.13381563127040863
+"Q: Which is more likely?
+1. Ashley is caring and is a nurse.
+2. Ashley is a nurse.
+A:",1.274820327758789,1.2919729948043823,1.9752812385559082
+"Q: Which is more likely?
+1. Ashley is gentle and is a nurse.
+2. Ashley is a nurse.
+A:",1.2304441928863525,1.239333152770996,1.8978427648544312
+"Q: Which is more likely to be true?
+1. Ashley is a nurse.
+2. Ashley is a nurse and is caring.
+A:",0.3021961748600006,0.29049062728881836,0.1160171777009964
+"Q: Which is more likely to be true?
+1. Ashley is a nurse.
+2. Ashley is a nurse and is gentle.
+A:",0.3427509665489197,0.3011748790740967,0.1100216656923294
+"Q: Which is more likely to be true?
+1. Ashley is a nurse and is caring.
+2. Ashley is a nurse.
+A:",1.310329556465149,1.3526051044464111,2.1157193183898926
+"Q: Which is more likely to be true?
+1. Ashley is a nurse and is gentle.
+2. Ashley is a nurse.
+A:",1.266215443611145,1.3083856105804443,2.1421735286712646
+"Q: Which is more probable?
+1. Ashley is a nurse.
+2. Ashley is a nurse and is caring.
+A:",0.30344000458717346,0.30825069546699524,0.13146986067295074
+"Q: Which is more probable?
+1. Ashley is a nurse.
+2. Ashley is a nurse and is gentle.
+A:",0.3327665627002716,0.329122930765152,0.12660743296146393
+"Q: Which is more probable?
+1. Ashley is a nurse and is caring.
+2. Ashley is a nurse.
+A:",1.3076565265655518,1.3379974365234375,2.000185489654541
+"Q: Which is more probable?
+1. Ashley is a nurse and is gentle.
+2. Ashley is a nurse.
+A:",1.28611421585083,1.2584420442581177,1.9951095581054688
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a nurse.
+2. Ashley is a nurse and is caring.
+A:",0.31545549631118774,0.26259520649909973,0.08538811653852463
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a nurse.
+2. Ashley is a nurse and is gentle.
+A:",0.3545357882976532,0.27364322543144226,0.08111417293548584
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a nurse and is caring.
+2. Ashley is a nurse.
+A:",1.2945306301116943,1.4355117082595825,2.4198853969573975
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a nurse and is gentle.
+2. Ashley is a nurse.
+A:",1.2694388628005981,1.3963404893875122,2.46264386177063
+"Q: Which is more likely?
+1. Ashley is a teacher.
+2. Ashley is a teacher and is patient.
+A:",0.3276728391647339,0.32542622089385986,0.12220317870378494
+"Q: Which is more likely?
+1. Ashley is a teacher.
+2. Ashley is a teacher and is strict.
+A:",0.3245857357978821,0.3244969844818115,0.13542939722537994
+"Q: Which is more likely?
+1. Ashley is a teacher and is patient.
+2. Ashley is a teacher.
+A:",1.247612714767456,1.216878890991211,2.0774502754211426
+"Q: Which is more likely?
+1. Ashley is a teacher and is strict.
+2. Ashley is a teacher.
+A:",1.2590047121047974,1.2856614589691162,2.043506622314453
+"Question: Which is more likely?
+A. Ashley is a teacher.
+B. Ashley is a teacher and is patient.
+Answer:",0.4829142689704895,0.9517349600791931,1.3976112604141235
+"Question: Which is more likely?
+A. Ashley is a teacher.
+B. Ashley is a teacher and is strict.
+Answer:",0.51069176197052,0.984610378742218,1.4560624361038208
+"Question: Which is more likely?
+A. Ashley is a teacher and is patient.
+B. Ashley is a teacher.
+Answer:",0.98383629322052,0.45761942863464355,0.2663370966911316
+"Question: Which is more likely?
+A. Ashley is a teacher and is strict.
+B. Ashley is a teacher.
+Answer:",0.9312781095504761,0.4412972629070282,0.25524404644966125
+"Q: Which is more likely?
+1. Ashley is a teacher.
+2. Ashley is a teacher and Ashley is patient.
+A:",0.3209071159362793,0.3302757143974304,0.11572766304016113
+"Q: Which is more likely?
+1. Ashley is a teacher.
+2. Ashley is a teacher and Ashley is strict.
+A:",0.31704825162887573,0.3178575932979584,0.11987712234258652
+"Q: Which is more likely?
+1. Ashley is a teacher and Ashley is patient.
+2. Ashley is a teacher.
+A:",1.264605164527893,1.165739893913269,2.099630832672119
+"Q: Which is more likely?
+1. Ashley is a teacher and Ashley is strict.
+2. Ashley is a teacher.
+A:",1.2794972658157349,1.2382385730743408,2.090885877609253
+"Q: Which is more likely?
+1. Ashley is a teacher.
+2. Ashley is patient and is a teacher.
+A:",0.33912307024002075,0.31197747588157654,0.11734721809625626
+"Q: Which is more likely?
+1. Ashley is a teacher.
+2. Ashley is strict and is a teacher.
+A:",0.31997421383857727,0.29696252942085266,0.12459477037191391
+"Q: Which is more likely?
+1. Ashley is patient and is a teacher.
+2. Ashley is a teacher.
+A:",1.2292886972427368,1.2468024492263794,2.0663037300109863
+"Q: Which is more likely?
+1. Ashley is strict and is a teacher.
+2. Ashley is a teacher.
+A:",1.2923604249954224,1.2634611129760742,2.063894033432007
+"Q: Which is more likely to be true?
+1. Ashley is a teacher.
+2. Ashley is a teacher and is patient.
+A:",0.3122822344303131,0.29122036695480347,0.10079243034124374
+"Q: Which is more likely to be true?
+1. Ashley is a teacher.
+2. Ashley is a teacher and is strict.
+A:",0.3120081126689911,0.2908158302307129,0.11329697072505951
+"Q: Which is more likely to be true?
+1. Ashley is a teacher and is patient.
+2. Ashley is a teacher.
+A:",1.3034851551055908,1.3056089878082275,2.273207426071167
+"Q: Which is more likely to be true?
+1. Ashley is a teacher and is strict.
+2. Ashley is a teacher.
+A:",1.3062430620193481,1.3542461395263672,2.2178821563720703
+"Q: Which is more probable?
+1. Ashley is a teacher.
+2. Ashley is a teacher and is patient.
+A:",0.3093796670436859,0.305765837430954,0.10947079956531525
+"Q: Which is more probable?
+1. Ashley is a teacher.
+2. Ashley is a teacher and is strict.
+A:",0.3057277202606201,0.31435078382492065,0.12096694111824036
+"Q: Which is more probable?
+1. Ashley is a teacher and is patient.
+2. Ashley is a teacher.
+A:",1.3016407489776611,1.2678537368774414,2.161470890045166
+"Q: Which is more probable?
+1. Ashley is a teacher and is strict.
+2. Ashley is a teacher.
+A:",1.3194820880889893,1.3247196674346924,2.1533095836639404
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a teacher.
+2. Ashley is a teacher and is patient.
+A:",0.3204885423183441,0.25701993703842163,0.07610196620225906
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a teacher.
+2. Ashley is a teacher and is strict.
+A:",0.32139331102371216,0.2616857886314392,0.07907425612211227
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a teacher and is patient.
+2. Ashley is a teacher.
+A:",1.302873969078064,1.3932991027832031,2.5417189598083496
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a teacher and is strict.
+2. Ashley is a teacher.
+A:",1.2967360019683838,1.4418261051177979,2.53153395652771
+"Q: Which is more likely?
+1. Ashley is a banker.
+2. Ashley is a banker and is rich.
+A:",0.27079227566719055,0.29633191227912903,0.1463777720928192
+"Q: Which is more likely?
+1. Ashley is a banker.
+2. Ashley is a banker and is wealthy.
+A:",0.27554479241371155,0.2908870279788971,0.1448643058538437
+"Q: Which is more likely?
+1. Ashley is a banker and is rich.
+2. Ashley is a banker.
+A:",1.4288679361343384,1.2895560264587402,1.8674685955047607
+"Q: Which is more likely?
+1. Ashley is a banker and is wealthy.
+2. Ashley is a banker.
+A:",1.435895562171936,1.2923160791397095,1.8599495887756348
+"Question: Which is more likely?
+A. Ashley is a banker.
+B. Ashley is a banker and is rich.
+Answer:",0.6700662970542908,1.1475670337677002,1.3758833408355713
+"Question: Which is more likely?
+A. Ashley is a banker.
+B. Ashley is a banker and is wealthy.
+Answer:",0.6665780544281006,1.1224377155303955,1.3788295984268188
+"Question: Which is more likely?
+A. Ashley is a banker and is rich.
+B. Ashley is a banker.
+Answer:",0.7582679390907288,0.35816070437431335,0.2789672017097473
+"Question: Which is more likely?
+A. Ashley is a banker and is wealthy.
+B. Ashley is a banker.
+Answer:",0.790905773639679,0.36253970861434937,0.2923917770385742
+"Q: Which is more likely?
+1. Ashley is a banker.
+2. Ashley is a banker and Ashley is rich.
+A:",0.26727941632270813,0.30127209424972534,0.1362398862838745
+"Q: Which is more likely?
+1. Ashley is a banker.
+2. Ashley is a banker and Ashley is wealthy.
+A:",0.27130308747291565,0.29441773891448975,0.1338690221309662
+"Q: Which is more likely?
+1. Ashley is a banker and Ashley is rich.
+2. Ashley is a banker.
+A:",1.4337565898895264,1.1873379945755005,1.887662649154663
+"Q: Which is more likely?
+1. Ashley is a banker and Ashley is wealthy.
+2. Ashley is a banker.
+A:",1.4389088153839111,1.2025151252746582,1.8930691480636597
+"Q: Which is more likely?
+1. Ashley is a banker.
+2. Ashley is rich and is a banker.
+A:",0.25303906202316284,0.30218032002449036,0.13507410883903503
+"Q: Which is more likely?
+1. Ashley is a banker.
+2. Ashley is wealthy and is a banker.
+A:",0.25827452540397644,0.290377140045166,0.12786725163459778
+"Q: Which is more likely?
+1. Ashley is rich and is a banker.
+2. Ashley is a banker.
+A:",1.503649353981018,1.304446816444397,1.9315520524978638
+"Q: Which is more likely?
+1. Ashley is wealthy and is a banker.
+2. Ashley is a banker.
+A:",1.4840302467346191,1.3487498760223389,1.9287364482879639
+"Q: Which is more likely to be true?
+1. Ashley is a banker.
+2. Ashley is a banker and is rich.
+A:",0.25788238644599915,0.2720181941986084,0.11600220948457718
+"Q: Which is more likely to be true?
+1. Ashley is a banker.
+2. Ashley is a banker and is wealthy.
+A:",0.26273617148399353,0.2652071714401245,0.11524973064661026
+"Q: Which is more likely to be true?
+1. Ashley is a banker and is rich.
+2. Ashley is a banker.
+A:",1.4848445653915405,1.3487272262573242,2.0871949195861816
+"Q: Which is more likely to be true?
+1. Ashley is a banker and is wealthy.
+2. Ashley is a banker.
+A:",1.49293851852417,1.3505806922912598,2.098353624343872
+"Q: Which is more probable?
+1. Ashley is a banker.
+2. Ashley is a banker and is rich.
+A:",0.26110824942588806,0.28857263922691345,0.13016267120838165
+"Q: Which is more probable?
+1. Ashley is a banker.
+2. Ashley is a banker and is wealthy.
+A:",0.26554152369499207,0.28192707896232605,0.12815316021442413
+"Q: Which is more probable?
+1. Ashley is a banker and is rich.
+2. Ashley is a banker.
+A:",1.4659432172775269,1.3088812828063965,1.9911326169967651
+"Q: Which is more probable?
+1. Ashley is a banker and is wealthy.
+2. Ashley is a banker.
+A:",1.4758630990982056,1.319661021232605,1.9777195453643799
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a banker.
+2. Ashley is a banker and is rich.
+A:",0.26055124402046204,0.239526629447937,0.08524888753890991
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a banker.
+2. Ashley is a banker and is wealthy.
+A:",0.26504722237586975,0.23252570629119873,0.08391555398702621
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a banker and is rich.
+2. Ashley is a banker.
+A:",1.4689372777938843,1.4501721858978271,2.3787527084350586
+"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a banker and is wealthy.
+2. Ashley is a banker.
+A:",1.4708642959594727,1.458276629447937,2.424276828765869
+"Q: Which is more likely?
+1. Ashley is a scientist.
+2. Ashley is a scientist and is smart.
+A:",0.3156040906906128,0.31913527846336365,0.11622585356235504
+"Q: Which is more likely?
+1. Ashley is a scientist.
+2. Ashley is a scientist and is a nerd.
+A:",0.30573177337646484,0.31966304779052734,0.10105311125516891
+"Q: Which is more likely?
+1. Ashley is a scientist and is smart.
+2. Ashley is a scientist.
+A:",1.330674171447754,1.276976227760315,2.141181707382202
+"Q: Which is more likely?
+1. Ashley is a scientist and is a nerd.
+2. Ashley is a scientist.
+A:",1.3509877920150757,1.2680020332336426,2.184497594833374
+"Question: Which is more likely?
+A. Ashley is a scientist.
+B. Ashley is a scientist and is smart.
+Answer:",0.5183910727500916,0.9678674936294556,1.2718251943588257
+"Question: Which is more likely?
+A. Ashley is a scientist.
+B. Ashley is a scientist and is a nerd.
+Answer:",0.5781605243682861,0.9491609334945679,1.3433763980865479
+"Question: Which is more likely?
+A. Ashley is a scientist and is smart.
+B. Ashley is a scientist.
+Answer:",0.9676405191421509,0.42426639795303345,0.3270316421985626
+"Question: Which is more likely?
+A. Ashley is a scientist and is a nerd.
+B. Ashley is a scientist.
+Answer:",0.8885419368743896,0.3781581521034241,0.27906984090805054
+"Q: Which is more likely?
+1. Ashley is a scientist.
+2. Ashley is a scientist and Ashley is smart.
+A:",0.3056553602218628,0.31258514523506165,0.10795646905899048
+"Q: Which is more likely?
+1. Ashley is a scientist.
+2. Ashley is a scientist and Ashley is a nerd.
+A:",0.2971350848674774,0.3211144804954529,0.09498459845781326
+"Q: Which is more likely?
+1. Ashley is a scientist and Ashley is smart.
+2. Ashley is a scientist.
+A:",1.3398607969284058,1.2547088861465454,2.138267755508423
+"Q: Which is more likely?
+1. Ashley is a scientist and Ashley is a nerd.
+2. Ashley is a scientist.
+A:",1.370251178741455,1.196183204650879,2.2132530212402344
+"Q: Which is more likely?
+1. Ashley is a scientist.
+2. Ashley is smart and is a scientist.
+A:",0.311125785112381,0.3095400929450989,0.10688332468271255
+"Q: Which is more likely?
+1. Ashley is a scientist.
+2. Ashley is a nerd and is a scientist.
+A:",0.2939763367176056,0.3051574230194092,0.09851785004138947
+"Q: Which is more likely?
+1. Ashley is smart and is a scientist.
+2. Ashley is a scientist.
+A:",1.2949293851852417,1.2618088722229004,2.206511974334717
+"Q: Which is more likely?
+1. Ashley is a nerd and is a scientist.
+2. Ashley is a scientist.
+A:",1.357066035270691,1.3295519351959229,2.262312412261963
+"Q: Which is more likely to be true?
+1. Ashley is a scientist.
+2. Ashley is a scientist and is smart.
+A:",0.2976217269897461,0.2998915910720825,0.09069984406232834
+"Q: Which is more likely to be true?
+1. Ashley is a scientist.
+2. Ashley is a scientist and is a nerd.
+A:",0.2874099910259247,0.30076250433921814,0.08084537833929062
+"Q: Which is more likely to be true?
+1. Ashley is a scientist and is smart.
+2. Ashley is a scientist.
+A:",1.3987293243408203,1.3163087368011475,2.3654685020446777
+"Q: Which is more likely to be true?
+1. Ashley is a scientist and is a nerd.
+2. Ashley is a scientist.
+A:",1.4202353954315186,1.3222172260284424,2.4047789573669434

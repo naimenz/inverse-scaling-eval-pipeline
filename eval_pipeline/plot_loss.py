@@ -22,7 +22,7 @@ def plot_loss(loss_dict: dict[str, float]) -> None:
     xy_pairs = [(size_dict[size], loss) for size, loss in loss_dict.items()]
     xs, ys = zip(*sorted(xy_pairs, key=lambda pair: pair[0]))
     print(xs, ys)
-    plt.plot(xs, ys, label="syllogism")
+    plt.plot(xs, ys, label="extension fallacy")
     labels, ticks = zip(
         *[
             (name, n_params)
