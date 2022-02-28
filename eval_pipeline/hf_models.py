@@ -8,7 +8,6 @@ from transformers import AutoModelForCausalLM, AutoTokenizer  # type: ignore
 import torch
 import torch.nn.functional as F
 from pprint import pprint
-from eval_pipeline.utils import YAxis
 import logging
 
 
@@ -25,12 +24,13 @@ HFSize = Literal[
 
 
 class HFWrapper:
-    def __init__(self, size: HFSize) -> None:
+    def __init__(self, size: HFSize, device: str = "cpu") -> None:
         # have to append the hoster if using Eleuther models
+        self.device = device
         prefix = ""
         if size.startswith("gpt-neo") or size.startswith("gpt-j"):
             prefix = "EleutherAI/"
-        self.model = AutoModelForCausalLM.from_pretrained(prefix + size)
+        self.model = AutoModelForCausalLM.from_pretrained(prefix + size).to(self.device)
         self.tokenizer = AutoTokenizer.from_pretrained(prefix + size)
         self.id2token = {i: t for t, i in self.tokenizer.vocab.items()}
 
@@ -61,7 +61,7 @@ class HFWrapper:
         return -normalised_logprobs[answer_ix].item()
 
     def get_logits(self, text: str) -> torch.Tensor:
-        encoded_input = self.tokenizer(text, return_tensors="pt")
+        encoded_input = self.tokenizer(text, return_tensors="pt").to(self.device)
         output = self.model(**encoded_input)
         raw_logits = output["logits"][0, -1]
         return raw_logits

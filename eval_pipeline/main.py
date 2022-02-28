@@ -3,8 +3,11 @@ from __future__ import annotations
 import argparse
 import ast
 import csv
+import logging
+import time
 from typing import Any, cast
 import pandas as pd
+import torch
 from tqdm import tqdm
 
 from eval_pipeline.hf_models import HFSize, HFWrapper
@@ -20,7 +23,11 @@ def main(args: argparse.Namespace):
     gpt3_sizes = cast(
         "list[GPT3Size]", [size for size in sizes if size in ("ada", "babbage", "curie", "davinci")]
     )
-    hf_models = {size: HFWrapper(size) for size in hf_sizes}
+    device = "cuda:0" if args.use_gpu and torch.cuda.is_available() else "cpu"
+    tic = time.perf_counter()
+    hf_models = {size: HFWrapper(size, device) for size in hf_sizes}
+    toc = time.perf_counter()
+    logging.info(f"Loading HF models took {toc - tic:0.4f} seconds")
 
     with open(args.write_path, "w") as f:
         writer = csv.DictWriter(f, fieldnames=["text"] + hf_sizes + gpt3_sizes)
@@ -53,13 +60,13 @@ if __name__ == "__main__":
         description="Run model sizes and get losses for texts in a file"
     )
     parser.add_argument(
-        "--read_path",
+        "--read-path",
         type=str,
         help="The file path (relative or absolute) to the data file",
         required=True,
     )
     parser.add_argument(
-        "--write_path",
+        "--write-path",
         type=str,
         help="The file path (relative or absolute) to write results to",
         required=True,
@@ -85,6 +92,11 @@ if __name__ == "__main__":
             "davinci",
         ],
         required=True,
+    )
+    parser.add_argument(
+        "--use-gpu",
+        action="store_true",
+        help="Whether to use a GPU (if available)",
     )
     args = parser.parse_args()
     main(args)
