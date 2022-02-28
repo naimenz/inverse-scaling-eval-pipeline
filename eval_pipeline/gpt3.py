@@ -4,7 +4,7 @@ API key is kept in a .env file for privacy.
 """
 from __future__ import annotations
 from collections import defaultdict
-from typing import Optional
+from typing import Iterable, Optional
 from typing_extensions import Literal
 import requests
 import os
@@ -14,6 +14,7 @@ from pprint import pprint
 import logging
 import torch
 import torch.nn.functional as F
+from tqdm import tqdm
 
 
 GPT3Size = Literal["ada", "babbage", "curie", "davinci"]
@@ -73,9 +74,9 @@ def json_to_loss(
 
 def evaluate_gpt3_text(
     text: str,
-    sizes: list[GPT3Size],
-    answer_ix: int,
+    sizes: Iterable[GPT3Size],
     possible_answers: tuple[str, str],
+    answer_ix: int,
 ) -> dict[str, float]:
     return_dict = dict()
     for size in sizes:
@@ -84,3 +85,13 @@ def evaluate_gpt3_text(
         value = json_to_loss(json, answer_ix, possible_answers)
         return_dict[size] = value
     return return_dict
+
+def evaluate_gpt3_texts(
+    text_possible_answers_ix_tuple: Iterable[tuple[str, tuple[str, ...], int]],
+    sizes: Iterable[GPT3Size],
+) -> dict[str, dict[str, float]]:
+    text_model_losses = dict()
+    for text, possible_answers, answer_ix in tqdm(text_possible_answers_ix_tuple):
+        return_dict = evaluate_gpt3_text(text, sizes, possible_answers, answer_ix)
+        text_model_losses[text] = return_dict
+    return text_model_losses

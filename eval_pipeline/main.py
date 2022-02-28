@@ -4,55 +4,54 @@ import argparse
 import ast
 import csv
 import logging
+from pprint import pprint
 import time
 from typing import Any, cast
 import pandas as pd
 import torch
 from tqdm import tqdm
 
-from eval_pipeline.hf_models import HFSize, HFWrapper
-from eval_pipeline.gpt3 import GPT3Size, evaluate_gpt3_text
+from eval_pipeline.hf_models import HFSize, HFWrapper, evaluate_hf_texts
+from eval_pipeline.gpt3 import GPT3Size, evaluate_gpt3_text, evaluate_gpt3_texts
 
 
 def main(args: argparse.Namespace):
-    df = pd.read_csv(args.read_path, index_col=0)
     sizes = args.sizes
     hf_sizes = cast(
-        "list[HFSize]", [size for size in sizes if size not in ("ada", "babbage", "curie", "davinci")]
+        "list[HFSize]",
+        [size for size in sizes if size not in ("ada", "babbage", "curie", "davinci")],
     )
     gpt3_sizes = cast(
-        "list[GPT3Size]", [size for size in sizes if size in ("ada", "babbage", "curie", "davinci")]
+        "list[GPT3Size]",
+        [size for size in sizes if size in ("ada", "babbage", "curie", "davinci")],
     )
     device = "cuda:0" if args.use_gpu and torch.cuda.is_available() else "cpu"
-    tic = time.perf_counter()
-    hf_models = {size: HFWrapper(size, device) for size in hf_sizes}
-    toc = time.perf_counter()
-    logging.info(f"Loading HF models took {toc - tic:0.4f} seconds")
 
-    with open(args.write_path, "w") as f:
-        writer = csv.DictWriter(f, fieldnames=["text"] + hf_sizes + gpt3_sizes)
-        writer.writeheader()
-        for _, row in tqdm(df.iterrows(), total=df.shape[0]):
-            row_dict = process_row(row, hf_models, gpt3_sizes)
-            writer.writerow(row_dict)
+    df = pd.read_csv(args.read_path, index_col=0)
+    # we need to convert the string of possible answers back into a list with eval
+    df["possible_answers"] = df["possible_answers"].map(lambda x: ast.literal_eval(x))
 
+    texts = cast("list[str]", list(df["filled_template"]))
+    possible_answers = cast("list[tuple[str, ...]]", list(df["possible_answers"]))
+    answer_indices = cast("list[int]", list(df["answer_ix"]))
+    inputs = list(zip(texts, possible_answers, answer_indices))
 
-def process_row(row, hf_models: dict[str, HFWrapper], gpt3_sizes: list[GPT3Size]):
-    text = cast(str, (row["filled_template"]))
-    answer_ix = cast(int, (row["answer_ix"]))
-    # we need to convert the string back into a list by eval
-    possible_answers = ast.literal_eval(row["possible_answers"])
+    hf_losses = evaluate_hf_texts(inputs, sizes=hf_sizes, device=device)
+    gpt3_losses = evaluate_gpt3_texts(inputs, sizes=gpt3_sizes)
 
-    hf_loss_dict: dict[str, Any] = dict()
-    for size, model in hf_models.items():
-        loss = model.get_loss(text, answer_ix, possible_answers)
-        hf_loss_dict[size] = loss
+    # combining the two sets of losses together into a single dict
+    if len(hf_losses) > 0 and len(gpt3_losses) > 0:
+        all_losses = {text: {**hf_losses[text], **gpt3_losses[text]} for text in texts}
+    elif len(hf_losses) == 0:
+        all_losses = gpt3_losses
+    elif len(gpt3_losses) == 0:
+        all_losses = hf_losses
+    else:
+        raise ValueError("must pass some sizes")
 
-    gpt3_loss_dict: dict[str, Any] = evaluate_gpt3_text(
-        text, gpt3_sizes, answer_ix, possible_answers
-    )
-    row_dict = {"text": text, **hf_loss_dict, **gpt3_loss_dict}
-    return row_dict
+    rows = [{"text": text, **losses} for text, losses in all_losses.items()]
+    df = pd.DataFrame.from_records(rows)
+    df.to_csv(args.write_path)
 
 
 if __name__ == "__main__":

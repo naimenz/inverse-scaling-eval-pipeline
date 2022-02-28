@@ -3,7 +3,11 @@ Uses the HuggingFace implementations of GPT-2.
 Currently uses CPU because speed is not yet a concern.
 """
 from __future__ import annotations
+import json
+import time
+from typing import Iterable, Sequence
 from typing_extensions import Literal
+from tqdm import tqdm
 from transformers import AutoModelForCausalLM, AutoTokenizer  # type: ignore
 import torch
 import torch.nn.functional as F
@@ -35,7 +39,7 @@ class HFWrapper:
         self.id2token = {i: t for t, i in self.tokenizer.vocab.items()}
 
     def get_loss(
-        self, text: str, answer_ix: int, possible_answers: tuple[str, str]
+        self, text: str, possible_answers: tuple[str, str], answer_ix: int
     ) -> float:
         """answer_ix gives the index of the intended answer from possible_answers"""
         logits = self.get_logits(text)
@@ -73,20 +77,25 @@ class HFWrapper:
 
 
 def evaluate_hf_texts(
-    text_answer_ix_pairs: list[tuple[str, int]],
-    sizes: tuple[HFSize, ...],
-    possible_answers: tuple[str, str],
+    text_possible_answers_ix_tuple: Iterable[tuple[str, tuple[str, ...], int]],
+    sizes: Iterable[HFSize],
+    device: str = "cpu",
 ) -> dict[str, dict[str, float]]:
     logging.info("CALLED HF")
-    model_dict = {size: HFWrapper(size) for size in sizes}
-    all_return_dicts = dict()
-
-    for text, answer_ix in text_answer_ix_pairs:
-        # for now, just using yes/no questions
-        return_dict = dict()
-        for size, model in model_dict.items():
-            logging.info(f"RUNNING {size}")
-            value = model.get_loss(text, answer_ix, possible_answers)
-            return_dict[size] = value
-        all_return_dicts[text] = return_dict
-    return all_return_dicts
+    print(device)
+    text_model_losses = {text: dict() for (text, _, _) in text_possible_answers_ix_tuple}
+    for size in tqdm(sizes):
+        tic = time.perf_counter()
+        model = HFWrapper(size, device)
+        toc = time.perf_counter()
+        logging.info(f"Loaded {size} in {toc - tic:0.4f} seconds")
+        for text, possible_answers, answer_ix in tqdm(text_possible_answers_ix_tuple, leave=False):
+            value = model.get_loss(text, possible_answers, answer_ix)
+            text_model_losses[text][size] = value
+        # free the device memory before using the next size
+        del model
+        torch.cuda.empty_cache()
+        # in case of crashes during evaluation, cache it for potential recovery
+        with open('temp.cache', 'w') as f:
+            json.dump(text_model_losses, f)
+    return text_model_losses
