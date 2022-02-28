@@ -7,44 +7,44 @@ from typing import Any, cast
 import pandas as pd
 from tqdm import tqdm
 
-from eval_pipeline.gpt2 import GPT2Size, GPT2Wrapper
+from eval_pipeline.hf_models import HFSize, HFWrapper
 from eval_pipeline.gpt3 import GPT3Size, evaluate_gpt3_text
 
 
 def main(args: argparse.Namespace):
     df = pd.read_csv(args.read_path, index_col=0)
     sizes = args.sizes
-    gpt2_sizes = cast(
-        "list[GPT2Size]", [size for size in sizes if size.startswith("gpt2")]
+    hf_sizes = cast(
+        "list[HFSize]", [size for size in sizes if size not in ("ada", "babbage", "curie", "davinci")]
     )
     gpt3_sizes = cast(
-        "list[GPT3Size]", [size for size in sizes if not size.startswith("gpt2")]
+        "list[GPT3Size]", [size for size in sizes if size in ("ada", "babbage", "curie", "davinci")]
     )
-    gpt2_models = {size: GPT2Wrapper(size) for size in gpt2_sizes}
+    hf_models = {size: HFWrapper(size) for size in hf_sizes}
 
     with open(args.write_path, "w") as f:
-        writer = csv.DictWriter(f, fieldnames=["text"] + gpt2_sizes + gpt3_sizes)
+        writer = csv.DictWriter(f, fieldnames=["text"] + hf_sizes + gpt3_sizes)
         writer.writeheader()
         for _, row in tqdm(df.iterrows(), total=df.shape[0]):
-            row_dict = process_row(row, gpt2_models, gpt3_sizes)
+            row_dict = process_row(row, hf_models, gpt3_sizes)
             writer.writerow(row_dict)
 
 
-def process_row(row, gpt2_models: dict[str, GPT2Wrapper], gpt3_sizes: list[GPT3Size]):
+def process_row(row, hf_models: dict[str, HFWrapper], gpt3_sizes: list[GPT3Size]):
     text = cast(str, (row["filled_template"]))
     answer_ix = cast(int, (row["answer_ix"]))
     # we need to convert the string back into a list by eval
     possible_answers = ast.literal_eval(row["possible_answers"])
 
-    gpt2_loss_dict: dict[str, Any] = dict()
-    for size, model in gpt2_models.items():
+    hf_loss_dict: dict[str, Any] = dict()
+    for size, model in hf_models.items():
         loss = model.get_loss(text, answer_ix, possible_answers)
-        gpt2_loss_dict[size] = loss
+        hf_loss_dict[size] = loss
 
     gpt3_loss_dict: dict[str, Any] = evaluate_gpt3_text(
         text, gpt3_sizes, answer_ix, possible_answers
     )
-    row_dict = {"text": text, **gpt2_loss_dict, **gpt3_loss_dict}
+    row_dict = {"text": text, **hf_loss_dict, **gpt3_loss_dict}
     return row_dict
 
 
@@ -74,6 +74,11 @@ if __name__ == "__main__":
             "gpt2",
             "gpt2-medium",
             "gpt2-large",
+            "gpt2-xl",
+            "gpt-neo-125M",
+            "gpt-neo-1.3B",
+            "gpt-neo-2.7B",
+            "gpt-j-6B",
             "ada",
             "babbage",
             "curie",

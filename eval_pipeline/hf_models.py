@@ -4,7 +4,7 @@ Currently uses CPU because speed is not yet a concern.
 """
 from __future__ import annotations
 from typing_extensions import Literal
-from transformers import GPT2LMHeadModel, GPT2TokenizerFast  # type: ignore
+from transformers import AutoModelForCausalLM, AutoTokenizer  # type: ignore
 import torch
 import torch.nn.functional as F
 from pprint import pprint
@@ -12,30 +12,27 @@ from eval_pipeline.utils import YAxis
 import logging
 
 
-GPT2Size = Literal["gpt2", "gpt2-medium", "gpt2-large", "gpt2-xl"]
+HFSize = Literal[
+    "gpt2",
+    "gpt2-medium",
+    "gpt2-large",
+    "gpt2-xl",
+    "gpt-neo-125M",
+    "gpt-neo-1.3B",
+    "gpt-neo-2.7B",
+    "gpt-j-6B",
+]
 
 
-class GPT2Wrapper:
-    def __init__(self, size: GPT2Size) -> None:
-        self.model = GPT2LMHeadModel.from_pretrained(size)
-        self.tokenizer = GPT2TokenizerFast.from_pretrained("gpt2")
+class HFWrapper:
+    def __init__(self, size: HFSize) -> None:
+        # have to append the hoster if using Eleuther models
+        prefix = ""
+        if size.startswith("gpt-neo") or size.startswith("gpt-j"):
+            prefix = "EleutherAI/"
+        self.model = AutoModelForCausalLM.from_pretrained(prefix + size)
+        self.tokenizer = AutoTokenizer.from_pretrained(prefix + size)
         self.id2token = {i: t for t, i in self.tokenizer.vocab.items()}
-
-    def get_positive_prob(self, text: str, possible_answers: tuple[str, str]) -> float:
-        """Return the probability that the answer to the question is in the affirmative.
-        For now, we just check the tokens for " Yes" and " No", but more sophisticated schemes are
-        possible with e.g. averaging over pairs of answers"""
-        logits = self.get_logits(text)
-        # TODO: replace this with a loop over token pairs
-        positive_token_id, negative_token_id = self.tokenizer(list(possible_answers))[
-            "input_ids"
-        ]
-        positive_logit = logits[positive_token_id[0]]
-        negative_logit = logits[negative_token_id[0]]
-        positive_prob, negative_prob = F.softmax(
-            torch.Tensor([positive_logit, negative_logit]), dim=-1
-        )
-        return positive_prob.item()
 
     def get_loss(
         self, text: str, answer_ix: int, possible_answers: tuple[str, str]
@@ -50,9 +47,12 @@ class GPT2Wrapper:
         positive_logprob = logprobs[positive_token_id[0]]
         negative_logprob = logprobs[negative_token_id[0]]
         # DEBUG: checking alternative token choices
-        other_pos, other_neg = self.tokenizer([" 1", " 2",])[
-            "input_ids"
-        ]
+        other_pos, other_neg = self.tokenizer(
+            [
+                " 1",
+                " 2",
+            ]
+        )["input_ids"]
 
         # For now I'm doing two log_softmaxes, which seems like it must be avoidable
         normalised_logprobs = F.log_softmax(
@@ -72,14 +72,13 @@ class GPT2Wrapper:
         return logit_dict
 
 
-def evaluate_gpt2_texts(
+def evaluate_hf_texts(
     text_answer_ix_pairs: list[tuple[str, int]],
-    sizes: tuple[GPT2Size, ...],
-    y_axis: YAxis,
+    sizes: tuple[HFSize, ...],
     possible_answers: tuple[str, str],
 ) -> dict[str, dict[str, float]]:
-    logging.info("CALLED GPT2")
-    model_dict = {size: GPT2Wrapper(size) for size in sizes}
+    logging.info("CALLED HF")
+    model_dict = {size: HFWrapper(size) for size in sizes}
     all_return_dicts = dict()
 
     for text, answer_ix in text_answer_ix_pairs:
@@ -87,10 +86,7 @@ def evaluate_gpt2_texts(
         return_dict = dict()
         for size, model in model_dict.items():
             logging.info(f"RUNNING {size}")
-            if y_axis == "positive_prob":
-                value = model.get_positive_prob(text, possible_answers)
-            elif y_axis == "loss":
-                value = model.get_loss(text, answer_ix, possible_answers)
+            value = model.get_loss(text, answer_ix, possible_answers)
             return_dict[size] = value
         all_return_dicts[text] = return_dict
     return all_return_dicts
