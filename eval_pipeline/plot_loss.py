@@ -9,20 +9,21 @@ import pandas as pd
 
 
 def main(args: argparse.Namespace):
-    df = pd.read_csv(args.read_path)
-    print(df.head())
-    print(df.info())
+    df = pd.read_csv(args.read_path, index_col=0)
     loss_df = df.drop(columns=["text"])
     averages = {col: np.mean(loss_df[col]) for col in loss_df.columns}
-    plot_loss(averages)
+    standard_errors = {col: np.std(loss_df[col]) / np.sqrt(len(df)) for col in loss_df.columns}
+    print(standard_errors, len(df))
+    plot_loss(averages, standard_errors)
 
 
-def plot_loss(loss_dict: dict[str, float]) -> None:
+def plot_loss(loss_dict: dict[str, float], standard_errors: dict[str, float]) -> None:
     fig = plt.figure(figsize=(20, 10))
     xy_pairs = [(size_dict[size], loss) for size, loss in loss_dict.items()]
-    xs, ys = zip(*sorted(xy_pairs, key=lambda pair: pair[0]))
-    print(xs, ys)
-    plt.plot(xs, ys, label="extension fallacy")
+    errorbar_data = [(size_dict[size], loss, standard_errors[size]) for size, loss in loss_dict.items()]
+    xs, ys, yerrs = zip(*sorted(errorbar_data, key=lambda pair: pair[0]))
+    plt.errorbar(xs, ys, yerrs)
+    
     labels, ticks = zip(
         *[
             (name, n_params)
