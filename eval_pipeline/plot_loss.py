@@ -19,7 +19,6 @@ def main(args: argparse.Namespace):
 
 def plot_loss(loss_dict: dict[str, float], standard_errors: dict[str, float]) -> None:
     fig = plt.figure(figsize=(20, 10))
-    xy_pairs = [(size_dict[size], loss) for size, loss in loss_dict.items()]
     errorbar_data = [(size_dict[size], loss, standard_errors[size]) for size, loss in loss_dict.items()]
     xs, ys, yerrs = zip(*sorted(errorbar_data, key=lambda pair: pair[0]))
     plt.errorbar(xs, ys, yerrs)

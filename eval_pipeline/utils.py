@@ -17,6 +17,10 @@ size_dict = {
     "babbage": 1_300_000_000,
     "curie": 6_700_000_000,
     "davinci": 175_000_000_000,
+    # gpt neo sizes from their names
+    "gpt-neo-125M": 125_000_000,
+    "gpt-neo-1.3B": 1_300_000_000,
+    "gpt-neo-2.7B": 2_700_000_000,
 }
 
 template = """

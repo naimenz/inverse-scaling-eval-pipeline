@@ -3,15 +3,14 @@ Uses requests to make http requests to the OpenAI API rather than their python p
 API key is kept in a .env file for privacy.
 """
 from __future__ import annotations
-from collections import defaultdict
-from typing import Iterable, Optional
+import json
+import time
+from typing import Iterable
 from typing_extensions import Literal
 import requests
 import os
 from dotenv import load_dotenv
-import numpy as np
 from pprint import pprint
-import logging
 import torch
 import torch.nn.functional as F
 from tqdm import tqdm
@@ -80,10 +79,11 @@ def evaluate_gpt3_text(
 ) -> dict[str, float]:
     return_dict = dict()
     for size in sizes:
-        logging.info(f"RUNNING {size}")
         json = call_gpt3(text, size)
         value = json_to_loss(json, answer_ix, possible_answers)
         return_dict[size] = value
+        # need to sleep to avoid rate limit
+        time.sleep(1.1)
     return return_dict
 
 
@@ -95,4 +95,6 @@ def evaluate_gpt3_texts(
     for text, possible_answers, answer_ix in tqdm(text_possible_answers_ix_tuple):
         return_dict = evaluate_gpt3_text(text, sizes, possible_answers, answer_ix)
         text_model_losses[text] = return_dict
+        with open("gpt3.cache", "w") as f:
+            json.dump(text_model_losses, f)
     return text_model_losses
