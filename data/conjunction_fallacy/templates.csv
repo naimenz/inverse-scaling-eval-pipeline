@@ -10,11 +10,11 @@ A:","[' 1', ' 2']",1
 "Question: Which is more likely?
 A. {name} is {noun}.
 B. {name} is {noun} and is {adjective}.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 "Question: Which is more likely?
 A. {name} is {noun} and is {adjective}.
 B. {name} is {noun}.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 "Q: Which is more likely?
 1. {name} is {noun}.
 2. {name} is {noun} and {name} is {adjective}.

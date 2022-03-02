@@ -33,3 +33,4 @@ filled_template_df = filled_template_df[:1000]
 print(filled_template_df.head())
 print(filled_template_df.info())
 filled_template_df.to_csv(Path(data_path, "filled_templates.csv"))
+filled_template_df[:10].to_csv(Path(data_path, "filled_templates_sample.csv"))

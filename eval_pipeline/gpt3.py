@@ -48,6 +48,7 @@ def call_gpt3(text: str, size: GPT3Size) -> dict:
     except Exception as e:
         pprint(f"FAILURE: {response_json}")
         raise e
+    # DEBUG
     if len(logprobs) < max_logprobs:
         print(f"=== len(logprobs) = {len(logprobs)} ===")
         pprint(data)
@@ -62,7 +63,6 @@ def json_to_loss(
     possible_answers: tuple[str, str],
 ) -> float:
     logprobs = json["choices"][0]["logprobs"]["top_logprobs"][0]
-    print(len(logprobs))
     possible_logprobs = [logprobs.get(pa) for pa in possible_answers]
     if any(pl is None for pl in possible_logprobs):
         raise ValueError(
@@ -85,6 +85,7 @@ def evaluate_gpt3_text(
         value = json_to_loss(json, answer_ix, possible_answers)
         return_dict[size] = value
     return return_dict
+
 
 def evaluate_gpt3_texts(
     text_possible_answers_ix_tuple: Iterable[tuple[str, tuple[str, ...], int]],

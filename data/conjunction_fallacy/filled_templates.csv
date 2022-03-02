@@ -18,19 +18,19 @@ A:","[' 1', ' 2']",1
 4,"Question: Which is more likely?
 A. Michael is an accountant.
 B. Michael is an accountant and is careful.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 5,"Question: Which is more likely?
 A. Michael is an accountant.
 B. Michael is an accountant and is boring.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 6,"Question: Which is more likely?
 A. Michael is an accountant and is careful.
 B. Michael is an accountant.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 7,"Question: Which is more likely?
 A. Michael is an accountant and is boring.
 B. Michael is an accountant.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 8,"Q: Which is more likely?
 1. Michael is an accountant.
 2. Michael is an accountant and Michael is careful.
@@ -130,19 +130,19 @@ A:","[' 1', ' 2']",1
 32,"Question: Which is more likely?
 A. Michael is a celebrity.
 B. Michael is a celebrity and is beautiful.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 33,"Question: Which is more likely?
 A. Michael is a celebrity.
 B. Michael is a celebrity and is rich.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 34,"Question: Which is more likely?
 A. Michael is a celebrity and is beautiful.
 B. Michael is a celebrity.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 35,"Question: Which is more likely?
 A. Michael is a celebrity and is rich.
 B. Michael is a celebrity.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 36,"Q: Which is more likely?
 1. Michael is a celebrity.
 2. Michael is a celebrity and Michael is beautiful.
@@ -242,19 +242,19 @@ A:","[' 1', ' 2']",1
 60,"Question: Which is more likely?
 A. Michael is a firefighter.
 B. Michael is a firefighter and is brave.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 61,"Question: Which is more likely?
 A. Michael is a firefighter.
 B. Michael is a firefighter and is strong.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 62,"Question: Which is more likely?
 A. Michael is a firefighter and is brave.
 B. Michael is a firefighter.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 63,"Question: Which is more likely?
 A. Michael is a firefighter and is strong.
 B. Michael is a firefighter.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 64,"Q: Which is more likely?
 1. Michael is a firefighter.
 2. Michael is a firefighter and Michael is brave.
@@ -354,19 +354,19 @@ A:","[' 1', ' 2']",1
 88,"Question: Which is more likely?
 A. Michael is a journalist.
 B. Michael is a journalist and is nosy.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 89,"Question: Which is more likely?
 A. Michael is a journalist.
 B. Michael is a journalist and is curious.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 90,"Question: Which is more likely?
 A. Michael is a journalist and is nosy.
 B. Michael is a journalist.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 91,"Question: Which is more likely?
 A. Michael is a journalist and is curious.
 B. Michael is a journalist.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 92,"Q: Which is more likely?
 1. Michael is a journalist.
 2. Michael is a journalist and Michael is nosy.
@@ -466,19 +466,19 @@ A:","[' 1', ' 2']",1
 116,"Question: Which is more likely?
 A. Michael is a librarian.
 B. Michael is a librarian and is quiet.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 117,"Question: Which is more likely?
 A. Michael is a librarian.
 B. Michael is a librarian and is shy.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 118,"Question: Which is more likely?
 A. Michael is a librarian and is quiet.
 B. Michael is a librarian.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 119,"Question: Which is more likely?
 A. Michael is a librarian and is shy.
 B. Michael is a librarian.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 120,"Q: Which is more likely?
 1. Michael is a librarian.
 2. Michael is a librarian and Michael is quiet.
@@ -578,19 +578,19 @@ A:","[' 1', ' 2']",1
 144,"Question: Which is more likely?
 A. Michael is a nurse.
 B. Michael is a nurse and is caring.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 145,"Question: Which is more likely?
 A. Michael is a nurse.
 B. Michael is a nurse and is gentle.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 146,"Question: Which is more likely?
 A. Michael is a nurse and is caring.
 B. Michael is a nurse.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 147,"Question: Which is more likely?
 A. Michael is a nurse and is gentle.
 B. Michael is a nurse.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 148,"Q: Which is more likely?
 1. Michael is a nurse.
 2. Michael is a nurse and Michael is caring.
@@ -690,19 +690,19 @@ A:","[' 1', ' 2']",1
 172,"Question: Which is more likely?
 A. Michael is a teacher.
 B. Michael is a teacher and is patient.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 173,"Question: Which is more likely?
 A. Michael is a teacher.
 B. Michael is a teacher and is strict.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 174,"Question: Which is more likely?
 A. Michael is a teacher and is patient.
 B. Michael is a teacher.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 175,"Question: Which is more likely?
 A. Michael is a teacher and is strict.
 B. Michael is a teacher.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 176,"Q: Which is more likely?
 1. Michael is a teacher.
 2. Michael is a teacher and Michael is patient.
@@ -802,19 +802,19 @@ A:","[' 1', ' 2']",1
 200,"Question: Which is more likely?
 A. Michael is a banker.
 B. Michael is a banker and is rich.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 201,"Question: Which is more likely?
 A. Michael is a banker.
 B. Michael is a banker and is wealthy.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 202,"Question: Which is more likely?
 A. Michael is a banker and is rich.
 B. Michael is a banker.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 203,"Question: Which is more likely?
 A. Michael is a banker and is wealthy.
 B. Michael is a banker.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 204,"Q: Which is more likely?
 1. Michael is a banker.
 2. Michael is a banker and Michael is rich.
@@ -914,19 +914,19 @@ A:","[' 1', ' 2']",1
 228,"Question: Which is more likely?
 A. Michael is a scientist.
 B. Michael is a scientist and is smart.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 229,"Question: Which is more likely?
 A. Michael is a scientist.
 B. Michael is a scientist and is a nerd.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 230,"Question: Which is more likely?
 A. Michael is a scientist and is smart.
 B. Michael is a scientist.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 231,"Question: Which is more likely?
 A. Michael is a scientist and is a nerd.
 B. Michael is a scientist.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 232,"Q: Which is more likely?
 1. Michael is a scientist.
 2. Michael is a scientist and Michael is smart.
@@ -1026,19 +1026,19 @@ A:","[' 1', ' 2']",1
 256,"Question: Which is more likely?
 A. Jessica is an accountant.
 B. Jessica is an accountant and is careful.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 257,"Question: Which is more likely?
 A. Jessica is an accountant.
 B. Jessica is an accountant and is boring.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 258,"Question: Which is more likely?
 A. Jessica is an accountant and is careful.
 B. Jessica is an accountant.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 259,"Question: Which is more likely?
 A. Jessica is an accountant and is boring.
 B. Jessica is an accountant.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 260,"Q: Which is more likely?
 1. Jessica is an accountant.
 2. Jessica is an accountant and Jessica is careful.
@@ -1138,19 +1138,19 @@ A:","[' 1', ' 2']",1
 284,"Question: Which is more likely?
 A. Jessica is a celebrity.
 B. Jessica is a celebrity and is beautiful.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 285,"Question: Which is more likely?
 A. Jessica is a celebrity.
 B. Jessica is a celebrity and is rich.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 286,"Question: Which is more likely?
 A. Jessica is a celebrity and is beautiful.
 B. Jessica is a celebrity.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 287,"Question: Which is more likely?
 A. Jessica is a celebrity and is rich.
 B. Jessica is a celebrity.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 288,"Q: Which is more likely?
 1. Jessica is a celebrity.
 2. Jessica is a celebrity and Jessica is beautiful.
@@ -1250,19 +1250,19 @@ A:","[' 1', ' 2']",1
 312,"Question: Which is more likely?
 A. Jessica is a firefighter.
 B. Jessica is a firefighter and is brave.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 313,"Question: Which is more likely?
 A. Jessica is a firefighter.
 B. Jessica is a firefighter and is strong.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 314,"Question: Which is more likely?
 A. Jessica is a firefighter and is brave.
 B. Jessica is a firefighter.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 315,"Question: Which is more likely?
 A. Jessica is a firefighter and is strong.
 B. Jessica is a firefighter.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 316,"Q: Which is more likely?
 1. Jessica is a firefighter.
 2. Jessica is a firefighter and Jessica is brave.
@@ -1362,19 +1362,19 @@ A:","[' 1', ' 2']",1
 340,"Question: Which is more likely?
 A. Jessica is a journalist.
 B. Jessica is a journalist and is nosy.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 341,"Question: Which is more likely?
 A. Jessica is a journalist.
 B. Jessica is a journalist and is curious.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 342,"Question: Which is more likely?
 A. Jessica is a journalist and is nosy.
 B. Jessica is a journalist.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 343,"Question: Which is more likely?
 A. Jessica is a journalist and is curious.
 B. Jessica is a journalist.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 344,"Q: Which is more likely?
 1. Jessica is a journalist.
 2. Jessica is a journalist and Jessica is nosy.
@@ -1474,19 +1474,19 @@ A:","[' 1', ' 2']",1
 368,"Question: Which is more likely?
 A. Jessica is a librarian.
 B. Jessica is a librarian and is quiet.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 369,"Question: Which is more likely?
 A. Jessica is a librarian.
 B. Jessica is a librarian and is shy.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 370,"Question: Which is more likely?
 A. Jessica is a librarian and is quiet.
 B. Jessica is a librarian.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 371,"Question: Which is more likely?
 A. Jessica is a librarian and is shy.
 B. Jessica is a librarian.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 372,"Q: Which is more likely?
 1. Jessica is a librarian.
 2. Jessica is a librarian and Jessica is quiet.
@@ -1586,19 +1586,19 @@ A:","[' 1', ' 2']",1
 396,"Question: Which is more likely?
 A. Jessica is a nurse.
 B. Jessica is a nurse and is caring.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 397,"Question: Which is more likely?
 A. Jessica is a nurse.
 B. Jessica is a nurse and is gentle.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 398,"Question: Which is more likely?
 A. Jessica is a nurse and is caring.
 B. Jessica is a nurse.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 399,"Question: Which is more likely?
 A. Jessica is a nurse and is gentle.
 B. Jessica is a nurse.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 400,"Q: Which is more likely?
 1. Jessica is a nurse.
 2. Jessica is a nurse and Jessica is caring.
@@ -1698,19 +1698,19 @@ A:","[' 1', ' 2']",1
 424,"Question: Which is more likely?
 A. Jessica is a teacher.
 B. Jessica is a teacher and is patient.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 425,"Question: Which is more likely?
 A. Jessica is a teacher.
 B. Jessica is a teacher and is strict.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 426,"Question: Which is more likely?
 A. Jessica is a teacher and is patient.
 B. Jessica is a teacher.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 427,"Question: Which is more likely?
 A. Jessica is a teacher and is strict.
 B. Jessica is a teacher.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 428,"Q: Which is more likely?
 1. Jessica is a teacher.
 2. Jessica is a teacher and Jessica is patient.
@@ -1810,19 +1810,19 @@ A:","[' 1', ' 2']",1
 452,"Question: Which is more likely?
 A. Jessica is a banker.
 B. Jessica is a banker and is rich.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 453,"Question: Which is more likely?
 A. Jessica is a banker.
 B. Jessica is a banker and is wealthy.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 454,"Question: Which is more likely?
 A. Jessica is a banker and is rich.
 B. Jessica is a banker.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 455,"Question: Which is more likely?
 A. Jessica is a banker and is wealthy.
 B. Jessica is a banker.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 456,"Q: Which is more likely?
 1. Jessica is a banker.
 2. Jessica is a banker and Jessica is rich.
@@ -1922,19 +1922,19 @@ A:","[' 1', ' 2']",1
 480,"Question: Which is more likely?
 A. Jessica is a scientist.
 B. Jessica is a scientist and is smart.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 481,"Question: Which is more likely?
 A. Jessica is a scientist.
 B. Jessica is a scientist and is a nerd.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 482,"Question: Which is more likely?
 A. Jessica is a scientist and is smart.
 B. Jessica is a scientist.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 483,"Question: Which is more likely?
 A. Jessica is a scientist and is a nerd.
 B. Jessica is a scientist.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 484,"Q: Which is more likely?
 1. Jessica is a scientist.
 2. Jessica is a scientist and Jessica is smart.
@@ -2034,19 +2034,19 @@ A:","[' 1', ' 2']",1
 508,"Question: Which is more likely?
 A. Christopher is an accountant.
 B. Christopher is an accountant and is careful.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 509,"Question: Which is more likely?
 A. Christopher is an accountant.
 B. Christopher is an accountant and is boring.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 510,"Question: Which is more likely?
 A. Christopher is an accountant and is careful.
 B. Christopher is an accountant.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 511,"Question: Which is more likely?
 A. Christopher is an accountant and is boring.
 B. Christopher is an accountant.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 512,"Q: Which is more likely?
 1. Christopher is an accountant.
 2. Christopher is an accountant and Christopher is careful.
@@ -2146,19 +2146,19 @@ A:","[' 1', ' 2']",1
 536,"Question: Which is more likely?
 A. Christopher is a celebrity.
 B. Christopher is a celebrity and is beautiful.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 537,"Question: Which is more likely?
 A. Christopher is a celebrity.
 B. Christopher is a celebrity and is rich.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 538,"Question: Which is more likely?
 A. Christopher is a celebrity and is beautiful.
 B. Christopher is a celebrity.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 539,"Question: Which is more likely?
 A. Christopher is a celebrity and is rich.
 B. Christopher is a celebrity.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 540,"Q: Which is more likely?
 1. Christopher is a celebrity.
 2. Christopher is a celebrity and Christopher is beautiful.
@@ -2258,19 +2258,19 @@ A:","[' 1', ' 2']",1
 564,"Question: Which is more likely?
 A. Christopher is a firefighter.
 B. Christopher is a firefighter and is brave.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 565,"Question: Which is more likely?
 A. Christopher is a firefighter.
 B. Christopher is a firefighter and is strong.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 566,"Question: Which is more likely?
 A. Christopher is a firefighter and is brave.
 B. Christopher is a firefighter.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 567,"Question: Which is more likely?
 A. Christopher is a firefighter and is strong.
 B. Christopher is a firefighter.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 568,"Q: Which is more likely?
 1. Christopher is a firefighter.
 2. Christopher is a firefighter and Christopher is brave.
@@ -2370,19 +2370,19 @@ A:","[' 1', ' 2']",1
 592,"Question: Which is more likely?
 A. Christopher is a journalist.
 B. Christopher is a journalist and is nosy.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 593,"Question: Which is more likely?
 A. Christopher is a journalist.
 B. Christopher is a journalist and is curious.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 594,"Question: Which is more likely?
 A. Christopher is a journalist and is nosy.
 B. Christopher is a journalist.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 595,"Question: Which is more likely?
 A. Christopher is a journalist and is curious.
 B. Christopher is a journalist.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 596,"Q: Which is more likely?
 1. Christopher is a journalist.
 2. Christopher is a journalist and Christopher is nosy.
@@ -2482,19 +2482,19 @@ A:","[' 1', ' 2']",1
 620,"Question: Which is more likely?
 A. Christopher is a librarian.
 B. Christopher is a librarian and is quiet.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 621,"Question: Which is more likely?
 A. Christopher is a librarian.
 B. Christopher is a librarian and is shy.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 622,"Question: Which is more likely?
 A. Christopher is a librarian and is quiet.
 B. Christopher is a librarian.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 623,"Question: Which is more likely?
 A. Christopher is a librarian and is shy.
 B. Christopher is a librarian.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 624,"Q: Which is more likely?
 1. Christopher is a librarian.
 2. Christopher is a librarian and Christopher is quiet.
@@ -2594,19 +2594,19 @@ A:","[' 1', ' 2']",1
 648,"Question: Which is more likely?
 A. Christopher is a nurse.
 B. Christopher is a nurse and is caring.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 649,"Question: Which is more likely?
 A. Christopher is a nurse.
 B. Christopher is a nurse and is gentle.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 650,"Question: Which is more likely?
 A. Christopher is a nurse and is caring.
 B. Christopher is a nurse.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 651,"Question: Which is more likely?
 A. Christopher is a nurse and is gentle.
 B. Christopher is a nurse.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 652,"Q: Which is more likely?
 1. Christopher is a nurse.
 2. Christopher is a nurse and Christopher is caring.
@@ -2706,19 +2706,19 @@ A:","[' 1', ' 2']",1
 676,"Question: Which is more likely?
 A. Christopher is a teacher.
 B. Christopher is a teacher and is patient.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 677,"Question: Which is more likely?
 A. Christopher is a teacher.
 B. Christopher is a teacher and is strict.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 678,"Question: Which is more likely?
 A. Christopher is a teacher and is patient.
 B. Christopher is a teacher.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 679,"Question: Which is more likely?
 A. Christopher is a teacher and is strict.
 B. Christopher is a teacher.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 680,"Q: Which is more likely?
 1. Christopher is a teacher.
 2. Christopher is a teacher and Christopher is patient.
@@ -2818,19 +2818,19 @@ A:","[' 1', ' 2']",1
 704,"Question: Which is more likely?
 A. Christopher is a banker.
 B. Christopher is a banker and is rich.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 705,"Question: Which is more likely?
 A. Christopher is a banker.
 B. Christopher is a banker and is wealthy.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 706,"Question: Which is more likely?
 A. Christopher is a banker and is rich.
 B. Christopher is a banker.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 707,"Question: Which is more likely?
 A. Christopher is a banker and is wealthy.
 B. Christopher is a banker.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 708,"Q: Which is more likely?
 1. Christopher is a banker.
 2. Christopher is a banker and Christopher is rich.
@@ -2930,19 +2930,19 @@ A:","[' 1', ' 2']",1
 732,"Question: Which is more likely?
 A. Christopher is a scientist.
 B. Christopher is a scientist and is smart.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 733,"Question: Which is more likely?
 A. Christopher is a scientist.
 B. Christopher is a scientist and is a nerd.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 734,"Question: Which is more likely?
 A. Christopher is a scientist and is smart.
 B. Christopher is a scientist.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 735,"Question: Which is more likely?
 A. Christopher is a scientist and is a nerd.
 B. Christopher is a scientist.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 736,"Q: Which is more likely?
 1. Christopher is a scientist.
 2. Christopher is a scientist and Christopher is smart.
@@ -3042,19 +3042,19 @@ A:","[' 1', ' 2']",1
 760,"Question: Which is more likely?
 A. Ashley is an accountant.
 B. Ashley is an accountant and is careful.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 761,"Question: Which is more likely?
 A. Ashley is an accountant.
 B. Ashley is an accountant and is boring.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 762,"Question: Which is more likely?
 A. Ashley is an accountant and is careful.
 B. Ashley is an accountant.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 763,"Question: Which is more likely?
 A. Ashley is an accountant and is boring.
 B. Ashley is an accountant.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 764,"Q: Which is more likely?
 1. Ashley is an accountant.
 2. Ashley is an accountant and Ashley is careful.
@@ -3154,19 +3154,19 @@ A:","[' 1', ' 2']",1
 788,"Question: Which is more likely?
 A. Ashley is a celebrity.
 B. Ashley is a celebrity and is beautiful.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 789,"Question: Which is more likely?
 A. Ashley is a celebrity.
 B. Ashley is a celebrity and is rich.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 790,"Question: Which is more likely?
 A. Ashley is a celebrity and is beautiful.
 B. Ashley is a celebrity.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 791,"Question: Which is more likely?
 A. Ashley is a celebrity and is rich.
 B. Ashley is a celebrity.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 792,"Q: Which is more likely?
 1. Ashley is a celebrity.
 2. Ashley is a celebrity and Ashley is beautiful.
@@ -3266,19 +3266,19 @@ A:","[' 1', ' 2']",1
 816,"Question: Which is more likely?
 A. Ashley is a firefighter.
 B. Ashley is a firefighter and is brave.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 817,"Question: Which is more likely?
 A. Ashley is a firefighter.
 B. Ashley is a firefighter and is strong.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 818,"Question: Which is more likely?
 A. Ashley is a firefighter and is brave.
 B. Ashley is a firefighter.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 819,"Question: Which is more likely?
 A. Ashley is a firefighter and is strong.
 B. Ashley is a firefighter.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 820,"Q: Which is more likely?
 1. Ashley is a firefighter.
 2. Ashley is a firefighter and Ashley is brave.
@@ -3378,19 +3378,19 @@ A:","[' 1', ' 2']",1
 844,"Question: Which is more likely?
 A. Ashley is a journalist.
 B. Ashley is a journalist and is nosy.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 845,"Question: Which is more likely?
 A. Ashley is a journalist.
 B. Ashley is a journalist and is curious.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 846,"Question: Which is more likely?
 A. Ashley is a journalist and is nosy.
 B. Ashley is a journalist.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 847,"Question: Which is more likely?
 A. Ashley is a journalist and is curious.
 B. Ashley is a journalist.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 848,"Q: Which is more likely?
 1. Ashley is a journalist.
 2. Ashley is a journalist and Ashley is nosy.
@@ -3490,19 +3490,19 @@ A:","[' 1', ' 2']",1
 872,"Question: Which is more likely?
 A. Ashley is a librarian.
 B. Ashley is a librarian and is quiet.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 873,"Question: Which is more likely?
 A. Ashley is a librarian.
 B. Ashley is a librarian and is shy.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 874,"Question: Which is more likely?
 A. Ashley is a librarian and is quiet.
 B. Ashley is a librarian.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 875,"Question: Which is more likely?
 A. Ashley is a librarian and is shy.
 B. Ashley is a librarian.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 876,"Q: Which is more likely?
 1. Ashley is a librarian.
 2. Ashley is a librarian and Ashley is quiet.
@@ -3602,19 +3602,19 @@ A:","[' 1', ' 2']",1
 900,"Question: Which is more likely?
 A. Ashley is a nurse.
 B. Ashley is a nurse and is caring.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 901,"Question: Which is more likely?
 A. Ashley is a nurse.
 B. Ashley is a nurse and is gentle.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 902,"Question: Which is more likely?
 A. Ashley is a nurse and is caring.
 B. Ashley is a nurse.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 903,"Question: Which is more likely?
 A. Ashley is a nurse and is gentle.
 B. Ashley is a nurse.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 904,"Q: Which is more likely?
 1. Ashley is a nurse.
 2. Ashley is a nurse and Ashley is caring.
@@ -3714,19 +3714,19 @@ A:","[' 1', ' 2']",1
 928,"Question: Which is more likely?
 A. Ashley is a teacher.
 B. Ashley is a teacher and is patient.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 929,"Question: Which is more likely?
 A. Ashley is a teacher.
 B. Ashley is a teacher and is strict.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 930,"Question: Which is more likely?
 A. Ashley is a teacher and is patient.
 B. Ashley is a teacher.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 931,"Question: Which is more likely?
 A. Ashley is a teacher and is strict.
 B. Ashley is a teacher.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 932,"Q: Which is more likely?
 1. Ashley is a teacher.
 2. Ashley is a teacher and Ashley is patient.
@@ -3826,19 +3826,19 @@ A:","[' 1', ' 2']",1
 956,"Question: Which is more likely?
 A. Ashley is a banker.
 B. Ashley is a banker and is rich.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 957,"Question: Which is more likely?
 A. Ashley is a banker.
 B. Ashley is a banker and is wealthy.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 958,"Question: Which is more likely?
 A. Ashley is a banker and is rich.
 B. Ashley is a banker.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 959,"Question: Which is more likely?
 A. Ashley is a banker and is wealthy.
 B. Ashley is a banker.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 960,"Q: Which is more likely?
 1. Ashley is a banker.
 2. Ashley is a banker and Ashley is rich.
@@ -3938,19 +3938,19 @@ A:","[' 1', ' 2']",1
 984,"Question: Which is more likely?
 A. Ashley is a scientist.
 B. Ashley is a scientist and is smart.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 985,"Question: Which is more likely?
 A. Ashley is a scientist.
 B. Ashley is a scientist and is a nerd.
-Answer:","['A', 'B']",0
+Answer:","[' A', ' B']",0
 986,"Question: Which is more likely?
 A. Ashley is a scientist and is smart.
 B. Ashley is a scientist.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 987,"Question: Which is more likely?
 A. Ashley is a scientist and is a nerd.
 B. Ashley is a scientist.
-Answer:","['A', 'B']",1
+Answer:","[' A', ' B']",1
 988,"Q: Which is more likely?
 1. Ashley is a scientist.
 2. Ashley is a scientist and Ashley is smart.
