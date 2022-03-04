@@ -60,16 +60,19 @@ class Model(ABC):
 class HFModel(Model):
     def __init__(self, model_name: ValidHFModel, device: Device) -> None:
         self.device = device
-        self.model = AutoModelForCausalLM.from_pretrained(model_name).to(self.device)
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+        prefix = ""
+        if model_name.startswith("gpt-neo") or model_name.startswith("gpt-j"):
+            prefix = "EleutherAI/"
+        self.model = AutoModelForCausalLM.from_pretrained(prefix + model_name).to(self.device)  # type: ignore
+        self.tokenizer = AutoTokenizer.from_pretrained(prefix + model_name)
 
     def __call__(self, examples: list[Example]) -> list[float]:
         prompts = [example.prompt for example in examples]
         tokenized_inputs = self.tokenizer(prompts, return_tensors="pt").to(self.device)
         outputs = self.model(**tokenized_inputs)
-        logits = outputs["logits"][
-            :, -1
-        ]  # we only need the logits for the final (new) token
+        # we only need the logits for the final (new) token
+        # NOTE: this may need to change if we use batch size > 1 with padding
+        logits = outputs["logits"][ :, -1]
         losses = self._losses_from_logits(examples, logits)
         return losses
 

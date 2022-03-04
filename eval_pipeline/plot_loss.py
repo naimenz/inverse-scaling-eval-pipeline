@@ -29,12 +29,7 @@ def main():
     base_results_dir = Path(project_dir, "results")
     exp_dir = Path(base_results_dir, args.exp_dir)
     loss_csvs = [f for f in exp_dir.glob("*.csv") if f.name != "data.csv"]
-
     dfs = {csv_file.stem: pd.read_csv(csv_file, index_col=0) for csv_file in loss_csvs}
-
-    for name, df in dfs.items():
-        print(name)
-        print(df.head())
 
     averages = {model_name: np.mean(df["loss"]) for model_name, df in dfs.items()}
     standard_errors = {
@@ -72,10 +67,9 @@ def plot_loss(loss_dict: dict[str, float], standard_errors: dict[str, float], ex
 def parse_args(args) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Plot models in an experiment")
     parser.add_argument(
-        "--exp-dir",
+        "exp_dir",
         type=str,
         help="The name of the experiment to plot from",
-        required=True,
     )
     args = parser.parse_args(args)
     return args

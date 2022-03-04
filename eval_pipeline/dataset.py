@@ -1,4 +1,5 @@
 from __future__ import annotations
+import ast
 from dataclasses import dataclass
 from typing import Iterator
 
@@ -21,8 +22,10 @@ class Dataset:
     @classmethod
     def from_df(cls, df: pd.DataFrame) -> Dataset:
         examples = []
-        for _, (prompt, classes, answer_index) in df.iterrows():
-            example = Example(prompt, classes, answer_index)
+        for _, (prompt, classes_string, answer_index) in df.iterrows():
+            # important to convert the string 'classes' back into a list
+            classes_list = ast.literal_eval(classes_string)
+            example = Example(prompt, classes_list, answer_index)
             examples.append(example)
         return Dataset(examples)
 
