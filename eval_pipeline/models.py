@@ -1,13 +1,14 @@
 from __future__ import annotations
 from abc import ABC, abstractmethod
 import os
-from pathlib import Path
 from typing import Union
 from typing_extensions import Literal, get_args
 from dotenv import load_dotenv
 import requests
 import torch
 import torch.nn.functional as F
+from datetime import timedelta
+from ratelimit import limits, sleep_and_retry
 
 from transformers import AutoModelForCausalLM, AutoTokenizer  # type: ignore
 from eval_pipeline.dataset import Example
@@ -104,7 +105,12 @@ class GPT3Model(Model):
             losses.append(loss.item())
         return losses
 
+
+    @sleep_and_retry
+    @limits(calls=1, period=timedelta(seconds=60).total_seconds())
     def _call_api(self, prompt: str) -> dict:
+        """This function makes the actual API call, and since we have a rate limit of 60 calls per minute,
+        I will add rate limiting here (ideally we could increase the rate limit though)"""
         # OpenAI gave my (Ian's) account the top 100 logprobs,
         # not just the top 5
         max_logprobs = 100
