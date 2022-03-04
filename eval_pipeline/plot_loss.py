@@ -27,7 +27,7 @@ def main():
     args = parse_args(sys.argv[1:])
     project_dir = Path(__file__).resolve().parent.parent
     if args.colab:
-        base_results_dir = Path("/content/drive/inverse_scaling_results")
+        base_results_dir = Path("/content/drive/MyDrive/inverse_scaling_results")
     else:
         base_results_dir = Path(project_dir, "results")
     exp_dir = Path(base_results_dir, args.exp_dir)

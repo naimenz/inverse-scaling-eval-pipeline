@@ -22,7 +22,7 @@ def main():
     base_data_dir = Path(project_dir, "data")
     # writing to google drive if we are in a colab notebook
     if args.colab:
-        base_results_dir = Path("/content/drive/inverse_scaling_results/")
+        base_results_dir = Path("/content/drive/MyDrive/inverse_scaling_results/")
     else:
         base_results_dir = Path(project_dir, "results")
     # if a data directory is supplied, use that
@@ -143,7 +143,7 @@ def parse_args(args):
         "--colab",
         action="store_true",
         help=(
-            "Set if working in colab - will save results to gdrive mounted on /content/drive/"
+            "Set if working in colab - will save results to gdrive mounted on /content/drive/MyDrive"
             " and use notebook versions of tqdm"
         ),
     )
