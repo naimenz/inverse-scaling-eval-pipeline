@@ -18,10 +18,13 @@ from eval_pipeline.models import Device, Model, ValidGPT3Model, ValidHFModel
 
 def main():
     args = parse_args(sys.argv[1:])
-
     project_dir = Path(__file__).resolve().parent.parent
     base_data_dir = Path(project_dir, "data")
-    base_results_dir = Path(project_dir, "results")
+    # writing to google drive if we are in a colab notebook
+    if args.colab:
+        base_results_dir = Path("/content/drive/results/")
+    else:
+        base_results_dir = Path(project_dir, "results")
     # if a data directory is supplied, use that
     # otherwise, generate one from the dataset name and current time
     if args.exp_dir is not None:
@@ -30,7 +33,7 @@ def main():
         current_time = datetime.now().replace(microsecond=0).isoformat()
         exp_dir = f"{current_time}_{args.dataset}"
         write_dir = Path(base_results_dir, exp_dir)
-    write_dir.mkdir(parents=True, exist_ok=True)
+    write_dir.mkdir(parents=False, exist_ok=True)
 
     # we have to set up the logging AFTER deciding on a dir to write to
     log_path = Path(write_dir, "log.log")
@@ -135,7 +138,15 @@ def parse_args(args):
         action="store_true",
         help="Whether to use a GPU (if available)",
     )
-    # args = parser.parse_args()
+
+    parser.add_argument(
+        "--colab",
+        action="store_true",
+        help=(
+            "Set if working in colab - will save results to gdrive mounted on /content/drive/"
+            " and use notebook versions of tqdm"
+        ),
+    )
     args = parser.parse_args(args)
     return args
 
