@@ -1,0 +1,10 @@
+{
+  "dataset": "conjunction_fallacy",
+  "exp_dir": null,
+  "models": [
+    "gpt2",
+    "gpt2-medium",
+    "gpt2-large"
+  ],
+  "use_gpu": true
+}
