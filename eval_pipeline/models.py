@@ -39,6 +39,7 @@ valid_gpt3_models: tuple[ValidGPT3Model, ...] = get_args(ValidGPT3Model)
 
 Device = Literal["cuda:0", "cpu"]
 
+
 class Model(ABC):
     @abstractmethod
     def __call__(self, examples: list[Example]) -> list[float]:
@@ -72,7 +73,7 @@ class HFModel(Model):
         outputs = self.model(**tokenized_inputs)
         # we only need the logits for the final (new) token
         # NOTE: this may need to change if we use batch size > 1 with padding
-        logits = outputs["logits"][ :, -1]
+        logits = outputs["logits"][:, -1]
         losses = self._losses_from_logits(examples, logits)
         return losses
 
@@ -101,17 +102,20 @@ class GPT3Model(Model):
     def __call__(self, examples: list[Example]) -> list[float]:
         losses = []
         for example in examples:
-            response_json = self._call_api(example.prompt)
-            logprobs = response_json["choices"][0]["logprobs"]["top_logprobs"][0]
+            choices = None
+            # retries on failed calls, rate limiter should handle waiting
+            while choices is None:
+                response_json = self._call_api(example.prompt).json()
+                choices = response_json.get("choices", None)
+            logprobs = choices[0]["logprobs"]["top_logprobs"][0]
             relevant_logprobs = torch.Tensor([logprobs.get(c) for c in example.classes])
             loss = -F.log_softmax(relevant_logprobs, dim=-1)[example.answer_index]
             losses.append(loss.item())
         return losses
 
-
     @sleep_and_retry
-    @limits(calls=1, period=timedelta(seconds=60).total_seconds())
-    def _call_api(self, prompt: str) -> dict:
+    @limits(calls=60, period=timedelta(seconds=60).total_seconds())
+    def _call_api(self, prompt: str) -> requests.Response:
         """This function makes the actual API call, and since we have a rate limit of 60 calls per minute,
         I will add rate limiting here (ideally we could increase the rate limit though)"""
         # OpenAI gave my (Ian's) account the top 100 logprobs,
@@ -131,6 +135,5 @@ class GPT3Model(Model):
         }
 
         url = os.path.join(OPENAI_API_BASE_URL, self.model_name, "completions")
-        response_json = requests.post(url, json=data, headers=headers).json()
-        return response_json
-
+        response = requests.post(url, json=data, headers=headers)
+        return response
