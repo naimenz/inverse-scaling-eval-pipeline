@@ -26,7 +26,10 @@ size_dict = {
 def main():
     args = parse_args(sys.argv[1:])
     project_dir = Path(__file__).resolve().parent.parent
-    base_results_dir = Path(project_dir, "results")
+    if args.colab:
+        base_results_dir = Path("/content/drive/inverse_scaling_results")
+    else:
+        base_results_dir = Path(project_dir, "results")
     exp_dir = Path(base_results_dir, args.exp_dir)
     loss_csvs = [f for f in exp_dir.glob("*.csv") if f.name != "data.csv"]
     dfs = {csv_file.stem: pd.read_csv(csv_file, index_col=0) for csv_file in loss_csvs}
@@ -70,6 +73,11 @@ def parse_args(args) -> argparse.Namespace:
         "exp_dir",
         type=str,
         help="The name of the experiment to plot from",
+    )
+    parser.add_argument(
+        "--colab",
+        action="store_true",
+        help="Whether to look for the exp dir in /content/drive or results",
     )
     args = parser.parse_args(args)
     return args
