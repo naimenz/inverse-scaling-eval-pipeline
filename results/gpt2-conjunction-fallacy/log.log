@@ -1,0 +1,4 @@
+2022-03-04 22:55:37,004 [INFO] Logging set up with args
+Namespace(colab=True, dataset='conjunction_fallacy', exp_dir='gpt2-conjunction-fallacy', models=['gpt2-xl', 'gpt2-large', 'gpt2-medium', 'gpt2'], use_gpu=True)
+2022-03-04 22:55:37,005 [INFO] Saving to results to /content/drive/MyDrive/inverse_scaling_results/gpt2-conjunction-fallacy
+2022-03-04 22:55:37,010 [INFO] Copied data

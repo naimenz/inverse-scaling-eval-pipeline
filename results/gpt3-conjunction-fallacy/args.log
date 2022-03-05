@@ -1,0 +1,12 @@
+{
+  "dataset": "conjunction_fallacy",
+  "exp_dir": "gpt3-conjunction-fallacy",
+  "models": [
+    "ada",
+    "babbage",
+    "curie",
+    "davinci"
+  ],
+  "use_gpu": true,
+  "colab": false
+}

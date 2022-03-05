@@ -1,0 +1,4 @@
+2022-03-04 15:18:23,828 [INFO] Logging set up with args
+Namespace(colab=False, dataset='conjunction_fallacy', exp_dir='gpt3-conjunction-fallacy', models=['ada', 'babbage', 'curie', 'davinci'], use_gpu=True)
+2022-03-04 15:18:23,828 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/gpt3-conjunction-fallacy
+2022-03-04 15:18:23,829 [INFO] Copied data
