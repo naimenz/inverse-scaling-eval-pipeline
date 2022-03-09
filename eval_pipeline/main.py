@@ -10,7 +10,7 @@ import shutil
 import pandas as pd
 from pathlib import Path
 import torch
-from tqdm.auto import tqdm
+from tqdm.autonotebook import tqdm
 
 from eval_pipeline.dataset import Dataset
 from eval_pipeline.models import Device, Model, ValidGPT3Model, ValidHFModel
