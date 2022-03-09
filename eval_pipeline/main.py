@@ -10,7 +10,7 @@ import shutil
 import pandas as pd
 from pathlib import Path
 import torch
-from tqdm import tqdm
+from tqdm.auto import tqdm
 
 from eval_pipeline.dataset import Dataset
 from eval_pipeline.models import Device, Model, ValidGPT3Model, ValidHFModel
@@ -25,15 +25,26 @@ def main():
         base_results_dir = Path("/content/drive/MyDrive/inverse_scaling_results/")
     else:
         base_results_dir = Path(project_dir, "results")
-    # if a data directory is supplied, use that
+
+    if args.dataset_path is not None:
+        data_path = args.dataset_path
+    elif args.data is not None:
+        data_path = Path(base_data_dir, args.dataset + ".csv")
+    else:
+        raise ValueError("One of --dataset or --dataset-path must be set")
+
+    # if a results directory is supplied, use that as the experiment dir
     # otherwise, generate one from the dataset name and current time
     if args.exp_dir is not None:
         write_dir = Path(base_results_dir, args.exp_dir)
     else:
         current_time = datetime.now().replace(microsecond=0).isoformat()
-        exp_dir = f"{current_time}_{args.dataset}"
+        if args.dataset is not None:
+            exp_dir = f"{current_time}_{args.dataset}"
+        else:
+            exp_dir = f"{current_time}_{Path(args.dataset_path).stem}"
         write_dir = Path(base_results_dir, exp_dir)
-    write_dir.mkdir(parents=False, exist_ok=True)
+    write_dir.mkdir(parents=True, exist_ok=True)
 
     # we have to set up the logging AFTER deciding on a dir to write to
     log_path = Path(write_dir, "log.log")
@@ -45,7 +56,6 @@ def main():
     logging.info(f"Logging set up with args\n{args}")
     logging.info(f"Saving to results to {write_dir}")
 
-    data_path = Path(base_data_dir, args.dataset + ".csv")
     # put a copy of the data in the experiment dir for reference
     shutil.copy(data_path, Path(write_dir, "data.csv"))
     logging.info("Copied data")
@@ -102,8 +112,14 @@ def parse_args(args):
     parser.add_argument(
         "--dataset",
         type=str,
-        help="The name of the directory containing the data (must be a subdir of 'data')",
-        required=True,
+        help="The name of the directory containing the data (must be a subdir of 'data'). Superseded by --dataset-path",
+        required=False,
+    )
+    parser.add_argument(
+        "--dataset-path",
+        type=str,
+        help="The path to the data file to use. Supersedes --dataset",
+        required=False,
     )
     parser.add_argument(
         "--exp-dir",
@@ -116,7 +132,7 @@ def parse_args(args):
         type=str,
         nargs="+",
         help="The specific models to use",
-        default=["gpt2", "ada", "babbage"],
+        default=["gpt2", "gpt2-medium", "gpt2-large"],
         choices=[
             "gpt2",
             "gpt2-medium",

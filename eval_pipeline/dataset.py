@@ -34,4 +34,3 @@ class Dataset:
 
     def __len__(self) -> int:
         return len(self.examples)
-
