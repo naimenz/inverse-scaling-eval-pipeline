@@ -1,5 +1,6 @@
 from __future__ import annotations
 from abc import ABC, abstractmethod
+import logging
 import os
 from typing import Union
 from typing_extensions import Literal, get_args
@@ -103,9 +104,13 @@ class GPT3Model(Model):
         losses = []
         for example in examples:
             choices = None
+            response_json = None
             # retries on failed calls, rate limiter should handle waiting
             while choices is None:
+                if response_json is not None:
+                    logging.info(f"Retrying after error {response_json}")
                 response_json = self._call_api(example.prompt).json()
+
                 choices = response_json.get("choices", None)
             logprobs = choices[0]["logprobs"]["top_logprobs"][0]
             relevant_logprobs = torch.Tensor([logprobs.get(c) for c in example.classes])
