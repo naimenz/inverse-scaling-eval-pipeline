@@ -28,7 +28,7 @@ def main():
 
     if args.dataset_path is not None:
         data_path = args.dataset_path
-    elif args.data is not None:
+    elif args.dataset is not None:
         data_path = Path(base_data_dir, args.dataset + ".csv")
     else:
         raise ValueError("One of --dataset or --dataset-path must be set")
