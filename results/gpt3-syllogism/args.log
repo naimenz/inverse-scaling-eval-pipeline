@@ -1,0 +1,12 @@
+{
+  "dataset": "syllogism",
+  "exp_dir": "gpt3-syllogism",
+  "models": [
+    "davinci",
+    "curie",
+    "babbage",
+    "ada"
+  ],
+  "use_gpu": false,
+  "colab": false
+}

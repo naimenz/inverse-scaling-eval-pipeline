@@ -1,0 +1,12 @@
+{
+  "dataset": "syllogism",
+  "exp_dir": "gpt2-syllogism",
+  "models": [
+    "gpt2-xl",
+    "gpt2-large",
+    "gpt2-medium",
+    "gpt2"
+  ],
+  "use_gpu": true,
+  "colab": true
+}

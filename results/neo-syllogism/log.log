@@ -1,0 +1,24 @@
+2022-03-05 01:11:55,308 [INFO] Logging set up with args
+Namespace(colab=True, dataset='syllogism', exp_dir='neo-syllogism', models=['gpt-neo-2.7B', 'gpt-neo-1.3B', 'gpt-neo-125M'], use_gpu=False)
+2022-03-05 01:11:55,309 [INFO] Saving to results to /content/drive/MyDrive/inverse_scaling_results/neo-syllogism
+2022-03-05 01:11:55,315 [INFO] Copied data
+2022-03-05 01:14:32,044 [INFO] Logging set up with args
+Namespace(colab=True, dataset='syllogism', exp_dir='neo-syllogism', models=['gpt-neo-2.7B', 'gpt-neo-1.3B', 'gpt-neo-125M'], use_gpu=True)
+2022-03-05 01:14:32,045 [INFO] Saving to results to /content/drive/MyDrive/inverse_scaling_results/neo-syllogism
+2022-03-05 01:14:32,049 [INFO] Copied data
+2022-03-05 01:34:24,987 [INFO] Logging set up with args
+Namespace(colab=True, dataset='syllogism', exp_dir='neo-syllogism', models=['gpt-j-6B'], use_gpu=True)
+2022-03-05 01:34:24,989 [INFO] Saving to results to /content/drive/MyDrive/inverse_scaling_results/neo-syllogism
+2022-03-05 01:34:24,994 [INFO] Copied data
+2022-03-05 01:34:37,341 [INFO] Logging set up with args
+Namespace(colab=True, dataset='syllogism', exp_dir='neo-syllogism', models=['gpt-j-6B'], use_gpu=False)
+2022-03-05 01:34:37,342 [INFO] Saving to results to /content/drive/MyDrive/inverse_scaling_results/neo-syllogism
+2022-03-05 01:34:37,348 [INFO] Copied data
+2022-03-08 20:04:58,312 [INFO] Logging set up with args
+Namespace(colab=True, dataset='syllogism', exp_dir='neo-syllogism', models=['gpt2', 'gpt2-medium', 'gpt2-large', 'gpt2-xl'], use_gpu=False)
+2022-03-08 20:04:59,107 [INFO] Saving to results to /content/drive/MyDrive/inverse_scaling_results/neo-syllogism
+2022-03-08 20:04:59,893 [INFO] Copied data
+2022-03-08 20:37:00,568 [INFO] Logging set up with args
+Namespace(colab=True, dataset='syllogism', exp_dir='neo-syllogism', models=['gpt2', 'gpt2-medium', 'gpt2-large', 'gpt2-xl'], use_gpu=True)
+2022-03-08 20:37:00,568 [INFO] Saving to results to /content/drive/MyDrive/inverse_scaling_results/neo-syllogism
+2022-03-08 20:37:00,572 [INFO] Copied data

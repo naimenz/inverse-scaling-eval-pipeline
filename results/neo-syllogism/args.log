@@ -1,0 +1,59 @@
+{
+  "dataset": "syllogism",
+  "exp_dir": "neo-syllogism",
+  "models": [
+    "gpt-neo-2.7B",
+    "gpt-neo-1.3B",
+    "gpt-neo-125M"
+  ],
+  "use_gpu": false,
+  "colab": true
+}{
+  "dataset": "syllogism",
+  "exp_dir": "neo-syllogism",
+  "models": [
+    "gpt-neo-2.7B",
+    "gpt-neo-1.3B",
+    "gpt-neo-125M"
+  ],
+  "use_gpu": true,
+  "colab": true
+}{
+  "dataset": "syllogism",
+  "exp_dir": "neo-syllogism",
+  "models": [
+    "gpt-j-6B"
+  ],
+  "use_gpu": true,
+  "colab": true
+}{
+  "dataset": "syllogism",
+  "exp_dir": "neo-syllogism",
+  "models": [
+    "gpt-j-6B"
+  ],
+  "use_gpu": false,
+  "colab": true
+}{
+  "dataset": "syllogism",
+  "exp_dir": "neo-syllogism",
+  "models": [
+    "gpt2",
+    "gpt2-medium",
+    "gpt2-large",
+    "gpt2-xl"
+  ],
+  "use_gpu": false,
+  "colab": true
+}{
+  "dataset": "syllogism",
+  "exp_dir": "neo-syllogism",
+  "models": [
+    "gpt2",
+    "gpt2-medium",
+    "gpt2-large",
+    "gpt2-xl"
+  ],
+  "use_gpu": true,
+  "colab": true
+}

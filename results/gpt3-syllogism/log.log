@@ -1,0 +1,4 @@
+2022-03-04 17:14:04,807 [INFO] Logging set up with args
+Namespace(colab=False, dataset='syllogism', exp_dir='gpt3-syllogism', models=['davinci', 'curie', 'babbage', 'ada'], use_gpu=False)
+2022-03-04 17:14:04,807 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/gpt3-syllogism
+2022-03-04 17:14:04,808 [INFO] Copied data
