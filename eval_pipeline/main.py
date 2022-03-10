@@ -64,7 +64,7 @@ def main():
     device = "cuda:0" if args.use_gpu and torch.cuda.is_available() else "cpu"
     model_names = args.models
     for model_name in tqdm(model_names):
-        run_model(model_name, data, write_dir, device)
+        run_model(model_name, data, write_dir, device, args.batch_size)
 
 
 def set_up_logging(log_path: Path):
@@ -86,6 +86,7 @@ def run_model(
     data: Dataset,
     write_dir: Path,
     device: Device,
+    batch_size: int,
 ):
     """This function needs to run the model on the data and
     write the results to write_path incrementally."""
@@ -96,8 +97,7 @@ def run_model(
         writer.writeheader()
         model = Model.from_name(model_name, device)
         n_data = len(data)
-        # TODO: Fix padding so I can use >1 batch size, and make it an input arg
-        batch_size = 1
+        # TODO: Fix padding so I can use >1 batch size for transformers models as well
         for start_index in tqdm(range(0, n_data, batch_size)):
             examples = data.examples[start_index : start_index + batch_size]
             losses = model(examples)
@@ -162,6 +162,12 @@ def parse_args(args):
             "Set if working in colab - will save results to gdrive mounted on /content/drive/MyDrive"
             " and use notebook versions of tqdm"
         ),
+    )
+    parser.add_argument(
+        "--batch-size",
+        type=int,
+        help="Only change the inference batch size if using exclusively GPT-3 models (will break HuggingFace models)",
+        default=1,
     )
     args = parser.parse_args(args)
     return args

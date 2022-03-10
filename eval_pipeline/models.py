@@ -102,25 +102,35 @@ class GPT3Model(Model):
 
     def __call__(self, examples: list[Example]) -> list[float]:
         losses = []
-        for example in examples:
-            choices = None
-            response_json = None
-            # retries on failed calls, rate limiter should handle waiting
-            while choices is None:
-                if response_json is not None:
-                    logging.info(f"Retrying after error {response_json}")
-                response_json = self._call_api(example.prompt).json()
+        prompts = [example.prompt for example in examples]
 
-                choices = response_json.get("choices", None)
-            logprobs = choices[0]["logprobs"]["top_logprobs"][0]
-            relevant_logprobs = torch.Tensor([logprobs.get(c) for c in example.classes])
+        # dodgy error handling and retry code
+        choices = None
+        response = None
+        response_json = None
+        while choices is None:
+            if response is not None and response_json is not None and response.status_code != 429:
+                logging.info(f"Retrying after error {response.status_code}: {response_json['error']}")
+            response = self._call_api(prompts)
+            response_json = response.json()
+
+            choices = response_json.get("choices", None)
+
+        for i, example in enumerate(examples):
+            # retries on failed calls, rate limiter should handle waiting
+            logprobs = choices[i]["logprobs"]["top_logprobs"][0]
+            try:
+                relevant_logprobs = torch.Tensor([logprobs.get(c) for c in example.classes])
+            except TypeError:
+                raise ValueError(f"Not all of {example.classes} were returned as logprobs by OpenAI")
+
             loss = -F.log_softmax(relevant_logprobs, dim=-1)[example.answer_index]
             losses.append(loss.item())
         return losses
 
     @sleep_and_retry
     @limits(calls=60, period=timedelta(seconds=60).total_seconds())
-    def _call_api(self, prompt: str) -> requests.Response:
+    def _call_api(self, prompt: Union[str, list[str]]) -> requests.Response:
         """This function makes the actual API call, and since we have a rate limit of 60 calls per minute,
         I will add rate limiting here (ideally we could increase the rate limit though)"""
         # OpenAI gave my (Ian's) account the top 100 logprobs,

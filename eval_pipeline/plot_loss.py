@@ -33,6 +33,8 @@ def main():
         base_results_dir = Path(project_dir, "results")
     exp_dir = Path(base_results_dir, args.exp_dir)
     loss_csvs = [f for f in exp_dir.glob("*.csv") if f.name != "data.csv"]
+    if len(loss_csvs) == 0:
+        raise ValueError(f"{exp_dir} does not exist or contains no output files")
     dfs = {csv_file.stem: pd.read_csv(csv_file, index_col=0) for csv_file in loss_csvs}
 
     averages = {model_name: np.mean(df["loss"]) for model_name, df in dfs.items()}
