@@ -1,0 +1,55 @@
+,prompt,classes,answer_index
+1,"Q: Does this sentence make sense:
+More of my friends have been to Sweden than I have.
+A (Yes or No):","[' Yes', ' No']",1
+1,"Q: Does this sentence make sense:
+More planes have been to Russia than my car has.
+A (Yes or No):","[' Yes', ' No']",1
+1,"Q: Does this sentence make sense:
+More snakes eat mice than my owl does.
+A (Yes or No):","[' Yes', ' No']",1
+0,"Q: Does this sentence make sense:
+More of my friends have been to Sweden than I have enemies.
+A (Yes or No):","[' Yes', ' No']",0
+1,"Q: Does this sentence make sense:
+More planes have been to Russia than my car has doors.
+A (Yes or No):","[' Yes', ' No']",0
+1,"Q: Does this sentence make sense:
+More snakes eat mice than my owl has eaten meals.
+A (Yes or No):","[' Yes', ' No']",0
+1,"Q: Does this sentence make sense:
+More of my friends have been to Sweden than your friends.
+A (Yes or No):","[' Yes', ' No']",0
+1,"Q: Does this sentence make sense:
+More planes have been to Russia than spaceships.
+A (Yes or No):","[' Yes', ' No']",0
+1,"Q: Does this sentence make sense:
+More snakes eat mice than rabbits.
+A (Yes or No):","[' Yes', ' No']",0
+1,"Q: Is this sentence nonsense:
+More of my friends have been to Sweden than I have.
+A (Yes or No):","[' Yes', ' No']",0
+1,"Q: Is this sentence nonsense:
+More planes have been to Russia than my car has.
+A (Yes or No):","[' Yes', ' No']",0
+1,"Q: Is this sentence nonsense:
+More snakes eat mice than my owl does.
+A (Yes or No):","[' Yes', ' No']",0
+0,"Q: Is this sentence nonsense:
+More of my friends have been to Sweden than I have enemies.
+A (Yes or No):","[' Yes', ' No']",1
+1,"Q: Is this sentence nonsense:
+More planes have been to Russia than my car has doors.
+A (Yes or No):","[' Yes', ' No']",1
+1,"Q: Is this sentence nonsense:
+More snakes eat mice than my owl has eaten meals.
+A (Yes or No):","[' Yes', ' No']",1
+1,"Q: Is this sentence nonsense:
+More of my friends have been to Sweden than your friends.
+A (Yes or No):","[' Yes', ' No']",1
+1,"Q: Is this sentence nonsense:
+More planes have been to Russia than spaceships.
+A (Yes or No):","[' Yes', ' No']",1
+1,"Q: Is this sentence nonsense:
+More snakes eat mice than rabbits.
+A (Yes or No):","[' Yes', ' No']",1

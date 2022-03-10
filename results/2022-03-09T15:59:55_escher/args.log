@@ -1,0 +1,13 @@
+{
+  "dataset": "escher",
+  "dataset_path": null,
+  "exp_dir": null,
+  "models": [
+    "ada",
+    "babbage",
+    "curie",
+    "davinci"
+  ],
+  "use_gpu": false,
+  "colab": false
+}

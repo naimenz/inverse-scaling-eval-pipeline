@@ -1,0 +1,6 @@
+2022-03-09 15:59:55,884 [INFO] Logging set up with args
+Namespace(colab=False, dataset='escher', dataset_path=None, exp_dir=None, models=['ada', 'babbage', 'curie', 'davinci'], use_gpu=False)
+2022-03-09 15:59:55,885 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/2022-03-09T15:59:55_escher
+2022-03-09 15:59:55,885 [INFO] Copied data
+2022-03-09 16:00:57,993 [INFO] Retrying after error {'error': {'message': 'Rate limit reached for requests. Limit: 60.000000 / min. Current: 64.000000 / min. Contact support@openai.com if you continue to have issues.', 'type': 'requests', 'param': None, 'code': None}}
+2022-03-09 16:00:58,431 [INFO] Retrying after error {'error': {'message': 'Rate limit reached for requests. Limit: 60.000000 / min. Current: 68.000000 / min. Contact support@openai.com if you continue to have issues.', 'type': 'requests', 'param': None, 'code': None}}
