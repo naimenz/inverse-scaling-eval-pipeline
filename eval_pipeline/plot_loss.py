@@ -1,11 +1,15 @@
 from __future__ import annotations
 import argparse
+import json
 import sys
 
 from pathlib import Path
+from typing import Optional
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+
+from eval_pipeline.dataset import TaskType
 
 size_dict = {
     "gpt2": 124_000_000,
@@ -24,6 +28,7 @@ size_dict = {
     "gpt-j-6B": 6_000_000_000,
 }
 
+
 def main():
     args = parse_args(sys.argv[1:])
     project_dir = Path(__file__).resolve().parent.parent
@@ -32,6 +37,15 @@ def main():
     else:
         base_results_dir = Path(project_dir, "results")
     exp_dir = Path(base_results_dir, args.exp_dir)
+    if args.task_type == "classification":
+        plot_classification_loss(exp_dir)
+    elif args.task_type == "numeric":
+        plot_numeric_loss(exp_dir)
+    else:
+        raise ValueError(f"unknown task type {args.task_type}")
+
+
+def plot_classification_loss(exp_dir: Path):
     loss_csvs = [f for f in exp_dir.glob("*.csv") if f.name != "data.csv"]
     if len(loss_csvs) == 0:
         raise ValueError(f"{exp_dir} does not exist or contains no output files")
@@ -42,17 +56,38 @@ def main():
         model_name: np.std(df["loss"]) / np.sqrt(len(df["loss"]))
         for model_name, df in dfs.items()
     }
-    plot_loss(averages, standard_errors, exp_dir)
+    plot_loss(exp_dir, averages, standard_errors)
 
 
-def plot_loss(loss_dict: dict[str, float], standard_errors: dict[str, float], exp_dir: Path) -> None:
+def plot_numeric_loss(exp_dir: Path):
+    data_file = Path(exp_dir, "results.json")
+    if not data_file.is_file():
+        # TODO make error message more general
+        raise ValueError(
+            f"{data_file} does not exist: please run evaluate_anchoring first"
+        )
+    with data_file.open("r") as f:
+        averages = json.load(f)
+    plot_loss(exp_dir, averages)
+
+
+def plot_loss(
+    exp_dir: Path,
+    loss_dict: dict[str, float],
+    standard_errors: Optional[dict[str, float]] = None,
+) -> None:
     fig = plt.figure(figsize=(20, 10))
-    errorbar_data = [
-        (size_dict[size], loss, standard_errors[size])
-        for size, loss in loss_dict.items()
-    ]
-    xs, ys, yerrs = zip(*sorted(errorbar_data, key=lambda pair: pair[0]))
-    plt.errorbar(xs, ys, yerrs)
+    if standard_errors is not None:
+        errorbar_data = [
+            (size_dict[size], loss, standard_errors[size])
+            for size, loss in loss_dict.items()
+        ]
+        xs, ys, yerrs = zip(*sorted(errorbar_data, key=lambda pair: pair[0]))
+        plt.errorbar(xs, ys, yerrs)
+    else:
+        xy_pairs = [(size_dict[size], loss) for size, loss in loss_dict.items()]
+        xs, ys = zip(*sorted(xy_pairs, key=lambda pair: pair[0]))
+        plt.plot(xs, ys)
 
     labels, ticks = zip(
         *[
@@ -61,7 +96,7 @@ def plot_loss(loss_dict: dict[str, float], standard_errors: dict[str, float], ex
             if name in loss_dict.keys()
         ]
     )
-    plt.title("Log-log plot of classification loss vs model size")
+    plt.title("Log-log plot of loss vs model size")
     plt.xscale("log")
     plt.yscale("log")
     plt.xticks(ticks, labels, rotation=90)
@@ -81,6 +116,13 @@ def parse_args(args) -> argparse.Namespace:
         "--colab",
         action="store_true",
         help="Whether to look for the exp dir in /content/drive or results",
+    )
+    parser.add_argument(
+        "--task-type",
+        type=str,
+        default="classification",
+        choices=["classification", "numeric"],
+        help="The type of task that was run in this experiment",
     )
     args = parser.parse_args(args)
     return args

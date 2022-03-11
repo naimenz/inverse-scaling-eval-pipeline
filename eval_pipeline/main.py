@@ -95,7 +95,8 @@ def run_model(
     """This function needs to run the model on the data and
     write the results to write_path incrementally."""
     write_path = Path(write_dir, model_name + ".csv")
-    field_names = ["index", "loss"]
+    output_name = "loss" if task_type == "classification" else "estimate"
+    field_names = ["index", output_name]
     with write_path.open("w") as outfile:
         writer = csv.DictWriter(outfile, fieldnames=field_names)
         writer.writeheader()
@@ -104,9 +105,9 @@ def run_model(
         # TODO: Fix padding so I can use >1 batch size for transformers models as well
         for start_index in tqdm(range(0, n_data, batch_size)):
             examples = data.examples[start_index : start_index + batch_size]
-            losses = model(examples, task_type)
-            for offset, loss in enumerate(losses):
-                writer.writerow({"index": start_index + offset, "loss": loss})
+            outputs = model(examples, task_type)
+            for offset, output in enumerate(outputs):
+                writer.writerow({"index": start_index + offset, output_name: output})
 
 
 def parse_args(args):

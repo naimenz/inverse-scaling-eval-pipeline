@@ -33,6 +33,7 @@ for i, row in df.iterrows():
     answer_sentence = cast(str, row["answer_sentence"])
     for adjustment in adjustments:
         anchor = int(true_answer * adjustment)
+
         if anchor > true_answer:
             comparison = comparisons["anchor_bigger"]
             template = anchor_template
@@ -45,14 +46,17 @@ for i, row in df.iterrows():
             comparison = "NONE"
             template = control_template
             template_list = control_templates
+
         anchor_sentence = anchor_sentence_template.format(
             comparison=comparison, anchor=anchor
         )
+
         filled_template = template.format(
             anchor_sentence=anchor_sentence,
             question_sentence=question_sentence,
             answer_sentence=answer_sentence,
         )
+
         template_list.append(filled_template)
         true_answers_list.append(true_answer)
         anchors_list.append(anchor)

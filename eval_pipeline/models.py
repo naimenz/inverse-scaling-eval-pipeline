@@ -150,7 +150,7 @@ class GPT3Model(Model):
     def _evaluate_numeric(
         self, examples: list[NumericExample], response_json: dict
     ) -> list[float]:
-        losses = []
+        estimates = []
         choices = response_json["choices"]
 
         # working out which completions correspond to which input examples
@@ -165,10 +165,13 @@ class GPT3Model(Model):
             completions = [
                 choice["text"] for choice in choices[start : start + n_samples]
             ]
-            print(f"completions = {completions}")
+            print(f"completions: {completions}")
             floats = parser(completions)
-            print(f"floats = {floats}")
-
-            # loss = -F.log_softmax(relevant_logprobs, dim=-1)[example.answer_index]
-            # losses.append(loss.item())
-        return losses
+            print(f"floats: {floats}")
+            # for now, we'll just take the mean of valid outputs as the estimate
+            valid_floats = [f for f in floats if f is not None]
+            print(f"Number of valid floats: {len(valid_floats)} of total: {len(floats)}")
+            estimate = sum(valid_floats) / len(valid_floats)
+            estimates.append(estimate)
+            
+        return estimates
