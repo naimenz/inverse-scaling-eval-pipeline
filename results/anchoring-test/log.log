@@ -1,0 +1,4 @@
+2022-03-10 16:42:20,626 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['ada', 'babbage'], task_type='numeric', use_gpu=False)
+2022-03-10 16:42:20,626 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
+2022-03-10 16:42:20,626 [INFO] Copied data

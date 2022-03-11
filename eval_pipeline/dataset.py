@@ -1,16 +1,31 @@
 from __future__ import annotations
+from abc import ABC
 import ast
 from dataclasses import dataclass
 from typing import Iterator
-
+from typing_extensions import Literal
 import pandas as pd
+
+TaskType = Literal["classification", "numeric"]
 
 
 @dataclass
-class Example:
+class Example(ABC):
+    prompt: str
+
+
+@dataclass
+class ClassificationExample(Example):
     prompt: str
     classes: tuple[str, ...]
     answer_index: int
+
+
+@dataclass
+class NumericExample(Example):
+    prompt: str
+    true_answer: int
+    anchor: int
 
 
 class Dataset:
@@ -20,12 +35,21 @@ class Dataset:
         self.examples = examples
 
     @classmethod
-    def from_df(cls, df: pd.DataFrame) -> Dataset:
+    def classification_from_df(cls, df: pd.DataFrame) -> Dataset:
         examples = []
         for _, (prompt, classes_string, answer_index) in df.iterrows():
             # important to convert the string 'classes' back into a list
             classes_list = ast.literal_eval(classes_string)
-            example = Example(prompt, classes_list, answer_index)
+            example = ClassificationExample(prompt, classes_list, answer_index)
+            examples.append(example)
+        return Dataset(examples)
+
+    @classmethod
+    def numeric_from_df(cls, df: pd.DataFrame) -> Dataset:
+        examples = []
+        for _, (prompt, true_answer, anchor) in df.iterrows():
+            # important to convert the string 'classes' back into a list
+            example = NumericExample(prompt, true_answer, anchor)
             examples.append(example)
         return Dataset(examples)
 

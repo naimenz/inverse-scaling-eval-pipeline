@@ -1,0 +1,13 @@
+{
+  "dataset": "anchoring",
+  "dataset_path": null,
+  "exp_dir": "anchoring-test",
+  "models": [
+    "ada",
+    "babbage"
+  ],
+  "use_gpu": false,
+  "colab": false,
+  "batch_size": 1,
+  "task_type": "numeric"
+}

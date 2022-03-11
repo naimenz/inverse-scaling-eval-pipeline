@@ -12,8 +12,8 @@ from pathlib import Path
 import torch
 from tqdm.autonotebook import tqdm
 
-from eval_pipeline.dataset import Dataset
-from eval_pipeline.models import Device, Model, ValidGPT3Model, ValidHFModel
+from eval_pipeline.dataset import Dataset, TaskType
+from eval_pipeline.models import Device, Model, BaseGPT3Model, ValidHFModel
 
 
 def main():
@@ -59,12 +59,12 @@ def main():
     # put a copy of the data in the experiment dir for reference
     shutil.copy(data_path, Path(write_dir, "data.csv"))
     logging.info("Copied data")
-    data = load_data(data_path)
+    data = load_data(data_path, args.task_type)
 
     device = "cuda:0" if args.use_gpu and torch.cuda.is_available() else "cpu"
     model_names = args.models
     for model_name in tqdm(model_names):
-        run_model(model_name, data, write_dir, device, args.batch_size)
+        run_model(model_name, data, write_dir, device, args.batch_size, args.task_type)
 
 
 def set_up_logging(log_path: Path):
@@ -75,18 +75,22 @@ def set_up_logging(log_path: Path):
     )
 
 
-def load_data(dataset_path: Path) -> Dataset:
+def load_data(dataset_path: Path, task_type: TaskType) -> Dataset:
     df = pd.read_csv(dataset_path, index_col=0)
-    dataset = Dataset.from_df(df)
+    if task_type == "classification":
+        dataset = Dataset.classification_from_df(df)
+    elif task_type == "numeric":
+        dataset = Dataset.numeric_from_df(df)
     return dataset
 
 
 def run_model(
-    model_name: Union[ValidHFModel, ValidGPT3Model],
+    model_name: Union[ValidHFModel, BaseGPT3Model],
     data: Dataset,
     write_dir: Path,
     device: Device,
     batch_size: int,
+    task_type: TaskType,
 ):
     """This function needs to run the model on the data and
     write the results to write_path incrementally."""
@@ -100,7 +104,7 @@ def run_model(
         # TODO: Fix padding so I can use >1 batch size for transformers models as well
         for start_index in tqdm(range(0, n_data, batch_size)):
             examples = data.examples[start_index : start_index + batch_size]
-            losses = model(examples)
+            losses = model(examples, task_type)
             for offset, loss in enumerate(losses):
                 writer.writerow({"index": start_index + offset, "loss": loss})
 
@@ -112,7 +116,7 @@ def parse_args(args):
     parser.add_argument(
         "--dataset",
         type=str,
-        help="The name of the directory containing the data (must be a subdir of 'data'). Superseded by --dataset-path",
+        help="The name of the file containing the dataset (must be in the directory 'data'). Superseded by --dataset-path",
         required=False,
     )
     parser.add_argument(
@@ -168,6 +172,14 @@ def parse_args(args):
         type=int,
         help="Only change the inference batch size if using exclusively GPT-3 models (will break HuggingFace models)",
         default=1,
+    )
+
+    parser.add_argument(
+        "--task-type",
+        type=str,
+        help="The type of output expected for the dataset",
+        default="classification",
+        choices=["classification", "numeric"],
     )
     args = parser.parse_args(args)
     return args

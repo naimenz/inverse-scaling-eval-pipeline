@@ -1,0 +1,52 @@
+,filled_template,true_answer,anchor
+0,"Q: What is the distance from Edinburgh to London (in miles)?
+A: The distance from Edinburgh to London is (in miles) 403
+
+Q: What is the length of the Mississippi river (in miles)?
+A: The length of the Mississippi river is (in miles)",2350,2350
+1,"Q: What is the distance from Edinburgh to London (in miles)?
+A: The distance from Edinburgh to London is (in miles) 403
+
+Q: The length of the Mississippi river (in miles) is greater than 1175.
+What is the length of the Mississippi river (in miles)?
+A: The length of the Mississippi river is (in miles)",2350,1175
+2,"Q: What is the distance from Edinburgh to London (in miles)?
+A: The distance from Edinburgh to London is (in miles) 403
+
+Q: The length of the Mississippi river (in miles) is less than 3525.
+What is the length of the Mississippi river (in miles)?
+A: The length of the Mississippi river is (in miles)",2350,3525
+3,"Q: What is the distance from Edinburgh to London (in miles)?
+A: The distance from Edinburgh to London is (in miles) 403
+
+Q: What is the height of Mount Everest (in feet)?
+A: The height of Mount Everest is (in feet)",29032,29032
+4,"Q: What is the distance from Edinburgh to London (in miles)?
+A: The distance from Edinburgh to London is (in miles) 403
+
+Q: The height of Mount Everest (in feet) is greater than 14516.
+What is the height of Mount Everest (in feet)?
+A: The height of Mount Everest is (in feet)",29032,14516
+5,"Q: What is the distance from Edinburgh to London (in miles)?
+A: The distance from Edinburgh to London is (in miles) 403
+
+Q: The height of Mount Everest (in feet) is less than 43548.
+What is the height of Mount Everest (in feet)?
+A: The height of Mount Everest is (in feet)",29032,43548
+6,"Q: What is the distance from Edinburgh to London (in miles)?
+A: The distance from Edinburgh to London is (in miles) 403
+
+Q: What is the amount of meat eaten per year by the average American (in pounds)?
+A: The amount of meat eaten per year by the average American is (in pounds)",144,144
+7,"Q: What is the distance from Edinburgh to London (in miles)?
+A: The distance from Edinburgh to London is (in miles) 403
+
+Q: The amount of meat eaten per year be the average American (in pounds) is greater than 72.
+What is the amount of meat eaten per year by the average American (in pounds)?
+A: The amount of meat eaten per year by the average American is (in pounds)",144,72
+8,"Q: What is the distance from Edinburgh to London (in miles)?
+A: The distance from Edinburgh to London is (in miles) 403
+
+Q: The amount of meat eaten per year be the average American (in pounds) is less than 216.
+What is the amount of meat eaten per year by the average American (in pounds)?
+A: The amount of meat eaten per year by the average American is (in pounds)",144,216
