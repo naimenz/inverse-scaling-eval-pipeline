@@ -10,3 +10,115 @@ Namespace(batch_size=1, colab=False, dataset='anchoring', dataset_path=None, exp
 Namespace(batch_size=2, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['ada', 'babbage'], task_type='numeric', use_gpu=False)
 2022-03-11 12:38:14,922 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
 2022-03-11 12:38:14,923 [INFO] Copied data
+2022-03-11 15:39:52,249 [INFO] Logging set up with args
+Namespace(batch_size=2, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['gpt2', 'gpt2-medium'], task_type='numeric', use_gpu=False)
+2022-03-11 15:39:52,249 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
+2022-03-11 15:39:52,249 [INFO] Copied data
+2022-03-11 15:40:26,750 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['gpt2', 'gpt2-medium'], task_type='numeric', use_gpu=False)
+2022-03-11 15:40:26,751 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
+2022-03-11 15:40:26,751 [INFO] Copied data
+2022-03-11 15:40:39,257 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['gpt2', 'gpt2-medium'], task_type='numeric', use_gpu=False)
+2022-03-11 15:40:39,257 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
+2022-03-11 15:40:39,258 [INFO] Copied data
+2022-03-11 15:41:38,028 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['gpt2', 'gpt2-medium'], task_type='numeric', use_gpu=False)
+2022-03-11 15:41:38,028 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
+2022-03-11 15:41:38,029 [INFO] Copied data
+2022-03-11 15:45:57,155 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['gpt2', 'gpt2-medium'], task_type='numeric', use_gpu=False)
+2022-03-11 15:45:57,155 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
+2022-03-11 15:45:57,156 [INFO] Copied data
+2022-03-11 15:58:06,366 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['gpt2', 'gpt2-medium'], task_type='numeric', use_gpu=False)
+2022-03-11 15:58:06,366 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
+2022-03-11 15:58:06,366 [INFO] Copied data
+2022-03-11 16:07:57,013 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['gpt2', 'gpt2-medium'], task_type='numeric', use_gpu=False)
+2022-03-11 16:07:57,013 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
+2022-03-11 16:07:57,013 [INFO] Copied data
+2022-03-11 16:08:28,750 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['gpt2', 'gpt2-medium'], task_type='numeric', use_gpu=False)
+2022-03-11 16:08:28,750 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
+2022-03-11 16:08:28,751 [INFO] Copied data
+2022-03-11 16:08:51,449 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['gpt2', 'gpt2-medium'], task_type='numeric', use_gpu=False)
+2022-03-11 16:08:51,449 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
+2022-03-11 16:08:51,449 [INFO] Copied data
+2022-03-11 16:14:34,221 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['gpt2', 'gpt2-medium'], task_type='numeric', use_gpu=False)
+2022-03-11 16:14:34,221 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
+2022-03-11 16:14:34,222 [INFO] Copied data
+2022-03-11 16:14:55,273 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['gpt2', 'gpt2-medium'], task_type='numeric', use_gpu=False)
+2022-03-11 16:14:55,273 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
+2022-03-11 16:14:55,274 [INFO] Copied data
+2022-03-11 16:15:24,910 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['gpt2', 'gpt2-medium'], task_type='numeric', use_gpu=False)
+2022-03-11 16:15:24,910 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
+2022-03-11 16:15:24,910 [INFO] Copied data
+2022-03-11 16:15:42,523 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['gpt2', 'gpt2-medium'], task_type='numeric', use_gpu=False)
+2022-03-11 16:15:42,524 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
+2022-03-11 16:15:42,524 [INFO] Copied data
+2022-03-11 16:16:31,774 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['gpt2', 'gpt2-medium'], task_type='numeric', use_gpu=True)
+2022-03-11 16:16:31,775 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
+2022-03-11 16:16:31,775 [INFO] Copied data
+2022-03-11 16:17:21,547 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['gpt2', 'gpt2-medium'], task_type='numeric', use_gpu=True)
+2022-03-11 16:17:21,548 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
+2022-03-11 16:17:21,548 [INFO] Copied data
+2022-03-11 16:18:31,104 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['gpt2', 'gpt2-medium'], task_type='numeric', use_gpu=True)
+2022-03-11 16:18:31,105 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
+2022-03-11 16:18:31,105 [INFO] Copied data
+2022-03-11 16:19:25,194 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['gpt2', 'gpt2-medium'], task_type='numeric', use_gpu=True)
+2022-03-11 16:19:25,194 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
+2022-03-11 16:19:25,195 [INFO] Copied data
+2022-03-11 16:20:22,445 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['gpt2', 'gpt2-medium'], task_type='numeric', use_gpu=True)
+2022-03-11 16:20:22,445 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
+2022-03-11 16:20:22,446 [INFO] Copied data
+2022-03-11 16:21:33,863 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['gpt2', 'gpt2-medium'], task_type='numeric', use_gpu=True)
+2022-03-11 16:21:33,864 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
+2022-03-11 16:21:33,865 [INFO] Copied data
+2022-03-11 16:23:55,674 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['gpt2', 'gpt2-medium'], task_type='numeric', use_gpu=True)
+2022-03-11 16:23:55,674 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
+2022-03-11 16:23:55,675 [INFO] Copied data
+2022-03-11 16:25:53,652 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['gpt2', 'gpt2-medium'], task_type='numeric', use_gpu=True)
+2022-03-11 16:25:53,652 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
+2022-03-11 16:25:53,652 [INFO] Copied data
+2022-03-11 16:26:27,572 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['gpt2', 'gpt2-medium'], task_type='numeric', use_gpu=True)
+2022-03-11 16:26:27,572 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
+2022-03-11 16:26:27,573 [INFO] Copied data
+2022-03-11 16:27:30,914 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['gpt2', 'gpt2-medium'], task_type='numeric', use_gpu=True)
+2022-03-11 16:27:30,914 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
+2022-03-11 16:27:30,914 [INFO] Copied data
+2022-03-11 16:28:09,619 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['gpt2', 'gpt2-medium'], task_type='numeric', use_gpu=True)
+2022-03-11 16:28:09,619 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
+2022-03-11 16:28:09,619 [INFO] Copied data
+2022-03-11 16:28:31,477 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['gpt2', 'gpt2-medium'], task_type='numeric', use_gpu=True)
+2022-03-11 16:28:31,477 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
+2022-03-11 16:28:31,477 [INFO] Copied data
+2022-03-11 16:28:54,903 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['gpt2', 'gpt2-medium'], task_type='numeric', use_gpu=True)
+2022-03-11 16:28:54,903 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
+2022-03-11 16:28:54,904 [INFO] Copied data
+2022-03-11 16:29:58,608 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['ada', 'babbage'], task_type='numeric', use_gpu=True)
+2022-03-11 16:29:58,608 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
+2022-03-11 16:29:58,609 [INFO] Copied data
+2022-03-11 16:30:09,885 [INFO] Logging set up with args
+Namespace(batch_size=9, colab=False, dataset='anchoring', dataset_path=None, exp_dir='anchoring-test', models=['ada', 'babbage'], task_type='numeric', use_gpu=False)
+2022-03-11 16:30:09,885 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anchoring-test
+2022-03-11 16:30:09,886 [INFO] Copied data
