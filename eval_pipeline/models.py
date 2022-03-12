@@ -46,8 +46,8 @@ api_parameters_map: dict[TaskType, APIParameters] = {
         logprobs=100,
     ),
     "numeric": APIParameters(
-        temperature=0.2,
-        n=5,
+        temperature=0.5,
+        n=10,
         max_tokens=10,
         logprobs=None,
         stop=["\n"],
@@ -116,9 +116,9 @@ class HFModel(Model):
         outputs = self.model.generate(
             **tokenized_inputs,
             do_sample=True,
-            num_return_sequences=5,
+            num_return_sequences=10,
             max_new_tokens=7,
-            temperature=0.2,
+            temperature=0.5,
             pad_token_id=50526,
         )
         full_completions = self.tokenizer.batch_decode(

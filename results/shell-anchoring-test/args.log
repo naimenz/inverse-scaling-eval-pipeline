@@ -1,0 +1,85 @@
+{
+  "dataset": "anchoring",
+  "dataset_path": null,
+  "exp_dir": "shell-anchoring-test",
+  "models": [
+    "ada",
+    "babbage",
+    "curie",
+    "davinci"
+  ],
+  "use_gpu": false,
+  "colab": false,
+  "batch_size": 9,
+  "task_type": "classification"
+}{
+  "dataset": "anchoring",
+  "dataset_path": null,
+  "exp_dir": "shell-anchoring-test",
+  "models": [
+    "ada",
+    "babbage",
+    "curie",
+    "davinci"
+  ],
+  "use_gpu": false,
+  "colab": false,
+  "batch_size": 9,
+  "task_type": "classification"
+}{
+  "dataset": "anchoring",
+  "dataset_path": null,
+  "exp_dir": "shell-anchoring-test",
+  "models": [
+    "ada",
+    "babbage",
+    "curie",
+    "davinci"
+  ],
+  "use_gpu": false,
+  "colab": false,
+  "batch_size": 9,
+  "task_type": "numeric"
+}{
+  "dataset": "anchoring",
+  "dataset_path": null,
+  "exp_dir": "shell-anchoring-test",
+  "models": [
+    "ada",
+    "babbage",
+    "curie",
+    "davinci"
+  ],
+  "use_gpu": false,
+  "colab": false,
+  "batch_size": 9,
+  "task_type": "numeric"
+}{
+  "dataset": "anchoring",
+  "dataset_path": null,
+  "exp_dir": "shell-anchoring-test",
+  "models": [
+    "ada",
+    "babbage",
+    "curie",
+    "davinci"
+  ],
+  "use_gpu": false,
+  "colab": false,
+  "batch_size": 9,
+  "task_type": "numeric"
+}{
+  "dataset": "anchoring",
+  "dataset_path": null,
+  "exp_dir": "shell-anchoring-test",
+  "models": [
+    "ada",
+    "babbage",
+    "curie",
+    "davinci"
+  ],
+  "use_gpu": false,
+  "colab": false,
+  "batch_size": 9,
+  "task_type": "numeric"
+}

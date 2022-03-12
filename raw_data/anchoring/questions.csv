@@ -1,4 +1,4 @@
 ,anchor_sentence,question_sentence,answer_sentence,true_answer
-0,"The length of the Mississippi river (in miles) is {comparison} than {anchor}.","What is the length of the Mississippi river (in miles)?","The length of the Mississippi river is (in miles)",2350
-1,"The height of Mount Everest (in feet) is {comparison} than {anchor}.","What is the height of Mount Everest (in feet)?","The height of Mount Everest is (in feet)",29032
-2,"The amount of meat eaten per year by the average American (in pounds) is {comparison} than {anchor}.","What is the amount of meat eaten per year by the average American (in pounds)?","The amount of meat eaten per year by the average American is (in pounds)",144
+0,"The length of the Mississippi river (in miles) is {comparison} than {anchor}.","What is the length of the Mississippi river (in miles)?","The length of the Mississippi river (in miles) =",2350
+1,"The height of Mount Everest (in feet) is {comparison} than {anchor}.","What is the height of Mount Everest (in feet)?","The height of Mount Everest (in feet) =",29032
+2,"The amount of meat eaten per year by the average American (in pounds) is {comparison} than {anchor}.","What is the amount of meat eaten per year by the average American (in pounds)?","The amount of meat eaten per year by the average American (in pounds) =",144

@@ -1,0 +1,24 @@
+2022-03-11 16:38:47,379 [INFO] Logging set up with args
+Namespace(batch_size=9, colab=False, dataset='anchoring', dataset_path=None, exp_dir='shell-anchoring-test', models=['ada', 'babbage', 'curie', 'davinci'], task_type='classification', use_gpu=False)
+2022-03-11 16:38:47,379 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/shell-anchoring-test
+2022-03-11 16:38:47,379 [INFO] Copied data
+2022-03-11 16:39:43,561 [INFO] Logging set up with args
+Namespace(batch_size=9, colab=False, dataset='anchoring', dataset_path=None, exp_dir='shell-anchoring-test', models=['ada', 'babbage', 'curie', 'davinci'], task_type='classification', use_gpu=False)
+2022-03-11 16:39:43,561 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/shell-anchoring-test
+2022-03-11 16:39:43,561 [INFO] Copied data
+2022-03-11 16:40:01,743 [INFO] Logging set up with args
+Namespace(batch_size=9, colab=False, dataset='anchoring', dataset_path=None, exp_dir='shell-anchoring-test', models=['ada', 'babbage', 'curie', 'davinci'], task_type='numeric', use_gpu=False)
+2022-03-11 16:40:01,743 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/shell-anchoring-test
+2022-03-11 16:40:01,743 [INFO] Copied data
+2022-03-11 16:40:47,302 [INFO] Logging set up with args
+Namespace(batch_size=9, colab=False, dataset='anchoring', dataset_path=None, exp_dir='shell-anchoring-test', models=['ada', 'babbage', 'curie', 'davinci'], task_type='numeric', use_gpu=False)
+2022-03-11 16:40:47,303 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/shell-anchoring-test
+2022-03-11 16:40:47,303 [INFO] Copied data
+2022-03-11 16:50:36,214 [INFO] Logging set up with args
+Namespace(batch_size=9, colab=False, dataset='anchoring', dataset_path=None, exp_dir='shell-anchoring-test', models=['ada', 'babbage', 'curie', 'davinci'], task_type='numeric', use_gpu=False)
+2022-03-11 16:50:36,214 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/shell-anchoring-test
+2022-03-11 16:50:36,214 [INFO] Copied data
+2022-03-11 16:51:39,762 [INFO] Logging set up with args
+Namespace(batch_size=9, colab=False, dataset='anchoring', dataset_path=None, exp_dir='shell-anchoring-test', models=['ada', 'babbage', 'curie', 'davinci'], task_type='numeric', use_gpu=False)
+2022-03-11 16:51:39,762 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/shell-anchoring-test
+2022-03-11 16:51:39,762 [INFO] Copied data
