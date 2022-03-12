@@ -46,7 +46,7 @@ api_parameters_map: dict[TaskType, APIParameters] = {
         logprobs=100,
     ),
     "numeric": APIParameters(
-        temperature=0.7,
+        temperature=0.2,
         n=5,
         max_tokens=10,
         logprobs=None,
@@ -80,17 +80,68 @@ class HFModel(Model):
         if model_name.startswith("gpt-neo") or model_name.startswith("gpt-j"):
             prefix = "EleutherAI/"
         self.model = AutoModelForCausalLM.from_pretrained(prefix + model_name).to(self.device)  # type: ignore
+        # DEBUG: trying to suppress warning about sequence length
+        self.model.max_length = 1024
         self.tokenizer = AutoTokenizer.from_pretrained(prefix + model_name)
 
     def __call__(self, examples: list[Example], task_type: TaskType) -> list[float]:
+        # TODO: remove this restriction
+        if len(examples) > 1:
+            raise ValueError(
+                f"Batch size of {len(examples)} not currently supported for HF models: please use 1"
+            )
         prompts = [example.prompt for example in examples]
         tokenized_inputs = self.tokenizer(prompts, return_tensors="pt").to(self.device)
+        if task_type == "classification":
+            rv = self._evaluate_classification(examples, tokenized_inputs)
+        elif task_type == "numeric":
+            rv = self._evaluate_numeric(examples, tokenized_inputs)
+        return rv
+
+    def _evaluate_classification(
+        self, examples: list[Example], tokenized_inputs: dict
+    ) -> list[float]:
         outputs = self.model(**tokenized_inputs)
         # we only need the logits for the final (new) token
         # NOTE: this may need to change if we use batch size > 1 with padding
         logits = outputs["logits"][:, -1]
         losses = self._losses_from_logits(examples, logits)
         return losses
+
+    def _evaluate_numeric(
+        self, examples: list[Example], tokenized_inputs: dict
+    ) -> list[float]:
+        parser = BasicParser()
+        # NOTE: this may need to change if we use batch size > 1 with padding
+        outputs = self.model.generate(
+            **tokenized_inputs,
+            do_sample=True,
+            num_return_sequences=5,
+            max_new_tokens=7,
+            temperature=0.2,
+            pad_token_id=50526,
+        )
+        full_completions = self.tokenizer.batch_decode(
+            outputs, skip_special_tokens=True
+        )
+        # strip out the prompt NOTE: again we're assuming the batch_size is 1
+        untrimmed_completions = [
+            fc[len(examples[0].prompt) :] for fc in full_completions
+        ]
+        # dropping anything after a new line
+        print(f"untrimmed completions: {untrimmed_completions}")
+        completions = [comp.split("\n")[0] for comp in untrimmed_completions]
+        print(f"completions: {completions}")
+        floats = parser(completions)
+        print(f"floats: {floats}")
+        # for now, we'll just take the mean of valid outputs as the estimate
+        valid_floats = [f for f in floats if f is not None]
+        print(f"Number of valid floats: {len(valid_floats)} of total: {len(floats)}")
+        if len(valid_floats) > 0:
+            estimate = sum(valid_floats) / len(valid_floats)
+        else:
+            raise ValueError("No valid numbers returned")
+        return [estimate]
 
     def _losses_from_logits(self, examples, logits) -> list[float]:
         """Given examples and logits for those examples,
@@ -170,8 +221,10 @@ class GPT3Model(Model):
             print(f"floats: {floats}")
             # for now, we'll just take the mean of valid outputs as the estimate
             valid_floats = [f for f in floats if f is not None]
-            print(f"Number of valid floats: {len(valid_floats)} of total: {len(floats)}")
+            print(
+                f"Number of valid floats: {len(valid_floats)} of total: {len(floats)}"
+            )
             estimate = sum(valid_floats) / len(valid_floats)
             estimates.append(estimate)
-            
+
         return estimates
