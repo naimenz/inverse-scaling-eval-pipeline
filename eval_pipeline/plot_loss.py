@@ -1,5 +1,6 @@
 from __future__ import annotations
 import argparse
+from ast import literal_eval
 import json
 import sys
 
@@ -47,6 +48,15 @@ def main():
 
 def plot_classification_loss(exp_dir: Path):
     loss_csvs = [f for f in exp_dir.glob("*.csv") if f.name != "data.csv"]
+    data_csv = pd.read_csv(Path(exp_dir, "data.csv"), index_col=0).reset_index(drop=True)
+    print(data_csv.head())
+    print(data_csv["classes"])
+    print(data_csv["classes"][0])
+    # NOTE: assuming all examples have the same number of classes
+    n_classes = len(literal_eval(data_csv["classes"][0]))  # type: ignore
+    # the baseline puts equal probability on each class, so we are considering a uniform distribution
+    baseline_prob = 1 / n_classes 
+    baseline_loss = - np.log(baseline_prob)
     if len(loss_csvs) == 0:
         raise ValueError(f"{exp_dir} does not exist or contains no output files")
     dfs = {csv_file.stem: pd.read_csv(csv_file, index_col=0) for csv_file in loss_csvs}
@@ -56,7 +66,7 @@ def plot_classification_loss(exp_dir: Path):
         model_name: np.std(df["loss"]) / np.sqrt(len(df["loss"]))
         for model_name, df in dfs.items()
     }
-    plot_loss(exp_dir, averages, standard_errors)
+    plot_loss(exp_dir, averages, standard_errors, baseline=baseline_loss)
 
 
 def plot_numeric_loss(exp_dir: Path):
@@ -75,19 +85,27 @@ def plot_loss(
     exp_dir: Path,
     loss_dict: dict[str, float],
     standard_errors: Optional[dict[str, float]] = None,
+    baseline: Optional[float] = None,
 ) -> None:
+    plt.style.use('ggplot')
+
     fig = plt.figure(figsize=(20, 10))
+
+    if baseline is not None:
+        plt.axhline(baseline, linestyle='--', color='k', label="Baseline loss (equal probability)")
+        print(f"Baseline at {baseline}")
+
     if standard_errors is not None:
         errorbar_data = [
             (size_dict[size], loss, standard_errors[size])
             for size, loss in loss_dict.items()
         ]
         xs, ys, yerrs = zip(*sorted(errorbar_data, key=lambda pair: pair[0]))
-        plt.errorbar(xs, ys, yerrs)
+        plt.errorbar(xs, ys, yerrs, label="Model loss (with Standard Error in Mean)")
     else:
         xy_pairs = [(size_dict[size], loss) for size, loss in loss_dict.items()]
         xs, ys = zip(*sorted(xy_pairs, key=lambda pair: pair[0]))
-        plt.plot(xs, ys)
+        plt.plot(xs, ys, label="Model loss")
 
     labels, ticks = zip(
         *[
