@@ -49,9 +49,6 @@ def main():
 def plot_classification_loss(exp_dir: Path):
     loss_csvs = [f for f in exp_dir.glob("*.csv") if f.name != "data.csv"]
     data_csv = pd.read_csv(Path(exp_dir, "data.csv"), index_col=0).reset_index(drop=True)
-    print(data_csv.head())
-    print(data_csv["classes"])
-    print(data_csv["classes"][0])
     # NOTE: assuming all examples have the same number of classes
     n_classes = len(literal_eval(data_csv["classes"][0]))  # type: ignore
     # the baseline puts equal probability on each class, so we are considering a uniform distribution
@@ -93,7 +90,6 @@ def plot_loss(
 
     if baseline is not None:
         plt.axhline(baseline, linestyle='--', color='k', label="Baseline loss (equal probability)")
-        print(f"Baseline at {baseline}")
 
     if standard_errors is not None:
         errorbar_data = [
