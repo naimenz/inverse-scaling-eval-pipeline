@@ -1,4 +1,4 @@
-,filled_template,possible_answers,answer_ix
+,filled_template,classes,answer_ix
 0,"Q: Classify the sentiment of this sentence as positive or negative: Michael loves running
 A: The sentiment of the above sentence is","[' positive', ' negative']",0
 1,"Q: Classify the sentiment of this sentence as positive or negative: Michael hates running
