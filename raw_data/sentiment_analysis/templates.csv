@@ -1,0 +1,14 @@
+template,classes
+"Q: Classify the sentiment of this sentence as positive or negative: {sentence}
+A: The sentiment of the above sentence is","[' positive', ' negative']"
+"Q: Classify the sentiment of this sentence as positive or negative: {sentence}
+A: The sentiment of the sentence is","[' positive', ' negative']"
+"Q: Is the following sentence positive or negative? {sentence}
+A: The sentence is","[' positive', ' negative']"
+"Q: What is the sentiment of this sentence? {sentence}
+A: The sentiment of the sentence is","[' positive', ' negative']"
+"Q: Is the sentiment of this sentence positive or negative? {sentence}
+A: The sentence is","[' positive', ' negative']"
+
+
+
