@@ -1,0 +1,49 @@
+{
+  "dataset": "conj",
+  "dataset_path": null,
+  "exp_dir": "shell-conj-test",
+  "models": [
+    "gpt2",
+    "gpt2-medium"
+  ],
+  "use_gpu": true,
+  "colab": false,
+  "batch_size": 1,
+  "task_type": "classification"
+}{
+  "dataset": "conjugation_fallacy",
+  "dataset_path": null,
+  "exp_dir": "shell-conj-test",
+  "models": [
+    "gpt2",
+    "gpt2-medium"
+  ],
+  "use_gpu": true,
+  "colab": false,
+  "batch_size": 1,
+  "task_type": "classification"
+}{
+  "dataset": "conjunction_fallacy",
+  "dataset_path": null,
+  "exp_dir": "shell-conj-test",
+  "models": [
+    "gpt2",
+    "gpt2-medium"
+  ],
+  "use_gpu": true,
+  "colab": false,
+  "batch_size": 1,
+  "task_type": "classification"
+}{
+  "dataset": "conjunction_fallacy",
+  "dataset_path": null,
+  "exp_dir": "shell-conj-test",
+  "models": [
+    "gpt2",
+    "gpt2-medium"
+  ],
+  "use_gpu": true,
+  "colab": false,
+  "batch_size": 1,
+  "task_type": "classification"
+}

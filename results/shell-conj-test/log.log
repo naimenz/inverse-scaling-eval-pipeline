@@ -1,0 +1,14 @@
+2022-03-14 14:11:49,850 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='conj', dataset_path=None, exp_dir='shell-conj-test', models=['gpt2', 'gpt2-medium'], task_type='classification', use_gpu=True)
+2022-03-14 14:11:49,850 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/shell-conj-test
+2022-03-14 14:12:03,417 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='conjugation_fallacy', dataset_path=None, exp_dir='shell-conj-test', models=['gpt2', 'gpt2-medium'], task_type='classification', use_gpu=True)
+2022-03-14 14:12:03,417 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/shell-conj-test
+2022-03-14 14:12:19,833 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='conjunction_fallacy', dataset_path=None, exp_dir='shell-conj-test', models=['gpt2', 'gpt2-medium'], task_type='classification', use_gpu=True)
+2022-03-14 14:12:19,833 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/shell-conj-test
+2022-03-14 14:12:19,842 [INFO] Copied data
+2022-03-14 14:13:49,690 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='conjunction_fallacy', dataset_path=None, exp_dir='shell-conj-test', models=['gpt2', 'gpt2-medium'], task_type='classification', use_gpu=True)
+2022-03-14 14:13:49,690 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/shell-conj-test
+2022-03-14 14:13:49,691 [INFO] Copied data
