@@ -91,7 +91,7 @@ class HFModel(Model):
                 f"Batch size of {len(examples)} not currently supported for HF models: please use 1"
             )
         prompts = [example.prompt for example in examples]
-        tokenized_inputs = self.tokenizer(prompts, return_tensors="pt").to(self.device)
+        tokenized_inputs = self.tokenizer(prompts, return_tensors="pt", truncation=True).to(self.device)
         if task_type == "classification":
             rv = self._evaluate_classification(examples, tokenized_inputs)
         elif task_type == "numeric":
