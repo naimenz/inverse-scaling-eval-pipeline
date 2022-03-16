@@ -1,0 +1,4 @@
+2022-03-14 19:37:14,531 [INFO] Logging set up with args
+Namespace(dataset='sentiment_analysis', dataset_path=None, exp_dir='/scratch/im2480/gpt2_sentiment', models=['gpt2', 'gpt2-medium', 'gpt2-large', 'gpt2-xl'], use_gpu=True, colab=False, batch_size=1, task_type='classification')
+2022-03-14 19:37:14,531 [INFO] Saving to results to /scratch/im2480/gpt2_sentiment
+2022-03-14 19:37:14,533 [INFO] Copied data

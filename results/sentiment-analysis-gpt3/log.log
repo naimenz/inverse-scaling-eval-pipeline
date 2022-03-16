@@ -1,0 +1,7 @@
+2022-03-15 16:00:46,669 [INFO] Logging set up with args
+Namespace(batch_size=50, colab=False, dataset='sentiment_analysis', dataset_path=None, exp_dir='sentiment-analysis-gpt3', models=['ada', 'babbage', 'curie', 'davinci'], task_type='classification', use_gpu=False)
+2022-03-15 16:00:46,669 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/sentiment-analysis-gpt3
+2022-03-15 16:00:46,670 [INFO] Copied data
+2022-03-15 16:01:57,711 [INFO] Retrying after error 429: {'message': 'Rate limit reached for requests. Limit: 60.000000 / min. Current: 64.000000 / min. Contact support@openai.com if you continue to have issues.', 'type': 'requests', 'param': None, 'code': None}
+2022-03-15 16:02:00,865 [INFO] Retrying after error 429: {'message': 'Rate limit reached for requests. Limit: 60.000000 / min. Current: 64.000000 / min. Contact support@openai.com if you continue to have issues.', 'type': 'requests', 'param': None, 'code': None}
+2022-03-15 16:02:04,687 [INFO] Retrying after error 429: {'message': 'Rate limit reached for requests. Limit: 60.000000 / min. Current: 64.000000 / min. Contact support@openai.com if you continue to have issues.', 'type': 'requests', 'param': None, 'code': None}

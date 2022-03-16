@@ -1,8 +1,0 @@
-2022-03-14 16:01:10,524 [INFO] Logging set up with args
-Namespace(batch_size=1, colab=False, dataset='conjunction_fallacy', dataset_path=None, exp_dir='sentiment-analysis-gpt2', models=['gpt2', 'gpt2-medium', 'gpt2-large'], task_type='classification', use_gpu=True)
-2022-03-14 16:01:10,525 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/sentiment-analysis-gpt2
-2022-03-14 16:01:10,525 [INFO] Copied data
-2022-03-14 16:04:12,461 [INFO] Logging set up with args
-Namespace(batch_size=1, colab=False, dataset='conjunction_fallacy', dataset_path=None, exp_dir='sentiment-analysis-gpt2', models=['gpt2', 'gpt2-medium', 'gpt2-large'], task_type='classification', use_gpu=True)
-2022-03-14 16:04:12,461 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/sentiment-analysis-gpt2
-2022-03-14 16:04:12,461 [INFO] Copied data

@@ -1,0 +1,15 @@
+2022-03-14 19:21:54,136 [INFO] Logging set up with args
+Namespace(dataset='sentiment_analysis', dataset_path=None, exp_dir='/scratch/im2480/gpt3_sentiment', models=['ada', 'babbage', 'curie', 'davinci'], use_gpu=False, colab=False, batch_size=50, task_type='classification')
+2022-03-14 19:21:54,136 [INFO] Saving to results to /scratch/im2480/gpt3_sentiment
+2022-03-14 19:21:54,140 [INFO] Copied data
+2022-03-14 19:31:39,065 [INFO] Logging set up with args
+Namespace(dataset='sentiment_analysis', dataset_path=None, exp_dir='/scratch/im2480/gpt3_sentiment', models=['ada', 'babbage', 'curie', 'davinci'], use_gpu=False, colab=False, batch_size=50, task_type='classification')
+2022-03-14 19:31:39,066 [INFO] Saving to results to /scratch/im2480/gpt3_sentiment
+2022-03-14 19:31:39,094 [INFO] Copied data
+2022-03-14 19:36:45,071 [INFO] Retrying after error 429: {'message': 'Rate limit reached for requests. Limit: 60.000000 / min. Current: 64.000000 / min. Contact support@openai.com if you continue to have issues.', 'type': 'requests', 'param': None, 'code': None}
+2022-03-14 19:36:46,517 [INFO] Retrying after error 429: {'message': 'Rate limit reached for requests. Limit: 60.000000 / min. Current: 68.000000 / min. Contact support@openai.com if you continue to have issues.', 'type': 'requests', 'param': None, 'code': None}
+2022-03-14 19:37:14,539 [INFO] Retrying after error 429: {'message': 'Rate limit reached for requests. Limit: 60.000000 / min. Current: 72.000000 / min. Contact support@openai.com if you continue to have issues.', 'type': 'requests', 'param': None, 'code': None}
+2022-03-14 19:37:15,849 [INFO] Retrying after error 429: {'message': 'Rate limit reached for requests. Limit: 60.000000 / min. Current: 64.000000 / min. Contact support@openai.com if you continue to have issues.', 'type': 'requests', 'param': None, 'code': None}
+2022-03-14 19:37:16,012 [INFO] Retrying after error 429: {'message': 'Rate limit reached for requests. Limit: 60.000000 / min. Current: 68.000000 / min. Contact support@openai.com if you continue to have issues.', 'type': 'requests', 'param': None, 'code': None}
+2022-03-14 19:37:16,154 [INFO] Retrying after error 429: {'message': 'Rate limit reached for requests. Limit: 60.000000 / min. Current: 76.000000 / min. Contact support@openai.com if you continue to have issues.', 'type': 'requests', 'param': None, 'code': None}
+2022-03-14 19:37:17,410 [INFO] Retrying after error 429: {'message': 'Rate limit reached for requests. Limit: 60.000000 / min. Current: 72.000000 / min. Contact support@openai.com if you continue to have issues.', 'type': 'requests', 'param': None, 'code': None}
