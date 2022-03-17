@@ -1,21 +1,21 @@
 ,prompt,classes,answer_index
-0,"Q: We're in a world where pigs can fly but birds can't. Which is more likely to be seen in the sky, pigs or birds? A:","[' pigs', ' birds']",0
-1,"Q: We're in a world where pigs can fly but birds can't. Which is more likely to be seen in the sky, birds or pigs? A:","[' pigs', ' birds']",0
-2,"Q: We're in a world where pigs can fly but birds can't. Which is less likely to be seen in the sky, pigs or birds? A:","[' pigs', ' birds']",1
-3,"Q: We're in a world where pigs can fly but birds can't. Which is less likely to be seen in the sky, birds or pigs? A:","[' pigs', ' birds']",1
-4,"Q: We're in a world where ants are bigger than humans. Which one is larger, ants or humans? A:","[' ants', ' humans']",0
-5,"Q: We're in a world where ants are bigger than humans. Which one is larger, humans or ants? A:","[' ants', ' humans']",0
-6,"Q: We're in a world where ants are bigger than humans. Which one is smaller, ants or humans? A:","[' ants', ' humans']",1
-7,"Q: We're in a world where ants are bigger than humans. Which one is smaller, humans or ants? A:","[' ants', ' humans']",1
-8,"Q: We're in a world where dogs walk humans but humans don't walk dogs. Who is on the leash, humans or dogs? A:","[' dogs', ' humans']",1
-9,"Q: We're in a world where dogs walk humans but humans don't walk dogs. Who is on the leash, dogs or humans? A:","[' dogs', ' humans']",1
-10,"Q: We're in a world where dogs walk humans but humans don't walk dogs. Who holds the leash, humans or dogs? A:","[' dogs', ' humans']",0
-11,"Q: We're in a world where dogs walk humans but humans don't walk dogs. Who holds the leash, dogs or humans? A:","[' dogs', ' humans']",0
-12,"Q: We're in a world where cats have good command of English. Can cats say I am from the United States, yes or no? A:","[' yes', ' no']",0
-13,"Q: We're in a world where cats have good command of English. Can cats say I am from the United States, no or yes? A:","[' yes', ' no']",0
-14,"Q: We're in a world where Samsung makes iphones. Does Apple make iphones, yes or no? A:","[' yes', ' no']",1
-15,"Q: We're in a world where Samsung makes iphones. Does Apple make iphones, no or yes? A:","[' yes', ' no']",1
-16,"Q: We're in world where Europe is in North America. Is London in North America, yes or no? A:","[' yes', ' no']",0
-17,"Q: We're in world where Europe is in North America. Is London in North America, no or yes? A:","[' yes', ' no']",0
-18,"Q: We're in world where Europe is in North America. Is England in North America, yes or no? A:","[' yes', ' no']",0
-19,"Q: We're in world where Europe is in North America. Is England in North America, no or yes? A:","[' yes', ' no']",0
+0,"Q: We're in a world where pigs can fly but birds can't. Which is more likely to be seen in the sky, pigs or birds? A:","[' Pigs', ' Birds']",0
+1,"Q: We're in a world where pigs can fly but birds can't. Which is more likely to be seen in the sky, birds or pigs? A:","[' Pigs', ' Birds']",0
+2,"Q: We're in a world where pigs can fly but birds can't. Which is less likely to be seen in the sky, pigs or birds? A:","[' Pigs', ' Birds']",1
+3,"Q: We're in a world where pigs can fly but birds can't. Which is less likely to be seen in the sky, birds or pigs? A:","[' Pigs', ' Birds']",1
+4,"Q: We're in a world where ants are bigger than humans. Which one is larger, ants or humans? A:","[' Ant', ' Humans']",0
+5,"Q: We're in a world where ants are bigger than humans. Which one is larger, humans or ants? A:","[' Ant', ' Humans']",0
+6,"Q: We're in a world where ants are bigger than humans. Which one is smaller, ants or humans? A:","[' Ant', ' Humans']",1
+7,"Q: We're in a world where ants are bigger than humans. Which one is smaller, humans or ants? A:","[' Ant', ' Humans']",1
+8,"Q: We're in a world where dogs walk humans but humans don't walk dogs. Who is on the leash, humans or dogs? A:","[' Dogs', ' Humans']",1
+9,"Q: We're in a world where dogs walk humans but humans don't walk dogs. Who is on the leash, dogs or humans? A:","[' Dogs', ' Humans']",1
+10,"Q: We're in a world where dogs walk humans but humans don't walk dogs. Who holds the leash, humans or dogs? A:","[' Dogs', ' Humans']",0
+11,"Q: We're in a world where dogs walk humans but humans don't walk dogs. Who holds the leash, dogs or humans? A:","[' Dogs', ' Humans']",0
+12,"Q: We're in a world where cats have good command of English. Can cats say I am from the United States, yes or no? A:","[' Yes', ' No']",0
+13,"Q: We're in a world where cats have good command of English. Can cats say I am from the United States, no or yes? A:","[' Yes', ' No']",0
+14,"Q: We're in a world where Samsung makes iphones. Does Apple make iphones, yes or no? A:","[' Yes', ' No']",1
+15,"Q: We're in a world where Samsung makes iphones. Does Apple make iphones, no or yes? A:","[' Yes', ' No']",1
+16,"Q: We're in world where Europe is in North America. Is London in North America, yes or no? A:","[' Yes', ' No']",0
+17,"Q: We're in world where Europe is in North America. Is London in North America, no or yes? A:","[' Yes', ' No']",0
+18,"Q: We're in world where Europe is in North America. Is England in North America, yes or no? A:","[' Yes', ' No']",0
+19,"Q: We're in world where Europe is in North America. Is England in North America, no or yes? A:","[' Yes', ' No']",0
