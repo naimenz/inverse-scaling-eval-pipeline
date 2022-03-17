@@ -1,0 +1,12 @@
+2022-03-16 12:17:49,033 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='commonsense_overriding', dataset_path=None, exp_dir='commonsense', models=['ada', 'babbage', 'curie', 'davinci'], task_type='classification', use_gpu=True)
+2022-03-16 12:17:49,033 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/commonsense
+2022-03-16 12:17:49,033 [INFO] Copied data
+2022-03-16 12:22:21,504 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='commonsense_overriding', dataset_path=None, exp_dir='commonsense', models=['ada', 'babbage', 'curie', 'davinci'], task_type='classification', use_gpu=True)
+2022-03-16 12:22:21,504 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/commonsense
+2022-03-16 12:22:21,504 [INFO] Copied data
+2022-03-16 12:25:20,846 [INFO] Logging set up with args
+Namespace(batch_size=20, colab=False, dataset='commonsense_overriding', dataset_path=None, exp_dir='commonsense', models=['ada', 'babbage', 'curie', 'davinci'], task_type='classification', use_gpu=False)
+2022-03-16 12:25:20,846 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/commonsense
+2022-03-16 12:25:20,846 [INFO] Copied data
