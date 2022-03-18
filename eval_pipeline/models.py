@@ -90,17 +90,19 @@ class HFModel(Model):
             raise ValueError(
                 f"Batch size of {len(examples)} not currently supported for HF models: please use 1"
             )
-        prompts = [example.prompt for example in examples]
-        tokenized_inputs = self.tokenizer(prompts, return_tensors="pt", truncation=True).to(self.device)
         if task_type == "classification":
-            rv = self._evaluate_classification(examples, tokenized_inputs)
+            rv = self._evaluate_classification(examples)
         elif task_type == "numeric":
-            rv = self._evaluate_numeric(examples, tokenized_inputs)
+            rv = self._evaluate_numeric(examples)
+        elif task_type == "lambada":
+            rv = self._evaluate_lambada(examples)
         return rv
 
-    def _evaluate_classification(
-        self, examples: list[Example], tokenized_inputs: dict
-    ) -> list[float]:
+    def _evaluate_classification(self, examples: list[Example]) -> list[float]:
+        prompts = [example.prompt for example in examples]
+        tokenized_inputs = self.tokenizer(
+            prompts, return_tensors="pt", truncation=True
+        ).to(self.device)
         outputs = self.model(**tokenized_inputs)
         # we only need the logits for the final (new) token
         # NOTE: this may need to change if we use batch size > 1 with padding
@@ -108,9 +110,36 @@ class HFModel(Model):
         losses = self._losses_from_logits(examples, logits)
         return losses
 
-    def _evaluate_numeric(
-        self, examples: list[Example], tokenized_inputs: dict
-    ) -> list[float]:
+    def _evaluate_lambada(self, examples: list[Example]) -> list[float]:
+        # finding the target
+        prompts = [example.prompt for example in examples]
+        tokenized_inputs = self.tokenizer(
+            prompts, return_tensors="pt", truncation=True
+        ).to(self.device)
+
+        target_words = [" " + prompt.split(" ")[-1] for prompt in prompts]
+        target_token_lengths = [len(self.tokenizer(word)["input_ids"]) for word in target_words]
+        tokenized_targets = [tokens[-length:] for tokens, length in zip(tokenized_inputs, target_token_lengths)]
+
+        outputs = self.model(**tokenized_inputs)
+        logits = outputs["logits"]
+
+        losses = []
+        for i, example in enumerate(examples):
+            # we only need the logits for the final word
+            tokens = tokenized_inputs["input_ids"][i]
+            word_logits = logits[i, -target_token_lengths[i]:]
+            word_tokens = tokens[-target_token_lengths[i]:]
+            logprobs = -F.log_softmax(word_logits, dim=-1)
+            loss = sum([logprobs[i, token] for i, token in enumerate(word_tokens)])
+            losses.append(loss)
+        return losses
+
+    def _evaluate_numeric(self, examples: list[Example]) -> list[float]:
+        prompts = [example.prompt for example in examples]
+        tokenized_inputs = self.tokenizer(
+            prompts, return_tensors="pt", truncation=True
+        ).to(self.device)
         parser = BasicParser()
         # NOTE: this may need to change if we use batch size > 1 with padding
         outputs = self.model.generate(
@@ -176,6 +205,9 @@ class GPT3Model(Model):
         elif task_type == "numeric":
             numeric_examples = cast("list[NumericExample]", examples)
             rv = self._evaluate_numeric(numeric_examples, response_json)
+        elif task_type == "lambada":
+            lambada_examples = cast("list[LambadaExample]", examples)
+            rv = self._evaluate_lambada(lambada_examples, response_json)
         return rv
 
     def _evaluate_classification(

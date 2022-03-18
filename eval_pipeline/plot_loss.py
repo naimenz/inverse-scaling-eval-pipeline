@@ -48,12 +48,14 @@ def main():
 
 def plot_classification_loss(exp_dir: Path):
     loss_csvs = [f for f in exp_dir.glob("*.csv") if f.name != "data.csv"]
-    data_csv = pd.read_csv(Path(exp_dir, "data.csv"), index_col=0).reset_index(drop=True)
+    data_csv = pd.read_csv(Path(exp_dir, "data.csv"), index_col=0).reset_index(
+        drop=True
+    )
     # NOTE: assuming all examples have the same number of classes
     n_classes = len(literal_eval(data_csv["classes"][0]))  # type: ignore
     # the baseline puts equal probability on each class, so we are considering a uniform distribution
-    baseline_prob = 1 / n_classes 
-    baseline_loss = - np.log(baseline_prob)
+    baseline_prob = 1 / n_classes
+    baseline_loss = -np.log(baseline_prob)
     if len(loss_csvs) == 0:
         raise ValueError(f"{exp_dir} does not exist or contains no output files")
     dfs = {csv_file.stem: pd.read_csv(csv_file, index_col=0) for csv_file in loss_csvs}
@@ -84,12 +86,17 @@ def plot_loss(
     standard_errors: Optional[dict[str, float]] = None,
     baseline: Optional[float] = None,
 ) -> None:
-    plt.style.use('ggplot')
+    plt.style.use("ggplot")
 
-    fig = plt.figure(figsize=(20, 10))
+    fig = plt.figure(figsize=(6, 4))
 
     if baseline is not None:
-        plt.axhline(baseline, linestyle='--', color='k', label="Baseline loss (equal probability)")
+        plt.axhline(
+            baseline,
+            linestyle="--",
+            color="k",
+            label="Baseline loss (equal probability)",
+        )
 
     if standard_errors is not None:
         errorbar_data = [
@@ -110,11 +117,17 @@ def plot_loss(
             if name in loss_dict.keys()
         ]
     )
-    plt.title("Log-log plot of loss vs model size")
+
     plt.xscale("log")
+    plt.xlabel("Model size")
+    plt.xticks(ticks, labels, rotation=45)
+
     plt.yscale("log")
-    plt.xticks(ticks, labels, rotation=90)
+    plt.ylabel("Loss")
+
+    plt.title("Log-log plot of loss vs model size")
     plt.legend()
+    plt.tight_layout()
     plt.savefig(Path(exp_dir, "loss_plot.png"))
     plt.show()
 

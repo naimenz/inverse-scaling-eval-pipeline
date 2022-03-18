@@ -6,7 +6,7 @@ from typing import Iterator
 from typing_extensions import Literal
 import pandas as pd
 
-TaskType = Literal["classification", "numeric"]
+TaskType = Literal["classification", "numeric", "lambada"]
 
 
 @dataclass
@@ -28,11 +28,22 @@ class NumericExample(Example):
     anchor: int
 
 
+@dataclass
+class LambadaExample(Example):
+    prompt: str
+
+
 class Dataset:
     """Class to store examples to be run by HF or GPT3 models"""
 
     def __init__(self, examples: list[Example]) -> None:
         self.examples = examples
+
+    def __iter__(self) -> Iterator[Example]:
+        return iter(self.examples)
+
+    def __len__(self) -> int:
+        return len(self.examples)
 
     @classmethod
     def classification_from_df(cls, df: pd.DataFrame) -> Dataset:
@@ -53,8 +64,11 @@ class Dataset:
             examples.append(example)
         return Dataset(examples)
 
-    def __iter__(self) -> Iterator[Example]:
-        return iter(self.examples)
-
-    def __len__(self) -> int:
-        return len(self.examples)
+    @classmethod
+    def lambada_from_df(cls, df: pd.DataFrame) -> Dataset:
+        examples = []
+        for _, (prompt,) in df.iterrows():
+            # important to convert the string 'classes' back into a list
+            example = LambadaExample(prompt)
+            examples.append(example)
+        return Dataset(examples)

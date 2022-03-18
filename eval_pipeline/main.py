@@ -81,6 +81,8 @@ def load_data(dataset_path: Path, task_type: TaskType) -> Dataset:
         dataset = Dataset.classification_from_df(df)
     elif task_type == "numeric":
         dataset = Dataset.numeric_from_df(df)
+    elif task_type == "lambada":
+        dataset = Dataset.lambada_from_df(df)
     return dataset
 
 
@@ -180,7 +182,7 @@ def parse_args(args):
         type=str,
         help="The type of output expected for the dataset",
         default="classification",
-        choices=["classification", "numeric"],
+        choices=["classification", "numeric", "lambada"],
     )
     args = parser.parse_args(args)
     return args

@@ -1,0 +1,80 @@
+{
+  "dataset": "lambada",
+  "dataset_path": null,
+  "exp_dir": "lambada-test",
+  "models": [
+    "gpt2"
+  ],
+  "use_gpu": true,
+  "colab": false,
+  "batch_size": 1,
+  "task_type": "classification"
+}{
+  "dataset": "lambada",
+  "dataset_path": null,
+  "exp_dir": "lambada-test",
+  "models": [
+    "gpt2"
+  ],
+  "use_gpu": true,
+  "colab": false,
+  "batch_size": 1,
+  "task_type": "lambada"
+}{
+  "dataset": "lambada",
+  "dataset_path": null,
+  "exp_dir": "lambada-test",
+  "models": [
+    "gpt2"
+  ],
+  "use_gpu": true,
+  "colab": false,
+  "batch_size": 1,
+  "task_type": "lambada"
+}{
+  "dataset": "lambada",
+  "dataset_path": null,
+  "exp_dir": "lambada-test",
+  "models": [
+    "gpt2"
+  ],
+  "use_gpu": true,
+  "colab": false,
+  "batch_size": 1,
+  "task_type": "lambada"
+}{
+  "dataset": "lambada",
+  "dataset_path": null,
+  "exp_dir": "lambada-test",
+  "models": [
+    "gpt2"
+  ],
+  "use_gpu": true,
+  "colab": false,
+  "batch_size": 1,
+  "task_type": "lambada"
+}{
+  "dataset": "lambada",
+  "dataset_path": null,
+  "exp_dir": "lambada-test",
+  "models": [
+    "gpt2"
+  ],
+  "use_gpu": true,
+  "colab": false,
+  "batch_size": 1,
+  "task_type": "lambada"
+}{
+  "dataset": "lambada",
+  "dataset_path": null,
+  "exp_dir": "lambada-test",
+  "models": [
+    "gpt2",
+    "gpt2-medium",
+    "gpt2-large"
+  ],
+  "use_gpu": true,
+  "colab": false,
+  "batch_size": 1,
+  "task_type": "lambada"
+}
