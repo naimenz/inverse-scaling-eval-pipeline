@@ -52,19 +52,31 @@ def plot_classification_loss(exp_dir: Path):
         drop=True
     )
     # NOTE: assuming all examples have the same number of classes
-    n_classes = len(literal_eval(data_csv["classes"][0]))  # type: ignore
-    # the baseline puts equal probability on each class, so we are considering a uniform distribution
-    baseline_prob = 1 / n_classes
-    baseline_loss = -np.log(baseline_prob)
+    try:
+        n_classes = len(literal_eval(data_csv["classes"][0]))  # type: ignore
+        # the baseline puts equal probability on each class, so we are considering a uniform distribution
+        baseline_prob = 1 / n_classes
+        baseline_loss = -np.log(baseline_prob)
+    except KeyError:
+        print("No 'classes' so skipping baseline")
+        baseline_loss = None
     if len(loss_csvs) == 0:
         raise ValueError(f"{exp_dir} does not exist or contains no output files")
     dfs = {csv_file.stem: pd.read_csv(csv_file, index_col=0) for csv_file in loss_csvs}
 
-    averages = {model_name: np.mean(df["loss"]) for model_name, df in dfs.items()}
-    standard_errors = {
-        model_name: np.std(df["loss"]) / np.sqrt(len(df["loss"]))
-        for model_name, df in dfs.items()
-    }
+    # need to try "loss" and "estimate" since I changed halfway through
+    try:
+        averages = {model_name: np.mean(df["loss"]) for model_name, df in dfs.items()}
+        standard_errors = {
+            model_name: np.std(df["loss"]) / np.sqrt(len(df["loss"]))
+            for model_name, df in dfs.items()
+        }
+    except KeyError:
+        averages = {model_name: np.mean(df["estimate"]) for model_name, df in dfs.items()}
+        standard_errors = {
+            model_name: np.std(df["estimate"]) / np.sqrt(len(df["estimate"]))
+            for model_name, df in dfs.items()
+        }
     plot_loss(exp_dir, averages, standard_errors, baseline=baseline_loss)
 
 
@@ -104,6 +116,7 @@ def plot_loss(
             for size, loss in loss_dict.items()
         ]
         xs, ys, yerrs = zip(*sorted(errorbar_data, key=lambda pair: pair[0]))
+        print(xs, ys, yerrs)
         plt.errorbar(xs, ys, yerrs, label="Model loss (with Standard Error in Mean)")
     else:
         xy_pairs = [(size_dict[size], loss) for size, loss in loss_dict.items()]
@@ -148,7 +161,7 @@ def parse_args(args) -> argparse.Namespace:
         "--task-type",
         type=str,
         default="classification",
-        choices=["classification", "numeric"],
+        choices=["classification", "numeric", "lambada"],
         help="The type of task that was run in this experiment",
     )
     args = parser.parse_args(args)

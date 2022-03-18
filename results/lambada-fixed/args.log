@@ -1,0 +1,13 @@
+{
+  "dataset": "lambada",
+  "dataset_path": null,
+  "exp_dir": "lambada-fixed",
+  "models": [
+    "gpt2",
+    "gpt2-medium"
+  ],
+  "use_gpu": true,
+  "colab": false,
+  "batch_size": 1,
+  "task_type": "lambada"
+}

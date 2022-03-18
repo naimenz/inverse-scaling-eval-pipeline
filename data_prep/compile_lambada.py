@@ -9,6 +9,9 @@ in_path = Path(
 out_path = Path(
     "/home/ian/code/lm_internship/eval-pipeline/data/lambada.csv"
 )
+small_path = Path(
+    "/home/ian/code/lm_internship/eval-pipeline/data/lambada-1k.csv"
+)
 with in_path.open("r") as json_file:
     json_list = list(json_file)
 
@@ -17,4 +20,5 @@ for json_str in json_list:
     result = json.loads(json_str)
     rows.append({"prompt": result["text"]})
 df = pd.DataFrame.from_records(rows)
-df.to_csv(out_path)
+# df.to_csv(out_path)
+# df[:1000].to_csv(small_path)

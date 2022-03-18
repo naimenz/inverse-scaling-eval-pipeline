@@ -1,0 +1,4 @@
+2022-03-18 19:41:18,990 [INFO] Logging set up with args
+Namespace(dataset='lambada', dataset_path=None, exp_dir='/scratch/im2480/results/lambada_gpt2', models=['gpt2-xl', 'gpt2-large', 'gpt2-medium', 'gpt2'], use_gpu=True, colab=False, batch_size=1, task_type='lambada')
+2022-03-18 19:41:18,990 [INFO] Saving to results to /scratch/im2480/results/lambada_gpt2
+2022-03-18 19:41:19,122 [INFO] Copied data

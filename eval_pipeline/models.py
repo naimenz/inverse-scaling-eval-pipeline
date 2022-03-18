@@ -11,6 +11,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer  # type: ignore
 from eval_pipeline.dataset import (
     ClassificationExample,
     Example,
+    LambadaExample,
     NumericExample,
     TaskType,
 )
@@ -20,6 +21,9 @@ from eval_pipeline.openai_api import APIParameters, BaseGPT3Model, call_api
 OPENAI_API_BASE_URL = "https://api.openai.com/v1/engines"
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
+# for checking how long the input is
+tokenizer = AutoTokenizer.from_pretrained("gpt2")
 
 ValidHFModel = Literal[
     "gpt2",
@@ -36,23 +40,6 @@ valid_hf_models: tuple[ValidHFModel, ...] = get_args(ValidHFModel)
 valid_gpt3_models: tuple[BaseGPT3Model, ...] = get_args(BaseGPT3Model)
 
 Device = Literal["cuda:0", "cpu"]
-
-
-api_parameters_map: dict[TaskType, APIParameters] = {
-    "classification": APIParameters(
-        temperature=0,
-        n=1,
-        max_tokens=1,
-        logprobs=100,
-    ),
-    "numeric": APIParameters(
-        temperature=0.5,
-        n=10,
-        max_tokens=10,
-        logprobs=None,
-        stop=["\n"],
-    ),
-}
 
 
 class Model(ABC):
@@ -118,21 +105,23 @@ class HFModel(Model):
         ).to(self.device)
 
         target_words = [" " + prompt.split(" ")[-1] for prompt in prompts]
-        target_token_lengths = [len(self.tokenizer(word)["input_ids"]) for word in target_words]
-        tokenized_targets = [tokens[-length:] for tokens, length in zip(tokenized_inputs, target_token_lengths)]
+        target_token_lengths = [
+            len(self.tokenizer(word)["input_ids"]) for word in target_words
+        ]
 
         outputs = self.model(**tokenized_inputs)
         logits = outputs["logits"]
 
         losses = []
-        for i, example in enumerate(examples):
+        for i in range(len(examples)):
             # we only need the logits for the final word
             tokens = tokenized_inputs["input_ids"][i]
-            word_logits = logits[i, -target_token_lengths[i]:]
-            word_tokens = tokens[-target_token_lengths[i]:]
+            # we have to go back by one because we don't care about the logits for the predicted token
+            word_logits = logits[i, -target_token_lengths[i] - 1 : -1]
+            word_tokens = tokens[-target_token_lengths[i] :]
             logprobs = -F.log_softmax(word_logits, dim=-1)
             loss = sum([logprobs[i, token] for i, token in enumerate(word_tokens)])
-            losses.append(loss)
+            losses.append(loss.item())  # type: ignore (the sum is never empty so never just 0, always a tensor)
         return losses
 
     def _evaluate_numeric(self, examples: list[Example]) -> list[float]:
@@ -195,24 +184,29 @@ class GPT3Model(Model):
         self.model_name: BaseGPT3Model = model_name
 
     def __call__(self, examples: list[Example], task_type: TaskType) -> list[float]:
-        prompts = [example.prompt for example in examples]
-        api_params = api_parameters_map[task_type]
-        response_json = call_api(prompts, self.model_name, api_params).json()
 
         if task_type == "classification":
             classification_examples = cast("list[ClassificationExample]", examples)
-            rv = self._evaluate_classification(classification_examples, response_json)
+            rv = self._evaluate_classification(classification_examples)
         elif task_type == "numeric":
             numeric_examples = cast("list[NumericExample]", examples)
-            rv = self._evaluate_numeric(numeric_examples, response_json)
+            rv = self._evaluate_numeric(numeric_examples)
         elif task_type == "lambada":
             lambada_examples = cast("list[LambadaExample]", examples)
-            rv = self._evaluate_lambada(lambada_examples, response_json)
+            rv = self._evaluate_lambada(lambada_examples)
         return rv
 
     def _evaluate_classification(
-        self, examples: list[ClassificationExample], response_json: dict
+        self, examples: list[ClassificationExample]
     ) -> list[float]:
+        prompts = [example.prompt for example in examples]
+        api_params = APIParameters(
+            temperature=0,
+            n=1,
+            max_tokens=1,
+            logprobs=100,
+        )
+        response_json = call_api(prompts, self.model_name, api_params).json()
         losses = []
         choices = response_json["choices"]
         for i, example in enumerate(examples):
@@ -230,9 +224,44 @@ class GPT3Model(Model):
             losses.append(loss.item())
         return losses
 
-    def _evaluate_numeric(
-        self, examples: list[NumericExample], response_json: dict
-    ) -> list[float]:
+    def _evaluate_lambada(self, examples: list[LambadaExample]) -> list[float]:
+        prompts = [example.prompt for example in examples]
+        api_params = APIParameters(
+            temperature=0.0,
+            n=1,
+            max_tokens=0,
+            logprobs=1,
+            stop=["\n"],
+            echo=True,
+        )
+        response_json = call_api(prompts, self.model_name, api_params).json()
+        prompts = [example.prompt for example in examples]
+
+        losses = []
+        for i in range(len(examples)):
+            text_index = len(prompts[i]) - 1 - prompts[i][::-1].index(" ")
+            logprobs_dict = response_json["choices"][i]["logprobs"]
+            text_offset = logprobs_dict["text_offset"]
+            actual_logprobs = logprobs_dict["token_logprobs"]
+            token_index = text_offset.index(text_index)
+
+            loss = 0
+            for logprob in actual_logprobs[token_index:]:
+                loss -= logprob
+            losses.append(loss)
+
+        return losses
+
+    def _evaluate_numeric(self, examples: list[NumericExample]) -> list[float]:
+        prompts = [example.prompt for example in examples]
+        api_params = APIParameters(
+            temperature=0.5,
+            n=10,
+            max_tokens=10,
+            logprobs=None,
+            stop=["\n"],
+        )
+        response_json = call_api(prompts, self.model_name, api_params).json()
         estimates = []
         choices = response_json["choices"]
 

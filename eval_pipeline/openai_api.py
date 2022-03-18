@@ -34,6 +34,7 @@ class APIParameters:
     top_p: float = 1.0
     logprobs: Optional[int] = 100
     stop: Optional[list[str]] = None
+    echo: bool = False
 
 
 OPENAI_API_BASE_URL = "https://api.openai.com/v1/engines"
@@ -65,7 +66,7 @@ def call_api(
 
 
 @sleep_and_retry
-@limits(calls=60, period=timedelta(seconds=60).total_seconds())
+@limits(calls=50, period=timedelta(seconds=60).total_seconds())
 def _call_api(
     prompt: Union[str, list[str]],
     model_name: OpenAIModel,

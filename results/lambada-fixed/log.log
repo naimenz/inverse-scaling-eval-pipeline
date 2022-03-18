@@ -1,0 +1,4 @@
+2022-03-18 16:16:59,557 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='lambada', dataset_path=None, exp_dir='lambada-fixed', models=['gpt2', 'gpt2-medium'], task_type='lambada', use_gpu=True)
+2022-03-18 16:16:59,557 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/lambada-fixed
+2022-03-18 16:16:59,559 [INFO] Copied data
