@@ -22,3 +22,7 @@ Namespace(batch_size=9, colab=False, dataset='anchoring', dataset_path=None, exp
 Namespace(batch_size=9, colab=False, dataset='anchoring', dataset_path=None, exp_dir='shell-anchoring-test', models=['ada', 'babbage', 'curie', 'davinci'], task_type='numeric', use_gpu=False)
 2022-03-11 16:51:39,762 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/shell-anchoring-test
 2022-03-11 16:51:39,762 [INFO] Copied data
+2022-03-21 13:24:51,387 [INFO] Logging set up with args
+Namespace(batch_size=9, colab=False, dataset='anchoring', dataset_path=None, exp_dir='shell-anchoring-test', models=['ada', 'babbage'], task_type='numeric', use_gpu=False)
+2022-03-21 13:24:51,388 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/shell-anchoring-test
+2022-03-21 13:24:51,389 [INFO] Copied data

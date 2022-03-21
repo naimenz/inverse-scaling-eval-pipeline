@@ -6,13 +6,13 @@ python $SCRIPT_DIR/../eval_pipeline/main.py \
     --dataset anchoring \
     --task-type numeric \
     --exp-dir $EXP_DIR \
-    --models ada babbage curie davinci \
+    --models ada babbage \
     --batch-size 9 \
 && \
-python eval_pipeline/evaluate_anchoring.py \
+python $SCRIPT_DIR/../eval_pipeline/evaluate_anchoring.py \
     $EXP_DIR \
 &&
-python eval_pipeline/plot_loss.py \
+python $SCRIPT_DIR/../eval_pipeline/plot_loss.py \
     --task-type numeric \
     $EXP_DIR
 
