@@ -116,7 +116,6 @@ def plot_loss(
             for size, loss in loss_dict.items()
         ]
         xs, ys, yerrs = zip(*sorted(errorbar_data, key=lambda pair: pair[0]))
-        print(xs, ys, yerrs)
         plt.errorbar(xs, ys, yerrs, label="Model loss (with Standard Error in Mean)")
     else:
         xy_pairs = [(size_dict[size], loss) for size, loss in loss_dict.items()]

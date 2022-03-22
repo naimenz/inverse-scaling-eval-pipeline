@@ -147,14 +147,10 @@ class HFModel(Model):
             fc[len(examples[0].prompt) :] for fc in full_completions
         ]
         # dropping anything after a new line
-        print(f"untrimmed completions: {untrimmed_completions}")
         completions = [comp.split("\n")[0] for comp in untrimmed_completions]
-        print(f"completions: {completions}")
         floats = parser(completions)
-        print(f"floats: {floats}")
         # for now, we'll just take the mean of valid outputs as the estimate
         valid_floats = [f for f in floats if f is not None]
-        print(f"Number of valid floats: {len(valid_floats)} of total: {len(floats)}")
         if len(valid_floats) > 0:
             estimate = sum(valid_floats) / len(valid_floats)
         else:
@@ -277,14 +273,9 @@ class GPT3Model(Model):
             completions = [
                 choice["text"] for choice in choices[start : start + n_samples]
             ]
-            print(f"completions: {completions}")
             floats = parser(completions)
-            print(f"floats: {floats}")
             # for now, we'll just take the mean of valid outputs as the estimate
             valid_floats = [f for f in floats if f is not None]
-            print(
-                f"Number of valid floats: {len(valid_floats)} of total: {len(floats)}"
-            )
             estimate = sum(valid_floats) / len(valid_floats)
             estimates.append(estimate)
 
