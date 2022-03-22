@@ -1,7 +1,0 @@
-2022-03-22 16:47:35,149 [INFO] Logging set up with args
-Namespace(batch_size=1, colab=False, dataset='scope-neglect', dataset_path=None, exp_dir='scope-neglect', models=['gpt2', 'gpt2-medium', 'gpt2-large', 'gpt2-xl'], task_type='classification', use_gpu=True)
-2022-03-22 16:47:35,149 [INFO] Saving to results to /home/am12057/inverse-scaling-eval-pipeline/results/scope-neglect
-2022-03-22 16:48:44,286 [INFO] Logging set up with args
-Namespace(batch_size=1, colab=False, dataset='scope_neglect', dataset_path=None, exp_dir='scope-neglect', models=['gpt2', 'gpt2-medium', 'gpt2-large', 'gpt2-xl'], task_type='classification', use_gpu=True)
-2022-03-22 16:48:44,288 [INFO] Saving to results to /home/am12057/inverse-scaling-eval-pipeline/results/scope-neglect
-2022-03-22 16:48:44,330 [INFO] Copied data
