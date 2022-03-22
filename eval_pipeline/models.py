@@ -1,5 +1,6 @@
 from __future__ import annotations
 from abc import ABC, abstractmethod
+import logging
 import os
 from typing import Union, cast
 from typing_extensions import Literal, get_args
@@ -22,6 +23,8 @@ OPENAI_API_BASE_URL = "https://api.openai.com/v1/engines"
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
+# DEBUG: counting errors
+error_count = 0
 # for checking how long the input is
 tokenizer = AutoTokenizer.from_pretrained("gpt2")
 
@@ -193,7 +196,7 @@ class GPT3Model(Model):
         return rv
 
     def _evaluate_classification(
-        self, examples: list[ClassificationExample]
+        self, examples: list[ClassificationExample],
     ) -> list[float]:
         prompts = [example.prompt for example in examples]
         api_params = APIParameters(
@@ -212,9 +215,16 @@ class GPT3Model(Model):
                     [logprobs.get(c) for c in example.classes]
                 )
             except TypeError:
-                raise ValueError(
-                    f"Not all of {example.classes} were returned as logprobs by OpenAI"
-                )
+                global error_count
+                logging.info(f"error_count = {error_count}")
+                logging.info(example)
+                logging.info(logprobs)
+                # DEBUG: not raising an error, just moving on to the next example
+                error_count += 1
+                continue
+                # raise ValueError(
+                #     f"Not all of {example.classes} were returned as logprobs by OpenAI"
+                # )
 
             loss = -F.log_softmax(relevant_logprobs, dim=-1)[example.answer_index]
             losses.append(loss.item())
