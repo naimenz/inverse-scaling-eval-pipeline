@@ -5,3 +5,4 @@ __pycache__/
 *.json
 temp.cache
 raw_data/imdb
+raw_data/anli

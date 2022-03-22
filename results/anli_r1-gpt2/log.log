@@ -1,0 +1,8 @@
+2022-03-22 10:42:24,005 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anli_R1', dataset_path=None, exp_dir='anli_r1-gpt2', models=['gpt2', 'gpt2-medium', 'gpt2-large'], task_type='classification', use_gpu=True)
+2022-03-22 10:42:24,006 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anli_r1-gpt2
+2022-03-22 10:42:24,007 [INFO] Copied data
+2022-03-22 10:45:27,589 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anli_R1', dataset_path=None, exp_dir='anli_r1-gpt2', models=['gpt2', 'gpt2-medium', 'gpt2-large'], task_type='classification', use_gpu=True)
+2022-03-22 10:45:27,589 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anli_r1-gpt2
+2022-03-22 10:45:27,591 [INFO] Copied data
