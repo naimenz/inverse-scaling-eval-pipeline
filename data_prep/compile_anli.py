@@ -4,12 +4,14 @@ import pandas as pd
 from pathlib import Path
 
 # NOTE: change this to build the other Rs (maybe stands for round?)
-version = "R1"
-jsonl_path = Path(f"/home/ian/code/lm_internship/eval-pipeline/raw_data/anli/anli_v1.0/{version}/test.jsonl")
-out_path = Path(f"/home/ian/code/lm_internship/eval-pipeline/data/anli_{version}.csv")
+# version = "R1"
+in_df = pd.DataFrame()
+for version in ["R1", "R2", "R3"]:
+    jsonl_path = Path(f"/home/ian/code/lm_internship/eval-pipeline/raw_data/anli/anli_v1.0/{version}/test.jsonl")
+    v_df = pd.read_json(jsonl_path, lines=True)
+    in_df = pd.concat((in_df, v_df))
 
-in_df = pd.read_json(jsonl_path, lines=True)
-print(in_df.info())
+out_path = Path(f"/home/ian/code/lm_internship/eval-pipeline/data/anli_all.csv")
 
 # NOTE: feels like I should add `Answer:` to the end, but that doesn't appear in the GPT-3 paper prompt
 template = """
