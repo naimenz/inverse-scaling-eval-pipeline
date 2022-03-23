@@ -1,0 +1,4 @@
+2022-03-23 15:49:23,332 [INFO] Logging set up with args
+Namespace(dataset='snli', dataset_path=None, exp_dir='/scratch/im2480/snli-gpt2', models=['gpt2', 'gpt2-medium', 'gpt2-large', 'gpt2-xl'], use_gpu=True, colab=False, batch_size=1, task_type='classification')
+2022-03-23 15:49:23,332 [INFO] Saving to results to /scratch/im2480/snli-gpt2
+2022-03-23 15:49:23,471 [INFO] Copied data

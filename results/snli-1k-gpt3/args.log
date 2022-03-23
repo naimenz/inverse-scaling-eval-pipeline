@@ -1,0 +1,15 @@
+{
+  "dataset": "snli-1k",
+  "dataset_path": null,
+  "exp_dir": "snli-1k-gpt3",
+  "models": [
+    "ada",
+    "babbage",
+    "curie",
+    "davinci"
+  ],
+  "use_gpu": false,
+  "colab": false,
+  "batch_size": 50,
+  "task_type": "classification"
+}

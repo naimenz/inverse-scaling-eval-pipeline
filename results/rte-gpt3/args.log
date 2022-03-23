@@ -1,0 +1,15 @@
+{
+  "dataset": "rte",
+  "dataset_path": null,
+  "exp_dir": "rte-gpt3",
+  "models": [
+    "ada",
+    "babbage",
+    "curie",
+    "davinci"
+  ],
+  "use_gpu": false,
+  "colab": false,
+  "batch_size": 50,
+  "task_type": "classification"
+}

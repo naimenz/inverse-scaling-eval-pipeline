@@ -1,0 +1,10 @@
+2022-03-23 14:29:59,245 [INFO] Logging set up with args
+Namespace(batch_size=50, colab=False, dataset='snli-1k', dataset_path=None, exp_dir='snli-1k-gpt3', models=['ada', 'babbage', 'curie', 'davinci'], task_type='classification', use_gpu=False)
+2022-03-23 14:29:59,246 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/snli-1k-gpt3
+2022-03-23 14:29:59,246 [INFO] Copied data
+2022-03-23 14:30:57,753 [INFO] Retrying after error 429: {'message': 'Rate limit reached for requests. Limit: 60.000000 / min. Current: 64.000000 / min. Contact support@openai.com if you continue to have issues.', 'type': 'requests', 'param': None, 'code': None}
+2022-03-23 14:31:10,416 [INFO] Retrying after error 429: {'message': 'Rate limit reached for requests. Limit: 60.000000 / min. Current: 68.000000 / min. Contact support@openai.com if you continue to have issues.', 'type': 'requests', 'param': None, 'code': None}
+2022-03-23 14:31:15,674 [INFO] Retrying after error 429: {'message': 'Rate limit reached for requests. Limit: 60.000000 / min. Current: 72.000000 / min. Contact support@openai.com if you continue to have issues.', 'type': 'requests', 'param': None, 'code': None}
+2022-03-23 14:31:18,382 [INFO] Retrying after error 429: {'message': 'Rate limit reached for requests. Limit: 60.000000 / min. Current: 72.000000 / min. Contact support@openai.com if you continue to have issues.', 'type': 'requests', 'param': None, 'code': None}
+2022-03-23 14:31:19,724 [INFO] Retrying after error 429: {'message': 'Rate limit reached for requests. Limit: 60.000000 / min. Current: 76.000000 / min. Contact support@openai.com if you continue to have issues.', 'type': 'requests', 'param': None, 'code': None}
+2022-03-23 14:31:24,788 [INFO] Retrying after error 429: {'message': 'Rate limit reached for requests. Limit: 60.000000 / min. Current: 64.000000 / min. Contact support@openai.com if you continue to have issues.', 'type': 'requests', 'param': None, 'code': None}

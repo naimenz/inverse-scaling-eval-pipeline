@@ -1,0 +1,4 @@
+2022-03-23 14:32:58,826 [INFO] Logging set up with args
+Namespace(batch_size=100, colab=False, dataset='rte-train', dataset_path=None, exp_dir='rte-train-gpt3', models=['ada', 'babbage', 'curie', 'davinci'], task_type='classification', use_gpu=False)
+2022-03-23 14:32:58,826 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/rte-train-gpt3
+2022-03-23 14:32:58,827 [INFO] Copied data
