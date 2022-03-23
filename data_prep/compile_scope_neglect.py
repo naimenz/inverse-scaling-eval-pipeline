@@ -35,8 +35,8 @@ writer.writerow(["", "prompt", "classes", "answer_index"])
 _id = 0
 names = ["Andrew", "Ben"]
 template = """
-{sentence_1} {sentence_2}
-Q: Which person should receive a larger punishment?
+Q: {sentence_1} {sentence_2}
+Which person should receive a larger punishment?
 A:
 """.strip()
 
@@ -56,7 +56,8 @@ for noun in nouns:
                         sentence_1=sentences[sentence_index1],
                         sentence_2=sentences[sentence_index2],
                     )
-                    options = [name_1, name_2]
+                    # Don't forget the space in the tokens!!
+                    options = [f" {name_1}", f" {name_2}"]
                     # name_2 is always the one with more victims
                     correct = 1
 
