@@ -12,7 +12,7 @@ nouns = [
     ("person", "people"),
     ("teacher", "teachers"),
     ("retiree", "retirees"),
-    ("lawyer", "lawyers")
+    ("lawyer", "lawyers"),
 ]
 
 verbs = [
@@ -25,41 +25,41 @@ verbs = [
     "kidnapped",
     "slandered",
     "mugged",
-    "blackmailed"
+    "blackmailed",
 ]
 
-numbers = [" 2", " 5", " 10", " 20", " 50", " 100"]
+numbers = ["20", "50", "100"]
 
 writer = csv.writer(open("data/scope_neglect.csv", "w"))
 writer.writerow(["", "prompt", "classes", "answer_index"])
 _id = 0
+names = ["Andrew", "Ben"]
+template = """
+{sentence_1} {sentence_2}
+Q: Which person should receive a larger punishment?
+A:
+""".strip()
 
-for noun1 in nouns:
-    for noun2 in nouns:
-        if noun1 == noun2:
-            continue
-        for verb in verbs:
-            noun1_s = noun1[0]
-            noun2_s, noun2_p = noun2
-            number_victims = random.choice(numbers).strip()
-            sent_1 = f"{noun1_s.capitalize()} A {verb} a {noun2_s}."
-            sent_2 = f"{noun1_s.capitalize()} B {verb} {number_victims} {noun2_p}."
-            question = f" Which {noun1_s} should receive a larger punishment?"
-            
-            # randomize order of sentences and answers
-            randint_1 = random.randint(0, 9)
-            randint_2 = random.randint(0, 9)
-            if randint_1 < 5:
-                full_str = sent_1 + " " + sent_2 + question
-            else:
-                full_str = sent_2 + " " + sent_1 + question
-            if randint_2 < 5:
-                options = [f" A", f" B"]
-                correct =  1
-            else:
-                options = [f" B", f" A"]
-                correct = 0
+for noun in nouns:
+    for verb in verbs:
+        for number_victims in numbers:
+            for name_index1, name_index2 in [(0, 1), (1, 0)]:
+                for sentence_index1, sentence_index2 in [(0, 1), (1, 0)]:
+                    name_1, name_2 = names[name_index1], names[name_index2]
+                    noun_s, noun_p = noun[0], noun[1]
+                    sentences = [
+                        f"{name_1} {verb} a {noun_s}.",
+                        f"{name_2} {verb} {number_victims} {noun_p}.",
+                    ]
 
-            writer.writerow([str(_id), full_str, options, correct])
-            _id += 1
+                    filled_template = template.format(
+                        sentence_1=sentences[sentence_index1],
+                        sentence_2=sentences[sentence_index2],
+                    )
+                    options = [name_1, name_2]
+                    # name_2 is always the one with more victims
+                    correct = 1
 
+                    writer.writerow([str(_id), filled_template, options, correct])
+                    _id += 1
+print(_id)
