@@ -39,14 +39,14 @@ def main():
         base_results_dir = Path(project_dir, "results")
     exp_dir = Path(base_results_dir, args.exp_dir)
     if args.task_type == "classification":
-        plot_classification_loss(exp_dir)
+        plot_classification_loss(exp_dir, args.dataset_sizes)
     elif args.task_type == "numeric":
         plot_numeric_loss(exp_dir)
     else:
         raise ValueError(f"unknown task type {args.task_type}")
 
 
-def plot_classification_loss(exp_dir: Path):
+def plot_classification_loss(exp_dir: Path, dataset_sizes: list[int]):
     loss_csvs = [f for f in exp_dir.glob("*.csv") if f.name != "data.csv"]
     data_csv = pd.read_csv(Path(exp_dir, "data.csv"), index_col=0).reset_index(
         drop=True
@@ -63,13 +63,18 @@ def plot_classification_loss(exp_dir: Path):
     if len(loss_csvs) == 0:
         raise ValueError(f"{exp_dir} does not exist or contains no output files")
     dfs = {csv_file.stem: pd.read_csv(csv_file, index_col=0) for csv_file in loss_csvs}
-
-    averages = {model_name: np.mean(df["loss"]) for model_name, df in dfs.items()}
-    standard_errors = {
-        model_name: np.std(df["loss"]) / np.sqrt(len(df["loss"]))
-        for model_name, df in dfs.items()
-    }
-    plot_loss(exp_dir, averages, standard_errors, baseline=baseline_loss)
+    # one dict containing all different plots to be made, with their labels as keys
+    separate_plot_dict = {}
+    for size in dataset_sizes:
+        size_dfs = {name: df[:size] for name, df in dfs.items()}
+        averages = {model_name: np.mean(df["loss"]) for model_name, df in size_dfs.items()}
+        standard_errors = {
+            model_name: np.std(df["loss"]) / np.sqrt(len(df["loss"]))
+            for model_name, df in size_dfs.items()
+        }
+        size_name = str(size) if size != -1 else len(list(dfs.values())[0])
+        separate_plot_dict[size_name] = (averages, standard_errors)
+    plot_loss(exp_dir, separate_plot_dict, baseline=baseline_loss)
 
 
 def plot_numeric_loss(exp_dir: Path):
@@ -81,13 +86,12 @@ def plot_numeric_loss(exp_dir: Path):
         )
     with data_file.open("r") as f:
         averages = json.load(f)
-    plot_loss(exp_dir, averages)
+    plot_loss(exp_dir, {"numeric": (averages, None)})
 
 
 def plot_loss(
     exp_dir: Path,
-    loss_dict: dict[str, float],
-    standard_errors: Optional[dict[str, float]] = None,
+    separate_plots_dict: dict[str, tuple[dict, Optional[dict]]],
     baseline: Optional[float] = None,
 ) -> None:
     plt.style.use("ggplot")
@@ -102,23 +106,24 @@ def plot_loss(
             label="Baseline loss (equal probability)",
         )
 
-    if standard_errors is not None:
-        errorbar_data = [
-            (size_dict[size], loss, standard_errors[size])
-            for size, loss in loss_dict.items()
-        ]
-        xs, ys, yerrs = zip(*sorted(errorbar_data, key=lambda pair: pair[0]))
-        plt.errorbar(xs, ys, yerrs, label="Model loss (with Standard Error in Mean)")
-    else:
-        xy_pairs = [(size_dict[size], loss) for size, loss in loss_dict.items()]
-        xs, ys = zip(*sorted(xy_pairs, key=lambda pair: pair[0]))
-        plt.plot(xs, ys, label="Model loss")
+    for label, (loss_dict, standard_errors) in separate_plots_dict.items():
+        if standard_errors is not None:
+            errorbar_data = [
+                (size_dict[size], loss, standard_errors[size])
+                for size, loss in loss_dict.items()
+            ]
+            xs, ys, yerrs = zip(*sorted(errorbar_data, key=lambda pair: pair[0]))
+            plt.errorbar(xs, ys, yerrs, label=f"{label} examples (with Standard Error in Mean)")
+        else:
+            xy_pairs = [(size_dict[size], loss) for size, loss in loss_dict.items()]
+            xs, ys = zip(*sorted(xy_pairs, key=lambda pair: pair[0]))
+            plt.plot(xs, ys, label="f{label} examples")
 
     labels, ticks = zip(
         *[
             (name, n_params)
             for name, n_params in size_dict.items()
-            if name in loss_dict.keys()
+            if name in loss_dict.keys()  # type: ignore (there has to be at least one loss dict)
         ]
     )
 
@@ -154,6 +159,13 @@ def parse_args(args) -> argparse.Namespace:
         default="classification",
         choices=["classification", "numeric", "lambada"],
         help="The type of task that was run in this experiment",
+    )
+    parser.add_argument(
+        "--dataset-sizes",
+        type=int,
+        nargs="+",
+        help="The numbers of examples to use (-1 means all)",
+        default=[-1],
     )
     args = parser.parse_args(args)
     return args
