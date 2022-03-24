@@ -18,3 +18,19 @@ Namespace(batch_size=1, colab=False, dataset='anli_all', dataset_path=None, exp_
 Namespace(batch_size=1, colab=False, dataset='anli_all', dataset_path=None, exp_dir='anli_all-acc-gpt2', models=['gpt2', 'gpt2-medium'], task_type='classification_acc', use_gpu=True)
 2022-03-24 11:47:04,918 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anli_all-acc-gpt2
 2022-03-24 11:47:04,920 [INFO] Copied data
+2022-03-24 12:11:47,613 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anli_all', dataset_path=None, exp_dir='anli_all-acc-gpt2', models=['gpt2', 'gpt2-medium'], task_type='classification', use_gpu=True)
+2022-03-24 12:11:47,613 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anli_all-acc-gpt2
+2022-03-24 12:11:47,615 [INFO] Copied data
+2022-03-24 12:14:17,217 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anli_all', dataset_path=None, exp_dir='anli_all-acc-gpt2', models=['gpt2', 'gpt2-medium'], task_type='classification', use_gpu=True)
+2022-03-24 12:14:17,217 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anli_all-acc-gpt2
+2022-03-24 12:14:17,218 [INFO] Copied data
+2022-03-24 12:20:24,216 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anli_all', dataset_path=None, exp_dir='anli_all-acc-gpt2', models=['gpt2', 'gpt2-medium'], task_type='classification', use_gpu=True)
+2022-03-24 12:20:24,216 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anli_all-acc-gpt2
+2022-03-24 12:20:24,219 [INFO] Copied data
+2022-03-24 15:35:42,080 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anli_all', dataset_path=None, exp_dir='anli_all-acc-gpt2', models=['gpt2', 'gpt2-medium'], task_type='classification', use_gpu=True)
+2022-03-24 15:35:42,080 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anli_all-acc-gpt2
+2022-03-24 15:35:42,082 [INFO] Copied data

@@ -58,10 +58,13 @@ def plot_classification_loss(exp_dir: Path, dataset_sizes: list[int], task_type:
     baseline_loss = -np.log(baseline_prob)
     if task_type == "classification_acc":
         baseline = baseline_prob
+        output_name = "correct"
     elif task_type == "classification_loss":
         baseline = baseline_loss
+        output_name = "loss"
     else: 
         baseline = None
+        output_name = "loss"
     if len(loss_csvs) == 0:
         raise ValueError(f"{exp_dir} does not exist or contains no output files")
     dfs = {csv_file.stem: pd.read_csv(csv_file, index_col=0) for csv_file in loss_csvs}
@@ -69,9 +72,9 @@ def plot_classification_loss(exp_dir: Path, dataset_sizes: list[int], task_type:
     separate_plot_dict = {}
     for size in dataset_sizes:
         size_dfs = {name: df[:size] for name, df in dfs.items()}
-        averages = {model_name: np.mean(df["loss"]) for model_name, df in size_dfs.items()}
+        averages = {model_name: np.mean(df[output_name]) for model_name, df in size_dfs.items()}
         standard_errors = {
-            model_name: np.std(df["loss"]) / np.sqrt(len(df["loss"]))
+            model_name: np.std(df[output_name]) / np.sqrt(len(df[output_name]))
             for model_name, df in size_dfs.items()
         }
         size_name = str(size) if size != -1 else len(list(dfs.values())[0])
@@ -164,7 +167,7 @@ def parse_args(args) -> argparse.Namespace:
         type=str,
         default="classification_loss",
         choices=["classification_loss", "classification_acc", "numeric", "lambada"],
-        help="The type of task that was run in this experiment",
+        help="The type of task to plot",
     )
     parser.add_argument(
         "--dataset-sizes",

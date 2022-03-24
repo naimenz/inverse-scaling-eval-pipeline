@@ -58,4 +58,52 @@
   "colab": false,
   "batch_size": 1,
   "task_type": "classification_acc"
+}{
+  "dataset": "anli_all",
+  "dataset_path": null,
+  "exp_dir": "anli_all-acc-gpt2",
+  "models": [
+    "gpt2",
+    "gpt2-medium"
+  ],
+  "use_gpu": true,
+  "colab": false,
+  "batch_size": 1,
+  "task_type": "classification"
+}{
+  "dataset": "anli_all",
+  "dataset_path": null,
+  "exp_dir": "anli_all-acc-gpt2",
+  "models": [
+    "gpt2",
+    "gpt2-medium"
+  ],
+  "use_gpu": true,
+  "colab": false,
+  "batch_size": 1,
+  "task_type": "classification"
+}{
+  "dataset": "anli_all",
+  "dataset_path": null,
+  "exp_dir": "anli_all-acc-gpt2",
+  "models": [
+    "gpt2",
+    "gpt2-medium"
+  ],
+  "use_gpu": true,
+  "colab": false,
+  "batch_size": 1,
+  "task_type": "classification"
+}{
+  "dataset": "anli_all",
+  "dataset_path": null,
+  "exp_dir": "anli_all-acc-gpt2",
+  "models": [
+    "gpt2",
+    "gpt2-medium"
+  ],
+  "use_gpu": true,
+  "colab": false,
+  "batch_size": 1,
+  "task_type": "classification"
 }

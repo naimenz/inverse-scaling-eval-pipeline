@@ -2,7 +2,7 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 import logging
 import os
-from typing import Union, cast
+from typing import Union, cast, Sequence
 from typing_extensions import Literal, get_args
 from dotenv import load_dotenv
 import numpy as np
@@ -48,7 +48,7 @@ Device = Literal["cuda:0", "cpu"]
 
 class Model(ABC):
     @abstractmethod
-    def __call__(self, examples: list[Example], task_type: TaskType) -> list[float]:
+    def __call__(self, examples: list[Example], task_type: TaskType) -> dict[str, Union[Sequence[float], Sequence[int]]]:
         raise NotImplementedError("Abstract method")
 
     @staticmethod
@@ -75,7 +75,7 @@ class HFModel(Model):
         self.model.max_length = 1024
         self.tokenizer = AutoTokenizer.from_pretrained(prefix + model_name)
 
-    def __call__(self, examples: list[Example], task_type: TaskType) -> list[float]:
+    def __call__(self, examples: list[Example], task_type: TaskType) -> dict[str, Union[Sequence[float], Sequence[int]]]:
         # TODO: remove this restriction
         if len(examples) > 1:
             raise ValueError(
@@ -93,7 +93,7 @@ class HFModel(Model):
         self,
         examples: list[Example],
         task_type: TaskType,
-    ) -> Union[list[float], list[int]]:
+    ) -> dict[str, Union[Sequence[float], Sequence[int]]]:
         prompts = [example.prompt for example in examples]
         tokenized_inputs = self.tokenizer(
             prompts, return_tensors="pt", truncation=True
@@ -102,16 +102,12 @@ class HFModel(Model):
         # we only need the logits for the final (new) token
         # NOTE: this may need to change if we use batch size > 1 with padding
         logits = outputs["logits"][:, -1]
-        if task_type.endswith("loss"):
-            losses = self._losses_from_logits(examples, logits)
-            return losses
-        elif task_type.endswith("acc"):
-            accuracies = self._accuracies_from_logits(examples, logits)
-            return accuracies
-        else:
-            raise ValueError(f"TaskType {task_type} not understood")
+        losses = self._losses_from_logits(examples, logits)
+        accuracies = self._accuracies_from_logits(examples, logits)
+        total_logprobs = self._total_logprobs_from_logits(examples, logits)
+        return {"loss": losses, "correct": accuracies, "total_logprob": total_logprobs}
 
-    def _evaluate_lambada(self, examples: list[Example]) -> list[float]:
+    def _evaluate_lambada(self, examples: list[Example]) -> dict[str, Sequence[float]]:
         # finding the target
         prompts = [example.prompt for example in examples]
         tokenized_inputs = self.tokenizer(
@@ -136,9 +132,9 @@ class HFModel(Model):
             logprobs = -F.log_softmax(word_logits, dim=-1)
             loss = sum([logprobs[i, token] for i, token in enumerate(word_tokens)])
             losses.append(loss.item())  # type: ignore (the sum is never empty so never just 0, always a tensor)
-        return losses
+        return {"loss": losses}
 
-    def _evaluate_numeric(self, examples: list[Example]) -> list[float]:
+    def _evaluate_numeric(self, examples: list[Example]) -> dict[str, Sequence[float]]:
         prompts = [example.prompt for example in examples]
         tokenized_inputs = self.tokenizer(
             prompts, return_tensors="pt", truncation=True
@@ -169,7 +165,7 @@ class HFModel(Model):
             estimate = sum(valid_floats) / len(valid_floats)
         else:
             raise ValueError("No valid numbers returned")
-        return [estimate]
+        return {"estimate": [estimate]}
 
     def _losses_from_logits(self, examples, logits) -> list[float]:
         """Given examples and logits for those examples,
@@ -205,12 +201,29 @@ class HFModel(Model):
             labels_correct.append(label_correct)
         return labels_correct
 
+    def _total_logprobs_from_logits(self, examples, logits) -> list[float]:
+        """Given examples and logits for those examples,
+        compute the classification loss for each example"""
+        total_logprobs = []
+        for i, example in enumerate(examples):
+            example_logits = logits[i]
+            # have to flatten this list for some reason
+            class_tokens = [
+                token[0] for token in self.tokenizer(list(example.classes))["input_ids"]
+            ]
+            # log_softmax just subtracts a constant, so repeated applications change nothing
+            # and there is no point in taking logprobs before focusing on the relevant indices
+            example_logprobs = F.log_softmax(example_logits, dim=-1)
+            relevant_logprobs = example_logprobs[class_tokens]
+            total_logprobs.append(torch.logsumexp(relevant_logprobs, dim=-1).item())
+        return total_logprobs
+
 
 class GPT3Model(Model):
     def __init__(self, model_name: BaseGPT3Model) -> None:
         self.model_name: BaseGPT3Model = model_name
 
-    def __call__(self, examples: list[Example], task_type: TaskType) -> list[float]:
+    def __call__(self, examples: list[Example], task_type: TaskType) -> dict[str, Union[Sequence[float], Sequence[int]]]:
 
         if task_type == "classification":
             classification_examples = cast("list[ClassificationExample]", examples)
@@ -226,7 +239,7 @@ class GPT3Model(Model):
     def _evaluate_classification(
         self,
         examples: list[ClassificationExample],
-    ) -> list[float]:
+    ) -> dict[str, Union[Sequence[float], Sequence[int]]]:
         prompts = [example.prompt for example in examples]
         api_params = APIParameters(
             temperature=0,
@@ -236,13 +249,13 @@ class GPT3Model(Model):
         )
         response_json = call_api(prompts, self.model_name, api_params).json()
         losses = []
+        labels_correct = []
+        total_logprobs = []
         choices = response_json["choices"]
         for i, example in enumerate(examples):
             logprobs = choices[i]["logprobs"]["top_logprobs"][0]
             try:
-                relevant_logprobs = torch.Tensor(
-                    [logprobs.get(c) for c in example.classes]
-                )
+                relevant_logprobs = torch.Tensor([logprobs.get(c) for c in example.classes])
             except TypeError:
                 global error_count
                 logging.info(f"error_count = {error_count}")
@@ -257,9 +270,14 @@ class GPT3Model(Model):
 
             loss = -F.log_softmax(relevant_logprobs, dim=-1)[example.answer_index]
             losses.append(loss.item())
-        return losses
+            total_logprob = torch.logsumexp(relevant_logprobs, dim=-1)
+            total_logprobs.append(total_logprob.item())
 
-    def _evaluate_lambada(self, examples: list[LambadaExample]) -> list[float]:
+            label_correct = int(np.argmax(relevant_logprobs) == example.answer_index)
+            labels_correct.append(label_correct)
+        return {"loss": losses, "correct": labels_correct, "total_logprob": total_logprobs}
+
+    def _evaluate_lambada(self, examples: list[LambadaExample]) -> dict[str, Union[Sequence[float], Sequence[int]]]:
         prompts = [example.prompt for example in examples]
         api_params = APIParameters(
             temperature=0.0,
@@ -285,9 +303,9 @@ class GPT3Model(Model):
                 loss -= logprob
             losses.append(loss)
 
-        return losses
+        return {"loss": losses}
 
-    def _evaluate_numeric(self, examples: list[NumericExample]) -> list[float]:
+    def _evaluate_numeric(self, examples: list[NumericExample]) -> dict[str, Sequence[float]]:
         prompts = [example.prompt for example in examples]
         api_params = APIParameters(
             temperature=0.5,
@@ -318,4 +336,4 @@ class GPT3Model(Model):
             estimate = sum(valid_floats) / len(valid_floats)
             estimates.append(estimate)
 
-        return estimates
+        return {"estimate": estimates}

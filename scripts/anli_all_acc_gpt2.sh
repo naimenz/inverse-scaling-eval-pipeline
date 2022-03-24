@@ -5,7 +5,7 @@ EXP_DIR=anli_all-acc-gpt2
 python $SCRIPT_DIR/../eval_pipeline/main.py \
     --dataset anli_all \
     --exp-dir $EXP_DIR \
-    --task-type classification_acc \
+    --task-type classification \
     --models gpt2 gpt2-medium \
     --use-gpu \
 && \

@@ -77,7 +77,7 @@ def set_up_logging(log_path: Path):
 
 def load_data(dataset_path: Path, task_type: TaskType) -> Dataset:
     df = pd.read_csv(dataset_path, index_col=0)
-    if task_type.startswith("classification"):
+    if task_type == "classification":
         dataset = Dataset.classification_from_df(df)
     elif task_type == "numeric":
         dataset = Dataset.numeric_from_df(df)
@@ -97,9 +97,15 @@ def run_model(
     """This function needs to run the model on the data and
     write the results to write_path incrementally."""
     write_path = Path(write_dir, model_name + ".csv")
-    # NOTE: classification_acc will be saved with output_name "loss", but should be fine
-    output_name = "estimate" if task_type == "numeric" else "loss"
-    field_names = ["index", output_name]
+    # TODO: find a way to avoid having to specify field names ahead of time
+    if task_type == "classification":
+        field_names = ["index", "loss", "correct", "total_logprob"]
+    elif task_type == "lambada":
+        field_names = ["index", "loss"]
+    elif task_type == "numeric":
+        field_names = ["index", "estimate"]
+    else:
+        raise ValueError(f"unknown task type {task_type}")
     with write_path.open("w") as outfile:
         writer = csv.DictWriter(outfile, fieldnames=field_names)
         writer.writeheader()
@@ -109,8 +115,18 @@ def run_model(
         for start_index in tqdm(range(0, n_data, batch_size)):
             examples = data.examples[start_index : start_index + batch_size]
             outputs = model(examples, task_type)
-            for offset, output in enumerate(outputs):
-                writer.writerow({"index": start_index + offset, output_name: output})
+            rows = [{"index": start_index + offset} for offset in range(batch_size)]
+            for output_name, values in outputs.items():
+                for offset, value in enumerate(values):
+                    try:
+                        rows[offset][output_name] = value
+                    except Exception as e:
+                        print(f"len(rows) = {len(rows)}")
+                        print(f"offset = {offset}")
+                        print(f"len(values) = {len(values)}")
+                        raise e
+            for row in rows:
+                writer.writerow(row)
 
 
 def parse_args(args):
@@ -181,8 +197,8 @@ def parse_args(args):
         "--task-type",
         type=str,
         help="The type of output expected for the dataset",
-        default="classification_loss",
-        choices=["classification_loss", "classification_acc", "numeric", "lambada"],
+        default="classification",
+        choices=["classification", "numeric", "lambada"],
     )
     args = parser.parse_args(args)
     return args
