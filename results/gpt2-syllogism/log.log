@@ -1,4 +1,0 @@
-2022-03-05 01:28:40,995 [INFO] Logging set up with args
-Namespace(colab=True, dataset='syllogism', exp_dir='gpt2-syllogism', models=['gpt2-xl', 'gpt2-large', 'gpt2-medium', 'gpt2'], use_gpu=True)
-2022-03-05 01:28:40,997 [INFO] Saving to results to /content/drive/MyDrive/inverse_scaling_results/gpt2-syllogism
-2022-03-05 01:28:41,028 [INFO] Copied data

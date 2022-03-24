@@ -1,0 +1,4 @@
+2022-03-24 19:27:22,337 [INFO] Logging set up with args
+Namespace(dataset='syllogism', dataset_path=None, exp_dir='/scratch/im2480/results/syllogism-gpt2', models=['gpt2', 'gpt2-medium', 'gpt2-large', 'gpt2-xl'], use_gpu=True, colab=False, batch_size=1, task_type='classification')
+2022-03-24 19:27:22,338 [INFO] Saving to results to /scratch/im2480/results/syllogism-gpt2
+2022-03-24 19:27:25,362 [INFO] Copied data

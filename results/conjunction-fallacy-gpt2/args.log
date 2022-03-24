@@ -1,0 +1,79 @@
+{
+  "dataset": "conjunction-fallacy",
+  "dataset_path": null,
+  "exp_dir": "/scratch/im2480/gpt2_conjunction_fallacy",
+  "models": [
+    "gpt2",
+    "gpt2-medium",
+    "gpt2-large",
+    "gpt2-xl"
+  ],
+  "use_gpu": true,
+  "colab": false,
+  "batch_size": 1
+}{
+  "dataset": "conjunction_fallacy",
+  "dataset_path": null,
+  "exp_dir": "/scratch/im2480/gpt2_conjunction_fallacy",
+  "models": [
+    "gpt2",
+    "gpt2-medium",
+    "gpt2-large",
+    "gpt2-xl"
+  ],
+  "use_gpu": true,
+  "colab": false,
+  "batch_size": 1
+}{
+  "dataset": "conjunction_fallacy",
+  "dataset_path": null,
+  "exp_dir": "/scratch/im2480/gpt2_conjunction_fallacy",
+  "models": [
+    "gpt2",
+    "gpt2-medium",
+    "gpt2-large",
+    "gpt2-xl"
+  ],
+  "use_gpu": true,
+  "colab": false,
+  "batch_size": 1
+}{
+  "dataset": "conjunction_fallacy",
+  "dataset_path": null,
+  "exp_dir": "/scratch/im2480/gpt2_conjunction_fallacy",
+  "models": [
+    "gpt2",
+    "gpt2-medium",
+    "gpt2-large",
+    "gpt2-xl"
+  ],
+  "use_gpu": true,
+  "colab": false,
+  "batch_size": 1
+}{
+  "dataset": "conjunction_fallacy",
+  "dataset_path": null,
+  "exp_dir": "/scratch/im2480/gpt2_conjunction_fallacy",
+  "models": [
+    "ada",
+    "babbage",
+    "curie"
+  ],
+  "use_gpu": false,
+  "colab": false,
+  "batch_size": 50
+}{
+  "dataset": "conjunction_fallacy",
+  "dataset_path": null,
+  "exp_dir": "/scratch/im2480/results/gpt2_conjunction_fallacy",
+  "models": [
+    "gpt2",
+    "gpt2-medium",
+    "gpt2-large",
+    "gpt2-xl"
+  ],
+  "use_gpu": true,
+  "colab": false,
+  "batch_size": 1,
+  "task_type": "classification"
+}

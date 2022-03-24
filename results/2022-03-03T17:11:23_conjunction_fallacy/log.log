@@ -1,4 +1,0 @@
-2022-03-03 17:11:23,753 [INFO] Logging set up with args
-Namespace(dataset='conjunction_fallacy', exp_dir=None, models=['gpt2', 'gpt2-medium', 'gpt2-large'], use_gpu=True)
-2022-03-03 17:11:23,753 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/2022-03-03T17:11:23_conjunction_fallacy
-2022-03-03 17:11:23,753 [INFO] Copied data
