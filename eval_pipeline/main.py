@@ -97,7 +97,7 @@ def run_model(
     """This function needs to run the model on the data and
     write the results to write_path incrementally."""
     write_path = Path(write_dir, model_name + ".csv")
-    output_name = "loss" if task_type == "classification" else "estimate"
+    output_name = "estimate" if task_type == "numeric" else "loss"
     field_names = ["index", output_name]
     with write_path.open("w") as outfile:
         writer = csv.DictWriter(outfile, fieldnames=field_names)

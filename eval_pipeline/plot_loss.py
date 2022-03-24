@@ -64,19 +64,11 @@ def plot_classification_loss(exp_dir: Path):
         raise ValueError(f"{exp_dir} does not exist or contains no output files")
     dfs = {csv_file.stem: pd.read_csv(csv_file, index_col=0) for csv_file in loss_csvs}
 
-    # need to try "loss" and "estimate" since I changed halfway through
-    try:
-        averages = {model_name: np.mean(df["loss"]) for model_name, df in dfs.items()}
-        standard_errors = {
-            model_name: np.std(df["loss"]) / np.sqrt(len(df["loss"]))
-            for model_name, df in dfs.items()
-        }
-    except KeyError:
-        averages = {model_name: np.mean(df["estimate"]) for model_name, df in dfs.items()}
-        standard_errors = {
-            model_name: np.std(df["estimate"]) / np.sqrt(len(df["estimate"]))
-            for model_name, df in dfs.items()
-        }
+    averages = {model_name: np.mean(df["loss"]) for model_name, df in dfs.items()}
+    standard_errors = {
+        model_name: np.std(df["loss"]) / np.sqrt(len(df["loss"]))
+        for model_name, df in dfs.items()
+    }
     plot_loss(exp_dir, averages, standard_errors, baseline=baseline_loss)
 
 
