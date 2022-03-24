@@ -38,28 +38,30 @@ def main():
     else:
         base_results_dir = Path(project_dir, "results")
     exp_dir = Path(base_results_dir, args.exp_dir)
-    if args.task_type == "classification":
-        plot_classification_loss(exp_dir, args.dataset_sizes)
+    if args.task_type.startswith("classification"):
+        plot_classification_loss(exp_dir, args.dataset_sizes, args.task_type)
     elif args.task_type == "numeric":
         plot_numeric_loss(exp_dir)
     else:
         raise ValueError(f"unknown task type {args.task_type}")
 
 
-def plot_classification_loss(exp_dir: Path, dataset_sizes: list[int]):
+def plot_classification_loss(exp_dir: Path, dataset_sizes: list[int], task_type: TaskType):
     loss_csvs = [f for f in exp_dir.glob("*.csv") if f.name != "data.csv"]
     data_csv = pd.read_csv(Path(exp_dir, "data.csv"), index_col=0).reset_index(
         drop=True
     )
     # NOTE: assuming all examples have the same number of classes
-    try:
-        n_classes = len(literal_eval(data_csv["classes"][0]))  # type: ignore
-        # the baseline puts equal probability on each class, so we are considering a uniform distribution
-        baseline_prob = 1 / n_classes
-        baseline_loss = -np.log(baseline_prob)
-    except KeyError:
-        print("No 'classes' so skipping baseline")
-        baseline_loss = None
+    n_classes = len(literal_eval(data_csv["classes"][0]))  # type: ignore
+    # the baseline puts equal probability on each class, so we are considering a uniform distribution
+    baseline_prob = 1 / n_classes
+    baseline_loss = -np.log(baseline_prob)
+    if task_type == "classification_acc":
+        baseline = baseline_prob
+    elif task_type == "classification_loss":
+        baseline = baseline_loss
+    else: 
+        baseline = None
     if len(loss_csvs) == 0:
         raise ValueError(f"{exp_dir} does not exist or contains no output files")
     dfs = {csv_file.stem: pd.read_csv(csv_file, index_col=0) for csv_file in loss_csvs}
@@ -74,7 +76,7 @@ def plot_classification_loss(exp_dir: Path, dataset_sizes: list[int]):
         }
         size_name = str(size) if size != -1 else len(list(dfs.values())[0])
         separate_plot_dict[size_name] = (averages, standard_errors)
-    plot_loss(exp_dir, separate_plot_dict, baseline=baseline_loss)
+    plot_loss(exp_dir, separate_plot_dict, baseline, task_type)
 
 
 def plot_numeric_loss(exp_dir: Path):
@@ -93,6 +95,7 @@ def plot_loss(
     exp_dir: Path,
     separate_plots_dict: dict[str, tuple[dict, Optional[dict]]],
     baseline: Optional[float] = None,
+    task_type: Optional[TaskType] = None,
 ) -> None:
     plt.style.use("ggplot")
 
@@ -103,7 +106,7 @@ def plot_loss(
             baseline,
             linestyle="--",
             color="k",
-            label="Baseline loss (equal probability)",
+            label="Baseline (equal probability)",
         )
 
     for label, (loss_dict, standard_errors) in separate_plots_dict.items():
@@ -131,10 +134,13 @@ def plot_loss(
     plt.xlabel("Model size")
     plt.xticks(ticks, labels, rotation=45)
 
-    plt.yscale("log")
-    plt.ylabel("Loss")
-
-    plt.title("Log-log plot of loss vs model size")
+    if task_type == "classification_loss":
+        plt.yscale("log")
+        plt.ylabel("Loss")
+        plt.title("Log-log plot of loss vs model size")
+    elif task_type == "classification_acc":
+        plt.ylabel("Accuracy")
+        plt.title("Log plot of accuracy vs model size")
     plt.legend()
     plt.tight_layout()
     plt.savefig(Path(exp_dir, "loss_plot.png"))
@@ -156,8 +162,8 @@ def parse_args(args) -> argparse.Namespace:
     parser.add_argument(
         "--task-type",
         type=str,
-        default="classification",
-        choices=["classification", "numeric", "lambada"],
+        default="classification_loss",
+        choices=["classification_loss", "classification_acc", "numeric", "lambada"],
         help="The type of task that was run in this experiment",
     )
     parser.add_argument(

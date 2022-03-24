@@ -5,6 +5,7 @@ import os
 from typing import Union, cast
 from typing_extensions import Literal, get_args
 from dotenv import load_dotenv
+import numpy as np
 import torch
 import torch.nn.functional as F
 
@@ -80,15 +81,19 @@ class HFModel(Model):
             raise ValueError(
                 f"Batch size of {len(examples)} not currently supported for HF models: please use 1"
             )
-        if task_type == "classification":
-            rv = self._evaluate_classification(examples)
+        if task_type.startswith("classification"):
+            rv = self._evaluate_classification(examples, task_type)
         elif task_type == "numeric":
             rv = self._evaluate_numeric(examples)
         elif task_type == "lambada":
             rv = self._evaluate_lambada(examples)
-        return rv
+        return rv  # type: ignore (we cover all cases, mypy can't do logic with startswith)
 
-    def _evaluate_classification(self, examples: list[Example]) -> list[float]:
+    def _evaluate_classification(
+        self,
+        examples: list[Example],
+        task_type: TaskType,
+    ) -> Union[list[float], list[int]]:
         prompts = [example.prompt for example in examples]
         tokenized_inputs = self.tokenizer(
             prompts, return_tensors="pt", truncation=True
@@ -97,8 +102,14 @@ class HFModel(Model):
         # we only need the logits for the final (new) token
         # NOTE: this may need to change if we use batch size > 1 with padding
         logits = outputs["logits"][:, -1]
-        losses = self._losses_from_logits(examples, logits)
-        return losses
+        if task_type.endswith("loss"):
+            losses = self._losses_from_logits(examples, logits)
+            return losses
+        elif task_type.endswith("acc"):
+            accuracies = self._accuracies_from_logits(examples, logits)
+            return accuracies
+        else:
+            raise ValueError(f"TaskType {task_type} not understood")
 
     def _evaluate_lambada(self, examples: list[Example]) -> list[float]:
         # finding the target
@@ -177,6 +188,23 @@ class HFModel(Model):
             losses.append(loss.item())
         return losses
 
+    def _accuracies_from_logits(self, examples, logits) -> list[int]:
+        """Given examples and logits for those examples,
+        compute whether the predicted label is correct for each example"""
+        labels_correct = []
+        for i, example in enumerate(examples):
+            example_logits = logits[i]
+            # have to flatten this list for some reason
+            class_tokens = [
+                token[0] for token in self.tokenizer(list(example.classes))["input_ids"]
+            ]
+            # log_softmax just subtracts a constant, so repeated applications change nothing
+            # and there is no point in taking logprobs before focusing on the relevant indices
+            relevant_logits = example_logits[class_tokens]
+            label_correct = int(np.argmax(relevant_logits.cpu().detach().numpy()) == example.answer_index)
+            labels_correct.append(label_correct)
+        return labels_correct
+
 
 class GPT3Model(Model):
     def __init__(self, model_name: BaseGPT3Model) -> None:
@@ -196,7 +224,8 @@ class GPT3Model(Model):
         return rv
 
     def _evaluate_classification(
-        self, examples: list[ClassificationExample],
+        self,
+        examples: list[ClassificationExample],
     ) -> list[float]:
         prompts = [example.prompt for example in examples]
         api_params = APIParameters(

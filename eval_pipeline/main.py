@@ -77,13 +77,13 @@ def set_up_logging(log_path: Path):
 
 def load_data(dataset_path: Path, task_type: TaskType) -> Dataset:
     df = pd.read_csv(dataset_path, index_col=0)
-    if task_type == "classification":
+    if task_type.startswith("classification"):
         dataset = Dataset.classification_from_df(df)
     elif task_type == "numeric":
         dataset = Dataset.numeric_from_df(df)
     elif task_type == "lambada":
         dataset = Dataset.lambada_from_df(df)
-    return dataset
+    return dataset  # type: ignore (classification is covered)
 
 
 def run_model(
@@ -97,6 +97,7 @@ def run_model(
     """This function needs to run the model on the data and
     write the results to write_path incrementally."""
     write_path = Path(write_dir, model_name + ".csv")
+    # NOTE: classification_acc will be saved with output_name "loss", but should be fine
     output_name = "estimate" if task_type == "numeric" else "loss"
     field_names = ["index", output_name]
     with write_path.open("w") as outfile:
@@ -176,13 +177,12 @@ def parse_args(args):
         help="Only change the inference batch size if using exclusively GPT-3 models (will break HuggingFace models)",
         default=1,
     )
-
     parser.add_argument(
         "--task-type",
         type=str,
         help="The type of output expected for the dataset",
-        default="classification",
-        choices=["classification", "numeric", "lambada"],
+        default="classification_loss",
+        choices=["classification_loss", "classification_acc", "numeric", "lambada"],
     )
     args = parser.parse_args(args)
     return args

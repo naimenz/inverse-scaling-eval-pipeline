@@ -1,0 +1,20 @@
+2022-03-24 11:44:28,491 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anli_all', dataset_path=None, exp_dir='anli_all-acc-gpt2', models=['gpt2', 'gpt2-medium'], task_type='classification_acc', use_gpu=True)
+2022-03-24 11:44:28,491 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anli_all-acc-gpt2
+2022-03-24 11:44:28,494 [INFO] Copied data
+2022-03-24 11:45:23,128 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anli_all', dataset_path=None, exp_dir='anli_all-acc-gpt2', models=['gpt2', 'gpt2-medium'], task_type='classification_acc', use_gpu=True)
+2022-03-24 11:45:23,128 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anli_all-acc-gpt2
+2022-03-24 11:45:23,130 [INFO] Copied data
+2022-03-24 11:46:14,708 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anli_all', dataset_path=None, exp_dir='anli_all-acc-gpt2', models=['gpt2', 'gpt2-medium'], task_type='classification_acc', use_gpu=True)
+2022-03-24 11:46:14,708 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anli_all-acc-gpt2
+2022-03-24 11:46:14,709 [INFO] Copied data
+2022-03-24 11:46:43,171 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anli_all', dataset_path=None, exp_dir='anli_all-acc-gpt2', models=['gpt2', 'gpt2-medium'], task_type='classification_acc', use_gpu=True)
+2022-03-24 11:46:43,171 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anli_all-acc-gpt2
+2022-03-24 11:46:43,173 [INFO] Copied data
+2022-03-24 11:47:04,918 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='anli_all', dataset_path=None, exp_dir='anli_all-acc-gpt2', models=['gpt2', 'gpt2-medium'], task_type='classification_acc', use_gpu=True)
+2022-03-24 11:47:04,918 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/anli_all-acc-gpt2
+2022-03-24 11:47:04,920 [INFO] Copied data
