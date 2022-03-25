@@ -1,0 +1,4 @@
+2022-03-25 14:22:53,303 [INFO] Logging set up with args
+Namespace(batch_size=150, colab=False, dataset='boolq', dataset_path=None, exp_dir='boolq-gpt3', models=['ada', 'babbage', 'curie', 'davinci'], task_type='classification', use_gpu=False)
+2022-03-25 14:22:53,304 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/boolq-gpt3
+2022-03-25 14:22:53,305 [INFO] Copied data
