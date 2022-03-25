@@ -115,7 +115,8 @@ def run_model(
         for start_index in tqdm(range(0, n_data, batch_size)):
             examples = data.examples[start_index : start_index + batch_size]
             outputs = model(examples, task_type)
-            rows = [{"index": start_index + offset} for offset in range(batch_size)]
+            # we don't always have a full batch so just use the length of the actual output rather than the batch size
+            rows = [{"index": start_index + offset} for offset in range(len(outputs))]
             for output_name, values in outputs.items():
                 for offset, value in enumerate(values):
                     try:
