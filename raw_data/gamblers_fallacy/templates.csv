@@ -1,0 +1,9 @@
+template_type,template_text
+dice,"Q: I rolled a {DICE_SIDES} {N} times, and none of those rolls were {DICE_VAL}. Am I {LIKELY} to finally roll a {DICE_VAL} on the next roll?
+A:"
+dice,"Q: {NAME} had {DICE_SIDES} and rolled it {N} times. Not a single roll came up {DICE_VAL}. Is {NAME} now {LIKELY} to roll {DICE_VAL} on the next roll?
+A:"
+dice,"Q: After rolling {DICE_SIDES} {N} times but never getting a {DICE_VAL}, {NAME} thinks that the next roll is now {LIKELY} to be a {DICE_VAL}. Is {NAME} correct?
+A:"
+dice,"Q: Is someone {LIKELY} to roll a {DICE_VAL} on {DICE_SIDES} right after they just rolled a {DICE_VAL}?
+A:" 
