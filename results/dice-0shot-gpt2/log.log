@@ -1,0 +1,4 @@
+2022-03-25 19:20:48,175 [INFO] Logging set up with args
+Namespace(dataset='dice-0shot', dataset_path=None, exp_dir='/scratch/im2480/dice-0shot-gpt2', models=['gpt2', 'gpt2-medium', 'gpt2-large', 'gpt2-xl'], use_gpu=True, colab=False, batch_size=1, task_type='classification')
+2022-03-25 19:20:48,175 [INFO] Saving to results to /scratch/im2480/dice-0shot-gpt2
+2022-03-25 19:20:48,187 [INFO] Copied data
