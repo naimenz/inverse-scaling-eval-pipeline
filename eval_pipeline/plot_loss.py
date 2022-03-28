@@ -38,7 +38,7 @@ def main():
     else:
         base_results_dir = Path(project_dir, "results")
     exp_dir = Path(base_results_dir, args.exp_dir)
-    if args.task_type.startswith("classification"):
+    if args.task_type.startswith("classification") or args.task_type == "lambada":
         plot_classification_loss(exp_dir, args.dataset_sizes, args.task_type, args.invert)
     elif args.task_type == "numeric":
         plot_numeric_loss(exp_dir)
@@ -51,22 +51,24 @@ def plot_classification_loss(exp_dir: Path, dataset_sizes: list[int], task_type:
     data_csv = pd.read_csv(Path(exp_dir, "data.csv"), index_col=0).reset_index(
         drop=True
     )
-    # NOTE: assuming all examples have the same number of classes
-    n_classes = len(literal_eval(data_csv["classes"][0]))  # type: ignore
-    # the baseline puts equal probability on each class, so we are considering a uniform distribution
-    baseline_prob = 1 / n_classes
-    baseline_loss = -np.log(baseline_prob)
     dfs = {csv_file.stem: pd.read_csv(csv_file, index_col=0) for csv_file in loss_csvs}
     # one dict containing all different plots to be made, with their labels as keys
     separate_plot_dict = {}
     if task_type == "classification_acc":
-        baseline = baseline_prob
+        # NOTE: assuming all examples have the same number of classes
+        n_classes = len(literal_eval(data_csv["classes"][0]))  # type: ignore
+        # the baseline puts equal probability on each class, so we are considering a uniform distribution
+        baseline = 1 / n_classes
         output_name = "correct"
         if invert:
             for df in dfs.values():
                 df.loc[:, output_name] = df[output_name].apply(lambda correct: np.abs(correct - 1))
     elif task_type == "classification_loss":
-        baseline = baseline_loss
+        # NOTE: assuming all examples have the same number of classes
+        n_classes = len(literal_eval(data_csv["classes"][0]))  # type: ignore
+        # the baseline puts equal probability on each class, so we are considering a uniform distribution
+        baseline_prob = 1 / n_classes
+        baseline = -np.log(baseline_prob)
         output_name = "loss"
         if invert:
             for df in dfs.values():
@@ -74,6 +76,9 @@ def plot_classification_loss(exp_dir: Path, dataset_sizes: list[int], task_type:
     else: 
         baseline = None
         output_name = "loss"
+        if invert:
+            for df in dfs.values():
+                df.loc[:, output_name] = df[output_name].apply(lambda loss: -np.log(1 - np.exp(-loss)))
     if len(loss_csvs) == 0:
         raise ValueError(f"{exp_dir} does not exist or contains no output files")
     for size in dataset_sizes:
@@ -150,7 +155,7 @@ def plot_loss(
     plt.xlabel("Model size")
     plt.xticks(ticks, labels, rotation=45)
 
-    if task_type == "classification_loss":
+    if task_type == "classification_loss" or task_type == "lambada":
         plt.yscale("log")
         plt.ylabel("Loss")
         title = "Log-log plot of loss vs model size"
