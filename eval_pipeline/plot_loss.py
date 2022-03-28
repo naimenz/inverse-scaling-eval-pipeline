@@ -39,14 +39,14 @@ def main():
         base_results_dir = Path(project_dir, "results")
     exp_dir = Path(base_results_dir, args.exp_dir)
     if args.task_type.startswith("classification"):
-        plot_classification_loss(exp_dir, args.dataset_sizes, args.task_type)
+        plot_classification_loss(exp_dir, args.dataset_sizes, args.task_type, args.invert)
     elif args.task_type == "numeric":
         plot_numeric_loss(exp_dir)
     else:
         raise ValueError(f"unknown task type {args.task_type}")
 
 
-def plot_classification_loss(exp_dir: Path, dataset_sizes: list[int], task_type: TaskType):
+def plot_classification_loss(exp_dir: Path, dataset_sizes: list[int], task_type: TaskType, invert: bool):
     loss_csvs = [f for f in exp_dir.glob("*.csv") if f.name != "data.csv"]
     data_csv = pd.read_csv(Path(exp_dir, "data.csv"), index_col=0).reset_index(
         drop=True
@@ -56,30 +56,42 @@ def plot_classification_loss(exp_dir: Path, dataset_sizes: list[int], task_type:
     # the baseline puts equal probability on each class, so we are considering a uniform distribution
     baseline_prob = 1 / n_classes
     baseline_loss = -np.log(baseline_prob)
+    dfs = {csv_file.stem: pd.read_csv(csv_file, index_col=0) for csv_file in loss_csvs}
+    # one dict containing all different plots to be made, with their labels as keys
+    separate_plot_dict = {}
     if task_type == "classification_acc":
         baseline = baseline_prob
         output_name = "correct"
+        if invert:
+            for df in dfs.values():
+                df.loc[:, output_name] = df[output_name].apply(lambda correct: np.abs(correct - 1))
     elif task_type == "classification_loss":
         baseline = baseline_loss
         output_name = "loss"
+        if invert:
+            for df in dfs.values():
+                df.loc[:, output_name] = df[output_name].apply(lambda loss: -np.log(1 - np.exp(-loss)))
     else: 
         baseline = None
         output_name = "loss"
     if len(loss_csvs) == 0:
         raise ValueError(f"{exp_dir} does not exist or contains no output files")
-    dfs = {csv_file.stem: pd.read_csv(csv_file, index_col=0) for csv_file in loss_csvs}
-    # one dict containing all different plots to be made, with their labels as keys
-    separate_plot_dict = {}
     for size in dataset_sizes:
         size_dfs = {name: df[:size] for name, df in dfs.items()}
         averages = {model_name: np.mean(df[output_name]) for model_name, df in size_dfs.items()}
+        # if invert:
+        #     new_averages = dict()
+        #     for name, loss in averages.items():
+        #         new_loss =  -np.log(1 - np.exp(-loss))
+        #         new_averages[name] = new_loss
+        #     averages = new_averages
         standard_errors = {
             model_name: np.std(df[output_name]) / np.sqrt(len(df[output_name]))
             for model_name, df in size_dfs.items()
         }
         size_name = str(size) if size != -1 else len(list(dfs.values())[0])
         separate_plot_dict[size_name] = (averages, standard_errors)
-    plot_loss(exp_dir, separate_plot_dict, baseline, task_type)
+    plot_loss(exp_dir, separate_plot_dict, baseline, task_type, invert)
 
 
 def plot_numeric_loss(exp_dir: Path):
@@ -99,6 +111,7 @@ def plot_loss(
     separate_plots_dict: dict[str, tuple[dict, Optional[dict]]],
     baseline: Optional[float] = None,
     task_type: Optional[TaskType] = None,
+    invert: Optional[bool] = None,
 ) -> None:
     plt.style.use("ggplot")
 
@@ -140,10 +153,15 @@ def plot_loss(
     if task_type == "classification_loss":
         plt.yscale("log")
         plt.ylabel("Loss")
-        plt.title("Log-log plot of loss vs model size")
+        title = "Log-log plot of loss vs model size"
     elif task_type == "classification_acc":
         plt.ylabel("Accuracy")
-        plt.title("Log plot of accuracy vs model size")
+        title = "Log plot of accuracy vs model size"
+    else:
+        raise ValueError
+    if invert:
+        title += " (inverted)"
+    plt.title(title)
     plt.legend()
     plt.tight_layout()
     plt.savefig(Path(exp_dir, "loss_plot.png"))
@@ -175,6 +193,12 @@ def parse_args(args) -> argparse.Namespace:
         nargs="+",
         help="The numbers of examples to use (-1 means all)",
         default=[-1],
+    )
+    
+    parser.add_argument(
+        "--invert",
+        action="store_true",
+        help="Look at the loss on all OTHER class tokens (makes most sense for 2 classes)",
     )
     args = parser.parse_args(args)
     return args
