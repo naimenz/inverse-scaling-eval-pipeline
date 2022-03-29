@@ -1,0 +1,6 @@
+2022-03-29 11:42:58,494 [INFO] Logging set up with args
+Namespace(batch_size=200, colab=False, dataset='dice-0shot', dataset_path=None, exp_dir='dice-0shot-gpt3', models=['ada', 'babbage', 'curie', 'davinci'], task_type='classification', use_gpu=False)
+2022-03-29 11:42:58,495 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/dice-0shot-gpt3
+2022-03-29 11:42:58,495 [INFO] Copied data
+2022-03-29 11:44:01,665 [INFO] Retrying after error 429: {'message': 'Rate limit reached for tokens. Limit: 10000.000000 / min. Current: 10240.000000 / min. Contact support@openai.com if you continue to have issues.', 'type': 'tokens', 'param': None, 'code': None}
+2022-03-29 11:44:10,223 [INFO] Retrying after error 429: {'message': 'Rate limit reached for tokens. Limit: 10000.000000 / min. Current: 10880.000000 / min. Contact support@openai.com if you continue to have issues.', 'type': 'tokens', 'param': None, 'code': None}
