@@ -12,8 +12,8 @@ from pathlib import Path
 import torch
 from tqdm.autonotebook import tqdm
 
-from .eval_pipeline.dataset import Dataset, TaskType
-from .eval_pipeline.models import Device, Model, BaseGPT3Model, ValidHFModel
+from eval_pipeline.dataset import Dataset, TaskType
+from eval_pipeline.models import Device, Model, BaseGPT3Model, ValidHFModel
 
 
 def main():
