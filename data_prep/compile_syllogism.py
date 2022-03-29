@@ -12,20 +12,41 @@ adjectives_verbs = pd.read_csv(Path(raw_data_path, "adjectives_verbs.csv"))
 # un-escaping the newline characters in the template
 templates["templates"] = templates["templates"].map(lambda entry: entry.replace("\\n", "\n"))
 
-filled_templates = []
+zeroshot_templates = []
+oneshot_templates = []
 possible_answers_list = []
 answer_ix_list = []
 possible_answers = [" Yes", " No"]
 answer_ix = 1
+
+oneshot_template = """
+Q: Is the following syllogism logically sound?
+Premise 1: All men eat.
+Premise 2: Andrew is a man.
+Conclusion: Therefore Andrew eats.
+A: Yes
+
+{prompt}
+""".strip()
+
 for template in templates["templates"]:
     for _, (plural_noun, capital_plural_noun) in plural_nouns.iterrows():
         for _, (adjective, verb) in adjectives_verbs.iterrows():
             filled_template = template.format(plural_noun=plural_noun, capital_plural_noun=capital_plural_noun, adjective=adjective, verb=verb)
-            filled_templates.append(filled_template)
+            zeroshot_templates.append(filled_template)
+            filled_oneshot_template = oneshot_template.format(prompt=filled_template)
+            oneshot_templates.append(filled_oneshot_template)
+
             possible_answers_list.append(possible_answers)
             answer_ix_list.append(answer_ix)
-            print(f"===\n{filled_template}\n===")
-filled_template_df = pd.DataFrame({"filled_template": filled_templates, "possible_answers": possible_answers_list, "answer_ix": answer_ix_list})
-filled_template_df.to_csv(Path(processed_data_path, "syllogism.csv"))
-print(filled_template_df.head())
-print(filled_template_df.info())
+            print(f"== ZERO SHOT ==\n{filled_template}\n===")
+            print(f"== ONE SHOT ==\n{filled_oneshot_template}\n===")
+
+zeroshot_template_df = pd.DataFrame({"prompt": zeroshot_templates, "classes": possible_answers_list, "answer_index": answer_ix_list})
+zeroshot_template_df.to_csv(Path(processed_data_path, "syllogism-0shot.csv"))
+
+zeroshot_template_df = pd.DataFrame({"prompt": oneshot_templates, "classes": possible_answers_list, "answer_index": answer_ix_list})
+zeroshot_template_df.to_csv(Path(processed_data_path, "syllogism-1shot.csv"))
+
+print(zeroshot_template_df.head())
+print(zeroshot_template_df.info())

@@ -39,21 +39,24 @@ def main():
         base_results_dir = Path(project_dir, "results")
     exp_dir = Path(base_results_dir, args.exp_dir)
     if args.task_type.startswith("classification") or args.task_type == "lambada":
-        plot_classification_loss(exp_dir, args.dataset_sizes, args.task_type, args.invert)
+        plot_classification_loss(
+            exp_dir, args.dataset_sizes, args.task_type, args.invert
+        )
     elif args.task_type == "numeric":
         plot_numeric_loss(exp_dir)
     else:
         raise ValueError(f"unknown task type {args.task_type}")
 
 
-def plot_classification_loss(exp_dir: Path, dataset_sizes: list[int], task_type: TaskType, invert: bool):
+def plot_classification_loss(
+    exp_dir: Path, dataset_sizes: list[int], task_type: TaskType, invert: bool
+):
     loss_csvs = [f for f in exp_dir.glob("*.csv") if f.name != "data.csv"]
     data_csv = pd.read_csv(Path(exp_dir, "data.csv"), index_col=0).reset_index(
         drop=True
     )
     dfs = {csv_file.stem: pd.read_csv(csv_file, index_col=0) for csv_file in loss_csvs}
-    # one dict containing all different plots to be made, with their labels as keys
-    separate_plot_dict = {}
+
     if task_type == "classification_acc":
         # NOTE: assuming all examples have the same number of classes
         n_classes = len(literal_eval(data_csv["classes"][0]))  # type: ignore
@@ -62,7 +65,10 @@ def plot_classification_loss(exp_dir: Path, dataset_sizes: list[int], task_type:
         output_name = "correct"
         if invert:
             for df in dfs.values():
-                df.loc[:, output_name] = df[output_name].apply(lambda correct: np.abs(correct - 1))
+                df.loc[:, output_name] = df[output_name].apply(
+                    lambda correct: np.abs(correct - 1)
+                )
+
     elif task_type == "classification_loss":
         # NOTE: assuming all examples have the same number of classes
         n_classes = len(literal_eval(data_csv["classes"][0]))  # type: ignore
@@ -72,18 +78,29 @@ def plot_classification_loss(exp_dir: Path, dataset_sizes: list[int], task_type:
         output_name = "loss"
         if invert:
             for df in dfs.values():
-                df.loc[:, output_name] = df[output_name].apply(lambda loss: -np.log(1 - np.exp(-loss)))
-    else: 
+                df.loc[:, output_name] = df[output_name].apply(
+                    lambda loss: -np.log(1 - np.exp(-loss))
+                )
+
+    else:
         baseline = None
         output_name = "loss"
         if invert:
             for df in dfs.values():
-                df.loc[:, output_name] = df[output_name].apply(lambda loss: -np.log(1 - np.exp(-loss)))
+                df.loc[:, output_name] = df[output_name].apply(
+                    lambda loss: -np.log(1 - np.exp(-loss))
+                )
+
     if len(loss_csvs) == 0:
         raise ValueError(f"{exp_dir} does not exist or contains no output files")
+
+    # one dict containing all different plots to be made, with their labels as keys
+    separate_plot_dict = {}
     for size in dataset_sizes:
         size_dfs = {name: df[:size] for name, df in dfs.items()}
-        averages = {model_name: np.mean(df[output_name]) for model_name, df in size_dfs.items()}
+        averages = {
+            model_name: np.mean(df[output_name]) for model_name, df in size_dfs.items()
+        }
         # if invert:
         #     new_averages = dict()
         #     for name, loss in averages.items():
@@ -137,7 +154,9 @@ def plot_loss(
                 for size, loss in loss_dict.items()
             ]
             xs, ys, yerrs = zip(*sorted(errorbar_data, key=lambda pair: pair[0]))
-            plt.errorbar(xs, ys, yerrs, label=f"{label} examples (with Standard Error in Mean)")
+            plt.errorbar(
+                xs, ys, yerrs, label=f"{label} examples (with Standard Error in Mean)"
+            )
         else:
             xy_pairs = [(size_dict[size], loss) for size, loss in loss_dict.items()]
             xs, ys = zip(*sorted(xy_pairs, key=lambda pair: pair[0]))
@@ -199,7 +218,7 @@ def parse_args(args) -> argparse.Namespace:
         help="The numbers of examples to use (-1 means all)",
         default=[-1],
     )
-    
+
     parser.add_argument(
         "--invert",
         action="store_true",

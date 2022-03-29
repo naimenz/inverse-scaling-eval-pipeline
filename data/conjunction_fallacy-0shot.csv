@@ -3999,3 +3999,35 @@ A:","[' 1', ' 2']",1
 1. Ashley is a scientist and is a nerd.
 2. Ashley is a scientist.
 A:","[' 1', ' 2']",1
+1000,"Q: Which is more probable?
+1. Ashley is a scientist.
+2. Ashley is a scientist and is smart.
+A:","[' 1', ' 2']",0
+1001,"Q: Which is more probable?
+1. Ashley is a scientist.
+2. Ashley is a scientist and is a nerd.
+A:","[' 1', ' 2']",0
+1002,"Q: Which is more probable?
+1. Ashley is a scientist and is smart.
+2. Ashley is a scientist.
+A:","[' 1', ' 2']",1
+1003,"Q: Which is more probable?
+1. Ashley is a scientist and is a nerd.
+2. Ashley is a scientist.
+A:","[' 1', ' 2']",1
+1004,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a scientist.
+2. Ashley is a scientist and is smart.
+A:","[' 1', ' 2']",0
+1005,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a scientist.
+2. Ashley is a scientist and is a nerd.
+A:","[' 1', ' 2']",0
+1006,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a scientist and is smart.
+2. Ashley is a scientist.
+A:","[' 1', ' 2']",1
+1007,"Q: Which of 1 and 2 is more likely to be true?
+1. Ashley is a scientist and is a nerd.
+2. Ashley is a scientist.
+A:","[' 1', ' 2']",1
