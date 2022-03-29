@@ -2,6 +2,7 @@ from __future__ import annotations
 import argparse
 from ast import literal_eval
 import json
+from pprint import pprint
 import sys
 
 from pathlib import Path
@@ -96,24 +97,25 @@ def plot_classification_loss(
 
     # one dict containing all different plots to be made, with their labels as keys
     separate_plot_dict = {}
+    separate_average_coverages = {}
     for size in dataset_sizes:
         size_dfs = {name: df[:size] for name, df in dfs.items()}
         averages = {
             model_name: np.mean(df[output_name]) for model_name, df in size_dfs.items()
         }
-        # if invert:
-        #     new_averages = dict()
-        #     for name, loss in averages.items():
-        #         new_loss =  -np.log(1 - np.exp(-loss))
-        #         new_averages[name] = new_loss
-        #     averages = new_averages
         standard_errors = {
             model_name: np.std(df[output_name]) / np.sqrt(len(df[output_name]))
             for model_name, df in size_dfs.items()
         }
+        # the average amount of probability covered by the class tokens
+        average_coverages = {
+            model_name: np.mean(np.exp(df["total_logprob"])) for model_name, df in size_dfs.items()
+        }
+
         size_name = str(size) if size != -1 else len(list(dfs.values())[0])
         separate_plot_dict[size_name] = (averages, standard_errors)
-    plot_loss(exp_dir, separate_plot_dict, baseline, task_type, invert)
+        separate_average_coverages[size_name] = average_coverages
+    plot_loss(exp_dir, separate_plot_dict, baseline, task_type, invert, separate_average_coverages)
 
 
 def plot_numeric_loss(exp_dir: Path):
@@ -134,6 +136,7 @@ def plot_loss(
     baseline: Optional[float] = None,
     task_type: Optional[TaskType] = None,
     invert: Optional[bool] = None,
+    average_coverages: Optional[dict[str, dict]] = None,
 ) -> None:
     plt.style.use("ggplot")
 
@@ -155,7 +158,7 @@ def plot_loss(
             ]
             xs, ys, yerrs = zip(*sorted(errorbar_data, key=lambda pair: pair[0]))
             plt.errorbar(
-                xs, ys, yerrs, label=f"{label} examples (with Standard Error in Mean)"
+                xs, ys, yerrs, label=f"{label} examples (with SEM)"
             )
         else:
             xy_pairs = [(size_dict[size], loss) for size, loss in loss_dict.items()]
@@ -185,6 +188,8 @@ def plot_loss(
         raise ValueError
     if invert:
         title += " (inverted)"
+    pprint(average_coverages)
+
     plt.title(title)
     plt.legend()
     plt.tight_layout()
