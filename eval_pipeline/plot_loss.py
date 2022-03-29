@@ -41,7 +41,7 @@ def main():
     exp_dir = Path(base_results_dir, args.exp_dir)
     if args.task_type.startswith("classification") or args.task_type == "lambada":
         plot_classification_loss(
-            exp_dir, args.dataset_sizes, args.task_type, args.invert
+            exp_dir, args.dataset_sizes, args.task_type, args.invert, not args.no_show,
         )
     elif args.task_type == "numeric":
         plot_numeric_loss(exp_dir)
@@ -50,7 +50,7 @@ def main():
 
 
 def plot_classification_loss(
-    exp_dir: Path, dataset_sizes: list[int], task_type: TaskType, invert: bool
+    exp_dir: Path, dataset_sizes: list[int], task_type: TaskType, invert: bool, show: bool,
 ):
     loss_csvs = [f for f in exp_dir.glob("*.csv") if f.name != "data.csv"]
     data_csv = pd.read_csv(Path(exp_dir, "data.csv"), index_col=0).reset_index(
@@ -107,15 +107,21 @@ def plot_classification_loss(
             model_name: np.std(df[output_name]) / np.sqrt(len(df[output_name]))
             for model_name, df in size_dfs.items()
         }
-        # the average amount of probability covered by the class tokens
-        average_coverages = {
-            model_name: np.mean(np.exp(df["total_logprob"])) for model_name, df in size_dfs.items()
-        }
+        if task_type != "lambada":
+            # the average amount of probability covered by the class tokens
+            average_coverages = {
+                model_name: np.mean(np.exp(df["total_logprob"])) for model_name, df in size_dfs.items()
+            }
+        else:
+            average_coverages = None
 
         size_name = str(size) if size != -1 else len(list(dfs.values())[0])
         separate_plot_dict[size_name] = (averages, standard_errors)
         separate_average_coverages[size_name] = average_coverages
-    plot_loss(exp_dir, separate_plot_dict, baseline, task_type, invert, separate_average_coverages)
+    if task_type == "lambada":
+        separate_average_coverages = None
+
+    plot_loss(exp_dir, separate_plot_dict, baseline, task_type, invert, separate_average_coverages, show)
 
 
 def plot_numeric_loss(exp_dir: Path):
@@ -137,6 +143,7 @@ def plot_loss(
     task_type: Optional[TaskType] = None,
     invert: Optional[bool] = None,
     average_coverages: Optional[dict[str, dict]] = None,
+    show: bool = True,
 ) -> None:
     plt.style.use("ggplot")
 
@@ -175,26 +182,33 @@ def plot_loss(
 
     plt.xscale("log")
     plt.xlabel("Model size")
-    plt.xticks(ticks, labels, rotation=45)
+    # plt.xticks(ticks, labels, rotation=45)
+    plt.xticks(ticks, labels)
 
     if task_type == "classification_loss" or task_type == "lambada":
         plt.yscale("log")
         plt.ylabel("Loss")
         title = "Log-log plot of loss vs model size"
+        if task_type == "lambada":
+            plt.ylim(0.98, 5.02)
     elif task_type == "classification_acc":
+        # always show full range of accuracies
+        plt.ylim(-0.02, 1.02)
         plt.ylabel("Accuracy")
         title = "Log plot of accuracy vs model size"
     else:
         raise ValueError
     if invert:
         title += " (inverted)"
+    
     pprint(average_coverages)
 
     plt.title(title)
     plt.legend()
     plt.tight_layout()
-    plt.savefig(Path(exp_dir, "loss_plot.png"))
-    plt.show()
+    plt.savefig(Path(exp_dir, "loss_plot.svg"), format="svg")
+    if show:
+        plt.show()
 
 
 def parse_args(args) -> argparse.Namespace:
@@ -228,6 +242,12 @@ def parse_args(args) -> argparse.Namespace:
         "--invert",
         action="store_true",
         help="Look at the loss on all OTHER class tokens (makes most sense for 2 classes)",
+    )
+
+    parser.add_argument(
+        "--no-show",
+        action="store_true",
+        help="Suppress plotting (for use in scripts)",
     )
     args = parser.parse_args(args)
     return args

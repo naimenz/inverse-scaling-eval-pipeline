@@ -3,33 +3,110 @@
 <script src="distill-template.js"></script>
 
 <script type="text/front-matter">
-  title: "Article Title"
-  description: "Description of the post"
+  title: "Inverse Scaling"
+  description: "Results so far from trying inverse scaling"
   authors:
-  - Chris Olah: http://colah.github.io
-  - Shan Carter: http://shancarter.com
+  - Ian McKenzie: http://irmckenzie.co.uk
   affiliations:
-  - Google Brain: http://g.co/brain
-  - Google Brain: http://g.co/brain
+  - " "
 </script>
 
 <dt-article>
-  <h1>Hello World</h1>
-  <h2>A description of the article</h2>
+  <h1>Inverse Scaling</h1>
+  <h2>Results so far from trying inverse scaling</h2>
   <dt-byline></dt-byline>
-  <p>This is the first paragraph of the article.</p>
-  <p>We can also cite <dt-cite key="gregor2015draw"></dt-cite> external publications.</p>
+  <h2>Existing tasks</h2>
+  <!-- LAMBADA  -->
+  <h3>Loss for Lambada with GPT-2 vs GPT-3</h3>
+  <div class="row">
+    <div class="column">
+      <img src="../results/lambada_gpt2/loss_plot.svg" alt="lambada-gpt2" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="../results/lambada_gpt3/loss_plot.svg" alt="lambada-gpt3" style="width:100%">
+    </div>
+  </div>
+  <h2>My tasks</h2>
+  <!-- SYLLOGISM -->
+  <h3>Accuracy for Syllogism (belief bias) with GPT-2, 0-shot vs 1-shot</h3>
+  <div class="row">
+    <div class="column">
+      <img src="../results/syllogism-0shot-gpt2/loss_plot.svg" alt="syllogism-0shot-gpt2" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="../results/syllogism-1shot-gpt2/loss_plot.svg" alt="syllogism-1shot-gpt2" style="width:100%">
+    </div>
+  </div>
+  <h3>Accuracy for Syllogism (belief bias) with GPT-3, 0-shot vs 1-shot</h3>
+  <div class="row">
+    <div class="column">
+      <img src="../results/syllogism-0shot-gpt3/loss_plot.svg" alt="syllogism-0shot-gpt3" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="../results/syllogism-1shot-gpt3/loss_plot.svg" alt="syllogism-1shot-gpt3" style="width:100%">
+    </div>
+  </div>
+  <!-- CONJUNCTION FALLACY  -->
+  <h3>Accuracy for Conjunction Fallacy with GPT-2, 0-shot vs 1-shot</h3>
+  <div class="row">
+    <div class="column">
+      <img src="../results/conjunction-fallacy-0shot-gpt2/loss_plot.svg" alt="conjunction-fallacy-0shot-gpt2" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="../results/conjunction-fallacy-1shot-gpt2/loss_plot.svg" alt="conjunction-fallacy-1shot-gpt2" style="width:100%">
+    </div>
+  </div>
+  <h3>Accuracy for Conjunction Fallacy with GPT-3, 0-shot vs 1-shot</h3>
+  <div class="row">
+    <div class="column">
+      <img src="../results/conjunction-fallacy-0shot-gpt3/loss_plot.svg" alt="conjunction-fallacy-0shot-gpt3" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="../results/conjunction-fallacy-1shot-gpt3/loss_plot.svg" alt="conjunction-fallacy-1shot-gpt3" style="width:100%">
+    </div>
+  </div>
+  <!-- BOOLQ -->
+  <h3>Accuracy for BoolQ with GPT-2, 0-shot vs 1-shot</h3>
+  <div class="row">
+    <div class="column">
+      <img src="../results/boolq-0shot-gpt2/loss_plot.svg" alt="boolq-0shot-gpt2" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="../results/boolq-1shot-gpt2/loss_plot.svg" alt="boolq-1shot-gpt2" style="width:100%">
+    </div>
+  </div>
+  <h3>Accuracy for BoolQ with GPT-3, 0-shot vs 1-shot</h3>
+  <div class="row">
+    <div class="column">
+      <img src="../results/boolq-0shot-gpt3/loss_plot.svg" alt="boolq-0shot-gpt3" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="../results/boolq-1shot-gpt3/loss_plot.svg" alt="boolq-1shot-gpt3" style="width:100%">
+    </div>
+  </div>
+  <!-- DICE (Gambler's fallacy) -->
+  <h3>Accuracy for Dice (gambler's fallacy) with GPT-2, 0-shot vs 1-shot</h3>
+  <div class="row">
+    <div class="column">
+      <img src="../results/dice-0shot-gpt2/loss_plot.svg" alt="dice-0shot-gpt2" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="../results/dice-1shot-gpt2/loss_plot.svg" alt="dice-1shot-gpt2" style="width:100%">
+    </div>
+  </div>
+  <h3>Accuracy for Dice (gambler's fallacy) with GPT-3, 0-shot vs 1-shot</h3>
+  <div class="row">
+    <div class="column">
+      <img src="../results/dice-0shot-gpt3/loss_plot.svg" alt="dice-0shot-gpt3" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="../results/dice-1shot-gpt3/loss_plot.svg" alt="dice-1shot-gpt3" style="width:100%">
+    </div>
+  </div>
 </dt-article>
 
 <dt-appendix>
 </dt-appendix>
 
 <script type="text/bibliography">
-  @article{gregor2015draw,
-    title={DRAW: A recurrent neural network for image generation},
-    author={Gregor, Karol and Danihelka, Ivo and Graves, Alex and Rezende, Danilo Jimenez and Wierstra, Daan},
-    journal={arXivreprint arXiv:1502.04623},
-    year={2015},
-    url={https://arxiv.org/pdf/1502.04623.pdf}
-  }
 </script>
