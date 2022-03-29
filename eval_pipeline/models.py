@@ -81,8 +81,11 @@ class HFModel(Model):
             raise ValueError(
                 f"Batch size of {len(examples)} not currently supported for HF models: please use 1"
             )
+        print(task_type)
         if task_type.startswith("classification"):
             rv = self._evaluate_classification(examples, task_type)
+        elif task_type.startswith("ordinal"):
+            rv = self._evaluate_ordinal(examples)
         elif task_type == "numeric":
             rv = self._evaluate_numeric(examples)
         elif task_type == "lambada":
@@ -166,6 +169,41 @@ class HFModel(Model):
         else:
             raise ValueError("No valid numbers returned")
         return {"estimate": [estimate]}
+
+    def _evaluate_ordinal(self, examples: list[Example]) -> dict[str, Sequence[float]]:
+        class_to_k_hot = {}
+        classes = list(examples[0].classes)
+        # represent classes as k-hot vectors
+        for idx, _class in enumerate(classes):
+            vec_len = len(classes) - 1
+            class_to_k_hot[_class] = torch.zeros(vec_len)
+            class_to_k_hot[_class][:idx] += 1.
+        
+        prompts = [example.prompt for example in examples]
+        tokenized_inputs = self.tokenizer(
+            prompts, return_tensors="pt", truncation=True
+        ).to(self.device)
+
+        outputs = self.model(**tokenized_inputs)
+        logits = outputs["logits"][:, -1]
+        losses = self._ordinal_losses_from_logits(examples, logits, class_to_k_hot)
+        accuracies = self._accuracies_from_logits(examples, logits)
+        return {"losses": losses, "accuracies": accuracies}
+    
+    def _ordinal_losses_from_logits(self, examples, logits, class_to_k_hot) -> list[float]:
+        losses = []
+        for i, example in enumerate(examples):
+            example_logits = logits[i]
+            class_tokens = [
+                token[0] for token in self.tokenizer(list(example.classes))["input_ids"]
+            ]
+
+            relevant_logits = example_logits[class_tokens]
+            y_true = example.classes[example.class_index]
+            print("Correct class:", y_true, "(", class_to_k_hot[y_true], ")")
+            loss = F.cross_entropy(relevant_logits, class_to_k_hot[y_true])
+            losses.append(loss.item())
+        return losses
 
     def _losses_from_logits(self, examples, logits) -> list[float]:
         """Given examples and logits for those examples,
@@ -273,6 +311,50 @@ class GPT3Model(Model):
             label_correct = int(np.argmax(relevant_logprobs) == example.answer_index)
             labels_correct.append(label_correct)
         return {"loss": losses, "correct": labels_correct, "total_logprob": total_logprobs}
+
+    def _evaluate_ordinal(
+        self,
+        examples: list[ClassificationExample],
+    ) -> dict[str, Union[Sequence[float], Sequence[int]]]:
+        class_to_k_hot = {}
+        classes = list(examples[0].classes)
+        # represent classes as k-hot vectors
+        for idx, _class in enumerate(classes):
+            vec_len = len(classes) - 1
+            class_to_k_hot[_class] = torch.zeros(vec_len)
+            class_to_k_hot[_class][:idx] += 1.
+
+        prompts = [example.prompt for example in examples]
+        api_params = APIParameters(
+            temperature=0,
+            n=1,
+            max_tokens=1,
+            logprobs=100,
+        )
+        response_json = call_api(prompts, self.model_name, api_params).json()
+        losses = []
+        labels_correct = []
+        choices = response_json["choices"]
+        for i, example in enumerate(examples):
+            logprobs = choices[i]["logprobs"]["top_logprobs"][0]
+            try:
+                relevant_logprobs = torch.Tensor([logprobs.get(c) for c in example.classes])
+            except TypeError:
+                global error_count
+                logging.info(f"error_count = {error_count}")
+                logging.info(example)
+                logging.info(logprobs)
+                # not raising an error, just moving on to the next example
+                error_count += 1
+                continue
+            
+            y_true = example.classes[example.class_index]
+            loss = F.cross_entropy(relevant_logprobs, class_to_k_hot[y_true])
+            losses.append(loss.item())
+
+            label_correct = int(np.argmax(relevant_logprobs) == example.answer_index)
+            labels_correct.append(label_correct)
+        return {"loss": losses, "correct": labels_correct}
 
     def _evaluate_lambada(self, examples: list[LambadaExample]) -> dict[str, Union[Sequence[float], Sequence[int]]]:
         prompts = [example.prompt for example in examples]
