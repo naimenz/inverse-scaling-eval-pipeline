@@ -2,3 +2,7 @@
 Namespace(colab=False, dataset='conjunction_fallacy', exp_dir='gpt3-conjunction-fallacy', models=['ada', 'babbage', 'curie', 'davinci'], use_gpu=True)
 2022-03-04 15:18:23,828 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/gpt3-conjunction-fallacy
 2022-03-04 15:18:23,829 [INFO] Copied data
+2022-03-28 16:37:17,683 [INFO] Logging set up with args
+Namespace(batch_size=100, colab=False, dataset='conjunction_fallacy', dataset_path=None, exp_dir='conjunction-fallacy-gpt3', models=['ada', 'babbage', 'curie', 'davinci'], task_type='classification', use_gpu=False)
+2022-03-28 16:37:17,683 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/conjunction-fallacy-gpt3
+2022-03-28 16:37:17,687 [INFO] Copied data

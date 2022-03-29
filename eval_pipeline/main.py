@@ -116,7 +116,8 @@ def run_model(
             examples = data.examples[start_index : start_index + batch_size]
             outputs = model(examples, task_type)
             # we don't always have a full batch so just use the length of the actual output rather than the batch size
-            rows = [{"index": start_index + offset} for offset in range(len(outputs))]
+            n_outputs = len(list(outputs.values())[0])
+            rows = [{"index": start_index + offset} for offset in range(n_outputs)]
             for output_name, values in outputs.items():
                 for offset, value in enumerate(values):
                     try:

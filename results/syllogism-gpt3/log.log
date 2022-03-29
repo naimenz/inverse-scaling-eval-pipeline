@@ -2,3 +2,11 @@
 Namespace(colab=False, dataset='syllogism', exp_dir='gpt3-syllogism', models=['davinci', 'curie', 'babbage', 'ada'], use_gpu=False)
 2022-03-04 17:14:04,807 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/gpt3-syllogism
 2022-03-04 17:14:04,808 [INFO] Copied data
+2022-03-28 16:29:50,347 [INFO] Logging set up with args
+Namespace(batch_size=100, colab=False, dataset='syllogism', dataset_path=None, exp_dir='syllogism-gpt3', models=['ada', 'babbage', 'curie', 'davinci'], task_type='classification', use_gpu=False)
+2022-03-28 16:29:50,347 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/syllogism-gpt3
+2022-03-28 16:29:50,348 [INFO] Copied data
+2022-03-28 16:33:59,739 [INFO] Logging set up with args
+Namespace(batch_size=100, colab=False, dataset='syllogism', dataset_path=None, exp_dir='syllogism-gpt3', models=['ada', 'babbage', 'curie', 'davinci'], task_type='classification', use_gpu=False)
+2022-03-28 16:33:59,739 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/syllogism-gpt3
+2022-03-28 16:33:59,740 [INFO] Copied data

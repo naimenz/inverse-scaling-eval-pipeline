@@ -261,12 +261,9 @@ class GPT3Model(Model):
                 logging.info(f"error_count = {error_count}")
                 logging.info(example)
                 logging.info(logprobs)
-                # DEBUG: not raising an error, just moving on to the next example
+                # not raising an error, just moving on to the next example
                 error_count += 1
                 continue
-                # raise ValueError(
-                #     f"Not all of {example.classes} were returned as logprobs by OpenAI"
-                # )
 
             loss = -F.log_softmax(relevant_logprobs, dim=-1)[example.answer_index]
             losses.append(loss.item())
