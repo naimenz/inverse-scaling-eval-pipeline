@@ -81,10 +81,9 @@ class HFModel(Model):
             raise ValueError(
                 f"Batch size of {len(examples)} not currently supported for HF models: please use 1"
             )
-        print(task_type)
         if task_type.startswith("classification"):
             rv = self._evaluate_classification(examples, task_type)
-        elif task_type.startswith("ordinal"):
+        elif task_type == "ordinal":
             rv = self._evaluate_ordinal(examples)
         elif task_type == "numeric":
             rv = self._evaluate_numeric(examples)
@@ -171,14 +170,6 @@ class HFModel(Model):
         return {"estimate": [estimate]}
 
     def _evaluate_ordinal(self, examples: list[Example]) -> dict[str, Sequence[float]]:
-        class_to_k_hot = {}
-        classes = list(examples[0].classes)
-        # represent classes as k-hot vectors
-        for idx, _class in enumerate(classes):
-            vec_len = len(classes) - 1
-            class_to_k_hot[_class] = torch.zeros(vec_len)
-            class_to_k_hot[_class][:idx] += 1.
-        
         prompts = [example.prompt for example in examples]
         tokenized_inputs = self.tokenizer(
             prompts, return_tensors="pt", truncation=True
@@ -186,11 +177,12 @@ class HFModel(Model):
 
         outputs = self.model(**tokenized_inputs)
         logits = outputs["logits"][:, -1]
-        losses = self._ordinal_losses_from_logits(examples, logits, class_to_k_hot)
+        losses = self._ordinal_losses_from_logits(examples, logits)
         accuracies = self._accuracies_from_logits(examples, logits)
-        return {"losses": losses, "accuracies": accuracies}
+        predictions = self._predictions_from_logits(examples, logits)
+        return {"loss": losses, "correct": accuracies, "pred": predictions}
     
-    def _ordinal_losses_from_logits(self, examples, logits, class_to_k_hot) -> list[float]:
+    def _ordinal_losses_from_logits(self, examples, logits) -> list[float]:
         losses = []
         for i, example in enumerate(examples):
             example_logits = logits[i]
@@ -199,10 +191,14 @@ class HFModel(Model):
             ]
 
             relevant_logits = example_logits[class_tokens]
-            y_true = example.classes[example.class_index]
-            print("Correct class:", y_true, "(", class_to_k_hot[y_true], ")")
-            loss = F.cross_entropy(relevant_logits, class_to_k_hot[y_true])
-            losses.append(loss.item())
+            y_hat_softmax = F.log_softmax(relevant_logits, dim=-1)
+            y_true = example.answer_index
+            y_pred = torch.argmax(y_hat_softmax)
+            # scale cross-entropy based on distance between prediction index and true class index
+            weights = abs(y_true - y_pred) / (y_hat_softmax.shape[0] - 1)
+            cross_entropy = - y_hat_softmax[y_true]
+            ordinal_cross_entropy = (1.0 + weights) * cross_entropy
+            losses.append(ordinal_cross_entropy.item())
         return losses
 
     def _losses_from_logits(self, examples, logits) -> list[float]:
@@ -238,6 +234,18 @@ class HFModel(Model):
             label_correct = int(np.argmax(relevant_logits.cpu().detach().numpy()) == example.answer_index)
             labels_correct.append(label_correct)
         return labels_correct
+
+    def _predictions_from_logits(self, examples, logits) -> list[str]:
+        predictions = []
+        for i, example in enumerate(examples):
+            example_logits = logits[i]
+            class_tokens = [
+                token[0] for token in self.tokenizer(list(example.classes))["input_ids"]
+            ]
+            relevant_logits = example_logits[class_tokens]
+            pred = torch.argmax(relevant_logits).item()
+            predictions.append(example.classes[pred])
+        return predictions
 
     def _total_logprobs_from_logits(self, examples, logits) -> list[float]:
         """Given examples and logits for those examples,
@@ -316,14 +324,6 @@ class GPT3Model(Model):
         self,
         examples: list[ClassificationExample],
     ) -> dict[str, Union[Sequence[float], Sequence[int]]]:
-        class_to_k_hot = {}
-        classes = list(examples[0].classes)
-        # represent classes as k-hot vectors
-        for idx, _class in enumerate(classes):
-            vec_len = len(classes) - 1
-            class_to_k_hot[_class] = torch.zeros(vec_len)
-            class_to_k_hot[_class][:idx] += 1.
-
         prompts = [example.prompt for example in examples]
         api_params = APIParameters(
             temperature=0,
@@ -334,6 +334,7 @@ class GPT3Model(Model):
         response_json = call_api(prompts, self.model_name, api_params).json()
         losses = []
         labels_correct = []
+        predictions = []
         choices = response_json["choices"]
         for i, example in enumerate(examples):
             logprobs = choices[i]["logprobs"]["top_logprobs"][0]
@@ -348,13 +349,18 @@ class GPT3Model(Model):
                 error_count += 1
                 continue
             
-            y_true = example.classes[example.class_index]
-            loss = F.cross_entropy(relevant_logprobs, class_to_k_hot[y_true])
-            losses.append(loss.item())
+            y_hat_softmax = F.log_softmax(relevant_logprobs, dim=-1)
+            y_true = example.answer_index
+            y_pred = torch.argmax(relevant_logprobs).item()
+            weights = abs(y_true - y_pred) / (y_hat_softmax.shape[0] - 1)
+            cross_entropy = - y_hat_softmax[y_true]
+            ordinal_cross_entropy = (1.0 + weights) * cross_entropy
+            losses.append(ordinal_cross_entropy.item())
 
-            label_correct = int(np.argmax(relevant_logprobs) == example.answer_index)
+            label_correct = int(y_true == y_pred)
             labels_correct.append(label_correct)
-        return {"loss": losses, "correct": labels_correct}
+            predictions.append(example.classes[y_pred])
+        return {"loss": losses, "correct": labels_correct, "pred": predictions}
 
     def _evaluate_lambada(self, examples: list[LambadaExample]) -> dict[str, Union[Sequence[float], Sequence[int]]]:
         prompts = [example.prompt for example in examples]

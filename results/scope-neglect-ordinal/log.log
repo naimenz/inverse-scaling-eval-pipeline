@@ -1,0 +1,99 @@
+2022-03-29 16:23:03,883 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='scope_neglect_ordinal', dataset_path=None, exp_dir='scope-neglect-ordinal', models=['gpt2'], task_type='ordinal', use_gpu=True)
+2022-03-29 16:23:03,883 [INFO] Saving to results to /export/c08/amueller/inverse-scaling-eval-pipeline/results/scope-neglect-ordinal
+2022-03-29 16:26:18,945 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='scope_neglect_ordinal', dataset_path=None, exp_dir='scope-neglect-ordinal', models=['gpt2'], task_type='ordinal', use_gpu=True)
+2022-03-29 16:26:18,945 [INFO] Saving to results to /export/c08/amueller/inverse-scaling-eval-pipeline/results/scope-neglect-ordinal
+2022-03-29 16:26:18,946 [INFO] Copied data
+2022-03-29 16:28:05,895 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='scope_neglect_ordinal', dataset_path=None, exp_dir='scope-neglect-ordinal', models=['gpt2'], task_type='ordinal', use_gpu=True)
+2022-03-29 16:28:05,895 [INFO] Saving to results to /export/c08/amueller/inverse-scaling-eval-pipeline/results/scope-neglect-ordinal
+2022-03-29 16:28:05,896 [INFO] Copied data
+2022-03-29 16:31:13,402 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='scope_neglect_ordinal', dataset_path=None, exp_dir='scope-neglect-ordinal', models=['gpt2'], task_type='ordinal', use_gpu=True)
+2022-03-29 16:31:13,402 [INFO] Saving to results to /export/c08/amueller/inverse-scaling-eval-pipeline/results/scope-neglect-ordinal
+2022-03-29 16:31:13,403 [INFO] Copied data
+2022-03-29 16:33:59,455 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='scope_neglect_ordinal', dataset_path=None, exp_dir='scope-neglect-ordinal', models=['gpt2'], task_type='ordinal', use_gpu=True)
+2022-03-29 16:33:59,455 [INFO] Saving to results to /export/c08/amueller/inverse-scaling-eval-pipeline/results/scope-neglect-ordinal
+2022-03-29 16:33:59,456 [INFO] Copied data
+2022-03-29 17:06:18,749 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='scope_neglect_ordinal', dataset_path=None, exp_dir='scope-neglect-ordinal', models=['gpt2'], task_type='ordinal', use_gpu=True)
+2022-03-29 17:06:18,749 [INFO] Saving to results to /export/c08/amueller/inverse-scaling-eval-pipeline/results/scope-neglect-ordinal
+2022-03-29 17:06:18,750 [INFO] Copied data
+2022-03-29 17:08:51,057 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='scope_neglect_ordinal', dataset_path=None, exp_dir='scope-neglect-ordinal', models=['gpt2'], task_type='ordinal', use_gpu=True)
+2022-03-29 17:08:51,058 [INFO] Saving to results to /export/c08/amueller/inverse-scaling-eval-pipeline/results/scope-neglect-ordinal
+2022-03-29 17:08:51,059 [INFO] Copied data
+2022-03-29 17:10:16,838 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='scope_neglect_ordinal', dataset_path=None, exp_dir='scope-neglect-ordinal', models=['gpt2'], task_type='ordinal', use_gpu=True)
+2022-03-29 17:10:16,838 [INFO] Saving to results to /export/c08/amueller/inverse-scaling-eval-pipeline/results/scope-neglect-ordinal
+2022-03-29 17:10:16,839 [INFO] Copied data
+2022-03-29 17:12:56,536 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='scope_neglect_ordinal', dataset_path=None, exp_dir='scope-neglect-ordinal', models=['gpt2'], task_type='ordinal', use_gpu=True)
+2022-03-29 17:12:56,536 [INFO] Saving to results to /export/c08/amueller/inverse-scaling-eval-pipeline/results/scope-neglect-ordinal
+2022-03-29 17:12:56,537 [INFO] Copied data
+2022-03-29 17:13:21,514 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='scope_neglect_ordinal', dataset_path=None, exp_dir='scope-neglect-ordinal', models=['gpt2'], task_type='ordinal', use_gpu=True)
+2022-03-29 17:13:21,514 [INFO] Saving to results to /export/c08/amueller/inverse-scaling-eval-pipeline/results/scope-neglect-ordinal
+2022-03-29 17:13:21,515 [INFO] Copied data
+2022-03-29 17:16:18,488 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='scope_neglect_ordinal', dataset_path=None, exp_dir='scope-neglect-ordinal', models=['gpt2'], task_type='ordinal', use_gpu=True)
+2022-03-29 17:16:18,488 [INFO] Saving to results to /export/c08/amueller/inverse-scaling-eval-pipeline/results/scope-neglect-ordinal
+2022-03-29 17:16:18,490 [INFO] Copied data
+2022-03-29 17:17:38,741 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='scope_neglect_ordinal', dataset_path=None, exp_dir='scope-neglect-ordinal', models=['gpt2'], task_type='ordinal', use_gpu=True)
+2022-03-29 17:17:38,741 [INFO] Saving to results to /export/c08/amueller/inverse-scaling-eval-pipeline/results/scope-neglect-ordinal
+2022-03-29 17:17:38,742 [INFO] Copied data
+2022-03-29 17:18:27,110 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='scope_neglect_ordinal', dataset_path=None, exp_dir='scope-neglect-ordinal', models=['gpt2'], task_type='ordinal', use_gpu=True)
+2022-03-29 17:18:27,110 [INFO] Saving to results to /export/c08/amueller/inverse-scaling-eval-pipeline/results/scope-neglect-ordinal
+2022-03-29 17:18:27,111 [INFO] Copied data
+2022-03-29 17:19:15,459 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='scope_neglect_ordinal', dataset_path=None, exp_dir='scope-neglect-ordinal', models=['gpt2'], task_type='ordinal', use_gpu=True)
+2022-03-29 17:19:15,459 [INFO] Saving to results to /export/c08/amueller/inverse-scaling-eval-pipeline/results/scope-neglect-ordinal
+2022-03-29 17:19:15,460 [INFO] Copied data
+2022-03-29 17:20:43,274 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='scope_neglect_ordinal', dataset_path=None, exp_dir='scope-neglect-ordinal', models=['gpt2'], task_type='ordinal', use_gpu=True)
+2022-03-29 17:20:43,274 [INFO] Saving to results to /export/c08/amueller/inverse-scaling-eval-pipeline/results/scope-neglect-ordinal
+2022-03-29 17:20:43,275 [INFO] Copied data
+2022-03-29 17:22:17,945 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='scope_neglect_ordinal', dataset_path=None, exp_dir='scope-neglect-ordinal', models=['gpt2'], task_type='ordinal', use_gpu=True)
+2022-03-29 17:22:17,946 [INFO] Saving to results to /export/c08/amueller/inverse-scaling-eval-pipeline/results/scope-neglect-ordinal
+2022-03-29 17:22:17,947 [INFO] Copied data
+2022-03-29 17:23:26,708 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='scope_neglect_ordinal', dataset_path=None, exp_dir='scope-neglect-ordinal', models=['gpt2'], task_type='ordinal', use_gpu=True)
+2022-03-29 17:23:26,708 [INFO] Saving to results to /export/c08/amueller/inverse-scaling-eval-pipeline/results/scope-neglect-ordinal
+2022-03-29 17:23:26,710 [INFO] Copied data
+2022-03-29 17:24:52,758 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='scope_neglect_ordinal', dataset_path=None, exp_dir='scope-neglect-ordinal', models=['gpt2'], task_type='ordinal', use_gpu=True)
+2022-03-29 17:24:52,758 [INFO] Saving to results to /export/c08/amueller/inverse-scaling-eval-pipeline/results/scope-neglect-ordinal
+2022-03-29 17:24:52,760 [INFO] Copied data
+2022-03-29 17:33:32,087 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='scope_neglect_ordinal', dataset_path=None, exp_dir='scope-neglect-ordinal', models=['gpt2'], task_type='ordinal', use_gpu=True)
+2022-03-29 17:33:32,087 [INFO] Saving to results to /export/c08/amueller/inverse-scaling-eval-pipeline/results/scope-neglect-ordinal
+2022-03-29 17:33:32,088 [INFO] Copied data
+2022-03-29 17:34:05,629 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='scope_neglect_ordinal', dataset_path=None, exp_dir='scope-neglect-ordinal', models=['gpt2'], task_type='ordinal', use_gpu=True)
+2022-03-29 17:34:05,629 [INFO] Saving to results to /export/c08/amueller/inverse-scaling-eval-pipeline/results/scope-neglect-ordinal
+2022-03-29 17:34:05,630 [INFO] Copied data
+2022-03-29 17:40:59,509 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='scope_neglect_ordinal', dataset_path=None, exp_dir='scope-neglect-ordinal', models=['gpt2'], task_type='ordinal', use_gpu=True)
+2022-03-29 17:40:59,509 [INFO] Saving to results to /export/c08/amueller/inverse-scaling-eval-pipeline/results/scope-neglect-ordinal
+2022-03-29 17:40:59,511 [INFO] Copied data
+2022-03-29 17:42:03,952 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='scope_neglect_ordinal', dataset_path=None, exp_dir='scope-neglect-ordinal', models=['gpt2'], task_type='ordinal', use_gpu=True)
+2022-03-29 17:42:03,952 [INFO] Saving to results to /export/c08/amueller/inverse-scaling-eval-pipeline/results/scope-neglect-ordinal
+2022-03-29 17:42:03,953 [INFO] Copied data
+2022-03-29 17:55:16,595 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='scope_neglect_ordinal', dataset_path=None, exp_dir='scope-neglect-ordinal', models=['gpt2'], task_type='ordinal', use_gpu=True)
+2022-03-29 17:55:16,596 [INFO] Saving to results to /export/c08/amueller/inverse-scaling-eval-pipeline/results/scope-neglect-ordinal
+2022-03-29 17:55:16,597 [INFO] Copied data
+2022-03-29 17:55:23,975 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='scope_neglect_ordinal', dataset_path=None, exp_dir='scope-neglect-ordinal', models=['gpt2'], task_type='ordinal', use_gpu=True)
+2022-03-29 17:55:23,975 [INFO] Saving to results to /export/c08/amueller/inverse-scaling-eval-pipeline/results/scope-neglect-ordinal
+2022-03-29 17:55:23,976 [INFO] Copied data
+2022-03-29 18:04:44,007 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='scope_neglect_ordinal', dataset_path=None, exp_dir='scope-neglect-ordinal', models=['gpt2', 'gpt2-medium', 'gpt2-large', 'gpt2-xl'], task_type='ordinal', use_gpu=True)
+2022-03-29 18:04:44,007 [INFO] Saving to results to /export/c08/amueller/inverse-scaling-eval-pipeline/results/scope-neglect-ordinal
+2022-03-29 18:04:44,009 [INFO] Copied data

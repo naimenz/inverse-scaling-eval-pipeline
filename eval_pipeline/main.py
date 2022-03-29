@@ -101,7 +101,7 @@ def run_model(
     if task_type == "classification":
         field_names = ["index", "loss", "correct", "total_logprob"]
     elif task_type == "ordinal":
-        field_names = ["index", "loss", "correct"]
+        field_names = ["index", "loss", "correct", "pred"]
     elif task_type == "lambada":
         field_names = ["index", "loss"]
     elif task_type == "numeric":
