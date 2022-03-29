@@ -1,0 +1,15 @@
+{
+  "dataset": "conjunction_fallacy-1shot",
+  "dataset_path": null,
+  "exp_dir": "conjunction-fallacy-1shot-gpt3",
+  "models": [
+    "ada",
+    "babbage",
+    "curie",
+    "davinci"
+  ],
+  "use_gpu": false,
+  "colab": false,
+  "batch_size": 100,
+  "task_type": "classification"
+}

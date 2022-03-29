@@ -1,0 +1,4 @@
+2022-03-28 19:21:54,180 [INFO] Logging set up with args
+Namespace(batch_size=100, colab=False, dataset='conjunction_fallacy-1shot', dataset_path=None, exp_dir='conjunction-fallacy-1shot-gpt3', models=['ada', 'babbage', 'curie', 'davinci'], task_type='classification', use_gpu=False)
+2022-03-28 19:21:54,180 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/conjunction-fallacy-1shot-gpt3
+2022-03-28 19:21:54,180 [INFO] Copied data

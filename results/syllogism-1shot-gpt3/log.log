@@ -1,0 +1,4 @@
+2022-03-28 19:17:37,207 [INFO] Logging set up with args
+Namespace(batch_size=100, colab=False, dataset='syllogism-1shot', dataset_path=None, exp_dir='syllogism-1shot-gpt3', models=['ada', 'babbage', 'curie', 'davinci'], task_type='classification', use_gpu=False)
+2022-03-28 19:17:37,207 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/syllogism-1shot-gpt3
+2022-03-28 19:17:37,208 [INFO] Copied data

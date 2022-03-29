@@ -1,0 +1,15 @@
+{
+  "dataset": "conjunction_fallacy-1shot",
+  "dataset_path": null,
+  "exp_dir": "/scratch/im2480/results/conjunctioN_fallacy_1shot_gpt2",
+  "models": [
+    "gpt2",
+    "gpt2-medium",
+    "gpt2-large",
+    "gpt2-xl"
+  ],
+  "use_gpu": true,
+  "colab": false,
+  "batch_size": 1,
+  "task_type": "classification"
+}
