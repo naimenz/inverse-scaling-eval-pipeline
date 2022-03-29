@@ -1,0 +1,4 @@
+2022-03-29 10:57:30,033 [INFO] Logging set up with args
+Namespace(batch_size=200, colab=False, dataset='scope-neglect-1shot', dataset_path=None, exp_dir='scope-neglect-1shot-gpt3', models=['ada', 'babbage', 'curie', 'davinci'], task_type='classification', use_gpu=False)
+2022-03-29 10:57:30,033 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/scope-neglect-1shot-gpt3
+2022-03-29 10:57:30,033 [INFO] Copied data
