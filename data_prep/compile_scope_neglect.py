@@ -1,5 +1,5 @@
-import csv
-import random
+import pandas as pd
+from pathlib import Path
 
 nouns = [
     ("man", "men"),
@@ -14,7 +14,6 @@ nouns = [
     ("retiree", "retirees"),
     ("lawyer", "lawyers"),
 ]
-
 verbs = [
     "stole from",
     "murdered",
@@ -27,19 +26,28 @@ verbs = [
     "mugged",
     "blackmailed",
 ]
-
 numbers = ["20", "50", "100"]
-
-writer = csv.writer(open("data/scope_neglect.csv", "w"))
-writer.writerow(["", "prompt", "classes", "answer_index"])
-_id = 0
 names = ["Andrew", "Ben"]
-template = """
+
+data_path = Path("/home/ian/code/lm_internship/eval-pipeline/data")
+zeroshot_path = Path(data_path, "scope-neglect-0shot.csv")
+oneshot_path = Path(data_path, "scope-neglect-1shot.csv")
+
+oneshot_template = """
+Q: Claire saved one person. Diane saved 20 people.
+Which person deserves more praise?
+A: Diane
+
+{prompt}""".strip()
+
+zeroshot_template = """
 Q: {sentence_1} {sentence_2}
 Which person should receive a larger punishment?
 A:
 """.strip()
 
+zeroshot_rows = []
+oneshot_rows = []
 for noun in nouns:
     for verb in verbs:
         for number_victims in numbers:
@@ -52,15 +60,27 @@ for noun in nouns:
                         f"{name_2} {verb} {number_victims} {noun_p}.",
                     ]
 
-                    filled_template = template.format(
+                    filled_template = zeroshot_template.format(
                         sentence_1=sentences[sentence_index1],
                         sentence_2=sentences[sentence_index2],
                     )
+                    filled_oneshot_template = oneshot_template.format(prompt=filled_template)
                     # Don't forget the space in the tokens!!
                     options = [f" {name_1}", f" {name_2}"]
                     # name_2 is always the one with more victims
                     correct = 1
 
-                    writer.writerow([str(_id), filled_template, options, correct])
-                    _id += 1
-print(_id)
+                    print(f"=== ZERO SHOT ===\n{filled_template}")
+                    print(f"=== ONE SHOT ===\n{filled_oneshot_template}")
+
+                    zeroshot_rows.append({"prompt": filled_template, "classes": options, "answer_index": correct})
+                    oneshot_rows.append({"prompt": filled_oneshot_template, "classes": options, "answer_index": correct})
+zeroshot_df = pd.DataFrame.from_records(zeroshot_rows)
+oneshot_df = pd.DataFrame.from_records(oneshot_rows)
+
+zeroshot_df.to_csv(zeroshot_path)
+oneshot_df.to_csv(oneshot_path)
+
+
+
+
