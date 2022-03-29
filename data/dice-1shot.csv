@@ -7503,299 +7503,299 @@ A:","[' Yes', ' No']",0
 A: No
 
 Q: Is someone more likely to roll a 1 on a fair 6-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1501,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone less likely to roll a 1 on a fair 6-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1502,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone equally likely to roll a 1 on a fair 6-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1503,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone more likely to roll a 2 on a fair 6-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1504,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone less likely to roll a 2 on a fair 6-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1505,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone equally likely to roll a 2 on a fair 6-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1506,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone more likely to roll a 5 on a fair 6-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1507,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone less likely to roll a 5 on a fair 6-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1508,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone equally likely to roll a 5 on a fair 6-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1509,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone more likely to roll a 6 on a fair 6-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1510,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone less likely to roll a 6 on a fair 6-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1511,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone equally likely to roll a 6 on a fair 6-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1512,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone more likely to roll a 1 on a fair 8-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1513,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone less likely to roll a 1 on a fair 8-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1514,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone equally likely to roll a 1 on a fair 8-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1515,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone more likely to roll a 2 on a fair 8-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1516,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone less likely to roll a 2 on a fair 8-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1517,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone equally likely to roll a 2 on a fair 8-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1518,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone more likely to roll a 5 on a fair 8-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1519,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone less likely to roll a 5 on a fair 8-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1520,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone equally likely to roll a 5 on a fair 8-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1521,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone more likely to roll a 6 on a fair 8-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1522,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone less likely to roll a 6 on a fair 8-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1523,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone equally likely to roll a 6 on a fair 8-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1524,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone more likely to roll a 1 on a fair 12-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1525,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone less likely to roll a 1 on a fair 12-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1526,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone equally likely to roll a 1 on a fair 12-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1527,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone more likely to roll a 2 on a fair 12-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1528,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone less likely to roll a 2 on a fair 12-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1529,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone equally likely to roll a 2 on a fair 12-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1530,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone more likely to roll a 5 on a fair 12-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1531,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone less likely to roll a 5 on a fair 12-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1532,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone equally likely to roll a 5 on a fair 12-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1533,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone more likely to roll a 6 on a fair 12-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1534,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone less likely to roll a 6 on a fair 12-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1535,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone equally likely to roll a 6 on a fair 12-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1536,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone more likely to roll a 1 on a fair 20-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1537,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone less likely to roll a 1 on a fair 20-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1538,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone equally likely to roll a 1 on a fair 20-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1539,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone more likely to roll a 2 on a fair 20-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1540,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone less likely to roll a 2 on a fair 20-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1541,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone equally likely to roll a 2 on a fair 20-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1542,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone more likely to roll a 5 on a fair 20-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1543,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone less likely to roll a 5 on a fair 20-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1544,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone equally likely to roll a 5 on a fair 20-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1545,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone more likely to roll a 6 on a fair 20-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1546,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone less likely to roll a 6 on a fair 20-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1547,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone equally likely to roll a 6 on a fair 20-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1548,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone more likely to roll a 1 on a fair 100-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1549,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone less likely to roll a 1 on a fair 100-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1550,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone equally likely to roll a 1 on a fair 100-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1551,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone more likely to roll a 2 on a fair 100-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1552,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone less likely to roll a 2 on a fair 100-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1553,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone equally likely to roll a 2 on a fair 100-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1554,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone more likely to roll a 5 on a fair 100-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1555,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone less likely to roll a 5 on a fair 100-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1556,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone equally likely to roll a 5 on a fair 100-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1557,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone more likely to roll a 6 on a fair 100-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1558,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone less likely to roll a 6 on a fair 100-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1559,"Q: I rolled a fair 6-sided die 40 times and it never came up 6. Am I now more likely than before to roll a 6 next?
 A: No
 
 Q: Is someone equally likely to roll a 6 on a fair 100-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0

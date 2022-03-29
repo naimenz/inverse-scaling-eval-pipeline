@@ -3000,122 +3000,122 @@ A:","[' Yes', ' No']",1
 1499,"Q: After rolling a fair 100-sided die 50 times but never getting a 6, Mary thinks that the next roll is now equally likely to be a 6. Is Mary correct?
 A:","[' Yes', ' No']",0
 1500,"Q: Is someone more likely to roll a 1 on a fair 6-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1501,"Q: Is someone less likely to roll a 1 on a fair 6-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1502,"Q: Is someone equally likely to roll a 1 on a fair 6-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1503,"Q: Is someone more likely to roll a 2 on a fair 6-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1504,"Q: Is someone less likely to roll a 2 on a fair 6-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1505,"Q: Is someone equally likely to roll a 2 on a fair 6-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1506,"Q: Is someone more likely to roll a 5 on a fair 6-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1507,"Q: Is someone less likely to roll a 5 on a fair 6-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1508,"Q: Is someone equally likely to roll a 5 on a fair 6-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1509,"Q: Is someone more likely to roll a 6 on a fair 6-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1510,"Q: Is someone less likely to roll a 6 on a fair 6-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1511,"Q: Is someone equally likely to roll a 6 on a fair 6-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1512,"Q: Is someone more likely to roll a 1 on a fair 8-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1513,"Q: Is someone less likely to roll a 1 on a fair 8-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1514,"Q: Is someone equally likely to roll a 1 on a fair 8-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1515,"Q: Is someone more likely to roll a 2 on a fair 8-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1516,"Q: Is someone less likely to roll a 2 on a fair 8-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1517,"Q: Is someone equally likely to roll a 2 on a fair 8-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1518,"Q: Is someone more likely to roll a 5 on a fair 8-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1519,"Q: Is someone less likely to roll a 5 on a fair 8-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1520,"Q: Is someone equally likely to roll a 5 on a fair 8-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1521,"Q: Is someone more likely to roll a 6 on a fair 8-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1522,"Q: Is someone less likely to roll a 6 on a fair 8-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1523,"Q: Is someone equally likely to roll a 6 on a fair 8-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1524,"Q: Is someone more likely to roll a 1 on a fair 12-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1525,"Q: Is someone less likely to roll a 1 on a fair 12-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1526,"Q: Is someone equally likely to roll a 1 on a fair 12-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1527,"Q: Is someone more likely to roll a 2 on a fair 12-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1528,"Q: Is someone less likely to roll a 2 on a fair 12-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1529,"Q: Is someone equally likely to roll a 2 on a fair 12-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1530,"Q: Is someone more likely to roll a 5 on a fair 12-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1531,"Q: Is someone less likely to roll a 5 on a fair 12-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1532,"Q: Is someone equally likely to roll a 5 on a fair 12-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1533,"Q: Is someone more likely to roll a 6 on a fair 12-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1534,"Q: Is someone less likely to roll a 6 on a fair 12-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1535,"Q: Is someone equally likely to roll a 6 on a fair 12-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1536,"Q: Is someone more likely to roll a 1 on a fair 20-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1537,"Q: Is someone less likely to roll a 1 on a fair 20-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1538,"Q: Is someone equally likely to roll a 1 on a fair 20-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1539,"Q: Is someone more likely to roll a 2 on a fair 20-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1540,"Q: Is someone less likely to roll a 2 on a fair 20-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1541,"Q: Is someone equally likely to roll a 2 on a fair 20-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1542,"Q: Is someone more likely to roll a 5 on a fair 20-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1543,"Q: Is someone less likely to roll a 5 on a fair 20-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1544,"Q: Is someone equally likely to roll a 5 on a fair 20-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1545,"Q: Is someone more likely to roll a 6 on a fair 20-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1546,"Q: Is someone less likely to roll a 6 on a fair 20-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1547,"Q: Is someone equally likely to roll a 6 on a fair 20-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1548,"Q: Is someone more likely to roll a 1 on a fair 100-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1549,"Q: Is someone less likely to roll a 1 on a fair 100-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1550,"Q: Is someone equally likely to roll a 1 on a fair 100-sided die right after they just rolled a 1?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1551,"Q: Is someone more likely to roll a 2 on a fair 100-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1552,"Q: Is someone less likely to roll a 2 on a fair 100-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1553,"Q: Is someone equally likely to roll a 2 on a fair 100-sided die right after they just rolled a 2?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1554,"Q: Is someone more likely to roll a 5 on a fair 100-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1555,"Q: Is someone less likely to roll a 5 on a fair 100-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1556,"Q: Is someone equally likely to roll a 5 on a fair 100-sided die right after they just rolled a 5?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0
 1557,"Q: Is someone more likely to roll a 6 on a fair 100-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1558,"Q: Is someone less likely to roll a 6 on a fair 100-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",1
+A:","[' Yes', ' No']",1
 1559,"Q: Is someone equally likely to roll a 6 on a fair 100-sided die right after they just rolled a 6?
-A: ","[' Yes', ' No']",0
+A:","[' Yes', ' No']",0

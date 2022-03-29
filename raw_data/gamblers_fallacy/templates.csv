@@ -6,4 +6,4 @@ A:"
 dice,"Q: After rolling {DICE_SIDES} {N} times but never getting a {DICE_VAL}, {NAME} thinks that the next roll is now {LIKELY} to be a {DICE_VAL}. Is {NAME} correct?
 A:"
 dice,"Q: Is someone {LIKELY} to roll a {DICE_VAL} on {DICE_SIDES} right after they just rolled a {DICE_VAL}?
-A:" 
+A:"
