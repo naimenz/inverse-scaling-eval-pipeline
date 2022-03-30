@@ -77,7 +77,7 @@ def set_up_logging(log_path: Path):
 
 def load_data(dataset_path: Path, task_type: TaskType) -> Dataset:
     df = pd.read_csv(dataset_path, index_col=0)
-    if task_type == "classification":
+    if task_type == "classification" or task_type == "ordinal":
         dataset = Dataset.classification_from_df(df)
     elif task_type == "numeric":
         dataset = Dataset.numeric_from_df(df)
@@ -100,6 +100,8 @@ def run_model(
     # TODO: find a way to avoid having to specify field names ahead of time
     if task_type == "classification":
         field_names = ["index", "loss", "correct", "total_logprob"]
+    elif task_type == "ordinal":
+        field_names = ["index", "loss", "correct", "pred"]
     elif task_type == "lambada":
         field_names = ["index", "loss"]
     elif task_type == "numeric":
@@ -200,7 +202,7 @@ def parse_args(args):
         type=str,
         help="The type of output expected for the dataset",
         default="classification",
-        choices=["classification", "numeric", "lambada"],
+        choices=["classification", "numeric", "ordinal", "lambada"],
     )
     args = parser.parse_args(args)
     return args

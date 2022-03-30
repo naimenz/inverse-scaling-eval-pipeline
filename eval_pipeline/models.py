@@ -83,6 +83,8 @@ class HFModel(Model):
             )
         if task_type.startswith("classification"):
             rv = self._evaluate_classification(examples, task_type)
+        elif task_type == "ordinal":
+            rv = self._evaluate_ordinal(examples)
         elif task_type == "numeric":
             rv = self._evaluate_numeric(examples)
         elif task_type == "lambada":
@@ -167,6 +169,38 @@ class HFModel(Model):
             raise ValueError("No valid numbers returned")
         return {"estimate": [estimate]}
 
+    def _evaluate_ordinal(self, examples: list[Example]) -> dict[str, Sequence[float]]:
+        prompts = [example.prompt for example in examples]
+        tokenized_inputs = self.tokenizer(
+            prompts, return_tensors="pt", truncation=True
+        ).to(self.device)
+
+        outputs = self.model(**tokenized_inputs)
+        logits = outputs["logits"][:, -1]
+        losses = self._ordinal_losses_from_logits(examples, logits)
+        accuracies = self._accuracies_from_logits(examples, logits)
+        predictions = self._predictions_from_logits(examples, logits)
+        return {"loss": losses, "correct": accuracies, "pred": predictions}
+    
+    def _ordinal_losses_from_logits(self, examples, logits) -> list[float]:
+        losses = []
+        for i, example in enumerate(examples):
+            example_logits = logits[i]
+            class_tokens = [
+                token[0] for token in self.tokenizer(list(example.classes))["input_ids"]
+            ]
+
+            relevant_logits = example_logits[class_tokens]
+            y_hat_softmax = F.log_softmax(relevant_logits, dim=-1)
+            y_true = example.answer_index
+            y_pred = torch.argmax(y_hat_softmax)
+            # scale cross-entropy based on distance between prediction index and true class index
+            weights = abs(y_true - y_pred) / (y_hat_softmax.shape[0] - 1)
+            cross_entropy = - y_hat_softmax[y_true]
+            ordinal_cross_entropy = (1.0 + weights) * cross_entropy
+            losses.append(ordinal_cross_entropy.item())
+        return losses
+
     def _losses_from_logits(self, examples, logits) -> list[float]:
         """Given examples and logits for those examples,
         compute the classification loss for each example"""
@@ -200,6 +234,18 @@ class HFModel(Model):
             label_correct = int(np.argmax(relevant_logits.cpu().detach().numpy()) == example.answer_index)
             labels_correct.append(label_correct)
         return labels_correct
+
+    def _predictions_from_logits(self, examples, logits) -> list[str]:
+        predictions = []
+        for i, example in enumerate(examples):
+            example_logits = logits[i]
+            class_tokens = [
+                token[0] for token in self.tokenizer(list(example.classes))["input_ids"]
+            ]
+            relevant_logits = example_logits[class_tokens]
+            pred = torch.argmax(relevant_logits).item()
+            predictions.append(example.classes[pred])
+        return predictions
 
     def _total_logprobs_from_logits(self, examples, logits) -> list[float]:
         """Given examples and logits for those examples,
@@ -273,6 +319,48 @@ class GPT3Model(Model):
             label_correct = int(np.argmax(relevant_logprobs) == example.answer_index)
             labels_correct.append(label_correct)
         return {"loss": losses, "correct": labels_correct, "total_logprob": total_logprobs}
+
+    def _evaluate_ordinal(
+        self,
+        examples: list[ClassificationExample],
+    ) -> dict[str, Union[Sequence[float], Sequence[int]]]:
+        prompts = [example.prompt for example in examples]
+        api_params = APIParameters(
+            temperature=0,
+            n=1,
+            max_tokens=1,
+            logprobs=100,
+        )
+        response_json = call_api(prompts, self.model_name, api_params).json()
+        losses = []
+        labels_correct = []
+        predictions = []
+        choices = response_json["choices"]
+        for i, example in enumerate(examples):
+            logprobs = choices[i]["logprobs"]["top_logprobs"][0]
+            try:
+                relevant_logprobs = torch.Tensor([logprobs.get(c) for c in example.classes])
+            except TypeError:
+                global error_count
+                logging.info(f"error_count = {error_count}")
+                logging.info(example)
+                logging.info(logprobs)
+                # not raising an error, just moving on to the next example
+                error_count += 1
+                continue
+            
+            y_hat_softmax = F.log_softmax(relevant_logprobs, dim=-1)
+            y_true = example.answer_index
+            y_pred = torch.argmax(relevant_logprobs).item()
+            weights = abs(y_true - y_pred) / (y_hat_softmax.shape[0] - 1)
+            cross_entropy = - y_hat_softmax[y_true]
+            ordinal_cross_entropy = (1.0 + weights) * cross_entropy
+            losses.append(ordinal_cross_entropy.item())
+
+            label_correct = int(y_true == y_pred)
+            labels_correct.append(label_correct)
+            predictions.append(example.classes[y_pred])
+        return {"loss": losses, "correct": labels_correct, "pred": predictions}
 
     def _evaluate_lambada(self, examples: list[LambadaExample]) -> dict[str, Union[Sequence[float], Sequence[int]]]:
         prompts = [example.prompt for example in examples]
