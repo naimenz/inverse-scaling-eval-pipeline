@@ -1,0 +1,2001 @@
+,prompt,classes,answer_index
+0,"Q: Classify the sentiment of this sentence as positive or negative: Michael loves running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+1,"Q: Classify the sentiment of this sentence as positive or negative: Michael hates running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+2,"Q: Classify the sentiment of this sentence as positive or negative: Michael loves running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+3,"Q: Classify the sentiment of this sentence as positive or negative: Michael hates running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+4,"Q: Is the following sentence positive or negative? Michael loves running.
+A: The sentence is","[' positive', ' negative']",0
+5,"Q: Is the following sentence positive or negative? Michael hates running.
+A: The sentence is","[' positive', ' negative']",1
+6,"Q: What is the sentiment of this sentence? Michael loves running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+7,"Q: What is the sentiment of this sentence? Michael hates running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+8,"Q: Is the sentiment of this sentence positive or negative? Michael loves running.
+A: The sentence is","[' positive', ' negative']",0
+9,"Q: Is the sentiment of this sentence positive or negative? Michael hates running.
+A: The sentence is","[' positive', ' negative']",1
+10,"Q: Classify the sentiment of this sentence as positive or negative: Michael loves being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+11,"Q: Classify the sentiment of this sentence as positive or negative: Michael hates being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+12,"Q: Classify the sentiment of this sentence as positive or negative: Michael loves being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+13,"Q: Classify the sentiment of this sentence as positive or negative: Michael hates being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+14,"Q: Is the following sentence positive or negative? Michael loves being outside.
+A: The sentence is","[' positive', ' negative']",0
+15,"Q: Is the following sentence positive or negative? Michael hates being outside.
+A: The sentence is","[' positive', ' negative']",1
+16,"Q: What is the sentiment of this sentence? Michael loves being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+17,"Q: What is the sentiment of this sentence? Michael hates being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+18,"Q: Is the sentiment of this sentence positive or negative? Michael loves being outside.
+A: The sentence is","[' positive', ' negative']",0
+19,"Q: Is the sentiment of this sentence positive or negative? Michael hates being outside.
+A: The sentence is","[' positive', ' negative']",1
+20,"Q: Classify the sentiment of this sentence as positive or negative: Michael loves music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+21,"Q: Classify the sentiment of this sentence as positive or negative: Michael hates music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+22,"Q: Classify the sentiment of this sentence as positive or negative: Michael loves music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+23,"Q: Classify the sentiment of this sentence as positive or negative: Michael hates music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+24,"Q: Is the following sentence positive or negative? Michael loves music.
+A: The sentence is","[' positive', ' negative']",0
+25,"Q: Is the following sentence positive or negative? Michael hates music.
+A: The sentence is","[' positive', ' negative']",1
+26,"Q: What is the sentiment of this sentence? Michael loves music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+27,"Q: What is the sentiment of this sentence? Michael hates music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+28,"Q: Is the sentiment of this sentence positive or negative? Michael loves music.
+A: The sentence is","[' positive', ' negative']",0
+29,"Q: Is the sentiment of this sentence positive or negative? Michael hates music.
+A: The sentence is","[' positive', ' negative']",1
+30,"Q: Classify the sentiment of this sentence as positive or negative: Michael loves modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+31,"Q: Classify the sentiment of this sentence as positive or negative: Michael hates modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+32,"Q: Classify the sentiment of this sentence as positive or negative: Michael loves modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+33,"Q: Classify the sentiment of this sentence as positive or negative: Michael hates modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+34,"Q: Is the following sentence positive or negative? Michael loves modern art.
+A: The sentence is","[' positive', ' negative']",0
+35,"Q: Is the following sentence positive or negative? Michael hates modern art.
+A: The sentence is","[' positive', ' negative']",1
+36,"Q: What is the sentiment of this sentence? Michael loves modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+37,"Q: What is the sentiment of this sentence? Michael hates modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+38,"Q: Is the sentiment of this sentence positive or negative? Michael loves modern art.
+A: The sentence is","[' positive', ' negative']",0
+39,"Q: Is the sentiment of this sentence positive or negative? Michael hates modern art.
+A: The sentence is","[' positive', ' negative']",1
+40,"Q: Classify the sentiment of this sentence as positive or negative: Michael loves math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+41,"Q: Classify the sentiment of this sentence as positive or negative: Michael hates math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+42,"Q: Classify the sentiment of this sentence as positive or negative: Michael loves math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+43,"Q: Classify the sentiment of this sentence as positive or negative: Michael hates math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+44,"Q: Is the following sentence positive or negative? Michael loves math.
+A: The sentence is","[' positive', ' negative']",0
+45,"Q: Is the following sentence positive or negative? Michael hates math.
+A: The sentence is","[' positive', ' negative']",1
+46,"Q: What is the sentiment of this sentence? Michael loves math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+47,"Q: What is the sentiment of this sentence? Michael hates math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+48,"Q: Is the sentiment of this sentence positive or negative? Michael loves math.
+A: The sentence is","[' positive', ' negative']",0
+49,"Q: Is the sentiment of this sentence positive or negative? Michael hates math.
+A: The sentence is","[' positive', ' negative']",1
+50,"Q: Classify the sentiment of this sentence as positive or negative: Michael likes running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+51,"Q: Classify the sentiment of this sentence as positive or negative: Michael dislikes running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+52,"Q: Classify the sentiment of this sentence as positive or negative: Michael likes running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+53,"Q: Classify the sentiment of this sentence as positive or negative: Michael dislikes running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+54,"Q: Is the following sentence positive or negative? Michael likes running.
+A: The sentence is","[' positive', ' negative']",0
+55,"Q: Is the following sentence positive or negative? Michael dislikes running.
+A: The sentence is","[' positive', ' negative']",1
+56,"Q: What is the sentiment of this sentence? Michael likes running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+57,"Q: What is the sentiment of this sentence? Michael dislikes running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+58,"Q: Is the sentiment of this sentence positive or negative? Michael likes running.
+A: The sentence is","[' positive', ' negative']",0
+59,"Q: Is the sentiment of this sentence positive or negative? Michael dislikes running.
+A: The sentence is","[' positive', ' negative']",1
+60,"Q: Classify the sentiment of this sentence as positive or negative: Michael likes being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+61,"Q: Classify the sentiment of this sentence as positive or negative: Michael dislikes being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+62,"Q: Classify the sentiment of this sentence as positive or negative: Michael likes being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+63,"Q: Classify the sentiment of this sentence as positive or negative: Michael dislikes being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+64,"Q: Is the following sentence positive or negative? Michael likes being outside.
+A: The sentence is","[' positive', ' negative']",0
+65,"Q: Is the following sentence positive or negative? Michael dislikes being outside.
+A: The sentence is","[' positive', ' negative']",1
+66,"Q: What is the sentiment of this sentence? Michael likes being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+67,"Q: What is the sentiment of this sentence? Michael dislikes being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+68,"Q: Is the sentiment of this sentence positive or negative? Michael likes being outside.
+A: The sentence is","[' positive', ' negative']",0
+69,"Q: Is the sentiment of this sentence positive or negative? Michael dislikes being outside.
+A: The sentence is","[' positive', ' negative']",1
+70,"Q: Classify the sentiment of this sentence as positive or negative: Michael likes music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+71,"Q: Classify the sentiment of this sentence as positive or negative: Michael dislikes music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+72,"Q: Classify the sentiment of this sentence as positive or negative: Michael likes music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+73,"Q: Classify the sentiment of this sentence as positive or negative: Michael dislikes music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+74,"Q: Is the following sentence positive or negative? Michael likes music.
+A: The sentence is","[' positive', ' negative']",0
+75,"Q: Is the following sentence positive or negative? Michael dislikes music.
+A: The sentence is","[' positive', ' negative']",1
+76,"Q: What is the sentiment of this sentence? Michael likes music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+77,"Q: What is the sentiment of this sentence? Michael dislikes music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+78,"Q: Is the sentiment of this sentence positive or negative? Michael likes music.
+A: The sentence is","[' positive', ' negative']",0
+79,"Q: Is the sentiment of this sentence positive or negative? Michael dislikes music.
+A: The sentence is","[' positive', ' negative']",1
+80,"Q: Classify the sentiment of this sentence as positive or negative: Michael likes modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+81,"Q: Classify the sentiment of this sentence as positive or negative: Michael dislikes modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+82,"Q: Classify the sentiment of this sentence as positive or negative: Michael likes modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+83,"Q: Classify the sentiment of this sentence as positive or negative: Michael dislikes modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+84,"Q: Is the following sentence positive or negative? Michael likes modern art.
+A: The sentence is","[' positive', ' negative']",0
+85,"Q: Is the following sentence positive or negative? Michael dislikes modern art.
+A: The sentence is","[' positive', ' negative']",1
+86,"Q: What is the sentiment of this sentence? Michael likes modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+87,"Q: What is the sentiment of this sentence? Michael dislikes modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+88,"Q: Is the sentiment of this sentence positive or negative? Michael likes modern art.
+A: The sentence is","[' positive', ' negative']",0
+89,"Q: Is the sentiment of this sentence positive or negative? Michael dislikes modern art.
+A: The sentence is","[' positive', ' negative']",1
+90,"Q: Classify the sentiment of this sentence as positive or negative: Michael likes math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+91,"Q: Classify the sentiment of this sentence as positive or negative: Michael dislikes math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+92,"Q: Classify the sentiment of this sentence as positive or negative: Michael likes math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+93,"Q: Classify the sentiment of this sentence as positive or negative: Michael dislikes math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+94,"Q: Is the following sentence positive or negative? Michael likes math.
+A: The sentence is","[' positive', ' negative']",0
+95,"Q: Is the following sentence positive or negative? Michael dislikes math.
+A: The sentence is","[' positive', ' negative']",1
+96,"Q: What is the sentiment of this sentence? Michael likes math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+97,"Q: What is the sentiment of this sentence? Michael dislikes math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+98,"Q: Is the sentiment of this sentence positive or negative? Michael likes math.
+A: The sentence is","[' positive', ' negative']",0
+99,"Q: Is the sentiment of this sentence positive or negative? Michael dislikes math.
+A: The sentence is","[' positive', ' negative']",1
+100,"Q: Classify the sentiment of this sentence as positive or negative: Michael enjoys running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+101,"Q: Classify the sentiment of this sentence as positive or negative: Michael does not enjoy running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+102,"Q: Classify the sentiment of this sentence as positive or negative: Michael enjoys running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+103,"Q: Classify the sentiment of this sentence as positive or negative: Michael does not enjoy running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+104,"Q: Is the following sentence positive or negative? Michael enjoys running.
+A: The sentence is","[' positive', ' negative']",0
+105,"Q: Is the following sentence positive or negative? Michael does not enjoy running.
+A: The sentence is","[' positive', ' negative']",1
+106,"Q: What is the sentiment of this sentence? Michael enjoys running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+107,"Q: What is the sentiment of this sentence? Michael does not enjoy running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+108,"Q: Is the sentiment of this sentence positive or negative? Michael enjoys running.
+A: The sentence is","[' positive', ' negative']",0
+109,"Q: Is the sentiment of this sentence positive or negative? Michael does not enjoy running.
+A: The sentence is","[' positive', ' negative']",1
+110,"Q: Classify the sentiment of this sentence as positive or negative: Michael enjoys being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+111,"Q: Classify the sentiment of this sentence as positive or negative: Michael does not enjoy being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+112,"Q: Classify the sentiment of this sentence as positive or negative: Michael enjoys being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+113,"Q: Classify the sentiment of this sentence as positive or negative: Michael does not enjoy being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+114,"Q: Is the following sentence positive or negative? Michael enjoys being outside.
+A: The sentence is","[' positive', ' negative']",0
+115,"Q: Is the following sentence positive or negative? Michael does not enjoy being outside.
+A: The sentence is","[' positive', ' negative']",1
+116,"Q: What is the sentiment of this sentence? Michael enjoys being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+117,"Q: What is the sentiment of this sentence? Michael does not enjoy being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+118,"Q: Is the sentiment of this sentence positive or negative? Michael enjoys being outside.
+A: The sentence is","[' positive', ' negative']",0
+119,"Q: Is the sentiment of this sentence positive or negative? Michael does not enjoy being outside.
+A: The sentence is","[' positive', ' negative']",1
+120,"Q: Classify the sentiment of this sentence as positive or negative: Michael enjoys music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+121,"Q: Classify the sentiment of this sentence as positive or negative: Michael does not enjoy music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+122,"Q: Classify the sentiment of this sentence as positive or negative: Michael enjoys music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+123,"Q: Classify the sentiment of this sentence as positive or negative: Michael does not enjoy music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+124,"Q: Is the following sentence positive or negative? Michael enjoys music.
+A: The sentence is","[' positive', ' negative']",0
+125,"Q: Is the following sentence positive or negative? Michael does not enjoy music.
+A: The sentence is","[' positive', ' negative']",1
+126,"Q: What is the sentiment of this sentence? Michael enjoys music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+127,"Q: What is the sentiment of this sentence? Michael does not enjoy music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+128,"Q: Is the sentiment of this sentence positive or negative? Michael enjoys music.
+A: The sentence is","[' positive', ' negative']",0
+129,"Q: Is the sentiment of this sentence positive or negative? Michael does not enjoy music.
+A: The sentence is","[' positive', ' negative']",1
+130,"Q: Classify the sentiment of this sentence as positive or negative: Michael enjoys modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+131,"Q: Classify the sentiment of this sentence as positive or negative: Michael does not enjoy modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+132,"Q: Classify the sentiment of this sentence as positive or negative: Michael enjoys modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+133,"Q: Classify the sentiment of this sentence as positive or negative: Michael does not enjoy modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+134,"Q: Is the following sentence positive or negative? Michael enjoys modern art.
+A: The sentence is","[' positive', ' negative']",0
+135,"Q: Is the following sentence positive or negative? Michael does not enjoy modern art.
+A: The sentence is","[' positive', ' negative']",1
+136,"Q: What is the sentiment of this sentence? Michael enjoys modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+137,"Q: What is the sentiment of this sentence? Michael does not enjoy modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+138,"Q: Is the sentiment of this sentence positive or negative? Michael enjoys modern art.
+A: The sentence is","[' positive', ' negative']",0
+139,"Q: Is the sentiment of this sentence positive or negative? Michael does not enjoy modern art.
+A: The sentence is","[' positive', ' negative']",1
+140,"Q: Classify the sentiment of this sentence as positive or negative: Michael enjoys math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+141,"Q: Classify the sentiment of this sentence as positive or negative: Michael does not enjoy math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+142,"Q: Classify the sentiment of this sentence as positive or negative: Michael enjoys math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+143,"Q: Classify the sentiment of this sentence as positive or negative: Michael does not enjoy math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+144,"Q: Is the following sentence positive or negative? Michael enjoys math.
+A: The sentence is","[' positive', ' negative']",0
+145,"Q: Is the following sentence positive or negative? Michael does not enjoy math.
+A: The sentence is","[' positive', ' negative']",1
+146,"Q: What is the sentiment of this sentence? Michael enjoys math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+147,"Q: What is the sentiment of this sentence? Michael does not enjoy math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+148,"Q: Is the sentiment of this sentence positive or negative? Michael enjoys math.
+A: The sentence is","[' positive', ' negative']",0
+149,"Q: Is the sentiment of this sentence positive or negative? Michael does not enjoy math.
+A: The sentence is","[' positive', ' negative']",1
+150,"Q: Classify the sentiment of this sentence as positive or negative: Michael adores running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+151,"Q: Classify the sentiment of this sentence as positive or negative: Michael abhors running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+152,"Q: Classify the sentiment of this sentence as positive or negative: Michael adores running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+153,"Q: Classify the sentiment of this sentence as positive or negative: Michael abhors running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+154,"Q: Is the following sentence positive or negative? Michael adores running.
+A: The sentence is","[' positive', ' negative']",0
+155,"Q: Is the following sentence positive or negative? Michael abhors running.
+A: The sentence is","[' positive', ' negative']",1
+156,"Q: What is the sentiment of this sentence? Michael adores running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+157,"Q: What is the sentiment of this sentence? Michael abhors running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+158,"Q: Is the sentiment of this sentence positive or negative? Michael adores running.
+A: The sentence is","[' positive', ' negative']",0
+159,"Q: Is the sentiment of this sentence positive or negative? Michael abhors running.
+A: The sentence is","[' positive', ' negative']",1
+160,"Q: Classify the sentiment of this sentence as positive or negative: Michael adores being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+161,"Q: Classify the sentiment of this sentence as positive or negative: Michael abhors being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+162,"Q: Classify the sentiment of this sentence as positive or negative: Michael adores being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+163,"Q: Classify the sentiment of this sentence as positive or negative: Michael abhors being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+164,"Q: Is the following sentence positive or negative? Michael adores being outside.
+A: The sentence is","[' positive', ' negative']",0
+165,"Q: Is the following sentence positive or negative? Michael abhors being outside.
+A: The sentence is","[' positive', ' negative']",1
+166,"Q: What is the sentiment of this sentence? Michael adores being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+167,"Q: What is the sentiment of this sentence? Michael abhors being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+168,"Q: Is the sentiment of this sentence positive or negative? Michael adores being outside.
+A: The sentence is","[' positive', ' negative']",0
+169,"Q: Is the sentiment of this sentence positive or negative? Michael abhors being outside.
+A: The sentence is","[' positive', ' negative']",1
+170,"Q: Classify the sentiment of this sentence as positive or negative: Michael adores music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+171,"Q: Classify the sentiment of this sentence as positive or negative: Michael abhors music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+172,"Q: Classify the sentiment of this sentence as positive or negative: Michael adores music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+173,"Q: Classify the sentiment of this sentence as positive or negative: Michael abhors music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+174,"Q: Is the following sentence positive or negative? Michael adores music.
+A: The sentence is","[' positive', ' negative']",0
+175,"Q: Is the following sentence positive or negative? Michael abhors music.
+A: The sentence is","[' positive', ' negative']",1
+176,"Q: What is the sentiment of this sentence? Michael adores music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+177,"Q: What is the sentiment of this sentence? Michael abhors music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+178,"Q: Is the sentiment of this sentence positive or negative? Michael adores music.
+A: The sentence is","[' positive', ' negative']",0
+179,"Q: Is the sentiment of this sentence positive or negative? Michael abhors music.
+A: The sentence is","[' positive', ' negative']",1
+180,"Q: Classify the sentiment of this sentence as positive or negative: Michael adores modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+181,"Q: Classify the sentiment of this sentence as positive or negative: Michael abhors modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+182,"Q: Classify the sentiment of this sentence as positive or negative: Michael adores modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+183,"Q: Classify the sentiment of this sentence as positive or negative: Michael abhors modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+184,"Q: Is the following sentence positive or negative? Michael adores modern art.
+A: The sentence is","[' positive', ' negative']",0
+185,"Q: Is the following sentence positive or negative? Michael abhors modern art.
+A: The sentence is","[' positive', ' negative']",1
+186,"Q: What is the sentiment of this sentence? Michael adores modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+187,"Q: What is the sentiment of this sentence? Michael abhors modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+188,"Q: Is the sentiment of this sentence positive or negative? Michael adores modern art.
+A: The sentence is","[' positive', ' negative']",0
+189,"Q: Is the sentiment of this sentence positive or negative? Michael abhors modern art.
+A: The sentence is","[' positive', ' negative']",1
+190,"Q: Classify the sentiment of this sentence as positive or negative: Michael adores math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+191,"Q: Classify the sentiment of this sentence as positive or negative: Michael abhors math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+192,"Q: Classify the sentiment of this sentence as positive or negative: Michael adores math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+193,"Q: Classify the sentiment of this sentence as positive or negative: Michael abhors math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+194,"Q: Is the following sentence positive or negative? Michael adores math.
+A: The sentence is","[' positive', ' negative']",0
+195,"Q: Is the following sentence positive or negative? Michael abhors math.
+A: The sentence is","[' positive', ' negative']",1
+196,"Q: What is the sentiment of this sentence? Michael adores math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+197,"Q: What is the sentiment of this sentence? Michael abhors math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+198,"Q: Is the sentiment of this sentence positive or negative? Michael adores math.
+A: The sentence is","[' positive', ' negative']",0
+199,"Q: Is the sentiment of this sentence positive or negative? Michael abhors math.
+A: The sentence is","[' positive', ' negative']",1
+200,"Q: Classify the sentiment of this sentence as positive or negative: Michael appreciates running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+201,"Q: Classify the sentiment of this sentence as positive or negative: Michael does not appreciate running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+202,"Q: Classify the sentiment of this sentence as positive or negative: Michael appreciates running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+203,"Q: Classify the sentiment of this sentence as positive or negative: Michael does not appreciate running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+204,"Q: Is the following sentence positive or negative? Michael appreciates running.
+A: The sentence is","[' positive', ' negative']",0
+205,"Q: Is the following sentence positive or negative? Michael does not appreciate running.
+A: The sentence is","[' positive', ' negative']",1
+206,"Q: What is the sentiment of this sentence? Michael appreciates running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+207,"Q: What is the sentiment of this sentence? Michael does not appreciate running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+208,"Q: Is the sentiment of this sentence positive or negative? Michael appreciates running.
+A: The sentence is","[' positive', ' negative']",0
+209,"Q: Is the sentiment of this sentence positive or negative? Michael does not appreciate running.
+A: The sentence is","[' positive', ' negative']",1
+210,"Q: Classify the sentiment of this sentence as positive or negative: Michael appreciates being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+211,"Q: Classify the sentiment of this sentence as positive or negative: Michael does not appreciate being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+212,"Q: Classify the sentiment of this sentence as positive or negative: Michael appreciates being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+213,"Q: Classify the sentiment of this sentence as positive or negative: Michael does not appreciate being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+214,"Q: Is the following sentence positive or negative? Michael appreciates being outside.
+A: The sentence is","[' positive', ' negative']",0
+215,"Q: Is the following sentence positive or negative? Michael does not appreciate being outside.
+A: The sentence is","[' positive', ' negative']",1
+216,"Q: What is the sentiment of this sentence? Michael appreciates being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+217,"Q: What is the sentiment of this sentence? Michael does not appreciate being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+218,"Q: Is the sentiment of this sentence positive or negative? Michael appreciates being outside.
+A: The sentence is","[' positive', ' negative']",0
+219,"Q: Is the sentiment of this sentence positive or negative? Michael does not appreciate being outside.
+A: The sentence is","[' positive', ' negative']",1
+220,"Q: Classify the sentiment of this sentence as positive or negative: Michael appreciates music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+221,"Q: Classify the sentiment of this sentence as positive or negative: Michael does not appreciate music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+222,"Q: Classify the sentiment of this sentence as positive or negative: Michael appreciates music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+223,"Q: Classify the sentiment of this sentence as positive or negative: Michael does not appreciate music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+224,"Q: Is the following sentence positive or negative? Michael appreciates music.
+A: The sentence is","[' positive', ' negative']",0
+225,"Q: Is the following sentence positive or negative? Michael does not appreciate music.
+A: The sentence is","[' positive', ' negative']",1
+226,"Q: What is the sentiment of this sentence? Michael appreciates music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+227,"Q: What is the sentiment of this sentence? Michael does not appreciate music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+228,"Q: Is the sentiment of this sentence positive or negative? Michael appreciates music.
+A: The sentence is","[' positive', ' negative']",0
+229,"Q: Is the sentiment of this sentence positive or negative? Michael does not appreciate music.
+A: The sentence is","[' positive', ' negative']",1
+230,"Q: Classify the sentiment of this sentence as positive or negative: Michael appreciates modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+231,"Q: Classify the sentiment of this sentence as positive or negative: Michael does not appreciate modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+232,"Q: Classify the sentiment of this sentence as positive or negative: Michael appreciates modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+233,"Q: Classify the sentiment of this sentence as positive or negative: Michael does not appreciate modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+234,"Q: Is the following sentence positive or negative? Michael appreciates modern art.
+A: The sentence is","[' positive', ' negative']",0
+235,"Q: Is the following sentence positive or negative? Michael does not appreciate modern art.
+A: The sentence is","[' positive', ' negative']",1
+236,"Q: What is the sentiment of this sentence? Michael appreciates modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+237,"Q: What is the sentiment of this sentence? Michael does not appreciate modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+238,"Q: Is the sentiment of this sentence positive or negative? Michael appreciates modern art.
+A: The sentence is","[' positive', ' negative']",0
+239,"Q: Is the sentiment of this sentence positive or negative? Michael does not appreciate modern art.
+A: The sentence is","[' positive', ' negative']",1
+240,"Q: Classify the sentiment of this sentence as positive or negative: Michael appreciates math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+241,"Q: Classify the sentiment of this sentence as positive or negative: Michael does not appreciate math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+242,"Q: Classify the sentiment of this sentence as positive or negative: Michael appreciates math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+243,"Q: Classify the sentiment of this sentence as positive or negative: Michael does not appreciate math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+244,"Q: Is the following sentence positive or negative? Michael appreciates math.
+A: The sentence is","[' positive', ' negative']",0
+245,"Q: Is the following sentence positive or negative? Michael does not appreciate math.
+A: The sentence is","[' positive', ' negative']",1
+246,"Q: What is the sentiment of this sentence? Michael appreciates math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+247,"Q: What is the sentiment of this sentence? Michael does not appreciate math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+248,"Q: Is the sentiment of this sentence positive or negative? Michael appreciates math.
+A: The sentence is","[' positive', ' negative']",0
+249,"Q: Is the sentiment of this sentence positive or negative? Michael does not appreciate math.
+A: The sentence is","[' positive', ' negative']",1
+250,"Q: Classify the sentiment of this sentence as positive or negative: Jessica loves running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+251,"Q: Classify the sentiment of this sentence as positive or negative: Jessica hates running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+252,"Q: Classify the sentiment of this sentence as positive or negative: Jessica loves running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+253,"Q: Classify the sentiment of this sentence as positive or negative: Jessica hates running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+254,"Q: Is the following sentence positive or negative? Jessica loves running.
+A: The sentence is","[' positive', ' negative']",0
+255,"Q: Is the following sentence positive or negative? Jessica hates running.
+A: The sentence is","[' positive', ' negative']",1
+256,"Q: What is the sentiment of this sentence? Jessica loves running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+257,"Q: What is the sentiment of this sentence? Jessica hates running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+258,"Q: Is the sentiment of this sentence positive or negative? Jessica loves running.
+A: The sentence is","[' positive', ' negative']",0
+259,"Q: Is the sentiment of this sentence positive or negative? Jessica hates running.
+A: The sentence is","[' positive', ' negative']",1
+260,"Q: Classify the sentiment of this sentence as positive or negative: Jessica loves being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+261,"Q: Classify the sentiment of this sentence as positive or negative: Jessica hates being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+262,"Q: Classify the sentiment of this sentence as positive or negative: Jessica loves being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+263,"Q: Classify the sentiment of this sentence as positive or negative: Jessica hates being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+264,"Q: Is the following sentence positive or negative? Jessica loves being outside.
+A: The sentence is","[' positive', ' negative']",0
+265,"Q: Is the following sentence positive or negative? Jessica hates being outside.
+A: The sentence is","[' positive', ' negative']",1
+266,"Q: What is the sentiment of this sentence? Jessica loves being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+267,"Q: What is the sentiment of this sentence? Jessica hates being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+268,"Q: Is the sentiment of this sentence positive or negative? Jessica loves being outside.
+A: The sentence is","[' positive', ' negative']",0
+269,"Q: Is the sentiment of this sentence positive or negative? Jessica hates being outside.
+A: The sentence is","[' positive', ' negative']",1
+270,"Q: Classify the sentiment of this sentence as positive or negative: Jessica loves music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+271,"Q: Classify the sentiment of this sentence as positive or negative: Jessica hates music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+272,"Q: Classify the sentiment of this sentence as positive or negative: Jessica loves music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+273,"Q: Classify the sentiment of this sentence as positive or negative: Jessica hates music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+274,"Q: Is the following sentence positive or negative? Jessica loves music.
+A: The sentence is","[' positive', ' negative']",0
+275,"Q: Is the following sentence positive or negative? Jessica hates music.
+A: The sentence is","[' positive', ' negative']",1
+276,"Q: What is the sentiment of this sentence? Jessica loves music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+277,"Q: What is the sentiment of this sentence? Jessica hates music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+278,"Q: Is the sentiment of this sentence positive or negative? Jessica loves music.
+A: The sentence is","[' positive', ' negative']",0
+279,"Q: Is the sentiment of this sentence positive or negative? Jessica hates music.
+A: The sentence is","[' positive', ' negative']",1
+280,"Q: Classify the sentiment of this sentence as positive or negative: Jessica loves modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+281,"Q: Classify the sentiment of this sentence as positive or negative: Jessica hates modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+282,"Q: Classify the sentiment of this sentence as positive or negative: Jessica loves modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+283,"Q: Classify the sentiment of this sentence as positive or negative: Jessica hates modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+284,"Q: Is the following sentence positive or negative? Jessica loves modern art.
+A: The sentence is","[' positive', ' negative']",0
+285,"Q: Is the following sentence positive or negative? Jessica hates modern art.
+A: The sentence is","[' positive', ' negative']",1
+286,"Q: What is the sentiment of this sentence? Jessica loves modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+287,"Q: What is the sentiment of this sentence? Jessica hates modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+288,"Q: Is the sentiment of this sentence positive or negative? Jessica loves modern art.
+A: The sentence is","[' positive', ' negative']",0
+289,"Q: Is the sentiment of this sentence positive or negative? Jessica hates modern art.
+A: The sentence is","[' positive', ' negative']",1
+290,"Q: Classify the sentiment of this sentence as positive or negative: Jessica loves math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+291,"Q: Classify the sentiment of this sentence as positive or negative: Jessica hates math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+292,"Q: Classify the sentiment of this sentence as positive or negative: Jessica loves math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+293,"Q: Classify the sentiment of this sentence as positive or negative: Jessica hates math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+294,"Q: Is the following sentence positive or negative? Jessica loves math.
+A: The sentence is","[' positive', ' negative']",0
+295,"Q: Is the following sentence positive or negative? Jessica hates math.
+A: The sentence is","[' positive', ' negative']",1
+296,"Q: What is the sentiment of this sentence? Jessica loves math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+297,"Q: What is the sentiment of this sentence? Jessica hates math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+298,"Q: Is the sentiment of this sentence positive or negative? Jessica loves math.
+A: The sentence is","[' positive', ' negative']",0
+299,"Q: Is the sentiment of this sentence positive or negative? Jessica hates math.
+A: The sentence is","[' positive', ' negative']",1
+300,"Q: Classify the sentiment of this sentence as positive or negative: Jessica likes running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+301,"Q: Classify the sentiment of this sentence as positive or negative: Jessica dislikes running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+302,"Q: Classify the sentiment of this sentence as positive or negative: Jessica likes running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+303,"Q: Classify the sentiment of this sentence as positive or negative: Jessica dislikes running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+304,"Q: Is the following sentence positive or negative? Jessica likes running.
+A: The sentence is","[' positive', ' negative']",0
+305,"Q: Is the following sentence positive or negative? Jessica dislikes running.
+A: The sentence is","[' positive', ' negative']",1
+306,"Q: What is the sentiment of this sentence? Jessica likes running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+307,"Q: What is the sentiment of this sentence? Jessica dislikes running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+308,"Q: Is the sentiment of this sentence positive or negative? Jessica likes running.
+A: The sentence is","[' positive', ' negative']",0
+309,"Q: Is the sentiment of this sentence positive or negative? Jessica dislikes running.
+A: The sentence is","[' positive', ' negative']",1
+310,"Q: Classify the sentiment of this sentence as positive or negative: Jessica likes being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+311,"Q: Classify the sentiment of this sentence as positive or negative: Jessica dislikes being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+312,"Q: Classify the sentiment of this sentence as positive or negative: Jessica likes being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+313,"Q: Classify the sentiment of this sentence as positive or negative: Jessica dislikes being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+314,"Q: Is the following sentence positive or negative? Jessica likes being outside.
+A: The sentence is","[' positive', ' negative']",0
+315,"Q: Is the following sentence positive or negative? Jessica dislikes being outside.
+A: The sentence is","[' positive', ' negative']",1
+316,"Q: What is the sentiment of this sentence? Jessica likes being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+317,"Q: What is the sentiment of this sentence? Jessica dislikes being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+318,"Q: Is the sentiment of this sentence positive or negative? Jessica likes being outside.
+A: The sentence is","[' positive', ' negative']",0
+319,"Q: Is the sentiment of this sentence positive or negative? Jessica dislikes being outside.
+A: The sentence is","[' positive', ' negative']",1
+320,"Q: Classify the sentiment of this sentence as positive or negative: Jessica likes music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+321,"Q: Classify the sentiment of this sentence as positive or negative: Jessica dislikes music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+322,"Q: Classify the sentiment of this sentence as positive or negative: Jessica likes music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+323,"Q: Classify the sentiment of this sentence as positive or negative: Jessica dislikes music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+324,"Q: Is the following sentence positive or negative? Jessica likes music.
+A: The sentence is","[' positive', ' negative']",0
+325,"Q: Is the following sentence positive or negative? Jessica dislikes music.
+A: The sentence is","[' positive', ' negative']",1
+326,"Q: What is the sentiment of this sentence? Jessica likes music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+327,"Q: What is the sentiment of this sentence? Jessica dislikes music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+328,"Q: Is the sentiment of this sentence positive or negative? Jessica likes music.
+A: The sentence is","[' positive', ' negative']",0
+329,"Q: Is the sentiment of this sentence positive or negative? Jessica dislikes music.
+A: The sentence is","[' positive', ' negative']",1
+330,"Q: Classify the sentiment of this sentence as positive or negative: Jessica likes modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+331,"Q: Classify the sentiment of this sentence as positive or negative: Jessica dislikes modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+332,"Q: Classify the sentiment of this sentence as positive or negative: Jessica likes modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+333,"Q: Classify the sentiment of this sentence as positive or negative: Jessica dislikes modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+334,"Q: Is the following sentence positive or negative? Jessica likes modern art.
+A: The sentence is","[' positive', ' negative']",0
+335,"Q: Is the following sentence positive or negative? Jessica dislikes modern art.
+A: The sentence is","[' positive', ' negative']",1
+336,"Q: What is the sentiment of this sentence? Jessica likes modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+337,"Q: What is the sentiment of this sentence? Jessica dislikes modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+338,"Q: Is the sentiment of this sentence positive or negative? Jessica likes modern art.
+A: The sentence is","[' positive', ' negative']",0
+339,"Q: Is the sentiment of this sentence positive or negative? Jessica dislikes modern art.
+A: The sentence is","[' positive', ' negative']",1
+340,"Q: Classify the sentiment of this sentence as positive or negative: Jessica likes math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+341,"Q: Classify the sentiment of this sentence as positive or negative: Jessica dislikes math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+342,"Q: Classify the sentiment of this sentence as positive or negative: Jessica likes math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+343,"Q: Classify the sentiment of this sentence as positive or negative: Jessica dislikes math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+344,"Q: Is the following sentence positive or negative? Jessica likes math.
+A: The sentence is","[' positive', ' negative']",0
+345,"Q: Is the following sentence positive or negative? Jessica dislikes math.
+A: The sentence is","[' positive', ' negative']",1
+346,"Q: What is the sentiment of this sentence? Jessica likes math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+347,"Q: What is the sentiment of this sentence? Jessica dislikes math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+348,"Q: Is the sentiment of this sentence positive or negative? Jessica likes math.
+A: The sentence is","[' positive', ' negative']",0
+349,"Q: Is the sentiment of this sentence positive or negative? Jessica dislikes math.
+A: The sentence is","[' positive', ' negative']",1
+350,"Q: Classify the sentiment of this sentence as positive or negative: Jessica enjoys running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+351,"Q: Classify the sentiment of this sentence as positive or negative: Jessica does not enjoy running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+352,"Q: Classify the sentiment of this sentence as positive or negative: Jessica enjoys running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+353,"Q: Classify the sentiment of this sentence as positive or negative: Jessica does not enjoy running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+354,"Q: Is the following sentence positive or negative? Jessica enjoys running.
+A: The sentence is","[' positive', ' negative']",0
+355,"Q: Is the following sentence positive or negative? Jessica does not enjoy running.
+A: The sentence is","[' positive', ' negative']",1
+356,"Q: What is the sentiment of this sentence? Jessica enjoys running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+357,"Q: What is the sentiment of this sentence? Jessica does not enjoy running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+358,"Q: Is the sentiment of this sentence positive or negative? Jessica enjoys running.
+A: The sentence is","[' positive', ' negative']",0
+359,"Q: Is the sentiment of this sentence positive or negative? Jessica does not enjoy running.
+A: The sentence is","[' positive', ' negative']",1
+360,"Q: Classify the sentiment of this sentence as positive or negative: Jessica enjoys being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+361,"Q: Classify the sentiment of this sentence as positive or negative: Jessica does not enjoy being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+362,"Q: Classify the sentiment of this sentence as positive or negative: Jessica enjoys being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+363,"Q: Classify the sentiment of this sentence as positive or negative: Jessica does not enjoy being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+364,"Q: Is the following sentence positive or negative? Jessica enjoys being outside.
+A: The sentence is","[' positive', ' negative']",0
+365,"Q: Is the following sentence positive or negative? Jessica does not enjoy being outside.
+A: The sentence is","[' positive', ' negative']",1
+366,"Q: What is the sentiment of this sentence? Jessica enjoys being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+367,"Q: What is the sentiment of this sentence? Jessica does not enjoy being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+368,"Q: Is the sentiment of this sentence positive or negative? Jessica enjoys being outside.
+A: The sentence is","[' positive', ' negative']",0
+369,"Q: Is the sentiment of this sentence positive or negative? Jessica does not enjoy being outside.
+A: The sentence is","[' positive', ' negative']",1
+370,"Q: Classify the sentiment of this sentence as positive or negative: Jessica enjoys music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+371,"Q: Classify the sentiment of this sentence as positive or negative: Jessica does not enjoy music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+372,"Q: Classify the sentiment of this sentence as positive or negative: Jessica enjoys music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+373,"Q: Classify the sentiment of this sentence as positive or negative: Jessica does not enjoy music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+374,"Q: Is the following sentence positive or negative? Jessica enjoys music.
+A: The sentence is","[' positive', ' negative']",0
+375,"Q: Is the following sentence positive or negative? Jessica does not enjoy music.
+A: The sentence is","[' positive', ' negative']",1
+376,"Q: What is the sentiment of this sentence? Jessica enjoys music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+377,"Q: What is the sentiment of this sentence? Jessica does not enjoy music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+378,"Q: Is the sentiment of this sentence positive or negative? Jessica enjoys music.
+A: The sentence is","[' positive', ' negative']",0
+379,"Q: Is the sentiment of this sentence positive or negative? Jessica does not enjoy music.
+A: The sentence is","[' positive', ' negative']",1
+380,"Q: Classify the sentiment of this sentence as positive or negative: Jessica enjoys modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+381,"Q: Classify the sentiment of this sentence as positive or negative: Jessica does not enjoy modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+382,"Q: Classify the sentiment of this sentence as positive or negative: Jessica enjoys modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+383,"Q: Classify the sentiment of this sentence as positive or negative: Jessica does not enjoy modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+384,"Q: Is the following sentence positive or negative? Jessica enjoys modern art.
+A: The sentence is","[' positive', ' negative']",0
+385,"Q: Is the following sentence positive or negative? Jessica does not enjoy modern art.
+A: The sentence is","[' positive', ' negative']",1
+386,"Q: What is the sentiment of this sentence? Jessica enjoys modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+387,"Q: What is the sentiment of this sentence? Jessica does not enjoy modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+388,"Q: Is the sentiment of this sentence positive or negative? Jessica enjoys modern art.
+A: The sentence is","[' positive', ' negative']",0
+389,"Q: Is the sentiment of this sentence positive or negative? Jessica does not enjoy modern art.
+A: The sentence is","[' positive', ' negative']",1
+390,"Q: Classify the sentiment of this sentence as positive or negative: Jessica enjoys math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+391,"Q: Classify the sentiment of this sentence as positive or negative: Jessica does not enjoy math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+392,"Q: Classify the sentiment of this sentence as positive or negative: Jessica enjoys math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+393,"Q: Classify the sentiment of this sentence as positive or negative: Jessica does not enjoy math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+394,"Q: Is the following sentence positive or negative? Jessica enjoys math.
+A: The sentence is","[' positive', ' negative']",0
+395,"Q: Is the following sentence positive or negative? Jessica does not enjoy math.
+A: The sentence is","[' positive', ' negative']",1
+396,"Q: What is the sentiment of this sentence? Jessica enjoys math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+397,"Q: What is the sentiment of this sentence? Jessica does not enjoy math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+398,"Q: Is the sentiment of this sentence positive or negative? Jessica enjoys math.
+A: The sentence is","[' positive', ' negative']",0
+399,"Q: Is the sentiment of this sentence positive or negative? Jessica does not enjoy math.
+A: The sentence is","[' positive', ' negative']",1
+400,"Q: Classify the sentiment of this sentence as positive or negative: Jessica adores running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+401,"Q: Classify the sentiment of this sentence as positive or negative: Jessica abhors running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+402,"Q: Classify the sentiment of this sentence as positive or negative: Jessica adores running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+403,"Q: Classify the sentiment of this sentence as positive or negative: Jessica abhors running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+404,"Q: Is the following sentence positive or negative? Jessica adores running.
+A: The sentence is","[' positive', ' negative']",0
+405,"Q: Is the following sentence positive or negative? Jessica abhors running.
+A: The sentence is","[' positive', ' negative']",1
+406,"Q: What is the sentiment of this sentence? Jessica adores running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+407,"Q: What is the sentiment of this sentence? Jessica abhors running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+408,"Q: Is the sentiment of this sentence positive or negative? Jessica adores running.
+A: The sentence is","[' positive', ' negative']",0
+409,"Q: Is the sentiment of this sentence positive or negative? Jessica abhors running.
+A: The sentence is","[' positive', ' negative']",1
+410,"Q: Classify the sentiment of this sentence as positive or negative: Jessica adores being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+411,"Q: Classify the sentiment of this sentence as positive or negative: Jessica abhors being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+412,"Q: Classify the sentiment of this sentence as positive or negative: Jessica adores being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+413,"Q: Classify the sentiment of this sentence as positive or negative: Jessica abhors being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+414,"Q: Is the following sentence positive or negative? Jessica adores being outside.
+A: The sentence is","[' positive', ' negative']",0
+415,"Q: Is the following sentence positive or negative? Jessica abhors being outside.
+A: The sentence is","[' positive', ' negative']",1
+416,"Q: What is the sentiment of this sentence? Jessica adores being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+417,"Q: What is the sentiment of this sentence? Jessica abhors being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+418,"Q: Is the sentiment of this sentence positive or negative? Jessica adores being outside.
+A: The sentence is","[' positive', ' negative']",0
+419,"Q: Is the sentiment of this sentence positive or negative? Jessica abhors being outside.
+A: The sentence is","[' positive', ' negative']",1
+420,"Q: Classify the sentiment of this sentence as positive or negative: Jessica adores music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+421,"Q: Classify the sentiment of this sentence as positive or negative: Jessica abhors music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+422,"Q: Classify the sentiment of this sentence as positive or negative: Jessica adores music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+423,"Q: Classify the sentiment of this sentence as positive or negative: Jessica abhors music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+424,"Q: Is the following sentence positive or negative? Jessica adores music.
+A: The sentence is","[' positive', ' negative']",0
+425,"Q: Is the following sentence positive or negative? Jessica abhors music.
+A: The sentence is","[' positive', ' negative']",1
+426,"Q: What is the sentiment of this sentence? Jessica adores music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+427,"Q: What is the sentiment of this sentence? Jessica abhors music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+428,"Q: Is the sentiment of this sentence positive or negative? Jessica adores music.
+A: The sentence is","[' positive', ' negative']",0
+429,"Q: Is the sentiment of this sentence positive or negative? Jessica abhors music.
+A: The sentence is","[' positive', ' negative']",1
+430,"Q: Classify the sentiment of this sentence as positive or negative: Jessica adores modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+431,"Q: Classify the sentiment of this sentence as positive or negative: Jessica abhors modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+432,"Q: Classify the sentiment of this sentence as positive or negative: Jessica adores modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+433,"Q: Classify the sentiment of this sentence as positive or negative: Jessica abhors modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+434,"Q: Is the following sentence positive or negative? Jessica adores modern art.
+A: The sentence is","[' positive', ' negative']",0
+435,"Q: Is the following sentence positive or negative? Jessica abhors modern art.
+A: The sentence is","[' positive', ' negative']",1
+436,"Q: What is the sentiment of this sentence? Jessica adores modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+437,"Q: What is the sentiment of this sentence? Jessica abhors modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+438,"Q: Is the sentiment of this sentence positive or negative? Jessica adores modern art.
+A: The sentence is","[' positive', ' negative']",0
+439,"Q: Is the sentiment of this sentence positive or negative? Jessica abhors modern art.
+A: The sentence is","[' positive', ' negative']",1
+440,"Q: Classify the sentiment of this sentence as positive or negative: Jessica adores math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+441,"Q: Classify the sentiment of this sentence as positive or negative: Jessica abhors math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+442,"Q: Classify the sentiment of this sentence as positive or negative: Jessica adores math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+443,"Q: Classify the sentiment of this sentence as positive or negative: Jessica abhors math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+444,"Q: Is the following sentence positive or negative? Jessica adores math.
+A: The sentence is","[' positive', ' negative']",0
+445,"Q: Is the following sentence positive or negative? Jessica abhors math.
+A: The sentence is","[' positive', ' negative']",1
+446,"Q: What is the sentiment of this sentence? Jessica adores math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+447,"Q: What is the sentiment of this sentence? Jessica abhors math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+448,"Q: Is the sentiment of this sentence positive or negative? Jessica adores math.
+A: The sentence is","[' positive', ' negative']",0
+449,"Q: Is the sentiment of this sentence positive or negative? Jessica abhors math.
+A: The sentence is","[' positive', ' negative']",1
+450,"Q: Classify the sentiment of this sentence as positive or negative: Jessica appreciates running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+451,"Q: Classify the sentiment of this sentence as positive or negative: Jessica does not appreciate running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+452,"Q: Classify the sentiment of this sentence as positive or negative: Jessica appreciates running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+453,"Q: Classify the sentiment of this sentence as positive or negative: Jessica does not appreciate running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+454,"Q: Is the following sentence positive or negative? Jessica appreciates running.
+A: The sentence is","[' positive', ' negative']",0
+455,"Q: Is the following sentence positive or negative? Jessica does not appreciate running.
+A: The sentence is","[' positive', ' negative']",1
+456,"Q: What is the sentiment of this sentence? Jessica appreciates running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+457,"Q: What is the sentiment of this sentence? Jessica does not appreciate running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+458,"Q: Is the sentiment of this sentence positive or negative? Jessica appreciates running.
+A: The sentence is","[' positive', ' negative']",0
+459,"Q: Is the sentiment of this sentence positive or negative? Jessica does not appreciate running.
+A: The sentence is","[' positive', ' negative']",1
+460,"Q: Classify the sentiment of this sentence as positive or negative: Jessica appreciates being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+461,"Q: Classify the sentiment of this sentence as positive or negative: Jessica does not appreciate being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+462,"Q: Classify the sentiment of this sentence as positive or negative: Jessica appreciates being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+463,"Q: Classify the sentiment of this sentence as positive or negative: Jessica does not appreciate being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+464,"Q: Is the following sentence positive or negative? Jessica appreciates being outside.
+A: The sentence is","[' positive', ' negative']",0
+465,"Q: Is the following sentence positive or negative? Jessica does not appreciate being outside.
+A: The sentence is","[' positive', ' negative']",1
+466,"Q: What is the sentiment of this sentence? Jessica appreciates being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+467,"Q: What is the sentiment of this sentence? Jessica does not appreciate being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+468,"Q: Is the sentiment of this sentence positive or negative? Jessica appreciates being outside.
+A: The sentence is","[' positive', ' negative']",0
+469,"Q: Is the sentiment of this sentence positive or negative? Jessica does not appreciate being outside.
+A: The sentence is","[' positive', ' negative']",1
+470,"Q: Classify the sentiment of this sentence as positive or negative: Jessica appreciates music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+471,"Q: Classify the sentiment of this sentence as positive or negative: Jessica does not appreciate music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+472,"Q: Classify the sentiment of this sentence as positive or negative: Jessica appreciates music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+473,"Q: Classify the sentiment of this sentence as positive or negative: Jessica does not appreciate music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+474,"Q: Is the following sentence positive or negative? Jessica appreciates music.
+A: The sentence is","[' positive', ' negative']",0
+475,"Q: Is the following sentence positive or negative? Jessica does not appreciate music.
+A: The sentence is","[' positive', ' negative']",1
+476,"Q: What is the sentiment of this sentence? Jessica appreciates music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+477,"Q: What is the sentiment of this sentence? Jessica does not appreciate music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+478,"Q: Is the sentiment of this sentence positive or negative? Jessica appreciates music.
+A: The sentence is","[' positive', ' negative']",0
+479,"Q: Is the sentiment of this sentence positive or negative? Jessica does not appreciate music.
+A: The sentence is","[' positive', ' negative']",1
+480,"Q: Classify the sentiment of this sentence as positive or negative: Jessica appreciates modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+481,"Q: Classify the sentiment of this sentence as positive or negative: Jessica does not appreciate modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+482,"Q: Classify the sentiment of this sentence as positive or negative: Jessica appreciates modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+483,"Q: Classify the sentiment of this sentence as positive or negative: Jessica does not appreciate modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+484,"Q: Is the following sentence positive or negative? Jessica appreciates modern art.
+A: The sentence is","[' positive', ' negative']",0
+485,"Q: Is the following sentence positive or negative? Jessica does not appreciate modern art.
+A: The sentence is","[' positive', ' negative']",1
+486,"Q: What is the sentiment of this sentence? Jessica appreciates modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+487,"Q: What is the sentiment of this sentence? Jessica does not appreciate modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+488,"Q: Is the sentiment of this sentence positive or negative? Jessica appreciates modern art.
+A: The sentence is","[' positive', ' negative']",0
+489,"Q: Is the sentiment of this sentence positive or negative? Jessica does not appreciate modern art.
+A: The sentence is","[' positive', ' negative']",1
+490,"Q: Classify the sentiment of this sentence as positive or negative: Jessica appreciates math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+491,"Q: Classify the sentiment of this sentence as positive or negative: Jessica does not appreciate math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+492,"Q: Classify the sentiment of this sentence as positive or negative: Jessica appreciates math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+493,"Q: Classify the sentiment of this sentence as positive or negative: Jessica does not appreciate math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+494,"Q: Is the following sentence positive or negative? Jessica appreciates math.
+A: The sentence is","[' positive', ' negative']",0
+495,"Q: Is the following sentence positive or negative? Jessica does not appreciate math.
+A: The sentence is","[' positive', ' negative']",1
+496,"Q: What is the sentiment of this sentence? Jessica appreciates math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+497,"Q: What is the sentiment of this sentence? Jessica does not appreciate math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+498,"Q: Is the sentiment of this sentence positive or negative? Jessica appreciates math.
+A: The sentence is","[' positive', ' negative']",0
+499,"Q: Is the sentiment of this sentence positive or negative? Jessica does not appreciate math.
+A: The sentence is","[' positive', ' negative']",1
+500,"Q: Classify the sentiment of this sentence as positive or negative: Christopher loves running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+501,"Q: Classify the sentiment of this sentence as positive or negative: Christopher hates running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+502,"Q: Classify the sentiment of this sentence as positive or negative: Christopher loves running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+503,"Q: Classify the sentiment of this sentence as positive or negative: Christopher hates running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+504,"Q: Is the following sentence positive or negative? Christopher loves running.
+A: The sentence is","[' positive', ' negative']",0
+505,"Q: Is the following sentence positive or negative? Christopher hates running.
+A: The sentence is","[' positive', ' negative']",1
+506,"Q: What is the sentiment of this sentence? Christopher loves running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+507,"Q: What is the sentiment of this sentence? Christopher hates running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+508,"Q: Is the sentiment of this sentence positive or negative? Christopher loves running.
+A: The sentence is","[' positive', ' negative']",0
+509,"Q: Is the sentiment of this sentence positive or negative? Christopher hates running.
+A: The sentence is","[' positive', ' negative']",1
+510,"Q: Classify the sentiment of this sentence as positive or negative: Christopher loves being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+511,"Q: Classify the sentiment of this sentence as positive or negative: Christopher hates being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+512,"Q: Classify the sentiment of this sentence as positive or negative: Christopher loves being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+513,"Q: Classify the sentiment of this sentence as positive or negative: Christopher hates being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+514,"Q: Is the following sentence positive or negative? Christopher loves being outside.
+A: The sentence is","[' positive', ' negative']",0
+515,"Q: Is the following sentence positive or negative? Christopher hates being outside.
+A: The sentence is","[' positive', ' negative']",1
+516,"Q: What is the sentiment of this sentence? Christopher loves being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+517,"Q: What is the sentiment of this sentence? Christopher hates being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+518,"Q: Is the sentiment of this sentence positive or negative? Christopher loves being outside.
+A: The sentence is","[' positive', ' negative']",0
+519,"Q: Is the sentiment of this sentence positive or negative? Christopher hates being outside.
+A: The sentence is","[' positive', ' negative']",1
+520,"Q: Classify the sentiment of this sentence as positive or negative: Christopher loves music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+521,"Q: Classify the sentiment of this sentence as positive or negative: Christopher hates music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+522,"Q: Classify the sentiment of this sentence as positive or negative: Christopher loves music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+523,"Q: Classify the sentiment of this sentence as positive or negative: Christopher hates music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+524,"Q: Is the following sentence positive or negative? Christopher loves music.
+A: The sentence is","[' positive', ' negative']",0
+525,"Q: Is the following sentence positive or negative? Christopher hates music.
+A: The sentence is","[' positive', ' negative']",1
+526,"Q: What is the sentiment of this sentence? Christopher loves music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+527,"Q: What is the sentiment of this sentence? Christopher hates music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+528,"Q: Is the sentiment of this sentence positive or negative? Christopher loves music.
+A: The sentence is","[' positive', ' negative']",0
+529,"Q: Is the sentiment of this sentence positive or negative? Christopher hates music.
+A: The sentence is","[' positive', ' negative']",1
+530,"Q: Classify the sentiment of this sentence as positive or negative: Christopher loves modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+531,"Q: Classify the sentiment of this sentence as positive or negative: Christopher hates modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+532,"Q: Classify the sentiment of this sentence as positive or negative: Christopher loves modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+533,"Q: Classify the sentiment of this sentence as positive or negative: Christopher hates modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+534,"Q: Is the following sentence positive or negative? Christopher loves modern art.
+A: The sentence is","[' positive', ' negative']",0
+535,"Q: Is the following sentence positive or negative? Christopher hates modern art.
+A: The sentence is","[' positive', ' negative']",1
+536,"Q: What is the sentiment of this sentence? Christopher loves modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+537,"Q: What is the sentiment of this sentence? Christopher hates modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+538,"Q: Is the sentiment of this sentence positive or negative? Christopher loves modern art.
+A: The sentence is","[' positive', ' negative']",0
+539,"Q: Is the sentiment of this sentence positive or negative? Christopher hates modern art.
+A: The sentence is","[' positive', ' negative']",1
+540,"Q: Classify the sentiment of this sentence as positive or negative: Christopher loves math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+541,"Q: Classify the sentiment of this sentence as positive or negative: Christopher hates math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+542,"Q: Classify the sentiment of this sentence as positive or negative: Christopher loves math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+543,"Q: Classify the sentiment of this sentence as positive or negative: Christopher hates math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+544,"Q: Is the following sentence positive or negative? Christopher loves math.
+A: The sentence is","[' positive', ' negative']",0
+545,"Q: Is the following sentence positive or negative? Christopher hates math.
+A: The sentence is","[' positive', ' negative']",1
+546,"Q: What is the sentiment of this sentence? Christopher loves math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+547,"Q: What is the sentiment of this sentence? Christopher hates math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+548,"Q: Is the sentiment of this sentence positive or negative? Christopher loves math.
+A: The sentence is","[' positive', ' negative']",0
+549,"Q: Is the sentiment of this sentence positive or negative? Christopher hates math.
+A: The sentence is","[' positive', ' negative']",1
+550,"Q: Classify the sentiment of this sentence as positive or negative: Christopher likes running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+551,"Q: Classify the sentiment of this sentence as positive or negative: Christopher dislikes running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+552,"Q: Classify the sentiment of this sentence as positive or negative: Christopher likes running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+553,"Q: Classify the sentiment of this sentence as positive or negative: Christopher dislikes running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+554,"Q: Is the following sentence positive or negative? Christopher likes running.
+A: The sentence is","[' positive', ' negative']",0
+555,"Q: Is the following sentence positive or negative? Christopher dislikes running.
+A: The sentence is","[' positive', ' negative']",1
+556,"Q: What is the sentiment of this sentence? Christopher likes running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+557,"Q: What is the sentiment of this sentence? Christopher dislikes running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+558,"Q: Is the sentiment of this sentence positive or negative? Christopher likes running.
+A: The sentence is","[' positive', ' negative']",0
+559,"Q: Is the sentiment of this sentence positive or negative? Christopher dislikes running.
+A: The sentence is","[' positive', ' negative']",1
+560,"Q: Classify the sentiment of this sentence as positive or negative: Christopher likes being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+561,"Q: Classify the sentiment of this sentence as positive or negative: Christopher dislikes being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+562,"Q: Classify the sentiment of this sentence as positive or negative: Christopher likes being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+563,"Q: Classify the sentiment of this sentence as positive or negative: Christopher dislikes being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+564,"Q: Is the following sentence positive or negative? Christopher likes being outside.
+A: The sentence is","[' positive', ' negative']",0
+565,"Q: Is the following sentence positive or negative? Christopher dislikes being outside.
+A: The sentence is","[' positive', ' negative']",1
+566,"Q: What is the sentiment of this sentence? Christopher likes being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+567,"Q: What is the sentiment of this sentence? Christopher dislikes being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+568,"Q: Is the sentiment of this sentence positive or negative? Christopher likes being outside.
+A: The sentence is","[' positive', ' negative']",0
+569,"Q: Is the sentiment of this sentence positive or negative? Christopher dislikes being outside.
+A: The sentence is","[' positive', ' negative']",1
+570,"Q: Classify the sentiment of this sentence as positive or negative: Christopher likes music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+571,"Q: Classify the sentiment of this sentence as positive or negative: Christopher dislikes music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+572,"Q: Classify the sentiment of this sentence as positive or negative: Christopher likes music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+573,"Q: Classify the sentiment of this sentence as positive or negative: Christopher dislikes music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+574,"Q: Is the following sentence positive or negative? Christopher likes music.
+A: The sentence is","[' positive', ' negative']",0
+575,"Q: Is the following sentence positive or negative? Christopher dislikes music.
+A: The sentence is","[' positive', ' negative']",1
+576,"Q: What is the sentiment of this sentence? Christopher likes music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+577,"Q: What is the sentiment of this sentence? Christopher dislikes music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+578,"Q: Is the sentiment of this sentence positive or negative? Christopher likes music.
+A: The sentence is","[' positive', ' negative']",0
+579,"Q: Is the sentiment of this sentence positive or negative? Christopher dislikes music.
+A: The sentence is","[' positive', ' negative']",1
+580,"Q: Classify the sentiment of this sentence as positive or negative: Christopher likes modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+581,"Q: Classify the sentiment of this sentence as positive or negative: Christopher dislikes modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+582,"Q: Classify the sentiment of this sentence as positive or negative: Christopher likes modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+583,"Q: Classify the sentiment of this sentence as positive or negative: Christopher dislikes modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+584,"Q: Is the following sentence positive or negative? Christopher likes modern art.
+A: The sentence is","[' positive', ' negative']",0
+585,"Q: Is the following sentence positive or negative? Christopher dislikes modern art.
+A: The sentence is","[' positive', ' negative']",1
+586,"Q: What is the sentiment of this sentence? Christopher likes modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+587,"Q: What is the sentiment of this sentence? Christopher dislikes modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+588,"Q: Is the sentiment of this sentence positive or negative? Christopher likes modern art.
+A: The sentence is","[' positive', ' negative']",0
+589,"Q: Is the sentiment of this sentence positive or negative? Christopher dislikes modern art.
+A: The sentence is","[' positive', ' negative']",1
+590,"Q: Classify the sentiment of this sentence as positive or negative: Christopher likes math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+591,"Q: Classify the sentiment of this sentence as positive or negative: Christopher dislikes math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+592,"Q: Classify the sentiment of this sentence as positive or negative: Christopher likes math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+593,"Q: Classify the sentiment of this sentence as positive or negative: Christopher dislikes math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+594,"Q: Is the following sentence positive or negative? Christopher likes math.
+A: The sentence is","[' positive', ' negative']",0
+595,"Q: Is the following sentence positive or negative? Christopher dislikes math.
+A: The sentence is","[' positive', ' negative']",1
+596,"Q: What is the sentiment of this sentence? Christopher likes math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+597,"Q: What is the sentiment of this sentence? Christopher dislikes math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+598,"Q: Is the sentiment of this sentence positive or negative? Christopher likes math.
+A: The sentence is","[' positive', ' negative']",0
+599,"Q: Is the sentiment of this sentence positive or negative? Christopher dislikes math.
+A: The sentence is","[' positive', ' negative']",1
+600,"Q: Classify the sentiment of this sentence as positive or negative: Christopher enjoys running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+601,"Q: Classify the sentiment of this sentence as positive or negative: Christopher does not enjoy running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+602,"Q: Classify the sentiment of this sentence as positive or negative: Christopher enjoys running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+603,"Q: Classify the sentiment of this sentence as positive or negative: Christopher does not enjoy running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+604,"Q: Is the following sentence positive or negative? Christopher enjoys running.
+A: The sentence is","[' positive', ' negative']",0
+605,"Q: Is the following sentence positive or negative? Christopher does not enjoy running.
+A: The sentence is","[' positive', ' negative']",1
+606,"Q: What is the sentiment of this sentence? Christopher enjoys running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+607,"Q: What is the sentiment of this sentence? Christopher does not enjoy running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+608,"Q: Is the sentiment of this sentence positive or negative? Christopher enjoys running.
+A: The sentence is","[' positive', ' negative']",0
+609,"Q: Is the sentiment of this sentence positive or negative? Christopher does not enjoy running.
+A: The sentence is","[' positive', ' negative']",1
+610,"Q: Classify the sentiment of this sentence as positive or negative: Christopher enjoys being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+611,"Q: Classify the sentiment of this sentence as positive or negative: Christopher does not enjoy being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+612,"Q: Classify the sentiment of this sentence as positive or negative: Christopher enjoys being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+613,"Q: Classify the sentiment of this sentence as positive or negative: Christopher does not enjoy being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+614,"Q: Is the following sentence positive or negative? Christopher enjoys being outside.
+A: The sentence is","[' positive', ' negative']",0
+615,"Q: Is the following sentence positive or negative? Christopher does not enjoy being outside.
+A: The sentence is","[' positive', ' negative']",1
+616,"Q: What is the sentiment of this sentence? Christopher enjoys being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+617,"Q: What is the sentiment of this sentence? Christopher does not enjoy being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+618,"Q: Is the sentiment of this sentence positive or negative? Christopher enjoys being outside.
+A: The sentence is","[' positive', ' negative']",0
+619,"Q: Is the sentiment of this sentence positive or negative? Christopher does not enjoy being outside.
+A: The sentence is","[' positive', ' negative']",1
+620,"Q: Classify the sentiment of this sentence as positive or negative: Christopher enjoys music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+621,"Q: Classify the sentiment of this sentence as positive or negative: Christopher does not enjoy music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+622,"Q: Classify the sentiment of this sentence as positive or negative: Christopher enjoys music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+623,"Q: Classify the sentiment of this sentence as positive or negative: Christopher does not enjoy music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+624,"Q: Is the following sentence positive or negative? Christopher enjoys music.
+A: The sentence is","[' positive', ' negative']",0
+625,"Q: Is the following sentence positive or negative? Christopher does not enjoy music.
+A: The sentence is","[' positive', ' negative']",1
+626,"Q: What is the sentiment of this sentence? Christopher enjoys music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+627,"Q: What is the sentiment of this sentence? Christopher does not enjoy music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+628,"Q: Is the sentiment of this sentence positive or negative? Christopher enjoys music.
+A: The sentence is","[' positive', ' negative']",0
+629,"Q: Is the sentiment of this sentence positive or negative? Christopher does not enjoy music.
+A: The sentence is","[' positive', ' negative']",1
+630,"Q: Classify the sentiment of this sentence as positive or negative: Christopher enjoys modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+631,"Q: Classify the sentiment of this sentence as positive or negative: Christopher does not enjoy modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+632,"Q: Classify the sentiment of this sentence as positive or negative: Christopher enjoys modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+633,"Q: Classify the sentiment of this sentence as positive or negative: Christopher does not enjoy modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+634,"Q: Is the following sentence positive or negative? Christopher enjoys modern art.
+A: The sentence is","[' positive', ' negative']",0
+635,"Q: Is the following sentence positive or negative? Christopher does not enjoy modern art.
+A: The sentence is","[' positive', ' negative']",1
+636,"Q: What is the sentiment of this sentence? Christopher enjoys modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+637,"Q: What is the sentiment of this sentence? Christopher does not enjoy modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+638,"Q: Is the sentiment of this sentence positive or negative? Christopher enjoys modern art.
+A: The sentence is","[' positive', ' negative']",0
+639,"Q: Is the sentiment of this sentence positive or negative? Christopher does not enjoy modern art.
+A: The sentence is","[' positive', ' negative']",1
+640,"Q: Classify the sentiment of this sentence as positive or negative: Christopher enjoys math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+641,"Q: Classify the sentiment of this sentence as positive or negative: Christopher does not enjoy math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+642,"Q: Classify the sentiment of this sentence as positive or negative: Christopher enjoys math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+643,"Q: Classify the sentiment of this sentence as positive or negative: Christopher does not enjoy math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+644,"Q: Is the following sentence positive or negative? Christopher enjoys math.
+A: The sentence is","[' positive', ' negative']",0
+645,"Q: Is the following sentence positive or negative? Christopher does not enjoy math.
+A: The sentence is","[' positive', ' negative']",1
+646,"Q: What is the sentiment of this sentence? Christopher enjoys math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+647,"Q: What is the sentiment of this sentence? Christopher does not enjoy math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+648,"Q: Is the sentiment of this sentence positive or negative? Christopher enjoys math.
+A: The sentence is","[' positive', ' negative']",0
+649,"Q: Is the sentiment of this sentence positive or negative? Christopher does not enjoy math.
+A: The sentence is","[' positive', ' negative']",1
+650,"Q: Classify the sentiment of this sentence as positive or negative: Christopher adores running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+651,"Q: Classify the sentiment of this sentence as positive or negative: Christopher abhors running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+652,"Q: Classify the sentiment of this sentence as positive or negative: Christopher adores running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+653,"Q: Classify the sentiment of this sentence as positive or negative: Christopher abhors running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+654,"Q: Is the following sentence positive or negative? Christopher adores running.
+A: The sentence is","[' positive', ' negative']",0
+655,"Q: Is the following sentence positive or negative? Christopher abhors running.
+A: The sentence is","[' positive', ' negative']",1
+656,"Q: What is the sentiment of this sentence? Christopher adores running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+657,"Q: What is the sentiment of this sentence? Christopher abhors running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+658,"Q: Is the sentiment of this sentence positive or negative? Christopher adores running.
+A: The sentence is","[' positive', ' negative']",0
+659,"Q: Is the sentiment of this sentence positive or negative? Christopher abhors running.
+A: The sentence is","[' positive', ' negative']",1
+660,"Q: Classify the sentiment of this sentence as positive or negative: Christopher adores being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+661,"Q: Classify the sentiment of this sentence as positive or negative: Christopher abhors being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+662,"Q: Classify the sentiment of this sentence as positive or negative: Christopher adores being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+663,"Q: Classify the sentiment of this sentence as positive or negative: Christopher abhors being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+664,"Q: Is the following sentence positive or negative? Christopher adores being outside.
+A: The sentence is","[' positive', ' negative']",0
+665,"Q: Is the following sentence positive or negative? Christopher abhors being outside.
+A: The sentence is","[' positive', ' negative']",1
+666,"Q: What is the sentiment of this sentence? Christopher adores being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+667,"Q: What is the sentiment of this sentence? Christopher abhors being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+668,"Q: Is the sentiment of this sentence positive or negative? Christopher adores being outside.
+A: The sentence is","[' positive', ' negative']",0
+669,"Q: Is the sentiment of this sentence positive or negative? Christopher abhors being outside.
+A: The sentence is","[' positive', ' negative']",1
+670,"Q: Classify the sentiment of this sentence as positive or negative: Christopher adores music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+671,"Q: Classify the sentiment of this sentence as positive or negative: Christopher abhors music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+672,"Q: Classify the sentiment of this sentence as positive or negative: Christopher adores music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+673,"Q: Classify the sentiment of this sentence as positive or negative: Christopher abhors music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+674,"Q: Is the following sentence positive or negative? Christopher adores music.
+A: The sentence is","[' positive', ' negative']",0
+675,"Q: Is the following sentence positive or negative? Christopher abhors music.
+A: The sentence is","[' positive', ' negative']",1
+676,"Q: What is the sentiment of this sentence? Christopher adores music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+677,"Q: What is the sentiment of this sentence? Christopher abhors music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+678,"Q: Is the sentiment of this sentence positive or negative? Christopher adores music.
+A: The sentence is","[' positive', ' negative']",0
+679,"Q: Is the sentiment of this sentence positive or negative? Christopher abhors music.
+A: The sentence is","[' positive', ' negative']",1
+680,"Q: Classify the sentiment of this sentence as positive or negative: Christopher adores modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+681,"Q: Classify the sentiment of this sentence as positive or negative: Christopher abhors modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+682,"Q: Classify the sentiment of this sentence as positive or negative: Christopher adores modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+683,"Q: Classify the sentiment of this sentence as positive or negative: Christopher abhors modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+684,"Q: Is the following sentence positive or negative? Christopher adores modern art.
+A: The sentence is","[' positive', ' negative']",0
+685,"Q: Is the following sentence positive or negative? Christopher abhors modern art.
+A: The sentence is","[' positive', ' negative']",1
+686,"Q: What is the sentiment of this sentence? Christopher adores modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+687,"Q: What is the sentiment of this sentence? Christopher abhors modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+688,"Q: Is the sentiment of this sentence positive or negative? Christopher adores modern art.
+A: The sentence is","[' positive', ' negative']",0
+689,"Q: Is the sentiment of this sentence positive or negative? Christopher abhors modern art.
+A: The sentence is","[' positive', ' negative']",1
+690,"Q: Classify the sentiment of this sentence as positive or negative: Christopher adores math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+691,"Q: Classify the sentiment of this sentence as positive or negative: Christopher abhors math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+692,"Q: Classify the sentiment of this sentence as positive or negative: Christopher adores math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+693,"Q: Classify the sentiment of this sentence as positive or negative: Christopher abhors math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+694,"Q: Is the following sentence positive or negative? Christopher adores math.
+A: The sentence is","[' positive', ' negative']",0
+695,"Q: Is the following sentence positive or negative? Christopher abhors math.
+A: The sentence is","[' positive', ' negative']",1
+696,"Q: What is the sentiment of this sentence? Christopher adores math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+697,"Q: What is the sentiment of this sentence? Christopher abhors math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+698,"Q: Is the sentiment of this sentence positive or negative? Christopher adores math.
+A: The sentence is","[' positive', ' negative']",0
+699,"Q: Is the sentiment of this sentence positive or negative? Christopher abhors math.
+A: The sentence is","[' positive', ' negative']",1
+700,"Q: Classify the sentiment of this sentence as positive or negative: Christopher appreciates running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+701,"Q: Classify the sentiment of this sentence as positive or negative: Christopher does not appreciate running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+702,"Q: Classify the sentiment of this sentence as positive or negative: Christopher appreciates running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+703,"Q: Classify the sentiment of this sentence as positive or negative: Christopher does not appreciate running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+704,"Q: Is the following sentence positive or negative? Christopher appreciates running.
+A: The sentence is","[' positive', ' negative']",0
+705,"Q: Is the following sentence positive or negative? Christopher does not appreciate running.
+A: The sentence is","[' positive', ' negative']",1
+706,"Q: What is the sentiment of this sentence? Christopher appreciates running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+707,"Q: What is the sentiment of this sentence? Christopher does not appreciate running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+708,"Q: Is the sentiment of this sentence positive or negative? Christopher appreciates running.
+A: The sentence is","[' positive', ' negative']",0
+709,"Q: Is the sentiment of this sentence positive or negative? Christopher does not appreciate running.
+A: The sentence is","[' positive', ' negative']",1
+710,"Q: Classify the sentiment of this sentence as positive or negative: Christopher appreciates being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+711,"Q: Classify the sentiment of this sentence as positive or negative: Christopher does not appreciate being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+712,"Q: Classify the sentiment of this sentence as positive or negative: Christopher appreciates being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+713,"Q: Classify the sentiment of this sentence as positive or negative: Christopher does not appreciate being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+714,"Q: Is the following sentence positive or negative? Christopher appreciates being outside.
+A: The sentence is","[' positive', ' negative']",0
+715,"Q: Is the following sentence positive or negative? Christopher does not appreciate being outside.
+A: The sentence is","[' positive', ' negative']",1
+716,"Q: What is the sentiment of this sentence? Christopher appreciates being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+717,"Q: What is the sentiment of this sentence? Christopher does not appreciate being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+718,"Q: Is the sentiment of this sentence positive or negative? Christopher appreciates being outside.
+A: The sentence is","[' positive', ' negative']",0
+719,"Q: Is the sentiment of this sentence positive or negative? Christopher does not appreciate being outside.
+A: The sentence is","[' positive', ' negative']",1
+720,"Q: Classify the sentiment of this sentence as positive or negative: Christopher appreciates music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+721,"Q: Classify the sentiment of this sentence as positive or negative: Christopher does not appreciate music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+722,"Q: Classify the sentiment of this sentence as positive or negative: Christopher appreciates music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+723,"Q: Classify the sentiment of this sentence as positive or negative: Christopher does not appreciate music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+724,"Q: Is the following sentence positive or negative? Christopher appreciates music.
+A: The sentence is","[' positive', ' negative']",0
+725,"Q: Is the following sentence positive or negative? Christopher does not appreciate music.
+A: The sentence is","[' positive', ' negative']",1
+726,"Q: What is the sentiment of this sentence? Christopher appreciates music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+727,"Q: What is the sentiment of this sentence? Christopher does not appreciate music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+728,"Q: Is the sentiment of this sentence positive or negative? Christopher appreciates music.
+A: The sentence is","[' positive', ' negative']",0
+729,"Q: Is the sentiment of this sentence positive or negative? Christopher does not appreciate music.
+A: The sentence is","[' positive', ' negative']",1
+730,"Q: Classify the sentiment of this sentence as positive or negative: Christopher appreciates modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+731,"Q: Classify the sentiment of this sentence as positive or negative: Christopher does not appreciate modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+732,"Q: Classify the sentiment of this sentence as positive or negative: Christopher appreciates modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+733,"Q: Classify the sentiment of this sentence as positive or negative: Christopher does not appreciate modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+734,"Q: Is the following sentence positive or negative? Christopher appreciates modern art.
+A: The sentence is","[' positive', ' negative']",0
+735,"Q: Is the following sentence positive or negative? Christopher does not appreciate modern art.
+A: The sentence is","[' positive', ' negative']",1
+736,"Q: What is the sentiment of this sentence? Christopher appreciates modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+737,"Q: What is the sentiment of this sentence? Christopher does not appreciate modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+738,"Q: Is the sentiment of this sentence positive or negative? Christopher appreciates modern art.
+A: The sentence is","[' positive', ' negative']",0
+739,"Q: Is the sentiment of this sentence positive or negative? Christopher does not appreciate modern art.
+A: The sentence is","[' positive', ' negative']",1
+740,"Q: Classify the sentiment of this sentence as positive or negative: Christopher appreciates math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+741,"Q: Classify the sentiment of this sentence as positive or negative: Christopher does not appreciate math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+742,"Q: Classify the sentiment of this sentence as positive or negative: Christopher appreciates math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+743,"Q: Classify the sentiment of this sentence as positive or negative: Christopher does not appreciate math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+744,"Q: Is the following sentence positive or negative? Christopher appreciates math.
+A: The sentence is","[' positive', ' negative']",0
+745,"Q: Is the following sentence positive or negative? Christopher does not appreciate math.
+A: The sentence is","[' positive', ' negative']",1
+746,"Q: What is the sentiment of this sentence? Christopher appreciates math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+747,"Q: What is the sentiment of this sentence? Christopher does not appreciate math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+748,"Q: Is the sentiment of this sentence positive or negative? Christopher appreciates math.
+A: The sentence is","[' positive', ' negative']",0
+749,"Q: Is the sentiment of this sentence positive or negative? Christopher does not appreciate math.
+A: The sentence is","[' positive', ' negative']",1
+750,"Q: Classify the sentiment of this sentence as positive or negative: Ashley loves running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+751,"Q: Classify the sentiment of this sentence as positive or negative: Ashley hates running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+752,"Q: Classify the sentiment of this sentence as positive or negative: Ashley loves running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+753,"Q: Classify the sentiment of this sentence as positive or negative: Ashley hates running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+754,"Q: Is the following sentence positive or negative? Ashley loves running.
+A: The sentence is","[' positive', ' negative']",0
+755,"Q: Is the following sentence positive or negative? Ashley hates running.
+A: The sentence is","[' positive', ' negative']",1
+756,"Q: What is the sentiment of this sentence? Ashley loves running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+757,"Q: What is the sentiment of this sentence? Ashley hates running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+758,"Q: Is the sentiment of this sentence positive or negative? Ashley loves running.
+A: The sentence is","[' positive', ' negative']",0
+759,"Q: Is the sentiment of this sentence positive or negative? Ashley hates running.
+A: The sentence is","[' positive', ' negative']",1
+760,"Q: Classify the sentiment of this sentence as positive or negative: Ashley loves being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+761,"Q: Classify the sentiment of this sentence as positive or negative: Ashley hates being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+762,"Q: Classify the sentiment of this sentence as positive or negative: Ashley loves being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+763,"Q: Classify the sentiment of this sentence as positive or negative: Ashley hates being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+764,"Q: Is the following sentence positive or negative? Ashley loves being outside.
+A: The sentence is","[' positive', ' negative']",0
+765,"Q: Is the following sentence positive or negative? Ashley hates being outside.
+A: The sentence is","[' positive', ' negative']",1
+766,"Q: What is the sentiment of this sentence? Ashley loves being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+767,"Q: What is the sentiment of this sentence? Ashley hates being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+768,"Q: Is the sentiment of this sentence positive or negative? Ashley loves being outside.
+A: The sentence is","[' positive', ' negative']",0
+769,"Q: Is the sentiment of this sentence positive or negative? Ashley hates being outside.
+A: The sentence is","[' positive', ' negative']",1
+770,"Q: Classify the sentiment of this sentence as positive or negative: Ashley loves music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+771,"Q: Classify the sentiment of this sentence as positive or negative: Ashley hates music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+772,"Q: Classify the sentiment of this sentence as positive or negative: Ashley loves music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+773,"Q: Classify the sentiment of this sentence as positive or negative: Ashley hates music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+774,"Q: Is the following sentence positive or negative? Ashley loves music.
+A: The sentence is","[' positive', ' negative']",0
+775,"Q: Is the following sentence positive or negative? Ashley hates music.
+A: The sentence is","[' positive', ' negative']",1
+776,"Q: What is the sentiment of this sentence? Ashley loves music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+777,"Q: What is the sentiment of this sentence? Ashley hates music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+778,"Q: Is the sentiment of this sentence positive or negative? Ashley loves music.
+A: The sentence is","[' positive', ' negative']",0
+779,"Q: Is the sentiment of this sentence positive or negative? Ashley hates music.
+A: The sentence is","[' positive', ' negative']",1
+780,"Q: Classify the sentiment of this sentence as positive or negative: Ashley loves modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+781,"Q: Classify the sentiment of this sentence as positive or negative: Ashley hates modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+782,"Q: Classify the sentiment of this sentence as positive or negative: Ashley loves modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+783,"Q: Classify the sentiment of this sentence as positive or negative: Ashley hates modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+784,"Q: Is the following sentence positive or negative? Ashley loves modern art.
+A: The sentence is","[' positive', ' negative']",0
+785,"Q: Is the following sentence positive or negative? Ashley hates modern art.
+A: The sentence is","[' positive', ' negative']",1
+786,"Q: What is the sentiment of this sentence? Ashley loves modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+787,"Q: What is the sentiment of this sentence? Ashley hates modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+788,"Q: Is the sentiment of this sentence positive or negative? Ashley loves modern art.
+A: The sentence is","[' positive', ' negative']",0
+789,"Q: Is the sentiment of this sentence positive or negative? Ashley hates modern art.
+A: The sentence is","[' positive', ' negative']",1
+790,"Q: Classify the sentiment of this sentence as positive or negative: Ashley loves math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+791,"Q: Classify the sentiment of this sentence as positive or negative: Ashley hates math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+792,"Q: Classify the sentiment of this sentence as positive or negative: Ashley loves math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+793,"Q: Classify the sentiment of this sentence as positive or negative: Ashley hates math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+794,"Q: Is the following sentence positive or negative? Ashley loves math.
+A: The sentence is","[' positive', ' negative']",0
+795,"Q: Is the following sentence positive or negative? Ashley hates math.
+A: The sentence is","[' positive', ' negative']",1
+796,"Q: What is the sentiment of this sentence? Ashley loves math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+797,"Q: What is the sentiment of this sentence? Ashley hates math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+798,"Q: Is the sentiment of this sentence positive or negative? Ashley loves math.
+A: The sentence is","[' positive', ' negative']",0
+799,"Q: Is the sentiment of this sentence positive or negative? Ashley hates math.
+A: The sentence is","[' positive', ' negative']",1
+800,"Q: Classify the sentiment of this sentence as positive or negative: Ashley likes running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+801,"Q: Classify the sentiment of this sentence as positive or negative: Ashley dislikes running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+802,"Q: Classify the sentiment of this sentence as positive or negative: Ashley likes running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+803,"Q: Classify the sentiment of this sentence as positive or negative: Ashley dislikes running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+804,"Q: Is the following sentence positive or negative? Ashley likes running.
+A: The sentence is","[' positive', ' negative']",0
+805,"Q: Is the following sentence positive or negative? Ashley dislikes running.
+A: The sentence is","[' positive', ' negative']",1
+806,"Q: What is the sentiment of this sentence? Ashley likes running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+807,"Q: What is the sentiment of this sentence? Ashley dislikes running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+808,"Q: Is the sentiment of this sentence positive or negative? Ashley likes running.
+A: The sentence is","[' positive', ' negative']",0
+809,"Q: Is the sentiment of this sentence positive or negative? Ashley dislikes running.
+A: The sentence is","[' positive', ' negative']",1
+810,"Q: Classify the sentiment of this sentence as positive or negative: Ashley likes being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+811,"Q: Classify the sentiment of this sentence as positive or negative: Ashley dislikes being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+812,"Q: Classify the sentiment of this sentence as positive or negative: Ashley likes being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+813,"Q: Classify the sentiment of this sentence as positive or negative: Ashley dislikes being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+814,"Q: Is the following sentence positive or negative? Ashley likes being outside.
+A: The sentence is","[' positive', ' negative']",0
+815,"Q: Is the following sentence positive or negative? Ashley dislikes being outside.
+A: The sentence is","[' positive', ' negative']",1
+816,"Q: What is the sentiment of this sentence? Ashley likes being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+817,"Q: What is the sentiment of this sentence? Ashley dislikes being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+818,"Q: Is the sentiment of this sentence positive or negative? Ashley likes being outside.
+A: The sentence is","[' positive', ' negative']",0
+819,"Q: Is the sentiment of this sentence positive or negative? Ashley dislikes being outside.
+A: The sentence is","[' positive', ' negative']",1
+820,"Q: Classify the sentiment of this sentence as positive or negative: Ashley likes music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+821,"Q: Classify the sentiment of this sentence as positive or negative: Ashley dislikes music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+822,"Q: Classify the sentiment of this sentence as positive or negative: Ashley likes music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+823,"Q: Classify the sentiment of this sentence as positive or negative: Ashley dislikes music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+824,"Q: Is the following sentence positive or negative? Ashley likes music.
+A: The sentence is","[' positive', ' negative']",0
+825,"Q: Is the following sentence positive or negative? Ashley dislikes music.
+A: The sentence is","[' positive', ' negative']",1
+826,"Q: What is the sentiment of this sentence? Ashley likes music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+827,"Q: What is the sentiment of this sentence? Ashley dislikes music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+828,"Q: Is the sentiment of this sentence positive or negative? Ashley likes music.
+A: The sentence is","[' positive', ' negative']",0
+829,"Q: Is the sentiment of this sentence positive or negative? Ashley dislikes music.
+A: The sentence is","[' positive', ' negative']",1
+830,"Q: Classify the sentiment of this sentence as positive or negative: Ashley likes modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+831,"Q: Classify the sentiment of this sentence as positive or negative: Ashley dislikes modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+832,"Q: Classify the sentiment of this sentence as positive or negative: Ashley likes modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+833,"Q: Classify the sentiment of this sentence as positive or negative: Ashley dislikes modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+834,"Q: Is the following sentence positive or negative? Ashley likes modern art.
+A: The sentence is","[' positive', ' negative']",0
+835,"Q: Is the following sentence positive or negative? Ashley dislikes modern art.
+A: The sentence is","[' positive', ' negative']",1
+836,"Q: What is the sentiment of this sentence? Ashley likes modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+837,"Q: What is the sentiment of this sentence? Ashley dislikes modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+838,"Q: Is the sentiment of this sentence positive or negative? Ashley likes modern art.
+A: The sentence is","[' positive', ' negative']",0
+839,"Q: Is the sentiment of this sentence positive or negative? Ashley dislikes modern art.
+A: The sentence is","[' positive', ' negative']",1
+840,"Q: Classify the sentiment of this sentence as positive or negative: Ashley likes math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+841,"Q: Classify the sentiment of this sentence as positive or negative: Ashley dislikes math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+842,"Q: Classify the sentiment of this sentence as positive or negative: Ashley likes math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+843,"Q: Classify the sentiment of this sentence as positive or negative: Ashley dislikes math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+844,"Q: Is the following sentence positive or negative? Ashley likes math.
+A: The sentence is","[' positive', ' negative']",0
+845,"Q: Is the following sentence positive or negative? Ashley dislikes math.
+A: The sentence is","[' positive', ' negative']",1
+846,"Q: What is the sentiment of this sentence? Ashley likes math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+847,"Q: What is the sentiment of this sentence? Ashley dislikes math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+848,"Q: Is the sentiment of this sentence positive or negative? Ashley likes math.
+A: The sentence is","[' positive', ' negative']",0
+849,"Q: Is the sentiment of this sentence positive or negative? Ashley dislikes math.
+A: The sentence is","[' positive', ' negative']",1
+850,"Q: Classify the sentiment of this sentence as positive or negative: Ashley enjoys running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+851,"Q: Classify the sentiment of this sentence as positive or negative: Ashley does not enjoy running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+852,"Q: Classify the sentiment of this sentence as positive or negative: Ashley enjoys running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+853,"Q: Classify the sentiment of this sentence as positive or negative: Ashley does not enjoy running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+854,"Q: Is the following sentence positive or negative? Ashley enjoys running.
+A: The sentence is","[' positive', ' negative']",0
+855,"Q: Is the following sentence positive or negative? Ashley does not enjoy running.
+A: The sentence is","[' positive', ' negative']",1
+856,"Q: What is the sentiment of this sentence? Ashley enjoys running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+857,"Q: What is the sentiment of this sentence? Ashley does not enjoy running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+858,"Q: Is the sentiment of this sentence positive or negative? Ashley enjoys running.
+A: The sentence is","[' positive', ' negative']",0
+859,"Q: Is the sentiment of this sentence positive or negative? Ashley does not enjoy running.
+A: The sentence is","[' positive', ' negative']",1
+860,"Q: Classify the sentiment of this sentence as positive or negative: Ashley enjoys being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+861,"Q: Classify the sentiment of this sentence as positive or negative: Ashley does not enjoy being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+862,"Q: Classify the sentiment of this sentence as positive or negative: Ashley enjoys being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+863,"Q: Classify the sentiment of this sentence as positive or negative: Ashley does not enjoy being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+864,"Q: Is the following sentence positive or negative? Ashley enjoys being outside.
+A: The sentence is","[' positive', ' negative']",0
+865,"Q: Is the following sentence positive or negative? Ashley does not enjoy being outside.
+A: The sentence is","[' positive', ' negative']",1
+866,"Q: What is the sentiment of this sentence? Ashley enjoys being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+867,"Q: What is the sentiment of this sentence? Ashley does not enjoy being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+868,"Q: Is the sentiment of this sentence positive or negative? Ashley enjoys being outside.
+A: The sentence is","[' positive', ' negative']",0
+869,"Q: Is the sentiment of this sentence positive or negative? Ashley does not enjoy being outside.
+A: The sentence is","[' positive', ' negative']",1
+870,"Q: Classify the sentiment of this sentence as positive or negative: Ashley enjoys music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+871,"Q: Classify the sentiment of this sentence as positive or negative: Ashley does not enjoy music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+872,"Q: Classify the sentiment of this sentence as positive or negative: Ashley enjoys music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+873,"Q: Classify the sentiment of this sentence as positive or negative: Ashley does not enjoy music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+874,"Q: Is the following sentence positive or negative? Ashley enjoys music.
+A: The sentence is","[' positive', ' negative']",0
+875,"Q: Is the following sentence positive or negative? Ashley does not enjoy music.
+A: The sentence is","[' positive', ' negative']",1
+876,"Q: What is the sentiment of this sentence? Ashley enjoys music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+877,"Q: What is the sentiment of this sentence? Ashley does not enjoy music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+878,"Q: Is the sentiment of this sentence positive or negative? Ashley enjoys music.
+A: The sentence is","[' positive', ' negative']",0
+879,"Q: Is the sentiment of this sentence positive or negative? Ashley does not enjoy music.
+A: The sentence is","[' positive', ' negative']",1
+880,"Q: Classify the sentiment of this sentence as positive or negative: Ashley enjoys modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+881,"Q: Classify the sentiment of this sentence as positive or negative: Ashley does not enjoy modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+882,"Q: Classify the sentiment of this sentence as positive or negative: Ashley enjoys modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+883,"Q: Classify the sentiment of this sentence as positive or negative: Ashley does not enjoy modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+884,"Q: Is the following sentence positive or negative? Ashley enjoys modern art.
+A: The sentence is","[' positive', ' negative']",0
+885,"Q: Is the following sentence positive or negative? Ashley does not enjoy modern art.
+A: The sentence is","[' positive', ' negative']",1
+886,"Q: What is the sentiment of this sentence? Ashley enjoys modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+887,"Q: What is the sentiment of this sentence? Ashley does not enjoy modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+888,"Q: Is the sentiment of this sentence positive or negative? Ashley enjoys modern art.
+A: The sentence is","[' positive', ' negative']",0
+889,"Q: Is the sentiment of this sentence positive or negative? Ashley does not enjoy modern art.
+A: The sentence is","[' positive', ' negative']",1
+890,"Q: Classify the sentiment of this sentence as positive or negative: Ashley enjoys math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+891,"Q: Classify the sentiment of this sentence as positive or negative: Ashley does not enjoy math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+892,"Q: Classify the sentiment of this sentence as positive or negative: Ashley enjoys math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+893,"Q: Classify the sentiment of this sentence as positive or negative: Ashley does not enjoy math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+894,"Q: Is the following sentence positive or negative? Ashley enjoys math.
+A: The sentence is","[' positive', ' negative']",0
+895,"Q: Is the following sentence positive or negative? Ashley does not enjoy math.
+A: The sentence is","[' positive', ' negative']",1
+896,"Q: What is the sentiment of this sentence? Ashley enjoys math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+897,"Q: What is the sentiment of this sentence? Ashley does not enjoy math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+898,"Q: Is the sentiment of this sentence positive or negative? Ashley enjoys math.
+A: The sentence is","[' positive', ' negative']",0
+899,"Q: Is the sentiment of this sentence positive or negative? Ashley does not enjoy math.
+A: The sentence is","[' positive', ' negative']",1
+900,"Q: Classify the sentiment of this sentence as positive or negative: Ashley adores running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+901,"Q: Classify the sentiment of this sentence as positive or negative: Ashley abhors running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+902,"Q: Classify the sentiment of this sentence as positive or negative: Ashley adores running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+903,"Q: Classify the sentiment of this sentence as positive or negative: Ashley abhors running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+904,"Q: Is the following sentence positive or negative? Ashley adores running.
+A: The sentence is","[' positive', ' negative']",0
+905,"Q: Is the following sentence positive or negative? Ashley abhors running.
+A: The sentence is","[' positive', ' negative']",1
+906,"Q: What is the sentiment of this sentence? Ashley adores running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+907,"Q: What is the sentiment of this sentence? Ashley abhors running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+908,"Q: Is the sentiment of this sentence positive or negative? Ashley adores running.
+A: The sentence is","[' positive', ' negative']",0
+909,"Q: Is the sentiment of this sentence positive or negative? Ashley abhors running.
+A: The sentence is","[' positive', ' negative']",1
+910,"Q: Classify the sentiment of this sentence as positive or negative: Ashley adores being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+911,"Q: Classify the sentiment of this sentence as positive or negative: Ashley abhors being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+912,"Q: Classify the sentiment of this sentence as positive or negative: Ashley adores being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+913,"Q: Classify the sentiment of this sentence as positive or negative: Ashley abhors being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+914,"Q: Is the following sentence positive or negative? Ashley adores being outside.
+A: The sentence is","[' positive', ' negative']",0
+915,"Q: Is the following sentence positive or negative? Ashley abhors being outside.
+A: The sentence is","[' positive', ' negative']",1
+916,"Q: What is the sentiment of this sentence? Ashley adores being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+917,"Q: What is the sentiment of this sentence? Ashley abhors being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+918,"Q: Is the sentiment of this sentence positive or negative? Ashley adores being outside.
+A: The sentence is","[' positive', ' negative']",0
+919,"Q: Is the sentiment of this sentence positive or negative? Ashley abhors being outside.
+A: The sentence is","[' positive', ' negative']",1
+920,"Q: Classify the sentiment of this sentence as positive or negative: Ashley adores music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+921,"Q: Classify the sentiment of this sentence as positive or negative: Ashley abhors music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+922,"Q: Classify the sentiment of this sentence as positive or negative: Ashley adores music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+923,"Q: Classify the sentiment of this sentence as positive or negative: Ashley abhors music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+924,"Q: Is the following sentence positive or negative? Ashley adores music.
+A: The sentence is","[' positive', ' negative']",0
+925,"Q: Is the following sentence positive or negative? Ashley abhors music.
+A: The sentence is","[' positive', ' negative']",1
+926,"Q: What is the sentiment of this sentence? Ashley adores music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+927,"Q: What is the sentiment of this sentence? Ashley abhors music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+928,"Q: Is the sentiment of this sentence positive or negative? Ashley adores music.
+A: The sentence is","[' positive', ' negative']",0
+929,"Q: Is the sentiment of this sentence positive or negative? Ashley abhors music.
+A: The sentence is","[' positive', ' negative']",1
+930,"Q: Classify the sentiment of this sentence as positive or negative: Ashley adores modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+931,"Q: Classify the sentiment of this sentence as positive or negative: Ashley abhors modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+932,"Q: Classify the sentiment of this sentence as positive or negative: Ashley adores modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+933,"Q: Classify the sentiment of this sentence as positive or negative: Ashley abhors modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+934,"Q: Is the following sentence positive or negative? Ashley adores modern art.
+A: The sentence is","[' positive', ' negative']",0
+935,"Q: Is the following sentence positive or negative? Ashley abhors modern art.
+A: The sentence is","[' positive', ' negative']",1
+936,"Q: What is the sentiment of this sentence? Ashley adores modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+937,"Q: What is the sentiment of this sentence? Ashley abhors modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+938,"Q: Is the sentiment of this sentence positive or negative? Ashley adores modern art.
+A: The sentence is","[' positive', ' negative']",0
+939,"Q: Is the sentiment of this sentence positive or negative? Ashley abhors modern art.
+A: The sentence is","[' positive', ' negative']",1
+940,"Q: Classify the sentiment of this sentence as positive or negative: Ashley adores math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+941,"Q: Classify the sentiment of this sentence as positive or negative: Ashley abhors math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+942,"Q: Classify the sentiment of this sentence as positive or negative: Ashley adores math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+943,"Q: Classify the sentiment of this sentence as positive or negative: Ashley abhors math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+944,"Q: Is the following sentence positive or negative? Ashley adores math.
+A: The sentence is","[' positive', ' negative']",0
+945,"Q: Is the following sentence positive or negative? Ashley abhors math.
+A: The sentence is","[' positive', ' negative']",1
+946,"Q: What is the sentiment of this sentence? Ashley adores math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+947,"Q: What is the sentiment of this sentence? Ashley abhors math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+948,"Q: Is the sentiment of this sentence positive or negative? Ashley adores math.
+A: The sentence is","[' positive', ' negative']",0
+949,"Q: Is the sentiment of this sentence positive or negative? Ashley abhors math.
+A: The sentence is","[' positive', ' negative']",1
+950,"Q: Classify the sentiment of this sentence as positive or negative: Ashley appreciates running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+951,"Q: Classify the sentiment of this sentence as positive or negative: Ashley does not appreciate running.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+952,"Q: Classify the sentiment of this sentence as positive or negative: Ashley appreciates running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+953,"Q: Classify the sentiment of this sentence as positive or negative: Ashley does not appreciate running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+954,"Q: Is the following sentence positive or negative? Ashley appreciates running.
+A: The sentence is","[' positive', ' negative']",0
+955,"Q: Is the following sentence positive or negative? Ashley does not appreciate running.
+A: The sentence is","[' positive', ' negative']",1
+956,"Q: What is the sentiment of this sentence? Ashley appreciates running.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+957,"Q: What is the sentiment of this sentence? Ashley does not appreciate running.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+958,"Q: Is the sentiment of this sentence positive or negative? Ashley appreciates running.
+A: The sentence is","[' positive', ' negative']",0
+959,"Q: Is the sentiment of this sentence positive or negative? Ashley does not appreciate running.
+A: The sentence is","[' positive', ' negative']",1
+960,"Q: Classify the sentiment of this sentence as positive or negative: Ashley appreciates being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+961,"Q: Classify the sentiment of this sentence as positive or negative: Ashley does not appreciate being outside.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+962,"Q: Classify the sentiment of this sentence as positive or negative: Ashley appreciates being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+963,"Q: Classify the sentiment of this sentence as positive or negative: Ashley does not appreciate being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+964,"Q: Is the following sentence positive or negative? Ashley appreciates being outside.
+A: The sentence is","[' positive', ' negative']",0
+965,"Q: Is the following sentence positive or negative? Ashley does not appreciate being outside.
+A: The sentence is","[' positive', ' negative']",1
+966,"Q: What is the sentiment of this sentence? Ashley appreciates being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+967,"Q: What is the sentiment of this sentence? Ashley does not appreciate being outside.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+968,"Q: Is the sentiment of this sentence positive or negative? Ashley appreciates being outside.
+A: The sentence is","[' positive', ' negative']",0
+969,"Q: Is the sentiment of this sentence positive or negative? Ashley does not appreciate being outside.
+A: The sentence is","[' positive', ' negative']",1
+970,"Q: Classify the sentiment of this sentence as positive or negative: Ashley appreciates music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+971,"Q: Classify the sentiment of this sentence as positive or negative: Ashley does not appreciate music.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+972,"Q: Classify the sentiment of this sentence as positive or negative: Ashley appreciates music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+973,"Q: Classify the sentiment of this sentence as positive or negative: Ashley does not appreciate music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+974,"Q: Is the following sentence positive or negative? Ashley appreciates music.
+A: The sentence is","[' positive', ' negative']",0
+975,"Q: Is the following sentence positive or negative? Ashley does not appreciate music.
+A: The sentence is","[' positive', ' negative']",1
+976,"Q: What is the sentiment of this sentence? Ashley appreciates music.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+977,"Q: What is the sentiment of this sentence? Ashley does not appreciate music.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+978,"Q: Is the sentiment of this sentence positive or negative? Ashley appreciates music.
+A: The sentence is","[' positive', ' negative']",0
+979,"Q: Is the sentiment of this sentence positive or negative? Ashley does not appreciate music.
+A: The sentence is","[' positive', ' negative']",1
+980,"Q: Classify the sentiment of this sentence as positive or negative: Ashley appreciates modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+981,"Q: Classify the sentiment of this sentence as positive or negative: Ashley does not appreciate modern art.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+982,"Q: Classify the sentiment of this sentence as positive or negative: Ashley appreciates modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+983,"Q: Classify the sentiment of this sentence as positive or negative: Ashley does not appreciate modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+984,"Q: Is the following sentence positive or negative? Ashley appreciates modern art.
+A: The sentence is","[' positive', ' negative']",0
+985,"Q: Is the following sentence positive or negative? Ashley does not appreciate modern art.
+A: The sentence is","[' positive', ' negative']",1
+986,"Q: What is the sentiment of this sentence? Ashley appreciates modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+987,"Q: What is the sentiment of this sentence? Ashley does not appreciate modern art.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+988,"Q: Is the sentiment of this sentence positive or negative? Ashley appreciates modern art.
+A: The sentence is","[' positive', ' negative']",0
+989,"Q: Is the sentiment of this sentence positive or negative? Ashley does not appreciate modern art.
+A: The sentence is","[' positive', ' negative']",1
+990,"Q: Classify the sentiment of this sentence as positive or negative: Ashley appreciates math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",0
+991,"Q: Classify the sentiment of this sentence as positive or negative: Ashley does not appreciate math.
+A: The sentiment of the above sentence is","[' positive', ' negative']",1
+992,"Q: Classify the sentiment of this sentence as positive or negative: Ashley appreciates math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+993,"Q: Classify the sentiment of this sentence as positive or negative: Ashley does not appreciate math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+994,"Q: Is the following sentence positive or negative? Ashley appreciates math.
+A: The sentence is","[' positive', ' negative']",0
+995,"Q: Is the following sentence positive or negative? Ashley does not appreciate math.
+A: The sentence is","[' positive', ' negative']",1
+996,"Q: What is the sentiment of this sentence? Ashley appreciates math.
+A: The sentiment of the sentence is","[' positive', ' negative']",0
+997,"Q: What is the sentiment of this sentence? Ashley does not appreciate math.
+A: The sentiment of the sentence is","[' positive', ' negative']",1
+998,"Q: Is the sentiment of this sentence positive or negative? Ashley appreciates math.
+A: The sentence is","[' positive', ' negative']",0
+999,"Q: Is the sentiment of this sentence positive or negative? Ashley does not appreciate math.
+A: The sentence is","[' positive', ' negative']",1
