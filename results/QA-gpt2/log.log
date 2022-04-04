@@ -1,0 +1,4 @@
+2022-04-04 12:06:22,080 [INFO] Logging set up with args
+Namespace(batch_size=1, colab=False, dataset='QA_bias', dataset_path=None, exp_dir='QA-gpt2', models=['gpt2', 'gpt2-medium'], task_type='QA', use_gpu=True)
+2022-04-04 12:06:22,080 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-gpt2
+2022-04-04 12:06:22,080 [INFO] Copied data

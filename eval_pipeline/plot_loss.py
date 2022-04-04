@@ -133,7 +133,7 @@ def plot_numeric_loss(exp_dir: Path):
         )
     with data_file.open("r") as f:
         averages = json.load(f)
-    plot_loss(exp_dir, {"numeric": (averages, None)})
+    plot_loss(exp_dir, {"numeric": (averages, None)}, task_type="numeric")
 
 
 def plot_loss(
@@ -170,7 +170,7 @@ def plot_loss(
         else:
             xy_pairs = [(size_dict[size], loss) for size, loss in loss_dict.items()]
             xs, ys = zip(*sorted(xy_pairs, key=lambda pair: pair[0]))
-            plt.plot(xs, ys, label="f{label} examples")
+            plt.plot(xs, ys, label=f"{label} examples")
 
     labels, ticks = zip(
         *[
@@ -196,6 +196,9 @@ def plot_loss(
         plt.ylim(-0.02, 1.02)
         plt.ylabel("Accuracy")
         title = "Log plot of accuracy vs model size"
+    elif task_type == "numeric":
+        # plt.yscale("log")
+        title = "Numeric plot style"
     else:
         raise ValueError
     if invert:

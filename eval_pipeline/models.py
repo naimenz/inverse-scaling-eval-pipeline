@@ -87,6 +87,8 @@ class HFModel(Model):
             rv = self._evaluate_numeric(examples)
         elif task_type == "lambada":
             rv = self._evaluate_lambada(examples)
+        elif task_type == "QA":
+            rv = self._evaluate_QA(examples)
         return rv  # type: ignore (we cover all cases, mypy can't do logic with startswith)
 
     def _evaluate_classification(
@@ -134,6 +136,25 @@ class HFModel(Model):
             losses.append(loss.item())  # type: ignore (the sum is never empty so never just 0, always a tensor)
         return {"loss": losses}
 
+    def _evaluate_QA(
+        self,
+        examples: list[Example],
+    ) -> dict[str, Union[Sequence[float], Sequence[int]]]:
+        """QA is much like classification, except we need to compare across prompts so we just
+        compute the log odds here"""
+        prompts = [example.prompt for example in examples]
+        tokenized_inputs = self.tokenizer(
+            prompts, return_tensors="pt", truncation=True
+        ).to(self.device)
+        outputs = self.model(**tokenized_inputs)
+        # we only need the logits for the final (new) token
+        # NOTE: this may need to change if we use batch size > 1 with padding
+        logits = outputs["logits"][:, -1]
+        logodds = self._logodds_from_logits(examples, logits)
+        accuracies = self._accuracies_from_logits(examples, logits)
+        total_logprobs = self._total_logprobs_from_logits(examples, logits)
+        return {"logodds": logodds, "correct": accuracies, "total_logprob": total_logprobs}
+
     def _evaluate_numeric(self, examples: list[Example]) -> dict[str, Sequence[float]]:
         prompts = [example.prompt for example in examples]
         tokenized_inputs = self.tokenizer(
@@ -166,6 +187,26 @@ class HFModel(Model):
         else:
             raise ValueError("No valid numbers returned")
         return {"estimate": [estimate]}
+
+    def _logodds_from_logits(self, examples, logits) -> list[float]:
+        """Given examples and logits for those examples,
+        compute the binary log odds for each example"""
+        logodds_list = []
+        for i, example in enumerate(examples):
+            example_logits = logits[i]
+            # have to flatten this list for some reason
+            class_tokens = [
+                token[0] for token in self.tokenizer(list(example.classes))["input_ids"]
+            ]
+            # log_softmax just subtracts a constant, so repeated applications change nothing
+            # and there is no point in taking logprobs before focusing on the relevant indices
+            relevant_logits = example_logits[class_tokens]
+            logprobs = -F.log_softmax(relevant_logits, dim=-1)
+            # NOTE: assuming always binary 
+            assert len(logprobs) == 2
+            logodds = logprobs[0] - logprobs[1] 
+            logodds_list.append(logodds.item())
+        return logodds_list
 
     def _losses_from_logits(self, examples, logits) -> list[float]:
         """Given examples and logits for those examples,
@@ -234,6 +275,9 @@ class GPT3Model(Model):
         elif task_type == "lambada":
             lambada_examples = cast("list[LambadaExample]", examples)
             rv = self._evaluate_lambada(lambada_examples)
+        elif task_type == "QA":
+            classification_examples = cast("list[ClassificationExample]", examples)
+            rv = self._evaluate_QA(classification_examples)
         return rv
 
     def _evaluate_classification(
@@ -273,6 +317,44 @@ class GPT3Model(Model):
             label_correct = int(np.argmax(relevant_logprobs) == example.answer_index)
             labels_correct.append(label_correct)
         return {"loss": losses, "correct": labels_correct, "total_logprob": total_logprobs}
+
+    def _evaluate_QA(
+        self,
+        examples: list[ClassificationExample],
+    ) -> dict[str, Union[Sequence[float], Sequence[int]]]:
+        prompts = [example.prompt for example in examples]
+        api_params = APIParameters(
+            temperature=0,
+            n=1,
+            max_tokens=1,
+            logprobs=100,
+        )
+        response_json = call_api(prompts, self.model_name, api_params).json()
+        logodds_list = []
+        labels_correct = []
+        total_logprobs = []
+        choices = response_json["choices"]
+        for i, example in enumerate(examples):
+            logprobs = choices[i]["logprobs"]["top_logprobs"][0]
+            try:
+                relevant_logprobs = torch.Tensor([logprobs.get(c) for c in example.classes])
+            except TypeError:
+                global error_count
+                logging.info(f"error_count = {error_count}")
+                logging.info(example)
+                logging.info(logprobs)
+                # not raising an error, just moving on to the next example
+                error_count += 1
+                continue
+
+            logodds = relevant_logprobs[0] - relevant_logprobs[1]
+            logodds_list.append(logodds.item())
+            total_logprob = torch.logsumexp(relevant_logprobs, dim=-1)
+            total_logprobs.append(total_logprob.item())
+
+            label_correct = int(np.argmax(relevant_logprobs) == example.answer_index)
+            labels_correct.append(label_correct)
+        return {"logodds": logodds_list, "correct": labels_correct, "total_logprob": total_logprobs}
 
     def _evaluate_lambada(self, examples: list[LambadaExample]) -> dict[str, Union[Sequence[float], Sequence[int]]]:
         prompts = [example.prompt for example in examples]

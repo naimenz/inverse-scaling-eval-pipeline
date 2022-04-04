@@ -83,6 +83,9 @@ def load_data(dataset_path: Path, task_type: TaskType) -> Dataset:
         dataset = Dataset.numeric_from_df(df)
     elif task_type == "lambada":
         dataset = Dataset.lambada_from_df(df)
+    elif task_type == "QA":
+        # we can just reuse the classification dataset
+        dataset = Dataset.classification_from_df(df)
     return dataset  # type: ignore (classification is covered)
 
 
@@ -104,8 +107,11 @@ def run_model(
         field_names = ["index", "loss"]
     elif task_type == "numeric":
         field_names = ["index", "estimate"]
+    elif task_type == "QA":
+        field_names = ["index", "logodds", "correct", "total_logprob"]
     else:
         raise ValueError(f"unknown task type {task_type}")
+
     with write_path.open("w") as outfile:
         writer = csv.DictWriter(outfile, fieldnames=field_names)
         writer.writeheader()
@@ -200,7 +206,7 @@ def parse_args(args):
         type=str,
         help="The type of output expected for the dataset",
         default="classification",
-        choices=["classification", "numeric", "lambada"],
+        choices=["classification", "numeric", "lambada", "QA"],
     )
     args = parser.parse_args(args)
     return args
