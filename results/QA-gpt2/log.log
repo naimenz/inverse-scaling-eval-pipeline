@@ -1,4 +1,12 @@
-2022-04-04 12:06:22,080 [INFO] Logging set up with args
-Namespace(batch_size=1, colab=False, dataset='QA_bias', dataset_path=None, exp_dir='QA-gpt2', models=['gpt2', 'gpt2-medium'], task_type='QA', use_gpu=True)
-2022-04-04 12:06:22,080 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-gpt2
-2022-04-04 12:06:22,080 [INFO] Copied data
+2022-04-04 16:54:05,237 [INFO] Logging set up with args
+Namespace(dataset='QA_bias', dataset_path=None, exp_dir='/scratch/im2480/QA-gpt2', models=['gpt2', 'gpt2-medium', 'gpt2-large', 'gpt2-xl'], use_gpu=True, colab=False, batch_size=1, task_type='classification')
+2022-04-04 16:54:05,237 [INFO] Saving to results to /scratch/im2480/QA-gpt2
+2022-04-04 16:54:05,239 [INFO] Copied data
+2022-04-04 17:00:17,692 [INFO] Logging set up with args
+Namespace(dataset='QA_bias', dataset_path=None, exp_dir='/scratch/im2480/QA-gpt2', models=['gpt2', 'gpt2-medium', 'gpt2-large', 'gpt2-xl'], use_gpu=True, colab=False, batch_size=1, task_type='classification')
+2022-04-04 17:00:17,693 [INFO] Saving to results to /scratch/im2480/QA-gpt2
+2022-04-04 17:00:17,696 [INFO] Copied data
+2022-04-04 17:06:38,346 [INFO] Logging set up with args
+Namespace(dataset='QA_bias', dataset_path=None, exp_dir='/scratch/im2480/QA-gpt2', models=['gpt2', 'gpt2-medium', 'gpt2-large', 'gpt2-xl'], use_gpu=True, colab=False, batch_size=1, task_type='QA')
+2022-04-04 17:06:38,347 [INFO] Saving to results to /scratch/im2480/QA-gpt2
+2022-04-04 17:06:38,350 [INFO] Copied data

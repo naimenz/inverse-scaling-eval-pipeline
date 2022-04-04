@@ -1,0 +1,12 @@
+2022-04-04 12:19:03,500 [INFO] Logging set up with args
+Namespace(batch_size=20, colab=False, dataset='QA_bias', dataset_path=None, exp_dir='QA-gpt3', models=['ada', 'babbage', 'curie', 'davinci'], task_type='QA', use_gpu=False)
+2022-04-04 12:19:03,500 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-gpt3
+2022-04-04 12:19:03,501 [INFO] Copied data
+2022-04-04 12:22:09,023 [INFO] Logging set up with args
+Namespace(batch_size=20, colab=False, dataset='QA_bias', dataset_path=None, exp_dir='QA-gpt3', models=['ada', 'babbage', 'curie', 'davinci'], task_type='QA', use_gpu=False)
+2022-04-04 12:22:09,023 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-gpt3
+2022-04-04 12:22:09,024 [INFO] Copied data
+2022-04-04 13:04:48,053 [INFO] Logging set up with args
+Namespace(batch_size=20, colab=False, dataset='QA_bias', dataset_path=None, exp_dir='QA-gpt3', models=['ada', 'babbage', 'curie', 'davinci'], task_type='QA', use_gpu=False)
+2022-04-04 13:04:48,053 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-gpt3
+2022-04-04 13:04:48,053 [INFO] Copied data
