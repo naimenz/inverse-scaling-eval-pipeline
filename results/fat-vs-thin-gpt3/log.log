@@ -1,0 +1,4 @@
+2022-04-05 15:58:19,071 [INFO] Logging set up with args
+Namespace(batch_size=200, colab=False, dataset='fat-vs-thin', dataset_path=None, exp_dir='fat-vs-thin-gpt3', models=['ada', 'babbage', 'curie', 'davinci'], task_type='QA', use_gpu=False)
+2022-04-05 15:58:19,071 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/fat-vs-thin-gpt3
+2022-04-05 15:58:19,071 [INFO] Copied data

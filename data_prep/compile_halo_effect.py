@@ -1,4 +1,4 @@
-"""This file is specifically for compiling sentiment analysis examples from templates and lists of components but
+"""This file is specifically for compiling halo effect examples from templates and lists of components but
 the basic pattern should be generalisable"""
 import pandas as pd
 from pathlib import Path
