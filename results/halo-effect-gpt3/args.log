@@ -1,0 +1,15 @@
+{
+  "dataset": "halo-effect",
+  "dataset_path": null,
+  "exp_dir": "halo-effect-gpt3",
+  "models": [
+    "ada",
+    "babbage",
+    "curie",
+    "davinci"
+  ],
+  "use_gpu": false,
+  "colab": false,
+  "batch_size": 100,
+  "task_type": "QA"
+}

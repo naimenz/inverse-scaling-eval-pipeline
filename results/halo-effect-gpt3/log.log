@@ -1,0 +1,4 @@
+2022-04-04 17:11:01,607 [INFO] Logging set up with args
+Namespace(batch_size=100, colab=False, dataset='halo-effect', dataset_path=None, exp_dir='halo-effect-gpt3', models=['ada', 'babbage', 'curie', 'davinci'], task_type='QA', use_gpu=False)
+2022-04-04 17:11:01,607 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/halo-effect-gpt3
+2022-04-04 17:11:01,608 [INFO] Copied data
