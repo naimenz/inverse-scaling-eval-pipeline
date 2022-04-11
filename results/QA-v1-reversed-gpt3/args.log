@@ -1,0 +1,15 @@
+{
+  "dataset": "QA_bias-v1-reversed",
+  "dataset_path": null,
+  "exp_dir": "QA-v1-reversed-gpt3",
+  "models": [
+    "ada",
+    "babbage",
+    "curie",
+    "davinci"
+  ],
+  "use_gpu": false,
+  "colab": false,
+  "batch_size": 20,
+  "task_type": "QA"
+}

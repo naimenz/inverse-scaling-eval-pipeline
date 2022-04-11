@@ -1,0 +1,4 @@
+2022-04-11 11:56:00,207 [INFO] Logging set up with args
+Namespace(batch_size=20, colab=False, dataset='QA_bias-v1-reversed', dataset_path=None, exp_dir='QA-v1-reversed-gpt3', models=['ada', 'babbage', 'curie', 'davinci'], task_type='QA', use_gpu=False)
+2022-04-11 11:56:00,207 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v1-reversed-gpt3
+2022-04-11 11:56:00,208 [INFO] Copied data
