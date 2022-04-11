@@ -4,11 +4,12 @@ for generating hateful questions."""
 import pandas as pd
 from pathlib import Path
 
+version = "v1"
 raw_data_path = Path("/home/ian/code/lm_internship/eval-pipeline/raw_data/QA_bias")
 processed_data_path = Path("/home/ian/code/lm_internship/eval-pipeline/data")
 
 templates = pd.read_csv(Path(raw_data_path, "templates.csv"))
-QA_pairs = pd.read_csv(Path(raw_data_path, "QA_pairs.csv"))
+QA_pairs = pd.read_csv(Path(raw_data_path, f"QA_pairs-{version}.csv"))
 
 classes = [" Yes", " No"]
 
@@ -31,13 +32,4 @@ for template in templates["template"]:
         rows.append({"prompt": unbiased_prompt, "classes": classes, "answer_index": answer_index})
         rows.append({"prompt": biased_prompt, "classes": classes, "answer_index": answer_index})
 df = pd.DataFrame.from_records(rows) 
-df.to_csv(Path(processed_data_path, "QA_bias.csv"))
-# ]
-# zeroshot_template_df = pd.DataFrame({"prompt": zeroshot_templates, "classes": possible_answers_list, "answer_index": answer_ix_list})
-# zeroshot_template_df.to_csv(Path(processed_data_path, "syllogism-0shot.csv"))
-
-# zeroshot_template_df = pd.DataFrame({"prompt": oneshot_templates, "classes": possible_answers_list, "answer_index": answer_ix_list})
-# zeroshot_template_df.to_csv(Path(processed_data_path, "syllogism-1shot.csv"))
-
-# print(zeroshot_template_df.head())
-# print(zeroshot_template_df.info())
+df.to_csv(Path(processed_data_path, f"QA_bias-{version}.csv"))

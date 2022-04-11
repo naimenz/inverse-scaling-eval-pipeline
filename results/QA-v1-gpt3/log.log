@@ -1,0 +1,4 @@
+2022-04-11 11:42:40,209 [INFO] Logging set up with args
+Namespace(batch_size=20, colab=False, dataset='QA_bias-v1', dataset_path=None, exp_dir='QA-v1-gpt3', models=['ada', 'babbage', 'curie', 'davinci'], task_type='QA', use_gpu=False)
+2022-04-11 11:42:40,209 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v1-gpt3
+2022-04-11 11:42:40,210 [INFO] Copied data
