@@ -5,7 +5,8 @@ import pandas as pd
 from pathlib import Path
 
 version = "v1"
-suffix = "-reversed"  # if no suffix wanted, use ""
+# suffix = "-reversed"  # if no suffix wanted, use ""
+suffix = ""  # if no suffix wanted, use ""
 raw_data_path = Path("/home/ian/code/lm_internship/eval-pipeline/raw_data/QA_bias")
 processed_data_path = Path("/home/ian/code/lm_internship/eval-pipeline/data")
 
@@ -16,7 +17,10 @@ classes = [" Yes", " No"]
 
 rows = []
 for template in templates["template"]:
-    for _, (bias_sentence, question, answer) in QA_pairs.iterrows():
+    for _, row in QA_pairs.iterrows():
+        bias_sentence = row["bias_sentence"]
+        question = row["question"]
+        answer = row["answer"]
         if answer == "yes":
             answer_index = 0
         elif answer == "no":
