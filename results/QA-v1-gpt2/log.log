@@ -1,0 +1,4 @@
+2022-04-11 21:07:02,904 [INFO] Logging set up with args
+Namespace(dataset='QA_bias-v1', dataset_path=None, exp_dir='/scratch/im2480/QA-v1-gpt2', models=['gpt2', 'gpt2-medium', 'gpt2-large', 'gpt2-xl'], use_gpu=True, colab=False, batch_size=1, task_type='QA')
+2022-04-11 21:07:02,905 [INFO] Saving to results to /scratch/im2480/QA-v1-gpt2
+2022-04-11 21:07:03,023 [INFO] Copied data
