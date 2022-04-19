@@ -21,6 +21,7 @@ for template in templates["template"]:
         bias_sentence = row["bias_sentence"]
         question = row["question"]
         answer = row["answer"]
+        type = row["type"]
         if answer == "yes":
             answer_index = 0
         elif answer == "no":
@@ -34,7 +35,7 @@ for template in templates["template"]:
         biased_prompt = template.format(question=biased_question)
         print(f"unbiased_prompt = {unbiased_prompt}, answer = {answer}")
         print(f"biased_prompt = {biased_prompt}, answer = {answer}")
-        rows.append({"prompt": unbiased_prompt, "classes": classes, "answer_index": answer_index})
-        rows.append({"prompt": biased_prompt, "classes": classes, "answer_index": answer_index})
+        rows.append({"prompt": unbiased_prompt, "classes": classes, "answer_index": answer_index, "type": type })
+        rows.append({"prompt": biased_prompt, "classes": classes, "answer_index": answer_index, "type": type})
 df = pd.DataFrame.from_records(rows) 
 df.to_csv(Path(processed_data_path, f"QA_bias-{version}{suffix}.csv"))
