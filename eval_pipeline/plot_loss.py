@@ -53,14 +53,21 @@ def plot_classification_loss(
     exp_dir: Path, dataset_sizes: list[int], task_type: TaskType, invert: bool, show: bool,
 ):
     loss_csvs = [f for f in exp_dir.glob("*.csv") if f.name != "data.csv"]
-    data_csv = pd.read_csv(Path(exp_dir, "data.csv"), index_col=0).reset_index(
-        drop=True
-    )
+    if Path(exp_dir, "data.csv").exists():
+        data_df = pd.read_csv(Path(exp_dir, "data.csv"), index_col=0).reset_index(
+            drop=True
+        )
+    elif Path(exp_dir, "data.jsonl").exists():
+        data_df = pd.read_json(Path(exp_dir, "data.csv"), lines=True).reset_index(
+            drop=True
+        )
+    else:
+        raise ValueError("Need data.csv or data.jsonl")
     dfs = {csv_file.stem: pd.read_csv(csv_file, index_col=0) for csv_file in loss_csvs}
 
     if task_type == "classification_acc":
         # NOTE: assuming all examples have the same number of classes
-        n_classes = len(literal_eval(data_csv["classes"][0]))  # type: ignore
+        n_classes = len(literal_eval(str(data_df["classes"][0])))  # type: ignore
         # the baseline puts equal probability on each class, so we are considering a uniform distribution
         baseline = 1 / n_classes
         output_name = "correct"
@@ -72,7 +79,7 @@ def plot_classification_loss(
 
     elif task_type == "classification_loss":
         # NOTE: assuming all examples have the same number of classes
-        n_classes = len(literal_eval(data_csv["classes"][0]))  # type: ignore
+        n_classes = len(literal_eval(str(data_df["classes"][0])))  # type: ignore
         # the baseline puts equal probability on each class, so we are considering a uniform distribution
         baseline_prob = 1 / n_classes
         baseline = -np.log(baseline_prob)

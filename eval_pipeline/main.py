@@ -3,7 +3,7 @@ import argparse
 from datetime import datetime
 import json
 import sys
-from typing import Union
+from typing import Union, cast
 import csv
 import logging
 import shutil
@@ -21,13 +21,10 @@ def main():
     project_dir = Path(__file__).resolve().parent.parent
     base_data_dir = Path(project_dir, "data")
     # writing to google drive if we are in a colab notebook
-    if args.colab:
-        base_results_dir = Path("/content/drive/MyDrive/inverse_scaling_results/")
-    else:
-        base_results_dir = Path(project_dir, "results")
+    base_results_dir = Path(project_dir, "results")
 
     if args.dataset_path is not None:
-        data_path = args.dataset_path
+        data_path = Path(args.dataset_path)
     elif args.dataset is not None:
         data_path = Path(base_data_dir, args.dataset + ".csv")
     else:
@@ -38,18 +35,13 @@ def main():
     if args.exp_dir is not None:
         write_dir = Path(base_results_dir, args.exp_dir)
     else:
-        current_time = datetime.now().replace(microsecond=0).isoformat()
-        if args.dataset is not None:
-            exp_dir = f"{current_time}_{args.dataset}"
-        else:
-            exp_dir = f"{current_time}_{Path(args.dataset_path).stem}"
-        write_dir = Path(base_results_dir, exp_dir)
+        write_dir = Path(".")
     write_dir.mkdir(parents=True, exist_ok=True)
 
     # we have to set up the logging AFTER deciding on a dir to write to
     log_path = Path(write_dir, "log.log")
     arg_log_path = Path(write_dir, "args.log")
-    with arg_log_path.open("a") as f:
+    with arg_log_path.open("w") as f:
         json.dump(args.__dict__, f, indent=2)
     set_up_logging(log_path)
 
@@ -57,7 +49,10 @@ def main():
     logging.info(f"Saving to results to {write_dir}")
 
     # put a copy of the data in the experiment dir for reference
-    shutil.copy(data_path, Path(write_dir, "data.csv"))
+    try:
+        shutil.copy(data_path, Path(write_dir, f"data{data_path.suffix}"))
+    except shutil.SameFileError:
+        pass
     logging.info("Copied data")
     data = load_data(data_path, args.task_type)
 
@@ -76,7 +71,12 @@ def set_up_logging(log_path: Path):
 
 
 def load_data(dataset_path: Path, task_type: TaskType) -> Dataset:
-    df = pd.read_csv(dataset_path, index_col=0)
+    if dataset_path.suffix == ".csv":
+        df = pd.read_csv(dataset_path, index_col=0)
+    elif dataset_path.suffix == ".jsonl":
+        df = cast("pd.DataFrame", pd.read_json(dataset_path, lines=True))
+    else:
+        raise ValueError(f"Unknown file extension {dataset_path.suffix}")
     if task_type == "classification":
         dataset = Dataset.classification_from_df(df)
     elif task_type == "numeric":
@@ -84,9 +84,9 @@ def load_data(dataset_path: Path, task_type: TaskType) -> Dataset:
     elif task_type == "lambada":
         dataset = Dataset.lambada_from_df(df)
     elif task_type == "QA":
-        # we can just reuse the classification dataset
+        # we can just reuse the classification dataset type
         dataset = Dataset.classification_from_df(df)
-    return dataset  # type: ignore (classification is covered)
+    return dataset
 
 
 def run_model(
@@ -188,14 +188,6 @@ def parse_args(args):
     )
 
     parser.add_argument(
-        "--colab",
-        action="store_true",
-        help=(
-            "Set if working in colab - will save results to gdrive mounted on /content/drive/MyDrive"
-            " and use notebook versions of tqdm"
-        ),
-    )
-    parser.add_argument(
         "--batch-size",
         type=int,
         help="Only change the inference batch size if using exclusively GPT-3 models (will break HuggingFace models)",
@@ -206,7 +198,7 @@ def parse_args(args):
         type=str,
         help="The type of output expected for the dataset",
         default="classification",
-        choices=["classification", "numeric", "lambada", "QA"],
+        choices=["classification", "lambada", "QA"],
     )
     args = parser.parse_args(args)
     return args

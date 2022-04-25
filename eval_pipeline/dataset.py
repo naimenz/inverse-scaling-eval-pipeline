@@ -50,7 +50,7 @@ class Dataset:
         examples = []
         for _, (prompt, classes_string, answer_index) in df.iterrows():
             # important to convert the string 'classes' back into a list
-            classes_list = ast.literal_eval(classes_string)
+            classes_list = ast.literal_eval(str(classes_string))
             example = ClassificationExample(prompt, classes_list, answer_index)
             examples.append(example)
         return Dataset(examples)
