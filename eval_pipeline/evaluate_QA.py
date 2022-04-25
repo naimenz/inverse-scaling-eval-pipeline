@@ -24,7 +24,16 @@ def main():
     estimate_csvs = [f for f in exp_dir.glob("*.csv") if f.name != "data.csv"]
     if len(estimate_csvs) == 0:
         raise ValueError(f"{exp_dir} does not exist or contains no output files")
-    input_df = pd.read_csv(Path(exp_dir, "data.csv"))
+    if Path(exp_dir, "data.csv").exists():
+        input_df = pd.read_csv(Path(exp_dir, "data.csv"), index_col=0).reset_index(
+            drop=True
+        )
+    elif Path(exp_dir, "data.jsonl").exists():
+        input_df = pd.read_json(Path(exp_dir, "data.jsonl"), lines=True).reset_index(
+            drop=True
+        )
+    else:
+        raise ValueError("Need data.csv or data.jsonl")
     print(input_df.info())
     output_dfs = {
         csv_file.stem: pd.read_csv(csv_file, index_col=0) for csv_file in estimate_csvs
@@ -45,15 +54,12 @@ def main():
             unbiased_logodds = cast(float, output_df.iloc[i]["logodds"])
             biased_logodds = cast(float, output_df.iloc[i + 1]["logodds"])
             answer_index = input_df.iloc[i]["answer_index"]
-            type = input_df.iloc[i]["type"]
-            # DEBUG: looking at only one type
-            if desired_type == None or type == desired_type:
-                logodds_difference = unbiased_logodds - biased_logodds
-                # flip the order (and hence the sign) if the answer is "no"
-                if answer_index == 1:
-                    logodds_difference *= -1
-                
-                logodds_losses.append(logodds_difference)
+            logodds_difference = unbiased_logodds - biased_logodds
+            # flip the order (and hence the sign) if the answer is "no"
+            if answer_index == 1:
+                logodds_difference *= -1
+            
+            logodds_losses.append(logodds_difference)
         losses[model_name] = np.mean(logodds_losses)
         print(len(logodds_losses))
     # writing as json for now
