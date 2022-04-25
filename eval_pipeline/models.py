@@ -266,7 +266,7 @@ class GPT3Model(Model):
 
     def __call__(self, examples: list[Example], task_type: TaskType) -> dict[str, Union[Sequence[float], Sequence[int]]]:
 
-        if task_type == "classification":
+        if task_type.startswith("classification"):
             classification_examples = cast("list[ClassificationExample]", examples)
             rv = self._evaluate_classification(classification_examples)
         elif task_type == "numeric":

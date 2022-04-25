@@ -77,7 +77,7 @@ def load_data(dataset_path: Path, task_type: TaskType) -> Dataset:
         df = cast("pd.DataFrame", pd.read_json(dataset_path, lines=True))
     else:
         raise ValueError(f"Unknown file extension {dataset_path.suffix}")
-    if task_type == "classification":
+    if task_type.startswith("classification"):
         dataset = Dataset.classification_from_df(df)
     elif task_type == "numeric":
         dataset = Dataset.numeric_from_df(df)
@@ -101,7 +101,7 @@ def run_model(
     write the results to write_path incrementally."""
     write_path = Path(write_dir, model_name + ".csv")
     # TODO: find a way to avoid having to specify field names ahead of time
-    if task_type == "classification":
+    if task_type.startswith("classification"):
         field_names = ["index", "loss", "correct", "total_logprob"]
     elif task_type == "lambada":
         field_names = ["index", "loss"]
@@ -198,7 +198,7 @@ def parse_args(args):
         type=str,
         help="The type of output expected for the dataset",
         default="classification",
-        choices=["classification", "lambada", "QA"],
+        choices=["classification", "classification_loss", "classification_acc", "lambada", "QA"],
     )
     args = parser.parse_args(args)
     return args
