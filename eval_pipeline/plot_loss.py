@@ -39,7 +39,7 @@ def main():
     else:
         base_results_dir = Path(project_dir, "results")
     exp_dir = Path(base_results_dir, args.exp_dir)
-    if args.task_type.startswith("classification") or args.task_type == "lambada":
+    if args.task_type.startswith("classification") or args.task_type == "single_word":
         plot_classification_loss(
             exp_dir, args.dataset_sizes, args.task_type, args.invert, not args.no_show,
         )
@@ -114,7 +114,7 @@ def plot_classification_loss(
             model_name: np.std(df[output_name]) / np.sqrt(len(df[output_name]))
             for model_name, df in size_dfs.items()
         }
-        if task_type != "lambada":
+        if task_type != "single_word":
             # the average amount of probability covered by the class tokens
             average_coverages = {
                 model_name: np.mean(np.exp(df["total_logprob"])) for model_name, df in size_dfs.items()
@@ -125,7 +125,7 @@ def plot_classification_loss(
         size_name = str(size) if size != -1 else len(list(dfs.values())[0])
         separate_plot_dict[size_name] = (averages, standard_errors)
         separate_average_coverages[size_name] = average_coverages
-    if task_type == "lambada":
+    if task_type == "single_word":
         separate_average_coverages = None
 
     plot_loss(exp_dir, separate_plot_dict, baseline, task_type, invert, separate_average_coverages, show)
@@ -192,11 +192,11 @@ def plot_loss(
     # plt.xticks(ticks, labels, rotation=45)
     plt.xticks(ticks, labels)
 
-    if task_type == "classification_loss" or task_type == "lambada":
+    if task_type == "classification_loss" or task_type == "single_word":
         plt.yscale("log")
         plt.ylabel("Loss")
         title = "Log-log plot of loss vs model size"
-        if task_type == "lambada":
+        if task_type == "single_word":
             plt.ylim(0.98, 5.02)
     elif task_type == "classification_acc":
         # always show full range of accuracies
@@ -237,7 +237,7 @@ def parse_args(args) -> argparse.Namespace:
         "--task-type",
         type=str,
         default="classification_loss",
-        choices=["classification_loss", "classification_acc", "numeric", "lambada", "logodds"],
+        choices=["classification_loss", "classification_acc", "numeric", "single_word", "logodds"],
         help="The type of task to plot",
     )
     parser.add_argument(

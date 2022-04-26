@@ -13,7 +13,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer  # type: ignore
 from eval_pipeline.dataset import (
     ClassificationExample,
     Example,
-    LambadaExample,
+    SingleWordExample,
     NumericExample,
     TaskType,
 )
@@ -85,8 +85,8 @@ class HFModel(Model):
             rv = self._evaluate_classification(examples, task_type)
         elif task_type == "numeric":
             rv = self._evaluate_numeric(examples)
-        elif task_type == "lambada":
-            rv = self._evaluate_lambada(examples)
+        elif task_type == "single_word":
+            rv = self._evaluate_single_word(examples)
         elif task_type == "logodds":
             rv = self._evaluate_logodds(examples)
         return rv  # type: ignore (we cover all cases, mypy can't do logic with startswith)
@@ -109,7 +109,7 @@ class HFModel(Model):
         total_logprobs = self._total_logprobs_from_logits(examples, logits)
         return {"loss": losses, "correct": accuracies, "total_logprob": total_logprobs}
 
-    def _evaluate_lambada(self, examples: list[Example]) -> dict[str, Sequence[float]]:
+    def _evaluate_single_word(self, examples: list[Example]) -> dict[str, Sequence[float]]:
         # finding the target
         prompts = [example.prompt for example in examples]
         tokenized_inputs = self.tokenizer(
@@ -272,9 +272,9 @@ class GPT3Model(Model):
         elif task_type == "numeric":
             numeric_examples = cast("list[NumericExample]", examples)
             rv = self._evaluate_numeric(numeric_examples)
-        elif task_type == "lambada":
-            lambada_examples = cast("list[LambadaExample]", examples)
-            rv = self._evaluate_lambada(lambada_examples)
+        elif task_type == "single_word":
+            single_word_examples = cast("list[SingleWordExample]", examples)
+            rv = self._evaluate_single_word(single_word_examples)
         elif task_type == "logodds":
             classification_examples = cast("list[ClassificationExample]", examples)
             rv = self._evaluate_logodds(classification_examples)
@@ -356,7 +356,7 @@ class GPT3Model(Model):
             labels_correct.append(label_correct)
         return {"logodds": logodds_list, "correct": labels_correct, "total_logprob": total_logprobs}
 
-    def _evaluate_lambada(self, examples: list[LambadaExample]) -> dict[str, Union[Sequence[float], Sequence[int]]]:
+    def _evaluate_single_word(self, examples: list[SingleWordExample]) -> dict[str, Union[Sequence[float], Sequence[int]]]:
         prompts = [example.prompt for example in examples]
         api_params = APIParameters(
             temperature=0.0,

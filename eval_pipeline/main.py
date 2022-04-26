@@ -81,8 +81,8 @@ def load_data(dataset_path: Path, task_type: TaskType) -> Dataset:
         dataset = Dataset.classification_from_df(df)
     elif task_type == "numeric":
         dataset = Dataset.numeric_from_df(df)
-    elif task_type == "lambada":
-        dataset = Dataset.lambada_from_df(df)
+    elif task_type == "single_word":
+        dataset = Dataset.single_word_from_df(df)
     elif task_type == "logodds":
         # we can just reuse the classification dataset type
         dataset = Dataset.classification_from_df(df)
@@ -103,7 +103,7 @@ def run_model(
     # TODO: find a way to avoid having to specify field names ahead of time
     if task_type.startswith("classification"):
         field_names = ["index", "loss", "correct", "total_logprob"]
-    elif task_type == "lambada":
+    elif task_type == "single_word":
         field_names = ["index", "loss"]
     elif task_type == "numeric":
         field_names = ["index", "estimate"]
@@ -198,7 +198,7 @@ def parse_args(args):
         type=str,
         help="The type of output expected for the dataset",
         default="classification",
-        choices=["classification", "classification_loss", "classification_acc", "lambada", "logodds"],
+        choices=["classification", "classification_loss", "classification_acc", "single_word", "logodds"],
     )
     args = parser.parse_args(args)
     return args
