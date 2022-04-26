@@ -171,6 +171,7 @@ def plot_loss(
                 for size, loss in loss_dict.items()
             ]
             xs, ys, yerrs = zip(*sorted(errorbar_data, key=lambda pair: pair[0]))
+            print(xs, ys, yerrs)
             plt.errorbar(
                 xs, ys, yerrs, label=f"{label} examples (with SEM)"
             )
@@ -196,8 +197,6 @@ def plot_loss(
         plt.yscale("log")
         plt.ylabel("Loss")
         title = "Log-log plot of loss vs model size"
-        if task_type == "single_word":
-            plt.ylim(0.98, 5.02)
     elif task_type == "classification_acc":
         # always show full range of accuracies
         plt.ylim(-0.02, 1.02)
