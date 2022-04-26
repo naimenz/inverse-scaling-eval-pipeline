@@ -165,7 +165,7 @@ def plot_loss(
         )
 
     for label, (loss_dict, standard_errors) in separate_plots_dict.items():
-        if standard_errors is not None:
+        if standard_errors is not None and task_type != "classification_acc":
             errorbar_data = [
                 (size_dict[size], loss, standard_errors[size])
                 for size, loss in loss_dict.items()
