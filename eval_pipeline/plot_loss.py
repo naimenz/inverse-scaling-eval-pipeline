@@ -43,7 +43,7 @@ def main():
         plot_classification_loss(
             exp_dir, args.dataset_sizes, args.task_type, args.invert, not args.no_show,
         )
-    elif args.task_type == "numeric" or args.task_type == "QA":
+    elif args.task_type == "numeric" or args.task_type == "logodds":
         plot_numeric_loss(exp_dir)
     else:
         raise ValueError(f"unknown task type {args.task_type}")
@@ -237,7 +237,7 @@ def parse_args(args) -> argparse.Namespace:
         "--task-type",
         type=str,
         default="classification_loss",
-        choices=["classification_loss", "classification_acc", "numeric", "lambada", "QA"],
+        choices=["classification_loss", "classification_acc", "numeric", "lambada", "logodds"],
         help="The type of task to plot",
     )
     parser.add_argument(

@@ -87,8 +87,8 @@ class HFModel(Model):
             rv = self._evaluate_numeric(examples)
         elif task_type == "lambada":
             rv = self._evaluate_lambada(examples)
-        elif task_type == "QA":
-            rv = self._evaluate_QA(examples)
+        elif task_type == "logodds":
+            rv = self._evaluate_logodds(examples)
         return rv  # type: ignore (we cover all cases, mypy can't do logic with startswith)
 
     def _evaluate_classification(
@@ -136,11 +136,11 @@ class HFModel(Model):
             losses.append(loss.item())  # type: ignore (the sum is never empty so never just 0, always a tensor)
         return {"loss": losses}
 
-    def _evaluate_QA(
+    def _evaluate_logodds(
         self,
         examples: list[Example],
     ) -> dict[str, Union[Sequence[float], Sequence[int]]]:
-        """QA is much like classification, except we need to compare across prompts so we just
+        """logodds is much like classification, except we need to compare across prompts so we just
         compute the log odds here"""
         prompts = [example.prompt for example in examples]
         tokenized_inputs = self.tokenizer(
@@ -275,9 +275,9 @@ class GPT3Model(Model):
         elif task_type == "lambada":
             lambada_examples = cast("list[LambadaExample]", examples)
             rv = self._evaluate_lambada(lambada_examples)
-        elif task_type == "QA":
+        elif task_type == "logodds":
             classification_examples = cast("list[ClassificationExample]", examples)
-            rv = self._evaluate_QA(classification_examples)
+            rv = self._evaluate_logodds(classification_examples)
         return rv
 
     def _evaluate_classification(
@@ -318,7 +318,7 @@ class GPT3Model(Model):
             labels_correct.append(label_correct)
         return {"loss": losses, "correct": labels_correct, "total_logprob": total_logprobs}
 
-    def _evaluate_QA(
+    def _evaluate_logodds(
         self,
         examples: list[ClassificationExample],
     ) -> dict[str, Union[Sequence[float], Sequence[int]]]:

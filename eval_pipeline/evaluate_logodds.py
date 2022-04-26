@@ -1,5 +1,5 @@
 """This function is supposed to take an experiment directory that ran on
-QA and compute some loss for it. Ideally I can abstract some of this
+logodds and compute some loss for it. Ideally I can abstract some of this
 away and make a more general evaluation script, but I'm not sure yet."""
 from __future__ import annotations
 import argparse
@@ -69,7 +69,7 @@ def main():
 
 def parse_args(args) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Compute losses in a QA experiment"
+        description="Compute losses in a logodds experiment"
     )
     parser.add_argument(
         "exp_dir",

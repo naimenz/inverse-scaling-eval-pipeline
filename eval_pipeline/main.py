@@ -83,7 +83,7 @@ def load_data(dataset_path: Path, task_type: TaskType) -> Dataset:
         dataset = Dataset.numeric_from_df(df)
     elif task_type == "lambada":
         dataset = Dataset.lambada_from_df(df)
-    elif task_type == "QA":
+    elif task_type == "logodds":
         # we can just reuse the classification dataset type
         dataset = Dataset.classification_from_df(df)
     return dataset
@@ -107,7 +107,7 @@ def run_model(
         field_names = ["index", "loss"]
     elif task_type == "numeric":
         field_names = ["index", "estimate"]
-    elif task_type == "QA":
+    elif task_type == "logodds":
         field_names = ["index", "logodds", "correct", "total_logprob"]
     else:
         raise ValueError(f"unknown task type {task_type}")
@@ -198,7 +198,7 @@ def parse_args(args):
         type=str,
         help="The type of output expected for the dataset",
         default="classification",
-        choices=["classification", "classification_loss", "classification_acc", "lambada", "QA"],
+        choices=["classification", "classification_loss", "classification_acc", "lambada", "logodds"],
     )
     args = parser.parse_args(args)
     return args
