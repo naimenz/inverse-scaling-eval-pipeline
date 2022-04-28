@@ -60,6 +60,17 @@ def main():
     model_names = args.models
     for model_name in tqdm(model_names):
         run_model(model_name, data, write_dir, device, args.batch_size, args.task_type)
+    
+    # final step to add all results to a jsonl 
+    labelled_df = load_df(data_path)
+    for model_name in model_names:
+        results_path = Path(write_dir, model_name + ".csv")
+        prefix = f"{model_name}_"
+        results = pd.read_csv(results_path, index_col=0)
+        prefixed_results = results.add_prefix(prefix)
+        labelled_df = labelled_df.merge(prefixed_results, left_index=True, right_index=True)
+    labelled_path = Path(write_dir, "labelled_data.jsonl")
+    labelled_df.to_json(labelled_path, orient="records", lines=True)
 
 
 def set_up_logging(log_path: Path):
@@ -71,12 +82,7 @@ def set_up_logging(log_path: Path):
 
 
 def load_data(dataset_path: Path, task_type: TaskType) -> Dataset:
-    if dataset_path.suffix == ".csv":
-        df = pd.read_csv(dataset_path, index_col=0)
-    elif dataset_path.suffix == ".jsonl":
-        df = cast("pd.DataFrame", pd.read_json(dataset_path, lines=True))
-    else:
-        raise ValueError(f"Unknown file extension {dataset_path.suffix}")
+    df = load_df(dataset_path)
     if task_type in ["classification_loss", "classification_acc"]:
         dataset = Dataset.classification_from_df(df)
     elif task_type == "numeric":
@@ -89,6 +95,14 @@ def load_data(dataset_path: Path, task_type: TaskType) -> Dataset:
     else:
         raise ValueError(f"Unrecognised task type {task_type}")
     return dataset
+
+def load_df(path: Path):
+    if path.suffix == ".csv":
+        return pd.read_csv(path, index_col=0)
+    elif path.suffix == ".jsonl":
+        return cast("pd.DataFrame", pd.read_json(path, lines=True))
+    else:
+        raise ValueError(f"Unknown file extension {path.suffix}")
 
 
 def run_model(
