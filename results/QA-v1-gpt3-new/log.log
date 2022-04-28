@@ -1,0 +1,5 @@
+2022-04-28 15:42:14,428 [INFO] Logging set up with args
+Namespace(batch_size=20, dataset='QA_bias-v1', dataset_path=None, exp_dir='QA-v1-gpt3-new', models=['ada', 'babbage', 'curie', 'davinci'], task_type='logodds', use_gpu=False)
+2022-04-28 15:42:14,429 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v1-gpt3-new
+2022-04-28 15:42:14,429 [INFO] Copied data
+2022-04-28 15:42:51,208 [INFO] Retrying after error 503: {'message': 'That model is currently overloaded with other requests. You can retry your request, or contact support@openai.com if the error persists. (Please include the request ID 8f95f53fe91c89beb96c722078bd310e in your email.)', 'type': 'server_error', 'param': None, 'code': None}

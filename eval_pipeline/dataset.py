@@ -6,7 +6,7 @@ from typing import Iterator
 from typing_extensions import Literal
 import pandas as pd
 
-TaskType = Literal["classification_acc", "classification_loss", "numeric", "single_word"]
+TaskType = Literal["classification_acc", "classification_loss", "numeric", "single_word", "logodds"]
 
 
 @dataclass
@@ -32,6 +32,12 @@ class NumericExample(Example):
 class SingleWordExample(Example):
     prompt: str
 
+@dataclass
+class LogoddsExample(Example):
+    prompt: str
+    biased_prompt: str
+    classes: tuple[str, ...]
+    answer_index: int
 
 class Dataset:
     """Class to store examples to be run by HF or GPT3 models"""
@@ -59,7 +65,6 @@ class Dataset:
     def numeric_from_df(cls, df: pd.DataFrame) -> Dataset:
         examples = []
         for _, (prompt, true_answer, anchor) in df.iterrows():
-            # important to convert the string 'classes' back into a list
             example = NumericExample(prompt, true_answer, anchor)
             examples.append(example)
         return Dataset(examples)
@@ -68,7 +73,16 @@ class Dataset:
     def single_word_from_df(cls, df: pd.DataFrame) -> Dataset:
         examples = []
         for _, (prompt,) in df.iterrows():
-            # important to convert the string 'classes' back into a list
             example = SingleWordExample(prompt)
+            examples.append(example)
+        return Dataset(examples)
+
+    @classmethod
+    def logodds_from_df(cls, df: pd.DataFrame) -> Dataset:
+        examples = []
+        for _, (prompt, biased_prompt, classes_string, answer_index) in df.iterrows():
+            # important to convert the string 'classes' back into a list
+            classes_list = ast.literal_eval(str(classes_string))
+            example = LogoddsExample(prompt, biased_prompt, classes_list, answer_index)
             examples.append(example)
         return Dataset(examples)

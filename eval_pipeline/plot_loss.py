@@ -43,16 +43,72 @@ def main():
     exp_dir = Path(base_results_dir, args.exp_dir)
     if args.task_type.startswith("classification") or args.task_type == "single_word":
         plot_classification_loss(
-            exp_dir, args.dataset_sizes, args.task_type, args.invert, not args.no_show,
+            exp_dir,
+            args.dataset_sizes,
+            args.task_type,
+            args.invert,
+            not args.no_show,
         )
-    elif args.task_type == "numeric" or args.task_type == "logodds":
+    elif args.task_type == "numeric":
         plot_numeric_loss(exp_dir)
+    elif args.task_type == "logodds":
+        plot_logodds_loss(exp_dir, args.dataset_sizes)
     else:
         raise ValueError(f"unknown task type {args.task_type}")
 
 
+def plot_logodds_loss(exp_dir: Path, dataset_sizes: list[int]):
+    loss_csvs = [f for f in exp_dir.glob("*.csv") if f.name != "data.csv"]
+    if Path(exp_dir, "data.csv").exists():
+        data_df = pd.read_csv(Path(exp_dir, "data.csv"), index_col=0).reset_index(
+            drop=True
+        )
+    elif Path(exp_dir, "data.jsonl").exists():
+        data_df = pd.read_json(Path(exp_dir, "data.jsonl"), lines=True).reset_index(
+            drop=True
+        )
+    else:
+        raise ValueError("Need data.csv or data.jsonl")
+    dfs = {csv_file.stem: pd.read_csv(csv_file, index_col=0) for csv_file in loss_csvs}
+    output_name = "logodds_difference"
+
+    # one dict containing all different plots to be made, with their labels as keys
+    separate_plot_dict = {}
+    for index, size in enumerate(dataset_sizes):
+        if size != -1:
+            size_dfs = {
+                name: cast(pd.DataFrame, df.sample(n=size)) for name, df in dfs.items()
+            }
+        else:
+            size_dfs = {name: cast(pd.DataFrame, df) for name, df in dfs.items()}
+        averages = {
+            model_name: np.mean(df[output_name]) for model_name, df in size_dfs.items()
+        }
+        standard_errors = {
+            model_name: np.std(df[output_name]) / np.sqrt(len(df[output_name]))
+            for model_name, df in size_dfs.items()
+        }
+
+        size_name = str(size) if size != -1 else len(list(dfs.values())[0])
+        separate_plot_dict[index] = (averages, standard_errors, size_name)
+
+    plot_loss(
+        exp_dir,
+        separate_plot_dict,
+        baseline=None,
+        task_type="logodds",
+        invert=False,
+        average_coverages=None,
+        show=True,
+    )
+
+
 def plot_classification_loss(
-    exp_dir: Path, dataset_sizes: list[int], task_type: TaskType, invert: bool, show: bool,
+    exp_dir: Path,
+    dataset_sizes: list[int],
+    task_type: TaskType,
+    invert: bool,
+    show: bool,
 ):
     loss_csvs = [f for f in exp_dir.glob("*.csv") if f.name != "data.csv"]
     if Path(exp_dir, "data.csv").exists():
@@ -108,7 +164,12 @@ def plot_classification_loss(
     separate_plot_dict = {}
     separate_average_coverages = {}
     for index, size in enumerate(dataset_sizes):
-        size_dfs = {name: cast(pd.DataFrame, df.sample(n=size)) for name, df in dfs.items()}
+        if size != -1:
+            size_dfs = {
+                name: cast(pd.DataFrame, df.sample(n=size)) for name, df in dfs.items()
+            }
+        else:
+            size_dfs = {name: cast(pd.DataFrame, df) for name, df in dfs.items()}
         averages = {
             model_name: np.mean(df[output_name]) for model_name, df in size_dfs.items()
         }
@@ -119,7 +180,8 @@ def plot_classification_loss(
         if task_type != "single_word":
             # the average amount of probability covered by the class tokens
             average_coverages = {
-                model_name: np.mean(np.exp(df["total_logprob"])) for model_name, df in size_dfs.items()
+                model_name: np.mean(np.exp(df["total_logprob"]))
+                for model_name, df in size_dfs.items()
             }
         else:
             average_coverages = None
@@ -130,7 +192,15 @@ def plot_classification_loss(
     if task_type == "single_word":
         separate_average_coverages = None
 
-    plot_loss(exp_dir, separate_plot_dict, baseline, task_type, invert, separate_average_coverages, show)
+    plot_loss(
+        exp_dir,
+        separate_plot_dict,
+        baseline,
+        task_type,
+        invert,
+        separate_average_coverages,
+        show,
+    )
 
 
 def plot_numeric_loss(exp_dir: Path):
@@ -174,9 +244,7 @@ def plot_loss(
             ]
             xs, ys, yerrs = zip(*sorted(errorbar_data, key=lambda pair: pair[0]))
             print(xs, ys, yerrs)
-            plt.errorbar(
-                xs, ys, yerrs, label=f"{label} examples (with SEM)"
-            )
+            plt.errorbar(xs, ys, yerrs, label=f"{label} examples (with SEM)")
         else:
             xy_pairs = [(size_dict[size], loss) for size, loss in loss_dict.items()]
             xs, ys = zip(*sorted(xy_pairs, key=lambda pair: pair[0]))
@@ -207,11 +275,15 @@ def plot_loss(
     elif task_type == "numeric":
         # plt.yscale("log")
         title = "Numeric plot style"
+    elif task_type == "logodds":
+        plt.ylabel("Logodds difference")
+        title = "Log plot of logodds differences vs model size"
+
     else:
-        raise ValueError
+        raise ValueError(f"Unknown task type {task_type}")
     if invert:
         title += " (inverted)"
-    
+
     pprint(average_coverages)
 
     plt.title(title)
@@ -238,7 +310,13 @@ def parse_args(args) -> argparse.Namespace:
         "--task-type",
         type=str,
         default="classification_loss",
-        choices=["classification_loss", "classification_acc", "numeric", "single_word", "logodds"],
+        choices=[
+            "classification_loss",
+            "classification_acc",
+            "numeric",
+            "single_word",
+            "logodds",
+        ],
         help="The type of task to plot",
     )
     parser.add_argument(

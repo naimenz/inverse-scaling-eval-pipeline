@@ -1,0 +1,12 @@
+{
+  "dataset": "QA_bias-v1",
+  "dataset_path": null,
+  "exp_dir": "QA-v1-gpt2-new",
+  "models": [
+    "gpt2",
+    "gpt2-medium"
+  ],
+  "use_gpu": true,
+  "batch_size": 1,
+  "task_type": "logodds"
+}

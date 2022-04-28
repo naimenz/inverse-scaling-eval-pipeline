@@ -13,6 +13,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer  # type: ignore
 from eval_pipeline.dataset import (
     ClassificationExample,
     Example,
+    LogoddsExample,
     SingleWordExample,
     NumericExample,
     TaskType,
@@ -48,7 +49,9 @@ Device = Literal["cuda:0", "cpu"]
 
 class Model(ABC):
     @abstractmethod
-    def __call__(self, examples: list[Example], task_type: TaskType) -> dict[str, Union[Sequence[float], Sequence[int]]]:
+    def __call__(
+        self, examples: list[Example], task_type: TaskType
+    ) -> dict[str, Union[Sequence[float], Sequence[int]]]:
         raise NotImplementedError("Abstract method")
 
     @staticmethod
@@ -70,30 +73,41 @@ class HFModel(Model):
         prefix = ""
         if model_name.startswith("gpt-neo") or model_name.startswith("gpt-j"):
             prefix = "EleutherAI/"
+        # DEBUG: trying to fit the models on my gpu
+        torch.cuda.empty_cache()
         self.model = AutoModelForCausalLM.from_pretrained(prefix + model_name).to(self.device)  # type: ignore
-        # DEBUG: trying to suppress warning about sequence length
         self.model.max_length = 1024
         self.tokenizer = AutoTokenizer.from_pretrained(prefix + model_name)
 
-    def __call__(self, examples: list[Example], task_type: TaskType) -> dict[str, Union[Sequence[float], Sequence[int]]]:
+    def __call__(
+        self, examples: list[Example], task_type: TaskType
+    ) -> dict[str, Union[Sequence[float], Sequence[int]]]:
         # TODO: remove this restriction
         if len(examples) > 1:
             raise ValueError(
                 f"Batch size of {len(examples)} not currently supported for HF models: please use 1"
             )
         if task_type.startswith("classification"):
-            rv = self._evaluate_classification(examples, task_type)
+            classification_examples = cast("list[ClassificationExample]", examples)
+            rv = self._evaluate_classification(
+                classification_examples, task_type=task_type
+            )
         elif task_type == "numeric":
-            rv = self._evaluate_numeric(examples)
+            numeric_examples = cast("list[NumericExample]", examples)
+            rv = self._evaluate_numeric(numeric_examples)
         elif task_type == "single_word":
-            rv = self._evaluate_single_word(examples)
+            single_word_examples = cast("list[SingleWordExample]", examples)
+            rv = self._evaluate_single_word(single_word_examples)
         elif task_type == "logodds":
-            rv = self._evaluate_logodds(examples)
-        return rv  # type: ignore (we cover all cases, mypy can't do logic with startswith)
+            logodds_examples = cast("list[LogoddsExample]", examples)
+            rv = self._evaluate_logodds(logodds_examples)
+        else:
+            raise ValueError(f"Unrecognised task type {task_type}")
+        return rv
 
     def _evaluate_classification(
         self,
-        examples: list[Example],
+        examples: list[ClassificationExample],
         task_type: TaskType,
     ) -> dict[str, Union[Sequence[float], Sequence[int]]]:
         prompts = [example.prompt for example in examples]
@@ -109,7 +123,9 @@ class HFModel(Model):
         total_logprobs = self._total_logprobs_from_logits(examples, logits)
         return {"loss": losses, "correct": accuracies, "total_logprob": total_logprobs}
 
-    def _evaluate_single_word(self, examples: list[Example]) -> dict[str, Sequence[float]]:
+    def _evaluate_single_word(
+        self, examples: list[SingleWordExample]
+    ) -> dict[str, Sequence[float]]:
         # finding the target
         prompts = [example.prompt for example in examples]
         tokenized_inputs = self.tokenizer(
@@ -138,24 +154,51 @@ class HFModel(Model):
 
     def _evaluate_logodds(
         self,
-        examples: list[Example],
+        examples: list[LogoddsExample],
     ) -> dict[str, Union[Sequence[float], Sequence[int]]]:
         """logodds is much like classification, except we need to compare across prompts so we just
         compute the log odds here"""
         prompts = [example.prompt for example in examples]
+        biased_prompts = [example.biased_prompt for example in examples]
         tokenized_inputs = self.tokenizer(
             prompts, return_tensors="pt", truncation=True
         ).to(self.device)
+        biased_tokenized_inputs = self.tokenizer(
+            biased_prompts, return_tensors="pt", truncation=True
+        ).to(self.device)
         outputs = self.model(**tokenized_inputs)
+        biased_outputs = self.model(**biased_tokenized_inputs)
         # we only need the logits for the final (new) token
         # NOTE: this may need to change if we use batch size > 1 with padding
-        logits = outputs["logits"][:, -1]
+        logits = outputs["logits"][:, -1].detach().to("cpu")
+        biased_logits = biased_outputs["logits"][:, -1].detach().to("cpu")
         logodds = self._logodds_from_logits(examples, logits)
-        accuracies = self._accuracies_from_logits(examples, logits)
-        total_logprobs = self._total_logprobs_from_logits(examples, logits)
-        return {"logodds": logodds, "correct": accuracies, "total_logprob": total_logprobs}
+        biased_logodds = self._logodds_from_logits(examples, biased_logits)
+        logodds_differences = list(np.array(logodds) - np.array(biased_logodds))  # type: ignore (np typing bad)
+        answer_indices = [example.answer_index for example in examples]
+        # flip the order (and hence the sign) if the answer is "no"
+        for i, answer_index in enumerate(answer_indices):
+            if answer_index == 1:
+                logodds_differences[i] *= -1
+        accuracies = self._accuracies_from_logits(examples, biased_logits)
+        total_logprobs = np.mean(
+            np.stack(
+                (
+                    self._total_logprobs_from_logits(examples, logits),
+                    self._total_logprobs_from_logits(examples, biased_logits),
+                )
+            ),
+            axis=0,
+        )
+        return {
+            "logodds_difference": logodds_differences,
+            "correct": accuracies,
+            "total_logprob": total_logprobs,
+        }
 
-    def _evaluate_numeric(self, examples: list[Example]) -> dict[str, Sequence[float]]:
+    def _evaluate_numeric(
+        self, examples: list[NumericExample]
+    ) -> dict[str, Sequence[float]]:
         prompts = [example.prompt for example in examples]
         tokenized_inputs = self.tokenizer(
             prompts, return_tensors="pt", truncation=True
@@ -188,7 +231,9 @@ class HFModel(Model):
             raise ValueError("No valid numbers returned")
         return {"estimate": [estimate]}
 
-    def _logodds_from_logits(self, examples, logits) -> list[float]:
+    def _logodds_from_logits(
+        self, examples: list[LogoddsExample], logits: torch.Tensor
+    ) -> list[float]:
         """Given examples and logits for those examples,
         compute the binary log odds for each example"""
         logodds_list = []
@@ -202,9 +247,9 @@ class HFModel(Model):
             # and there is no point in taking logprobs before focusing on the relevant indices
             relevant_logits = example_logits[class_tokens]
             logprobs = -F.log_softmax(relevant_logits, dim=-1)
-            # NOTE: assuming always binary 
+            # NOTE: assuming always binary
             assert len(logprobs) == 2
-            logodds = logprobs[0] - logprobs[1] 
+            logodds = logprobs[0] - logprobs[1]
             logodds_list.append(logodds.item())
         return logodds_list
 
@@ -238,7 +283,10 @@ class HFModel(Model):
             # log_softmax just subtracts a constant, so repeated applications change nothing
             # and there is no point in taking logprobs before focusing on the relevant indices
             relevant_logits = example_logits[class_tokens]
-            label_correct = int(np.argmax(relevant_logits.cpu().detach().numpy()) == example.answer_index)
+            label_correct = int(
+                np.argmax(relevant_logits.cpu().detach().numpy())
+                == example.answer_index
+            )
             labels_correct.append(label_correct)
         return labels_correct
 
@@ -264,7 +312,9 @@ class GPT3Model(Model):
     def __init__(self, model_name: BaseGPT3Model) -> None:
         self.model_name: BaseGPT3Model = model_name
 
-    def __call__(self, examples: list[Example], task_type: TaskType) -> dict[str, Union[Sequence[float], Sequence[int]]]:
+    def __call__(
+        self, examples: list[Example], task_type: TaskType
+    ) -> dict[str, Union[Sequence[float], Sequence[int]]]:
 
         if task_type.startswith("classification"):
             classification_examples = cast("list[ClassificationExample]", examples)
@@ -276,8 +326,10 @@ class GPT3Model(Model):
             single_word_examples = cast("list[SingleWordExample]", examples)
             rv = self._evaluate_single_word(single_word_examples)
         elif task_type == "logodds":
-            classification_examples = cast("list[ClassificationExample]", examples)
-            rv = self._evaluate_logodds(classification_examples)
+            logodds_examples = cast("list[LogoddsExample]", examples)
+            rv = self._evaluate_logodds(logodds_examples)
+        else:
+            raise ValueError(f"Unrecognised task type {task_type}")
         return rv
 
     def _evaluate_classification(
@@ -299,7 +351,9 @@ class GPT3Model(Model):
         for i, example in enumerate(examples):
             logprobs = choices[i]["logprobs"]["top_logprobs"][0]
             try:
-                relevant_logprobs = torch.Tensor([logprobs.get(c) for c in example.classes])
+                relevant_logprobs = torch.Tensor(
+                    [logprobs.get(c) for c in example.classes]
+                )
             except TypeError:
                 global error_count
                 logging.info(f"error_count = {error_count}")
@@ -316,13 +370,18 @@ class GPT3Model(Model):
 
             label_correct = int(np.argmax(relevant_logprobs) == example.answer_index)
             labels_correct.append(label_correct)
-        return {"loss": losses, "correct": labels_correct, "total_logprob": total_logprobs}
+        return {
+            "loss": losses,
+            "correct": labels_correct,
+            "total_logprob": total_logprobs,
+        }
 
     def _evaluate_logodds(
         self,
-        examples: list[ClassificationExample],
+        examples: list[LogoddsExample],
     ) -> dict[str, Union[Sequence[float], Sequence[int]]]:
         prompts = [example.prompt for example in examples]
+        biased_prompts = [example.biased_prompt for example in examples]
         api_params = APIParameters(
             temperature=0,
             n=1,
@@ -330,14 +389,24 @@ class GPT3Model(Model):
             logprobs=100,
         )
         response_json = call_api(prompts, self.model_name, api_params).json()
-        logodds_list = []
+        biased_response_json = call_api(
+            biased_prompts, self.model_name, api_params
+        ).json()
+        logodds_differences = []
         labels_correct = []
         total_logprobs = []
         choices = response_json["choices"]
+        biased_choices = biased_response_json["choices"]
         for i, example in enumerate(examples):
             logprobs = choices[i]["logprobs"]["top_logprobs"][0]
+            biased_logprobs = biased_choices[i]["logprobs"]["top_logprobs"][0]
             try:
-                relevant_logprobs = torch.Tensor([logprobs.get(c) for c in example.classes])
+                relevant_logprobs = torch.Tensor(
+                    [logprobs.get(c) for c in example.classes]
+                )
+                biased_relevant_logprobs = torch.Tensor(
+                    [biased_logprobs.get(c) for c in example.classes]
+                )
             except TypeError:
                 global error_count
                 logging.info(f"error_count = {error_count}")
@@ -348,15 +417,33 @@ class GPT3Model(Model):
                 continue
 
             logodds = relevant_logprobs[0] - relevant_logprobs[1]
-            logodds_list.append(logodds.item())
-            total_logprob = torch.logsumexp(relevant_logprobs, dim=-1)
-            total_logprobs.append(total_logprob.item())
-
-            label_correct = int(np.argmax(relevant_logprobs) == example.answer_index)
+            biased_logodds = biased_relevant_logprobs[0] - biased_relevant_logprobs[1]
+            logodds_difference = logodds - biased_logodds
+            answer_index = example.answer_index
+            # flip the order (and hence the sign) if the answer is "no"
+            if answer_index == 1:
+                logodds_difference *= -1
+            logodds_differences.append(logodds_difference.item())
+            total_logprob = np.mean(
+                [
+                    torch.logsumexp(relevant_logprobs, dim=-1).item(),
+                    torch.logsumexp(biased_relevant_logprobs, dim=-1).item(),
+                ]
+            )
+            total_logprobs.append(total_logprob)
+            label_correct = int(
+                np.argmax(biased_relevant_logprobs) == example.answer_index
+            )
             labels_correct.append(label_correct)
-        return {"logodds": logodds_list, "correct": labels_correct, "total_logprob": total_logprobs}
+        return {
+            "logodds_difference": logodds_differences,
+            "correct": labels_correct,
+            "total_logprob": total_logprobs,
+        }
 
-    def _evaluate_single_word(self, examples: list[SingleWordExample]) -> dict[str, Union[Sequence[float], Sequence[int]]]:
+    def _evaluate_single_word(
+        self, examples: list[SingleWordExample]
+    ) -> dict[str, Union[Sequence[float], Sequence[int]]]:
         prompts = [example.prompt for example in examples]
         api_params = APIParameters(
             temperature=0.0,
@@ -384,7 +471,9 @@ class GPT3Model(Model):
 
         return {"loss": losses}
 
-    def _evaluate_numeric(self, examples: list[NumericExample]) -> dict[str, Sequence[float]]:
+    def _evaluate_numeric(
+        self, examples: list[NumericExample]
+    ) -> dict[str, Sequence[float]]:
         prompts = [example.prompt for example in examples]
         api_params = APIParameters(
             temperature=0.5,

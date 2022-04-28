@@ -91,7 +91,7 @@ def load_data(dataset_path: Path, task_type: TaskType) -> Dataset:
         dataset = Dataset.single_word_from_df(df)
     elif task_type == "logodds":
         # we can just reuse the classification dataset type
-        dataset = Dataset.classification_from_df(df)
+        dataset = Dataset.logodds_from_df(df)
     else:
         raise ValueError(f"Unrecognised task type {task_type}")
     return dataset
@@ -124,7 +124,7 @@ def run_model(
     elif task_type == "numeric":
         field_names = ["index", "estimate"]
     elif task_type == "logodds":
-        field_names = ["index", "logodds", "correct", "total_logprob"]
+        field_names = ["index", "logodds_difference", "correct", "total_logprob"]
     else:
         raise ValueError(f"unknown task type {task_type}")
 
