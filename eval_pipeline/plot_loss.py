@@ -6,12 +6,14 @@ from pprint import pprint
 import sys
 
 from pathlib import Path
-from typing import Optional
+from typing import Optional, cast
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
 from eval_pipeline.dataset import TaskType
+
+np.random.seed(42)
 
 size_dict = {
     "gpt2": 124_000_000,
@@ -105,8 +107,8 @@ def plot_classification_loss(
     # one dict containing all different plots to be made, with their labels as keys
     separate_plot_dict = {}
     separate_average_coverages = {}
-    for size in dataset_sizes:
-        size_dfs = {name: df[:size] for name, df in dfs.items()}
+    for index, size in enumerate(dataset_sizes):
+        size_dfs = {name: cast(pd.DataFrame, df.sample(n=size)) for name, df in dfs.items()}
         averages = {
             model_name: np.mean(df[output_name]) for model_name, df in size_dfs.items()
         }
@@ -123,8 +125,8 @@ def plot_classification_loss(
             average_coverages = None
 
         size_name = str(size) if size != -1 else len(list(dfs.values())[0])
-        separate_plot_dict[size_name] = (averages, standard_errors)
-        separate_average_coverages[size_name] = average_coverages
+        separate_plot_dict[index] = (averages, standard_errors, size_name)
+        separate_average_coverages[index] = (average_coverages, size_name)
     if task_type == "single_word":
         separate_average_coverages = None
 
@@ -140,16 +142,16 @@ def plot_numeric_loss(exp_dir: Path):
         )
     with data_file.open("r") as f:
         averages = json.load(f)
-    plot_loss(exp_dir, {"numeric": (averages, None)}, task_type="numeric")
+    plot_loss(exp_dir, {0: (averages, None, "numeric")}, task_type="numeric")
 
 
 def plot_loss(
     exp_dir: Path,
-    separate_plots_dict: dict[str, tuple[dict, Optional[dict]]],
+    separate_plots_dict: dict[int, tuple[dict, Optional[dict], str]],
     baseline: Optional[float] = None,
     task_type: Optional[TaskType] = None,
     invert: Optional[bool] = None,
-    average_coverages: Optional[dict[str, dict]] = None,
+    average_coverages: Optional[dict[int, dict]] = None,
     show: bool = True,
 ) -> None:
     plt.style.use("ggplot")
@@ -164,7 +166,7 @@ def plot_loss(
             label="Baseline (equal probability)",
         )
 
-    for label, (loss_dict, standard_errors) in separate_plots_dict.items():
+    for index, (loss_dict, standard_errors, label) in separate_plots_dict.items():
         if standard_errors is not None and task_type != "classification_acc":
             errorbar_data = [
                 (size_dict[size], loss, standard_errors[size])
