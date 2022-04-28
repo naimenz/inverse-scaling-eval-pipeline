@@ -77,7 +77,7 @@ def load_data(dataset_path: Path, task_type: TaskType) -> Dataset:
         df = cast("pd.DataFrame", pd.read_json(dataset_path, lines=True))
     else:
         raise ValueError(f"Unknown file extension {dataset_path.suffix}")
-    if task_type.startswith("classification"):
+    if task_type in ["classification_loss", "classification_acc"]:
         dataset = Dataset.classification_from_df(df)
     elif task_type == "numeric":
         dataset = Dataset.numeric_from_df(df)
@@ -86,6 +86,8 @@ def load_data(dataset_path: Path, task_type: TaskType) -> Dataset:
     elif task_type == "logodds":
         # we can just reuse the classification dataset type
         dataset = Dataset.classification_from_df(df)
+    else:
+        raise ValueError(f"Unrecognised task type {task_type}")
     return dataset
 
 
@@ -101,7 +103,7 @@ def run_model(
     write the results to write_path incrementally."""
     write_path = Path(write_dir, model_name + ".csv")
     # TODO: find a way to avoid having to specify field names ahead of time
-    if task_type.startswith("classification"):
+    if task_type in ["classification_loss", "classification_acc"]:
         field_names = ["index", "loss", "correct", "total_logprob"]
     elif task_type == "single_word":
         field_names = ["index", "loss"]
@@ -126,13 +128,7 @@ def run_model(
             rows = [{"index": start_index + offset} for offset in range(n_outputs)]
             for output_name, values in outputs.items():
                 for offset, value in enumerate(values):
-                    try:
-                        rows[offset][output_name] = value
-                    except Exception as e:
-                        print(f"len(rows) = {len(rows)}")
-                        print(f"offset = {offset}")
-                        print(f"len(values) = {len(values)}")
-                        raise e
+                    rows[offset][output_name] = value
             for row in rows:
                 writer.writerow(row)
 

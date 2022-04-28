@@ -6,7 +6,7 @@ from typing import Iterator
 from typing_extensions import Literal
 import pandas as pd
 
-TaskType = Literal["classification", "numeric", "single_word"]
+TaskType = Literal["classification_acc", "classification_loss", "numeric", "single_word"]
 
 
 @dataclass
