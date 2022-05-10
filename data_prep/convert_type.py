@@ -9,7 +9,10 @@ def main():
     out_path = Path(args.out_file)
 
     if in_path.suffix == ".csv":
-        df = pd.read_csv(in_path, index_col=0)
+        if args.has_index:
+            df = pd.read_csv(in_path, index_col=0)
+        else:
+            df = pd.read_csv(in_path)
     elif in_path.suffix == ".jsonl":
         df = pd.read_json(in_path, lines=True)
     else:
@@ -28,15 +31,20 @@ def parse_args(args):
         description="Convert from csv to jsonl or vice versa"
     )
     parser.add_argument(
-        "--in-file",
+        "in_file",
         type=str,
         help="path of file to read data from",
-        required=True,
     )
     parser.add_argument(
-        "--out-file",
+        "out_file",
         type=str,
         help="path of file to write data to",
+    )
+
+    parser.add_argument(
+        "--has-index",
+        action="store_true",
+        help="whether there's an index col on the input csv",
         required=False,
     )
 
