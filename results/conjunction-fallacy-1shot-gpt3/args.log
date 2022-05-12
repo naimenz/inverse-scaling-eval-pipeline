@@ -9,7 +9,6 @@
     "davinci"
   ],
   "use_gpu": false,
-  "colab": false,
   "batch_size": 100,
   "task_type": "classification"
 }
