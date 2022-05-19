@@ -7,9 +7,13 @@ def main():
     args = parse_args(sys.argv[1:])
     in_path = Path(args.in_file)
     out_path = Path(args.out_file)
+    has_index_col = args.has_index
 
+    convert_type(in_path, out_path, has_index_col)
+    
+def convert_type(in_path: Path, out_path: Path, has_index_col: bool = False) -> None:
     if in_path.suffix == ".csv":
-        if args.has_index:
+        if has_index_col:
             df = pd.read_csv(in_path, index_col=0)
         else:
             df = pd.read_csv(in_path)
@@ -24,7 +28,6 @@ def main():
         df.to_json(out_path, orient="records", lines=True)
     else:
         raise ValueError(f"Unknown suffix {out_path.suffix}")
-    
 
 def parse_args(args):
     parser = argparse.ArgumentParser(
