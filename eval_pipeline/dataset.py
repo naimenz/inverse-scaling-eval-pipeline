@@ -54,35 +54,35 @@ class Dataset:
     @classmethod
     def classification_from_df(cls, df: pd.DataFrame) -> Dataset:
         examples = []
-        for _, (prompt, classes_string, answer_index) in df.iterrows():
+        for _, row in df.iterrows():
             # important to convert the string 'classes' back into a list
-            classes_list = ast.literal_eval(str(classes_string))
-            example = ClassificationExample(prompt, classes_list, answer_index)
+            classes_list = ast.literal_eval(str(row["classes"]))
+            example = ClassificationExample(row["prompt"], classes_list, row["answer_index"])
             examples.append(example)
         return Dataset(examples)
 
     @classmethod
     def numeric_from_df(cls, df: pd.DataFrame) -> Dataset:
         examples = []
-        for _, (prompt, true_answer, anchor) in df.iterrows():
-            example = NumericExample(prompt, true_answer, anchor)
+        for _, row in df.iterrows():
+            example = NumericExample(row["prompt"], row["true_answer"], row["anchor"])
             examples.append(example)
         return Dataset(examples)
 
     @classmethod
     def single_word_from_df(cls, df: pd.DataFrame) -> Dataset:
         examples = []
-        for _, (prompt,) in df.iterrows():
-            example = SingleWordExample(prompt)
+        for _, row in df.iterrows():
+            example = SingleWordExample(row["prompt"])
             examples.append(example)
         return Dataset(examples)
 
     @classmethod
     def logodds_from_df(cls, df: pd.DataFrame) -> Dataset:
         examples = []
-        for _, (prompt, biased_prompt, classes_string, answer_index) in df.iterrows():
+        for _, row in df.iterrows():
             # important to convert the string 'classes' back into a list
-            classes_list = ast.literal_eval(str(classes_string))
-            example = LogoddsExample(prompt, biased_prompt, classes_list, answer_index)
+            classes_list = ast.literal_eval(str(row["classes"]))
+            example = LogoddsExample(row["prompt"], row["biased_prompt"], classes_list, row["answer_index"])
             examples.append(example)
         return Dataset(examples)
