@@ -339,7 +339,11 @@ class GPT3Model(Model):
         # making a prompt for each completion
         # NOTE: the effective batch size is now n times the parameter passed in (where n is number of classes)
         # but I'll fix that in the colab and it'll be fine
-        prompts = [example.prompt + class_token for example in examples for class_token in example.classes]
+        prompts = [
+            example.prompt + class_token
+            for example in examples
+            for class_token in example.classes
+        ]
         api_params = APIParameters(
             temperature=0,
             n=1,
@@ -357,8 +361,10 @@ class GPT3Model(Model):
         for i, example in enumerate(examples):
             # there are n times as many prompts as examples
             prompt_start = i * n_classes
-            class_choices = choices[prompt_start: prompt_start + n_classes]
-            relevant_logprobs = torch.tensor([choice["logprobs"]["token_logprobs"][-1] for choice in class_choices])
+            class_choices = choices[prompt_start : prompt_start + n_classes]
+            relevant_logprobs = torch.tensor(
+                [choice["logprobs"]["token_logprobs"][-1] for choice in class_choices]
+            )
 
             loss = -F.log_softmax(relevant_logprobs, dim=-1)[example.answer_index]
             losses.append(loss.item())
@@ -377,13 +383,22 @@ class GPT3Model(Model):
         self,
         examples: list[LogoddsExample],
     ) -> dict[str, Union[Sequence[float], Sequence[int]]]:
-        prompts = [example.prompt for example in examples]
-        biased_prompts = [example.biased_prompt for example in examples]
+        prompts = [
+            example.prompt + class_token
+            for example in examples
+            for class_token in example.classes
+        ]
+        biased_prompts = [
+            example.biased_prompt + class_token
+            for example in examples
+            for class_token in example.classes
+        ]
         api_params = APIParameters(
             temperature=0,
             n=1,
-            max_tokens=1,
-            logprobs=100,
+            max_tokens=0,
+            logprobs=1,
+            echo=True,
         )
         response_json = call_api(prompts, self.model_name, api_params).json()
         biased_response_json = call_api(
@@ -394,24 +409,24 @@ class GPT3Model(Model):
         total_logprobs = []
         choices = response_json["choices"]
         biased_choices = biased_response_json["choices"]
+
+        n_classes = len(examples[0].classes)
         for i, example in enumerate(examples):
-            logprobs = choices[i]["logprobs"]["top_logprobs"][0]
-            biased_logprobs = biased_choices[i]["logprobs"]["top_logprobs"][0]
-            try:
-                relevant_logprobs = torch.Tensor(
-                    [logprobs.get(c) for c in example.classes]
-                )
-                biased_relevant_logprobs = torch.Tensor(
-                    [biased_logprobs.get(c) for c in example.classes]
-                )
-            except TypeError:
-                global error_count
-                logging.info(f"error_count = {error_count}")
-                logging.info(example)
-                logging.info(logprobs)
-                # not raising an error, just moving on to the next example
-                error_count += 1
-                continue
+            prompt_start = i * n_classes
+            class_choices = choices[prompt_start : prompt_start + n_classes]
+            biased_class_choices = biased_choices[
+                prompt_start : prompt_start + n_classes
+            ]
+
+            relevant_logprobs = torch.tensor(
+                [choice["logprobs"]["token_logprobs"][-1] for choice in class_choices]
+            )
+            biased_relevant_logprobs = torch.tensor(
+                [
+                    choice["logprobs"]["token_logprobs"][-1]
+                    for choice in biased_class_choices
+                ]
+            )
 
             logodds = relevant_logprobs[0] - relevant_logprobs[1]
             biased_logodds = biased_relevant_logprobs[0] - biased_relevant_logprobs[1]

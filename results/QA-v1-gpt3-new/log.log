@@ -3,3 +3,16 @@ Namespace(batch_size=20, dataset='QA_bias-v1', dataset_path=None, exp_dir='QA-v1
 2022-04-28 15:42:14,429 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v1-gpt3-new
 2022-04-28 15:42:14,429 [INFO] Copied data
 2022-04-28 15:42:51,208 [INFO] Retrying after error 503: {'message': 'That model is currently overloaded with other requests. You can retry your request, or contact support@openai.com if the error persists. (Please include the request ID 8f95f53fe91c89beb96c722078bd310e in your email.)', 'type': 'server_error', 'param': None, 'code': None}
+2022-05-25 12:05:00,413 [INFO] Logging set up with args
+Namespace(batch_size=20, dataset='QA_bias-v1', dataset_path=None, exp_dir='QA-v1-gpt3-new', models=['ada', 'babbage', 'curie', 'davinci'], task_type='logodds', use_gpu=False)
+2022-05-25 12:05:00,413 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v1-gpt3-new
+2022-05-25 12:05:00,413 [INFO] Copied data
+2022-05-25 12:05:00,864 [INFO] Retrying after error 400: {'message': "You requested a length 0 completion, but you did not set the 'echo' parameter. That means that we will return no data to you. (HINT: set 'echo' to true in order for the API to echo back the prompt to you.)", 'type': 'invalid_request_error', 'param': None, 'code': None}
+2022-05-25 12:05:01,204 [INFO] Retrying after error 400: {'message': "You requested a length 0 completion, but you did not set the 'echo' parameter. That means that we will return no data to you. (HINT: set 'echo' to true in order for the API to echo back the prompt to you.)", 'type': 'invalid_request_error', 'param': None, 'code': None}
+2022-05-25 12:05:01,973 [INFO] Retrying after error 400: {'message': "You requested a length 0 completion, but you did not set the 'echo' parameter. That means that we will return no data to you. (HINT: set 'echo' to true in order for the API to echo back the prompt to you.)", 'type': 'invalid_request_error', 'param': None, 'code': None}
+2022-05-25 12:05:02,338 [INFO] Retrying after error 400: {'message': "You requested a length 0 completion, but you did not set the 'echo' parameter. That means that we will return no data to you. (HINT: set 'echo' to true in order for the API to echo back the prompt to you.)", 'type': 'invalid_request_error', 'param': None, 'code': None}
+2022-05-25 12:05:02,707 [INFO] Retrying after error 400: {'message': "You requested a length 0 completion, but you did not set the 'echo' parameter. That means that we will return no data to you. (HINT: set 'echo' to true in order for the API to echo back the prompt to you.)", 'type': 'invalid_request_error', 'param': None, 'code': None}
+2022-05-25 12:05:43,290 [INFO] Logging set up with args
+Namespace(batch_size=20, dataset='QA_bias-v1', dataset_path=None, exp_dir='QA-v1-gpt3-new', models=['ada', 'babbage', 'curie', 'davinci'], task_type='logodds', use_gpu=False)
+2022-05-25 12:05:43,290 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v1-gpt3-new
+2022-05-25 12:05:43,290 [INFO] Copied data
