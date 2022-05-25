@@ -31,6 +31,7 @@ class NumericExample(Example):
 @dataclass
 class SingleWordExample(Example):
     prompt: str
+    completion: str
 
 @dataclass
 class LogoddsExample(Example):
@@ -73,7 +74,7 @@ class Dataset:
     def single_word_from_df(cls, df: pd.DataFrame) -> Dataset:
         examples = []
         for _, row in df.iterrows():
-            example = SingleWordExample(row["prompt"])
+            example = SingleWordExample(row["prompt"], row["completion"])
             examples.append(example)
         return Dataset(examples)
 

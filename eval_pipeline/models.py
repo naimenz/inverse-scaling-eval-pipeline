@@ -127,12 +127,12 @@ class HFModel(Model):
         self, examples: list[SingleWordExample]
     ) -> dict[str, Sequence[float]]:
         # finding the target
-        prompts = [example.prompt for example in examples]
+        prompts = [example.prompt + example.completion for example in examples]
         tokenized_inputs = self.tokenizer(
             prompts, return_tensors="pt", truncation=True
         ).to(self.device)
 
-        target_words = [" " + prompt.split(" ")[-1] for prompt in prompts]
+        target_words = [example.completion for example in examples]
         target_token_lengths = [
             len(self.tokenizer(word)["input_ids"]) for word in target_words
         ]
@@ -456,7 +456,7 @@ class GPT3Model(Model):
     def _evaluate_single_word(
         self, examples: list[SingleWordExample]
     ) -> dict[str, Union[Sequence[float], Sequence[int]]]:
-        prompts = [example.prompt for example in examples]
+        prompts = [example.prompt + example.completion for example in examples]
         api_params = APIParameters(
             temperature=0.0,
             n=1,

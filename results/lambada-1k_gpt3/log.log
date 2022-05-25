@@ -1,0 +1,5 @@
+2022-05-25 12:39:45,187 [INFO] Logging set up with args
+Namespace(batch_size=50, dataset='lambada-1k', dataset_path=None, exp_dir='lambada-1k_gpt3', models=['ada', 'babbage', 'curie', 'davinci'], task_type='single_word', use_gpu=False)
+2022-05-25 12:39:45,188 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/lambada-1k_gpt3
+2022-05-25 12:39:45,188 [INFO] Copied data
+2022-05-25 12:41:00,926 [INFO] Retrying after error 429: {'message': 'Rate limit reached for academicsnyuperez-davinci. Limit: 60.000000 / min. Current: 64.000000 / min. Contact support@openai.com if you continue to have issues.', 'type': 'requests', 'param': None, 'code': None}

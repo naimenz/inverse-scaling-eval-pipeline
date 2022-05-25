@@ -1,0 +1,14 @@
+{
+  "dataset": "lambada-1k",
+  "dataset_path": null,
+  "exp_dir": "lambada-1k_gpt3",
+  "models": [
+    "ada",
+    "babbage",
+    "curie",
+    "davinci"
+  ],
+  "use_gpu": false,
+  "batch_size": 50,
+  "task_type": "single_word"
+}
