@@ -45,6 +45,7 @@ ValidHFModel = Literal[
     "opt-1.3b",
     "opt-2.7b",
     "opt-6.7b",
+    "opt-13b",
 ]
 valid_hf_models: tuple[ValidHFModel, ...] = get_args(ValidHFModel)
 
