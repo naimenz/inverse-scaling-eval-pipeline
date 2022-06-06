@@ -1,5 +1,6 @@
 """This file is specifically for compiling syllogisms from templates, nouns, and verbs/adjectives, but
 the basic pattern should be generalisable"""
+from concurrent.futures import process
 import pandas as pd
 from pathlib import Path
 
@@ -45,8 +46,11 @@ for template in templates["templates"]:
 zeroshot_template_df = pd.DataFrame({"prompt": zeroshot_templates, "classes": possible_answers_list, "answer_index": answer_ix_list})
 zeroshot_template_df.to_csv(Path(processed_data_path, "syllogism-0shot.csv"))
 
-zeroshot_template_df = pd.DataFrame({"prompt": oneshot_templates, "classes": possible_answers_list, "answer_index": answer_ix_list})
-zeroshot_template_df.to_csv(Path(processed_data_path, "syllogism-1shot.csv"))
+sample_template_df = zeroshot_template_df[:100]
+sample_template_df.to_csv(Path(processed_data_path, "syllogism-sample.csv"))
+
+oneshot_template_df = pd.DataFrame({"prompt": oneshot_templates, "classes": possible_answers_list, "answer_index": answer_ix_list})
+oneshot_template_df.to_csv(Path(processed_data_path, "syllogism-1shot.csv"))
 
 print(zeroshot_template_df.head())
 print(zeroshot_template_df.info())
