@@ -13,9 +13,13 @@ TaskType = Literal["classification_acc", "classification_loss", "numeric", "sing
 class Example(ABC):
     prompt: str
 
+@dataclass
+class ExampleWithClasses(Example):
+    prompt: str
+    classes: tuple[str, ...]
 
 @dataclass
-class ClassificationExample(Example):
+class ClassificationExample(ExampleWithClasses):
     prompt: str
     classes: tuple[str, ...]
     answer_index: int
@@ -34,7 +38,7 @@ class SingleWordExample(Example):
     completion: str
 
 @dataclass
-class LogoddsExample(Example):
+class LogoddsExample(ExampleWithClasses):
     prompt: str
     biased_prompt: str
     classes: tuple[str, ...]

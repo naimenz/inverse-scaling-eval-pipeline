@@ -13,6 +13,7 @@ from huggingface_hub import snapshot_download
 from eval_pipeline.dataset import (
     ClassificationExample,
     Example,
+    ExampleWithClasses,
     LogoddsExample,
     SingleWordExample,
     NumericExample,
@@ -80,22 +81,25 @@ class HFModel(Model):
             prefix = "facebook/"
             checkpoint = prefix + model_name
             weights_path = snapshot_download(checkpoint)
-            self.model = AutoModelForCausalLM.from_pretrained(weights_path).to(self.device)  # type: ignore
+            self.model = AutoModelForCausalLM.from_pretrained(weights_path, max_length=1024).to(self.device)  # type: ignore
         else:
             if model_name.startswith("gpt-neo") or model_name.startswith("gpt-j"):
                 prefix = "EleutherAI/"
             else:
                 prefix = ""
             torch.cuda.empty_cache()
-            self.model = AutoModelForCausalLM.from_pretrained(prefix + model_name).to(self.device)  # type: ignore
-        self.model.max_length = 1024
+            self.model = AutoModelForCausalLM.from_pretrained(prefix + model_name, max_length=1024).to(self.device)  # type: ignore
         # apparently the OPT models need slightly different tokenizers
         # https://huggingface.co/docs/transformers/main/en/model_doc/opt#overview
         if prefix == "opt":
             use_fast = False
         else:
             use_fast = True
-        self.tokenizer = AutoTokenizer.from_pretrained(prefix + model_name, use_fast=use_fast)
+        self.tokenizer = AutoTokenizer.from_pretrained(
+            prefix + model_name,
+            use_fast=use_fast,
+            model_max_length=1023,
+        )
 
     def __call__(
         self, examples: list[Example], task_type: TaskType
@@ -256,14 +260,7 @@ class HFModel(Model):
         compute the binary log odds for each example"""
         logodds_list = []
         for i, example in enumerate(examples):
-            example_logits = logits[i]
-            # have to flatten this list for some reason
-            class_tokens = [
-                token[0] for token in self.tokenizer(list(example.classes))["input_ids"]
-            ]
-            # log_softmax just subtracts a constant, so repeated applications change nothing
-            # and there is no point in taking logprobs before focusing on the relevant indices
-            relevant_logits = example_logits[class_tokens]
+            relevant_logits = self._extract_relevant_logits(logits, example, i)
             logprobs = -F.log_softmax(relevant_logits, dim=-1)
             # NOTE: assuming always binary
             assert len(logprobs) == 2
@@ -276,14 +273,7 @@ class HFModel(Model):
         compute the classification loss for each example"""
         losses = []
         for i, example in enumerate(examples):
-            example_logits = logits[i]
-            # have to flatten this list for some reason
-            class_tokens = [
-                token[0] for token in self.tokenizer(list(example.classes))["input_ids"]
-            ]
-            # log_softmax just subtracts a constant, so repeated applications change nothing
-            # and there is no point in taking logprobs before focusing on the relevant indices
-            relevant_logits = example_logits[class_tokens]
+            relevant_logits = self._extract_relevant_logits(logits, example, i)
             loss = -F.log_softmax(relevant_logits, dim=-1)[example.answer_index]
             losses.append(loss.item())
         return losses
@@ -293,20 +283,28 @@ class HFModel(Model):
         compute whether the predicted label is correct for each example"""
         labels_correct = []
         for i, example in enumerate(examples):
-            example_logits = logits[i]
-            # have to flatten this list for some reason
-            class_tokens = [
-                token[0] for token in self.tokenizer(list(example.classes))["input_ids"]
-            ]
-            # log_softmax just subtracts a constant, so repeated applications change nothing
-            # and there is no point in taking logprobs before focusing on the relevant indices
-            relevant_logits = example_logits[class_tokens]
+            relevant_logits = self._extract_relevant_logits(logits, example, i)
             label_correct = int(
                 np.argmax(relevant_logits.cpu().detach().numpy())
                 == example.answer_index
             )
             labels_correct.append(label_correct)
         return labels_correct
+
+    def _extract_relevant_logits(
+        self, logits: torch.Tensor, example: ExampleWithClasses, index: int
+    ) -> torch.Tensor:
+        example_logits = logits[index]
+        # NOTE: we take the last element of the returned token list
+        # this is because the tokenizer returns a 1-element list for GPT tokenizers
+        # and a 2-element list with start token in the first position for OPT tokenizers
+        class_tokens = [
+            token[-1] for token in self.tokenizer(list(example.classes))["input_ids"]
+        ]
+        # log_softmax just subtracts a constant, so repeated applications change nothing
+        # and there is no point in taking logprobs before focusing on the relevant indices
+        relevant_logits = example_logits[class_tokens]
+        return relevant_logits
 
     def _total_logprobs_from_logits(self, examples, logits) -> list[float]:
         """Given examples and logits for those examples,
