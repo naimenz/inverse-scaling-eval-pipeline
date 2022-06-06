@@ -1,6 +1,5 @@
 from __future__ import annotations
 from abc import ABC, abstractmethod
-import logging
 import os
 from typing import Union, cast, Sequence
 from typing_extensions import Literal, get_args
@@ -9,7 +8,8 @@ import numpy as np
 import torch
 import torch.nn.functional as F
 
-from transformers import AutoModelForCausalLM, AutoTokenizer  # type: ignore
+from transformers import AutoModelForCausalLM, AutoTokenizer, AutoConfig  # type: ignore
+from huggingface_hub import snapshot_download
 from eval_pipeline.dataset import (
     ClassificationExample,
     Example,
@@ -39,6 +39,11 @@ ValidHFModel = Literal[
     "gpt-neo-1.3B",
     "gpt-neo-2.7B",
     "gpt-j-6B",
+    "opt-125m",
+    "opt-350m",
+    "opt-1.3b",
+    "opt-2.7b",
+    "opt-6.7b",
 ]
 valid_hf_models: tuple[ValidHFModel, ...] = get_args(ValidHFModel)
 
@@ -70,14 +75,27 @@ class Model(ABC):
 class HFModel(Model):
     def __init__(self, model_name: ValidHFModel, device: Device) -> None:
         self.device = device
-        prefix = ""
-        if model_name.startswith("gpt-neo") or model_name.startswith("gpt-j"):
-            prefix = "EleutherAI/"
-        # DEBUG: trying to fit the models on my gpu
-        torch.cuda.empty_cache()
-        self.model = AutoModelForCausalLM.from_pretrained(prefix + model_name).to(self.device)  # type: ignore
+        # have to download the opt models in advance since they're new
+        if model_name.startswith("opt-"):
+            prefix = "facebook/"
+            checkpoint = prefix + model_name
+            weights_path = snapshot_download(checkpoint)
+            self.model = AutoModelForCausalLM.from_pretrained(weights_path).to(self.device)  # type: ignore
+        else:
+            if model_name.startswith("gpt-neo") or model_name.startswith("gpt-j"):
+                prefix = "EleutherAI/"
+            else:
+                prefix = ""
+            torch.cuda.empty_cache()
+            self.model = AutoModelForCausalLM.from_pretrained(prefix + model_name).to(self.device)  # type: ignore
         self.model.max_length = 1024
-        self.tokenizer = AutoTokenizer.from_pretrained(prefix + model_name)
+        # apparently the OPT models need slightly different tokenizers
+        # https://huggingface.co/docs/transformers/main/en/model_doc/opt#overview
+        if prefix == "opt":
+            use_fast = False
+        else:
+            use_fast = True
+        self.tokenizer = AutoTokenizer.from_pretrained(prefix + model_name, use_fast=use_fast)
 
     def __call__(
         self, examples: list[Example], task_type: TaskType
