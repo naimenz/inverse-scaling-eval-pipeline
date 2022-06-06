@@ -264,7 +264,8 @@ class HFModel(Model):
             relevant_logits = self._extract_relevant_logits(logits, example, i)
             logprobs = -F.log_softmax(relevant_logits, dim=-1)
             # NOTE: assuming always binary
-            assert len(logprobs) == 2
+            if len(logprobs) != 2:
+                raise ValueError(f"Expected len(logprobs) == 2, not {len(logprobs)}")
             logodds = logprobs[0] - logprobs[1]
             logodds_list.append(logodds.item())
         return logodds_list

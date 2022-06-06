@@ -6,17 +6,21 @@ from typing import Iterator
 from typing_extensions import Literal
 import pandas as pd
 
-TaskType = Literal["classification_acc", "classification_loss", "numeric", "single_word", "logodds"]
+TaskType = Literal[
+    "classification_acc", "classification_loss", "numeric", "single_word", "logodds"
+]
 
 
 @dataclass
 class Example(ABC):
     prompt: str
 
+
 @dataclass
 class ExampleWithClasses(Example):
     prompt: str
     classes: tuple[str, ...]
+
 
 @dataclass
 class ClassificationExample(ExampleWithClasses):
@@ -37,12 +41,14 @@ class SingleWordExample(Example):
     prompt: str
     completion: str
 
+
 @dataclass
 class LogoddsExample(ExampleWithClasses):
     prompt: str
     biased_prompt: str
     classes: tuple[str, ...]
     answer_index: int
+
 
 class Dataset:
     """Class to store examples to be run by HF or GPT3 models"""
@@ -62,7 +68,11 @@ class Dataset:
         for _, row in df.iterrows():
             # important to convert the string 'classes' back into a list
             classes_list = ast.literal_eval(str(row["classes"]))
-            example = ClassificationExample(row["prompt"], classes_list, row["answer_index"])
+            example = ClassificationExample(
+                prompt=row["prompt"],
+                classes=classes_list,
+                answer_index=row["answer_index"],
+            )
             examples.append(example)
         return Dataset(examples)
 
@@ -88,6 +98,11 @@ class Dataset:
         for _, row in df.iterrows():
             # important to convert the string 'classes' back into a list
             classes_list = ast.literal_eval(str(row["classes"]))
-            example = LogoddsExample(row["prompt"], row["biased_prompt"], classes_list, row["answer_index"])
+            example = LogoddsExample(
+                prompt=row["prompt"],
+                biased_prompt=row["biased_prompt"],
+                classes=classes_list,
+                answer_index=row["answer_index"],
+            )
             examples.append(example)
         return Dataset(examples)
