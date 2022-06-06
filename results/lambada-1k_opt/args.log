@@ -1,12 +1,12 @@
 {
-  "dataset": "QA_bias-v1",
+  "dataset": "lambada-1k",
   "dataset_path": null,
-  "exp_dir": "QA-v1-opt",
+  "exp_dir": "lambada-1k_opt",
   "models": [
     "opt-125m",
     "opt-350m"
   ],
   "use_gpu": true,
   "batch_size": 1,
-  "task_type": "logodds"
+  "task_type": "single_word"
 }

@@ -1,0 +1,16 @@
+2022-06-06 13:09:37,034 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='syllogism-sample', dataset_path=None, exp_dir='syllogism-sample-opt', models=['opt-125m', 'opt-350m'], task_type='classification', use_gpu=True)
+2022-06-06 13:09:37,034 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/syllogism-sample-opt
+2022-06-06 13:09:37,034 [INFO] Copied data
+2022-06-06 15:21:02,627 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='syllogism-sample', dataset_path=None, exp_dir='syllogism-sample-opt', models=['opt-125m', 'opt-350m'], task_type='classification', use_gpu=True)
+2022-06-06 15:21:02,627 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/syllogism-sample-opt
+2022-06-06 15:21:02,628 [INFO] Copied data
+2022-06-06 15:22:24,227 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='syllogism-sample', dataset_path=None, exp_dir='syllogism-sample-opt', models=['opt-125m', 'opt-350m'], task_type='classification', use_gpu=True)
+2022-06-06 15:22:24,227 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/syllogism-sample-opt
+2022-06-06 15:22:24,228 [INFO] Copied data
+2022-06-06 15:23:35,806 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='syllogism-sample', dataset_path=None, exp_dir='syllogism-sample-opt', models=['opt-125m', 'opt-350m'], task_type='classification', use_gpu=True)
+2022-06-06 15:23:35,806 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/syllogism-sample-opt
+2022-06-06 15:23:35,807 [INFO] Copied data

@@ -22,3 +22,35 @@ Namespace(batch_size=1, dataset='QA_bias-v1', dataset_path=None, exp_dir='QA-v1-
 Namespace(batch_size=1, dataset='QA_bias-v1', dataset_path=None, exp_dir='QA-v1-opt', models=['opt-125m', 'opt-350m', 'opt-1.3b', 'opt-2.7b'], task_type='logodds', use_gpu=True)
 2022-06-05 17:49:03,255 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v1-opt
 2022-06-05 17:49:03,256 [INFO] Copied data
+2022-06-06 12:36:38,782 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='QA_bias-v1', dataset_path=None, exp_dir='QA-v1-opt', models=['opt-125m', 'opt-350m', 'opt-1.3b', 'opt-2.7b'], task_type='logodds', use_gpu=True)
+2022-06-06 12:36:38,783 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v1-opt
+2022-06-06 12:36:38,784 [INFO] Copied data
+2022-06-06 12:37:04,483 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='QA_bias-v1', dataset_path=None, exp_dir='QA-v1-opt', models=['opt-125m', 'opt-350m'], task_type='logodds', use_gpu=True)
+2022-06-06 12:37:04,483 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v1-opt
+2022-06-06 12:37:04,484 [INFO] Copied data
+2022-06-06 12:39:10,917 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='QA_bias-v1', dataset_path=None, exp_dir='QA-v1-opt', models=['opt-125m', 'opt-350m'], task_type='logodds', use_gpu=True)
+2022-06-06 12:39:10,917 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v1-opt
+2022-06-06 12:39:10,917 [INFO] Copied data
+2022-06-06 12:41:50,848 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='QA_bias-v1', dataset_path=None, exp_dir='QA-v1-opt', models=['opt-125m', 'opt-350m'], task_type='logodds', use_gpu=True)
+2022-06-06 12:41:50,849 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v1-opt
+2022-06-06 12:41:50,849 [INFO] Copied data
+2022-06-06 12:44:41,866 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='QA_bias-v1', dataset_path=None, exp_dir='QA-v1-opt', models=['opt-125m', 'opt-350m'], task_type='logodds', use_gpu=True)
+2022-06-06 12:44:41,867 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v1-opt
+2022-06-06 12:44:41,868 [INFO] Copied data
+2022-06-06 12:56:42,135 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='QA_bias-v1', dataset_path=None, exp_dir='QA-v1-opt', models=['opt-125m', 'opt-350m'], task_type='logodds', use_gpu=True)
+2022-06-06 12:56:42,135 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v1-opt
+2022-06-06 12:56:42,136 [INFO] Copied data
+2022-06-06 13:02:44,039 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='QA_bias-v1', dataset_path=None, exp_dir='QA-v1-opt', models=['opt-125m', 'opt-350m'], task_type='logodds', use_gpu=True)
+2022-06-06 13:02:44,040 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v1-opt
+2022-06-06 13:02:44,041 [INFO] Copied data
+2022-06-06 15:26:51,449 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='QA_bias-v1', dataset_path=None, exp_dir='QA-v1-opt', models=['opt-125m', 'opt-350m'], task_type='logodds', use_gpu=True)
+2022-06-06 15:26:51,450 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v1-opt
+2022-06-06 15:26:51,452 [INFO] Copied data

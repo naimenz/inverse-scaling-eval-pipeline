@@ -1,0 +1,4 @@
+2022-06-06 12:34:26,160 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='lambada-1k', dataset_path=None, exp_dir='lambada-1k_opt', models=['opt-125m', 'opt-350m'], task_type='single_word', use_gpu=True)
+2022-06-06 12:34:26,160 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/lambada-1k_opt
+2022-06-06 12:34:26,162 [INFO] Copied data

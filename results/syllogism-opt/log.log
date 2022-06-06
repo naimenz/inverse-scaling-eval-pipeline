@@ -1,0 +1,4 @@
+2022-06-06 13:04:39,041 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='syllogism', dataset_path=None, exp_dir='syllogism-opt', models=['opt-125m', 'opt-350m'], task_type='classification', use_gpu=True)
+2022-06-06 13:04:39,041 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/syllogism-opt
+2022-06-06 13:04:39,042 [INFO] Copied data
