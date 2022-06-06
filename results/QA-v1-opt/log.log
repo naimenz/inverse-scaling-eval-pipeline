@@ -1,0 +1,24 @@
+2022-06-05 17:25:38,588 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='QA_bias-v1', dataset_path=None, exp_dir='QA-v1-opt', models=['opt-125m', 'opt-350m', 'opt-1.3b', 'opt-2.7b'], task_type='logodds', use_gpu=True)
+2022-06-05 17:25:38,588 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v1-opt
+2022-06-05 17:25:38,597 [INFO] Copied data
+2022-06-05 17:39:10,557 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='QA_bias-v1', dataset_path=None, exp_dir='QA-v1-opt', models=['opt-125m', 'opt-350m', 'opt-1.3b', 'opt-2.7b'], task_type='logodds', use_gpu=True)
+2022-06-05 17:39:10,557 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v1-opt
+2022-06-05 17:39:10,558 [INFO] Copied data
+2022-06-05 17:45:41,098 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='QA_bias-v1', dataset_path=None, exp_dir='QA-v1-opt', models=['opt-125m', 'opt-350m', 'opt-1.3b', 'opt-2.7b'], task_type='logodds', use_gpu=True)
+2022-06-05 17:45:41,099 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v1-opt
+2022-06-05 17:45:41,099 [INFO] Copied data
+2022-06-05 17:48:05,818 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='QA_bias-v1', dataset_path=None, exp_dir='QA-v1-opt', models=['opt-125m', 'opt-350m', 'opt-1.3b', 'opt-2.7b'], task_type='logodds', use_gpu=True)
+2022-06-05 17:48:05,818 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v1-opt
+2022-06-05 17:48:05,819 [INFO] Copied data
+2022-06-05 17:48:23,979 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='QA_bias-v1', dataset_path=None, exp_dir='QA-v1-opt', models=['opt-125m', 'opt-350m', 'opt-1.3b', 'opt-2.7b'], task_type='logodds', use_gpu=True)
+2022-06-05 17:48:23,979 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v1-opt
+2022-06-05 17:48:23,979 [INFO] Copied data
+2022-06-05 17:49:03,252 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='QA_bias-v1', dataset_path=None, exp_dir='QA-v1-opt', models=['opt-125m', 'opt-350m', 'opt-1.3b', 'opt-2.7b'], task_type='logodds', use_gpu=True)
+2022-06-05 17:49:03,255 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v1-opt
+2022-06-05 17:49:03,256 [INFO] Copied data

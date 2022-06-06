@@ -1,0 +1,8 @@
+2022-05-25 13:05:51,419 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='lambada-1k', dataset_path=None, exp_dir='lambada-1k_gpt2', models=['gpt2', 'gpt2-medium'], task_type='single_word', use_gpu=True)
+2022-05-25 13:05:51,419 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/lambada-1k_gpt2
+2022-05-25 13:05:51,420 [INFO] Copied data
+2022-05-25 14:20:27,063 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='lambada-1k', dataset_path=None, exp_dir='lambada-1k_gpt2', models=['gpt2', 'gpt2-medium'], task_type='single_word', use_gpu=True)
+2022-05-25 14:20:27,063 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/lambada-1k_gpt2
+2022-05-25 14:20:27,064 [INFO] Copied data

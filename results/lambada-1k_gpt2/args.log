@@ -1,0 +1,12 @@
+{
+  "dataset": "lambada-1k",
+  "dataset_path": null,
+  "exp_dir": "lambada-1k_gpt2",
+  "models": [
+    "gpt2",
+    "gpt2-medium"
+  ],
+  "use_gpu": true,
+  "batch_size": 1,
+  "task_type": "single_word"
+}
