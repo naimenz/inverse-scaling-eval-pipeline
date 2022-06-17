@@ -1,0 +1,28 @@
+2022-06-17 12:30:23,768 [INFO] Logging set up with args
+Namespace(batch_size=20, dataset='QA_bias-v2', dataset_path=None, exp_dir='QA-v2-gpt3', models=['ada', 'babbage', 'curie', 'davinci'], task_type='logodds', use_gpu=False)
+2022-06-17 12:30:23,768 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v2-gpt3
+2022-06-17 12:30:23,768 [INFO] Copied data
+2022-06-17 12:31:56,145 [INFO] Logging set up with args
+Namespace(batch_size=20, dataset='QA_bias-v2', dataset_path=None, exp_dir='QA-v2-gpt3', models=['text-ada-001', 'text-babbage-001', 'text-curie-001', 'text-davinci-001'], task_type='logodds', use_gpu=False)
+2022-06-17 12:31:56,145 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v2-gpt3
+2022-06-17 12:31:56,146 [INFO] Copied data
+2022-06-17 12:32:56,350 [INFO] Logging set up with args
+Namespace(batch_size=20, dataset='QA_bias-v2', dataset_path=None, exp_dir='QA-v2-gpt3', models=['text-ada-001', 'text-babbage-001', 'text-curie-001', 'text-davinci-001'], task_type='logodds', use_gpu=False)
+2022-06-17 12:32:56,351 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v2-gpt3
+2022-06-17 12:32:56,351 [INFO] Copied data
+2022-06-17 12:33:54,949 [INFO] Logging set up with args
+Namespace(batch_size=20, dataset='QA_bias-v2', dataset_path=None, exp_dir='QA-v2-gpt3', models=['text-ada-001', 'text-babbage-001', 'text-curie-001', 'text-davinci-001'], task_type='logodds', use_gpu=False)
+2022-06-17 12:33:54,949 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v2-gpt3
+2022-06-17 12:33:54,949 [INFO] Copied data
+2022-06-17 12:34:30,265 [INFO] Logging set up with args
+Namespace(batch_size=20, dataset='QA_bias-v2', dataset_path=None, exp_dir='QA-v2-gpt3', models=['text-ada-001', 'text-babbage-001', 'text-curie-001', 'text-davinci-001'], task_type='logodds', use_gpu=False)
+2022-06-17 12:34:30,265 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v2-gpt3
+2022-06-17 12:34:30,265 [INFO] Copied data
+2022-06-17 12:36:00,692 [INFO] Logging set up with args
+Namespace(batch_size=20, dataset='QA_bias-v2', dataset_path=None, exp_dir='QA-v2-gpt3', models=['text-ada-001', 'text-babbage-001', 'text-curie-001', 'text-davinci-001'], task_type='logodds', use_gpu=False)
+2022-06-17 12:36:00,692 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v2-gpt3
+2022-06-17 12:36:00,693 [INFO] Copied data
+2022-06-17 12:40:20,841 [INFO] Logging set up with args
+Namespace(batch_size=20, dataset='QA_bias-v2', dataset_path=None, exp_dir='QA-v2-gpt3', models=['text-ada-001', 'text-babbage-001', 'text-curie-001', 'text-davinci-001'], task_type='logodds', use_gpu=False)
+2022-06-17 12:40:20,841 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v2-gpt3
+2022-06-17 12:40:20,842 [INFO] Copied data

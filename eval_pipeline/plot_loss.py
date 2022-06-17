@@ -25,6 +25,10 @@ size_dict = {
     "babbage": 1_300_000_000,
     "curie": 6_700_000_000,
     "davinci": 175_000_000_000,
+    "text-ada-001": 350_000_000,
+    "text-babbage-001": 1_300_000_000,
+    "text-curie-001": 6_700_000_000,
+    "text-davinci-001": 175_000_000_000,
     # gpt neo sizes from their names
     "gpt-neo-125M": 125_000_000,
     "gpt-neo-1.3B": 1_300_000_000,

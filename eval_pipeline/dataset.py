@@ -45,7 +45,7 @@ class SingleWordExample(Example):
 @dataclass
 class LogoddsExample(ExampleWithClasses):
     prompt: str
-    biased_prompt: str
+    other_prompt: str
     classes: tuple[str, ...]
     answer_index: int
 
@@ -100,7 +100,7 @@ class Dataset:
             classes_list = ast.literal_eval(str(row["classes"]))
             example = LogoddsExample(
                 prompt=row["prompt"],
-                biased_prompt=row["biased_prompt"],
+                other_prompt=row["other_prompt"],
                 classes=classes_list,
                 answer_index=row["answer_index"],
             )

@@ -20,7 +20,7 @@ from eval_pipeline.dataset import (
     TaskType,
 )
 from eval_pipeline.numeric_parser import BasicParser
-from eval_pipeline.openai_api import APIParameters, BaseGPT3Model, call_api
+from eval_pipeline.openai_api import APIParameters, BaseGPT3Model, OpenAIModel, call_api
 
 OPENAI_API_BASE_URL = "https://api.openai.com/v1/engines"
 load_dotenv()
@@ -49,7 +49,9 @@ ValidHFModel = Literal[
 ]
 valid_hf_models: tuple[ValidHFModel, ...] = get_args(ValidHFModel)
 
-valid_gpt3_models: tuple[BaseGPT3Model, ...] = get_args(BaseGPT3Model)
+# NOTE: due to limitations of get_args with nested Literals, we have to call it
+# multiple times
+valid_gpt3_models: tuple[OpenAIModel, ...] = [x for li in get_args(OpenAIModel) for x in get_args(li)]  # type: ignore
 
 Device = Literal["cuda:0", "cpu"]
 
@@ -63,7 +65,7 @@ class Model(ABC):
 
     @staticmethod
     def from_name(
-        model_name: Union[ValidHFModel, BaseGPT3Model], device: Device
+        model_name: Union[ValidHFModel, OpenAIModel], device: Device
     ) -> Model:
         if model_name in valid_hf_models:
             model = HFModel(model_name, device)
@@ -182,33 +184,33 @@ class HFModel(Model):
         """logodds is much like classification, except we need to compare across prompts so we just
         compute the log odds here"""
         prompts = [example.prompt for example in examples]
-        biased_prompts = [example.biased_prompt for example in examples]
+        other_prompts = [example.other_prompt for example in examples]
         tokenized_inputs = self.tokenizer(
             prompts, return_tensors="pt", truncation=True
         ).to(self.device)
         biased_tokenized_inputs = self.tokenizer(
-            biased_prompts, return_tensors="pt", truncation=True
+            other_prompts, return_tensors="pt", truncation=True
         ).to(self.device)
         outputs = self.model(**tokenized_inputs)
         biased_outputs = self.model(**biased_tokenized_inputs)
         # we only need the logits for the final (new) token
         # NOTE: this may need to change if we use batch size > 1 with padding
         logits = outputs["logits"][:, -1].detach().to("cpu")
-        biased_logits = biased_outputs["logits"][:, -1].detach().to("cpu")
+        other_logits = biased_outputs["logits"][:, -1].detach().to("cpu")
         logodds = self._logodds_from_logits(examples, logits)
-        biased_logodds = self._logodds_from_logits(examples, biased_logits)
-        logodds_differences = list(np.array(logodds) - np.array(biased_logodds))  # type: ignore (np typing bad)
+        other_logodds = self._logodds_from_logits(examples, other_logits)
+        logodds_differences = list(np.array(logodds) - np.array(other_logodds))  # type: ignore (np typing bad)
         answer_indices = [example.answer_index for example in examples]
         # flip the order (and hence the sign) if the answer is "no"
         for i, answer_index in enumerate(answer_indices):
             if answer_index == 1:
                 logodds_differences[i] *= -1
-        accuracies = self._accuracies_from_logits(examples, biased_logits)
+        accuracies = self._accuracies_from_logits(examples, other_logits)
         total_logprobs = np.mean(
             np.stack(
                 (
                     self._total_logprobs_from_logits(examples, logits),
-                    self._total_logprobs_from_logits(examples, biased_logits),
+                    self._total_logprobs_from_logits(examples, other_logits),
                 )
             ),
             axis=0,
@@ -327,8 +329,8 @@ class HFModel(Model):
 
 
 class GPT3Model(Model):
-    def __init__(self, model_name: BaseGPT3Model) -> None:
-        self.model_name: BaseGPT3Model = model_name
+    def __init__(self, model_name: OpenAIModel) -> None:
+        self.model_name: OpenAIModel = model_name
 
     def __call__(
         self, examples: list[Example], task_type: TaskType
@@ -407,7 +409,7 @@ class GPT3Model(Model):
             for class_token in example.classes
         ]
         biased_prompts = [
-            example.biased_prompt + class_token
+            example.other_prompt + class_token
             for example in examples
             for class_token in example.classes
         ]

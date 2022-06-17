@@ -4,14 +4,14 @@ for generating hateful questions."""
 import pandas as pd
 from pathlib import Path
 
-version = "v1"
+version = "v2"
 # suffix = "-reversed"  # if no suffix wanted, use ""
 suffix = ""  # if no suffix wanted, use ""
 raw_data_path = Path("/home/ian/code/lm_internship/eval-pipeline/raw_data/QA_bias")
 processed_data_path = Path("/home/ian/code/lm_internship/eval-pipeline/data")
 
 templates = pd.read_csv(Path(raw_data_path, "templates.csv"))
-QA_pairs = pd.read_csv(Path(raw_data_path, f"QA_pairs-{version}{suffix}.csv"))
+QA_pairs = pd.read_csv(Path(raw_data_path, f"QA_pairs-v1{suffix}.csv"))
 
 classes = [" Yes", " No"]
 
@@ -36,6 +36,6 @@ for template in templates["template"]:
         print(f"unbiased_prompt = {unbiased_prompt}, answer = {answer}")
         print(f"biased_prompt = {biased_prompt}, answer = {answer}")
         # add both to a single row
-        rows.append({"prompt": unbiased_prompt, "biased_prompt": biased_prompt, "classes": classes, "answer_index": answer_index})
+        rows.append({"prompt": unbiased_prompt, "other_prompt": biased_prompt, "classes": classes, "answer_index": answer_index})
 df = pd.DataFrame.from_records(rows) 
 df.to_csv(Path(processed_data_path, f"QA_bias-{version}{suffix}.csv"))
