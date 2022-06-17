@@ -15,7 +15,7 @@ from eval_pipeline.dataset import (
     Example,
     ExampleWithClasses,
     LogoddsExample,
-    SingleWordExample,
+    SequenceProbExample,
     NumericExample,
     TaskType,
 )
@@ -120,9 +120,9 @@ class HFModel(Model):
         elif task_type == "numeric":
             numeric_examples = cast("list[NumericExample]", examples)
             rv = self._evaluate_numeric(numeric_examples)
-        elif task_type == "single_word":
-            single_word_examples = cast("list[SingleWordExample]", examples)
-            rv = self._evaluate_single_word(single_word_examples)
+        elif task_type == "sequence_prob":
+            sequence_prob_examples = cast("list[SequenceProbExample]", examples)
+            rv = self._evaluate_sequence_prob(sequence_prob_examples)
         elif task_type == "logodds":
             logodds_examples = cast("list[LogoddsExample]", examples)
             rv = self._evaluate_logodds(logodds_examples)
@@ -148,8 +148,8 @@ class HFModel(Model):
         total_logprobs = self._total_logprobs_from_logits(examples, logits)
         return {"loss": losses, "correct": accuracies, "total_logprob": total_logprobs}
 
-    def _evaluate_single_word(
-        self, examples: list[SingleWordExample]
+    def _evaluate_sequence_prob(
+        self, examples: list[SequenceProbExample]
     ) -> dict[str, Sequence[float]]:
         # finding the target
         prompts = [example.prompt + example.completion for example in examples]
@@ -157,9 +157,9 @@ class HFModel(Model):
             prompts, return_tensors="pt", truncation=True
         ).to(self.device)
 
-        target_words = [example.completion for example in examples]
+        target_sequences = [example.completion for example in examples]
         target_token_lengths = [
-            len(self.tokenizer(word)["input_ids"]) for word in target_words
+            len(self.tokenizer(word)["input_ids"]) for word in target_sequences
         ]
 
         outputs = self.model(**tokenized_inputs)
@@ -167,13 +167,13 @@ class HFModel(Model):
 
         losses = []
         for i in range(len(examples)):
-            # we only need the logits for the final word
+            # we only need the logits for the end sequence
             tokens = tokenized_inputs["input_ids"][i]
             # we have to go back by one because we don't care about the logits for the predicted token
-            word_logits = logits[i, -target_token_lengths[i] - 1 : -1]
-            word_tokens = tokens[-target_token_lengths[i] :]
-            logprobs = -F.log_softmax(word_logits, dim=-1)
-            loss = sum([logprobs[i, token] for i, token in enumerate(word_tokens)])
+            sequence_logits = logits[i, -target_token_lengths[i] - 1 : -1]
+            sequence_tokens = tokens[-target_token_lengths[i] :]
+            logprobs = -F.log_softmax(sequence_logits, dim=-1)
+            loss = sum([logprobs[i, token] for i, token in enumerate(sequence_tokens)])
             losses.append(loss.item())  # type: ignore (the sum is never empty so never just 0, always a tensor)
         return {"loss": losses}
 
@@ -342,9 +342,9 @@ class GPT3Model(Model):
         elif task_type == "numeric":
             numeric_examples = cast("list[NumericExample]", examples)
             rv = self._evaluate_numeric(numeric_examples)
-        elif task_type == "single_word":
-            single_word_examples = cast("list[SingleWordExample]", examples)
-            rv = self._evaluate_single_word(single_word_examples)
+        elif task_type == "sequence_prob":
+            SequenceProbExamples = cast("list[SequenceProbExample]", examples)
+            rv = self._evaluate_sequence_prob(SequenceProbExamples)
         elif task_type == "logodds":
             logodds_examples = cast("list[LogoddsExample]", examples)
             rv = self._evaluate_logodds(logodds_examples)
@@ -360,10 +360,11 @@ class GPT3Model(Model):
         # NOTE: the effective batch size is now n times the parameter passed in (where n is number of classes)
         # but I'll fix that in the colab and it'll be fine
         prompts = [
-            example.prompt + class_token
+            example.prompt + class_sequence
             for example in examples
-            for class_token in example.classes
+            for class_sequence in example.classes
         ]
+
         api_params = APIParameters(
             temperature=0,
             n=1,
@@ -382,9 +383,26 @@ class GPT3Model(Model):
             # there are n times as many prompts as examples
             prompt_start = i * n_classes
             class_choices = choices[prompt_start : prompt_start + n_classes]
-            relevant_logprobs = torch.tensor(
-                [choice["logprobs"]["token_logprobs"][-1] for choice in class_choices]
-            )
+
+            # all class sequences begin after the initial prompt 
+            text_index = len(example.prompt)
+
+            # accumulate logprobs for each class sequence separately
+            relevant_logprobs = []
+            for i in range(n_classes):
+                logprobs_dict = class_choices[i]["logprobs"]
+                text_offset = logprobs_dict["text_offset"]
+                actual_logprobs = logprobs_dict["token_logprobs"]
+                try:
+                    token_index = text_offset.index(text_index)
+                except ValueError as e:
+                    raise ValueError("The class sequence '{example.classes[i]}' did not start on a token boundary")
+                class_logprob = 0
+                for token_logprob in actual_logprobs[token_index:]:
+                    class_logprob -= token_logprob
+                relevant_logprobs.append(class_logprob)
+
+            relevant_logprobs = torch.tensor(relevant_logprobs)
 
             loss = -F.log_softmax(relevant_logprobs, dim=-1)[example.answer_index]
             losses.append(loss.item())
@@ -473,10 +491,10 @@ class GPT3Model(Model):
             "total_logprob": total_logprobs,
         }
 
-    def _evaluate_single_word(
-        self, examples: list[SingleWordExample]
+    def _evaluate_sequence_prob(
+        self, examples: list[SequenceProbExample]
     ) -> dict[str, Union[Sequence[float], Sequence[int]]]:
-        prompts = [example.prompt + example.completion for example in examples]
+        full_prompts = [example.prompt + example.completion for example in examples]
         api_params = APIParameters(
             temperature=0.0,
             n=1,
@@ -485,16 +503,18 @@ class GPT3Model(Model):
             stop=["\n"],
             echo=True,
         )
-        response_json = call_api(prompts, self.model_name, api_params).json()
-        prompts = [example.prompt for example in examples]
+        response_json = call_api(full_prompts, self.model_name, api_params).json()
 
         losses = []
-        for i in range(len(examples)):
-            text_index = len(prompts[i]) - 1 - prompts[i][::-1].index(" ")
+        for i, example in enumerate(examples):
+            text_index = len(example.prompt)
             logprobs_dict = response_json["choices"][i]["logprobs"]
             text_offset = logprobs_dict["text_offset"]
             actual_logprobs = logprobs_dict["token_logprobs"]
-            token_index = text_offset.index(text_index)
+            try:
+                token_index = text_offset.index(text_index)
+            except ValueError as e:
+                raise ValueError("The target sequence '{example.completion}' did not start on a token boundary")
 
             loss = 0
             for logprob in actual_logprobs[token_index:]:

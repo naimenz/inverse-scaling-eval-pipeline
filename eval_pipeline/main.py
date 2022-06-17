@@ -87,8 +87,8 @@ def load_data(dataset_path: Path, task_type: TaskType) -> Dataset:
         dataset = Dataset.classification_from_df(df)
     elif task_type == "numeric":
         dataset = Dataset.numeric_from_df(df)
-    elif task_type == "single_word":
-        dataset = Dataset.single_word_from_df(df)
+    elif task_type == "sequence_prob":
+        dataset = Dataset.sequence_prob_from_df(df)
     elif task_type == "logodds":
         # we can just reuse the classification dataset type
         dataset = Dataset.logodds_from_df(df)
@@ -98,7 +98,7 @@ def load_data(dataset_path: Path, task_type: TaskType) -> Dataset:
 
 def load_df(path: Path):
     if path.suffix == ".csv":
-        return pd.read_csv(path, index_col=0)
+        return pd.read_csv(path)
     elif path.suffix == ".jsonl":
         return cast("pd.DataFrame", pd.read_json(path, lines=True))
     else:

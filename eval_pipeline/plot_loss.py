@@ -52,7 +52,7 @@ def main():
     else:
         base_results_dir = Path(project_dir, "results")
     exp_dir = Path(base_results_dir, args.exp_dir)
-    if args.task_type.startswith("classification") or args.task_type == "single_word":
+    if args.task_type.startswith("classification") or args.task_type == "sequence_prob":
         plot_classification_loss(
             exp_dir,
             args.dataset_sizes,
@@ -188,7 +188,7 @@ def plot_classification_loss(
             model_name: np.std(df[output_name]) / np.sqrt(len(df[output_name]))
             for model_name, df in size_dfs.items()
         }
-        if task_type != "single_word":
+        if task_type != "sequence_prob":
             # the average amount of probability covered by the class tokens
             average_coverages = {
                 model_name: np.mean(np.exp(df["total_logprob"]))
@@ -200,7 +200,7 @@ def plot_classification_loss(
         size_name = str(size) if size != -1 else len(list(dfs.values())[0])
         separate_plot_dict[index] = (averages, standard_errors, size_name)
         separate_average_coverages[index] = (average_coverages, size_name)
-    if task_type == "single_word":
+    if task_type == "sequence_prob":
         separate_average_coverages = None
 
     plot_loss(
@@ -274,7 +274,7 @@ def plot_loss(
     # plt.xticks(ticks, labels, rotation=45)
     plt.xticks(ticks, labels)
 
-    if task_type == "classification_loss" or task_type == "single_word":
+    if task_type == "classification_loss" or task_type == "sequence_prob":
         plt.yscale("log")
         plt.ylabel("Loss")
         title = "Log-log plot of loss vs model size"
@@ -325,7 +325,7 @@ def parse_args(args) -> argparse.Namespace:
             "classification_loss",
             "classification_acc",
             "numeric",
-            "single_word",
+            "sequence_prob",
             "logodds",
         ],
         help="The type of task to plot",

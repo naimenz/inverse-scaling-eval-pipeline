@@ -7,7 +7,11 @@ from typing_extensions import Literal
 import pandas as pd
 
 TaskType = Literal[
-    "classification_acc", "classification_loss", "numeric", "single_word", "logodds"
+    "classification_acc",
+    "classification_loss",
+    "numeric",
+    "sequence_prob",
+    "logodds",
 ]
 
 
@@ -37,7 +41,7 @@ class NumericExample(Example):
 
 
 @dataclass
-class SingleWordExample(Example):
+class SequenceProbExample(Example):
     prompt: str
     completion: str
 
@@ -85,10 +89,10 @@ class Dataset:
         return Dataset(examples)
 
     @classmethod
-    def single_word_from_df(cls, df: pd.DataFrame) -> Dataset:
+    def sequence_prob_from_df(cls, df: pd.DataFrame) -> Dataset:
         examples = []
         for _, row in df.iterrows():
-            example = SingleWordExample(row["prompt"], row["completion"])
+            example = SequenceProbExample(row["prompt"], row["completion"])
             examples.append(example)
         return Dataset(examples)
 
