@@ -135,18 +135,47 @@ class HFModel(Model):
         examples: list[ClassificationExample],
         task_type: TaskType,
     ) -> dict[str, Union[Sequence[float], Sequence[int]]]:
-        prompts = [example.prompt for example in examples]
+        prompts = [example.prompt + class_seq for example in examples for class_seq in example.classes]
         tokenized_inputs = self.tokenizer(
             prompts, return_tensors="pt", truncation=True
         ).to(self.device)
         outputs = self.model(**tokenized_inputs)
-        # we only need the logits for the final (new) token
-        # NOTE: this may need to change if we use batch size > 1 with padding
-        logits = outputs["logits"][:, -1]
-        losses = self._losses_from_logits(examples, logits)
-        accuracies = self._accuracies_from_logits(examples, logits)
-        total_logprobs = self._total_logprobs_from_logits(examples, logits)
-        return {"loss": losses, "correct": accuracies, "total_logprob": total_logprobs}
+        logits = outputs["logits"]
+        # for each possible class sequence, we need to get the logprob on the full class sequence
+        n_classes = len(examples[0].classes)
+        total_logprobs = []
+        losses = []
+        labels_correct = []
+        for i, example in enumerate(examples):
+            prompt_start = i * n_classes
+            class_logprobs = []
+            for j in range(n_classes):
+                class_index = prompt_start + j
+                class_logits = logits[class_index]
+                # the lengths of each class sequence in tokens
+                class_sequence = example.classes[j]
+                target_token_length = len(self.tokenizer(class_sequence)["input_ids"]) 
+                # we only need the logits for the end sequence
+                tokens = tokenized_inputs["input_ids"][class_index]
+                # we have to go back by one because we don't care about the logits for the predicted token
+                sequence_logits = class_logits[-target_token_length - 1: -1]
+                sequence_tokens = tokens[-target_token_length:]
+                # we take a log_softmax over all token logits for each position in the class sequence to
+                #  get log probabilities, and then sum the logprobs for the tokens actually chosen
+                logprobs = F.log_softmax(sequence_logits, dim=-1)
+                class_logprob = sum([logprobs[i, token] for i, token in enumerate(sequence_tokens)])
+                class_logprobs.append(class_logprob.item())  # type: ignore (the sum is never empty so never just 0, always a tensor)
+            total_logprob = sum(class_logprobs)
+            normalised_logprobs = F.log_softmax(torch.tensor(class_logprobs), dim=-1)
+            loss = -normalised_logprobs[example.answer_index].item()
+            label_correct = int(
+                np.argmax(normalised_logprobs)
+                == example.answer_index
+            )
+            total_logprobs.append(total_logprob)
+            losses.append(loss)
+            labels_correct.append(label_correct)
+        return {"loss": losses, "correct": labels_correct, "total_logprob": total_logprobs}
 
     def _evaluate_sequence_prob(
         self, examples: list[SequenceProbExample]
@@ -188,15 +217,15 @@ class HFModel(Model):
         tokenized_inputs = self.tokenizer(
             prompts, return_tensors="pt", truncation=True
         ).to(self.device)
-        biased_tokenized_inputs = self.tokenizer(
+        other_tokenized_inputs = self.tokenizer(
             other_prompts, return_tensors="pt", truncation=True
         ).to(self.device)
         outputs = self.model(**tokenized_inputs)
-        biased_outputs = self.model(**biased_tokenized_inputs)
+        other_outputs = self.model(**other_tokenized_inputs)
         # we only need the logits for the final (new) token
         # NOTE: this may need to change if we use batch size > 1 with padding
         logits = outputs["logits"][:, -1].detach().to("cpu")
-        other_logits = biased_outputs["logits"][:, -1].detach().to("cpu")
+        other_logits = other_outputs["logits"][:, -1].detach().to("cpu")
         logodds = self._logodds_from_logits(examples, logits)
         other_logodds = self._logodds_from_logits(examples, other_logits)
         logodds_differences = list(np.array(logodds) - np.array(other_logodds))  # type: ignore (np typing bad)
@@ -399,7 +428,7 @@ class GPT3Model(Model):
                     raise ValueError("The class sequence '{example.classes[i]}' did not start on a token boundary")
                 class_logprob = 0
                 for token_logprob in actual_logprobs[token_index:]:
-                    class_logprob -= token_logprob
+                    class_logprob += token_logprob
                 relevant_logprobs.append(class_logprob)
 
             relevant_logprobs = torch.tensor(relevant_logprobs)
@@ -426,7 +455,7 @@ class GPT3Model(Model):
             for example in examples
             for class_token in example.classes
         ]
-        biased_prompts = [
+        other_prompts = [
             example.other_prompt + class_token
             for example in examples
             for class_token in example.classes
@@ -439,36 +468,36 @@ class GPT3Model(Model):
             echo=True,
         )
         response_json = call_api(prompts, self.model_name, api_params).json()
-        biased_response_json = call_api(
-            biased_prompts, self.model_name, api_params
+        other_response_json = call_api(
+            other_prompts, self.model_name, api_params
         ).json()
         logodds_differences = []
         labels_correct = []
         total_logprobs = []
         choices = response_json["choices"]
-        biased_choices = biased_response_json["choices"]
+        other_choices = other_response_json["choices"]
 
         n_classes = len(examples[0].classes)
         for i, example in enumerate(examples):
             prompt_start = i * n_classes
             class_choices = choices[prompt_start : prompt_start + n_classes]
-            biased_class_choices = biased_choices[
+            other_class_choices = other_choices[
                 prompt_start : prompt_start + n_classes
             ]
 
             relevant_logprobs = torch.tensor(
                 [choice["logprobs"]["token_logprobs"][-1] for choice in class_choices]
             )
-            biased_relevant_logprobs = torch.tensor(
+            other_relevant_logprobs = torch.tensor(
                 [
                     choice["logprobs"]["token_logprobs"][-1]
-                    for choice in biased_class_choices
+                    for choice in other_class_choices
                 ]
             )
 
             logodds = relevant_logprobs[0] - relevant_logprobs[1]
-            biased_logodds = biased_relevant_logprobs[0] - biased_relevant_logprobs[1]
-            logodds_difference = logodds - biased_logodds
+            other_logodds = other_relevant_logprobs[0] - other_relevant_logprobs[1]
+            logodds_difference = logodds - other_logodds
             answer_index = example.answer_index
             # flip the order (and hence the sign) if the answer is "no"
             if answer_index == 1:
@@ -477,12 +506,12 @@ class GPT3Model(Model):
             total_logprob = np.mean(
                 [
                     torch.logsumexp(relevant_logprobs, dim=-1).item(),
-                    torch.logsumexp(biased_relevant_logprobs, dim=-1).item(),
+                    torch.logsumexp(other_relevant_logprobs, dim=-1).item(),
                 ]
             )
             total_logprobs.append(total_logprob)
             label_correct = int(
-                np.argmax(biased_relevant_logprobs) == example.answer_index
+                np.argmax(other_relevant_logprobs) == example.answer_index
             )
             labels_correct.append(label_correct)
         return {
