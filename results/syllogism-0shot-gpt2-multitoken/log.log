@@ -1,0 +1,4 @@
+2022-06-17 23:43:52,135 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='syllogism-0shot-multitoken', dataset_path=None, exp_dir='syllogism-0shot-gpt2-multitoken', models=['gpt2', 'gpt2-medium'], task_type='classification', use_gpu=True)
+2022-06-17 23:43:52,136 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/syllogism-0shot-gpt2-multitoken
+2022-06-17 23:43:52,137 [INFO] Copied data

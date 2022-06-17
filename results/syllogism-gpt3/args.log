@@ -1,0 +1,14 @@
+{
+  "dataset": "syllogism",
+  "dataset_path": null,
+  "exp_dir": "syllogism-gpt3",
+  "models": [
+    "ada",
+    "babbage",
+    "curie",
+    "davinci"
+  ],
+  "use_gpu": false,
+  "batch_size": 100,
+  "task_type": "classification"
+}

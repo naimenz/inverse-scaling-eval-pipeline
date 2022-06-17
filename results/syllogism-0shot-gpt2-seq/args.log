@@ -1,0 +1,12 @@
+{
+  "dataset": "syllogism",
+  "dataset_path": null,
+  "exp_dir": "syllogism-0shot-gpt2-seq",
+  "models": [
+    "gpt2",
+    "gpt2-medium"
+  ],
+  "use_gpu": true,
+  "batch_size": 1,
+  "task_type": "classification"
+}

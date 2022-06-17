@@ -1,0 +1,8 @@
+2022-06-17 21:23:04,453 [INFO] Logging set up with args
+Namespace(batch_size=100, dataset='ids', dataset_path=None, exp_dir='ids-gpt3-seq', models=['ada', 'babbage', 'curie'], task_type='classification', use_gpu=False)
+2022-06-17 21:23:04,453 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/ids-gpt3-seq
+2022-06-17 21:23:04,461 [INFO] Copied data
+2022-06-17 21:23:38,999 [INFO] Logging set up with args
+Namespace(batch_size=100, dataset='ids', dataset_path=None, exp_dir='ids-gpt3-seq', models=['ada', 'babbage', 'curie'], task_type='classification', use_gpu=False)
+2022-06-17 21:23:38,999 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/ids-gpt3-seq
+2022-06-17 21:23:38,999 [INFO] Copied data

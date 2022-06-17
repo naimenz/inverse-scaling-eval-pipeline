@@ -1,0 +1,13 @@
+prompt,classes,answer_index
+"Question: Which is more likely?
+A. Andrew is a scientist and is smart.
+B. Andrew is a scientist.
+Answer:","[' The answer is A', ' The answer is B']",1
+"Q: Which is more likely?
+1. Michael is an accountant.
+2. Michael is an accountant and is careful.
+A:","[' 1', ' 2']",0
+"Q: Which is more likely to be true?
+1. Jessica is a teacher.
+2. Jessica is a teacher and is patient.
+A:","[' 1', ' 2']",0

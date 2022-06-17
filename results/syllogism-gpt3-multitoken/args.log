@@ -1,0 +1,14 @@
+{
+  "dataset": "syllogism-0shot-multitoken",
+  "dataset_path": null,
+  "exp_dir": "syllogism-gpt3-multitoken",
+  "models": [
+    "ada",
+    "babbage",
+    "curie",
+    "davinci"
+  ],
+  "use_gpu": false,
+  "batch_size": 100,
+  "task_type": "classification"
+}

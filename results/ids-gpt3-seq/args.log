@@ -1,0 +1,13 @@
+{
+  "dataset": "ids",
+  "dataset_path": null,
+  "exp_dir": "ids-gpt3-seq",
+  "models": [
+    "ada",
+    "babbage",
+    "curie"
+  ],
+  "use_gpu": false,
+  "batch_size": 100,
+  "task_type": "classification"
+}

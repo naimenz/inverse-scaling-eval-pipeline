@@ -3,499 +3,499 @@
 All men are ambitious.
 All men study hard.
 Therefore men study hard because they are ambitious.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 1,"Q: Is this a valid syllogism?
 All men are friendly.
 All men smile.
 Therefore men smile because they are friendly.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 2,"Q: Is this a valid syllogism?
 All men are angry.
 All men frown.
 Therefore men frown because they are angry.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 3,"Q: Is this a valid syllogism?
 All men are brave.
 All men face their fears.
 Therefore men face their fears because they are brave.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 4,"Q: Is this a valid syllogism?
 All men are scared.
 All men hide.
 Therefore men hide because they are scared.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 5,"Q: Is this a valid syllogism?
 All men are smart.
 All men have good ideas.
 Therefore men have good ideas because they are smart.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 6,"Q: Is this a valid syllogism?
 All men are lazy.
 All men do nothing.
 Therefore men do nothing because they are lazy.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 7,"Q: Is this a valid syllogism?
 All men are busy.
 All men have no time.
 Therefore men have no time because they are busy.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 8,"Q: Is this a valid syllogism?
 All men are in a rush.
 All men are late.
 Therefore men are late because they are in a rush.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 9,"Q: Is this a valid syllogism?
 All men are conscientious.
 All men arrive on time.
 Therefore men arrive on time because they are conscientious.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 10,"Q: Is this a valid syllogism?
 All women are ambitious.
 All women study hard.
 Therefore women study hard because they are ambitious.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 11,"Q: Is this a valid syllogism?
 All women are friendly.
 All women smile.
 Therefore women smile because they are friendly.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 12,"Q: Is this a valid syllogism?
 All women are angry.
 All women frown.
 Therefore women frown because they are angry.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 13,"Q: Is this a valid syllogism?
 All women are brave.
 All women face their fears.
 Therefore women face their fears because they are brave.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 14,"Q: Is this a valid syllogism?
 All women are scared.
 All women hide.
 Therefore women hide because they are scared.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 15,"Q: Is this a valid syllogism?
 All women are smart.
 All women have good ideas.
 Therefore women have good ideas because they are smart.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 16,"Q: Is this a valid syllogism?
 All women are lazy.
 All women do nothing.
 Therefore women do nothing because they are lazy.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 17,"Q: Is this a valid syllogism?
 All women are busy.
 All women have no time.
 Therefore women have no time because they are busy.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 18,"Q: Is this a valid syllogism?
 All women are in a rush.
 All women are late.
 Therefore women are late because they are in a rush.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 19,"Q: Is this a valid syllogism?
 All women are conscientious.
 All women arrive on time.
 Therefore women arrive on time because they are conscientious.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 20,"Q: Is this a valid syllogism?
 All children are ambitious.
 All children study hard.
 Therefore children study hard because they are ambitious.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 21,"Q: Is this a valid syllogism?
 All children are friendly.
 All children smile.
 Therefore children smile because they are friendly.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 22,"Q: Is this a valid syllogism?
 All children are angry.
 All children frown.
 Therefore children frown because they are angry.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 23,"Q: Is this a valid syllogism?
 All children are brave.
 All children face their fears.
 Therefore children face their fears because they are brave.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 24,"Q: Is this a valid syllogism?
 All children are scared.
 All children hide.
 Therefore children hide because they are scared.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 25,"Q: Is this a valid syllogism?
 All children are smart.
 All children have good ideas.
 Therefore children have good ideas because they are smart.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 26,"Q: Is this a valid syllogism?
 All children are lazy.
 All children do nothing.
 Therefore children do nothing because they are lazy.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 27,"Q: Is this a valid syllogism?
 All children are busy.
 All children have no time.
 Therefore children have no time because they are busy.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 28,"Q: Is this a valid syllogism?
 All children are in a rush.
 All children are late.
 Therefore children are late because they are in a rush.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 29,"Q: Is this a valid syllogism?
 All children are conscientious.
 All children arrive on time.
 Therefore children arrive on time because they are conscientious.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 30,"Q: Is this a valid syllogism?
 All teenagers are ambitious.
 All teenagers study hard.
 Therefore teenagers study hard because they are ambitious.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 31,"Q: Is this a valid syllogism?
 All teenagers are friendly.
 All teenagers smile.
 Therefore teenagers smile because they are friendly.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 32,"Q: Is this a valid syllogism?
 All teenagers are angry.
 All teenagers frown.
 Therefore teenagers frown because they are angry.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 33,"Q: Is this a valid syllogism?
 All teenagers are brave.
 All teenagers face their fears.
 Therefore teenagers face their fears because they are brave.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 34,"Q: Is this a valid syllogism?
 All teenagers are scared.
 All teenagers hide.
 Therefore teenagers hide because they are scared.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 35,"Q: Is this a valid syllogism?
 All teenagers are smart.
 All teenagers have good ideas.
 Therefore teenagers have good ideas because they are smart.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 36,"Q: Is this a valid syllogism?
 All teenagers are lazy.
 All teenagers do nothing.
 Therefore teenagers do nothing because they are lazy.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 37,"Q: Is this a valid syllogism?
 All teenagers are busy.
 All teenagers have no time.
 Therefore teenagers have no time because they are busy.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 38,"Q: Is this a valid syllogism?
 All teenagers are in a rush.
 All teenagers are late.
 Therefore teenagers are late because they are in a rush.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 39,"Q: Is this a valid syllogism?
 All teenagers are conscientious.
 All teenagers arrive on time.
 Therefore teenagers arrive on time because they are conscientious.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 40,"Q: Is this a valid syllogism?
 All adults are ambitious.
 All adults study hard.
 Therefore adults study hard because they are ambitious.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 41,"Q: Is this a valid syllogism?
 All adults are friendly.
 All adults smile.
 Therefore adults smile because they are friendly.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 42,"Q: Is this a valid syllogism?
 All adults are angry.
 All adults frown.
 Therefore adults frown because they are angry.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 43,"Q: Is this a valid syllogism?
 All adults are brave.
 All adults face their fears.
 Therefore adults face their fears because they are brave.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 44,"Q: Is this a valid syllogism?
 All adults are scared.
 All adults hide.
 Therefore adults hide because they are scared.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 45,"Q: Is this a valid syllogism?
 All adults are smart.
 All adults have good ideas.
 Therefore adults have good ideas because they are smart.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 46,"Q: Is this a valid syllogism?
 All adults are lazy.
 All adults do nothing.
 Therefore adults do nothing because they are lazy.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 47,"Q: Is this a valid syllogism?
 All adults are busy.
 All adults have no time.
 Therefore adults have no time because they are busy.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 48,"Q: Is this a valid syllogism?
 All adults are in a rush.
 All adults are late.
 Therefore adults are late because they are in a rush.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 49,"Q: Is this a valid syllogism?
 All adults are conscientious.
 All adults arrive on time.
 Therefore adults arrive on time because they are conscientious.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 50,"Q: Is this a valid syllogism?
 All humans are ambitious.
 All humans study hard.
 Therefore humans study hard because they are ambitious.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 51,"Q: Is this a valid syllogism?
 All humans are friendly.
 All humans smile.
 Therefore humans smile because they are friendly.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 52,"Q: Is this a valid syllogism?
 All humans are angry.
 All humans frown.
 Therefore humans frown because they are angry.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 53,"Q: Is this a valid syllogism?
 All humans are brave.
 All humans face their fears.
 Therefore humans face their fears because they are brave.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 54,"Q: Is this a valid syllogism?
 All humans are scared.
 All humans hide.
 Therefore humans hide because they are scared.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 55,"Q: Is this a valid syllogism?
 All humans are smart.
 All humans have good ideas.
 Therefore humans have good ideas because they are smart.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 56,"Q: Is this a valid syllogism?
 All humans are lazy.
 All humans do nothing.
 Therefore humans do nothing because they are lazy.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 57,"Q: Is this a valid syllogism?
 All humans are busy.
 All humans have no time.
 Therefore humans have no time because they are busy.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 58,"Q: Is this a valid syllogism?
 All humans are in a rush.
 All humans are late.
 Therefore humans are late because they are in a rush.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 59,"Q: Is this a valid syllogism?
 All humans are conscientious.
 All humans arrive on time.
 Therefore humans arrive on time because they are conscientious.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 60,"Q: Is this a valid syllogism?
 All students are ambitious.
 All students study hard.
 Therefore students study hard because they are ambitious.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 61,"Q: Is this a valid syllogism?
 All students are friendly.
 All students smile.
 Therefore students smile because they are friendly.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 62,"Q: Is this a valid syllogism?
 All students are angry.
 All students frown.
 Therefore students frown because they are angry.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 63,"Q: Is this a valid syllogism?
 All students are brave.
 All students face their fears.
 Therefore students face their fears because they are brave.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 64,"Q: Is this a valid syllogism?
 All students are scared.
 All students hide.
 Therefore students hide because they are scared.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 65,"Q: Is this a valid syllogism?
 All students are smart.
 All students have good ideas.
 Therefore students have good ideas because they are smart.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 66,"Q: Is this a valid syllogism?
 All students are lazy.
 All students do nothing.
 Therefore students do nothing because they are lazy.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 67,"Q: Is this a valid syllogism?
 All students are busy.
 All students have no time.
 Therefore students have no time because they are busy.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 68,"Q: Is this a valid syllogism?
 All students are in a rush.
 All students are late.
 Therefore students are late because they are in a rush.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 69,"Q: Is this a valid syllogism?
 All students are conscientious.
 All students arrive on time.
 Therefore students arrive on time because they are conscientious.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 70,"Q: Is this a valid syllogism?
 All boys are ambitious.
 All boys study hard.
 Therefore boys study hard because they are ambitious.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 71,"Q: Is this a valid syllogism?
 All boys are friendly.
 All boys smile.
 Therefore boys smile because they are friendly.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 72,"Q: Is this a valid syllogism?
 All boys are angry.
 All boys frown.
 Therefore boys frown because they are angry.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 73,"Q: Is this a valid syllogism?
 All boys are brave.
 All boys face their fears.
 Therefore boys face their fears because they are brave.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 74,"Q: Is this a valid syllogism?
 All boys are scared.
 All boys hide.
 Therefore boys hide because they are scared.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 75,"Q: Is this a valid syllogism?
 All boys are smart.
 All boys have good ideas.
 Therefore boys have good ideas because they are smart.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 76,"Q: Is this a valid syllogism?
 All boys are lazy.
 All boys do nothing.
 Therefore boys do nothing because they are lazy.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 77,"Q: Is this a valid syllogism?
 All boys are busy.
 All boys have no time.
 Therefore boys have no time because they are busy.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 78,"Q: Is this a valid syllogism?
 All boys are in a rush.
 All boys are late.
 Therefore boys are late because they are in a rush.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 79,"Q: Is this a valid syllogism?
 All boys are conscientious.
 All boys arrive on time.
 Therefore boys arrive on time because they are conscientious.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 80,"Q: Is this a valid syllogism?
 All girls are ambitious.
 All girls study hard.
 Therefore girls study hard because they are ambitious.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 81,"Q: Is this a valid syllogism?
 All girls are friendly.
 All girls smile.
 Therefore girls smile because they are friendly.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 82,"Q: Is this a valid syllogism?
 All girls are angry.
 All girls frown.
 Therefore girls frown because they are angry.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 83,"Q: Is this a valid syllogism?
 All girls are brave.
 All girls face their fears.
 Therefore girls face their fears because they are brave.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 84,"Q: Is this a valid syllogism?
 All girls are scared.
 All girls hide.
 Therefore girls hide because they are scared.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 85,"Q: Is this a valid syllogism?
 All girls are smart.
 All girls have good ideas.
 Therefore girls have good ideas because they are smart.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 86,"Q: Is this a valid syllogism?
 All girls are lazy.
 All girls do nothing.
 Therefore girls do nothing because they are lazy.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 87,"Q: Is this a valid syllogism?
 All girls are busy.
 All girls have no time.
 Therefore girls have no time because they are busy.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 88,"Q: Is this a valid syllogism?
 All girls are in a rush.
 All girls are late.
 Therefore girls are late because they are in a rush.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 89,"Q: Is this a valid syllogism?
 All girls are conscientious.
 All girls arrive on time.
 Therefore girls arrive on time because they are conscientious.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 90,"Q: Is this a valid syllogism?
 All people are ambitious.
 All people study hard.
 Therefore people study hard because they are ambitious.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 91,"Q: Is this a valid syllogism?
 All people are friendly.
 All people smile.
 Therefore people smile because they are friendly.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 92,"Q: Is this a valid syllogism?
 All people are angry.
 All people frown.
 Therefore people frown because they are angry.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 93,"Q: Is this a valid syllogism?
 All people are brave.
 All people face their fears.
 Therefore people face their fears because they are brave.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 94,"Q: Is this a valid syllogism?
 All people are scared.
 All people hide.
 Therefore people hide because they are scared.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 95,"Q: Is this a valid syllogism?
 All people are smart.
 All people have good ideas.
 Therefore people have good ideas because they are smart.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 96,"Q: Is this a valid syllogism?
 All people are lazy.
 All people do nothing.
 Therefore people do nothing because they are lazy.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 97,"Q: Is this a valid syllogism?
 All people are busy.
 All people have no time.
 Therefore people have no time because they are busy.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 98,"Q: Is this a valid syllogism?
 All people are in a rush.
 All people are late.
 Therefore people are late because they are in a rush.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1
 99,"Q: Is this a valid syllogism?
 All people are conscientious.
 All people arrive on time.
 Therefore people arrive on time because they are conscientious.
-A:","[' Yes', ' No']",1
+A:","[' Yes.', ' No.']",1

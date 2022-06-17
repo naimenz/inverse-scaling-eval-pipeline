@@ -4,6 +4,8 @@ from concurrent.futures import process
 import pandas as pd
 from pathlib import Path
 
+use_multitoken_classes = True
+
 raw_data_path = Path("/home/ian/code/lm_internship/eval-pipeline/raw_data/syllogism")
 processed_data_path = Path("/home/ian/code/lm_internship/eval-pipeline/data")
 templates = pd.read_csv(Path(raw_data_path, "templates.csv"))
@@ -18,6 +20,8 @@ oneshot_templates = []
 possible_answers_list = []
 answer_ix_list = []
 possible_answers = [" Yes", " No"]
+if use_multitoken_classes:
+    possible_answers = [a + "." for a in possible_answers]
 answer_ix = 1
 
 oneshot_template = """
@@ -44,13 +48,19 @@ for template in templates["templates"]:
             print(f"== ONE SHOT ==\n{filled_oneshot_template}\n===")
 
 zeroshot_template_df = pd.DataFrame({"prompt": zeroshot_templates, "classes": possible_answers_list, "answer_index": answer_ix_list})
-zeroshot_template_df.to_csv(Path(processed_data_path, "syllogism-0shot.csv"))
+if use_multitoken_classes:
+    zeroshot_template_df.to_csv(Path(processed_data_path, "syllogism-0shot-multitoken.csv"))
+else:
+    zeroshot_template_df.to_csv(Path(processed_data_path, "syllogism-0shot.csv"))
 
 sample_template_df = zeroshot_template_df[:100]
 sample_template_df.to_csv(Path(processed_data_path, "syllogism-sample.csv"))
 
 oneshot_template_df = pd.DataFrame({"prompt": oneshot_templates, "classes": possible_answers_list, "answer_index": answer_ix_list})
-oneshot_template_df.to_csv(Path(processed_data_path, "syllogism-1shot.csv"))
+if use_multitoken_classes:
+    oneshot_template_df.to_csv(Path(processed_data_path, "syllogism-1shot-multitoken.csv"))
+else:
+    oneshot_template_df.to_csv(Path(processed_data_path, "syllogism-1shot.csv"))
 
 print(zeroshot_template_df.head())
 print(zeroshot_template_df.info())

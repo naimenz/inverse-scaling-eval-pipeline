@@ -1,0 +1,8 @@
+2022-06-17 21:24:29,039 [INFO] Logging set up with args
+Namespace(batch_size=100, dataset='syllogism', dataset_path=None, exp_dir='syllogism-gpt3', models=['ada', 'babbage', 'curie', 'davinci'], task_type='classification', use_gpu=False)
+2022-06-17 21:24:29,039 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/syllogism-gpt3
+2022-06-17 21:24:29,039 [INFO] Copied data
+2022-06-17 23:01:28,162 [INFO] Logging set up with args
+Namespace(batch_size=100, dataset='syllogism', dataset_path=None, exp_dir='syllogism-gpt3', models=['ada', 'babbage', 'curie', 'davinci'], task_type='classification', use_gpu=False)
+2022-06-17 23:01:28,162 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/syllogism-gpt3
+2022-06-17 23:01:28,163 [INFO] Copied data
