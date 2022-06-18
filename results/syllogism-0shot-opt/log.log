@@ -1,0 +1,35 @@
+2022-06-18 10:46:47,711 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='syllogism', dataset_path=None, exp_dir='syllogism-0shot-opt', models=['opt-125m', 'opt-350m', 'opt-1.3b', 'opt-2.7b'], task_type='classification', use_gpu=True)
+2022-06-18 10:46:47,711 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/syllogism-0shot-opt
+2022-06-18 10:46:47,712 [INFO] Copied data
+2022-06-18 10:46:47,814 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2022-06-18 10:46:48,962 [DEBUG] https://huggingface.co:443 "GET /api/models/facebook/opt-125m/revision/main HTTP/1.1" 200 1406
+2022-06-18 10:46:48,975 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2022-06-18 10:46:50,396 [DEBUG] https://huggingface.co:443 "HEAD /facebook/opt-125m/resolve/38f3ba082934fed762f5793691948826277d82dc/.gitattributes HTTP/1.1" 200 0
+2022-06-18 10:46:50,398 [DEBUG] Attempting to acquire lock 140095582486608 on /home/ian/.cache/huggingface/hub/facebook--opt-125m.main.38f3ba082934fed762f5793691948826277d82dc/.gitattributes.lock
+2022-06-18 10:46:50,400 [DEBUG] Lock 140095582486608 acquired on /home/ian/.cache/huggingface/hub/facebook--opt-125m.main.38f3ba082934fed762f5793691948826277d82dc/.gitattributes.lock
+2022-06-18 10:46:50,403 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2022-06-18 10:46:51,932 [DEBUG] https://huggingface.co:443 "GET /facebook/opt-125m/resolve/38f3ba082934fed762f5793691948826277d82dc/.gitattributes HTTP/1.1" 200 1173
+2022-06-18 10:46:51,935 [DEBUG] Attempting to release lock 140095582486608 on /home/ian/.cache/huggingface/hub/facebook--opt-125m.main.38f3ba082934fed762f5793691948826277d82dc/.gitattributes.lock
+2022-06-18 10:46:51,936 [DEBUG] Lock 140095582486608 released on /home/ian/.cache/huggingface/hub/facebook--opt-125m.main.38f3ba082934fed762f5793691948826277d82dc/.gitattributes.lock
+2022-06-18 10:46:51,938 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2022-06-18 10:46:53,058 [DEBUG] https://huggingface.co:443 "HEAD /facebook/opt-125m/resolve/38f3ba082934fed762f5793691948826277d82dc/LICENSE.md HTTP/1.1" 200 0
+2022-06-18 10:46:53,060 [DEBUG] Attempting to acquire lock 140095584676432 on /home/ian/.cache/huggingface/hub/facebook--opt-125m.main.38f3ba082934fed762f5793691948826277d82dc/LICENSE.md.lock
+2022-06-18 10:46:53,060 [DEBUG] Lock 140095584676432 acquired on /home/ian/.cache/huggingface/hub/facebook--opt-125m.main.38f3ba082934fed762f5793691948826277d82dc/LICENSE.md.lock
+2022-06-18 10:46:53,062 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2022-06-18 10:46:54,340 [DEBUG] Attempting to release lock 140095584676432 on /home/ian/.cache/huggingface/hub/facebook--opt-125m.main.38f3ba082934fed762f5793691948826277d82dc/LICENSE.md.lock
+2022-06-18 10:46:54,340 [DEBUG] Lock 140095584676432 released on /home/ian/.cache/huggingface/hub/facebook--opt-125m.main.38f3ba082934fed762f5793691948826277d82dc/LICENSE.md.lock
+2022-06-18 10:47:31,053 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='syllogism', dataset_path=None, exp_dir='syllogism-0shot-opt', models=['opt-125m', 'opt-350m', 'opt-1.3b', 'opt-2.7b'], task_type='classification', use_gpu=True)
+2022-06-18 10:47:31,054 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/syllogism-0shot-opt
+2022-06-18 10:47:31,054 [INFO] Copied data
+2022-06-18 10:50:47,908 [INFO] DEBUG device_map: {'decoder': 0}
+2022-06-18 11:13:50,984 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='syllogism', dataset_path=None, exp_dir='syllogism-0shot-opt', models=['opt-125m', 'opt-350m', 'opt-1.3b', 'opt-2.7b'], task_type='classification', use_gpu=True)
+2022-06-18 11:13:50,984 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/syllogism-0shot-opt
+2022-06-18 11:13:50,985 [INFO] Copied data
+2022-06-18 11:14:01,201 [INFO] DEBUG device_map: {'decoder': 0}
+2022-06-18 11:20:20,889 [INFO] DEBUG device_map: {'decoder': 0}
+2022-06-18 11:43:51,732 [INFO] DEBUG device_map: {'decoder.embed_tokens': 0, 'decoder.embed_positions': 0, 'decoder.layers.0': 0, 'decoder.layers.1': 0, 'decoder.layers.2': 0, 'decoder.layers.3': 0, 'decoder.layers.4': 0, 'decoder.layers.5': 0, 'decoder.layers.6': 0, 'decoder.layers.7': 0, 'decoder.layers.8': 0, 'decoder.layers.9': 0, 'decoder.layers.10': 0, 'decoder.layers.11': 0, 'decoder.layers.12': 0, 'decoder.layers.13': 0, 'decoder.layers.14': 0, 'decoder.layers.15': 0, 'decoder.layers.16': 0, 'decoder.layers.17': 0, 'decoder.layers.18': 'cpu', 'decoder.layers.19': 'cpu', 'decoder.layers.20': 'cpu', 'decoder.layers.21': 'cpu', 'decoder.layers.22': 'cpu', 'decoder.layers.23': 'cpu'}
+2022-06-18 12:32:24,788 [INFO] DEBUG device_map: {'decoder.embed_tokens': 'cpu', 'decoder.embed_positions': 'cpu', 'decoder.layers.0': 'cpu', 'decoder.layers.1': 'cpu', 'decoder.layers.2': 'cpu', 'decoder.layers.3': 'cpu', 'decoder.layers.4': 'cpu', 'decoder.layers.5': 'cpu', 'decoder.layers.6': 'cpu', 'decoder.layers.7': 'cpu', 'decoder.layers.8': 'cpu', 'decoder.layers.9': 'cpu', 'decoder.layers.10': 'cpu', 'decoder.layers.11': 'cpu', 'decoder.layers.12': 'cpu', 'decoder.layers.13': 'cpu', 'decoder.layers.14': 'cpu', 'decoder.layers.15': 'cpu', 'decoder.layers.16': 'cpu', 'decoder.layers.17': 'cpu', 'decoder.layers.18': 'cpu', 'decoder.layers.19': 'cpu', 'decoder.layers.20': 'cpu', 'decoder.layers.21': 'cpu', 'decoder.layers.22': 'disk', 'decoder.layers.23': 'disk', 'decoder.layers.24': 'disk', 'decoder.layers.25': 'disk', 'decoder.layers.26': 'disk', 'decoder.layers.27': 'disk', 'decoder.layers.28': 'disk', 'decoder.layers.29': 'disk', 'decoder.layers.30': 'disk', 'decoder.layers.31': 'disk'}
+2022-06-18 12:32:24,789 [WARNING] device_map includes disk, so run will be too slow

@@ -1,5 +1,6 @@
 from __future__ import annotations
 from abc import ABC, abstractmethod
+import logging
 import os
 from typing import Union, cast, Sequence
 from typing_extensions import Literal, get_args
@@ -10,6 +11,12 @@ import torch.nn.functional as F
 
 from transformers import AutoModelForCausalLM, AutoTokenizer, AutoConfig  # type: ignore
 from huggingface_hub import snapshot_download
+from accelerate import (
+    init_empty_weights,
+    dispatch_model,
+    infer_auto_device_map,
+    load_checkpoint_and_dispatch,
+)
 from eval_pipeline.dataset import (
     ClassificationExample,
     Example,
@@ -82,9 +89,7 @@ class HFModel(Model):
         # have to download the opt models in advance since they're new
         if model_name.startswith("opt-"):
             prefix = "facebook/"
-            checkpoint = prefix + model_name
-            weights_path = snapshot_download(checkpoint)
-            self.model = AutoModelForCausalLM.from_pretrained(weights_path, max_length=1024).to(self.device)  # type: ignore
+            self.model = self._load_opt(prefix + model_name, device)
         else:
             if model_name.startswith("gpt-neo") or model_name.startswith("gpt-j"):
                 prefix = "EleutherAI/"
@@ -103,6 +108,39 @@ class HFModel(Model):
             use_fast=use_fast,
             model_max_length=1023,
         )
+
+    def _load_opt(self, checkpoint: str, device: Device) -> None:
+        weights_path = snapshot_download(checkpoint)
+        files = os.listdir(weights_path)
+        weights_path = (
+            os.path.join(weights_path, "pytorch_model.bin")
+            if "pytorch_model.bin" in files
+            else weights_path
+        )
+        config = AutoConfig.from_pretrained(checkpoint)
+        with init_empty_weights():
+            model = AutoModelForCausalLM.from_config(config)
+        model.tie_weights()
+        device_map = infer_auto_device_map(
+            model.model, no_split_module_classes=["OPTDecoderLayer"], dtype="float16"
+        )
+        logging.info(f"DEBUG device_map: {device_map}")
+        if any([k == "disk" for k in device_map.values()]):
+            logging.warn("device_map includes disk, so run will be too slow")
+            offload_folder = "offload_folder"
+        else:
+            offload_folder = None
+
+        load_checkpoint_and_dispatch(
+            model.model,
+            weights_path,
+            device_map=device_map,
+            offload_folder=offload_folder,
+            dtype="float16",
+            offload_state_dict=True,
+        )
+        model.tie_weights()
+        return model
 
     def __call__(
         self, examples: list[Example], task_type: TaskType
@@ -135,7 +173,11 @@ class HFModel(Model):
         examples: list[ClassificationExample],
         task_type: TaskType,
     ) -> dict[str, Union[Sequence[float], Sequence[int]]]:
-        prompts = [example.prompt + class_seq for example in examples for class_seq in example.classes]
+        prompts = [
+            example.prompt + class_seq
+            for example in examples
+            for class_seq in example.classes
+        ]
         tokenized_inputs = self.tokenizer(
             prompts, return_tensors="pt", truncation=True
         ).to(self.device)
@@ -154,28 +196,31 @@ class HFModel(Model):
                 class_logits = logits[class_index]
                 # the lengths of each class sequence in tokens
                 class_sequence = example.classes[j]
-                target_token_length = len(self.tokenizer(class_sequence)["input_ids"]) 
+                target_token_length = len(self.tokenizer(class_sequence)["input_ids"])
                 # we only need the logits for the end sequence
                 tokens = tokenized_inputs["input_ids"][class_index]
                 # we have to go back by one because we don't care about the logits for the predicted token
-                sequence_logits = class_logits[-target_token_length - 1: -1]
+                sequence_logits = class_logits[-target_token_length - 1 : -1]
                 sequence_tokens = tokens[-target_token_length:]
                 # we take a log_softmax over all token logits for each position in the class sequence to
                 #  get log probabilities, and then sum the logprobs for the tokens actually chosen
                 logprobs = F.log_softmax(sequence_logits, dim=-1)
-                class_logprob = sum([logprobs[i, token] for i, token in enumerate(sequence_tokens)])
+                class_logprob = sum(
+                    [logprobs[i, token] for i, token in enumerate(sequence_tokens)]
+                )
                 class_logprobs.append(class_logprob.item())  # type: ignore (the sum is never empty so never just 0, always a tensor)
             total_logprob = sum(class_logprobs)
             normalised_logprobs = F.log_softmax(torch.tensor(class_logprobs), dim=-1)
             loss = -normalised_logprobs[example.answer_index].item()
-            label_correct = int(
-                np.argmax(normalised_logprobs)
-                == example.answer_index
-            )
+            label_correct = int(np.argmax(normalised_logprobs) == example.answer_index)
             total_logprobs.append(total_logprob)
             losses.append(loss)
             labels_correct.append(label_correct)
-        return {"loss": losses, "correct": labels_correct, "total_logprob": total_logprobs}
+        return {
+            "loss": losses,
+            "correct": labels_correct,
+            "total_logprob": total_logprobs,
+        }
 
     def _evaluate_sequence_prob(
         self, examples: list[SequenceProbExample]
@@ -413,7 +458,7 @@ class GPT3Model(Model):
             prompt_start = i * n_classes
             class_choices = choices[prompt_start : prompt_start + n_classes]
 
-            # all class sequences begin after the initial prompt 
+            # all class sequences begin after the initial prompt
             text_index = len(example.prompt)
 
             # accumulate logprobs for each class sequence separately
@@ -425,7 +470,9 @@ class GPT3Model(Model):
                 try:
                     token_index = text_offset.index(text_index)
                 except ValueError as e:
-                    raise ValueError("The class sequence '{example.classes[i]}' did not start on a token boundary")
+                    raise ValueError(
+                        "The class sequence '{example.classes[i]}' did not start on a token boundary"
+                    )
                 class_logprob = 0
                 for token_logprob in actual_logprobs[token_index:]:
                     class_logprob += token_logprob
@@ -481,9 +528,7 @@ class GPT3Model(Model):
         for i, example in enumerate(examples):
             prompt_start = i * n_classes
             class_choices = choices[prompt_start : prompt_start + n_classes]
-            other_class_choices = other_choices[
-                prompt_start : prompt_start + n_classes
-            ]
+            other_class_choices = other_choices[prompt_start : prompt_start + n_classes]
 
             relevant_logprobs = torch.tensor(
                 [choice["logprobs"]["token_logprobs"][-1] for choice in class_choices]
@@ -543,7 +588,9 @@ class GPT3Model(Model):
             try:
                 token_index = text_offset.index(text_index)
             except ValueError as e:
-                raise ValueError("The target sequence '{example.completion}' did not start on a token boundary")
+                raise ValueError(
+                    "The target sequence '{example.completion}' did not start on a token boundary"
+                )
 
             loss = 0
             for logprob in actual_logprobs[token_index:]:
