@@ -109,7 +109,7 @@ class HFModel(Model):
             model_max_length=1023,
         )
 
-    def _load_opt(self, checkpoint: str, device: Device) -> None:
+    def _load_opt(self, checkpoint: str, device: Device):
         weights_path = snapshot_download(checkpoint)
         files = os.listdir(weights_path)
         weights_path = (
@@ -182,7 +182,7 @@ class HFModel(Model):
             prompts, return_tensors="pt", truncation=True
         ).to(self.device)
         outputs = self.model(**tokenized_inputs)
-        logits = outputs["logits"]
+        logits = outputs["logits"].to(dtype=torch.float32)
         # for each possible class sequence, we need to get the logprob on the full class sequence
         n_classes = len(examples[0].classes)
         total_logprobs = []
@@ -237,7 +237,7 @@ class HFModel(Model):
         ]
 
         outputs = self.model(**tokenized_inputs)
-        logits = outputs["logits"]
+        logits = outputs["logits"].to(dtype=torch.float32)
 
         losses = []
         for i in range(len(examples)):
@@ -269,8 +269,8 @@ class HFModel(Model):
         other_outputs = self.model(**other_tokenized_inputs)
         # we only need the logits for the final (new) token
         # NOTE: this may need to change if we use batch size > 1 with padding
-        logits = outputs["logits"][:, -1].detach().to("cpu")
-        other_logits = other_outputs["logits"][:, -1].detach().to("cpu")
+        logits = outputs["logits"][:, -1].detach().to(device="cpu", dtype=torch.float32)
+        other_logits = other_outputs["logits"][:, -1].detach().to(device="cpu", dtype=torch.float32)
         logodds = self._logodds_from_logits(examples, logits)
         other_logodds = self._logodds_from_logits(examples, other_logits)
         logodds_differences = list(np.array(logodds) - np.array(other_logodds))  # type: ignore (np typing bad)
