@@ -124,7 +124,7 @@ class HFModel(Model):
         device_map = infer_auto_device_map(
             model.model, no_split_module_classes=["OPTDecoderLayer"], dtype="float16"
         )
-        logging.info(f"DEBUG device_map: {device_map}")
+        logging.debug(f"device_map: {device_map}")
         if any([k == "disk" for k in device_map.values()]):
             logging.warn("device_map includes disk, so run will be too slow")
             offload_folder = "offload_folder"
