@@ -181,8 +181,8 @@ class HFModel(Model):
         tokenized_inputs = self.tokenizer(
             prompts, return_tensors="pt", truncation=True
         ).to(self.device)
-        outputs = self.model(**tokenized_inputs).detach(device="cpu")
-        logits = outputs["logits"].to(dtype=torch.float32)
+        outputs = self.model(**tokenized_inputs)
+        logits = outputs["logits"].detach().to(device="cpu", dtype=torch.float32)
         # for each possible class sequence, we need to get the logprob on the full class sequence
         n_classes = len(examples[0].classes)
         total_logprobs = []
@@ -237,8 +237,8 @@ class HFModel(Model):
             len(self.tokenizer(word)["input_ids"]) for word in target_sequences
         ]
 
-        outputs = self.model(**tokenized_inputs).detach().to(device="cpu")
-        logits = outputs["logits"].to(dtype=torch.float32)
+        outputs = self.model(**tokenized_inputs)
+        logits = outputs["logits"].detach().to(device="cpu", dtype=torch.float32)
 
         losses = []
         for i in range(len(examples)):
@@ -266,12 +266,12 @@ class HFModel(Model):
         other_tokenized_inputs = self.tokenizer(
             other_prompts, return_tensors="pt", truncation=True
         ).to(self.device)
-        outputs = self.model(**tokenized_inputs).detach().to(device="cpu")
-        other_outputs = self.model(**other_tokenized_inputs).detach().to(device="cpu")
+        outputs = self.model(**tokenized_inputs)
+        other_outputs = self.model(**other_tokenized_inputs)
         # we only need the logits for the final (new) token
         # NOTE: this may need to change if we use batch size > 1 with padding
-        logits = outputs["logits"][:, -1].to(dtype=torch.float32)
-        other_logits = other_outputs["logits"][:, -1].to(dtype=torch.float32)
+        logits = outputs["logits"][:, -1].detach().to(device="cpu", dtype=torch.float32)
+        other_logits = other_outputs["logits"][:, -1].detach().to(device="cpu", dtype=torch.float32)
         logodds = self._logodds_from_logits(examples, logits)
         other_logodds = self._logodds_from_logits(examples, other_logits)
         logodds_differences = list(np.array(logodds) - np.array(other_logodds))  # type: ignore (np typing bad)
@@ -312,7 +312,7 @@ class HFModel(Model):
             max_new_tokens=7,
             temperature=0.5,
             pad_token_id=50526,
-        ).detach().to(device="cpu")
+        )
         full_completions = self.tokenizer.batch_decode(
             outputs, skip_special_tokens=True
         )
