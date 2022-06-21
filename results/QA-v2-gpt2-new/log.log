@@ -1,0 +1,31 @@
+2022-06-21 17:19:40,724 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='QA_bias-v2', dataset_path=None, exp_dir='QA-v2-gpt2-new', logging_level='debug', models=['gpt2', 'gpt2-medium'], task_type='logodds', use_gpu=True)
+2022-06-21 17:19:40,724 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v2-gpt2-new
+2022-06-21 17:19:40,725 [INFO] Copied data
+2022-06-21 17:19:40,776 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2022-06-21 17:19:41,682 [DEBUG] https://huggingface.co:443 "HEAD /gpt2/resolve/main/config.json HTTP/1.1" 200 0
+2022-06-21 17:19:41,744 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2022-06-21 17:19:42,705 [DEBUG] https://huggingface.co:443 "HEAD /gpt2/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+2022-06-21 17:19:48,434 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2022-06-21 17:19:49,260 [DEBUG] https://huggingface.co:443 "HEAD /gpt2/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2022-06-21 17:19:49,264 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2022-06-21 17:19:50,078 [DEBUG] https://huggingface.co:443 "HEAD /gpt2/resolve/main/config.json HTTP/1.1" 200 0
+2022-06-21 17:19:50,085 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2022-06-21 17:19:51,102 [DEBUG] https://huggingface.co:443 "HEAD /gpt2/resolve/main/tokenizer_config.json HTTP/1.1" 404 0
+2022-06-21 17:19:51,109 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2022-06-21 17:19:51,923 [DEBUG] https://huggingface.co:443 "HEAD /gpt2/resolve/main/vocab.json HTTP/1.1" 200 0
+2022-06-21 17:19:51,926 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2022-06-21 17:19:52,946 [DEBUG] https://huggingface.co:443 "HEAD /gpt2/resolve/main/merges.txt HTTP/1.1" 200 0
+2022-06-21 17:19:52,950 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2022-06-21 17:21:31,845 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='QA_bias-v2', dataset_path=None, exp_dir='QA-v2-gpt2-new', logging_level='debug', models=['gpt2', 'gpt2-medium'], task_type='logodds', use_gpu=True)
+2022-06-21 17:21:31,845 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v2-gpt2-new
+2022-06-21 17:21:31,845 [INFO] Copied data
+2022-06-21 17:21:31,886 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2022-06-21 17:21:32,890 [DEBUG] https://huggingface.co:443 "HEAD /gpt2/resolve/main/config.json HTTP/1.1" 200 0
+2022-06-21 17:21:32,941 [DEBUG] Starting new HTTPS connection (1): huggingface.co:443
+2022-06-21 17:21:33,828 [DEBUG] https://huggingface.co:443 "HEAD /gpt2/resolve/main/pytorch_model.bin HTTP/1.1" 302 0
+2022-06-21 17:22:22,125 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='QA_bias-v2', dataset_path=None, exp_dir='QA-v2-gpt2-new', logging_level='debug', models=['gpt2', 'gpt2-medium'], task_type='logodds', use_gpu=True)
+2022-06-21 17:22:22,125 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v2-gpt2-new
+2022-06-21 17:22:22,126 [INFO] Copied data

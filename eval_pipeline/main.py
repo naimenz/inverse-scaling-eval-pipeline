@@ -43,7 +43,7 @@ def main():
     arg_log_path = Path(write_dir, "args.log")
     with arg_log_path.open("w") as f:
         json.dump(args.__dict__, f, indent=2)
-    set_up_logging(log_path)
+    set_up_logging(log_path, args.logging_level)
 
     logging.info(f"Logging set up with args\n{args}")
     logging.info(f"Saving to results to {write_dir}")
@@ -75,12 +75,21 @@ def main():
     labelled_df.to_json(labelled_path, orient="records", lines=True)
 
 
-def set_up_logging(log_path: Path):
+def set_up_logging(log_path: Path, logging_level: str):
+    logging_levels = {
+        "debug": logging.DEBUG,
+        "info": logging.INFO,
+        "warn": logging.WARN,
+        "error": logging.ERROR,
+    }
+    
     logging.basicConfig(
-        level=logging.INFO,
+        level=logging_levels[logging_level],
         format="%(asctime)s [%(levelname)s] %(message)s",
         handlers=[logging.FileHandler(log_path), logging.StreamHandler()],
     )
+    # suppress debug warnings from the Requests library
+    logging.getLogger("urllib3").setLevel(logging.WARNING)
 
 
 def load_data(dataset_path: Path, task_type: TaskType) -> Dataset:
@@ -229,6 +238,18 @@ def parse_args(args):
             "classification_acc",
             "sequence_prob",
             "logodds",
+        ],
+    )
+    parser.add_argument(
+        "--logging-level",
+        type=str,
+        help="The level of logging to print",
+        default="info",
+        choices=[
+            "debug",
+            "info",
+            "warn",
+            "error",
         ],
     )
     args = parser.parse_args(args)
