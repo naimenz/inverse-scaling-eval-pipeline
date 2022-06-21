@@ -60,15 +60,17 @@ def main():
     model_names = args.models
     for model_name in tqdm(model_names):
         run_model(model_name, data, write_dir, device, args.batch_size, args.task_type)
-    
-    # final step to add all results to a jsonl 
+
+    # final step to add all results to a jsonl
     labelled_df = load_df(data_path)
     for model_name in model_names:
         results_path = Path(write_dir, model_name + ".csv")
         prefix = f"{model_name}_"
         results = pd.read_csv(results_path, index_col=0)
         prefixed_results = results.add_prefix(prefix)
-        labelled_df = labelled_df.merge(prefixed_results, left_index=True, right_index=True)
+        labelled_df = labelled_df.merge(
+            prefixed_results, left_index=True, right_index=True
+        )
     labelled_path = Path(write_dir, "labelled_data.jsonl")
     labelled_df.to_json(labelled_path, orient="records", lines=True)
 
@@ -96,6 +98,7 @@ def load_data(dataset_path: Path, task_type: TaskType) -> Dataset:
         raise ValueError(f"Unrecognised task type {task_type}")
     return dataset
 
+
 def load_df(path: Path):
     if path.suffix == ".csv":
         return pd.read_csv(path)
@@ -119,7 +122,7 @@ def run_model(
     # TODO: find a way to avoid having to specify field names ahead of time
     if task_type in ["classification_loss", "classification_acc", "classification"]:
         field_names = ["index", "loss", "correct", "total_logprob"]
-    elif task_type == "single_word":
+    elif task_type == "sequence_prob":
         field_names = ["index", "loss"]
     elif task_type == "numeric":
         field_names = ["index", "estimate"]
@@ -145,6 +148,8 @@ def run_model(
                     rows[offset][output_name] = value
             for row in rows:
                 writer.writerow(row)
+        # DEBUG: trying to remove all references to the model so I can free GPU memory
+        del model
 
 
 def parse_args(args):
@@ -218,7 +223,13 @@ def parse_args(args):
         type=str,
         help="The type of output expected for the dataset",
         default="classification",
-        choices=["classification", "classification_loss", "classification_acc", "single_word", "logodds"],
+        choices=[
+            "classification",
+            "classification_loss",
+            "classification_acc",
+            "sequence_prob",
+            "logodds",
+        ],
     )
     args = parser.parse_args(args)
     return args
