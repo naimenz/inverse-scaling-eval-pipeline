@@ -1,0 +1,12 @@
+2022-06-21 18:17:11,438 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='QA_bias-v2', dataset_path=None, exp_dir='QA-v2-gpt2-abs', logging_level='info', models=['gpt2', 'gpt2-medium'], task_type='absolute_logodds', use_gpu=True)
+2022-06-21 18:17:11,438 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v2-gpt2-abs
+2022-06-21 18:17:11,438 [INFO] Copied data
+2022-06-21 18:19:26,466 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='QA_bias-v2', dataset_path=None, exp_dir='QA-v2-gpt2-abs', logging_level='info', models=['gpt2', 'gpt2-medium'], task_type='absolute_logodds', use_gpu=True)
+2022-06-21 18:19:26,466 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v2-gpt2-abs
+2022-06-21 18:19:26,467 [INFO] Copied data
+2022-06-21 18:22:12,124 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='QA_bias-v2', dataset_path=None, exp_dir='QA-v2-gpt2-abs', logging_level='info', models=['gpt2', 'gpt2-medium'], task_type='absolute_logodds', use_gpu=True)
+2022-06-21 18:22:12,124 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v2-gpt2-abs
+2022-06-21 18:22:12,125 [INFO] Copied data

@@ -100,7 +100,7 @@ def load_data(dataset_path: Path, task_type: TaskType) -> Dataset:
         dataset = Dataset.numeric_from_df(df)
     elif task_type == "sequence_prob":
         dataset = Dataset.sequence_prob_from_df(df)
-    elif task_type == "logodds":
+    elif task_type == "logodds" or task_type == "absolute_logodds":
         # we can just reuse the classification dataset type
         dataset = Dataset.logodds_from_df(df)
     else:
@@ -135,7 +135,7 @@ def run_model(
         field_names = ["index", "loss"]
     elif task_type == "numeric":
         field_names = ["index", "estimate"]
-    elif task_type == "logodds":
+    elif task_type in ["logodds", "absolute_logodds"]:
         field_names = ["index", "logodds_difference", "correct", "total_logprob"]
     else:
         raise ValueError(f"unknown task type {task_type}")
@@ -238,6 +238,7 @@ def parse_args(args):
             "classification_acc",
             "sequence_prob",
             "logodds",
+            "absolute_logodds",
         ],
     )
     parser.add_argument(

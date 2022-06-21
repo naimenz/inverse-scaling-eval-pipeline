@@ -12,6 +12,7 @@ TaskType = Literal[
     "numeric",
     "sequence_prob",
     "logodds",
+    "absolute_logodds",
 ]
 
 

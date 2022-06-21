@@ -163,7 +163,10 @@ class HFModel(Model):
             rv = self._evaluate_sequence_prob(sequence_prob_examples)
         elif task_type == "logodds":
             logodds_examples = cast("list[LogoddsExample]", examples)
-            rv = self._evaluate_logodds(logodds_examples)
+            rv = self._evaluate_logodds(logodds_examples, take_absolute_value=False)
+        elif task_type == "absolute_logodds":
+            logodds_examples = cast("list[LogoddsExample]", examples)
+            rv = self._evaluate_logodds(logodds_examples, take_absolute_value=True)
         else:
             raise ValueError(f"Unrecognised task type {task_type}")
         return rv
@@ -255,6 +258,7 @@ class HFModel(Model):
     def _evaluate_logodds(
         self,
         examples: list[LogoddsExample],
+        take_absolute_value: bool = False,
     ) -> dict[str, Union[Sequence[float], Sequence[int]]]:
         """logodds is much like classification, except we need to compare across prompts so we just
         compute the log odds here"""
@@ -274,12 +278,17 @@ class HFModel(Model):
         other_logits = other_outputs["logits"][:, -1].detach().to(device="cpu", dtype=torch.float32)
         logodds = self._logodds_from_logits(examples, logits)
         other_logodds = self._logodds_from_logits(examples, other_logits)
+
         logodds_differences = list(np.array(logodds) - np.array(other_logodds))  # type: ignore (np typing bad)
         answer_indices = [example.answer_index for example in examples]
         # flip the order (and hence the sign) if the answer is "no"
+        # (unless we are taking absolute values)
         for i, answer_index in enumerate(answer_indices):
             if answer_index == 1:
                 logodds_differences[i] *= -1
+            if take_absolute_value:
+                logodds_differences[i] = np.abs(logodds_differences[i])
+
         accuracies = self._accuracies_from_logits(examples, other_logits)
         total_logprobs = np.mean(
             np.stack(
@@ -422,7 +431,10 @@ class GPT3Model(Model):
             rv = self._evaluate_sequence_prob(SequenceProbExamples)
         elif task_type == "logodds":
             logodds_examples = cast("list[LogoddsExample]", examples)
-            rv = self._evaluate_logodds(logodds_examples)
+            rv = self._evaluate_logodds(logodds_examples, take_absolute_value=False)
+        elif task_type == "absolute_logodds":
+            logodds_examples = cast("list[LogoddsExample]", examples)
+            rv = self._evaluate_logodds(logodds_examples, take_absolute_value=True)
         else:
             raise ValueError(f"Unrecognised task type {task_type}")
         return rv
@@ -497,6 +509,7 @@ class GPT3Model(Model):
     def _evaluate_logodds(
         self,
         examples: list[LogoddsExample],
+        take_absolute_value: bool = False,
     ) -> dict[str, Union[Sequence[float], Sequence[int]]]:
         prompts = [
             example.prompt + class_token
@@ -548,6 +561,10 @@ class GPT3Model(Model):
             # flip the order (and hence the sign) if the answer is "no"
             if answer_index == 1:
                 logodds_difference *= -1
+
+            if take_absolute_value: 
+                logodds_difference = np.abs(logodds_difference)
+
             logodds_differences.append(logodds_difference.item())
             total_logprob = np.mean(
                 [

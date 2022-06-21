@@ -1,0 +1,15 @@
+{
+  "dataset": "QA_bias-v2",
+  "dataset_path": null,
+  "exp_dir": "QA-v2-gpt3-abs",
+  "models": [
+    "ada",
+    "babbage",
+    "curie",
+    "davinci"
+  ],
+  "use_gpu": false,
+  "batch_size": 20,
+  "task_type": "absolute_logodds",
+  "logging_level": "info"
+}

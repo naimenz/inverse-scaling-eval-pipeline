@@ -1,0 +1,4 @@
+2022-06-21 18:08:54,182 [INFO] Logging set up with args
+Namespace(batch_size=20, dataset='QA_bias-v2', dataset_path=None, exp_dir='QA-v2-gpt3-abs', logging_level='info', models=['ada', 'babbage', 'curie', 'davinci'], task_type='absolute_logodds', use_gpu=False)
+2022-06-21 18:08:54,182 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v2-gpt3-abs
+2022-06-21 18:08:54,182 [INFO] Copied data

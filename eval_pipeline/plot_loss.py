@@ -62,13 +62,13 @@ def main():
         )
     elif args.task_type == "numeric":
         plot_numeric_loss(exp_dir)
-    elif args.task_type == "logodds":
-        plot_logodds_loss(exp_dir, args.dataset_sizes)
+    elif args.task_type in ["logodds", "absolute_logodds"]:
+        plot_logodds_loss(exp_dir, args.task_type, args.dataset_sizes)
     else:
         raise ValueError(f"unknown task type {args.task_type}")
 
 
-def plot_logodds_loss(exp_dir: Path, dataset_sizes: list[int]):
+def plot_logodds_loss(exp_dir: Path, task_type: TaskType, dataset_sizes: list[int]):
     loss_csvs = [f for f in exp_dir.glob("*.csv") if f.name != "data.csv"]
     if Path(exp_dir, "data.csv").exists():
         data_df = pd.read_csv(Path(exp_dir, "data.csv"), index_col=0).reset_index(
@@ -107,7 +107,7 @@ def plot_logodds_loss(exp_dir: Path, dataset_sizes: list[int]):
         exp_dir,
         separate_plot_dict,
         baseline=None,
-        task_type="logodds",
+        task_type=task_type,
         invert=False,
         average_coverages=None,
         show=True,
@@ -289,6 +289,9 @@ def plot_loss(
     elif task_type == "logodds":
         plt.ylabel("Logodds difference")
         title = "Log plot of logodds differences vs model size"
+    elif task_type == "absolute_logodds":
+        plt.ylabel("Absolute logodds difference")
+        title = "Log plot of absolute logodds differences vs model size"
 
     else:
         raise ValueError(f"Unknown task type {task_type}")
@@ -328,6 +331,7 @@ def parse_args(args) -> argparse.Namespace:
             "numeric",
             "sequence_prob",
             "logodds",
+            "absolute_logodds",
         ],
         help="The type of task to plot",
     )
