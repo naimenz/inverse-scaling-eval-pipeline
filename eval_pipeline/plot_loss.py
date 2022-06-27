@@ -275,7 +275,7 @@ def plot_loss(
     # plt.xticks(ticks, labels, rotation=45)
     plt.xticks(ticks, labels)
 
-    if task_type == "classification_loss" or task_type == "sequence_prob":
+    if task_type == "classification_loss" or task_type == "classification" or task_type == "sequence_prob":
         plt.yscale("log")
         plt.ylabel("Loss")
         title = "Log-log plot of loss vs model size"
