@@ -134,7 +134,7 @@ def plot_classification_loss(
         raise ValueError("Need data.csv or data.jsonl")
     dfs = {csv_file.stem: pd.read_csv(csv_file, index_col=0) for csv_file in loss_csvs}
 
-    if task_type == "classification_acc" or task_type == "classification":
+    if task_type == "classification_acc":
         # NOTE: assuming all examples have the same number of classes
         n_classes = len(literal_eval(str(data_df["classes"][0])))  # type: ignore
         # the baseline puts equal probability on each class, so we are considering a uniform distribution
@@ -146,7 +146,8 @@ def plot_classification_loss(
                     lambda correct: np.abs(correct - 1)
                 )
 
-    elif task_type == "classification_loss":
+    # NOTE: the default plot type is now loss because that's what we ask for in the submission
+    elif task_type == "classification_loss" or task_type == "classification":
         # NOTE: assuming all examples have the same number of classes
         n_classes = len(literal_eval(str(data_df["classes"][0])))  # type: ignore
         # the baseline puts equal probability on each class, so we are considering a uniform distribution
