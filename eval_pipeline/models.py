@@ -111,36 +111,8 @@ class HFModel(Model):
 
     def _load_opt(self, checkpoint: str, device: Device):
         weights_path = snapshot_download(checkpoint)
-        files = os.listdir(weights_path)
-        weights_path = (
-            os.path.join(weights_path, "pytorch_model.bin")
-            if "pytorch_model.bin" in files
-            else weights_path
-        )
-        config = AutoConfig.from_pretrained(checkpoint)
-        with init_empty_weights():
-            model = AutoModelForCausalLM.from_config(config)
-        model.tie_weights()
-        device_map = infer_auto_device_map(
-            model.model, no_split_module_classes=["OPTDecoderLayer"], dtype="float16"
-        )
-        logging.debug(f"device_map: {device_map}")
-        if any([k == "disk" for k in device_map.values()]):
-            logging.warn("device_map includes disk, so run will be too slow")
-            offload_folder = "offload_folder"
-        else:
-            offload_folder = None
-
-        load_checkpoint_and_dispatch(
-            model.model,
-            weights_path,
-            device_map=device_map,
-            offload_folder=offload_folder,
-            dtype="float16",
-            offload_state_dict=True,
-        )
-        model.tie_weights()
-        return model
+        self.model = AutoModelForCausalLM.from_pretrained(weights_path, max_length=1024).to(self.device)  # type: ignore
+        return self.model
 
     def __call__(
         self, examples: list[Example], task_type: TaskType
