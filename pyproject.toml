@@ -1,12 +1,12 @@
 [tool.poetry]
 name = "eval-pipeline"
-version = "0.1.0"
+version = "0.2.0"
 description = ""
 authors = ["Ian McKenzie <ianmck98@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.7.1"
-transformers = "^4.19"
+transformers = "^4.20"
 requests = "^2.27.1"
 python-dotenv = "^0.19.2"
 numpy = "^1.14.5"

@@ -110,8 +110,17 @@ class HFModel(Model):
         )
 
     def _load_opt(self, checkpoint: str, device: Device):
-        weights_path = snapshot_download(checkpoint)
-        self.model = AutoModelForCausalLM.from_pretrained(weights_path, max_length=1024).to(self.device)  # type: ignore
+        # weights_path = snapshot_download(checkpoint)
+        # self.model = AutoModelForCausalLM.from_pretrained(weights_path, max_length=1024).to(self.device)  # type: ignore
+        self.model = AutoModelForCausalLM.from_pretrained(
+            checkpoint,
+            device_map='auto',
+            offload_folder='offload_folder',
+            torch_dtype=torch.float16,
+            offload_state_dict=True,
+            max_length=1024,
+        )
+        self.model.eval()
         return self.model
 
     def __call__(
@@ -122,26 +131,27 @@ class HFModel(Model):
             raise ValueError(
                 f"Batch size of {len(examples)} not currently supported for HF models: please use 1"
             )
-        if task_type.startswith("classification"):
-            classification_examples = cast("list[ClassificationExample]", examples)
-            rv = self._evaluate_classification(
-                classification_examples, task_type=task_type
-            )
-        elif task_type == "numeric":
-            numeric_examples = cast("list[NumericExample]", examples)
-            rv = self._evaluate_numeric(numeric_examples)
-        elif task_type == "sequence_prob":
-            sequence_prob_examples = cast("list[SequenceProbExample]", examples)
-            rv = self._evaluate_sequence_prob(sequence_prob_examples)
-        elif task_type == "logodds":
-            logodds_examples = cast("list[LogoddsExample]", examples)
-            rv = self._evaluate_logodds(logodds_examples, take_absolute_value=False)
-        elif task_type == "absolute_logodds":
-            logodds_examples = cast("list[LogoddsExample]", examples)
-            rv = self._evaluate_logodds(logodds_examples, take_absolute_value=True)
-        else:
-            raise ValueError(f"Unrecognised task type {task_type}")
-        return rv
+        with torch.no_grad():
+            if task_type.startswith("classification"):
+                classification_examples = cast("list[ClassificationExample]", examples)
+                rv = self._evaluate_classification(
+                    classification_examples, task_type=task_type
+                )
+            elif task_type == "numeric":
+                numeric_examples = cast("list[NumericExample]", examples)
+                rv = self._evaluate_numeric(numeric_examples)
+            elif task_type == "sequence_prob":
+                sequence_prob_examples = cast("list[SequenceProbExample]", examples)
+                rv = self._evaluate_sequence_prob(sequence_prob_examples)
+            elif task_type == "logodds":
+                logodds_examples = cast("list[LogoddsExample]", examples)
+                rv = self._evaluate_logodds(logodds_examples, take_absolute_value=False)
+            elif task_type == "absolute_logodds":
+                logodds_examples = cast("list[LogoddsExample]", examples)
+                rv = self._evaluate_logodds(logodds_examples, take_absolute_value=True)
+            else:
+                raise ValueError(f"Unrecognised task type {task_type}")
+            return rv
 
     def _evaluate_classification(
         self,
