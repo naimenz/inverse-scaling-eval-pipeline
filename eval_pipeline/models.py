@@ -88,6 +88,7 @@ class HFModel(Model):
         self.device = device
         # have to download the opt models in advance since they're new
         if model_name.startswith("opt-"):
+            torch.cuda.empty_cache()
             prefix = "facebook/"
             self.model = self._load_opt(prefix + model_name, device)
         else:
