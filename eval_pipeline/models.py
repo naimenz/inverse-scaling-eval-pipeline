@@ -115,12 +115,11 @@ class HFModel(Model):
         self.model = AutoModelForCausalLM.from_pretrained(
             checkpoint,
             device_map='auto',
-            offload_folder='offload_folder',
+            # offload_folder='offload_folder',
             torch_dtype=torch.float16,
-            offload_state_dict=True,
+            # offload_state_dict=False,
             max_length=1024,
         )
-        self.model.eval()
         return self.model
 
     def __call__(
