@@ -111,16 +111,12 @@ class HFModel(Model):
         )
 
     def _load_opt(self, checkpoint: str, device: Device):
-        # weights_path = snapshot_download(checkpoint)
-        # self.model = AutoModelForCausalLM.from_pretrained(weights_path, max_length=1024).to(self.device)  # type: ignore
         self.model = AutoModelForCausalLM.from_pretrained(
             checkpoint,
             device_map='auto',
-            # offload_folder='offload_folder',
             torch_dtype=torch.float16,
-            # offload_state_dict=False,
             max_length=1024,
-        )
+        ) # type: ignore
         return self.model
 
     def __call__(
