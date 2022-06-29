@@ -158,11 +158,7 @@ class HFModel(Model):
             for example in examples
             for class_seq in example.classes
         ]
-        tokenized_inputs = self.tokenizer(
-            prompts, return_tensors="pt", truncation=True
-        ).to(self.device)
-        outputs = self.model(**tokenized_inputs)
-        logits = outputs["logits"].detach().to(device="cpu", dtype=torch.float32)
+        all_logits, all_tokens = self._get_logits_and_tokens(prompts)
         # for each possible class sequence, we need to get the logprob on the full class sequence
         n_classes = len(examples[0].classes)
         total_logprobs = []
@@ -173,12 +169,12 @@ class HFModel(Model):
             class_logprobs = []
             for j in range(n_classes):
                 class_index = prompt_start + j
-                class_logits = logits[class_index]
+                class_logits = all_logits[class_index]
                 # the lengths of each class sequence in tokens
                 class_sequence = example.classes[j]
                 target_token_length = len(self.tokenizer(class_sequence)["input_ids"])
                 # we only need the logits for the end sequence
-                tokens = tokenized_inputs["input_ids"][class_index]
+                tokens = all_tokens[class_index]
                 # we have to go back by one because we don't care about the logits for the predicted token
                 sequence_logits = class_logits[-target_token_length - 1 : -1]
                 sequence_tokens = tokens[-target_token_length:]
@@ -202,6 +198,20 @@ class HFModel(Model):
             "correct": labels_correct,
             "total_logprob": total_logprobs,
         }
+
+    def _get_logits_and_tokens(self, prompts: list[str]) -> tuple[list[torch.Tensor], list[torch.Tensor]]:
+        all_logits = []
+        all_tokens = []
+        for prompt in prompts:
+            tokenized_inputs = self.tokenizer(
+                prompt, return_tensors="pt", truncation=True
+            ).to(self.device)
+            outputs = self.model(**tokenized_inputs)
+            logits = outputs["logits"].detach().to(device="cpu", dtype=torch.float32)
+            # need to remove batch dimension
+            all_logits.append(torch.squeeze(logits))
+            all_tokens.append(torch.squeeze(tokenized_inputs["input_ids"]))
+        return all_logits, all_tokens
 
     def _evaluate_sequence_prob(
         self, examples: list[SequenceProbExample]
@@ -539,7 +549,7 @@ class GPT3Model(Model):
             if answer_index == 1:
                 logodds_difference *= -1
 
-            if take_absolute_value: 
+            if take_absolute_value:
                 logodds_difference = np.abs(logodds_difference)
 
             logodds_differences.append(logodds_difference.item())
