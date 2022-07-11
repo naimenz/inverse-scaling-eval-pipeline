@@ -471,7 +471,7 @@ class GPT3Model(Model):
                     token_index = text_offset.index(text_index)
                 except ValueError as e:
                     raise ValueError(
-                        "The class sequence '{example.classes[i]}' did not start on a token boundary"
+                        f"The class sequence '{example.classes[i]}' did not start on a token boundary"
                     )
                 class_logprob = 0
                 for token_logprob in actual_logprobs[token_index:]:
@@ -594,7 +594,7 @@ class GPT3Model(Model):
                 token_index = text_offset.index(text_index)
             except ValueError as e:
                 raise ValueError(
-                    "The target sequence '{example.completion}' did not start on a token boundary"
+                    f"The target sequence '{example.completion}' did not start on a token boundary"
                 )
 
             loss = 0
