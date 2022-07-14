@@ -1,0 +1,13 @@
+{
+  "dataset": "QA_bias-v2",
+  "dataset_path": null,
+  "exp_dir": "QA-v2-bloom",
+  "models": [
+    "bloom-350m",
+    "bloom-760m"
+  ],
+  "use_gpu": true,
+  "batch_size": 1,
+  "task_type": "logodds",
+  "logging_level": "info"
+}

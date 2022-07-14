@@ -9,14 +9,7 @@ import numpy as np
 import torch
 import torch.nn.functional as F
 
-from transformers import AutoModelForCausalLM, AutoTokenizer, AutoConfig  # type: ignore
-from huggingface_hub import snapshot_download
-from accelerate import (
-    init_empty_weights,
-    dispatch_model,
-    infer_auto_device_map,
-    load_checkpoint_and_dispatch,
-)
+from transformers import AutoModelForCausalLM, AutoTokenizer  # type: ignore
 from eval_pipeline.dataset import (
     ClassificationExample,
     Example,
@@ -53,6 +46,11 @@ ValidHFModel = Literal[
     "opt-2.7b",
     "opt-6.7b",
     "opt-13b",
+    "bloom-350m",
+    "bloom-760m",
+    "bloom-1b3",
+    "bloom-2b5",
+    "bloom-6b3",
 ]
 valid_hf_models: tuple[ValidHFModel, ...] = get_args(ValidHFModel)
 
@@ -89,7 +87,10 @@ class HFModel(Model):
         # have to download the opt models in advance since they're new
         if model_name.startswith("opt-"):
             prefix = "facebook/"
-            self.model = self._load_opt(prefix + model_name, device)
+            self.model = self._load_distributed(prefix + model_name, device)
+        elif model_name.startswith("bloom-"):
+            prefix = "bigscience/"
+            self.model = self._load_distributed(prefix + model_name, device)
         else:
             if model_name.startswith("gpt-neo") or model_name.startswith("gpt-j"):
                 prefix = "EleutherAI/"
@@ -99,7 +100,7 @@ class HFModel(Model):
             self.model = AutoModelForCausalLM.from_pretrained(prefix + model_name, max_length=1024).to(self.device)  # type: ignore
         # apparently the OPT models need slightly different tokenizers
         # https://huggingface.co/docs/transformers/main/en/model_doc/opt#overview
-        if prefix == "opt":
+        if model_name.startswith("opt-"):
             use_fast = False
         else:
             use_fast = True
@@ -109,7 +110,7 @@ class HFModel(Model):
             model_max_length=1023,
         )
 
-    def _load_opt(self, checkpoint: str, device: Device):
+    def _load_distributed(self, checkpoint: str, device: Device):
         self.model = AutoModelForCausalLM.from_pretrained(
             checkpoint,
             device_map="auto",

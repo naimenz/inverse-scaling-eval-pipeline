@@ -212,6 +212,11 @@ def parse_args(args):
             "opt-2.7b",
             "opt-6.7b",
             "opt-13b",
+            "bloom-350m",
+            "bloom-760m",
+            "bloom-1b3",
+            "bloom-2b5",
+            "bloom-6b3",
         ],
         required=True,
     )

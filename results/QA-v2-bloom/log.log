@@ -1,0 +1,4 @@
+2022-07-13 20:02:50,946 [INFO] Logging set up with args
+Namespace(batch_size=1, dataset='QA_bias-v2', dataset_path=None, exp_dir='QA-v2-bloom', logging_level='info', models=['bloom-350m', 'bloom-760m'], task_type='logodds', use_gpu=True)
+2022-07-13 20:02:50,946 [INFO] Saving to results to /home/ian/code/lm_internship/eval-pipeline/results/QA-v2-bloom
+2022-07-13 20:02:50,947 [INFO] Copied data

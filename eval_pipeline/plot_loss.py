@@ -41,6 +41,12 @@ size_dict = {
     "opt-2.7b": 2_700_000_000,
     "opt-6.7b": 6_700_000_000,
     "opt-13b": 13_000_000_000,
+    # bloom sizes from their names
+    "bloom-350m": 350_000_000,
+    "bloom-760m": 760_000_000,
+    "bloom-1b3": 1_300_000_000,
+    "bloom-2b5": 2_500_000_000,
+    "bloom-6b3": 6_300_000_000,
 }
 
 
@@ -275,7 +281,11 @@ def plot_loss(
     # plt.xticks(ticks, labels, rotation=45)
     plt.xticks(ticks, labels)
 
-    if task_type == "classification_loss" or task_type == "classification" or task_type == "sequence_prob":
+    if (
+        task_type == "classification_loss"
+        or task_type == "classification"
+        or task_type == "sequence_prob"
+    ):
         plt.yscale("log")
         plt.ylabel("Loss")
         title = "Log-log plot of loss vs model size"
