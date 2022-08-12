@@ -2,7 +2,7 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 import logging
 import os
-from typing import Union, cast, Sequence
+from typing import Optional, Union, cast, Sequence
 from typing_extensions import Literal, get_args
 from dotenv import load_dotenv
 import numpy as np
@@ -402,6 +402,7 @@ class HFModel(Model):
 class GPT3Model(Model):
     def __init__(self, model_name: OpenAIModel) -> None:
         self.model_name: OpenAIModel = model_name
+        self.tokenizer = AutoTokenizer.from_pretrained("gpt2")
 
     def __call__(
         self, examples: list[Example], task_type: TaskType
@@ -426,10 +427,71 @@ class GPT3Model(Model):
             raise ValueError(f"Unrecognised task type {task_type}")
         return rv
 
+    def _evaluate_single_classification(
+        self,
+        examples: list[ClassificationExample]
+    ) -> Optional[dict[str, Union[Sequence[float], Sequence[int]]]]:
+        MAX_LOGPROBS = 5
+        logit_bias = {}
+        for example in examples:
+            logits = self.tokenizer(list(example.classes), add_special_tokens=False).input_ids
+            for logit in logits:
+                if len(logit) != 1:
+                    return None
+                logit_bias[logit[0]] = 100
+        if len(logit_bias) > MAX_LOGPROBS:
+            return None
+
+        prompts = [example.prompt for example in examples]
+        api_params = APIParameters(
+            temperature=0,
+            n=1,
+            max_tokens=1,
+            logprobs=MAX_LOGPROBS,
+            echo=False,
+            logit_bias=logit_bias,
+        )
+        response_json = call_api(prompts, self.model_name, api_params).json()
+        losses = []
+        labels_correct = []
+        total_logprobs = []
+        choices = response_json["choices"]
+        
+        for i, example in enumerate(examples):
+            logprobs_dict = choices[i]["logprobs"]
+            if logprobs_dict["text_offset"][-1] != len(example.prompt):
+                raise ValueError(
+                    f"The class sequence '{example.classes[i]}' did not start on a token boundary"
+                )
+
+            top_logprobs = logprobs_dict["top_logprobs"][-1]
+            if not all(c in top_logprobs for c in example.classes):
+                raise ValueError(f"Not all tokens {example.classes} found in logprobs {top_logprobs}")
+
+            relevant_logprobs = torch.tensor([top_logprobs[c] for c in example.classes])
+
+            loss = -F.log_softmax(relevant_logprobs, dim=-1)[example.answer_index]
+            losses.append(loss.item())
+            total_logprob = torch.logsumexp(relevant_logprobs, dim=-1)
+            total_logprobs.append(total_logprob.item())
+
+            label_correct = int(np.argmax(relevant_logprobs) == example.answer_index)
+            labels_correct.append(label_correct)
+        return {
+            "loss": losses,
+            "correct": labels_correct,
+            "total_logprob": total_logprobs,
+        }
+
     def _evaluate_classification(
         self,
         examples: list[ClassificationExample],
     ) -> dict[str, Union[Sequence[float], Sequence[int]]]:
+        # NOTE: when classes are all single tokens (up to 5 max across batch), make ONE api call.
+        single_classification = self._evaluate_single_classification(examples)
+        if single_classification is not None:
+            return single_classification
+
         # making a prompt for each completion
         # NOTE: the effective batch size is now n times the parameter passed in (where n is number of classes)
         # but I'll fix that in the colab and it'll be fine

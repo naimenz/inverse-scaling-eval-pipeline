@@ -35,6 +35,7 @@ class APIParameters:
     logprobs: Optional[int] = 100
     stop: Optional[list[str]] = None
     echo: bool = False
+    logit_bias: Optional[dict[str, float]] = None
 
 
 OPENAI_API_BASE_URL = "https://api.openai.com/v1/engines"
@@ -80,7 +81,7 @@ def _call_api(
     # not just the top 5
     data = {
         "prompt": prompt,
-        **asdict(api_params),
+        **asdict(api_params, dict_factory=lambda x: {k: v for (k, v) in x if v is not None}),
     }
 
     headers = {
