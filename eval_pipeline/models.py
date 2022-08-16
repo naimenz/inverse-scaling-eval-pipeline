@@ -195,7 +195,7 @@ class HFModel(Model):
             losses.append(loss)
             labels_correct.append(label_correct)
 
-            label_predicted = example.classes[relevant_logprobs.argmax(dim=0).item()]
+            label_predicted = example.classes[torch.tensor(class_logprobs).argmax(dim=0).item()]
             labels_predicted.append(label_predicted)
         return {
             "loss": losses,
