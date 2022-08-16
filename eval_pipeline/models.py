@@ -195,7 +195,7 @@ class HFModel(Model):
             losses.append(loss)
             labels_correct.append(label_correct)
 
-            label_predicted = example.classes[torch.tensor(class_logprobs).argmax(dim=0).item()]
+            label_predicted = example.classes[torch.tensor(class_logprobs).argmax(dim=-1).item()]
             labels_predicted.append(label_predicted)
         return {
             "loss": losses,
@@ -494,7 +494,7 @@ class GPT3Model(Model):
             label_correct = int(np.argmax(relevant_logprobs) == example.answer_index)
             labels_correct.append(label_correct)
 
-            label_predicted = example.classes[relevant_logprobs.argmax(dim=0).item()]
+            label_predicted = example.classes[relevant_logprobs.argmax(dim=-1).item()]
             labels_predicted.append(label_predicted)
         return {
             "loss": losses,
