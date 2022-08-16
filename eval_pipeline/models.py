@@ -449,6 +449,7 @@ class GPT3Model(Model):
         response_json = call_api(prompts, self.model_name, api_params).json()
         losses = []
         labels_correct = []
+        labels_predicted = []
         total_logprobs = []
         choices = response_json["choices"]
 
@@ -487,9 +488,13 @@ class GPT3Model(Model):
 
             label_correct = int(np.argmax(relevant_logprobs) == example.answer_index)
             labels_correct.append(label_correct)
+
+            label_predicted = example.classes[relevant_logprobs.argmax(dim=0).item()]
+            labels_predicted.append(label_predicted)
         return {
             "loss": losses,
             "correct": labels_correct,
+            "predicted": labels_predicted,
             "total_logprob": total_logprobs,
         }
 
