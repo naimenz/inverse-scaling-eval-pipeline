@@ -164,6 +164,7 @@ class HFModel(Model):
         total_logprobs = []
         losses = []
         labels_correct = []
+        labels_predicted = []
         for i, example in enumerate(examples):
             prompt_start = i * n_classes
             class_logprobs = []
@@ -193,9 +194,13 @@ class HFModel(Model):
             total_logprobs.append(total_logprob)
             losses.append(loss)
             labels_correct.append(label_correct)
+
+            label_predicted = example.classes[relevant_logprobs.argmax(dim=0).item()]
+            labels_predicted.append(label_predicted)
         return {
             "loss": losses,
             "correct": labels_correct,
+            "predicted": labels_predicted,
             "total_logprob": total_logprobs,
         }
 
