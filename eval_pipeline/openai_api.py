@@ -41,7 +41,6 @@ OPENAI_API_BASE_URL = "https://api.openai.com/v1/engines"
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-
 def call_api(
     prompt: Union[str, list[str]],
     model_name: OpenAIModel,
@@ -53,7 +52,7 @@ def call_api(
     while True:
         count += 1
         if count >= max_retries:
-            raise ValueError(f"Retried too many times ({max_retries}) ")
+            raise ValueError(f"Retried too many times ({max_retries}), got error: {response_json['error']}")
         response = _call_api(prompt, model_name, api_params)
         response_json = response.json()
         if response.status_code != 200:
