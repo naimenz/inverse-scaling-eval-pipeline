@@ -137,8 +137,7 @@ def plot_classification_loss(
     if task_type == "classification_acc":
         n_classes_per_example = np.array([len(literal_eval(str(x))) for x in data_df["classes"]])
         # the baseline puts equal probability on each class, so we are considering a uniform distribution
-        baseline_probs = [1 / x for x in n_classes_per_example]
-        baseline = np.mean(baseline_probs)
+        baseline = (1 / n_classes_per_example).mean()
         output_name = "correct"
         if invert:
             for df in dfs.values():
@@ -148,10 +147,9 @@ def plot_classification_loss(
 
     # NOTE: the default plot type is now loss because that's what we ask for in the submission
     elif task_type == "classification_loss" or task_type == "classification":
-        n_classes_per_example = [len(literal_eval(str(x))) for x in data_df["classes"]]
+        n_classes_per_example = np.array([len(literal_eval(str(x))) for x in data_df["classes"]])
         # the baseline puts equal probability on each class, so we are considering a uniform distribution
-        baseline_losses = [-np.log(1 / x) for x in n_classes_per_example]
-        baseline = np.mean(baseline_losses)
+        baseline = (-np.log(1 / n_classes_per_example)).mean()
         output_name = "loss"
         if invert:
             for df in dfs.values():
