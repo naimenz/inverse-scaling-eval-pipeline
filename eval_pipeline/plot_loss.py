@@ -135,10 +135,10 @@ def plot_classification_loss(
     dfs = {csv_file.stem: pd.read_csv(csv_file, index_col=0) for csv_file in loss_csvs}
 
     if task_type == "classification_acc":
-        # NOTE: assuming all examples have the same number of classes
-        n_classes = len(literal_eval(str(data_df["classes"][0])))  # type: ignore
+        n_classes_per_example = np.array([len(literal_eval(str(x))) for x in data_df["classes"]])
         # the baseline puts equal probability on each class, so we are considering a uniform distribution
-        baseline = 1 / n_classes
+        baseline_probs = [1 / x for x in n_classes_per_example]
+        baseline = np.mean(baseline_probs)
         output_name = "correct"
         if invert:
             for df in dfs.values():
@@ -148,11 +148,10 @@ def plot_classification_loss(
 
     # NOTE: the default plot type is now loss because that's what we ask for in the submission
     elif task_type == "classification_loss" or task_type == "classification":
-        # NOTE: assuming all examples have the same number of classes
-        n_classes = len(literal_eval(str(data_df["classes"][0])))  # type: ignore
+        n_classes_per_example = [len(literal_eval(str(x))) for x in data_df["classes"]]
         # the baseline puts equal probability on each class, so we are considering a uniform distribution
-        baseline_prob = 1 / n_classes
-        baseline = -np.log(baseline_prob)
+        baseline_losses = [-np.log(1 / x) for x in n_classes_per_example]
+        baseline = np.mean(baseline_losses)
         output_name = "loss"
         if invert:
             for df in dfs.values():

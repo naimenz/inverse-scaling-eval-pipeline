@@ -159,14 +159,13 @@ class HFModel(Model):
             for class_seq in example.classes
         ]
         all_logits, all_tokens = self._get_logits_and_tokens(prompts)
-        # for each possible class sequence, we need to get the logprob on the full class sequence
-        n_classes = len(examples[0].classes)
         total_logprobs = []
         losses = []
         labels_correct = []
         labels_predicted = []
-        for i, example in enumerate(examples):
-            prompt_start = i * n_classes
+        prompt_start = 0
+        for example in examples:
+            n_classes = len(example.classes)
             class_logprobs = []
             for j in range(n_classes):
                 class_index = prompt_start + j
@@ -197,6 +196,8 @@ class HFModel(Model):
 
             label_predicted = example.classes[torch.tensor(class_logprobs).argmax(dim=-1).item()]
             labels_predicted.append(label_predicted)
+
+            prompt_start += n_classes
         return {
             "loss": losses,
             "correct": labels_correct,
@@ -458,10 +459,9 @@ class GPT3Model(Model):
         total_logprobs = []
         choices = response_json["choices"]
 
-        n_classes = len(examples[0].classes)
-        for i, example in enumerate(examples):
-            # there are n times as many prompts as examples
-            prompt_start = i * n_classes
+        prompt_start = 0
+        for example in examples:
+            n_classes = len(example.classes)
             class_choices = choices[prompt_start : prompt_start + n_classes]
 
             # all class sequences begin after the initial prompt
@@ -496,6 +496,8 @@ class GPT3Model(Model):
 
             label_predicted = example.classes[relevant_logprobs.argmax(dim=-1).item()]
             labels_predicted.append(label_predicted)
+
+            prompt_start += n_classes
         return {
             "loss": losses,
             "correct": labels_correct,
@@ -535,9 +537,9 @@ class GPT3Model(Model):
         choices = response_json["choices"]
         other_choices = other_response_json["choices"]
 
-        n_classes = len(examples[0].classes)
-        for i, example in enumerate(examples):
-            prompt_start = i * n_classes
+        prompt_start = 0
+        for example in examples:
+            n_classes = len(examples[0].classes)
             class_choices = choices[prompt_start : prompt_start + n_classes]
             other_class_choices = other_choices[prompt_start : prompt_start + n_classes]
 
@@ -574,6 +576,8 @@ class GPT3Model(Model):
                 np.argmax(other_relevant_logprobs) == example.answer_index
             )
             labels_correct.append(label_correct)
+
+            prompt_start += n_classes
         return {
             "logodds_difference": logodds_differences,
             "correct": labels_correct,
