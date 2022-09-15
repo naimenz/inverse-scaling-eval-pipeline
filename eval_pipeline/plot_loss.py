@@ -252,7 +252,6 @@ def plot_loss(
                 for size, loss in loss_dict.items()
             ]
             xs, ys, yerrs = zip(*sorted(errorbar_data, key=lambda pair: pair[0]))
-            print(xs, ys, yerrs)
             plt.errorbar(xs, ys, yerrs, label=f"{label} examples (with SEM)")
         else:
             xy_pairs = [(size_dict[size], loss) for size, loss in loss_dict.items()]
@@ -295,8 +294,12 @@ def plot_loss(
         raise ValueError(f"Unknown task type {task_type}")
     if invert:
         title += " (inverted)"
-
-    pprint(average_coverages)
+    
+    # NOTE: this printing will be messed up if using multiple numbers of examples
+    if average_coverages is not None:
+        coverages = average_coverages[0]
+        for model, coverage in coverages.items():
+            print(f"For the model '{model}', the class labels got {coverage * 100:0.4f}% of the probability mass")
 
     plt.title(title)
     plt.legend()
