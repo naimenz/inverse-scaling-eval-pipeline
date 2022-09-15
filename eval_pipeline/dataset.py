@@ -73,6 +73,8 @@ class Dataset:
         for _, row in df.iterrows():
             # important to convert the string 'classes' back into a list
             classes_list = ast.literal_eval(str(row["classes"]))
+            if any(cls[0] != ' ' for cls in classes_list):
+                print(f"WARNING: some class label from {classes_list} does not have a leading space")
             example = ClassificationExample(
                 prompt=row["prompt"],
                 classes=classes_list,
@@ -103,6 +105,8 @@ class Dataset:
         for _, row in df.iterrows():
             # important to convert the string 'classes' back into a list
             classes_list = ast.literal_eval(str(row["classes"]))
+            if any(cls[0] != ' ' for cls in classes_list):
+                print(f"WARNING: some class label from {classes_list} does not have a leading space")
             example = LogoddsExample(
                 prompt=row["prompt"],
                 other_prompt=row["other_prompt"],

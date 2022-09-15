@@ -298,8 +298,8 @@ def plot_loss(
     # NOTE: this printing will be messed up if using multiple numbers of examples
     if average_coverages is not None:
         coverages = average_coverages[0]
-        for model, coverage in coverages.items():
-            print(f"For the model '{model}', the class labels got {coverage * 100:0.4f}% of the probability mass")
+        for model, coverage in coverages[0].items():
+            print(f"For the model '{model}', the class labels got {coverage * 100:0.2f}% of the probability mass")
 
     plt.title(title)
     plt.legend()
