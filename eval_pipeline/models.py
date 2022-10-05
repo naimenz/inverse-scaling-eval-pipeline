@@ -87,9 +87,12 @@ class HFModel(Model):
     def __init__(self, model_name: ValidHFModel, device: Device) -> None:
         self.device = device
         # have to download the opt models in advance since they're new
+        # The OPT models have a start token that we need to remove in some places
+        self.correction_for_start_token = 0
         if model_name.startswith("opt-"):
             prefix = "facebook/"
             self.model = self._load_opt(prefix + model_name, device)
+            self.correction_for_start_token = 1
         else:
             if model_name.startswith("gpt-neo") or model_name.startswith("gpt-j"):
                 prefix = "EleutherAI/"
@@ -172,7 +175,10 @@ class HFModel(Model):
                 class_logits = all_logits[class_index]
                 # the lengths of each class sequence in tokens
                 class_sequence = example.classes[j]
-                target_token_length = len(self.tokenizer(class_sequence)["input_ids"])
+                # NOTE: we subtract 1 because the first token is the start of the sequence
+                target_token_length = (
+                    len(self.tokenizer(class_sequence)["input_ids"]) - 1
+                )
                 # we only need the logits for the end sequence
                 tokens = all_tokens[class_index]
                 # we have to go back by one because we don't care about the logits for the predicted token
@@ -186,7 +192,7 @@ class HFModel(Model):
                 )
                 class_logprobs.append(class_logprob.item())  # type: ignore (the sum is never empty so never just 0, always a tensor)
 
-            total_logprob = sum(class_logprobs)
+            total_logprob = torch.logsumexp(torch.tensor(class_logprobs), dim=-1).item()
             normalised_logprobs = F.log_softmax(torch.tensor(class_logprobs), dim=-1)
             loss = -normalised_logprobs[example.answer_index].item()
             label_correct = int(np.argmax(normalised_logprobs) == example.answer_index)
@@ -194,7 +200,9 @@ class HFModel(Model):
             losses.append(loss)
             labels_correct.append(label_correct)
 
-            label_predicted = example.classes[torch.tensor(class_logprobs).argmax(dim=-1).item()]
+            label_predicted = example.classes[
+                torch.tensor(class_logprobs).argmax(dim=-1).item()
+            ]
             labels_predicted.append(label_predicted)
 
             prompt_start += n_classes
@@ -205,7 +213,9 @@ class HFModel(Model):
             "total_logprob": total_logprobs,
         }
 
-    def _get_logits_and_tokens(self, prompts: list[str]) -> tuple[list[torch.Tensor], list[torch.Tensor]]:
+    def _get_logits_and_tokens(
+        self, prompts: list[str]
+    ) -> tuple[list[torch.Tensor], list[torch.Tensor]]:
         all_logits = []
         all_tokens = []
         for prompt in prompts:
@@ -252,7 +262,7 @@ class HFModel(Model):
         self,
         examples: list[LogoddsExample],
         take_absolute_value: bool = False,
-    ) -> dict[str, Union[Sequence[float], Sequence[int]]]:
+    ) -> dict[str, Union[Sequence[float], Sequence[int], float]]:
         """logodds is much like classification, except we need to compare across prompts so we just
         compute the log odds here"""
         prompts = [example.prompt for example in examples]
@@ -268,7 +278,11 @@ class HFModel(Model):
         # we only need the logits for the final (new) token
         # NOTE: this may need to change if we use batch size > 1 with padding
         logits = outputs["logits"][:, -1].detach().to(device="cpu", dtype=torch.float32)
-        other_logits = other_outputs["logits"][:, -1].detach().to(device="cpu", dtype=torch.float32)
+        other_logits = (
+            other_outputs["logits"][:, -1]
+            .detach()
+            .to(device="cpu", dtype=torch.float32)
+        )
         logodds = self._logodds_from_logits(examples, logits)
         other_logodds = self._logodds_from_logits(examples, other_logits)
 
@@ -283,19 +297,17 @@ class HFModel(Model):
                 logodds_differences[i] = np.abs(logodds_differences[i])
 
         accuracies = self._accuracies_from_logits(examples, other_logits)
-        total_logprobs = np.mean(
-            np.stack(
-                (
-                    self._total_logprobs_from_logits(examples, logits),
-                    self._total_logprobs_from_logits(examples, other_logits),
-                )
+        total_logprob = torch.logsumexp(
+            torch.tensor(
+                self._total_logprobs_from_logits(examples, logits)
+                + self._total_logprobs_from_logits(examples, other_logits)
             ),
-            axis=0,
-        )
+            dim=0,
+        ).item()
         return {
             "logodds_difference": logodds_differences,
             "correct": accuracies,
-            "total_logprob": total_logprobs,
+            "total_logprob": total_logprob,
         }
 
     def _evaluate_numeric(
@@ -565,16 +577,13 @@ class GPT3Model(Model):
                 logodds_difference = np.abs(logodds_difference)
 
             logodds_differences.append(logodds_difference.item())
-            total_logprob = np.mean(
-                [
-                    torch.logsumexp(relevant_logprobs, dim=-1).item(),
-                    torch.logsumexp(other_relevant_logprobs, dim=-1).item(),
-                ]
+            total_logprob = (
+                torch.logsumexp(
+                    torch.cat((relevant_logprobs, other_relevant_logprobs)), dim=0
+                ).item(),
             )
             total_logprobs.append(total_logprob)
-            label_correct = int(
-                np.argmax(other_relevant_logprobs) == example.answer_index
-            )
+            label_correct = int(np.argmax(other_relevant_logprobs) == example.answer_index)
             labels_correct.append(label_correct)
 
             prompt_start += n_classes
