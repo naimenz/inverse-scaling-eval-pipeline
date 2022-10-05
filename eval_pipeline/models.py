@@ -175,9 +175,10 @@ class HFModel(Model):
                 class_logits = all_logits[class_index]
                 # the lengths of each class sequence in tokens
                 class_sequence = example.classes[j]
-                # NOTE: we subtract 1 because the first token is the start of the sequence
+                # NOTE: we subtract 1 if OPT because the first token is the start of the sequence
                 target_token_length = (
-                    len(self.tokenizer(class_sequence)["input_ids"]) - 1
+                    len(self.tokenizer(class_sequence)["input_ids"])
+                    - self.correction_for_start_token
                 )
                 # we only need the logits for the end sequence
                 tokens = all_tokens[class_index]
@@ -239,8 +240,10 @@ class HFModel(Model):
         ).to(self.device)
 
         target_sequences = [example.completion for example in examples]
+        # NOTE: we have to apply the OPT token correction here too
         target_token_lengths = [
-            len(self.tokenizer(word)["input_ids"]) for word in target_sequences
+            len(self.tokenizer(word)["input_ids"]) - self.correction_for_start_token
+            for word in target_sequences
         ]
 
         outputs = self.model(**tokenized_inputs)
@@ -361,16 +364,6 @@ class HFModel(Model):
             logodds_list.append(logodds.item())
         return logodds_list
 
-    def _losses_from_logits(self, examples, logits) -> list[float]:
-        """Given examples and logits for those examples,
-        compute the classification loss for each example"""
-        losses = []
-        for i, example in enumerate(examples):
-            relevant_logits = self._extract_relevant_logits(logits, example, i)
-            loss = -F.log_softmax(relevant_logits, dim=-1)[example.answer_index]
-            losses.append(loss.item())
-        return losses
-
     def _accuracies_from_logits(self, examples, logits) -> list[int]:
         """Given examples and logits for those examples,
         compute whether the predicted label is correct for each example"""
@@ -405,9 +398,11 @@ class HFModel(Model):
         total_logprobs = []
         for i, example in enumerate(examples):
             example_logits = logits[i]
-            # have to flatten this list for some reason
+            # NOTE: we take the last element of the returned token list
+            # this is because the tokenizer returns a 1-element list for GPT tokenizers
+            # and a 2-element list with start token in the first position for OPT tokenizers
             class_tokens = [
-                token[0] for token in self.tokenizer(list(example.classes))["input_ids"]
+                token[-1] for token in self.tokenizer(list(example.classes))["input_ids"]
             ]
             # log_softmax just subtracts a constant, so repeated applications change nothing
             # and there is no point in taking logprobs before focusing on the relevant indices
@@ -583,7 +578,9 @@ class GPT3Model(Model):
                 ).item(),
             )
             total_logprobs.append(total_logprob)
-            label_correct = int(np.argmax(other_relevant_logprobs) == example.answer_index)
+            label_correct = int(
+                np.argmax(other_relevant_logprobs) == example.answer_index
+            )
             labels_correct.append(label_correct)
 
             prompt_start += n_classes
