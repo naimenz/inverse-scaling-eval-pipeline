@@ -265,7 +265,7 @@ class HFModel(Model):
         self,
         examples: list[LogoddsExample],
         take_absolute_value: bool = False,
-    ) -> dict[str, Union[Sequence[float], Sequence[int], float]]:
+    ) -> dict[str, Union[Sequence[float], Sequence[int]]]:
         """logodds is much like classification, except we need to compare across prompts so we just
         compute the log odds here"""
         prompts = [example.prompt for example in examples]
@@ -300,17 +300,25 @@ class HFModel(Model):
                 logodds_differences[i] = np.abs(logodds_differences[i])
 
         accuracies = self._accuracies_from_logits(examples, other_logits)
-        total_logprob = torch.logsumexp(
-            torch.tensor(
-                self._total_logprobs_from_logits(examples, logits)
-                + self._total_logprobs_from_logits(examples, other_logits)
-            ),
-            dim=0,
-        ).item()
+        total_logprob = list(
+            torch.logsumexp(
+                torch.stack(
+                    (
+                        torch.tensor(
+                            self._total_logprobs_from_logits(examples, logits)
+                        ),
+                        torch.tensor(
+                            self._total_logprobs_from_logits(examples, other_logits)
+                        ),
+                    )
+                ),
+                dim=0,
+            )
+        )
         return {
             "logodds_difference": logodds_differences,
             "correct": accuracies,
-            "total_logprob": total_logprob,
+            "total_logprob": total_logprob,  # type: ignore (they should be floats)
         }
 
     def _evaluate_numeric(
@@ -402,7 +410,8 @@ class HFModel(Model):
             # this is because the tokenizer returns a 1-element list for GPT tokenizers
             # and a 2-element list with start token in the first position for OPT tokenizers
             class_tokens = [
-                token[-1] for token in self.tokenizer(list(example.classes))["input_ids"]
+                token[-1]
+                for token in self.tokenizer(list(example.classes))["input_ids"]
             ]
             # log_softmax just subtracts a constant, so repeated applications change nothing
             # and there is no point in taking logprobs before focusing on the relevant indices
