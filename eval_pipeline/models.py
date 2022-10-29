@@ -177,7 +177,7 @@ class HFModel(Model):
                 class_sequence = example.classes[j]
                 # NOTE: we subtract 1 if OPT because the first token is the start of the sequence
                 target_token_length = (
-                    len(self.tokenizer(class_sequence)["input_ids"])
+                    len(self.tokenizer(class_sequence, add_special_tokens=False)["input_ids"])
                     - self.correction_for_start_token
                 )
                 # we only need the logits for the end sequence
