@@ -130,8 +130,8 @@ def run_model(
     write the results to write_path incrementally."""
     write_path = Path(write_dir, model_name + ".csv")
     # TODO: find a way to avoid having to specify field names ahead of time
-    if task_type in ["classification_loss", "classification", "classification_acc"]:
-        field_names = ["index", "loss", "correct", "predicted", "total_logprob", "ground_truth"]
+    if task_type in ["classification_loss", "classification_acc", "classification"]:
+        field_names = ["index", "loss", "correct", "predicted", "total_logprob"]
     elif task_type == "sequence_prob":
         field_names = ["index", "loss"]
     elif task_type == "numeric":
