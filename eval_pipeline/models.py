@@ -517,9 +517,6 @@ class GPT3Model(Model):
             "correct": labels_correct,
             "predicted": labels_predicted,
             "total_logprob": total_logprobs,
-            "ground_truth": [
-                example.classes[example.answer_index] for example in examples
-            ],
         }
 
     def _evaluate_logodds(
