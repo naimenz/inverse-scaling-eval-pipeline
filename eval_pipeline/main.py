@@ -14,6 +14,7 @@ from tqdm.autonotebook import tqdm
 
 from eval_pipeline.dataset import Dataset, TaskType
 from eval_pipeline.models import Device, Model, BaseGPT3Model, ValidHFModel
+from eval_pipeline.openai_api import OpenaAIModelList
 
 
 def main():
@@ -198,21 +199,13 @@ def parse_args(args):
             "gpt-neo-1.3B",
             "gpt-neo-2.7B",
             "gpt-j-6B",
-            "ada",
-            "babbage",
-            "curie",
-            "davinci",
-            "text-ada-001",
-            "text-babbage-001",
-            "text-curie-001",
-            "text-davinci-001",
             "opt-125m",
             "opt-350m",
             "opt-1.3b",
             "opt-2.7b",
             "opt-6.7b",
             "opt-13b",
-        ],
+        ] + OpenaAIModelList,
         required=True,
     )
     parser.add_argument(
