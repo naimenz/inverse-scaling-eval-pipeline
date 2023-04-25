@@ -9,6 +9,12 @@ from datetime import timedelta
 from typing import Optional, Union
 from ratelimit import sleep_and_retry, limits
 
+BaseGPT3List = [
+    "ada",
+    "babbage",
+    "curie",
+    "davinci",
+]
 
 BaseGPT3Model = Literal[
     "ada",
@@ -16,13 +22,26 @@ BaseGPT3Model = Literal[
     "curie",
     "davinci",
 ]
+
+InstructGPT3List = [
+    "text-ada-001",
+    "text-babbage-001",
+    "text-curie-001",
+    "text-davinci-001",
+    "text-davinci-002",
+    "text-davinci-003"
+]
+
 InstructGPT3Model = Literal[
     "text-ada-001",
     "text-babbage-001",
     "text-curie-001",
     "text-davinci-001",
+    "text-davinci-002",
+    "text-davinci-003"
 ]
 
+OpenaAIModelList = BaseGPT3List + InstructGPT3List
 OpenAIModel = Literal[BaseGPT3Model, InstructGPT3Model]
 
 

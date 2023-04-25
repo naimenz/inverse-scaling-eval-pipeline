@@ -27,7 +27,7 @@ from eval_pipeline.dataset import (
     TaskType,
 )
 from eval_pipeline.numeric_parser import BasicParser
-from eval_pipeline.openai_api import APIParameters, BaseGPT3Model, OpenAIModel, call_api
+from eval_pipeline.openai_api import APIParameters, BaseGPT3Model, OpenAIModel, call_api, OpenaAIModelList
 
 OPENAI_API_BASE_URL = "https://api.openai.com/v1/engines"
 load_dotenv()
@@ -56,10 +56,8 @@ ValidHFModel = Literal[
 ]
 valid_hf_models: tuple[ValidHFModel, ...] = get_args(ValidHFModel)
 
-# NOTE: due to limitations of get_args with nested Literals, we have to call it
-# multiple times
-valid_gpt3_models: tuple[OpenAIModel, ...] = [x for li in get_args(OpenAIModel) for x in get_args(li)]  # type: ignore
-
+# NOTE: due to limitations of get_args with nested Literals, we can't directly call get_args on OpenAIModel
+valid_gpt3_models = OpenaAIModelList
 Device = Literal["cuda:0", "cpu"]
 
 
@@ -519,6 +517,9 @@ class GPT3Model(Model):
             "correct": labels_correct,
             "predicted": labels_predicted,
             "total_logprob": total_logprobs,
+            "ground_truth": [
+                example.classes[example.answer_index] for example in examples
+            ],
         }
 
     def _evaluate_logodds(
